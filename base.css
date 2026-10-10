@@ -85,3 +85,20 @@
  #start h1{font-size:30px}.btn.big{font-size:18px;padding:12px 20px}
 }
 .dcard.done .bankwrap{display:none}
+/* ===== Compass Crew role design tokens ===== */
+:root{--brass:#c99a3c;--brass-hi:#f3d58a;--brass-dark:#8a6420;--brass-sym:#f6d27a;
+ --role-s:#159a92;--role-s-hi:#3cc8bd;--role-s-bg:#d6f2ef;
+ --role-v:#ea6040;--role-v-hi:#ff8c6a;--role-v-bg:#ffe2d8;
+ --role-o:#2350b3;--role-o-hi:#4a7be0;--role-o-bg:#dbe5fa;
+ --role-c:#d9a21f;--role-c-hi:#f4c84f;--role-c-bg:#fff1c4}
+.badge{display:inline-block;vertical-align:middle;flex:none;filter:drop-shadow(0 2px 2px rgba(80,50,10,.3))}
+.dchunk.S,.chunk.S{background:var(--role-s-bg);border-color:var(--role-s)}
+.dchunk.V,.dchunk.L,.chunk.V,.chunk.L{background:var(--role-v-bg);border-color:var(--role-v)}
+.dchunk.O,.chunk.O{background:var(--role-o-bg);border-color:var(--role-o)}
+.dchunk.C,.chunk.C{background:var(--role-c-bg);border-color:var(--role-c)}
+.slot.S{border-color:var(--role-s)}.slot.V,.slot.L{border-color:var(--role-v)}.slot.O{border-color:var(--role-o)}.slot.C{border-color:var(--role-c)}
+.slab{display:flex;align-items:center;gap:8px;text-align:left}.slab .lt{display:flex;flex-direction:column;line-height:1.15}
+.chunk .tag{top:-34px;line-height:0}
+.flipwrap{width:min(420px,100%)!important}
+.card .sent{margin-top:34px}
+@media (max-width:560px){.flipwrap{height:230px!important}.face .sent{font-size:22px!important}.adj{gap:6px}.adj .btn{font-size:15px;padding:6px 12px}}

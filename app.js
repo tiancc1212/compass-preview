@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {badge} from './badges.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 const Q=new URLSearchParams(location.search);const $=s=>document.querySelector(s);const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -45,17 +46,17 @@ function sparkle(el,n=14,chars=['✨','⭐','💛','✦']){if(RM)return;const r=
  s.style.left=(r.left+r.width/2)+'px';s.style.top=(r.top+r.height/2)+'px';const a=Math.random()*Math.PI*2,d=60+Math.random()*90;s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950);}}
 // ---------- panel helpers ----------
 const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;panel.style.display='flex';$('#sub').style.display='none';};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';};
-const ROLE={S:['👁','主语','谁'],V:['🐍','谓语','干什么 / 是'],O:['☀','宾语 / 表语','什么 / 怎么样']};
+
 // Catch-the-grammar (tap tool then tap chunk)
 
 // ---------- drag-into-slots ----------
-const LBL={S:['👁','谁','主语'],V:['🐍','做什么','谓语'],L:['🐍','是 / 看起来','系动词'],O:['☀','什么','宾语'],C:['☀','怎样 / 在哪','表语']};
+const LBL={S:['S','谁','主语'],V:['V','做什么','谓语'],L:['L','是 / 看起来','系动词'],O:['O','什么','宾语'],C:['C','怎样 / 在哪','表语']};
 function slotRound({title,desc,stone,prog,sent}){return new Promise(res=>{
  const order=sent.chunks.map((c,i)=>i);for(let i=order.length-1;i>0;i--){const j=(i*7+3)%(i+1);[order[i],order[j]]=[order[j],order[i]];}
  if(order.every((v,i)=>v===i))order.reverse();
  showPanel(`<div class="card dcard"><h2>${title}</h2><p class="desc">${desc}</p>
   <div class="${stone?'stone':''} bankwrap"><div class="bank">${order.map(i=>`<button class="dchunk" data-i="${i}">${sent.chunks[i][0]}</button>`).join('')}</div></div>
-  <div class="slots">${sent.chunks.map((c,i)=>{const l=LBL[c[1]];return `<div class="slot" data-role="${c[1]}"><div class="slab">${l[0]} ${l[1]}<small>${l[2]}</small></div><div class="drop"></div></div>`;}).join('')}</div>
+  <div class="slots">${sent.chunks.map((c,i)=>{const l=LBL[c[1]];return `<div class="slot" data-role="${c[1]}"><div class="slab">${badge(c[1],{size:40})}<span class="lt">${l[1]}<small>${l[2]}</small></span></div><div class="drop"></div></div>`;}).join('')}</div>
   <p id="tip" class="tip" aria-live="polite"></p>${prog||''}<div class="nextwrap"></div></div>`);
  const card=panel.querySelector('.dcard'),tip=card.querySelector('#tip');let sel=null,left=sent.chunks.length;
  const roleOf=el=>sent.chunks[+el.dataset.i][1];
@@ -86,13 +87,13 @@ async function catchGame(){
           {id:'l10',chunks:[['Biscuit','S'],['finds','V'],['an old sock','O']],tip:'Biscuit（主语）+ finds（谓语：动作）+ an old sock（宾语：动作落在谁身上）'}];
  for(let i=0;i<S.length;i++)await slotRound({title:`🔍 捉语法 ${i+1}/2`,desc:'把词块<b>拖进</b>下面对应的格子（也可以先点词块，再点格子）。门要听到<b>完整的句子</b>才会开！',sent:S[i]});
  hidePanel();}
-async function hookCard(){await new Promise(res=>{showPanel(`<div class="card"><h2>🎣 今天的魔法句</h2><div class="sent"><div class="chunk S">I<span class="tag">👁</span></div><div class="chunk V">have<span class="tag">🐍</span></div><div class="chunk O">a dream<span class="tag">☀</span></div><span style="align-self:center">.</span></div>
+async function hookCard(){await new Promise(res=>{showPanel(`<div class="card"><h2>🎣 今天的魔法句</h2><div class="sent"><div class="chunk S">I<span class="tag">${badge("S",{size:30})}</span></div><div class="chunk V">have<span class="tag">${badge("V",{size:30})}</span></div><div class="chunk O">a dream<span class="tag">${badge("O",{size:30})}</span></div><span style="align-self:center">.</span></div>
  <p>只有 4 个词，<b>主语 + 谓语 + 宾语</b> 全都有！</p><p>英语句子先说 <b>“谁”</b>，再说 <b>“干什么 / 是什么”</b>，后面接 <b>宾语</b>（动作落在谁身上）或 <b>表语</b>（主语什么样）。</p><button class="btn big" id="ok">继续冒险 ➜</button></div>`);
  say('h01','爷爷的声音从罗盘里传来：“I have a dream.”');panel.querySelector('#ok').onclick=res;window.__auto=res;});hidePanel();}
 // Hieroglyph splitting: drag glyphs onto chunks
 async function glyphGame(){
  const T=[['g01',[['Biscuit','S'],['finds','V'],['an old sock','O']],'太棒了！石板发出金光！'],['g02',[['Mia','S'],['looks','L'],['scared','C']],'looks 是“看起来”，和 be 一样是<b>系动词</b>，scared 是<b>表语</b>'],['g03',[['They','S'],['are','L'],['inside a pyramid','C']],'are 是系动词 be，inside a pyramid 是表语'],['g04',[['Lily','S'],['reads','V'],['the wall','O']],'reads 是动作，the wall 是宾语'],['g05',[['I','S'],['have','V'],['a dream','O']],'I have a dream —— 主谓宾全齐！']];
- for(let ti=0;ti<T.length;ti++){const [id,ch,tip]=T[ti];say(id,'');
+ for(let ti=0;ti<T.length;ti++){const [id,ch,tip]=T[ti];
   await slotRound({title:`𓂀 象形文字拆句 · 石板 ${ti+1}/5`,desc:'石板裂成了几块！把它们拖回刻着象形符号的位置：',stone:true,prog:`<div class="prog">${T.map((_,i)=>`<i class="${i<ti?'ok':''}"></i>`).join('')}</div>`,sent:{id,chunks:ch,tip}});}
  hidePanel();}
 let cardWord='brave';
@@ -102,7 +103,7 @@ async function spellCard(){
    <div class="adj">${adjs.map(([w,z])=>`<button class="btn" data-w="${w}">${w}<br><small>${z}</small></button>`).join('')}</div>
    <div class="flipwrap"><div class="flip" id="flip">
     <div class="face"><div class="border"></div><div class="glyrow" style="top:14px">𓂀 𓆣 𓋹 𓇳 𓆓</div><div style="font-size:30px;font-weight:900">开门咒语卡 #1</div><div style="margin-top:8px;font-size:22px;font-family:Georgia,serif">I am <u id="w">brave</u>.</div><div class="glyrow" style="bottom:14px">𓇳 𓋹 𓆣 𓂀 𓅓</div></div>
-    <div class="face back"><div class="border"></div><div class="glyrow" style="top:14px">𓂀 𓆣 𓋹 𓇳 𓆓</div><div class="sent" style="margin:0;font-size:28px"><div class="chunk S">I<span class="tag">👁</span></div><div class="chunk V">am<span class="tag">🐍</span></div><div class="chunk O" id="w2">brave<span class="tag">☀</span></div></div><div style="font-size:15px;margin-top:4px">主语 + 系动词 + 表语 · 门已认得你的声音！</div><div class="glyrow" style="bottom:14px">𓇳 𓋹 𓆣 𓂀 𓅓</div></div>
+    <div class="face back"><div class="border"></div><div class="glyrow" style="top:14px">𓂀 𓆣 𓋹 𓇳 𓆓</div><div class="sent" style="margin:0;font-size:28px"><div class="chunk S">I<span class="tag">${badge("S",{size:30})}</span></div><div class="chunk L">am<span class="tag">${badge("L",{size:30})}</span></div><div class="chunk C" id="w2">brave<span class="tag">${badge("C",{size:30})}</span></div></div><div style="font-size:15px;margin-top:4px">主语 + 系动词 + 表语 · 门已认得你的声音！</div><div class="glyrow" style="bottom:14px">𓇳 𓋹 𓆣 𓂀 𓅓</div></div>
    </div></div><button class="btn big" id="carve">🪄 刻下咒语</button></div>`);
   panel.querySelectorAll('.adj button').forEach(b=>b.onclick=()=>{cardWord=b.dataset.w;panel.querySelector('#w').textContent=cardWord;panel.querySelector('#w2').firstChild.textContent=cardWord;const a=new Audio('audio/card_'+cardWord+'.mp3');if(!muted)a.play();});
   const carve=async()=>{const btn=panel.querySelector('#carve');btn.disabled=true;sfx('flip');panel.querySelector('#flip').classList.add('on');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24),500);
@@ -161,4 +162,4 @@ async function ending(){
  showPanel(`<div class="card"><h2>🎉 第 1 集完成！</h2><p style="font-size:22px">⭐ 1 / 17　·　🗺️ 地图解锁：<b>金字塔</b></p><p>🧩 爷爷线索：门后刻着 <b>“C. C. was here – 1975”</b></p><p>📒 把你的“开门咒语卡”贴进冒险日志首页吧！</p><button class="btn big" id="again">🔁 再玩一次</button></div>`);
  panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
-if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const j=Q.get('jump');showImg(j==='glyph'?'door':'sock');(j==='glyph'?glyphGame():catchGame());}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
+if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const j=Q.get('jump');showImg(j==='glyph'?'door':'sock');(j==='glyph'?glyphGame():j==='card'?spellCard():j==='hook'?hookCard():catchGame());}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
