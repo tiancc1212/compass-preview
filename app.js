@@ -47,53 +47,54 @@ function sparkle(el,n=14,chars=['✨','⭐','💛','✦']){if(RM)return;const r=
 const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;panel.style.display='flex';$('#sub').style.display='none';};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';};
 const ROLE={S:['👁','主语','谁'],V:['🐍','谓语','干什么 / 是'],O:['☀','宾语 / 表语','什么 / 怎么样']};
 // Catch-the-grammar (tap tool then tap chunk)
+
+// ---------- drag-into-slots ----------
+const LBL={S:['👁','谁','主语'],V:['🐍','做什么','谓语'],L:['🐍','是 / 看起来','系动词'],O:['☀','什么','宾语'],C:['☀','怎样 / 在哪','表语']};
+function slotRound({title,desc,stone,prog,sent}){return new Promise(res=>{
+ const order=sent.chunks.map((c,i)=>i);for(let i=order.length-1;i>0;i--){const j=(i*7+3)%(i+1);[order[i],order[j]]=[order[j],order[i]];}
+ if(order.every((v,i)=>v===i))order.reverse();
+ showPanel(`<div class="card dcard"><h2>${title}</h2><p class="desc">${desc}</p>
+  <div class="${stone?'stone':''} bankwrap"><div class="bank">${order.map(i=>`<button class="dchunk" data-i="${i}">${sent.chunks[i][0]}</button>`).join('')}</div></div>
+  <div class="slots">${sent.chunks.map((c,i)=>{const l=LBL[c[1]];return `<div class="slot" data-role="${c[1]}"><div class="slab">${l[0]} ${l[1]}<small>${l[2]}</small></div><div class="drop"></div></div>`;}).join('')}</div>
+  <p id="tip" class="tip" aria-live="polite"></p>${prog||''}<div class="nextwrap"></div></div>`);
+ const card=panel.querySelector('.dcard'),tip=card.querySelector('#tip');let sel=null,left=sent.chunks.length;
+ const roleOf=el=>sent.chunks[+el.dataset.i][1];
+ const clearSel=()=>{if(sel)sel.classList.remove('sel');sel=null;card.querySelectorAll('.slot').forEach(s=>s.classList.remove('armed'));};
+ const back=el=>{el.style.transition=RM?'none':'transform .25s cubic-bezier(.3,1.6,.5,1)';el.style.transform='';if(!RM){el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');}};
+ function attempt(el,slot){if(!slot||slot.classList.contains('filled'))return back(el);const want=roleOf(el),got=slot.dataset.role;
+  if(want===got){el.style.transition='none';el.style.transform='';slot.querySelector('.drop').appendChild(el);slot.classList.add('filled',want);el.classList.add('placed',want);el.disabled=true;
+   if(!RM){el.classList.remove('snap');void el.offsetWidth;el.classList.add('snap');}sfx('ok');sparkle(slot,8);tip.textContent='';left--;
+   if(left===0){tip.innerHTML='✅ '+sent.tip;card.classList.add('done');const a=new Audio('audio/'+sent.id+'.mp3');if(!muted)a.play();
+    if(Q.get('fast'))setTimeout(res,400);else{const nb=document.createElement('button');nb.className='btn big';nb.textContent='继续 ➜';nb.onclick=res;card.querySelector('.nextwrap').appendChild(nb);nb.focus();}}}
+  else{sfx('bad');back(el);const l=LBL[want];tip.textContent=`再想想：“${el.textContent}”回答的是「${l[1]}」，它是${l[2]}哦。`;}
+  clearSel();}
+ card.querySelectorAll('.dchunk').forEach(el=>{
+  el.addEventListener('pointerdown',e=>{if(el.disabled)return;e.preventDefault();el.setPointerCapture(e.pointerId);const sx=e.clientX,sy=e.clientY;let moved=false;el.style.transition='none';el.classList.add('dragging');
+   const mv=ev=>{const dx=ev.clientX-sx,dy=ev.clientY-sy;if(Math.hypot(dx,dy)>6)moved=true;if(moved)el.style.transform=`translate(${dx}px,${dy}px) scale(1.08)`;
+    card.querySelectorAll('.slot').forEach(s=>s.classList.remove('hover'));if(moved){el.style.visibility='hidden';const t=document.elementFromPoint(ev.clientX,ev.clientY)?.closest('.slot');el.style.visibility='';if(t)t.classList.add('hover');}};
+   const up=ev=>{el.removeEventListener('pointermove',mv);el.removeEventListener('pointerup',up);el.removeEventListener('pointercancel',up);el.classList.remove('dragging');card.querySelectorAll('.slot').forEach(s=>s.classList.remove('hover'));
+    if(!moved){el.style.transform='';if(sel===el){clearSel();return;}clearSel();sel=el;el.classList.add('sel');card.querySelectorAll('.slot:not(.filled)').forEach(s=>s.classList.add('armed'));tip.textContent='已选中“'+el.textContent+'”，再点一个格子放进去。';return;}
+    el.style.visibility='hidden';const t=document.elementFromPoint(ev.clientX,ev.clientY)?.closest('.slot');el.style.visibility='';attempt(el,t);};
+   el.addEventListener('pointermove',mv);el.addEventListener('pointerup',up);el.addEventListener('pointercancel',up);});
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();clearSel();sel=el;el.classList.add('sel');card.querySelectorAll('.slot:not(.filled)').forEach(s=>s.classList.add('armed'));}});});
+ card.querySelectorAll('.slot').forEach(s=>{s.tabIndex=0;const go=()=>{if(sel)attempt(sel,s);};s.addEventListener('click',go);s.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+ window.__slotAttempt=(i,role)=>{const el=card.querySelector(`.dchunk[data-i="${i}"]`);attempt(el,card.querySelector(`.slot[data-role="${role}"]:not(.filled)`));};
+ window.__autoCatch=window.__autoGlyph=()=>sent.chunks.forEach((c,i)=>window.__slotAttempt(i,c[1]));
+});}
 async function catchGame(){
- const items=[{id:'l04',chunks:[['They','S'],['are','V'],['inside a pyramid','O']],tip:'They（主语）+ are（系动词 be）+ inside a pyramid（表语：在哪儿、什么样）'},
-              {id:'l10',chunks:[['Biscuit','S'],['finds','V'],['an old sock','O']],tip:'Biscuit（主语）+ finds（实义动词：动作）+ an old sock（宾语：动作落在谁身上）'}];
- for(let si=0;si<items.length;si++){const it=items[si];
-  await new Promise(res=>{let tool='S';
-   showPanel(`<div class="card"><h2>🔍 捉语法 ${si+1}/2</h2><p>先选一个“捕捉器”，再点句子里对应的部分。门要听到<b>完整的句子</b>才会开！</p>
-   <div class="tools">${Object.entries(ROLE).map(([k,v])=>`<button class="tool ${k=='S'?'sel':''}" data-k="${k}">${v[0]} ${v[1]}<br><small>${v[2]}</small></button>`).join('')}</div>
-   <div class="sent">${it.chunks.map((c,i)=>`<div class="chunk" data-i="${i}"><span class="tag"></span>${c[0]}</div>`).join('')}<span style="align-self:center">.</span></div>
-   <p id="tip" style="min-height:26px"></p><button class="btn" id="hear">🔈 听这句</button></div>`);
-   panel.querySelectorAll('.tool').forEach(b=>b.onclick=()=>{panel.querySelectorAll('.tool').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');tool=b.dataset.k;});
-   panel.querySelector('#hear').onclick=()=>{const a=new Audio('audio/'+it.id+'.mp3');if(!muted)a.play();};
-   let left=it.chunks.length;
-   panel.querySelectorAll('.chunk').forEach(el=>el.onclick=()=>{if(el.dataset.ok)return;const want=it.chunks[+el.dataset.i][1];
-    if(want===tool){el.dataset.ok=1;el.classList.add(want,'pop');el.querySelector('.tag').textContent=ROLE[want][0];sfx('ok');sparkle(el);left--;
-     if(left===0){panel.querySelector('#tip').innerHTML='✅ '+it.tip;const a=new Audio('audio/'+it.id+'.mp3');if(!muted)a.play();setTimeout(res,Q.get('fast')?600:2600);}}
-    else{el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');sfx('bad');panel.querySelector('#tip').textContent='再想想：'+ROLE[want][0]+' 这里是“'+ROLE[want][2]+'”哦';}});
-   window.__autoCatch=()=>{it.chunks.forEach((c,i)=>{const b=panel.querySelector(`.tool[data-k="${c[1]}"]`);b.click();panel.querySelectorAll('.chunk')[i].click();});};
-  });
- }
- hidePanel();
-}
+ const S=[{id:'l04',chunks:[['They','S'],['are','L'],['inside a pyramid','C']],tip:'They（主语）+ are（系动词 be）+ inside a pyramid（表语：在哪儿）'},
+          {id:'l10',chunks:[['Biscuit','S'],['finds','V'],['an old sock','O']],tip:'Biscuit（主语）+ finds（谓语：动作）+ an old sock（宾语：动作落在谁身上）'}];
+ for(let i=0;i<S.length;i++)await slotRound({title:`🔍 捉语法 ${i+1}/2`,desc:'把词块<b>拖进</b>下面对应的格子（也可以先点词块，再点格子）。门要听到<b>完整的句子</b>才会开！',sent:S[i]});
+ hidePanel();}
 async function hookCard(){await new Promise(res=>{showPanel(`<div class="card"><h2>🎣 今天的魔法句</h2><div class="sent"><div class="chunk S">I<span class="tag">👁</span></div><div class="chunk V">have<span class="tag">🐍</span></div><div class="chunk O">a dream<span class="tag">☀</span></div><span style="align-self:center">.</span></div>
  <p>只有 4 个词，<b>主语 + 谓语 + 宾语</b> 全都有！</p><p>英语句子先说 <b>“谁”</b>，再说 <b>“干什么 / 是什么”</b>，后面接 <b>宾语</b>（动作落在谁身上）或 <b>表语</b>（主语什么样）。</p><button class="btn big" id="ok">继续冒险 ➜</button></div>`);
  say('h01','爷爷的声音从罗盘里传来：“I have a dream.”');panel.querySelector('#ok').onclick=res;window.__auto=res;});hidePanel();}
 // Hieroglyph splitting: drag glyphs onto chunks
 async function glyphGame(){
- const T=[['g01',[['Biscuit','S'],['finds','V'],['an old sock','O']]],['g02',[['Mia','S'],['looks','V'],['scared','O']]],['g03',[['They','S'],['are','V'],['inside a pyramid','O']]],['g04',[['Lily','S'],['reads','V'],['the wall','O']]],['g05',[['I','S'],['have','V'],['a dream','O']]]];
- for(let ti=0;ti<T.length;ti++){const [id,ch]=T[ti];
-  await new Promise(res=>{
-   showPanel(`<div class="card"><h2>𓂀 象形文字拆句 · 石板 ${ti+1}/5</h2><p>把象形符号<b>拖到</b>石板上的词语上：👁 主语　🐍 谓语（动作 / be、look）　☀ 宾语 / 表语</p>
-    <div class="stone"><div class="sent">${ch.map((c,i)=>`<div class="chunk" data-i="${i}"><span class="tag"></span>${c[0]}</div>`).join('')}<span style="align-self:center">.</span></div></div>
-    <div class="glyphs">${['S','V','O'].map(k=>`<div class="glyph" data-k="${k}">${ROLE[k][0]}</div>`).join('')}</div>
-    <div class="prog">${T.map((_,i)=>`<i class="${i<ti?'ok':''}"></i>`).join('')}</div><p id="tip" style="min-height:26px"></p></div>`);
-   say(id,'');let left=ch.length;
-   const tryDrop=(k,el)=>{if(!el||el.dataset.ok)return;const want=ch[+el.dataset.i][1];
-    if(want===k){el.dataset.ok=1;el.classList.add(want,'pop');el.querySelector('.tag').textContent=ROLE[want][0];sfx('ok');sparkle(el,10,['𓂀','✨','⭐']);left--;
-     if(left===0){panel.querySelector('#tip').innerHTML=ti===1?'✅ looks 是“看起来”，和 be 一样是<b>系动词</b>，后面的 scared 是<b>表语</b>':ti===2?'✅ are 是系动词 be，inside a pyramid 是表语':'✅ 太棒了！石板发出金光！';panel.querySelector('.stone').style.boxShadow='inset 0 0 0 6px #e9b949,0 0 40px #ffd66b';setTimeout(res,Q.get('fast')?500:1800);}}
-    else{el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');sfx('bad');panel.querySelector('#tip').textContent='这个符号不对哦，'+ch[+el.dataset.i][0]+' 回答的是“'+ROLE[want][2]+'”';}};
-   panel.querySelectorAll('.glyph').forEach(g=>{g.onpointerdown=e=>{e.preventDefault();const ghost=g.cloneNode(true);ghost.classList.add('drag');document.body.appendChild(ghost);
-    const mv=ev=>{ghost.style.left=ev.clientX+'px';ghost.style.top=ev.clientY+'px';};mv(e);
-    const up=ev=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up);ghost.remove();const el=document.elementFromPoint(ev.clientX,ev.clientY)?.closest('.chunk');tryDrop(g.dataset.k,el);};
-    addEventListener('pointermove',mv);addEventListener('pointerup',up);};});
-   window.__autoGlyph=()=>panel.querySelectorAll('.chunk').forEach((el,i)=>tryDrop(ch[i][1],el));
-  });
- }
- hidePanel();
-}
+ const T=[['g01',[['Biscuit','S'],['finds','V'],['an old sock','O']],'太棒了！石板发出金光！'],['g02',[['Mia','S'],['looks','L'],['scared','C']],'looks 是“看起来”，和 be 一样是<b>系动词</b>，scared 是<b>表语</b>'],['g03',[['They','S'],['are','L'],['inside a pyramid','C']],'are 是系动词 be，inside a pyramid 是表语'],['g04',[['Lily','S'],['reads','V'],['the wall','O']],'reads 是动作，the wall 是宾语'],['g05',[['I','S'],['have','V'],['a dream','O']],'I have a dream —— 主谓宾全齐！']];
+ for(let ti=0;ti<T.length;ti++){const [id,ch,tip]=T[ti];say(id,'');
+  await slotRound({title:`𓂀 象形文字拆句 · 石板 ${ti+1}/5`,desc:'石板裂成了几块！把它们拖回刻着象形符号的位置：',stone:true,prog:`<div class="prog">${T.map((_,i)=>`<i class="${i<ti?'ok':''}"></i>`).join('')}</div>`,sent:{id,chunks:ch,tip}});}
+ hidePanel();}
 let cardWord='brave';
 async function spellCard(){
  await new Promise(res=>{const adjs=[['brave','勇敢'],['happy','开心'],['curious','好奇'],['kind','善良'],['strong','强壮'],['smart','聪明'],['funny','有趣']];
@@ -160,4 +161,4 @@ async function ending(){
  showPanel(`<div class="card"><h2>🎉 第 1 集完成！</h2><p style="font-size:22px">⭐ 1 / 17　·　🗺️ 地图解锁：<b>金字塔</b></p><p>🧩 爷爷线索：门后刻着 <b>“C. C. was here – 1975”</b></p><p>📒 把你的“开门咒语卡”贴进冒险日志首页吧！</p><button class="btn big" id="again">🔁 再玩一次</button></div>`);
  panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
-$('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
+if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const j=Q.get('jump');showImg(j==='glyph'?'door':'sock');(j==='glyph'?glyphGame():catchGame());}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
