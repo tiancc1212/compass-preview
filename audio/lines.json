@@ -1,0 +1,816 @@
+{
+ "l01": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Leo holds the compass.",
+  "dur": 1.579,
+  "words": [
+   [
+    "Leo",
+    0.12,
+    0.33
+   ],
+   [
+    "holds",
+    0.33,
+    0.623
+   ],
+   [
+    "the",
+    0.623,
+    0.833
+   ],
+   [
+    "compass.",
+    0.833,
+    1.379
+   ]
+  ]
+ },
+ "l02": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "We go to Egypt!",
+  "dur": 1.429,
+  "words": [
+   [
+    "We",
+    0.12,
+    0.313
+   ],
+   [
+    "go",
+    0.313,
+    0.506
+   ],
+   [
+    "to",
+    0.506,
+    0.699
+   ],
+   [
+    "Egypt!",
+    0.699,
+    1.229
+   ]
+  ]
+ },
+ "l03": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "The needle spins.",
+  "dur": 1.28,
+  "words": [
+   [
+    "The",
+    0.12,
+    0.32
+   ],
+   [
+    "needle",
+    0.32,
+    0.64
+   ],
+   [
+    "spins.",
+    0.64,
+    1.08
+   ]
+  ]
+ },
+ "l04": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Suddenly, they are inside a pyramid.",
+  "dur": 2.091,
+  "words": [
+   [
+    "Suddenly,",
+    0.12,
+    0.626
+   ],
+   [
+    "they",
+    0.626,
+    0.843
+   ],
+   [
+    "are",
+    0.843,
+    1.023
+   ],
+   [
+    "inside",
+    1.023,
+    1.312
+   ],
+   [
+    "a",
+    1.312,
+    1.421
+   ],
+   [
+    "pyramid.",
+    1.421,
+    1.891
+   ]
+  ]
+ },
+ "l05": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "The walls are cold and dark.",
+  "dur": 1.749,
+  "words": [
+   [
+    "The",
+    0.12,
+    0.308
+   ],
+   [
+    "walls",
+    0.308,
+    0.571
+   ],
+   [
+    "are",
+    0.571,
+    0.759
+   ],
+   [
+    "cold",
+    0.759,
+    0.985
+   ],
+   [
+    "and",
+    0.985,
+    1.173
+   ],
+   [
+    "dark.",
+    1.173,
+    1.549
+   ]
+  ]
+ },
+ "l06": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Mia looks scared.",
+  "dur": 1.237,
+  "words": [
+   [
+    "Mia",
+    0.12,
+    0.311
+   ],
+   [
+    "looks",
+    0.311,
+    0.579
+   ],
+   [
+    "scared.",
+    0.579,
+    1.037
+   ]
+  ]
+ },
+ "l07": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "A stone door has words on it.",
+  "dur": 1.856,
+  "words": [
+   [
+    "A",
+    0.12,
+    0.235
+   ],
+   [
+    "stone",
+    0.235,
+    0.504
+   ],
+   [
+    "door",
+    0.504,
+    0.734
+   ],
+   [
+    "has",
+    0.734,
+    0.926
+   ],
+   [
+    "words",
+    0.926,
+    1.195
+   ],
+   [
+    "on",
+    1.195,
+    1.349
+   ],
+   [
+    "it.",
+    1.349,
+    1.656
+   ]
+  ]
+ },
+ "l08": {
+  "who": "lily",
+  "voice": "bf_lily",
+  "text": "Speak a full sentence.",
+  "dur": 1.685,
+  "words": [
+   [
+    "Speak",
+    0.12,
+    0.439
+   ],
+   [
+    "a",
+    0.439,
+    0.575
+   ],
+   [
+    "full",
+    0.575,
+    0.848
+   ],
+   [
+    "sentence.",
+    0.848,
+    1.485
+   ]
+  ]
+ },
+ "l09": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Lily reads the wall.",
+  "dur": 1.429,
+  "words": [
+   [
+    "Lily",
+    0.12,
+    0.358
+   ],
+   [
+    "reads",
+    0.358,
+    0.635
+   ],
+   [
+    "the",
+    0.635,
+    0.833
+   ],
+   [
+    "wall.",
+    0.833,
+    1.229
+   ]
+  ]
+ },
+ "l10": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Biscuit finds an old sock.",
+  "dur": 1.749,
+  "words": [
+   [
+    "Biscuit",
+    0.12,
+    0.488
+   ],
+   [
+    "finds",
+    0.488,
+    0.773
+   ],
+   [
+    "an",
+    0.773,
+    0.937
+   ],
+   [
+    "old",
+    0.937,
+    1.141
+   ],
+   [
+    "sock.",
+    1.141,
+    1.549
+   ]
+  ]
+ },
+ "l11": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "This sock is very old!",
+  "dur": 1.856,
+  "words": [
+   [
+    "This",
+    0.12,
+    0.417
+   ],
+   [
+    "sock",
+    0.417,
+    0.715
+   ],
+   [
+    "is",
+    0.715,
+    0.913
+   ],
+   [
+    "very",
+    0.913,
+    1.21
+   ],
+   [
+    "old!",
+    1.21,
+    1.656
+   ]
+  ]
+ },
+ "l12": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "says Leo.",
+  "dur": 1.024,
+  "words": [
+   [
+    "says",
+    0.12,
+    0.402
+   ],
+   [
+    "Leo.",
+    0.402,
+    0.824
+   ]
+  ]
+ },
+ "l13": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "The door opens slowly.",
+  "dur": 1.557,
+  "words": [
+   [
+    "The",
+    0.12,
+    0.326
+   ],
+   [
+    "door",
+    0.326,
+    0.574
+   ],
+   [
+    "opens",
+    0.574,
+    0.862
+   ],
+   [
+    "slowly.",
+    0.862,
+    1.357
+   ]
+  ]
+ },
+ "h01": {
+  "who": "grandpa",
+  "voice": "bm_george",
+  "text": "I have a dream.",
+  "dur": 1.408,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.262
+   ],
+   [
+    "have",
+    0.262,
+    0.546
+   ],
+   [
+    "a",
+    0.546,
+    0.688
+   ],
+   [
+    "dream.",
+    0.688,
+    1.208
+   ]
+  ]
+ },
+ "g01": {
+  "who": "sam",
+  "voice": "bm_lewis",
+  "text": "Biscuit finds an old sock.",
+  "dur": 1.6,
+  "words": [
+   [
+    "Biscuit",
+    0.12,
+    0.449
+   ],
+   [
+    "finds",
+    0.449,
+    0.705
+   ],
+   [
+    "an",
+    0.705,
+    0.851
+   ],
+   [
+    "old",
+    0.851,
+    1.034
+   ],
+   [
+    "sock.",
+    1.034,
+    1.4
+   ]
+  ]
+ },
+ "g02": {
+  "who": "mia",
+  "voice": "bf_alice",
+  "text": "Mia looks scared.",
+  "dur": 1.387,
+  "words": [
+   [
+    "Mia",
+    0.12,
+    0.342
+   ],
+   [
+    "looks",
+    0.342,
+    0.653
+   ],
+   [
+    "scared.",
+    0.653,
+    1.187
+   ]
+  ]
+ },
+ "g03": {
+  "who": "lily",
+  "voice": "bf_lily",
+  "text": "They are inside a pyramid.",
+  "dur": 1.941,
+  "words": [
+   [
+    "They",
+    0.12,
+    0.398
+   ],
+   [
+    "are",
+    0.398,
+    0.63
+   ],
+   [
+    "inside",
+    0.63,
+    1.0
+   ],
+   [
+    "a",
+    1.0,
+    1.139
+   ],
+   [
+    "pyramid.",
+    1.139,
+    1.741
+   ]
+  ]
+ },
+ "g04": {
+  "who": "sam",
+  "voice": "bm_lewis",
+  "text": "Lily reads the wall.",
+  "dur": 1.344,
+  "words": [
+   [
+    "Lily",
+    0.12,
+    0.339
+   ],
+   [
+    "reads",
+    0.339,
+    0.595
+   ],
+   [
+    "the",
+    0.595,
+    0.778
+   ],
+   [
+    "wall.",
+    0.778,
+    1.144
+   ]
+  ]
+ },
+ "g05": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I have a dream.",
+  "dur": 1.557,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.281
+   ],
+   [
+    "have",
+    0.281,
+    0.604
+   ],
+   [
+    "a",
+    0.604,
+    0.766
+   ],
+   [
+    "dream.",
+    0.766,
+    1.357
+   ]
+  ]
+ },
+ "c02": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "Behind the door, someone carved: C. C. was here, 1975.",
+  "dur": 4.629,
+  "words": [
+   [
+    "Behind",
+    0.12,
+    0.535
+   ],
+   [
+    "the",
+    0.535,
+    0.795
+   ],
+   [
+    "door,",
+    0.795,
+    1.314
+   ],
+   [
+    "someone",
+    1.314,
+    1.781
+   ],
+   [
+    "carved:",
+    1.781,
+    2.404
+   ],
+   [
+    "C.",
+    2.404,
+    2.768
+   ],
+   [
+    "C.",
+    2.768,
+    3.131
+   ],
+   [
+    "was",
+    3.131,
+    3.391
+   ],
+   [
+    "here,",
+    3.391,
+    3.91
+   ],
+   [
+    "1975.",
+    3.91,
+    4.429
+   ]
+  ]
+ },
+ "card_brave": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am brave.",
+  "dur": 1.237,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.273
+   ],
+   [
+    "am",
+    0.273,
+    0.477
+   ],
+   [
+    "brave.",
+    0.477,
+    1.037
+   ]
+  ]
+ },
+ "card_happy": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am happy.",
+  "dur": 1.301,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.284
+   ],
+   [
+    "am",
+    0.284,
+    0.502
+   ],
+   [
+    "happy.",
+    0.502,
+    1.101
+   ]
+  ]
+ },
+ "card_curious": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am curious.",
+  "dur": 1.536,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.302
+   ],
+   [
+    "am",
+    0.302,
+    0.546
+   ],
+   [
+    "curious.",
+    0.546,
+    1.336
+   ]
+  ]
+ },
+ "card_kind": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am kind.",
+  "dur": 1.408,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.312
+   ],
+   [
+    "am",
+    0.312,
+    0.568
+   ],
+   [
+    "kind.",
+    0.568,
+    1.208
+   ]
+  ]
+ },
+ "card_strong": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am strong.",
+  "dur": 1.451,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.299
+   ],
+   [
+    "am",
+    0.299,
+    0.537
+   ],
+   [
+    "strong.",
+    0.537,
+    1.251
+   ]
+  ]
+ },
+ "card_smart": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am smart.",
+  "dur": 1.28,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.28
+   ],
+   [
+    "am",
+    0.28,
+    0.493
+   ],
+   [
+    "smart.",
+    0.493,
+    1.08
+   ]
+  ]
+ },
+ "card_funny": {
+  "who": "leo",
+  "voice": "bm_fable",
+  "text": "I am funny.",
+  "dur": 1.344,
+  "words": [
+   [
+    "I",
+    0.12,
+    0.291
+   ],
+   [
+    "am",
+    0.291,
+    0.518
+   ],
+   [
+    "funny.",
+    0.518,
+    1.144
+   ]
+  ]
+ },
+ "star": {
+  "who": "narrator",
+  "voice": "bf_emma",
+  "text": "The first star is home!",
+  "dur": 1.493,
+  "words": [
+   [
+    "The",
+    0.12,
+    0.303
+   ],
+   [
+    "first",
+    0.303,
+    0.56
+   ],
+   [
+    "star",
+    0.56,
+    0.78
+   ],
+   [
+    "is",
+    0.78,
+    0.927
+   ],
+   [
+    "home!",
+    0.927,
+    1.293
+   ]
+  ]
+ }
+}
