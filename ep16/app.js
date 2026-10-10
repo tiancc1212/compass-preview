@@ -17,50 +17,78 @@ function sfx(type){if(muted)return;try{const a=ac(),t=a.currentTime;const g=a.cr
  else if(type==='star'){[0,.08,.16,.24,.32].forEach((s,i)=>tone(880*Math.pow(1.26,i),s,.5,'sine',.12));}
  else if(type==='flip'){tone(500,0,.12,'square',.05);tone(700,.1,.12,'square',.05);}
 }catch(e){}}
-// ---------- voice player: speed + pause (shared by all episodes) ----------
+// ---------- voice player + story reader (manual paging / auto read / mute-safe) — shared by all episodes ----------
 const RATES=[0.75,1,1.25];let RATE=+(localStorage.getItem('cc_rate')||1);if(!RATES.includes(RATE))RATE=1;
-let paused=false,resumeWaiters=[];
 function voice(src){const a=new Audio(src);a.playbackRate=RATE;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;return a;}
-const waitResume=()=>paused?new Promise(r=>resumeWaiters.push(r)):Promise.resolve();
-function setPaused(p){paused=p;const b=$('#pause');if(b){b.textContent=p?'▶ 继续':'⏸ 暂停';b.classList.toggle('on',p);b.setAttribute('aria-pressed',p);}
- if(curAudio){if(p)curAudio.pause();else if(!curAudio.ended&&!muted)curAudio.play().catch(()=>{});}
- if(!p){const w=resumeWaiters;resumeWaiters=[];w.forEach(f=>f());}}
 function setRate(r){RATE=r;localStorage.setItem('cc_rate',r);if(curAudio)curAudio.playbackRate=r;const b=$('#rate');if(b)b.textContent='🐢 '+r+'x';}
-async function say(id,zh=''){
- const L=LINES[id];if(!L)return;
- await waitResume();
- curLine={id,zh};
- const sub=$('#sub');sub.style.display='block';document.body.classList.add('playing');
+const HL=[];window.__hl=HL;   // debug log: [lineId, wordIndex, audioTime]
+// playLine: show subtitle, play audio once, highlight strictly from audio clock. timed=true -> when muted / no audio, run a virtual clock at RATE.
+// returns stop(); calls onEnd() when the line finishes (never when stopped).
+let stopCur=null;
+function playLine(id,zh,{timed=true,onEnd}={}){
+ if(stopCur)stopCur();const L=LINES[id];if(!L){onEnd&&setTimeout(onEnd,0);return ()=>{};}
+ curLine={id,zh};const sub=$('#sub');sub.style.display='block';
  $('#who').textContent=WHO[L.who][0];$('#who').style.background=WHO[L.who][1];
- $('#line').innerHTML=L.words.map(w=>`<span>${w[0]}</span>`).join(' ');$('#zh').textContent=zh;
- const spans=[...$('#line').children];
- if(curAudio){curAudio.pause();curAudio=null;}
- console.log('AUDIO',id,Date.now());
- return new Promise(res=>{
-  let vt=0,last=performance.now(),au=null,finished=false;   // vt = virtual clock in audio seconds (used when muted / audio fails)
-  if(!muted){au=voice('audio/'+id+'.mp3');curAudio=au;if(!paused)au.play().catch(()=>{});}
-  const done=()=>{if(finished)return;finished=true;spans.forEach(s=>{s.classList.remove('on');s.classList.add('done');});
-   setTimeout(async()=>{await waitResume();document.body.classList.remove('playing');res();},380);};
-  skipFlag=()=>{if(au)au.pause();if(paused)setPaused(false);done();};
-  const tick=()=>{if(finished)return;const now=performance.now();if(!paused)vt+=(now-last)/1000*RATE;last=now;
-   const t=au&&au.currentTime>0?au.currentTime:vt;
-   L.words.forEach((w,i)=>{spans[i].classList.toggle('on',t>=w[1]&&t<w[2]);spans[i].classList.toggle('done',t>=w[2]);});
-   if((au&&au.ended)||(!(au&&au.currentTime>0)&&vt>=L.dur+0.05)||(au&&au.currentTime>=L.dur+0.3))done();else requestAnimationFrame(tick);};
-  requestAnimationFrame(tick);
- });
-}
-$('#pause').onclick=()=>setPaused(!paused);
+ $('#line').innerHTML=L.words.map(w=>`<span>${w[0]}</span>`).join(' ');$('#zh').textContent=zh||'';
+ const spans=[...$('#line').children];let stopped=false,raf=0,au=null,last=-2,vt=null,prev=0;
+ const paint=t=>{let k=-1;for(let i=0;i<L.words.length;i++)if(t>=L.words[i][1])k=i;   // last word whose start has passed; -1 before speech
+  if(k!==last){last=k;spans.forEach((s,i)=>{s.classList.toggle('on',i===k);s.classList.toggle('done',i<k);});HL.push([id,k,+t.toFixed(3)]);if(HL.length>400)HL.shift();}};
+ const finish=()=>{if(stopped)return;stopped=true;cancelAnimationFrame(raf);spans.forEach(s=>{s.classList.remove('on');s.classList.add('done');});document.body.classList.remove('playing');onEnd&&onEnd();};
+ const tickAudio=()=>{if(stopped)return;paint(au.currentTime);raf=requestAnimationFrame(tickAudio);};
+ const tickVirtual=()=>{if(stopped)return;const now=performance.now();vt+=(now-prev)/1000*RATE;prev=now;paint(vt);if(vt>=L.dur+0.15)return finish();raf=requestAnimationFrame(tickVirtual);};
+ const startVirtual=()=>{if(stopped||vt!==null)return;if(!timed){spans.forEach(s=>s.classList.add('all'));return;}vt=0;prev=performance.now();document.body.classList.add('playing');raf=requestAnimationFrame(tickVirtual);};
+ if(!muted){au=voice('audio/'+id+'.mp3');curAudio=au;document.body.classList.add('playing');
+  au.addEventListener('playing',()=>{if(!stopped&&vt===null){cancelAnimationFrame(raf);raf=requestAnimationFrame(tickAudio);}},{once:true});
+  au.addEventListener('ended',()=>{if(vt===null)finish();});
+  au.addEventListener('error',()=>{au=null;startVirtual();});
+  au.play().catch(()=>{if(!stopped){au=null;startVirtual();}});}
+ else startVirtual();
+ const stop=()=>{if(stopped)return;stopped=true;cancelAnimationFrame(raf);if(au){au.pause();}document.body.classList.remove('playing');if(stopCur===stop)stopCur=null;};
+ stopCur=stop;return stop;}
+// one-off line (ending / cards): always advances, even when muted
+function say(id,zh=''){return new Promise(res=>{playLine(id,zh,{timed:true,onEnd:()=>setTimeout(res,300)});});}
+// ---- story sections ----
+// item: {id, zh, img?, overlay?, fx?}
+let RD=null;           // active reader state
+let lastSection=null;  // most recent story section (for 重看上一节)
+let autoMode=false;   // default: manual paging
+function setAuto(on){autoMode=on;const b=$('#auto');if(b){b.textContent=on?'⏸ 停止自动':'▶ 自动播放';b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);}
+ if(RD&&on&&!document.body.classList.contains('playing'))RD.go(RD.i,true);}
+function readSection(items,{start=0,review=false}={}){return new Promise(res=>{
+ if(!review){hidePanel();lastSection=items;document.body.classList.add('hasreview');}document.body.classList.add('reading');document.body.classList.toggle('reviewing',review);
+ const R={items,i:-1};RD=R;
+ const end=()=>{if(stopCur)stopCur();RD=null;document.body.classList.remove('reading','reviewing','lastline');$('#sub').style.display='none';res();};
+ R.go=(i,replay=false)=>{if(i<0)i=0;if(i>=items.length)return end();const it=items[i];const changed=i!==R.i;R.i=i;
+  if(it.img&&(changed||replay))showImg(it.img,it.overlay||'');if(it.fx&&changed)sfx(it.fx);
+  document.body.classList.toggle('lastline',i===items.length-1);$('#lpos').textContent=(i+1)+' / '+items.length;
+  playLine(it.id,it.zh,{timed:autoMode,onEnd:()=>{if(autoMode&&RD===R)setTimeout(()=>{if(autoMode&&RD===R&&R.i===i)R.go(i+1);},350);}});};
+ R.next=()=>R.go(R.i+1);R.prev=()=>R.go(R.i-1);R.end=end;
+ R.go(start);});}
+const userNav=f=>{if(!RD)return;if(autoMode)setAuto(false);f();};
+window.__next=()=>RD&&RD.next();window.__prev=()=>RD&&RD.prev();window.__reading=()=>!!RD;
+$('#lprev').onclick=()=>userNav(()=>RD.prev());$('#lnext').onclick=()=>userNav(()=>RD.next());
+addEventListener('keydown',e=>{if(!RD||e.target.closest('input,textarea'))return;if(e.key==='ArrowRight'){e.preventDefault();userNav(()=>RD.next());}else if(e.key==='ArrowLeft'){e.preventDefault();userNav(()=>RD.prev());}});
+{let sx=null,sy=0,st=0;   // swipe only while a story section is on screen (no panel/exercise visible)
+ addEventListener('touchstart',e=>{if(!RD||e.touches.length!==1||e.target.closest('#hud,button'))return sx=null;sx=e.touches[0].clientX;sy=e.touches[0].clientY;st=Date.now();},{passive:true});
+ addEventListener('touchend',e=>{if(sx===null||!RD)return;const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;sx=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5&&Date.now()-st<800)userNav(()=>dx<0?RD.next():RD.prev());},{passive:true});}
+$('#auto').onclick=()=>setAuto(!autoMode);setAuto(autoMode);
 $('#rate').onclick=()=>setRate(RATES[(RATES.indexOf(RATE)+1)%RATES.length]);setRate(RATE);
-$('#mute').onclick=()=>{muted=!muted;$('#mute').textContent=muted?'🔇 已静音':'🔊 声音开';if(muted&&curAudio)curAudio.pause();};
-$('#replay').onclick=()=>{if(curLine){const a=voice('audio/'+curLine.id+'.mp3');if(!muted)a.play();}};
-$('#next').onclick=()=>{if(skipFlag)skipFlag();};
-window.__pause=setPaused;window.__rate=()=>RATE;
+$('#mute').onclick=()=>{muted=!muted;$('#mute').textContent=muted?'🔇 已静音':'🔊 声音开';if(curAudio)curAudio.pause();if(RD)RD.go(RD.i);};
+$('#replay').onclick=()=>{if(RD)RD.go(RD.i);else if(curLine&&!muted){const a=voice('audio/'+curLine.id+'.mp3');curAudio=a;a.play().catch(()=>{});}};
+// ---- 重看上一节: leave the current activity untouched, re-read the last story section, then come back ----
+async function reviewSection(){if(!lastSection||RD)return;const pn=$('#panel');const keep=document.createDocumentFragment();while(pn.firstChild)keep.appendChild(pn.firstChild);
+ const disp=pn.style.display,img=curImg,ov=curOverlay;pn.style.display='none';if(curAudio)curAudio.pause();document.body.classList.add('inreview');
+ await readSection(lastSection,{review:true});
+ document.body.classList.remove('inreview');pn.appendChild(keep);pn.style.display=disp||'flex';curImg=null;if(img)showImg(img,ov);}
+$('#review').onclick=reviewSection;$('#backex').onclick=()=>{if(RD)RD.end();};
+window.__review=reviewSection;window.__rate=()=>RATE;
+
 
 // ---------- particles ----------
 function sparkle(el,n=14,chars=['✨','⭐','💛','✦']){if(RM)return;const r=el.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement('div');s.className='spark';s.textContent=chars[i%chars.length];
  s.style.left=(r.left+r.width/2)+'px';s.style.top=(r.top+r.height/2)+'px';const a=Math.random()*Math.PI*2,d=60+Math.random()*90;s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950);}}
 // ---------- panel helpers ----------
-const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;panel.style.display='flex';$('#sub').style.display='none';};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';};
+const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;panel.style.display='flex';$('#sub').style.display='none';document.body.classList.add('inpanel');};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';document.body.classList.remove('inpanel');};
 
 // Catch-the-grammar (tap tool then tap chunk)
 // ---------- generic drag-into-slot game (boxes or inline blanks) ----------
@@ -139,8 +167,8 @@ function stepCard({title,desc,steps,tip}){return new Promise(res=>{let i=0;
   const api={tip:h=>{tipEl.innerHTML=h;},bad:(h,el)=>{sfx('bad');tipEl.innerHTML='<span class="no">再想想：</span>'+h;if(el&&!RM){el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');}},
    ok:(h,au)=>{sfx('ok');body.classList.add('solved');tipEl.innerHTML='✅ '+(h||'');reward(au);i++;draw();AUTO=null;
     const last=i>=steps.length;if(last&&tip)tipEl.innerHTML+=`<div class="sum">${tip}</div>`;
-    if(Q.get('fast')){setTimeout(()=>last?res():go(),250);return;}
-    const nb=document.createElement('button');nb.className='btn big';nb.textContent=last?'继续 ➜':'下一题 ➜';nb.onclick=()=>last?res():go();nw.appendChild(nb);nb.focus({preventScroll:true});}};
+    if(Q.get('fast')){setTimeout(()=>last?(hidePanel(),res()):go(),250);return;}
+    const nb=document.createElement('button');nb.className='btn big';nb.textContent=last?'继续 ➜':'下一题 ➜';nb.onclick=()=>last?(hidePanel(),res()):go();nw.appendChild(nb);nb.focus({preventScroll:true});}};
   s.mount(body,api);window.__auto=()=>AUTO&&AUTO();};
  go();});}
 
@@ -293,8 +321,8 @@ async function spellCard(){
 // ---------- illustrations ----------
 
 const IMG={gate:['illus/01_fair_gate.jpg','招聘会大门 · 紫色怪兽举着牌子'],crew:['illus/02_crew_excited.jpg','冒险队来到招聘会 · Sam 很激动'],rules:['illus/03_rules_board.jpg','Lily 读规则板'],sniff:['illus/04_biscuit_sniff.jpg','Biscuit 停下来闻，找到丢失的袜子'],job:['illus/05_got_the_job.jpg','怪兽大笑 · Biscuit 被录取']};
-let curImg=null;
-function showImg(key,overlay=''){if(curImg===key&&!overlay)return;curImg=key;const st=$('#stage');const [src,label]=IMG[key];
+let curImg=null,curOverlay='';
+function showImg(key,overlay=''){if(curImg===key&&overlay===curOverlay)return;curImg=key;curOverlay=overlay;const st=$('#stage');const [src,label]=IMG[key];
  const lay=document.createElement('div');lay.className='layer';
  lay.innerHTML=`<img alt="${label}"><div class="ph"><div>🖼️ 插图待生成</div><b>${label}</b><small>${src}</small></div>${overlay}`;
  const im=lay.querySelector('img');im.onload=()=>lay.classList.add('loaded');im.onerror=()=>lay.classList.add('missing');im.src=src;
@@ -318,17 +346,13 @@ function loop(){const t=clock.getElapsedTime();if(!RM){rig.rotation.y=Math.sin(t
 LINES=await (await fetch('audio/lines.json')).json();
 $('#loading').style.display='none';showImg('gate');requestAnimationFrame(loop);window.__ready=true;
 const homeOn=on=>{$('#home').style.display=on?'flex':'none';$('#c').style.display=on?'block':'none';};
+const SEC={S1:[{id:"l01",zh:"罗盘把冒险队带到了热闹的怪兽招聘会。",img:"gate"},{id:"l02",zh:"一只高高的紫色怪兽站在门口，举着一块大牌子。",img:"gate"},{id:"l03",zh:"“欢迎！我需要一个帮手来看守我的袜子。”",img:"gate"},{id:"l04",zh:"“我们来这里是为了给 Biscuit 找份工作！”",img:"crew"},{id:"l05",zh:"“可是 Biscuit 太小了，什么也看守不了。”",img:"crew"},{id:"l06",zh:"“这个招聘会太让人激动了，我好激动！”",img:"crew"}],S2:[{id:"l07",zh:"“等等，让我先看看规则。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"},{id:"l08",zh:"“规则一：禁止吠叫。规则二：记得微笑。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"}],S3:[{id:"l09",zh:"Biscuit 不叫了，摇起了尾巴。",img:"sniff"},{id:"l10",zh:"“给我看看你怎么干这份活，小狗。”",img:"sniff"},{id:"l11",zh:"Biscuit 停下来闻了闻空气，然后在桌子下面找到了一只丢失的袜子。",img:"sniff"}],S4:[{id:"l12",zh:"“找袜子是它最爱的爱好！”",img:"job"},{id:"l13",zh:"“哈！你把我逗笑了。这份工作归你了！”",img:"job"},{id:"l14",zh:"Leo 永远忘不了看到 Biscuit 得到第一份工作的那一刻。",img:"job"}]};
 async function story(){
  homeOn(false);$('#start').style.display='none';
- showImg('gate');await say('l01','罗盘把冒险队带到了热闹的怪兽招聘会。');await say('l02','一只高高的紫色怪兽站在门口，举着一块大牌子。');await say('l03','“欢迎！我需要一个帮手来看守我的袜子。”');
- showImg('crew');await say('l04','“我们来这里是为了给 Biscuit 找份工作！”');await say('l05','“可是 Biscuit 太小了，什么也看守不了。”');await say('l06','“这个招聘会太让人激动了，我好激动！”');
- $('#sub').style.display='none';await gameForms();await gameFeel();
- showImg('rules','<div class="carve">No barking! · Remember to smile.</div>');await say('l07','“等等，让我先看看规则。”');await say('l08','“规则一：禁止吠叫。规则二：记得微笑。”');
- $('#sub').style.display='none';await gameVerbs();
- showImg('sniff');await say('l09','Biscuit 不叫了，摇起了尾巴。');await say('l10','“给我看看你怎么干这份活，小狗。”');await say('l11','Biscuit 停下来闻了闻空气，然后在桌子下面找到了一只丢失的袜子。');
- $('#sub').style.display='none';await gameMeaning();
- showImg('job');await say('l12','“找袜子是它最爱的爱好！”');await say('l13','“哈！你把我逗笑了。这份工作归你了！”');await say('l14','Leo 永远忘不了看到 Biscuit 得到第一份工作的那一刻。');
- $('#sub').style.display='none';await gameTo();await gameSubject();await gameAttr();await gameTF();await mapCard();await spellCard();await ending();
+ await readSection(SEC.S1);await gameForms();await gameFeel();
+ await readSection(SEC.S2);await gameVerbs();
+ await readSection(SEC.S3);await gameMeaning();
+ await readSection(SEC.S4);await gameTo();await gameSubject();await gameAttr();await gameTF();await mapCard();await spellCard();await ending();
 }
 async function ending(){
  const fr=panel.querySelector('.flipwrap')?.getBoundingClientRect()||{left:innerWidth/2,top:innerHeight/2,width:0,height:0};hidePanel();$('#sub').style.display='none';
@@ -343,4 +367,4 @@ async function ending(){
  panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
 const JUMP={forms:[gameForms,'crew'],feel:[gameFeel,'crew'],verbs:[gameVerbs,'rules'],meaning:[gameMeaning,'sniff'],to:[gameTo,'job'],subject:[gameSubject,'job'],attr:[gameAttr,'job'],tf:[gameTF,'job'],map:[mapCard,'job'],card:[spellCard,'job']};
-if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const [f,img]=JUMP[Q.get('jump')];showImg(img);f().then(()=>{if(Q.get('jump')==='card')ending();});}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
+if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const [f,img]=JUMP[Q.get('jump')];lastSection=SEC[{forms:'S1',feel:'S1',verbs:'S2',meaning:'S3'}[Q.get('jump')]||'S4'];document.body.classList.add('hasreview');showImg(img);f().then(()=>{if(Q.get('jump')==='card')ending();});}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();

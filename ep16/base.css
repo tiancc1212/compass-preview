@@ -192,3 +192,25 @@ body.playing #pause,#pause.on{display:inline-flex;align-items:center}
  .match{gap:10px 26px;grid-template-columns:1.3fr 1fr}.mitem{font-size:15px;padding:6px 8px}.mitem small{font-size:11px}.mtarget{font-size:17px;padding:6px 8px}.mtarget .badge{width:26px;height:26px}
  .esent{font-size:20px}.tfs{font-size:22px}.tin{font-size:20px}.wt{font-size:18px;padding:5px 10px}
 }
+
+/* ===== reader: manual paging / auto / review (2026-10-11) ===== */
+#pause{display:none!important}
+#auto{min-height:44px}#auto.on{background:#ff8c6a;color:#fff}
+#review,#backex{display:none;min-height:44px}
+body.hasreview.inpanel:not(.reading) #review{display:inline-flex;align-items:center}
+body.reviewing #backex{display:inline-flex;align-items:center;background:#ffd66b}
+#auto{display:none}body.reading #auto{display:inline-flex;align-items:center}
+#lpos{float:right;font-size:13px;color:#a0764a;font-weight:700}
+#lnav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+#lnav .btn{min-height:44px;font-size:16px}.lhint{font-size:12px;color:#a0764a;text-align:center}
+body.lastline:not(.reviewing) #lnext{background:linear-gradient(#ffd66b,#f5a623)}
+body.lastline:not(.reviewing) #lnext::after{content:' · 去闯关'}
+body.lastline.reviewing #lnext::after{content:' · 回练习'}
+#line span.all{color:#3a2410}
+#sub{touch-action:pan-y}
+@media (max-width:640px){#lnav .btn{font-size:15px;padding:8px 12px}.lhint{font-size:11px}
+ #hud{flex-wrap:wrap}#review,#backex{position:fixed;left:12px;bottom:calc(env(safe-area-inset-bottom) + 12px);z-index:30;box-shadow:0 4px 12px rgba(0,0,0,.3)}}
+body:not(.reading) #lnav,body:not(.reading) #lpos{display:none}
+body.inpanel #hud{z-index:9}
+@media (max-width:640px){#lnav .btn{white-space:nowrap;font-size:14px;padding:8px 10px}.lhint{flex:1;line-height:1.2}
+ #backex{bottom:auto!important;top:104px}}
