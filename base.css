@@ -102,3 +102,10 @@
 .flipwrap{width:min(420px,100%)!important}
 .card .sent{margin-top:34px}
 @media (max-width:560px){.flipwrap{height:230px!important}.face .sent{font-size:22px!important}.adj{gap:6px}.adj .btn{font-size:15px;padding:6px 12px}}
+
+/* speed + pause */
+#pause,#rate{min-height:44px;min-width:44px}
+#pause{display:none;background:#ffd66b;border-color:#c8902f;font-weight:900}
+body.playing #pause,#pause.on{display:inline-flex;align-items:center}
+#pause.on{background:#ff8c6a;color:#fff;animation:none}
+@media (max-width:640px){#pause{position:fixed;right:12px;bottom:calc(env(safe-area-inset-bottom) + 170px);z-index:30;font-size:20px!important;padding:12px 22px!important;min-height:52px;box-shadow:0 4px 12px rgba(0,0,0,.3)}}

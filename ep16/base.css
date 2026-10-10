@@ -128,3 +128,10 @@
 @media (max-width:640px){.slots.boxes.n4{grid-template-columns:1fr}.slots.boxes .slot{flex-direction:column;align-items:stretch}.bsent{font-size:19px}.bslot{min-width:110px;min-height:48px}.kgrid{grid-template-columns:1fr}.kgrid ul{font-size:14px}}
 @media (max-width:640px){.dcard:has(.boxes) .dchunk{font-size:17px;min-height:44px;padding:4px 12px}.dcard:has(.boxes) .bank{gap:8px}.dcard:has(.boxes) .bankwrap{padding:8px}
  .slots.boxes .slot{min-height:64px;padding:4px 8px;gap:2px}.slots.boxes .slab .badge{width:30px;height:30px}.slots.boxes .slot:has(.slab:only-child) {} }
+
+/* speed + pause */
+#pause,#rate{min-height:44px;min-width:44px}
+#pause{display:none;background:#ffd66b;border-color:#c8902f;font-weight:900}
+body.playing #pause,#pause.on{display:inline-flex;align-items:center}
+#pause.on{background:#ff8c6a;color:#fff;animation:none}
+@media (max-width:640px){#pause{position:fixed;right:12px;bottom:calc(env(safe-area-inset-bottom) + 170px);z-index:30;font-size:20px!important;padding:12px 22px!important;min-height:52px;box-shadow:0 4px 12px rgba(0,0,0,.3)}}

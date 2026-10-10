@@ -18,29 +18,45 @@ function sfx(type){if(muted)return;try{const a=ac(),t=a.currentTime;const g=a.cr
  else if(type==='star'){[0,.08,.16,.24,.32].forEach((s,i)=>tone(880*Math.pow(1.26,i),s,.5,'sine',.12));}
  else if(type==='flip'){tone(500,0,.12,'square',.05);tone(700,.1,.12,'square',.05);}
 }catch(e){}}
-function say(id,zh=''){
- const L=LINES[id];if(!L)return Promise.resolve();
+// ---------- voice player: speed + pause (shared by all episodes) ----------
+const RATES=[0.75,1,1.25];let RATE=+(localStorage.getItem('cc_rate')||1);if(!RATES.includes(RATE))RATE=1;
+let paused=false,resumeWaiters=[];
+function voice(src){const a=new Audio(src);a.playbackRate=RATE;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;return a;}
+const waitResume=()=>paused?new Promise(r=>resumeWaiters.push(r)):Promise.resolve();
+function setPaused(p){paused=p;const b=$('#pause');if(b){b.textContent=p?'▶ 继续':'⏸ 暂停';b.classList.toggle('on',p);b.setAttribute('aria-pressed',p);}
+ if(curAudio){if(p)curAudio.pause();else if(!curAudio.ended&&!muted)curAudio.play().catch(()=>{});}
+ if(!p){const w=resumeWaiters;resumeWaiters=[];w.forEach(f=>f());}}
+function setRate(r){RATE=r;localStorage.setItem('cc_rate',r);if(curAudio)curAudio.playbackRate=r;const b=$('#rate');if(b)b.textContent='🐢 '+r+'x';}
+async function say(id,zh=''){
+ const L=LINES[id];if(!L)return;
+ await waitResume();
  curLine={id,zh};
- const sub=$('#sub');sub.style.display='block';
+ const sub=$('#sub');sub.style.display='block';document.body.classList.add('playing');
  $('#who').textContent=WHO[L.who][0];$('#who').style.background=WHO[L.who][1];
  $('#line').innerHTML=L.words.map(w=>`<span>${w[0]}</span>`).join(' ');$('#zh').textContent=zh;
  const spans=[...$('#line').children];
  if(curAudio){curAudio.pause();curAudio=null;}
  console.log('AUDIO',id,Date.now());
  return new Promise(res=>{
-  const t0=performance.now();let au=null,finished=false;
-  if(!muted){au=new Audio('audio/'+id+'.mp3');curAudio=au;au.play().catch(()=>{});}
-  const done=()=>{if(finished)return;finished=true;spans.forEach(s=>{s.classList.remove('on');s.classList.add('done');});setTimeout(res,380);};
-  skipFlag=()=>{if(au)au.pause();done();};
-  const tick=()=>{if(finished)return;const t=au&&!au.paused&&au.currentTime>0?au.currentTime:(performance.now()-t0)/1000;
+  let vt=0,last=performance.now(),au=null,finished=false;   // vt = virtual clock in audio seconds (used when muted / audio fails)
+  if(!muted){au=voice('audio/'+id+'.mp3');curAudio=au;if(!paused)au.play().catch(()=>{});}
+  const done=()=>{if(finished)return;finished=true;spans.forEach(s=>{s.classList.remove('on');s.classList.add('done');});
+   setTimeout(async()=>{await waitResume();document.body.classList.remove('playing');res();},380);};
+  skipFlag=()=>{if(au)au.pause();if(paused)setPaused(false);done();};
+  const tick=()=>{if(finished)return;const now=performance.now();if(!paused)vt+=(now-last)/1000*RATE;last=now;
+   const t=au&&au.currentTime>0?au.currentTime:vt;
    L.words.forEach((w,i)=>{spans[i].classList.toggle('on',t>=w[1]&&t<w[2]);spans[i].classList.toggle('done',t>=w[2]);});
-   if(t>=L.dur+0.05||(au&&au.ended))done();else requestAnimationFrame(tick);};
+   if((au&&au.ended)||(!(au&&au.currentTime>0)&&vt>=L.dur+0.05)||(au&&au.currentTime>=L.dur+0.3))done();else requestAnimationFrame(tick);};
   requestAnimationFrame(tick);
  });
 }
+$('#pause').onclick=()=>setPaused(!paused);
+$('#rate').onclick=()=>setRate(RATES[(RATES.indexOf(RATE)+1)%RATES.length]);setRate(RATE);
 $('#mute').onclick=()=>{muted=!muted;$('#mute').textContent=muted?'🔇 已静音':'🔊 声音开';if(muted&&curAudio)curAudio.pause();};
-$('#replay').onclick=()=>{if(curLine){const a=new Audio('audio/'+curLine.id+'.mp3');if(!muted)a.play();}};
+$('#replay').onclick=()=>{if(curLine){const a=voice('audio/'+curLine.id+'.mp3');if(!muted)a.play();}};
 $('#next').onclick=()=>{if(skipFlag)skipFlag();};
+window.__pause=setPaused;window.__rate=()=>RATE;
+
 // ---------- particles ----------
 function sparkle(el,n=14,chars=['✨','⭐','💛','✦']){if(RM)return;const r=el.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement('div');s.className='spark';s.textContent=chars[i%chars.length];
  s.style.left=(r.left+r.width/2)+'px';s.style.top=(r.top+r.height/2)+'px';const a=Math.random()*Math.PI*2,d=60+Math.random()*90;s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950);}}
@@ -65,7 +81,7 @@ function slotRound({title,desc,stone,prog,sent}){return new Promise(res=>{
  function attempt(el,slot){if(!slot||slot.classList.contains('filled'))return back(el);const want=roleOf(el),got=slot.dataset.role;
   if(want===got){el.style.transition='none';el.style.transform='';slot.querySelector('.drop').appendChild(el);slot.classList.add('filled',want);el.classList.add('placed',want);el.disabled=true;
    if(!RM){el.classList.remove('snap');void el.offsetWidth;el.classList.add('snap');}sfx('ok');sparkle(slot,8);tip.textContent='';left--;
-   if(left===0){tip.innerHTML='✅ '+sent.tip;card.classList.add('done');const a=new Audio('audio/'+sent.id+'.mp3');if(!muted)a.play();
+   if(left===0){tip.innerHTML='✅ '+sent.tip;card.classList.add('done');const a=voice('audio/'+sent.id+'.mp3');if(!muted)a.play();
     if(Q.get('fast'))setTimeout(res,400);else{const nb=document.createElement('button');nb.className='btn big';nb.textContent='继续 ➜';nb.onclick=res;card.querySelector('.nextwrap').appendChild(nb);nb.focus();}}}
   else{sfx('bad');back(el);const l=LBL[want];tip.textContent=`再想想：“${el.textContent}”回答的是「${l[1]}」，它是${l[2]}哦。`;}
   clearSel();}
@@ -105,7 +121,7 @@ async function spellCard(){
     <div class="face"><div class="border"></div><div class="glyrow" style="top:14px">𓂀 𓆣 𓋹 𓇳 𓆓</div><div style="font-size:30px;font-weight:900">开门咒语卡 #1</div><div style="margin-top:8px;font-size:22px;font-family:Georgia,serif">I am <u id="w">brave</u>.</div><div class="glyrow" style="bottom:14px">𓇳 𓋹 𓆣 𓂀 𓅓</div></div>
     <div class="face back"><div class="border"></div><div class="glyrow" style="top:14px">𓂀 𓆣 𓋹 𓇳 𓆓</div><div class="sent" style="margin:0;font-size:28px"><div class="chunk S">I<span class="tag">${badge("S",{size:30})}</span></div><div class="chunk L">am<span class="tag">${badge("L",{size:30})}</span></div><div class="chunk C" id="w2">brave<span class="tag">${badge("C",{size:30})}</span></div></div><div style="font-size:15px;margin-top:4px">主语 + 系动词 + 表语 · 门已认得你的声音！</div><div class="glyrow" style="bottom:14px">𓇳 𓋹 𓆣 𓂀 𓅓</div></div>
    </div></div><button class="btn big" id="carve">🪄 刻下咒语</button></div>`);
-  panel.querySelectorAll('.adj button').forEach(b=>b.onclick=()=>{cardWord=b.dataset.w;panel.querySelector('#w').textContent=cardWord;panel.querySelector('#w2').firstChild.textContent=cardWord;const a=new Audio('audio/card_'+cardWord+'.mp3');if(!muted)a.play();});
+  panel.querySelectorAll('.adj button').forEach(b=>b.onclick=()=>{cardWord=b.dataset.w;panel.querySelector('#w').textContent=cardWord;panel.querySelector('#w2').firstChild.textContent=cardWord;const a=voice('audio/card_'+cardWord+'.mp3');if(!muted)a.play();});
   const carve=async()=>{const btn=panel.querySelector('#carve');btn.disabled=true;sfx('flip');panel.querySelector('#flip').classList.add('on');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24),500);
    await say('card_'+cardWord,'你的咒语：I am '+cardWord+'.');btn.textContent='⭐ 把星星送回罗盘';btn.disabled=false;btn.onclick=res;window.__auto=res;};
   panel.querySelector('#carve').onclick=carve;window.__auto=carve;});
