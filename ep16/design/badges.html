@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css"><style>
+html,body{background:#fbf3e2!important;}body{color:#3a2410;padding:30px 40px;overflow:auto;height:auto}h1{margin:0 0 4px}table{border-collapse:separate;border-spacing:22px 14px}td,th{text-align:center;vertical-align:middle}th{font-size:15px;color:#8a6a48}
+.sw{display:inline-block;width:56px;height:22px;border-radius:6px;border:1px solid #0002}code{font-size:12px;color:#7a5a3a}</style></head><body>
+<h1>罗盘冒险队 · 句子成分徽章规范</h1><p>黄铜罗盘奖章 · 4 种成分颜色 · 大尺寸（≥40px）用奖章版，小尺寸（&lt;40px）用简化平面版。系动词沿用谓语（橙色闪电）。</p>
+<table id="t"></table><script type="module">
+import {badge,ROLES} from '../badges.js';
+const rows=[['角色','S','V','L','O','C'],['大号 + 挂环 96px',...['S','V','L','O','C'].map(r=>badge(r,{size:96,variant:'medal-loop'}))],['奖章 56px',...['S','V','L','O','C'].map(r=>badge(r,{size:56}))],['奖章 40px（格子标签）',...['S','V','L','O','C'].map(r=>badge(r,{size:40}))],['平面 28px',...['S','V','L','O','C'].map(r=>badge(r,{size:28}))],['平面 20px',...['S','V','L','O','C'].map(r=>badge(r,{size:20}))]];
+const tok={S:'s',V:'v',L:'v',O:'o',C:'c'};
+let h='';rows.forEach((r,i)=>{h+='<tr>'+r.map((c,j)=>i===0&&j>0?`<th>${ROLES[c].name}<br>${ROLES[c].q}<br><code>${c}</code></th>`:`<td>${c}</td>`).join('')+'</tr>';});
+h+='<tr><td>色板</td>'+['S','V','L','O','C'].map(r=>`<td><span class="sw" style="background:var(--role-${tok[r]})"></span><br><span class="sw" style="background:var(--role-${tok[r]}-bg)"></span><br><code>--role-${tok[r]}</code></td>`).join('')+'</tr>';
+h+='<tr><td>词块示例</td>'+['S','V','L','O','C'].map(r=>`<td><span class="dchunk placed ${r}" style="display:inline-block;width:auto;font-size:18px">word</span></td>`).join('')+'</tr>';
+document.getElementById('t').innerHTML=h;window.DONE=1;</script></body></html>

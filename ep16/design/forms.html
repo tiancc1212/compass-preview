@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="../base.css"><style>body{background:#fff8ea;font-family:system-ui,"Noto Sans CJK SC";padding:24px;color:#3a2410;width:1100px}
+.row{display:flex;gap:28px;align-items:flex-start;margin:14px 0}.it{width:240px;text-align:center}.it b{display:block;font-size:20px;margin-top:6px}.it small{color:#7a5a38}h2{margin:18px 0 4px}</style>
+<h1>Compass Crew 徽章体系 · S16 扩展：非谓语“形式”徽章</h1>
+<p><b>圆形黄铜边 = 角色</b>（这个词在句子里做什么：主语/谓语/宾语/表语）。<b>八角黄铜边 = 形式</b>（动词变成了什么样子：to do / do / doing / done）。两套可以同时出现：如 “Finding socks” 是 <i>形式</i> doing，<i>角色</i> 主语。</p>
+<h2>角色徽章（第 1 集起）</h2><div class="row" id="r1"></div>
+<h2>形式徽章（第 16 集新增）</h2><div class="row" id="r2"></div>
+<h2>小尺寸 flat 版</h2><div class="row" id="r3"></div>
+<p>颜色 token：--role-td #7b4fd0 紫（不定式：向前的箭头 = 还没做 / 目的）；DO 同紫色 + 空心虚线箭头（to 隐身的不定式）；--role-ing #3f9a2c 绿（循环箭头 = 正在进行 / 动作本身）；--role-ed #56677e 石板灰（对勾 = 已完成 / 被动）。</p>
+<script type="module">import {badge,ROLES} from '../badges.js';
+const it=(k,o)=>`<div class="it">${badge(k,o)}<b>${k} · ${ROLES[k].name}</b><small>${ROLES[k].q}</small></div>`;
+r1.innerHTML=['S','V','O','C'].map(k=>it(k,{size:96})).join('');r2.innerHTML=['TD','DO','ING','ED'].map(k=>it(k,{size:96,variant:'medal-loop'})).join('');
+r3.innerHTML=['S','V','O','C','TD','DO','ING','ED'].map(k=>`<div>${badge(k,{size:32,variant:'flat'})}</div>`).join('');document.title='ok';</script>
