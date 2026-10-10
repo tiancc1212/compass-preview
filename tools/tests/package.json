@@ -1,0 +1,4 @@
+{
+ "name":"compass-tests","type":"module","private":true,
+ "dependencies":{"puppeteer-core":"^25.13.0"}
+}
