@@ -1,328 +1,322 @@
 {
  "l01": {
   "who": "narrator",
-  "voice": "bf_emma",
   "text": "The compass takes the crew to a busy Monster Job Fair.",
-  "dur": 3.024,
+  "dur": 3.004,
   "words": [
    [
     "The",
     0.0,
-    0.08
+    0.14
    ],
    [
     "compass",
-    0.08,
-    0.28
+    0.14,
+    0.32
    ],
    [
     "takes",
-    0.28,
-    0.66
+    0.32,
+    0.68
    ],
    [
     "the",
-    0.66,
-    0.96
+    0.68,
+    0.9
    ],
    [
     "crew",
-    0.96,
-    1.14
+    0.9,
+    1.12
    ],
    [
     "to",
-    1.14,
-    1.44
+    1.12,
+    1.42
    ],
    [
     "a",
-    1.44,
+    1.42,
     1.54
    ],
    [
     "busy",
     1.54,
-    1.7
+    1.76
    ],
    [
     "Monster",
-    1.7,
-    2.0
+    1.76,
+    2.08
    ],
    [
     "Job",
-    2.0,
-    2.42
+    2.08,
+    2.46
    ],
    [
     "Fair.",
-    2.42,
-    2.66
+    2.46,
+    2.7
    ]
   ],
   "align": "whisper"
  },
  "l02": {
   "who": "narrator",
-  "voice": "bf_emma",
   "text": "A tall purple monster stands at the gate, holding a big sign.",
-  "dur": 3.576,
+  "dur": 3.709,
   "words": [
    [
     "A",
     0.0,
-    0.08
+    0.14
    ],
    [
     "tall",
-    0.08,
-    0.28
+    0.14,
+    0.38
    ],
    [
     "purple",
-    0.28,
-    0.6
+    0.38,
+    0.68
    ],
    [
     "monster",
-    0.6,
-    0.94
+    0.68,
+    1.1
    ],
    [
     "stands",
-    0.94,
-    1.52
+    1.1,
+    1.54
    ],
    [
     "at",
-    1.52,
-    1.66
+    1.54,
+    1.78
    ],
    [
     "the",
-    1.66,
-    1.74
+    1.78,
+    1.84
    ],
    [
     "gate,",
-    1.74,
-    1.94
+    1.84,
+    2.04
    ],
    [
     "holding",
-    2.36,
-    2.58
+    2.42,
+    2.66
    ],
    [
     "a",
-    2.58,
-    2.78
+    2.66,
+    2.82
    ],
    [
     "big",
-    2.78,
-    2.9
+    2.82,
+    2.98
    ],
    [
     "sign.",
-    2.9,
-    3.2
+    2.98,
+    3.26
    ]
   ],
   "align": "whisper"
  },
  "l03": {
   "who": "monster",
-  "voice": "bm_daniel",
   "text": "Welcome! I need a helper to guard my socks.",
-  "dur": 2.808,
+  "dur": 3.135,
   "words": [
    [
     "Welcome!",
     0.0,
-    0.38
+    0.42
    ],
    [
     "I",
-    0.7,
-    0.75
+    0.88,
+    0.96
    ],
    [
     "need",
-    0.74,
-    0.88
+    0.96,
+    1.12
    ],
    [
     "a",
-    0.88,
-    1.0
+    1.12,
+    1.24
    ],
    [
     "helper",
-    1.0,
-    1.2
+    1.24,
+    1.48
    ],
    [
     "to",
-    1.2,
-    1.46
+    1.48,
+    1.78
    ],
    [
     "guard",
-    1.46,
-    1.64
+    1.78,
+    1.94
    ],
    [
     "my",
-    1.64,
-    1.9
+    1.94,
+    2.2
    ],
    [
     "socks.",
-    1.9,
-    2.24
+    2.2,
+    2.54
    ]
   ],
   "align": "whisper"
  },
  "l04": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "We came here to find a job for Biscuit!",
-  "dur": 2.712,
+  "dur": 2.534,
   "words": [
    [
     "We",
     0.0,
-    0.12
+    0.2
    ],
    [
     "came",
-    0.12,
-    0.3
+    0.2,
+    0.42
    ],
    [
     "here",
-    0.3,
-    0.58
+    0.42,
+    0.7
    ],
    [
     "to",
-    0.58,
-    0.74
+    0.7,
+    0.9
    ],
    [
     "find",
-    0.74,
-    0.92
+    0.9,
+    1.08
    ],
    [
     "a",
-    0.92,
-    1.06
+    1.08,
+    1.3
    ],
    [
     "job",
-    1.06,
-    1.26
+    1.3,
+    1.54
    ],
    [
     "for",
-    1.26,
-    1.46
+    1.54,
+    1.78
    ],
    [
     "Biscuit!",
-    1.46,
-    1.88
+    1.78,
+    2.28
    ]
   ],
   "align": "whisper"
  },
  "l05": {
   "who": "mia",
-  "voice": "bf_alice",
   "text": "But Biscuit is too small to guard anything.",
-  "dur": 2.544,
+  "dur": 3.448,
   "words": [
    [
     "But",
-    0.05,
-    0.1
+    0.0,
+    0.18
    ],
    [
     "Biscuit",
-    0.0,
-    0.48
+    0.18,
+    0.78
    ],
    [
     "is",
-    0.48,
-    0.6
+    0.78,
+    1.04
    ],
    [
     "too",
-    0.6,
-    0.8
+    1.04,
+    1.32
    ],
    [
     "small",
-    0.8,
-    1.2
+    1.32,
+    1.8
    ],
    [
     "to",
-    1.2,
-    1.4
+    1.8,
+    2.08
    ],
    [
     "guard",
-    1.4,
-    1.56
+    2.08,
+    2.36
    ],
    [
     "anything.",
-    1.56,
-    2.0
+    2.36,
+    3.0
    ]
   ],
   "align": "whisper"
  },
  "l06": {
   "who": "sam",
-  "voice": "bm_lewis",
   "text": "This fair is so exciting. I'm really excited!",
-  "dur": 2.904,
+  "dur": 2.821,
   "words": [
    [
     "This",
     0.0,
-    0.14
+    0.22
    ],
    [
     "fair",
-    0.14,
-    0.3
+    0.22,
+    0.46
    ],
    [
     "is",
-    0.3,
-    0.54
-   ],
-   [
-    "so",
-    0.54,
+    0.46,
     0.7
    ],
    [
-    "exciting.",
+    "so",
     0.7,
-    0.94
+    0.92
+   ],
+   [
+    "exciting.",
+    0.92,
+    1.42
    ],
    [
     "I'm",
-    1.58,
+    1.62,
     1.74
    ],
    [
@@ -340,289 +334,283 @@
  },
  "l07": {
   "who": "lily",
-  "voice": "bf_lily",
   "text": "Wait. Let me read the rules first.",
-  "dur": 2.16,
+  "dur": 1.933,
   "words": [
    [
     "Wait.",
     0.0,
-    0.18
-   ],
-   [
-    "Let",
-    0.38,
-    0.48
-   ],
-   [
-    "me",
-    0.48,
-    0.62
-   ],
-   [
-    "read",
-    0.62,
-    0.78
-   ],
-   [
-    "the",
-    0.78,
-    0.94
-   ],
-   [
-    "rules",
-    0.94,
-    1.16
-   ],
-   [
-    "first.",
-    1.16,
-    1.66
-   ]
-  ],
-  "align": "whisper"
- },
- "l08": {
-  "who": "lily",
-  "voice": "bf_lily",
-  "text": "Rule one: No barking. Rule two: Remember to smile.",
-  "dur": 3.168,
-  "words": [
-   [
-    "Rule",
-    0.0,
     0.2
    ],
    [
-    "one:",
-    0.2,
-    0.48
-   ],
-   [
-    "No",
+    "Let",
     0.5,
     0.68
    ],
    [
-    "barking.",
-    0.68,
-    1.14
-   ],
-   [
-    "Rule",
-    1.4,
-    1.48
-   ],
-   [
-    "two:",
-    1.48,
-    1.82
-   ],
-   [
-    "Remember",
-    1.94,
-    2.14
-   ],
-   [
-    "to",
-    2.14,
-    2.42
-   ],
-   [
-    "smile.",
-    2.42,
-    2.66
-   ]
-  ],
-  "align": "whisper"
- },
- "l09": {
-  "who": "narrator",
-  "voice": "bf_emma",
-  "text": "Biscuit stops barking and wags his tail.",
-  "dur": 2.424,
-  "words": [
-   [
-    "Biscuit",
-    0.0,
-    0.38
-   ],
-   [
-    "stops",
-    0.38,
-    0.66
-   ],
-   [
-    "barking",
-    0.66,
-    0.94
-   ],
-   [
-    "and",
-    0.94,
-    1.36
-   ],
-   [
-    "wags",
-    1.36,
-    1.64
-   ],
-   [
-    "his",
-    1.64,
-    1.78
-   ],
-   [
-    "tail.",
-    1.78,
-    2.04
-   ]
-  ],
-  "align": "whisper"
- },
- "l10": {
-  "who": "monster",
-  "voice": "bm_daniel",
-  "text": "Show me how to do the job, little dog.",
-  "dur": 2.664,
-  "words": [
-   [
-    "Show",
-    0.0,
-    0.22
-   ],
-   [
     "me",
-    0.22,
-    0.34
-   ],
-   [
-    "how",
-    0.34,
-    0.54
-   ],
-   [
-    "to",
-    0.54,
-    0.7
-   ],
-   [
-    "do",
-    0.7,
-    0.86
-   ],
-   [
-    "the",
-    0.86,
-    1.0
-   ],
-   [
-    "job,",
-    1.0,
-    1.32
-   ],
-   [
-    "little",
-    1.62,
-    1.76
-   ],
-   [
-    "dog.",
-    1.76,
-    2.1
-   ]
-  ],
-  "align": "whisper"
- },
- "l11": {
-  "who": "narrator",
-  "voice": "bf_emma",
-  "text": "Biscuit stops to sniff the air. Then he finds a lost sock under the table.",
-  "dur": 4.032,
-  "words": [
-   [
-    "Biscuit",
-    0.0,
-    0.3
-   ],
-   [
-    "stops",
-    0.3,
-    0.58
-   ],
-   [
-    "to",
-    0.58,
+    0.68,
     0.8
    ],
    [
-    "sniff",
+    "read",
     0.8,
     0.96
    ],
    [
     "the",
     0.96,
-    1.2
+    1.1
    ],
    [
-    "air.",
-    1.2,
-    1.42
+    "rules",
+    1.1,
+    1.24
    ],
    [
-    "Then",
+    "first.",
+    1.24,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "lily",
+  "text": "Rule one: No barking. Rule two: Remember to smile.",
+  "dur": 3.814,
+  "words": [
+   [
+    "Rule",
+    0.0,
+    0.22
+   ],
+   [
+    "one:",
+    0.22,
+    0.5
+   ],
+   [
+    "No",
+    0.84,
+    1.02
+   ],
+   [
+    "barking.",
+    1.02,
+    1.3
+   ],
+   [
+    "Rule",
     1.96,
-    2.08
+    2.04
    ],
    [
-    "he",
-    2.08,
-    2.2
+    "two:",
+    2.04,
+    2.3
    ],
    [
-    "finds",
-    2.2,
-    2.38
-   ],
-   [
-    "a",
-    2.38,
-    2.54
-   ],
-   [
-    "lost",
-    2.54,
-    2.7
-   ],
-   [
-    "sock",
+    "Remember",
     2.7,
-    3.02
+    2.96
    ],
    [
-    "under",
-    3.02,
-    3.28
+    "to",
+    2.96,
+    3.2
+   ],
+   [
+    "smile.",
+    3.2,
+    3.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "narrator",
+  "text": "Biscuit stops barking and wags his tail.",
+  "dur": 2.273,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.36
+   ],
+   [
+    "stops",
+    0.36,
+    0.56
+   ],
+   [
+    "barking",
+    0.56,
+    0.96
+   ],
+   [
+    "and",
+    0.96,
+    1.28
+   ],
+   [
+    "wags",
+    1.28,
+    1.52
+   ],
+   [
+    "his",
+    1.52,
+    1.66
+   ],
+   [
+    "tail.",
+    1.66,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "monster",
+  "text": "Show me how to do the job, little dog.",
+  "dur": 2.403,
+  "words": [
+   [
+    "Show",
+    0.0,
+    0.32
+   ],
+   [
+    "me",
+    0.32,
+    0.46
+   ],
+   [
+    "how",
+    0.46,
+    0.6
+   ],
+   [
+    "to",
+    0.6,
+    0.74
+   ],
+   [
+    "do",
+    0.74,
+    0.9
    ],
    [
     "the",
-    3.28,
-    3.42
+    0.9,
+    1.06
+   ],
+   [
+    "job,",
+    1.06,
+    1.34
+   ],
+   [
+    "little",
+    1.34,
+    1.72
+   ],
+   [
+    "dog.",
+    1.72,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "narrator",
+  "text": "Biscuit stops to sniff the air. Then he finds a lost sock under the table.",
+  "dur": 4.493,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.36
+   ],
+   [
+    "stops",
+    0.36,
+    0.66
+   ],
+   [
+    "to",
+    0.66,
+    0.92
+   ],
+   [
+    "sniff",
+    0.92,
+    1.04
+   ],
+   [
+    "the",
+    1.04,
+    1.3
+   ],
+   [
+    "air.",
+    1.3,
+    1.5
+   ],
+   [
+    "Then",
+    2.28,
+    2.33
+   ],
+   [
+    "he",
+    2.28,
+    2.52
+   ],
+   [
+    "finds",
+    2.52,
+    2.74
+   ],
+   [
+    "a",
+    2.74,
+    2.94
+   ],
+   [
+    "lost",
+    2.94,
+    3.12
+   ],
+   [
+    "sock",
+    3.12,
+    3.44
+   ],
+   [
+    "under",
+    3.44,
+    3.74
+   ],
+   [
+    "the",
+    3.74,
+    3.92
    ],
    [
     "table.",
-    3.42,
-    3.64
+    3.92,
+    4.18
    ]
   ],
   "align": "whisper"
  },
  "l12": {
   "who": "sam",
-  "voice": "bm_lewis",
   "text": "Finding socks is his favourite hobby!",
-  "dur": 2.232,
+  "dur": 1.985,
   "words": [
    [
     "Finding",
@@ -632,36 +620,35 @@
    [
     "socks",
     0.28,
-    0.58
+    0.52
    ],
    [
     "is",
-    0.58,
-    1.08
+    0.52,
+    0.8
    ],
    [
     "his",
-    1.08,
-    1.2
+    0.8,
+    0.96
    ],
    [
     "favourite",
-    1.2,
-    1.58
+    0.96,
+    1.28
    ],
    [
     "hobby!",
-    1.58,
-    1.9
+    1.28,
+    1.58
    ]
   ],
   "align": "whisper"
  },
  "l13": {
   "who": "monster",
-  "voice": "bm_daniel",
   "text": "Ha! You made me laugh. The job is yours!",
-  "dur": 2.664,
+  "dur": 3.187,
   "words": [
    [
     "Ha!",
@@ -670,81 +657,80 @@
    ],
    [
     "You",
-    0.32,
-    0.42
+    0.62,
+    0.67
    ],
    [
     "made",
-    0.42,
-    0.54
+    0.64,
+    0.82
    ],
    [
     "me",
-    0.54,
-    0.68
+    0.82,
+    1.0
    ],
    [
     "laugh.",
-    0.68,
-    0.96
+    1.0,
+    1.28
    ],
    [
     "The",
-    1.26,
-    1.31
+    1.82,
+    1.87
    ],
    [
     "job",
-    1.3,
-    1.48
+    1.84,
+    2.02
    ],
    [
     "is",
-    1.48,
-    1.7
+    2.02,
+    2.3
    ],
    [
     "yours!",
-    1.7,
-    2.08
+    2.3,
+    2.62
    ]
   ],
   "align": "whisper"
  },
  "l14": {
   "who": "narrator",
-  "voice": "bf_emma",
   "text": "Leo will never forget seeing Biscuit get his first job.",
-  "dur": 3.048,
+  "dur": 3.109,
   "words": [
    [
     "Leo",
     0.0,
-    0.18
+    0.22
    ],
    [
     "will",
-    0.18,
-    0.44
+    0.22,
+    0.5
    ],
    [
     "never",
-    0.44,
-    0.6
+    0.5,
+    0.7
    ],
    [
     "forget",
-    0.6,
-    0.98
+    0.7,
+    1.08
    ],
    [
     "seeing",
-    0.98,
-    1.3
+    1.08,
+    1.36
    ],
    [
     "Biscuit",
-    1.3,
+    1.36,
     1.8
    ],
    [
@@ -760,385 +746,615 @@
    [
     "first",
     2.14,
-    2.38
+    2.42
    ],
    [
     "job.",
-    2.38,
+    2.42,
     2.76
    ]
   ],
   "align": "whisper"
  },
- "a3_stop": {
-  "who": "narrator",
-  "voice": "bf_emma",
-  "text": "Biscuit stopped barking. Then he stopped to sniff the socks.",
-  "dur": 3.12,
+ "ex_q2_lookforward": {
+  "who": "leo",
+  "text": "We look forward to seeing Grumble again.",
+  "dur": 2.064,
   "words": [
    [
-    "Biscuit",
+    "We",
     0.0,
-    0.34
+    0.18
    ],
    [
-    "stopped",
-    0.34,
-    0.6
+    "look",
+    0.18,
+    0.36
    ],
    [
-    "barking.",
-    0.6,
-    0.94
-   ],
-   [
-    "Then",
-    1.48,
-    1.56
-   ],
-   [
-    "he",
-    1.56,
-    1.66
-   ],
-   [
-    "stopped",
-    1.66,
-    1.86
-   ],
-   [
-    "to",
-    1.86,
-    2.08
-   ],
-   [
-    "sniff",
-    2.08,
-    2.24
-   ],
-   [
-    "the",
-    2.24,
-    2.44
-   ],
-   [
-    "socks.",
-    2.44,
-    2.64
-   ]
-  ],
-  "align": "whisper"
- },
- "a3_remember": {
-  "who": "lily",
-  "voice": "bf_lily",
-  "text": "Remember to bring your badge. Leo remembers meeting this monster before.",
-  "dur": 4.152,
-  "words": [
-   [
-    "Remember",
-    0.0,
-    0.26
-   ],
-   [
-    "to",
-    0.26,
+    "forward",
+    0.36,
     0.56
    ],
    [
-    "bring",
+    "to",
     0.56,
-    0.72
+    0.84
    ],
    [
-    "your",
-    0.72,
-    0.94
+    "seeing",
+    0.84,
+    1.04
    ],
    [
-    "badge.",
-    0.94,
-    1.26
+    "Grumble",
+    1.04,
+    1.42
    ],
    [
-    "Leo",
-    1.76,
-    1.86
-   ],
-   [
-    "remembers",
-    1.86,
-    2.28
-   ],
-   [
-    "meeting",
-    2.28,
-    2.62
-   ],
-   [
-    "this",
-    2.62,
-    3.0
-   ],
-   [
-    "monster",
-    3.0,
-    3.22
-   ],
-   [
-    "before.",
-    3.22,
-    3.76
+    "again.",
+    1.42,
+    1.74
    ]
   ],
   "align": "whisper"
  },
- "a3_forget": {
-  "who": "mia",
-  "voice": "bf_alice",
-  "text": "Don't forget to feed Biscuit. I'll never forget visiting the pyramid.",
-  "dur": 3.744,
-  "words": [
-   [
-    "Don't",
-    0.0,
-    0.2
-   ],
-   [
-    "forget",
-    0.2,
-    0.4
-   ],
-   [
-    "to",
-    0.4,
-    0.62
-   ],
-   [
-    "feed",
-    0.62,
-    0.9
-   ],
-   [
-    "Biscuit.",
-    0.9,
-    1.38
-   ],
-   [
-    "I'll",
-    1.72,
-    1.84
-   ],
-   [
-    "never",
-    1.84,
-    2.0
-   ],
-   [
-    "forget",
-    2.0,
-    2.38
-   ],
-   [
-    "visiting",
-    2.38,
-    2.76
-   ],
-   [
-    "the",
-    2.76,
-    2.96
-   ],
-   [
-    "pyramid.",
-    2.96,
-    3.18
-   ]
-  ],
-  "align": "whisper"
- },
- "a3_try": {
-  "who": "sam",
-  "voice": "bm_lewis",
-  "text": "I tried to run faster. Then I tried pulling the door.",
-  "dur": 3.072,
-  "words": [
-   [
-    "I",
-    0.0,
-    0.08
-   ],
-   [
-    "tried",
-    0.08,
-    0.26
-   ],
-   [
-    "to",
-    0.26,
-    0.44
-   ],
-   [
-    "run",
-    0.44,
-    0.58
-   ],
-   [
-    "faster.",
-    0.58,
-    1.08
-   ],
-   [
-    "Then",
-    1.08,
-    1.6
-   ],
-   [
-    "I",
-    1.6,
-    1.72
-   ],
-   [
-    "tried",
-    1.72,
-    2.0
-   ],
-   [
-    "pulling",
-    2.0,
-    2.3
-   ],
-   [
-    "the",
-    2.3,
-    2.56
-   ],
-   [
-    "door.",
-    2.56,
-    2.74
-   ]
-  ],
-  "align": "whisper"
- },
- "a4_all": {
-  "who": "narrator",
-  "voice": "bf_emma",
-  "text": "The job fair is exciting, so Mia is excited. The long rules are boring, so Sam feels bored.",
-  "dur": 5.496,
-  "words": [
-   [
-    "The",
-    0.0,
-    0.08
-   ],
-   [
-    "job",
-    0.08,
-    0.24
-   ],
-   [
-    "fair",
-    0.24,
-    0.5
-   ],
-   [
-    "is",
-    0.5,
-    0.72
-   ],
-   [
-    "exciting,",
-    0.72,
-    1.06
-   ],
-   [
-    "so",
-    1.46,
-    1.54
-   ],
-   [
-    "Mia",
-    1.54,
-    1.7
-   ],
-   [
-    "is",
-    1.7,
-    1.9
-   ],
-   [
-    "excited.",
-    1.9,
-    2.3
-   ],
-   [
-    "The",
-    3.02,
-    3.1
-   ],
-   [
-    "long",
-    3.1,
-    3.24
-   ],
-   [
-    "rules",
-    3.24,
-    3.5
-   ],
-   [
-    "are",
-    3.5,
-    3.68
-   ],
-   [
-    "boring,",
-    3.68,
-    3.88
-   ],
-   [
-    "so",
-    4.22,
-    4.34
-   ],
-   [
-    "Sam",
-    4.34,
-    4.56
-   ],
-   [
-    "feels",
-    4.56,
-    4.82
-   ],
-   [
-    "bored.",
-    4.82,
-    5.12
-   ]
-  ],
-  "align": "whisper"
- },
- "a5_1": {
+ "ex_q2_worth": {
   "who": "lily",
-  "voice": "bf_lily",
-  "text": "Let me read the rules. The monster made everyone laugh.",
-  "dur": 3.096,
+  "text": "The rules are worth reading.",
+  "dur": 1.28,
   "words": [
    [
-    "Let",
+    "The",
     0.0,
     0.14
    ],
    [
-    "me",
+    "rules",
     0.14,
+    0.28
+   ],
+   [
+    "are",
+    0.28,
+    0.46
+   ],
+   [
+    "worth",
+    0.46,
+    0.6
+   ],
+   [
+    "reading.",
+    0.6,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_hadbetter": {
+  "who": "monster",
+  "text": "You had better keep my socks safe.",
+  "dur": 1.75,
+  "words": [
+   [
+    "You",
+    0.0,
+    0.16
+   ],
+   [
+    "had",
+    0.16,
+    0.3
+   ],
+   [
+    "better",
+    0.3,
+    0.46
+   ],
+   [
+    "keep",
+    0.46,
+    0.66
+   ],
+   [
+    "my",
+    0.66,
+    0.84
+   ],
+   [
+    "socks",
+    0.84,
+    1.04
+   ],
+   [
+    "safe.",
+    1.04,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_letme": {
+  "who": "lily",
+  "text": "Let me read the rules first.",
+  "dur": 1.437,
+  "words": [
+   [
+    "Let",
+    0.0,
+    0.16
+   ],
+   [
+    "me",
+    0.16,
     0.26
    ],
    [
     "read",
     0.26,
+    0.42
+   ],
+   [
+    "the",
+    0.42,
+    0.54
+   ],
+   [
+    "rules",
+    0.54,
+    0.72
+   ],
+   [
+    "first.",
+    0.72,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_tooto": {
+  "who": "mia",
+  "text": "Biscuit is too small to guard anything.",
+  "dur": 3.109,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.5
+   ],
+   [
+    "is",
+    0.5,
+    0.74
+   ],
+   [
+    "too",
+    0.74,
+    1.02
+   ],
+   [
+    "small",
+    1.02,
+    1.48
+   ],
+   [
+    "to",
+    1.48,
+    1.76
+   ],
+   [
+    "guard",
+    1.76,
+    2.04
+   ],
+   [
+    "anything.",
+    2.04,
+    2.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_stop1": {
+  "who": "narrator",
+  "text": "Biscuit stopped barking.",
+  "dur": 1.411,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.36
+   ],
+   [
+    "stopped",
+    0.36,
+    0.6
+   ],
+   [
+    "barking.",
+    0.6,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_stop2": {
+  "who": "narrator",
+  "text": "Biscuit stopped to sniff the socks.",
+  "dur": 1.881,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.36
+   ],
+   [
+    "stopped",
+    0.36,
+    0.58
+   ],
+   [
+    "to",
+    0.58,
+    0.84
+   ],
+   [
+    "sniff",
+    0.84,
+    1.0
+   ],
+   [
+    "the",
+    1.0,
+    1.2
+   ],
+   [
+    "socks.",
+    1.2,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_remember1": {
+  "who": "lily",
+  "text": "Remember to bring your badge.",
+  "dur": 1.411,
+  "words": [
+   [
+    "Remember",
+    0.0,
+    0.24
+   ],
+   [
+    "to",
+    0.24,
+    0.44
+   ],
+   [
+    "bring",
+    0.44,
+    0.58
+   ],
+   [
+    "your",
+    0.58,
+    0.74
+   ],
+   [
+    "badge.",
+    0.74,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_remember2": {
+  "who": "leo",
+  "text": "I remember meeting this monster before.",
+  "dur": 2.116,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.16
+   ],
+   [
+    "remember",
+    0.16,
+    0.44
+   ],
+   [
+    "meeting",
+    0.44,
+    0.78
+   ],
+   [
+    "this",
+    0.78,
+    1.02
+   ],
+   [
+    "monster",
+    1.02,
+    1.36
+   ],
+   [
+    "before.",
+    1.36,
+    1.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_forget1": {
+  "who": "mia",
+  "text": "Don't forget to feed Biscuit.",
+  "dur": 2.403,
+  "words": [
+   [
+    "Don't",
+    0.0,
+    0.34
+   ],
+   [
+    "forget",
+    0.34,
+    0.72
+   ],
+   [
+    "to",
+    0.72,
+    1.04
+   ],
+   [
+    "feed",
+    1.04,
+    1.38
+   ],
+   [
+    "Biscuit.",
+    1.38,
+    2.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_forget2": {
+  "who": "mia",
+  "text": "I'll never forget visiting the pyramid.",
+  "dur": 3.239,
+  "words": [
+   [
+    "I'll",
+    0.0,
+    0.38
+   ],
+   [
+    "never",
+    0.38,
+    0.56
+   ],
+   [
+    "forget",
+    0.56,
+    1.32
+   ],
+   [
+    "visiting",
+    1.32,
+    1.94
+   ],
+   [
+    "the",
+    1.94,
+    2.3
+   ],
+   [
+    "pyramid.",
+    2.3,
+    2.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_try1": {
+  "who": "sam",
+  "text": "I tried to run faster.",
+  "dur": 1.411,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.16
+   ],
+   [
+    "tried",
+    0.16,
+    0.34
+   ],
+   [
+    "to",
+    0.34,
+    0.5
+   ],
+   [
+    "run",
+    0.5,
+    0.62
+   ],
+   [
+    "faster.",
+    0.62,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_try2": {
+  "who": "sam",
+  "text": "I tried pulling the door.",
+  "dur": 1.384,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.16
+   ],
+   [
+    "tried",
+    0.16,
+    0.36
+   ],
+   [
+    "pulling",
+    0.36,
+    0.6
+   ],
+   [
+    "the",
+    0.6,
+    0.8
+   ],
+   [
+    "door.",
+    0.8,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "The job fair is exciting.",
+  "dur": 1.698,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.14
+   ],
+   [
+    "job",
+    0.14,
+    0.3
+   ],
+   [
+    "fair",
+    0.3,
+    0.58
+   ],
+   [
+    "is",
+    0.58,
+    0.84
+   ],
+   [
+    "exciting.",
+    0.84,
+    1.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "Mia is excited.",
+  "dur": 1.358,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.58
+   ],
+   [
+    "excited.",
+    0.58,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "The long rules are boring.",
+  "dur": 1.541,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.14
+   ],
+   [
+    "long",
+    0.14,
+    0.34
+   ],
+   [
+    "rules",
+    0.34,
+    0.62
+   ],
+   [
+    "are",
+    0.62,
+    0.82
+   ],
+   [
+    "boring.",
+    0.82,
+    1.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "Sam feels bored.",
+  "dur": 1.254,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.28
+   ],
+   [
+    "feels",
+    0.28,
+    0.54
+   ],
+   [
+    "bored.",
+    0.54,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "lily",
+  "text": "Let me read the rules.",
+  "dur": 1.228,
+  "words": [
+   [
+    "Let",
+    0.0,
+    0.18
+   ],
+   [
+    "me",
+    0.18,
+    0.28
+   ],
+   [
+    "read",
+    0.28,
     0.46
    ],
    [
@@ -1149,316 +1365,649 @@
    [
     "rules.",
     0.6,
-    0.9
-   ],
-   [
-    "The",
-    1.18,
-    1.23
-   ],
-   [
-    "monster",
-    1.2,
-    1.4
-   ],
-   [
-    "made",
-    1.4,
-    1.84
-   ],
-   [
-    "everyone",
-    1.84,
-    2.26
-   ],
-   [
-    "laugh.",
-    2.26,
-    2.64
+    0.82
    ]
   ],
   "align": "whisper"
  },
- "a5_2": {
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "The monster made everyone laugh.",
+  "dur": 1.724,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.12
+   ],
+   [
+    "monster",
+    0.12,
+    0.26
+   ],
+   [
+    "made",
+    0.26,
+    0.62
+   ],
+   [
+    "everyone",
+    0.62,
+    1.04
+   ],
+   [
+    "laugh.",
+    1.04,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
   "who": "leo",
-  "voice": "bm_fable",
-  "text": "Lily asked Biscuit to sit down. We heard Biscuit bark.",
-  "dur": 3.648,
+  "text": "Lily asked Biscuit to sit down.",
+  "dur": 1.724,
   "words": [
    [
     "Lily",
     0.0,
-    0.2
+    0.22
    ],
    [
     "asked",
-    0.2,
-    0.46
+    0.22,
+    0.48
    ],
    [
     "Biscuit",
-    0.46,
+    0.48,
     0.94
    ],
    [
     "to",
     0.94,
-    1.08
+    1.06
    ],
    [
     "sit",
-    1.08,
-    1.2
+    1.06,
+    1.18
    ],
    [
     "down.",
-    1.2,
-    1.52
-   ],
-   [
-    "We",
-    1.9,
-    1.95
-   ],
-   [
-    "heard",
-    1.94,
-    2.12
-   ],
-   [
-    "Biscuit",
-    2.12,
-    2.54
-   ],
-   [
-    "bark.",
-    2.54,
-    2.72
+    1.18,
+    1.48
    ]
   ],
   "align": "whisper"
  },
- "a5_3": {
+ "ex_q5_4": {
   "who": "monster",
-  "voice": "bm_daniel",
-  "text": "You'd better be quiet. I don't know what to do next.",
-  "dur": 3.096,
+  "text": "You'd better be quiet.",
+  "dur": 1.567,
   "words": [
    [
     "You'd",
     0.0,
-    0.22
-   ],
-   [
-    "better",
-    0.22,
     0.36
    ],
    [
-    "be",
+    "better",
     0.36,
-    0.6
+    0.5
+   ],
+   [
+    "be",
+    0.5,
+    0.76
    ],
    [
     "quiet.",
-    0.6,
-    1.08
-   ],
-   [
-    "I",
-    1.42,
-    1.48
-   ],
-   [
-    "don't",
-    1.48,
-    1.66
-   ],
-   [
-    "know",
-    1.66,
-    1.76
-   ],
-   [
-    "what",
-    1.76,
-    1.92
-   ],
-   [
-    "to",
-    1.92,
-    2.06
-   ],
-   [
-    "do",
-    2.06,
-    2.2
-   ],
-   [
-    "next.",
-    2.2,
-    2.52
+    0.76,
+    1.12
    ]
   ],
   "align": "whisper"
  },
- "a6_1": {
+ "ex_q5_5": {
+  "who": "monster",
+  "text": "I don't know what to do next.",
+  "dur": 1.698,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.22
+   ],
+   [
+    "don't",
+    0.22,
+    0.42
+   ],
+   [
+    "know",
+    0.42,
+    0.52
+   ],
+   [
+    "what",
+    0.52,
+    0.68
+   ],
+   [
+    "to",
+    0.68,
+    0.84
+   ],
+   [
+    "do",
+    0.84,
+    0.98
+   ],
+   [
+    "next.",
+    0.98,
+    1.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_order": {
   "who": "sam",
-  "voice": "bm_lewis",
   "text": "Finding socks is his favourite hobby.",
-  "dur": 2.232,
+  "dur": 1.855,
   "words": [
    [
     "Finding",
     0.0,
-    0.3
+    0.26
    ],
    [
     "socks",
-    0.3,
-    0.58
+    0.26,
+    0.52
    ],
    [
     "is",
-    0.58,
-    1.1
+    0.52,
+    0.76
    ],
    [
     "his",
-    1.1,
-    1.22
+    0.76,
+    0.9
    ],
    [
     "favourite",
-    1.22,
-    1.58
+    0.9,
+    1.12
    ],
    [
     "hobby.",
-    1.58,
-    1.9
+    1.12,
+    1.48
    ]
   ],
   "align": "whisper"
  },
- "a6_2": {
+ "ex_q6_rewrite": {
   "who": "lily",
-  "voice": "bf_lily",
   "text": "It is fun to find socks.",
-  "dur": 1.92,
+  "dur": 1.384,
   "words": [
    [
     "It",
     0.0,
-    0.1
+    0.14
    ],
    [
     "is",
-    0.1,
+    0.14,
     0.22
    ],
    [
     "fun",
     0.22,
-    0.48
+    0.38
    ],
    [
     "to",
-    0.48,
-    0.74
+    0.38,
+    0.52
    ],
    [
     "find",
-    0.74,
-    0.96
+    0.52,
+    0.68
    ],
    [
     "socks.",
-    0.96,
-    1.32
+    0.68,
+    0.92
    ]
   ],
   "align": "whisper"
  },
- "a7_all": {
+ "ex_q7_1": {
   "who": "narrator",
-  "voice": "bf_emma",
-  "text": "A lost sock, the laughing monster, a broken chair and a running dog.",
-  "dur": 3.816,
+  "text": "Biscuit found a lost sock.",
+  "dur": 1.698,
   "words": [
    [
-    "A",
+    "Biscuit",
     0.0,
-    0.1
+    0.38
+   ],
+   [
+    "found",
+    0.38,
+    0.6
+   ],
+   [
+    "a",
+    0.6,
+    0.8
    ],
    [
     "lost",
-    0.1,
-    0.24
+    0.8,
+    0.98
    ],
    [
-    "sock,",
-    0.24,
-    0.56
+    "sock.",
+    0.98,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "Everyone looked at the laughing monster.",
+  "dur": 2.116,
+  "words": [
+   [
+    "Everyone",
+    0.0,
+    0.36
+   ],
+   [
+    "looked",
+    0.36,
+    0.58
+   ],
+   [
+    "at",
+    0.58,
+    0.9
    ],
    [
     "the",
-    0.78,
-    0.84
+    0.9,
+    1.04
    ],
    [
     "laughing",
-    0.84,
-    1.08
+    1.04,
+    1.28
    ],
    [
-    "monster,",
-    1.08,
-    1.34
+    "monster.",
+    1.28,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "Grumble sat on a broken chair.",
+  "dur": 1.829,
+  "words": [
+   [
+    "Grumble",
+    0.0,
+    0.34
+   ],
+   [
+    "sat",
+    0.34,
+    0.62
+   ],
+   [
+    "on",
+    0.62,
+    0.86
    ],
    [
     "a",
-    1.94,
-    2.02
+    0.86,
+    0.92
    ],
    [
     "broken",
-    2.02,
-    2.22
+    0.92,
+    1.14
    ],
    [
-    "chair",
-    2.22,
-    2.64
+    "chair.",
+    1.14,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "Sam saw a running dog.",
+  "dur": 1.698,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.32
    ],
    [
-    "and",
-    2.64,
-    2.88
+    "saw",
+    0.32,
+    0.62
    ],
    [
     "a",
-    2.88,
-    2.96
+    0.62,
+    0.86
    ],
    [
     "running",
-    2.96,
-    3.12
+    0.86,
+    1.06
    ],
    [
     "dog.",
-    3.12,
-    3.52
+    1.06,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "leo",
+  "text": "I enjoy swimming.",
+  "dur": 1.071,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.14
+   ],
+   [
+    "enjoy",
+    0.14,
+    0.38
+   ],
+   [
+    "swimming.",
+    0.38,
+    0.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "lily",
+  "text": "Remember to bring your badge.",
+  "dur": 1.358,
+  "words": [
+   [
+    "Remember",
+    0.0,
+    0.22
+   ],
+   [
+    "to",
+    0.22,
+    0.46
+   ],
+   [
+    "bring",
+    0.46,
+    0.58
+   ],
+   [
+    "your",
+    0.58,
+    0.74
+   ],
+   [
+    "badge.",
+    0.74,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "monster",
+  "text": "I want to find a helper.",
+  "dur": 1.384,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.16
+   ],
+   [
+    "want",
+    0.16,
+    0.3
+   ],
+   [
+    "to",
+    0.3,
+    0.42
+   ],
+   [
+    "find",
+    0.42,
+    0.6
+   ],
+   [
+    "a",
+    0.6,
+    0.76
+   ],
+   [
+    "helper.",
+    0.76,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "The monster made Sam laugh.",
+  "dur": 1.515,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.12
+   ],
+   [
+    "monster",
+    0.12,
+    0.32
+   ],
+   [
+    "made",
+    0.32,
+    0.64
+   ],
+   [
+    "Sam",
+    0.64,
+    0.98
+   ],
+   [
+    "laugh.",
+    0.98,
+    1.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "mia",
+  "text": "I'm interested in the rules.",
+  "dur": 2.456,
+  "words": [
+   [
+    "I'm",
+    0.0,
+    0.36
+   ],
+   [
+    "interested",
+    0.36,
+    0.82
+   ],
+   [
+    "in",
+    0.82,
+    1.46
+   ],
+   [
+    "the",
+    1.46,
+    1.66
+   ],
+   [
+    "rules.",
+    1.66,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "sam",
+  "text": "Reading the rules is boring.",
+  "dur": 1.515,
+  "words": [
+   [
+    "Reading",
+    0.0,
+    0.2
+   ],
+   [
+    "the",
+    0.2,
+    0.38
+   ],
+   [
+    "rules",
+    0.38,
+    0.58
+   ],
+   [
+    "is",
+    0.58,
+    0.82
+   ],
+   [
+    "boring.",
+    0.82,
+    1.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "monster",
+  "text": "We look forward to having a new helper.",
+  "dur": 2.299,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.16
+   ],
+   [
+    "look",
+    0.16,
+    0.3
+   ],
+   [
+    "forward",
+    0.3,
+    0.58
+   ],
+   [
+    "to",
+    0.58,
+    0.86
+   ],
+   [
+    "having",
+    0.86,
+    1.06
+   ],
+   [
+    "a",
+    1.06,
+    1.3
+   ],
+   [
+    "new",
+    1.3,
+    1.54
+   ],
+   [
+    "helper.",
+    1.54,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "Look at the broken door!",
+  "dur": 1.463,
+  "words": [
+   [
+    "Look",
+    0.0,
+    0.22
+   ],
+   [
+    "at",
+    0.22,
+    0.32
+   ],
+   [
+    "the",
+    0.32,
+    0.4
+   ],
+   [
+    "broken",
+    0.4,
+    0.62
+   ],
+   [
+    "door!",
+    0.62,
+    1.02
    ]
   ],
   "align": "whisper"
  },
  "card_football": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "I enjoy playing football.",
-  "dur": 2.304,
+  "dur": 1.567,
   "words": [
    [
     "I",
@@ -1468,50 +2017,48 @@
    [
     "enjoy",
     0.16,
-    0.46
+    0.44
    ],
    [
     "playing",
-    0.46,
-    0.9
+    0.44,
+    0.78
    ],
    [
     "football.",
-    0.9,
-    1.22
+    0.78,
+    1.14
    ]
   ],
   "align": "whisper"
  },
  "card_drawing": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "I enjoy drawing.",
-  "dur": 1.92,
+  "dur": 1.149,
   "words": [
    [
     "I",
     0.0,
-    0.18
+    0.16
    ],
    [
     "enjoy",
-    0.18,
-    0.5
+    0.16,
+    0.44
    ],
    [
     "drawing.",
-    0.5,
-    1.04
+    0.44,
+    0.8
    ]
   ],
   "align": "whisper"
  },
  "card_reading": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "I enjoy reading.",
-  "dur": 1.848,
+  "dur": 1.123,
   "words": [
    [
     "I",
@@ -1521,45 +2068,43 @@
    [
     "enjoy",
     0.18,
-    0.52
+    0.46
    ],
    [
     "reading.",
-    0.52,
-    0.94
+    0.46,
+    0.78
    ]
   ],
   "align": "whisper"
  },
  "card_swimming": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "I enjoy swimming.",
-  "dur": 1.992,
+  "dur": 1.176,
   "words": [
    [
     "I",
     0.0,
-    0.18
+    0.16
    ],
    [
     "enjoy",
-    0.18,
-    0.5
+    0.16,
+    0.44
    ],
    [
     "swimming.",
-    0.5,
-    1.02
+    0.44,
+    0.82
    ]
   ],
   "align": "whisper"
  },
  "card_games": {
   "who": "leo",
-  "voice": "bm_fable",
   "text": "I enjoy playing games.",
-  "dur": 2.208,
+  "dur": 1.62,
   "words": [
    [
     "I",
@@ -1569,46 +2114,45 @@
    [
     "enjoy",
     0.18,
-    0.48
+    0.44
    ],
    [
     "playing",
-    0.48,
-    0.9
+    0.44,
+    0.86
    ],
    [
     "games.",
-    0.9,
-    1.26
+    0.86,
+    1.2
    ]
   ],
   "align": "whisper"
  },
  "star": {
   "who": "narrator",
-  "voice": "bf_emma",
   "text": "Another star is home!",
-  "dur": 1.56,
+  "dur": 1.541,
   "words": [
    [
     "Another",
     0.0,
-    0.26
+    0.3
    ],
    [
     "star",
-    0.26,
-    0.56
+    0.3,
+    0.62
    ],
    [
     "is",
-    0.56,
-    0.82
+    0.62,
+    0.86
    ],
    [
     "home!",
-    0.82,
-    1.12
+    0.86,
+    1.14
    ]
   ],
   "align": "whisper"

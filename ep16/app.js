@@ -113,13 +113,6 @@ async function gameForms(){await rounds([0],()=>({title:'🔍 认一认：非谓
   {t:'excited',k:'ed',h:'excite → excited，是过去分词 done 形式。'},{t:'lost',k:'ed',h:'lose 的过去分词是 lost（不规则）。'}],
  tip:'它们都<b>不当谓语</b>，所以叫“非谓语动词”。记住口诀：<b>to do 还没做，doing 正在做 / 当名词，done 被做或已完成</b>。'}));}
 
-// A4 -ing / -ed 形容词
-async function gameFeel(){await rounds([0],()=>({title:'😆 -ing 还是 -ed？',mode:'blank',
- desc:'<b>-ing</b>：东西本身“令人…的”；<b>-ed</b>：人自己“感到…的”。把词块拖进空格：',
- slots:[{k:'a',ctx:'招聘会本身很好玩',pre:'The job fair is ',post:'.'},{k:'b',ctx:'Mia 心里很激动',pre:'Mia is ',post:'.'},{k:'c',ctx:'规则又长又无聊',pre:'The long rules are ',post:'.'},{k:'d',ctx:'Sam 觉得没劲',pre:'Sam feels ',post:'.'}],
- chunks:[{t:'exciting',k:'a',b:'ING',h:'说“人感到激动”要用 excited；exciting 用来形容让人激动的事物。'},{t:'excited',k:'b',b:'ED',h:'excited 是“人感到激动”，招聘会这种东西要用 exciting。'},{t:'boring',k:'c',b:'ING',h:'boring 形容“让人无聊的”事物，人自己“觉得无聊”用 bored。'},{t:'bored',k:'d',b:'ED',h:'bored 是人“感到无聊”，规则本身用 boring。'}],
- tip:'exciting / boring 说<b>事物</b>的特点；excited / bored 说<b>人</b>的感受。',audio:'a4_all'}));}
-
 // A2 只接 to do / 只接 doing / 都可以；固定搭配
 async function gameVerbs(){
  await dragGame({title:'📋 招聘规则板 1/2：动词分拣',
@@ -129,58 +122,137 @@ async function gameVerbs(){
    {t:'enjoy',k:'ing',h:'enjoy 只接 doing：enjoy reading。'},{t:'finish',k:'ing',h:'finish 只接 doing：finish eating。'},{t:'mind',k:'ing',h:'mind 只接 doing：Do you mind opening the window?'},{t:'avoid',k:'ing',h:'avoid 只接 doing：avoid making mistakes。'},
    {t:'like',k:'both',h:'like to do / like doing 都可以。'},{t:'begin',k:'both',h:'begin to do / begin doing 意思差不多。'},{t:'stop',k:'both',h:'stop 两种都能接，但意思完全不同！'},{t:'remember',k:'both',h:'remember 两种都能接，但意思不同！'}],
   tip:'口诀：<b>想要、希望、决定、拒绝</b> → to do（还没做的事）；<b>喜欢享受 enjoy、完成 finish、介意 mind、避免 avoid</b> → doing。stop / remember / forget / try 两种都行但<b>意思会变</b>——下一关就考它们！',prog:prog(2,0)});
- await dragGame({title:'📋 招聘规则板 2/2：固定搭配',
-  desc:'这些短语后面该接什么？<b>to do</b>、<b>doing</b>，还是<b>不带 to 的 do</b>？',
-  slots:[{k:'td',b:'TD',title:'+ to do',sub:'不定式'},{k:'ing',b:'ING',title:'+ doing',sub:'动名词'},{k:'do',b:'DO',title:'+ do',sub:'不带 to'}],
-  chunks:[{t:'too small …',k:'td',h:'too … to do：太……而不能。'},{t:'in order …',k:'td',h:'in order to do：为了做某事（目的）。'},{t:'would like …',k:'td',h:'would like to do：想要做。'},{t:'It\'s kind of you …',k:'td',h:'It\'s kind of you to help me. 形容人的品质用 of sb. to do。'},
-   {t:'look forward to …',k:'ing',h:'这里的 to 是<b>介词</b>，后面接 doing：look forward to seeing you。'},{t:'be busy …',k:'ing',h:'be busy doing：忙于做。'},{t:'be worth …',k:'ing',h:'be worth doing：值得做。'},{t:'go …',k:'ing',h:'go shopping / go swimming：go + doing。'},
-   {t:'had better …',k:'do',h:'had better do（不带 to）：最好做。'},{t:'Why not …',k:'do',h:'Why not do…?（不带 to）'},{t:'let me …',k:'do',h:'let sb. do：使役动词后不带 to。'},{t:'make sb. …',k:'do',h:'make sb. do：使役动词后不带 to。'}],
-  tip:'小心 <b>look forward to</b> 里的 to 是介词，后面要用 doing！',prog:prog(2,1)});
- hidePanel();}
+ await matchGame();hidePanel();}
 
-// A3 stop / remember / forget / try
+// ================= new question types (2026-10-10 rework) =================
+// audio is played ONLY after the child has answered correctly (reward / confirmation)
+function reward(id){if(!id)return;curLine={id};if(curAudio){curAudio.pause();}if(muted)return;const a=voice('audio/'+id+'.mp3');curAudio=a;a.play().catch(()=>{});}
+const normTxt=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:"“”]/g,' ').replace(/\s+/g,' ').trim();
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+let AUTO=null;window.__solve=()=>AUTO&&AUTO();
+// generic stepped card: steps[] each {html, mount(el, ok)} ; ok(tipHtml) marks the step solved
+function stepCard({title,desc,steps,tip}){return new Promise(res=>{let i=0;
+ showPanel(`<div class="card qcard"><h2>${title}</h2><p class="desc">${desc}</p><div class="qbody"></div><p class="tip" aria-live="polite"></p><div class="prog"></div><div class="nextwrap"></div></div>`);
+ const card=panel.querySelector('.qcard'),body=card.querySelector('.qbody'),tipEl=card.querySelector('.tip'),pg=card.querySelector('.prog'),nw=card.querySelector('.nextwrap');
+ const draw=()=>{pg.innerHTML=steps.length>1?steps.map((_,j)=>`<i class="${j<i?'ok':''}"></i>`).join(''):'';};
+ const go=()=>{draw();nw.innerHTML='';tipEl.innerHTML='';const s=steps[i];body.innerHTML=s.html;body.classList.remove('solved');
+  const api={tip:h=>{tipEl.innerHTML=h;},bad:(h,el)=>{sfx('bad');tipEl.innerHTML='<span class="no">再想想：</span>'+h;if(el&&!RM){el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');}},
+   ok:(h,au)=>{sfx('ok');body.classList.add('solved');tipEl.innerHTML='✅ '+(h||'');reward(au);i++;draw();AUTO=null;
+    const last=i>=steps.length;if(last&&tip)tipEl.innerHTML+=`<div class="sum">${tip}</div>`;
+    if(Q.get('fast')){setTimeout(()=>last?res():go(),250);return;}
+    const nb=document.createElement('button');nb.className='btn big';nb.textContent=last?'继续 ➜':'下一题 ➜';nb.onclick=()=>last?res():go();nw.appendChild(nb);nb.focus({preventScroll:true});}};
+  s.mount(body,api);window.__auto=()=>AUTO&&AUTO();};
+ go();});}
+
+// ---- 1. matching: phrase -> to do / doing / do ----
+async function matchGame(){
+ const P=[{t:'look forward to …',k:'ing',ex:'We look forward to seeing Grumble again.',au:'ex_q2_lookforward',h:'look forward to 里的 to 是<b>介词</b>，介词后面接 doing。'},
+  {t:'be worth …',k:'ing',ex:'The rules are worth reading.',au:'ex_q2_worth',h:'be worth doing：值得做，后面接 doing。'},
+  {t:'had better …',k:'do',ex:'You had better keep my socks safe.',au:'ex_q2_hadbetter',h:'had better 后面直接跟动词原形，不带 to。'},
+  {t:'let me …',k:'do',ex:'Let me read the rules first.',au:'ex_q2_letme',h:'let sb. do：使役动词后面不带 to。'},
+  {t:'too small …',k:'td',ex:'Biscuit is too small to guard anything.',au:'ex_q2_tooto',h:'too … to do：太……而不能，要带 to。'}];
+ const T=[{k:'td',b:'TD',t:'to do'},{k:'ing',b:'ING',t:'doing'},{k:'do',b:'DO',t:'do'}];
+ await stepCard({title:'📋 招聘规则板 2/2：固定搭配连线',desc:'先点左边的短语，再点右边它后面该接的形式（也可以直接拖过去）。右边的形式可以重复用。',tip:'小心 <b>look forward to</b> 里的 to 是介词，后面要用 doing！',
+  steps:[{html:`<div class="match"><svg class="mlines"></svg><div class="mleft">${P.map((p,i)=>`<button class="mitem" data-i="${i}">${p.t}<small class="mex"></small></button>`).join('')}</div><div class="mright">${T.map(x=>`<button class="mtarget ${x.b}" data-k="${x.k}">${badge(x.b,{size:34})}<span>${x.t}</span></button>`).join('')}</div></div>`,
+   mount(el,api){let sel=null,left=P.length;const svg=el.querySelector('.mlines'),box=el.querySelector('.match');
+    const line=(a,b,cls)=>{const r=box.getBoundingClientRect(),ra=a.getBoundingClientRect(),rb=b.getBoundingClientRect();const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+     l.setAttribute('x1',ra.right-r.left);l.setAttribute('y1',ra.top+ra.height/2-r.top);l.setAttribute('x2',rb.left-r.left);l.setAttribute('y2',rb.top+rb.height/2-r.top);l.setAttribute('class',cls);svg.appendChild(l);l._a=a;l._b=b;return l;};
+    const redraw=()=>svg.querySelectorAll('line').forEach(l=>{const n=line(l._a,l._b,l.getAttribute('class'));l.replaceWith(n);});
+    addEventListener('resize',redraw);
+    const pick=it=>{if(it.disabled)return;el.querySelectorAll('.mitem').forEach(x=>x.classList.remove('sel'));sel=it;it.classList.add('sel');el.classList.add('armed');api.tip('已选中“'+it.firstChild.textContent+'”，再点右边一个形式。');};
+    const tryT=(it,tg)=>{const p=P[+it.dataset.i];el.classList.remove('armed');it.classList.remove('sel');sel=null;
+     if(tg.dataset.k===p.k){it.disabled=true;it.classList.add('done',T.find(x=>x.k===p.k).b);it.querySelector('.mex').textContent=p.ex;line(it,tg,'ok '+p.k);redraw();left--;
+      if(left===0)api.ok('全部连对！',p.au);else{sfx('ok');api.tip('✔ '+p.ex);reward(p.au);}}
+     else api.bad(p.h,it);};
+    el.querySelectorAll('.mitem').forEach(it=>{it.addEventListener('pointerdown',e=>{if(it.disabled)return;const sx=e.clientX,sy=e.clientY;let moved=false;
+      const ghost=line(it,it,'drag');const mv=ev=>{if(Math.hypot(ev.clientX-sx,ev.clientY-sy)>8)moved=true;const r=box.getBoundingClientRect();ghost.setAttribute('x2',ev.clientX-r.left);ghost.setAttribute('y2',ev.clientY-r.top);};
+      const up=ev=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up);ghost.remove();if(!moved){pick(it);return;}const tg=document.elementFromPoint(ev.clientX,ev.clientY)?.closest('.mtarget');if(tg){sel=it;tryT(it,tg);}};
+      addEventListener('pointermove',mv);addEventListener('pointerup',up);});});
+    el.querySelectorAll('.mtarget').forEach(tg=>tg.addEventListener('click',()=>{if(sel)tryT(sel,tg);else api.tip('先点左边的一个短语。');}));
+    AUTO=()=>P.forEach((p,i)=>{const it=el.querySelector(`.mitem[data-i="${i}"]`);if(!it.disabled){sel=it;tryT(it,el.querySelector(`.mtarget[data-k="${p.k}"]`));}});}}]});}
+
+// ---- 2. picture choice: stop / remember / forget / try ----
 async function gameMeaning(){
- const R=[['stop','a3_stop',[{ctx:'🐶 Biscuit 一直在叫，然后不叫了。',pre:'Biscuit stopped ',post:'.',a:'barking',d:'to bark'},{ctx:'🧦 Biscuit 跑着跑着，<b>停下来去</b>闻袜子。',pre:'Then he stopped ',post:' the socks.',a:'to sniff',d:'sniffing'}],
-   'stop doing = 停止<b>正在做</b>的事；stop to do = 停下来<b>去做另一件事</b>。'],
-  ['remember','a3_remember',[{ctx:'🎫 出发前：记得要带徽章（还没带）。',pre:'Remember ',post:' your badge.',a:'to bring',d:'bringing'},{ctx:'👾 Leo 记得以前见过这个怪兽（已经发生）。',pre:'Leo remembers ',post:' this monster before.',a:'meeting',d:'to meet'}],
-   'remember to do = 记得<b>要去做</b>（还没做）；remember doing = 记得<b>做过</b>（已经做了）。'],
-  ['forget','a3_forget',[{ctx:'🍖 别忘了要喂 Biscuit（还没喂）。',pre:'Don\'t forget ',post:' Biscuit.',a:'to feed',d:'feeding'},{ctx:'🏜️ 第 1 集去过金字塔，永远忘不了。',pre:'I\'ll never forget ',post:' the pyramid.',a:'visiting',d:'to visit'}],
-   'forget to do = 忘了<b>要去做</b>（没做）；forget doing = 忘了<b>做过</b>（已做）。'],
-  ['try','a3_try',[{ctx:'🏃 Sam <b>努力</b>想跑得更快。',pre:'I tried ',post:' faster.',a:'to run',d:'running'},{ctx:'🚪 门推不开，Sam <b>换个办法试试</b>：拉一拉。',pre:'Then I tried ',post:' the door.',a:'pulling',d:'to pull'}],
-   'try to do = <b>努力 / 设法</b>去做；try doing = <b>试一试</b>（换个办法看行不行）。']];
- const ing=s=>/ing$/.test(s)?'ING':'TD';
- await rounds(R,([v,au,rows,tip],i,n)=>({title:`🕵️ 意思侦探 ${i+1}/${n}：${v}`,mode:'blank',
-  desc:`<b>${v}</b> 后面接 to do 还是 doing，意思不一样！看情境，把词块拖进空格（多出来的那块是陷阱）：`,
-  slots:rows.map((r,j)=>({k:'r'+j,ctx:r.ctx,pre:r.pre,post:r.post})),
-  chunks:rows.flatMap((r,j)=>[{t:r.a,k:'r'+j,b:ing(r.a),h:''},{t:r.d,k:null,h:/ing$/.test(r.d)?`“${r.d}”表示已经在做 / 做过的事，再看看情境。`:`“${r.d}”表示还没做、要去做的事，再看看情境。`}]).map(c=>{if(c.k)c.h='放错格子了，看看每句话的情境。';return c;}),
-  tip,audio:au,prog:prog(n,i)}));}
+ const V=[['stop',[['stop1','Biscuit stopped barking.','Biscuit stopped to bark.','ex_q3_stop1','他是<b>不再叫了</b>（停止正在做的事）→ stop doing。'],['stop2','Biscuit stopped to sniff the socks.','Biscuit stopped sniffing the socks.','ex_q3_stop2','他是<b>停下来去闻</b>（停下来做另一件事）→ stop to do。']],'stop doing = 停止<b>正在做</b>的事；stop to do = 停下来<b>去做另一件事</b>。'],
+  ['remember',[['remember1','Remember to bring your badge.','Remember bringing your badge.','ex_q3_remember1','徽章还在桌上，<b>还没带</b> → remember to do（记得要去做）。'],['remember2','I remember meeting this monster before.','I remember to meet this monster before.','ex_q3_remember2','回忆泡泡里是<b>以前发生过</b>的事 → remember doing（记得做过）。']],'remember to do = 记得<b>要去做</b>（还没做）；remember doing = 记得<b>做过</b>。'],
+  ['forget',[['forget1',"Don't forget to feed Biscuit.","Don't forget feeding Biscuit.",'ex_q3_forget1','狗碗还是空的，<b>还没喂</b> → forget to do。'],['forget2',"I'll never forget visiting the pyramid.","I'll never forget to visit the pyramid.",'ex_q3_forget2','金字塔是<b>已经去过</b>的回忆 → forget doing。']],'forget to do = 忘了<b>要去做</b>；forget doing = 忘了<b>做过</b>。'],
+  ['try',[['try1','I tried to run faster.','I tried running faster.','ex_q3_try1','Sam 在<b>拼尽全力</b>跑 → try to do（努力去做）。'],['try2','I tried pulling the door.','I tried to pull the door.','ex_q3_try2','门推不开，<b>换个办法试试</b>拉 → try doing。']],'try to do = <b>努力</b>去做；try doing = <b>试一试</b>（换个办法）。']];
+ await stepCard({title:'🕵️ 意思侦探：看图选句',desc:'同一个动词后面接 to do 还是 doing，意思不一样！看图，给每张图选出正确的句子。',tip:'口诀：<b>to do 还没做 / 要去做；doing 正在做 / 做过了</b>。',
+  steps:V.map(([v,pics,rule])=>({html:`<h3 class="qv">${v}</h3><div class="pics">${pics.map((p,j)=>{const opts=j%2?[p[2],p[1]]:[p[1],p[2]];return `<div class="pic" data-j="${j}"><img src="illus/pick_${p[0]}.jpg" alt="" loading="lazy"><div class="popts">${opts.map(o=>`<button class="popt">${esc(o)}</button>`).join('')}</div></div>`;}).join('')}</div>`,
+   mount(el,api){let left=2;el.querySelectorAll('.pic').forEach(pc=>{const p=pics[+pc.dataset.j];pc.querySelectorAll('.popt').forEach(b=>b.onclick=()=>{if(pc.classList.contains('done'))return;
+     if(b.textContent===p[1]){b.classList.add('right');pc.classList.add('done');pc.querySelectorAll('.popt').forEach(x=>x.disabled=true);left--;if(left===0)api.ok(rule,p[3]);else{sfx('ok');api.tip('✔ '+p[4]);reward(p[3]);}}
+     else{b.classList.add('wrong');setTimeout(()=>b.classList.remove('wrong'),700);api.bad(p[4],pc);}});});
+    AUTO=()=>el.querySelectorAll('.pic').forEach(pc=>{const p=pics[+pc.dataset.j];[...pc.querySelectorAll('.popt')].find(b=>b.textContent===p[1]).click();});}}))});}
 
-// A5 to 还是不要 to
+// ---- 3. typed fill-in (suffix / base-verb) ----
+function typeStep({ctx,pre,post,ans,accept=[],au,hint,why,ph}){return {html:`${ctx?`<div class="ctx">${ctx}</div>`:''}<form class="tform" autocomplete="off"><div class="bsent">${pre}<input class="tin" type="text" inputmode="text" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="${ph||''}" aria-label="填空" size="${Math.max(4,ans.length+1)}">${post}</div><button class="btn" type="submit">检查</button></form>`,
+ mount(el,api){const f=el.querySelector('form'),inp=f.querySelector('input');let tries=0;setTimeout(()=>inp.focus({preventScroll:true}),50);
+  f.onsubmit=e=>{e.preventDefault();const v=normTxt(inp.value).replace(/^-/,'').replace(/\s/g,'');if(!v){api.tip('先在空格里打字哦。');return;}
+   if([ans,...accept].map(x=>x.toLowerCase()).includes(v)){inp.value=ans;inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok(why,au);}
+   else{tries++;const m=hint(v);api.bad(m+(tries>=2?`<br>答案是 <b>${ans}</b>，把它打进去吧。`:''),inp);inp.select();}};
+  AUTO=()=>{inp.value=ans;f.requestSubmit();};}};}
+async function gameFeel(){
+ const H=(isThing)=>v=>{if(v==='ed'||/ed$/.test(v))return isThing?'这里说的是<b>事物本身</b>“令人…的”，要用 -ing。':'';if(v==='ing'||/ing$/.test(v))return isThing?'':'这里说的是<b>人自己的感受</b>“感到…的”，要用 -ed。';return '只要补词尾：<b>ing</b> 或 <b>ed</b>。';};
+ const S=[['招聘会本身很好玩（事物）','The job fair is excit','.','ing',['exciting'],'ex_q4_1',true,'job fair 是<b>事物</b>，“令人激动的” → exciting。'],
+  ['Mia 心里很激动（人的感受）','Mia is excit','.','ed',['excited'],'ex_q4_2',false,'Mia 是<b>人</b>，“感到激动” → excited。'],
+  ['规则又长又无聊（事物）','The long rules are bor','.','ing',['boring'],'ex_q4_3',true,'rules 是<b>事物</b>，“令人无聊的” → boring。'],
+  ['Sam 觉得没劲（人的感受）','Sam feels bor','.','ed',['bored'],'ex_q4_4',false,'Sam 是<b>人</b>，“感到无聊” → bored。']];
+ await stepCard({title:'😆 -ing 还是 -ed？补上词尾',desc:'<b>-ing</b>：东西本身“令人…的”；<b>-ed</b>：人自己“感到…的”。在空格里打出 <b>ing</b> 或 <b>ed</b>。',tip:'exciting / boring 说<b>事物</b>的特点；excited / bored 说<b>人</b>的感受。',
+  steps:S.map(([ctx,pre,post,ans,acc,au,thing,why])=>typeStep({ctx,pre,post,ans,accept:acc,au,why,ph:'ing / ed',hint:H(thing)}))});}
+async function gameAttr(){
+ const S=[['一只<b>被弄丢</b>的袜子','Biscuit found a ',' sock.','lost','lose','l','ex_q7_1','袜子是被弄丢的（被动）→ 过去分词 <b>lost</b>（不规则变化）。',v=>v==='losing'?'袜子不会自己“正在丢”，它是<b>被</b>弄丢的，用 done。':v==='losed'?'lose 是不规则动词，过去分词不是 losed。':''],
+  ['<b>正在大笑</b>的怪兽','Everyone looked at the ',' monster.','laughing','laugh','l','ex_q7_2','怪兽自己在笑（主动、正在）→ <b>laughing</b>。',v=>v==='laughed'?'怪兽是自己<b>正在</b>笑，用 doing。':''],
+  ['一把<b>被弄坏</b>的椅子','Grumble sat on a ',' chair.','broken','break','b','ex_q7_3','椅子是被弄坏的 → 过去分词 <b>broken</b>（break-broke-broken）。',v=>v==='breaking'?'椅子是<b>被</b>弄坏的，用 done。':v==='broke'||v==='breaked'?'break 的过去分词是 broken。':''],
+  ['一只<b>正在跑</b>的狗','Sam saw a ',' dog.','running','run','r','ex_q7_4','狗自己正在跑 → <b>running</b>（双写 n 再加 ing）。',v=>v==='runing'?'run 要<b>双写 n</b>：running。':v==='run'||v==='ran'?'狗是<b>正在</b>跑，用 doing。':'']];
+ await stepCard({title:'🏷️ 给东西贴标签：doing 还是 done？',desc:'根据括号里的动词原形，自己写出正确的形式。<b>doing</b> 表示“主动 / 正在”，<b>done</b> 表示“被… / 已经”。',tip:'单个分词放<b>名词前</b>：a lost sock；分词短语放<b>名词后</b>：a monster <b>holding a big sign</b>。',
+  steps:S.map(([ctx,pre,post,ans,base,fl,au,why,h])=>typeStep({ctx,pre,post:` <span class="base">(${base})</span>`+post,ans,au,why,ph:fl+'…',hint:v=>h(v)||`想一想：是<b>主动 / 正在</b>（doing）还是<b>被… / 已经</b>（done）？`}))});}
+
+// ---- 4. error correction: tap the wrong word, then fix ----
 async function gameTo(){
- const R=[['a5_1',[{ctx:'Lily 想先看规则',pre:'Let me ',post:' the rules.',a:'read',d:'to read',b:'DO'},{ctx:'怪兽把大家都逗笑了',pre:'The monster made everyone ',post:'.',a:'laugh',d:'to laugh',b:'DO'}],'<b>let / make / have</b>（三使）+ sb. + <b>do</b>，不带 to！'],
-  ['a5_2',[{ctx:'Lily 叫 Biscuit 坐下',pre:'Lily asked Biscuit ',post:' down.',a:'to sit',d:'sit',b:'TD'},{ctx:'我们听见 Biscuit 叫了一声',pre:'We heard Biscuit ',post:'.',a:'bark',d:'to bark',b:'DO'}],'ask / tell / want sb. <b>to do</b> 要带 to；感官动词 <b>see / hear / watch / notice / feel</b> + sb. <b>do</b> 不带 to（看到 / 听到全过程）。<br>注意：<b>hear sb. doing</b> = 听到某人<b>正在</b>做。'],
-  ['a5_3',[{ctx:'怪兽提醒：最好安静',pre:'You\'d better ',post:' quiet.',a:'be',d:'to be',b:'DO'},{ctx:'Leo 不知道下一步该做什么',pre:'I don\'t know what ',post:' next.',a:'to do',d:'do',b:'TD'}],'<b>had better do</b> 不带 to；<b>疑问词 + to do</b>：what to do / how to do it / where to go。']];
- await rounds(R,([au,rows,tip],i,n)=>({title:`🔧 修句子 ${i+1}/${n}：要不要 to？`,mode:'blank',desc:'有的动词后面的 to 会“隐身”。把对的词块拖进空格：',
-  slots:rows.map((r,j)=>({k:'r'+j,ctx:r.ctx,pre:r.pre,post:r.post})),
-  chunks:rows.flatMap((r,j)=>[{t:r.a,k:'r'+j,b:r.b,h:'放错格子了，看看每句话的情境。'},{t:r.d,k:null,h:r.b==='DO'?`这里的 to 要“隐身”——不需要 to。`:`这里需要 to！`}]),
-  tip,audio:au,prog:prog(n,i)}));}
+ const S=[['Lily 想先看规则','Let me to read the rules.',2,[['删掉 to',1],['改成 too',0]],'ex_q5_1','Let me read the rules.','<b>let sb. do</b>：let 后面不带 to。'],
+  ['怪兽把大家都逗笑了','The monster made everyone to laugh.',4,[['删掉 to',1],['改成 laughing',0]],'ex_q5_2','The monster made everyone laugh.','<b>make sb. do</b>：make 后面不带 to。'],
+  ['Lily 叫 Biscuit 坐下','Lily asked Biscuit sit down.',3,[['改成 to sit',1],['改成 sitting',0]],'ex_q5_3','Lily asked Biscuit to sit down.','<b>ask sb. to do</b>：要带 to。'],
+  ['怪兽提醒：最好安静',"You'd better to be quiet.",2,[['删掉 to',1],['改成 being',0]],'ex_q5_4',"You'd better be quiet.",'<b>had better do</b>：不带 to。'],
+  ['Leo 不知道下一步该做什么',"I don't know what do next.",4,[['改成 to do',1],['改成 doing',0]],'ex_q5_5',"I don't know what to do next.",'<b>疑问词 + to do</b>：what to do / how to do it。']];
+ await stepCard({title:'🔧 找错改错：要不要 to？',desc:'每句话里有<b>一个地方</b>错了。先点出错的那个词，再选怎么改。',tip:'<b>let / make</b> sb. do、<b>had better</b> do 不带 to；<b>ask</b> sb. to do、<b>what to do</b> 要带 to。',
+  steps:S.map(([ctx,s,wi,fix,au,good,why])=>({html:`<div class="ctx">${ctx}</div><div class="esent">${s.split(' ').map((w,i)=>`<button class="ew" data-i="${i}">${esc(w)}</button>`).join(' ')}</div><div class="efix"></div>`,
+   mount(el,api){const fx=el.querySelector('.efix');let found=false;
+    el.querySelectorAll('.ew').forEach(b=>b.onclick=()=>{if(found)return;if(+b.dataset.i===wi){found=true;b.classList.add('pickd');sfx('flip');api.tip('找到了！现在怎么改？');
+      fx.innerHTML=fix.map(([t,ok])=>`<button class="btn efb" data-ok="${ok}">${t}</button>`).join('');
+      fx.querySelectorAll('.efb').forEach(f=>f.onclick=()=>{if(f.dataset.ok==='1'){el.querySelector('.esent').innerHTML=`<span class="fixed">${esc(good)}</span>`;fx.innerHTML='';api.ok(why,au);}else api.bad(why,f);});}
+     else api.bad('“'+esc(b.textContent)+'”没有错，再看看<b>动词前后的 to</b>。',b);});
+    AUTO=()=>{el.querySelector(`.ew[data-i="${wi}"]`).click();fx.querySelector('[data-ok="1"]').click();};}}))});}
 
-// A6 动名词作主语 / it 作形式主语
+// ---- 5. word order + rewrite ----
 async function gameSubject(){
- const R=[{au:'a6_1',slots:[{k:'s',b:'ING',title:'主语',sub:'doing 当名词'},{k:'v',b:'L',title:'系动词',sub:''},{k:'c',b:'C',title:'表语',sub:''}],chunks:[{t:'Finding socks',k:'s'},{t:'is',k:'v'},{t:'his favourite hobby',k:'c'}],
-   tip:'<b>动名词作主语</b>：Finding socks 是“找袜子这件事”，看作单数，所以谓语用 <b>is</b>。'},
-  {au:'a6_2',slots:[{k:'s',b:'S',title:'形式主语',sub:'占位'},{k:'v',b:'L',title:'系动词',sub:''},{k:'c',b:'C',title:'表语',sub:''},{k:'td',b:'TD',title:'真正的主语',sub:'放到后面'}],chunks:[{t:'It',k:'s'},{t:'is',k:'v'},{t:'fun',k:'c'},{t:'to find socks',k:'td'}],
-   tip:'不定式作主语太长时，用 <b>It</b> 占位，真正的主语 to do 放后面：It is fun to find socks. = To find socks is fun.<br>说人的品质用 <b>of</b>：It\'s kind <b>of</b> you to help me；说事情的难易用 <b>for</b>：It\'s easy <b>for</b> Biscuit to find socks.'}];
- await rounds(R,(r,i,n)=>({title:`🧱 搭句子 ${i+1}/${n}：动作也能当主语`,desc:'把词块拖进格子，搭出 Sam 说的句子：',slots:r.slots,
-  chunks:r.chunks.map(c=>({...c,h:`“${c.t}”不在这个位置，看看格子上的提示。`})),tip:r.tip,audio:r.au,prog:prog(n,i)}));}
+ const words=['Finding','socks','is','his','favourite','hobby'],shuf=['socks','is','hobby','Finding','favourite','his'];
+ await stepCard({title:'🧱 搭句子：动作也能当主语',desc:'',tip:'动名词或不定式都能当主语；不定式作主语太长时，常用 <b>It</b> 占位：It is fun to find socks.',
+  steps:[{html:`<p class="qdesc">点词块，按顺序拼出 Sam 说的话：“找袜子是它最爱的爱好。”（点上面的词可以退回去）</p><div class="wline"></div><div class="wbank">${shuf.map((w,i)=>`<button class="wt" data-w="${w}">${w}</button>`).join('')}</div>`,
+   mount(el,api){const line=el.querySelector('.wline'),bank=el.querySelector('.wbank');
+    const check=()=>{const got=[...line.children].map(b=>b.dataset.w);if(got.length<words.length)return;
+     if(got.join(' ')===words.join(' ')){line.insertAdjacentHTML('beforeend','<span class="dot">.</span>');line.querySelectorAll('.wt').forEach(b=>b.disabled=true);api.ok('<b>Finding socks</b>（找袜子这件事）作主语，看作单数，谓语用 <b>is</b>。','ex_q6_order');}
+     else api.bad(got[0]!=='Finding'?'谁当主语？“找袜子这件事”= <b>Finding socks</b>，放最前面。':'his favourite hobby 的顺序是：<b>his → favourite → hobby</b>。',line);};
+    el.addEventListener('click',e=>{const b=e.target.closest('.wt');if(!b||b.disabled)return;(b.parentNode===bank?line:bank).appendChild(b);check();});
+    AUTO=()=>{words.forEach(w=>line.appendChild(bank.querySelector(`[data-w="${w}"]`)));check();};}},
+  {html:`<p class="qdesc">用 <b>It</b> 开头改写这句话，意思不变：</p><div class="src">To find socks is fun.</div><form class="tform" autocomplete="off"><input class="tin wide" type="text" autocapitalize="sentences" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="It is …" aria-label="改写"><button class="btn" type="submit">检查</button></form>`,
+   mount(el,api){const f=el.querySelector('form'),inp=f.querySelector('input');let tries=0;
+    f.onsubmit=e=>{e.preventDefault();const v=normTxt(inp.value).replace(/\bit's\b/,'it is');if(!v)return api.tip('在框里打出整句话。');
+     if(v==='it is fun to find socks'){inp.value='It is fun to find socks.';inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok('<b>It</b> 是形式主语，真正的主语 <b>to find socks</b> 放到后面。','ex_q6_rewrite');}
+     else{tries++;let m=!/^it is/.test(v)?'要用 <b>It is</b> 开头。':/finding/.test(v)?'放到后面的真正主语要用 <b>to find</b> socks。':!/to find socks$/.test(v)?'句子结构是：It is + fun + <b>to find socks</b>。':'检查一下单词和顺序：It is fun to find socks.';
+      api.bad(m+(tries>=2?'<br>提示：<b>It is fun to find socks.</b>':''),inp);}};
+    AUTO=()=>{inp.value="it's fun to find socks";f.requestSubmit();};}}]});}
 
-// A7 分词作定语
-async function gameAttr(){await rounds([0],()=>({title:'🏷️ 给东西贴标签：doing 还是 done？',mode:'blank',
- desc:'<b>doing</b> 表示“主动 / 正在”；<b>done</b> 表示“被… / 已经”。把对的词块拖进空格（多出来的是陷阱）：',
- slots:[{k:'a',ctx:'一只被弄丢的袜子',pre:'a ',post:' sock'},{k:'b',ctx:'正在大笑的怪兽',pre:'the ',post:' monster'},{k:'c',ctx:'一把被弄坏的椅子',pre:'a ',post:' chair'},{k:'d',ctx:'一只正在跑的狗',pre:'a ',post:' dog'}],
- chunks:[{t:'lost',k:'a',b:'ED'},{t:'losing',k:null,h:'袜子是“被弄丢”的（被动），用 done。'},{t:'laughing',k:'b',b:'ING'},{t:'laughed',k:null,h:'怪兽自己在笑（主动、正在），用 doing。'},{t:'broken',k:'c',b:'ED'},{t:'breaking',k:null,h:'椅子是“被弄坏”的，用 done。'},{t:'running',k:'d',b:'ING'},{t:'run',k:null,h:'狗自己在跑（主动、正在），用 doing。'}].map(c=>c.k?{...c,h:'放错格子了，看看每个空格的情境。'}:c),
- tip:'单个分词放<b>名词前</b>：a lost sock；分词短语放<b>名词后</b>：a monster <b>holding a big sign</b>，a boy <b>called</b> Leo。<br>区分：a swimming girl（正在游泳的女孩，分词）≠ a swimming pool（游泳用的池子，动名词表用途）。',audio:'a7_all'}));}
-
+// ---- 6. true / false quiz ----
+async function gameTF(){
+ const S=[['I enjoy to swim.',0,'I enjoy swimming.','ex_q8_1','enjoy 后面只能接 <b>doing</b>。'],['Remember to bring your badge.',1,'','ex_q8_2','还没带 → remember <b>to do</b>，正确。'],
+  ['I want finding a helper.',0,'I want to find a helper.','ex_q8_3','want 后面接 <b>to do</b>。'],['The monster made Sam laugh.',1,'','ex_q8_4','make sb. <b>do</b>，不带 to，正确。'],
+  ["I'm interesting in the rules.",0,"I'm interested in the rules.",'ex_q8_5','说<b>人</b>的感受用 -ed：interested。'],['Reading the rules is boring.',1,'','ex_q8_6','动名词作主语、规则令人无聊用 boring，正确。'],
+  ['We look forward to have a new helper.',0,'We look forward to having a new helper.','ex_q8_7','look forward to 的 to 是介词，后面接 <b>doing</b>。'],['Look at the broken door!',1,'','ex_q8_8','门是被弄坏的 → broken，正确。']];
+ await stepCard({title:'⚡ 闯关小测：对还是错？',desc:'快速判断每句话对不对。把整集学过的都过一遍！',tip:'🎉 小测全部通过！你已经是非谓语小专家了。',
+  steps:S.map(([s,ok,fix,au,why])=>({html:`<div class="tfs">${esc(s)}</div><div class="tfb"><button class="btn tf" data-v="1">✔ 对</button><button class="btn tf" data-v="0">✘ 错</button></div>`,
+   mount(el,api){el.querySelectorAll('.tf').forEach(b=>b.onclick=()=>{if(+b.dataset.v===ok){if(!ok)el.querySelector('.tfs').innerHTML=`<s>${esc(s)}</s><br><span class="fixed">${esc(fix)}</span>`;el.querySelectorAll('.tf').forEach(x=>x.disabled=true);b.classList.add('right');api.ok(why,au);}
+     else api.bad(ok?'这句其实是<b>对</b>的。'+why:'这句有错。'+why,b);});
+    AUTO=()=>el.querySelector(`.tf[data-v="${ok}"]`).click();}}))});}
 // 知识地图
 async function mapCard(){await new Promise(res=>{showPanel(`<div class="card kmap"><h2>🗺️ 非谓语知识地图</h2>
  <div class="kgrid">
@@ -256,7 +328,7 @@ async function story(){
  showImg('sniff');await say('l09','Biscuit 不叫了，摇起了尾巴。');await say('l10','“给我看看你怎么干这份活，小狗。”');await say('l11','Biscuit 停下来闻了闻空气，然后在桌子下面找到了一只丢失的袜子。');
  $('#sub').style.display='none';await gameMeaning();
  showImg('job');await say('l12','“找袜子是它最爱的爱好！”');await say('l13','“哈！你把我逗笑了。这份工作归你了！”');await say('l14','Leo 永远忘不了看到 Biscuit 得到第一份工作的那一刻。');
- $('#sub').style.display='none';await gameTo();await gameSubject();await gameAttr();await mapCard();await spellCard();await ending();
+ $('#sub').style.display='none';await gameTo();await gameSubject();await gameAttr();await gameTF();await mapCard();await spellCard();await ending();
 }
 async function ending(){
  const fr=panel.querySelector('.flipwrap')?.getBoundingClientRect()||{left:innerWidth/2,top:innerHeight/2,width:0,height:0};hidePanel();$('#sub').style.display='none';
@@ -270,5 +342,5 @@ async function ending(){
  showPanel(`<div class="card"><h2>🎉 第 16 集完成！</h2><p style="font-size:22px">⭐ 第 16 颗星　·　🗺️ 地图解锁：<b>怪兽招聘会</b></p><p>🐶 Biscuit 拿到了人生第一份工作：<b>袜子看守员</b></p><p>📒 把你的收藏卡 #16 贴进冒险日志吧！</p><button class="btn big" id="again">🔁 再玩一次</button></div>`);
  panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
-const JUMP={forms:[gameForms,'crew'],feel:[gameFeel,'crew'],verbs:[gameVerbs,'rules'],meaning:[gameMeaning,'sniff'],to:[gameTo,'job'],subject:[gameSubject,'job'],attr:[gameAttr,'job'],map:[mapCard,'job'],card:[spellCard,'job']};
+const JUMP={forms:[gameForms,'crew'],feel:[gameFeel,'crew'],verbs:[gameVerbs,'rules'],meaning:[gameMeaning,'sniff'],to:[gameTo,'job'],subject:[gameSubject,'job'],attr:[gameAttr,'job'],tf:[gameTF,'job'],map:[mapCard,'job'],card:[spellCard,'job']};
 if(Q.get('jump')){homeOn(false);$('#start').style.display='none';ac();const [f,img]=JUMP[Q.get('jump')];showImg(img);f().then(()=>{if(Q.get('jump')==='card')ending();});}else $('#start').style.display='flex';$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
