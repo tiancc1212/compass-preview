@@ -347,8 +347,12 @@ ending:{img:'job',say:{id:'star',zh:'第 16 颗星回到了罗盘！'},
 | `DO` | 省略 to 的不定式 | do · 光杆动词 | ep16 let/make/had better |
 | `ING` | 动名词 / 现在分词 | doing | ep16 |
 | `ED` | 过去分词 | done · 被…的 / 已完成 | ep16 |
+| `ADJ` | 形容词 | 什么样的 · 修饰名词 | 名词前（或 something 后）的形容词：ep07 `tall pink trees`、`something shiny`；系动词后的形容词仍用 `C` |
+| `ADV` | 副词 | 怎样做 / 程度 | 修饰动词的副词及其比较级：ep11 `quietly`、`more quickly than`、`most carefully` |
+| `REL` | 定语从句 | 挂在名词后的说明牌 | who/which/that 引导的从句：ep17 `who found the compass`、`which Grandpa left` |
+| `INV` | 倒装 | 帮手或动词跑到主语前 | So do I / Neither can I / Here comes… / Never have I…：ep17；也可用来对比代词主语不倒装（Here it is） |
 
-圆形边框 = 句子里的“角色”，八角形边框（`TD DO ING ED`）= 动词的“形式”。**不要用 emoji 当语法图标**；emoji 只用在活动标题和按钮上。
+圆形边框 = 句子里的“角色”或修饰/结构（`ADJ ADV REL INV` 也是圆形），八角形边框（`TD DO ING ED`）= 动词的“形式”。**连词（and/but/so/or）没有专门徽章**：不要硬标成 `V`，可改标旁边的谓语并在 `zh` 里点出连词。**不要用 emoji 当语法图标**；emoji 只用在活动标题和按钮上。
 
 ---
 

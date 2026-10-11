@@ -260,3 +260,9 @@ body.rm .layer{transition:none}body.rm *{animation:none!important;transition:non
 }
 /* roles added for ep02 (nouns & articles) */
 :root{--role-n:#287b7a;--role-n-hi:#54aaa2;--role-a:#427a9a;--role-a-hi:#70afc3;--role-the:#427a9a;--role-the-hi:#70afc3;--role-zero:#62777b;--role-zero-hi:#97abaa;--role-owner:#7c5ca6;--role-owner-hi:#aa8dcc;--role-count:#9a742d;--role-count-hi:#c4a35d}
+
+/* Modifier & structure badges (engine v3): ADJ ADV REL INV */
+:root{--role-adj:#c94f86;--role-adj-hi:#ec85b3;--role-adj-bg:#fbe1ec;--role-adv:#2b8cbf;--role-adv-hi:#62b8e3;--role-adv-bg:#dcf0fa;--role-rel:#8e3b2f;--role-rel-hi:#c06a5a;--role-rel-bg:#f6e0dc;--role-inv:#5a6e1a;--role-inv-hi:#8fa63e;--role-inv-bg:#ecf2d6}
+.dchunk.ADJ,.chunk.ADJ{background:var(--role-adj-bg);border-color:var(--role-adj)}.dchunk.ADV,.chunk.ADV{background:var(--role-adv-bg);border-color:var(--role-adv)}
+.dchunk.REL,.chunk.REL{background:var(--role-rel-bg);border-color:var(--role-rel)}.dchunk.INV,.chunk.INV{background:var(--role-inv-bg);border-color:var(--role-inv)}
+.slot.ADJ{border-color:var(--role-adj)}.slot.ADV{border-color:var(--role-adv)}.slot.REL{border-color:var(--role-rel)}.slot.INV{border-color:var(--role-inv)}

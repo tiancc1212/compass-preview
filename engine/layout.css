@@ -56,3 +56,5 @@ body.ending #stage{filter:brightness(.5)}
 body.ending #sub{top:auto!important;height:auto!important;max-height:30vh}body.ending #ghint,body.ending #lnav{display:none!important}
 #line span.gk-N{--gkc:var(--role-n)}#line span.gk-A{--gkc:var(--role-a)}#line span.gk-THE{--gkc:var(--role-the)}#line span.gk-ZERO{--gkc:var(--role-zero)}#line span.gk-OWNER{--gkc:var(--role-owner)}#line span.gk-COUNT{--gkc:var(--role-count)}
 #line span.gk-S{--gkc:var(--role-s)}#line span.gk-V{--gkc:var(--role-v)}#line span.gk-O{--gkc:var(--role-o)}#line span.gk-C{--gkc:var(--role-c)}
+
+#line span.gk-ADJ{--gkc:var(--role-adj)}#line span.gk-ADV{--gkc:var(--role-adv)}#line span.gk-REL{--gkc:var(--role-rel)}#line span.gk-INV{--gkc:var(--role-inv)}

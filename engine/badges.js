@@ -16,7 +16,12 @@ export const ROLES={
  TD:{name:'不定式',q:'to do · 还没做 / 目的',token:'td',sym:'arrow',form:true},
  DO:{name:'省略 to 的不定式',q:'do · 光杆动词',token:'td',sym:'arrow_hollow',form:true},
  ING:{name:'动名词 / 现在分词',q:'doing · 正在做 / 做这件事',token:'ing',sym:'loop',form:true},
- ED:{name:'过去分词',q:'done · 被…的 / 已完成',token:'ed',sym:'check',form:true}};
+ ED:{name:'过去分词',q:'done · 被…的 / 已完成',token:'ed',sym:'check',form:true},
+ // Modifier & structure badges (S7, S11, S16-17): round rim like role badges.
+ ADJ:{name:'形容词',q:'什么样的 · 修饰名词',token:'adj',sym:'gem'},
+ ADV:{name:'副词',q:'怎样做 / 程度',token:'adv',sym:'wave'},
+ REL:{name:'定语从句',q:'挂在名词后的说明牌',token:'rel',sym:'tag'},
+ INV:{name:'倒装',q:'帮手或动词跑到主语前',token:'inv',sym:'swap'}};
 const OCT=(r)=>{const p=[];for(let i=0;i<8;i++){const a=Math.PI/8+i*Math.PI/4;p.push((50+r*Math.cos(a)).toFixed(1)+','+(50+r*Math.sin(a)).toFixed(1));}return p.join(' ');};
 const SYM={
  crate:c=>`<path d="M26 31h48v42H26zM26 45h48M41 31v42M59 31v42" fill="none" stroke="${c}" stroke-width="6" stroke-linejoin="round"/>`,
@@ -43,6 +48,14 @@ const SYM={
  bolt_line:(c,w)=>`<path d="M56 24 34 54h14l-6 22 24-32H52z" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/>`,
  target:(c,w)=>`<circle cx="50" cy="50" r="22" fill="none" stroke="${c}" stroke-width="5"/><circle cx="50" cy="50" r="12" fill="none" stroke="${c}" stroke-width="5"/><circle cx="50" cy="50" r="4" fill="${c}"/>`,
  target_line:(c,w)=>`<circle cx="50" cy="50" r="21" fill="none" stroke="${c}" stroke-width="${w}"/><circle cx="50" cy="50" r="11" fill="none" stroke="${c}" stroke-width="${w}"/><circle cx="50" cy="50" r="3" fill="${c}"/>`,
+ gem:(c)=>`<path d="M32 38l9-11h18l9 11-18 34z" fill="${c}"/><path d="M32 38h36M41 27l9 11 9-11M50 38v34" fill="none" stroke="rgba(0,0,0,.25)" stroke-width="2.5"/>`,
+ gem_line:(c,w)=>`<path d="M32 38l9-11h18l9 11-18 34zM32 38h36" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/>`,
+ wave:(c)=>`<path d="M22 54q7-14 14 0t14 0 14 0" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/><path d="M66 42l12 12-12 12z" fill="${c}"/>`,
+ wave_line:(c,w)=>`<path d="M22 54q7-14 14 0t14 0 14 0" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/><path d="M66 43l11 11-11 11z" fill="${c}"/>`,
+ tag:(c)=>`<path d="M24 50l14-16h36v32H38z" fill="${c}"/><circle cx="38" cy="50" r="5" fill="rgba(0,0,0,.35)"/>`,
+ tag_line:(c,w)=>`<path d="M24 50l14-16h36v32H38z" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/><circle cx="38" cy="50" r="4" fill="${c}"/>`,
+ swap:(c)=>`<path d="M26 40h36V30l14 14-14 14V48H26zM74 60H38v10L24 56l14-14v10h36z" fill="${c}" transform="translate(0,-3) scale(1 .95)"/>`,
+ swap_line:(c,w)=>`<path d="M27 38h34v-8l13 12-13 12v-8H27M73 62H39v8L26 58l13-12v8h34" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/>`,
  star:(c)=>`<path d="M50 24c3 16 10 23 26 26-16 3-23 10-26 26-3-16-10-23-26-26 16-3 23-10 26-26z" fill="${c}"/>`,
  star_line:(c,w)=>`<path d="M50 25c3 15 10 22 25 25-15 3-22 10-25 25-3-15-10-22-25-25 15-3 22-10 25-25z" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/>`};
 let uid=0;

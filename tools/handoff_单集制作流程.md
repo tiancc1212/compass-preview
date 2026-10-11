@@ -44,7 +44,7 @@
     VERSION               引擎版本号，只有一个数字。改了引擎就 +1，所有集自动拿到新版
     engine.js             播放器 + 题型 + 布局逻辑 + 罗盘 + 结尾
     base.css layout.css   样式（统一布局 A 在 layout.css）
-    badges.js             黄铜徽章 SVG：S V L O C TD DO ING ED N A THE ZERO OWNER COUNT
+    badges.js             黄铜徽章 SVG：S V L O C TD DO ING ED N A THE ZERO OWNER COUNT ADJ ADV REL INV
     lib/ models/ fonts/   three.js、3D 罗盘、字体
   ep16/  ep02/            ← 已迁移到引擎的两集，新集照着它们写
     index.html            标准外壳（10 行，不要自己加东西），<html data-v="N"> 是本集内容版本号
