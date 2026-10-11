@@ -131,6 +131,22 @@ for(const [no,ep]of EP){
 }
 const badges=H.badges||[],roleIds=Object.keys(ROLES).sort();
 if(!same(badges.map(b=>b.id).sort(),roleIds))err('徽章图鉴必须与 engine/badges.js 的全部 ROLES 一一对应');
+const badgeGroups=H.badgeGroups||[];
+if(!badgeGroups.length)err('徽章图鉴缺少分组');
+unique(badgeGroups.map(g=>g.id),'徽章分组 ID');
+for(const group of badgeGroups){
+  if(!/^[a-z][a-z-]*$/.test(group.id)||!nonempty(group.name)||!Array.isArray(group.badgeIds)||!group.badgeIds.length)err('徽章分组需要有效 ID、名称和非空徽章列表');
+}
+if(!same(badgeGroups.flatMap(g=>g.badgeIds||[]).sort(),roleIds))err('徽章分组必须完整覆盖全部 ROLES，且每枚只出现一次');
+const badgeCSSPath=path.join(ROOT,'engine/badges.css');
+const badgeCSS=exists(badgeCSSPath)?fs.readFileSync(badgeCSSPath,'utf8'):'';
+const badgeTokens=new Set([...badgeCSS.matchAll(/(--[\w-]+)\s*:/g)].map(m=>m[1]));
+for(const token of new Set(['--brass','--brass-hi','--brass-dark','--brass-sym',...Object.values(ROLES).flatMap(r=>[`--role-${r.token}`,`--role-${r.token}-hi`])])){
+  if(!badgeTokens.has(token))err(`共享徽章样式缺少配色 ${token}`);
+}
+for(const entry of ['engine/hq.js','engine/engine.js']){
+  if(!fs.readFileSync(path.join(ROOT,entry),'utf8').includes("EU('./badges.css')"))err(`${entry} 未加载共享徽章样式`);
+}
 for(const b of badges){
   if(!nonempty(b.name)||!nonempty(b.meaning)||b.image?.role!==b.id)err(`徽章 ${b.id}: 名称、含义或图形来源不完整`);
   const appeared=(roleEpisodes.get(b.id)||[]).sort((a,b)=>a-b);

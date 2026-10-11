@@ -2,7 +2,7 @@
 // 纯内容配置；第17集前16星门槛由总部与共享引擎共同校验。
 export default {
   "schemaVersion": 1,
-  "contentVersion": "v5-preview-20261011",
+  "contentVersion": "v6-badges-20261011",
   "stage": "preview-v5",
   "previewReady": true,
   "productionReady": false,
@@ -159,7 +159,7 @@ export default {
       "example": "看一句例子",
       "firstSeen": "首次出现",
       "learnMore": "再看知识地图",
-      "count": "已收入 {count} / 19 枚",
+      "count": "已收入 {count} / {total} 枚",
       "footnote": "遇见徽章，不等于已经会用。换一句话再试试，才知道自己会不会。"
     },
     "downloads": {
@@ -3134,6 +3134,12 @@ export default {
     },
     "sort": "episode-number"
   },
+  "badgeGroups": [
+    {"id":"sentence","name":"句子骨架","badgeIds":["S","V","L","O","C"]},
+    {"id":"noun","name":"名词与限定表达","badgeIds":["N","A","THE","ZERO","OWNER","COUNT"]},
+    {"id":"nonfinite","name":"非谓语形式","badgeIds":["TD","DO","ING","ED"]},
+    {"id":"structure","name":"修饰与结构","badgeIds":["ADJ","ADV","REL","INV"]}
+  ],
   "badges": [
     {
       "id": "S",

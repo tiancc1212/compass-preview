@@ -84,13 +84,7 @@
  #start h1{font-size:30px}.btn.big{font-size:18px;padding:12px 20px}
 }
 .dcard.done .bankwrap{display:none}
-/* ===== Compass Crew role design tokens ===== */
-:root{--brass:#c99a3c;--brass-hi:#f3d58a;--brass-dark:#8a6420;--brass-sym:#f6d27a;
- --role-s:#159a92;--role-s-hi:#3cc8bd;--role-s-bg:#d6f2ef;
- --role-v:#ea6040;--role-v-hi:#ff8c6a;--role-v-bg:#ffe2d8;
- --role-o:#2350b3;--role-o-hi:#4a7be0;--role-o-bg:#dbe5fa;
- --role-c:#d9a21f;--role-c-hi:#f4c84f;--role-c-bg:#fff1c4}
-.badge{display:inline-block;vertical-align:middle;flex:none;filter:drop-shadow(0 2px 2px rgba(80,50,10,.3))}
+/* Role colours and badge styling are shared with HQ through badges.css. */
 .dchunk.S,.chunk.S{background:var(--role-s-bg);border-color:var(--role-s)}
 .dchunk.V,.dchunk.L,.chunk.V,.chunk.L{background:var(--role-v-bg);border-color:var(--role-v)}
 .dchunk.O,.chunk.O{background:var(--role-o-bg);border-color:var(--role-o)}
@@ -102,10 +96,6 @@
 .card .sent{margin-top:34px}
 @media (max-width:560px){.flipwrap{height:230px!important}.face .sent{font-size:22px!important}.adj{gap:6px}.adj .btn{font-size:15px;padding:6px 12px}}
 
-/* S16 non-finite form tokens */
-:root{--role-td:#7b4fd0;--role-td-hi:#a383ee;--role-td-bg:#ece4fb;
- --role-ing:#3f9a2c;--role-ing-hi:#6cc552;--role-ing-bg:#e1f4da;
- --role-ed:#56677e;--role-ed-hi:#8496ad;--role-ed-bg:#e3e8ef}
 .dchunk.TD,.dchunk.DO,.chunk.TD{background:var(--role-td-bg);border-color:var(--role-td)}
 .dchunk.ING,.chunk.ING{background:var(--role-ing-bg);border-color:var(--role-ing)}
 .dchunk.ED,.chunk.ED{background:var(--role-ed-bg);border-color:var(--role-ed)}
@@ -249,11 +239,7 @@ body.rm .layer{transition:none}body.rm *{animation:none!important;transition:non
  .sentence-drop{margin:12px 0}.article-bank{gap:10px}.article-bank .dchunk{font-size:22px;padding:8px 15px}
  .treasures{gap:7px}.treasure{width:31%;padding:6px;min-height:95px}.treasure img{width:58px;height:54px}.treasure span{font-size:12px}.treasure-card .flipwrap{height:185px!important;margin:12px auto}.treasure-card .face{border-width:7px}.treasure-card .face b{font-size:19px}.treasure-card .face p{font-size:20px}
 }
-/* roles added for ep02 (nouns & articles) */
-:root{--role-n:#287b7a;--role-n-hi:#54aaa2;--role-a:#427a9a;--role-a-hi:#70afc3;--role-the:#427a9a;--role-the-hi:#70afc3;--role-zero:#62777b;--role-zero-hi:#97abaa;--role-owner:#7c5ca6;--role-owner-hi:#aa8dcc;--role-count:#9a742d;--role-count-hi:#c4a35d}
-
 /* Modifier & structure badges (engine v3): ADJ ADV REL INV */
-:root{--role-adj:#c94f86;--role-adj-hi:#ec85b3;--role-adj-bg:#fbe1ec;--role-adv:#2b8cbf;--role-adv-hi:#62b8e3;--role-adv-bg:#dcf0fa;--role-rel:#8e3b2f;--role-rel-hi:#c06a5a;--role-rel-bg:#f6e0dc;--role-inv:#5a6e1a;--role-inv-hi:#8fa63e;--role-inv-bg:#ecf2d6}
 .dchunk.ADJ,.chunk.ADJ{background:var(--role-adj-bg);border-color:var(--role-adj)}.dchunk.ADV,.chunk.ADV{background:var(--role-adv-bg);border-color:var(--role-adv)}
 .dchunk.REL,.chunk.REL{background:var(--role-rel-bg);border-color:var(--role-rel)}.dchunk.INV,.chunk.INV{background:var(--role-inv-bg);border-color:var(--role-inv)}
 .slot.ADJ{border-color:var(--role-adj)}.slot.ADV{border-color:var(--role-adv)}.slot.REL{border-color:var(--role-rel)}.slot.INV{border-color:var(--role-inv)}

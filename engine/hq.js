@@ -7,7 +7,8 @@ const versionedURL = (path, base, version) => {
   return url.href;
 };
 const EU = path => versionedURL(path, import.meta.url, V);
-const HU = path => versionedURL(path, hqBase, HQV);
+// A cached HTML shell must not pair a fresh engine with stale HQ configuration.
+const HU = path => versionedURL(path, hqBase, `${HQV}-${V}`);
 const [{default: HQ}, {default: MEDIA_ASSETS}, {icon: sharedIcon},
   {renderCompass, renderStarProgress, readStars, isFinaleUnlocked}, {badge}] = await Promise.all([
   import(HU('hq.js')), import(HU('media-assets.js')), import(EU('./icons.js')),
@@ -19,7 +20,7 @@ const loadCSS = href => new Promise((resolve, reject) => {
   link.onload = resolve; link.onerror = reject;
   document.head.appendChild(link);
 });
-await Promise.all([loadCSS(EU('./compass/compass.css')), loadCSS(EU('./hq.css'))]);
+await Promise.all([loadCSS(EU('./badges.css')), loadCSS(EU('./compass/compass.css')), loadCSS(EU('./hq.css'))]);
 
 const C = HQ.copy;
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -205,7 +206,12 @@ function journalView() {
 }
 function badgesView() {
   const count = HQ.badges.filter(badgeUnlocked).length;
-  return `${pageHeading('badges',fmt(C.badges.count,{count}))}${count ? '' : emptyState('badges')}<div class="badge-grid">${HQ.badges.map(b=>`<button class="badge-card ${badgeUnlocked(b)?'':'is-locked'}" data-badge="${esc(b.id)}" ${badgeUnlocked(b)?'':'disabled'}><span class="badge-art">${badge(b.id,{size:100})}</span><strong>${esc(b.name)}</strong><span>${esc(badgeUnlocked(b)?C.badges.unlocked:C.badges.locked)}</span></button>`).join('')}</div><p class="badge-footnote">${esc(C.badges.footnote)}</p>`;
+  const groups = HQ.badgeGroups.map(group => {
+    const members = group.badgeIds.map(id => HQ.badges.find(b => b.id === id));
+    const collected = members.filter(badgeUnlocked).length;
+    return `<section class="badge-group" aria-labelledby="badge-group-${esc(group.id)}"><div class="badge-group-heading"><h2 id="badge-group-${esc(group.id)}">${esc(group.name)}</h2><span>${esc(fmt(C.badges.count,{count:collected,total:members.length}))}</span></div><ul class="badge-grid">${members.map(b=>`<li><button class="badge-card ${badgeUnlocked(b)?'':'is-locked'}" data-badge="${esc(b.id)}" ${badgeUnlocked(b)?'':'disabled'}><span class="badge-art">${badge(b.id,{size:100})}</span><strong>${esc(b.name)}</strong><span>${esc(badgeUnlocked(b)?C.badges.unlocked:C.badges.locked)}</span></button></li>`).join('')}</ul></section>`;
+  }).join('');
+  return `${pageHeading('badges',fmt(C.badges.count,{count,total:HQ.badges.length}))}${count ? '' : emptyState('badges')}${groups}<p class="badge-footnote">${esc(C.badges.footnote)}</p>`;
 }
 function downloadsView() {
   const downloads = HQ.downloads.filter(d=>d.enabled && published(d.ep) && completed(d.ep));

@@ -1,0 +1,23 @@
+/* Shared badge palette: loaded by both episodes and headquarters. */
+:root{
+ --brass:#c99a3c;--brass-hi:#f3d58a;--brass-dark:#8a6420;--brass-sym:#f6d27a;
+ --role-s:#159a92;--role-s-hi:#3cc8bd;--role-s-bg:#d6f2ef;
+ --role-v:#ea6040;--role-v-hi:#ff8c6a;--role-v-bg:#ffe2d8;
+ --role-o:#2350b3;--role-o-hi:#4a7be0;--role-o-bg:#dbe5fa;
+ --role-c:#d9a21f;--role-c-hi:#f4c84f;--role-c-bg:#fff1c4;
+ --role-n:#287b7a;--role-n-hi:#54aaa2;
+ --role-a:#427a9a;--role-a-hi:#70afc3;
+ --role-the:#427a9a;--role-the-hi:#70afc3;
+ --role-zero:#62777b;--role-zero-hi:#97abaa;
+ --role-owner:#7c5ca6;--role-owner-hi:#aa8dcc;
+ --role-count:#9a742d;--role-count-hi:#c4a35d;
+ --role-td:#7b4fd0;--role-td-hi:#a383ee;--role-td-bg:#ece4fb;
+ --role-ing:#3f9a2c;--role-ing-hi:#6cc552;--role-ing-bg:#e1f4da;
+ --role-ed:#56677e;--role-ed-hi:#8496ad;--role-ed-bg:#e3e8ef;
+ --role-adj:#c94f86;--role-adj-hi:#ec85b3;--role-adj-bg:#fbe1ec;
+ --role-adv:#2b8cbf;--role-adv-hi:#62b8e3;--role-adv-bg:#dcf0fa;
+ --role-rel:#8e3b2f;--role-rel-hi:#c06a5a;--role-rel-bg:#f6e0dc;
+ --role-inv:#5a6e1a;--role-inv-hi:#8fa63e;--role-inv-bg:#ecf2d6;
+}
+/* Keep the medallion rim independent of the surrounding page's brass theme. */
+.badge{--brass:#c99a3c;display:inline-block;vertical-align:middle;flex:none;filter:drop-shadow(0 2px 2px rgba(80,50,10,.3))}
