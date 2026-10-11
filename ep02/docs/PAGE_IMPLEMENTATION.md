@@ -7,14 +7,16 @@ episode: 2
 
 # 第 2 集页面实现
 
+> **2026-10-11 更新：** 本集已迁移到共享引擎（`engine/`）。原来的 `ep02/app.js`、`ep02/base.css`、`ep02/badges.js`、`ep02/tools/verify_episode.mjs` 已删除；内容现在在 `ep02/episode.js`、`ep02/audio/hints.json`、`ep02/episode.css`。下文是迁移前的验收记录，保留作历史参考；现在的检查方法见 `tools/validate_episode.mjs` 和 `tools/SPEC_单集规格书.md`。
+
 已按批准的故事、题目、插图和执行计划完成本集页面。只实现第 2 集页面；本报告不代表媒体制作、发布或真实配音验收完成。
 
 ## 文件范围
 
 - `ep02/index.html`：本集标题、起点、缓存版本 `1`，沿用原播放器控件。
-- `ep02/app.js`：15 句、4 段故事，Q1—Q6 共 18 步，M1—M6，3 件宝物卡，第 2 颗星（`MYSTAR=1`）。
-- `ep02/base.css`：390×844 与 1280×800 布局、滚动题卡、完整显示 16:9 故事图；棋盘文字按实际图片框定位。
-- `ep02/badges.js`：本集扩展名词、a/an、the、不填冠词、所有格和数量的黄铜 SVG 徽章。
+- （迁移前）`ep02/app.js`，现为 `ep02/episode.js`：15 句、4 段故事，Q1—Q6 共 18 步，M1—M6，3 件宝物卡，第 2 颗星（`MYSTAR=1`）。
+- （迁移前）`ep02/base.css`，现由 `engine/base.css`、`engine/layout.css` 和 `ep02/episode.css` 代替：390×844 与 1280×800 布局、滚动题卡、完整显示 16:9 故事图；棋盘文字按实际图片框定位。
+- （迁移前）`ep02/badges.js`，现并入 `engine/badges.js`：本集扩展名词、a/an、the、不填冠词、所有格和数量的黄铜 SVG 徽章。
 - `ep02/lib/three.module.js`、`lib/addons/loaders/GLTFLoader.js`、`lib/addons/environments/RoomEnvironment.js`、`lib/addons/utils/BufferGeometryUtils.js`：只复制罗盘运行所需文件。
 - `ep02/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf`、`ep02/models/compass_q.glb`：沿用模板资源。
 - 本报告。
