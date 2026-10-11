@@ -1,15 +1,16 @@
 # 罗盘冒险队 · 单集制作交接文档（给 Codex）
 
-> 写于 2026-10-11。照着这份文档，在 Change 的 Mac 上用和第 16 集完全相同的方法做出新的一集。
+> 写于 2026-10-11，同日改为**共享引擎**版本。照着这份文档，在 Change 的 Mac 上做出新的一集。
 > 你（Codex）**看不到** Willo 的工作机（/workspace），下面列出的所有文件都已经放进 GitHub 仓库或 Mac 本地，路径以本文为准。
 
 ## 0. 当前硬规则（先读）
 
-- **只改正在做的这一集。** 不要修改、不要重新部署第 1 集（仓库根目录）和第 16 集（`ep16/`）。要借用 ep16 的代码，就**复制**到新目录（如 `ep05/`）再改。
+- **新的一集只写内容，不写代码。** 播放器、题型、布局、结尾动画都在共享引擎 `engine/` 里；一集的目录只放 `index.html`（标准外壳）、`episode.js`（内容配置）、`audio/`、`illus/`、`downloads/`、`docs/`，需要时加 `episode.css`（只能写本集插图上叠字的位置）。
+- **不要改 `engine/`。** 需要新题型或引擎有 bug，先告诉 Change，由 Willo 改引擎（改一次，所有集一起受益）。引擎一改会影响 ep02 和 ep16，所以必须两集都回归测试。
+- 不要修改第 1 集（仓库根目录 `index.html app.js …`，它还是旧的独立代码，没有迁移）。不要动别的集的目录。
 - 不动 Change 的个人网站 stemlearn.cloud，只发布到预览仓库 `compass-preview`。
 - 只用免费工具。
 - 给 Change 的说明一律用**简体中文、通俗说法**。
-
 ## 1. 项目背景
 
 - 给 Change 的孩子（初中，主角 Leo 以他为原型）做一套互动英语语法课。整体剧情和 17 节课的安排在
@@ -26,7 +27,7 @@
 | 插图 | AI 生成，Pixar 风格 3D 动画电影画面；用角色设定图保持人物一致；**图中不能有任何文字** |
 | Leo | 白色 polo 衫（藏青领口和袖口）、蓝绿色运动裤、白色运动鞋、短寸头；**参考孩子的衣服和发型，但不能用孩子的脸**，脸要原创 |
 | 角色 | Mia：淡紫色衣服、拿素描本，细腻略胆小；Sam：橙色运动风，大嗓门；Lily：绿白配色、戴眼镜、聪明；Biscuit：浅棕色卷毛小狗，爱找袜子；爷爷 Grandpa；各集可以有新角色（如 ep16 的紫色怪兽 Grumble） |
-| 图标 | 语法角色和形式用**黄铜罗盘徽章**（`badges.js` 生成的 SVG），**不要用 emoji 当语法图标** |
+| 图标 | 语法角色和形式用**黄铜罗盘徽章**（`engine/badges.js` 生成的 SVG，在 episode.js 里写徽章名即可），**不要用 emoji 当语法图标** |
 | 动画 | 极简。只在答题时给短暂反馈（答对弹一下、答错抖一下），不做长过场 |
 | 音频 | 练习题音频**只在孩子答对或完成之后**播放，作为奖励，绝不提前播（不能泄露答案）。**不做听力题** |
 | 题型 | 每道题按考点选最合适的题型：分类拖拽、连线、看图选句、打字填空（词尾或原形变形）、改错（点错词再改）、连词成句、句子改写、判断对错。一集里题型多一些没关系 |
@@ -41,7 +42,7 @@
 ### 3.1 GitHub Pages 仓库
 
 - 仓库：`https://github.com/tiancc1212/compass-preview`，分支 `main`，根目录直接发布（有 `.nojekyll`），没有构建步骤。
-- 线上地址：第 1 集 `https://tiancc1212.github.io/compass-preview/`；第 16 集 `https://tiancc1212.github.io/compass-preview/ep16/`。
+- 线上地址：第 1 集 `https://tiancc1212.github.io/compass-preview/`；第 2 集 `…/compass-preview/ep02/`；第 16 集 `https://tiancc1212.github.io/compass-preview/ep16/`。
 - 部署方式就是 `git push`，Pages 一般 30 秒到 2 分钟后更新。
 - Mac 上 `gh` 已登录 tiancc1212（https），`git push` 可直接用。仓库还没克隆到 Mac，第一次需要：
   ```bash
@@ -49,35 +50,34 @@
   gh repo clone tiancc1212/compass-preview
   cd compass-preview && git pull
   ```
-- 目录结构（2026-10-11 时的状态）：
+- 目录结构（2026-10-11 共享引擎之后）：
   ```
   .nojekyll
-  index.html app.js base.css badges.js   ← 第1集（别动）
-  audio/ illus/ models/compass_q.glb fonts/ design/ lib/(three.js)
-  ep16/                                   ← 第16集（别动，用作模板）
-    index.html      页面骨架、HUD 按钮、字幕栏、importmap；用 ?v= 做缓存刷新
-    app.js          全部逻辑（约 370 行，见 §6）
-    base.css        样式（徽章配色变量、各题型样式、手机适配）
-    badges.js       黄铜徽章 SVG：badge('S'|'V'|'L'|'O'|'C'|'TD'|'DO'|'ING'|'ED',{size})
-    audio/*.mp3 + audio/lines.json   每句的文本、角色、时长、逐词时间
-    illus/*.jpg     故事插图 16:9；pick_*.jpg 看图选句插图 800×800
-    models/compass_q.glb  首页 3D 罗盘
-    fonts/ lib/three.module.js lib/addons/
-    design/badges.* forms.*   徽章设计图
-    docs/           ← 设计文档（不影响网页运行）
-      QUESTIONS_PLAN.md          题目计划（题型、题目、答案、干扰项、音频）
-      COVERAGE.md                教辅覆盖表（格式范例）
-      PROMPTS.md                 故事插图提示词与人物描述
-      PICTURE_CHOICE_PROMPTS.md  看图选句四宫格的生图要求
-      CREDITS.md
-      ref_10-非谓语动词.md        当时用的教辅章节副本
+  index.html app.js base.css badges.js audio/ illus/ lib/ models/ fonts/   ← 第1集（旧的独立代码，别动）
+  engine/                 ← 共享引擎（所有新集共用，别改）
+    VERSION               引擎版本号，只有一个数字。改了引擎就 +1，所有集自动拿到新版
+    engine.js             播放器 + 题型 + 布局逻辑 + 罗盘 + 结尾
+    base.css layout.css   样式（统一布局 A 在 layout.css）
+    badges.js             黄铜徽章 SVG：S V L O C TD DO ING ED N A THE ZERO OWNER COUNT
+    lib/ models/ fonts/   three.js、3D 罗盘、字体
+  ep16/  ep02/            ← 已迁移到引擎的两集，新集照着它们写
+    index.html            标准外壳（10 行，不要自己加东西），<html data-v="N"> 是本集内容版本号
+    episode.js            本集全部内容：标题、插图表、故事分段、练习、知识地图、收藏卡、结尾
+    episode.css           （可选）只放本集插图上叠字的位置，ep02 用来把 “C. C. was here” 放在棋盘铜牌上
+    audio/*.mp3  audio/lines.json  audio/hints.json
+    illus/*.jpg  downloads/*.docx  docs/（设计文档，不影响网页）
   tools/
-    align.py        逐词时间对齐（faster-whisper）
-    make_lines.py   从 台词.md 生成 lines.json
-    README.md       align.py 用法
-    tests/          puppeteer 自动测试脚本（rework16.mjs 题型测试，reader_test.mjs 播放和回看测试）+ package.json
+    validate_episode.mjs  内容检查器（见第 8 步），每次提交前必须跑
+    align.py              逐词时间对齐（faster-whisper）
+    make_lines.py         从 台词.md 生成 lines.json
+    make_docx_ep16.py     Word 知识点生成脚本范例
+    tests/                puppeteer 测试脚本 + package.json
   ```
-- **缓存刷新：** `index.html` 里写的是 `href="base.css?v=8"`、`src="./app.js?v=8"`。每次发布把这个数字加 1。发给 Change 的链接也带上 `?v=N`，例如 `.../ep05/?v=1`。`badges.js` 由 app.js import，没带版本号，改了它就要在 import 里加 `?v=`。
+- **缓存刷新（两个数字）：**
+  - 改了本集内容（episode.js、lines.json、hints.json、episode.css）→ 把 `epNN/index.html` 里 `<html data-v="N">` 加 1。
+  - 引擎的版本只在 `engine/VERSION` 一个地方（你不需要改）。外壳每次都会实时读这个文件，所以 Change 不用换链接。
+  - 音频文件的缓存参数在 `episode.js` 的 `audioVersion`（例如 `'20261011-level1'`）；换了 mp3 就改成新的字符串。
+  - 插图换了同名文件时，最好直接换个文件名。
 
 ### 3.2 Change 的 Mac 本地
 
@@ -128,7 +128,7 @@ cd tests && npm install          # 安装 puppeteer-core
 | 1 | `audio/l01.mp3` | 故事 | 旁白 | 英式温柔女声，讲故事语气，语速适中 | ... |
 ```
 - 命名规则：故事 `l01`…`lNN`；练习 `ex_q<活动号>_<描述>`，例如 `ex_q3_stop1`、`ex_q8_4`；收藏卡选项 `card_<词>`；结尾 `star`。全部用小写 ASCII，一句一个文件。
-- 角色列只能用这些名字：旁白 / Leo / Mia / Sam / Lily / Grandpa（爷爷） / Grumble（怪兽）。新角色要同时改 `make_lines.py` 里的 W 和 app.js 里的 WHO。
+- 角色列只能用这些名字：旁白 / Leo / Mia / Sam / Lily / Grandpa（爷爷） / Grumble（怪兽）。新角色要同时改 `make_lines.py` 里的 W 和 episode.js 里的 `speakers`。
 - 英文必须是最终版，一字不差（标点也算），否则高亮对不上。练习题只录**正确句子**。
 - 音色表（沿用，不要换）：
 
@@ -162,43 +162,65 @@ cd tests && npm install          # 安装 puppeteer-core
 - 告诉 Change：台词已经写进 台词.md 的第 N 集，请 CoCo 用剪映导出，放到 `台词/第N集_<标题>/audio/`，文件名和表里完全一致，句首句尾留白不超过 0.3 秒。
 - 拿到以后检查：数量一致，没有多余的文件，删掉 macOS 生成的 `._*` 文件。
 
-### 第 6 步：搭建新集目录（以 ep16 为模板）
+### 第 6 步：搭建新集目录（只写内容）
 ```bash
 cd ~/Study/compass/compass-preview
-cp -R ep16 epNN && rm -rf epNN/audio/* epNN/illus/* epNN/docs/*
+mkdir -p epNN/audio epNN/illus epNN/downloads epNN/docs
+cp ep16/index.html epNN/index.html          # 外壳：只改 <title>，data-v 从 1 开始
+cp ep16/episode.js epNN/episode.js          # 照着改内容
 cp "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/台词/第N集_xxx/audio/"*.mp3 epNN/audio/
 python3 tools/make_lines.py "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/台词/台词.md" "第 N 集" epNN/audio/lines.json
 ```
-`index.html`：改 `<title>`、`#title`、`#stars`、开始页 `#start` 的标题和按钮文字；版本号从 `?v=1` 开始。
 
-`app.js` 的结构（按出现顺序）：
-1. `WHO`：角色 → [中文名, 颜色]。`sfx()` 是合成音效。
-2. **播放器**（`playLine / say / readSection / reviewSection / setAuto / setRate`），各集共用，**不要改**。高亮只跟 `audio.currentTime` 和 lines.json 里的逐词开始时间走，等音频的 `playing` 事件之后才开始；静音或自动模式下用虚拟时钟。
-3. `dragGame(cfg)`：分类拖拽，或把词拖进句子空格。
-   ```js
-   {title, desc, mode:'box'|'blank',
-    slots:[{k:'td', b:'TD', title:'+ to do', sub:'不定式'}]            // box 模式
-         或 [{k:'a', ctx:'中文情境', pre:'The job fair is ', post:'.'}],  // blank 模式
-    chunks:[{t:'want', k:'td', h:'放错时的中文解释'}, {t:'陷阱', k:null, h:'...'}],
-    tip:'全部完成后的总结', audio:'ex_qX_xxx'(可选，完成后播), prog:prog(n,i)}
-   ```
-   `rounds(list, mk)` 可以连续出好几轮。
-4. `stepCard({title, desc, tip, steps:[{html, mount(el, api)}]})`：通用的分步题卡。`api.ok(中文解释, 音频id)` 表示答对（这时才播音频），`api.bad(中文解释, 元素)` 表示答错，`api.tip()` 显示提示。最后一步完成后卡片会自动关闭。每个 mount 里给 `AUTO=()=>{…}` 赋一个自动作答函数，测试要用。
-   基于它已经写好的题型（直接复制改数据）：
-   - `matchGame`：连线。P=[{t, k, ex, au, h}]，T=右侧目标 [{k, b, t}]
-   - `gameMeaning`：看图选句。V=[[动词, [[图名, 正确句, 干扰句, 音频, 解释], …], 规则]]，图片是 `illus/pick_<图名>.jpg`
-   - `typeStep({ctx, pre, post, ans, accept, au, why, ph, hint:v=>中文})`：打字填空，输入不分大小写，忽略空格和前导 “-”。`gameFeel` 是填词尾，`gameAttr` 是按原形填词
-   - `gameTo`：改错。[情境, 错句, 错词下标, [[改法, 1正确/0错误]…], 音频, 正确句, 解释]
-   - `gameSubject`：第 1 步连词成句，第 2 步句子改写（`normTxt` 会把句子统一成小写、去标点、把 it's 换成 it is）
-   - `gameTF`：判断对错。[句子, 1对/0错, 改正句, 音频, 解释]
-   - 每种题型都有答错的中文解释，连错两次会给出答案。
-5. `mapCard`（知识地图，底部有“📥 下载知识点（Word）”链接）、`spellCard`（收藏卡，用 `card_*` 音频）、`IMG`（插图表 key → [路径, 说明]）、`showImg`。
-   - **Word 知识点：** 照着 `tools/make_docx_ep16.py` 复制一份 `tools/make_docx_epNN.py`，改成本集内容（中文讲解 + 英文例句 + 对比表 + 常见错误，内容要和知识地图、覆盖表一致）。然后运行 `pip install python-docx && python3 tools/make_docx_epNN.py epNN/downloads/epNN_<ascii名>.docx`。文件名只用 ASCII，中文名放在 `<a download="罗盘冒险队_第N集_….docx">` 里。生成后用 python-docx 打开检查一遍。知识地图和结尾卡片都要放这个链接（直接链到文件，iPhone 和安卓都能下载）。
-6. **结尾星星回罗盘**（ep16 的 `ending()`，直接复用）：背景变暗、罗盘放大，星星从收藏卡飞进罗盘上第 `MYSTAR` 个槽（`MYSTAR = 集号 - 1`，ep16 是 15），点屏幕可以跳过；槽位点亮并有光圈，显示“⭐ N / 17”进度条。进度存在 `localStorage` 的 `cc_stars`（已完成集号的数组，同一网站下各集共用），之前完成过的集也会点亮。第 1 集目前还不会写这个记录，按规则不要去改它。完成卡片的文字要改成本集。
-7. **`SEC`**：故事分段，每句是 `{id:'l01', zh:'中文字幕', img:'gate', overlay:'<div class="carve">…</div>'(可选), fx:'door'(可选音效)}`。每句都写上 img（读到这句时显示的图）。
-8. `story()`：`await readSection(SEC.S1); await 练习A(); await readSection(SEC.S2); …; await mapCard(); await spellCard(); await ending();`
-9. `JUMP`：调试入口 `?jump=<名字>`，直接进某个活动；跳进去时要设好 `lastSection`（ep16 的写法：`SEC[{forms:'S1',…}[j]||'S4']`）。调试参数：`?mute=1` 静音，`?fast=1` 答完自动进入下一题，`?rm=1` 关闭动画。
+**`episode.js` 字段说明**（完整例子：`ep16/episode.js` 用了全部 ep16 题型，`ep02/episode.js` 用了图片选择、图片分拣、冠词空格、宝物卡）：
 
+```js
+export default {
+ no:5,                                   // 集号 = 罗盘上的第几颗星（1–17）
+ hud:'🧭 罗盘冒险队 · 第5集 ……', stars:'⭐ 第 5 颗星',
+ start:{h1:'标题', subt:'一句话简介', go:'🧭 出发：……'},
+ theme:{bg:'#1b1020', stage:'#2a1830'},  // 背景色（插图之外的底色，基本被模糊背景盖住）
+ audioVersion:'20261011-level1',         // 音频缓存参数，换 mp3 就改
+ rewardWait:false,                       // true：答对后等奖励音播完才能点“下一题”，最后一题自动继续（ep02 用）
+ css:false,                              // true：加载本集 episode.css
+ download:{href:'downloads/ep05_xxx.docx', name:'罗盘冒险队_第5集_….docx', label:'📥 下载知识点（Word）'},
+ img:{gate:['illus/01_gate.jpg','中文说明'], …},  firstImg:'gate',
+ sections:{S1:[{id:'l01', zh:'中文字幕', img:'gate', overlay:'<div class="carve">文字</div>'(可选), fx:'door'(可选音效)}, …], S2:[…]},
+ flow:['S1','forms','feel','S2','verbs', …,'map','card'],   // 顺序：故事段和活动交替，最后是知识地图和收藏卡，之后引擎自动放结尾
+ activities:{ forms:{…}, feel:{…}, … },
+ ending:{img:'job', say:{id:'star', zh:'第 5 颗星回到了罗盘！'}, html:'<h2>🎉 第 5 集完成！</h2><p>⭐ 已收集 {n} / 17 颗星 …</p><p>{download}</p>'}
+};
+```
+- html 字符串里可以用：`{{b:TD:34}}` = 34px 的 TD 徽章；`{download}` = Word 下载按钮；`{n}`（只在结尾）= 已收集星数。
+- 新角色：在 `speakers:{grumble2:['怪兽 Bob','#7b4fd0']}` 里加，同时改 `make_lines.py` 的 W。
+
+**活动类型 `type`：**
+| type | 用途 | 关键字段 |
+|---|---|---|
+| `drag` | 分类拖拽 / 拖进句子空格 | `title desc mode:'box'|'blank' slots:[{k,b,title,sub}|{k,ctx,pre,post}] chunks:[{t,k,h}] tip audio? prog:[共几轮,第几轮]`；`k:null` 是干扰项 |
+| `steps` | 一张卡片里连续几道题 | `title badge?(标题前的徽章) desc tip steps:[…]` |
+| `seq` | 把几个活动连成一个（如分拣 + 连线） | `parts:[{type:'drag',…},{type:'steps',…}]` |
+| `map` | 知识地图 | `html button` |
+| `card` | 收藏卡 | `variant:'phrase'`（选一个短语填进句子，背面是徽章词块，ep16）或 `'treasure'`（选一件带图的宝物，ep02），音频 `card_<k>` |
+
+**`steps` 里的题型 `kind`：**（每题都可以有 `au`：答对后才播放的奖励音频）
+| kind | 题型 | 字段 |
+|---|---|---|
+| `match` | 连线 | `pairs:[{t,k,ex,au,h}] targets:[{k,b,t}]` |
+| `pick` | 两张图各选一句 | `verb rule pics:[{img,good,bad,au,why}]`（图 `illus/<img>.jpg`） |
+| `choice` | 一个情境（可带图）选一句 | `ctx img? good others:[] hint why?` |
+| `typed` | 打字填空（词尾或变形） | `ctx? pre post ans accept? ph? why hint wrong:[{re:'ed$',zh:'…',not?}]` |
+| `fix` | 点错词再选改法 | `ctx s wi(错词序号,从0数) fix:[['删掉 to',1],['改成 too',0]] good why` |
+| `order` | 连词成句 | `q words shuffled why firstHint hint` |
+| `rewrite` | 整句改写 | `q src ph answers:['小写去标点的标准答案'] show normalize? wrong hint why` |
+| `tf` | 判断对错 | `s ok:true/false fix(错句的改正) why`；加 `hint labels:['这样说可以','需要改一下'] ctx` 就是 ep02 的引导式判断 |
+| `sort` | 带图词卡分进两个盒子 | `boxes:[{k,t}] items:[{w,zh,img,box,why}] why` |
+| `blank` | 把 a/an/the/不填 拖进一个空 | `ctx pre post ans opts? hint why` |
+
+- 答错：`typed / rewrite` 按 `wrong` 规则给针对性提示（`re` 是正则，`not:true` 表示“不匹配时”），都不匹配就用 `hint`；连错两次给出答案。
+- 测试入口：`?jump=<活动名>` 直接进某个活动（图和“重看上一节”自动按 flow 推算）；`?mute=1` 静音、`?fast=1` 答完自动下一题、`?rm=1` 关动画。
+- **Word 知识点：** 照着 `tools/make_docx_ep16.py` 复制一份 `tools/make_docx_epNN.py`，改成本集内容（中文讲解 + 英文例句 + 对比表 + 常见错误，和知识地图、覆盖表一致），运行 `pip install python-docx && python3 tools/make_docx_epNN.py epNN/downloads/epNN_<ascii名>.docx`。文件名只用 ASCII；中文名写在 `download.name`。
+- **结尾星星回罗盘**是引擎自动做的：背景变暗、罗盘放大，星星从收藏卡飞进第 `no` 个槽，点屏幕可跳过；进度存在 `localStorage` 的 `cc_stars`（各集共用）。
 ### 第 7 步：逐词时间对齐
 ```bash
 cd ~/Study/compass/compass-preview/tools
@@ -210,7 +232,8 @@ venv/bin/python align.py ../epNN --model small.en   # 想更准就用这个，�
 
 ### 第 8 步：测试清单
 本地起服务：`cd ~/Study/compass/compass-preview && python3 -m http.server 8716`，浏览器打开 `http://localhost:8716/epNN/`。
-自动测试：参考 `tools/tests/rework16.mjs` 和 `reader_test.mjs`，把 URL 和题目选择器改成本集再运行（`node rework16.mjs http://localhost:8716/epNN/index.html`）。截图存 `epNN/shots/`（不要提交）。
+**先跑内容检查器**（必须 0 个错误）：`node tools/validate_episode.mjs epNN`。它会检查：flow 和活动对得上、每句台词有 mp3 和逐词时间、mp3 实际时长和 lines.json 一致（不一致就要重跑 align.py）、所有奖励音频和插图存在、题型字段齐全、hints.json 里的词在句子里找得到、徽章名正确、下载文件存在。
+自动测试：参考 `tools/tests/` 里的脚本（全部活动可以用 `window.__auto()` 自动作答、`window.__next()` 翻句、`window.__state()` 看当前状态），截图存 `epNN/shots/`（不要提交）。
 
 - [ ] 手机 390×844（触摸）和电脑 1280×800 都把全集从头玩到尾，控制台 0 报错（favicon 404 可以忽略）
 - [ ] 每种题型都试过答错（有中文解释）和答对
@@ -227,13 +250,14 @@ venv/bin/python align.py ../epNN --model small.en   # 想更准就用这个，�
 ### 第 9 步：部署
 ```bash
 cd ~/Study/compass/compass-preview
-git status                       # 确认只改了 epNN/（以及 tools/ 如有需要），没有 ep16/ 或根目录文件
-git add epNN && git commit -m "epNN: <标题>" && git push origin main
+node tools/validate_episode.mjs epNN     # 0 个错误才能提交
+git status                               # 确认只改了 epNN/（以及 tools/make_docx_epNN.py），没有 engine/、别的集或根目录文件
+git add epNN tools/make_docx_epNN.py && git commit -m "epNN: <标题>" && git push origin main
 # 等 Pages 更新后验证
-curl -s "https://tiancc1212.github.io/compass-preview/epNN/index.html?t=$RANDOM" | grep -o 'app.js?v=[0-9]*'
+curl -s "https://tiancc1212.github.io/compass-preview/epNN/index.html?t=$RANDOM" | grep -o 'data-v="[0-9]*"'
 curl -sI https://tiancc1212.github.io/compass-preview/epNN/audio/l01.mp3 | head -1   # 应为 200
 ```
-然后用线上地址再跑一次自动测试。以后每次更新：版本号 `?v=` 加 1，再 commit 和 push，把带新版本号的链接发给 Change。
+然后用线上地址再跑一次自动测试。以后每次更新内容：`data-v` 加 1，再 commit 和 push。
 
 ### 第 10 步：向 Change 汇报（中文、口语化）
 - 先给线上链接（带 `?v=`），再用一两句话说这一集讲什么。
@@ -252,21 +276,15 @@ Change 已确认：**插图永远完整显示，不裁切**；空白处不用纯
 | 横屏手机 | 图在左边（约 60% 宽，占满高度），字幕卡在右边 |
 | 电脑 | 图居中（下方留约 300px），字幕卡在图下方，宽 960px |
 
-- **样式：** 都在 `ep16/layout.css`，文件头有注释，所有集共用同一套，不要各改各的。
-- **用到新的一集**（包括给 ep02 补上），只改该集自己的文件：
-  1. 把 `ep16/layout.css` 复制到 `epNN/layout.css`，在 `index.html` 里 base.css 后面加 `<link rel="stylesheet" href="layout.css?v=N">`。
-  2. `index.html`：在 `#stage` 前面加 `<div id="backdrop"></div>`；在 `#sub` 里的 `#zh` 后面加 `<div id="ghint" aria-live="polite"></div>`。
-  3. `app.js`：从 ep16 复制 `renderHint` / `HINTS` / `nw` 三段（放在 `say()` 前面）、`fitLayout()`（用 ResizeObserver 把 HUD 高度写进 `--hud`），并在 `playLine` 生成 spans 之后调用 `renderHint(id,L,spans)`；`showImg()` 里同步设置 `#backdrop` 的背景图；加载 lines.json 后接着加载 `audio/hints.json`。
-  4. 去掉该集原来自己写的“图片区域 / 字幕位置”样式（ep02 的 base.css 第 219–251 行一带：`#stage{inset:75px 0 230px}`、`.layer{width:min(100vw,calc((100dvh - 305px)*16/9))}` 等），否则会和 layout.css 冲突。
-  5. 按第 8 步测试：竖屏 390×844、小屏 360×740、横屏 844×390、电脑 1280×800。
-- **注意：** ep02 是 Codex 做的，要改 ep02 必须先经过 Change 同意，并且只动 ep02 目录。
-
+- **引擎自动做好**，新集什么都不用写。样式在 `engine/layout.css`。
+- 插图上叠字（`overlay`）的位置按**插图本身的百分比**算（引擎把图层大小设成图片的实际显示框），所以在三种屏幕上都贴在图的同一个位置。默认样式是图中上方的一块发光牌子；要放到别处，在 `episode.css` 里改 `.carve` 的 `left / top`（参考 `ep02/episode.css`）。
+- 测试：竖屏 390×844、小屏 360×740、横屏 844×390、电脑 1280×800 都截图看一遍。
 ### 逐句语法提示（hints.json）
 - **位置：** `epNN/audio/hints.json`，键是台词 id，值是数组：
   ```json
   "l05": [{"b":"TD","hl":"too small to guard","zh":"<b>too … to do</b> = 太……而不能"}]
   ```
-  - `b`：徽章，可选 TD / DO / ING / ED / S / V / O / C（和 badges.js 一致）。
+  - `b`：徽章，可选 TD / DO / ING / ED / S / V / O / C / N / A / THE / ZERO / OWNER / COUNT（和 engine/badges.js 一致，检查器会核对）。
   - `hl`：句子里要加下划线的连续词，忽略大小写和标点，要和台词原文的词一致。
   - `zh`：一句话中文讲解，最多 25 个字左右，可以用 `<b>` 加粗。
 - **写法原则：**
@@ -277,19 +295,23 @@ Change 已确认：**插图永远完整显示，不裁切**；空白处不用纯
 - 收藏卡句子（`card_*`）也可以写，结尾的 `star` 不写。
 
 ## 5. 常见坑
-- 台词改了一个字，就要重新录那一句，再跑 align.py。
-- 新增角色要同时改：`make_lines.py` 的 W、app.js 的 WHO、台词表的角色列、音色表。
+- 台词改了一个字，就要重新录那一句，再跑 align.py。检查器会发现 mp3 时长和 lines.json 不一致。
+- 新增角色要同时改：`episode.js` 的 `speakers`、`make_lines.py` 的 W、台词表的角色列、音色表。
 - 剪映导出的打包文件里可能夹带 `._xxx.mp3`（macOS 元数据），要删掉。
-- 改 base.css 或 app.js 后忘了加版本号，Change 手机上会一直看到旧版。
-- 不要在故事播放时调用 `showPanel`；练习结束一定要走 `hidePanel()`（`stepCard` 和 `rounds` 已经自动处理）。
-
+- 改了内容忘了把 `data-v` 加 1，Change 手机上可能看到旧版（最多 10 分钟）。
+- `episode.js` 是 JavaScript：字符串里有英文撇号（`Don't`）时用双引号或反引号包起来；多行 html 用反引号。
+- 想要引擎没有的题型或效果：不要在集目录里写代码，告诉 Change，由 Willo 加进引擎。
 ## 6. 交付前自查清单（每集交付前逐项打勾）
 
 - [ ] **覆盖表核对：** 把 `epNN/docs/COVERAGE.md` 和教辅原章节逐条对照，每个知识点都标了 ✅ 或 ⏭（附原因）；“教辅勘误”一节已写好
-- [ ] **英文语法复查：** 台词.md 里本集每一句英文（故事、练习、收藏卡、结尾）、app.js 里的题干、选项、干扰项和 Word 例句，都逐句检查语法和英式拼写；故意写错的句子只出现在改错题和判断题里
+- [ ] **英文语法复查：** 台词.md 里本集每一句英文（故事、练习、收藏卡、结尾）、episode.js 里的题干、选项、干扰项和 Word 例句，都逐句检查语法和英式拼写；故意写错的句子只出现在改错题和判断题里
 - [ ] **插图风格对比：** 把新插图和 `ep16/illus/` 并排看，画风、光线、人物服装发型都一致；Leo 没有用孩子的脸；图里没有文字
-- [ ] **布局和提示：** 已套用统一布局 A（layout.css），四种屏幕截图都看过；hints.json 覆盖了所有含考点的句子，内容正确
+- [ ] **内容检查器：** `node tools/validate_episode.mjs epNN` 0 个错误，提醒都看过
+- [ ] **布局和提示：** 四种屏幕截图都看过（布局 A 由引擎自动套用）；hints.json 覆盖了所有含考点的句子，内容正确
 - [ ] **结尾和下载：** 结尾星星飞回罗盘、槽位点亮、显示 N / 17；知识地图和结尾卡片上的“下载知识点（Word）”能下载并打开，内容和知识地图一致
 - [ ] **第 8 步测试清单全部通过**（手机加电脑、答对才放音频、高亮不闪、滑动不和拖拽冲突、静音、重看上一节、卡片不盖故事）
 - [ ] **需要 Change 决定的事项单独列出来**，写进最终汇报：教辅勘误怎么处理、口音或某句需不需要重录、哪张插图不满意、题目难度等
-- [ ] 确认这次 git 提交只动了 `epNN/`（以及必要的 `tools/`），没有改第 1 集和第 16 集
+- [ ] 确认这次 git 提交只动了 `epNN/`（以及 `tools/make_docx_epNN.py`），没有改 `engine/`、第 1 集和其他集
+
+## 7. 备注：第 1 集（根目录）以后怎么迁移
+现在没有动它。以后 Change 同意迁移时：把根目录的 SEC / IMG / 题目数据按第 6 步的格式写成 `ep01/episode.js`，补 `audio/hints.json`，音频和插图移进 `ep01/`；第 1 集的题型（主谓宾拖拽、句子成分）可以用 `drag` 的 box / blank 模式表达；最后把根目录 `index.html` 改成跳转到 `ep01/` 的小页面（或直接做成 17 集目录页）。迁移后旧的 `cc_stars` 记录照样有效。

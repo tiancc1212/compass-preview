@@ -224,3 +224,39 @@ body.ending #c{width:min(70vh,86vw)!important;height:min(70vh,86vw)!important}
 #starprog .sbar{height:8px;background:#ead6b0;border-radius:4px;margin-top:4px;overflow:hidden}#starprog .sbar i{display:block;height:100%;background:linear-gradient(90deg,#f5a623,#ffd66b)}
 .kdl{margin:8px 0 4px}a.btn{display:inline-block;text-decoration:none}
 @media (max-width:640px){#starprog{top:96px}}
+
+/* ===== engine: page shell (was inline in ep16/index.html); theme colours come from episode.js theme ===== */
+body{background:var(--bg,#1b1020)}
+#stage{position:fixed;inset:0;background:var(--stagebg,#2a1830)}
+.layer{position:absolute;inset:0;opacity:0;transition:opacity .4s}
+.layer.in{opacity:1}
+.layer img{width:100%;height:100%;object-fit:cover;display:none}
+.layer.loaded img{display:block}.layer.loaded .ph{display:none}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff6e1;font-size:20px;background:radial-gradient(#6a4a8a,var(--stagebg,#2a1830))}
+.ph small{opacity:.6;font-size:13px}
+.carve{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(22px,3.6vw,46px);color:#5a3208;background:rgba(255,226,160,.82);padding:10px 26px;border-radius:14px;border:3px solid #c8902f;box-shadow:0 0 30px rgba(255,200,90,.8)}
+#home{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2}
+#c{position:fixed;left:50%;top:44%;transform:translate(-50%,-50%);width:min(60vh,70vw);height:min(60vh,70vw);z-index:2;pointer-events:none}
+body.rm .layer{transition:none}body.rm *{animation:none!important;transition:none!important}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+/* ===== engine: extra question types (ported from ep02, scoped so ep16 is unchanged) ===== */
+/* the layer box = the visible picture box, so overlays (.carve) are positioned in image % */
+.layer.missing:after{content:'插图加载失败，请稍后刷新';color:#fff;position:absolute;inset:0;display:grid;place-items:center;font-size:14px;background:var(--stagebg)}
+.card h2.hb{display:flex;align-items:center;justify-content:center;gap:10px}
+.chq .qimage{width:min(310px,100%);max-height:310px;aspect-ratio:1;object-fit:contain;border-radius:16px;display:block;margin:8px auto;background:#eadfc7}
+.chq .popts{max-width:670px;margin:10px auto}.chq .popt{font-size:20px;text-align:left;padding:11px 16px}
+.item-bank{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:12px 0}.item{font-size:17px;padding:6px;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}.item img{width:72px;height:62px;object-fit:contain;border-radius:8px}.item small{font-size:12px;font-weight:500}
+.sort-boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sort-boxes .slot{min-height:150px}.sort-boxes h3{font-size:17px;margin:2px}.sort-boxes .drop{flex-wrap:wrap;justify-content:flex-start;gap:4px;align-content:flex-start}.sort-boxes .item.placed{width:auto;padding:5px 7px;display:block;font-size:16px;min-height:36px}.sort-boxes .placed img,.sort-boxes .placed small{display:none}
+.sentence-drop{justify-content:center;margin:20px 0}.article-bank{gap:12px;margin:18px 0}.sentence-drop .bslot .drop{font-family:system-ui,sans-serif;font-size:16px;font-weight:500}.sentence-drop .bslot.filled .drop{font-family:Georgia,serif;font-size:23px}
+.kgrid details{font-size:14px;line-height:1.5;border-top:1px solid #ead5ac;margin-top:8px;padding-top:6px}.kgrid summary{cursor:pointer;font-weight:700}
+.treasures{display:flex;justify-content:center;gap:14px;margin:16px 0}.treasure{font:inherit;border:3px solid #d8b98a;background:#fffaf0;border-radius:15px;padding:8px;cursor:pointer;color:#5a3412;width:150px;min-height:110px}.treasure img{display:block;object-fit:contain;width:90px;height:74px;margin:auto}.treasure span{display:block;font-size:15px;margin-top:5px}.treasure.selected{border-color:#b7771f;box-shadow:0 0 0 3px #f4c962}.treasure-card .face b{font-size:24px}.treasure-card .face p{font:24px Georgia,serif;padding:8px 18px;color:#3a2410}.treasure-card .flipwrap{height:220px}.treasure-card .btn:disabled{opacity:.5}
+.nextwrap .btn:disabled{opacity:.5;cursor:default}
+.star-skip{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:32;font-size:14px;color:#fff6e1;background:#163540b8;padding:9px 16px;border-radius:999px;pointer-events:none}
+@media(max-width:640px){
+ .chq .qimage{width:210px;max-height:210px;margin:5px auto}.chq .popt{font-size:17px;min-height:48px;padding:9px 10px}
+ .item-bank{grid-template-columns:repeat(3,1fr);gap:8px}.item{font-size:16px;padding:4px}.item img{width:54px;height:48px}.item small{font-size:11px}.sort-boxes .slot{display:flex;flex-direction:column;align-items:stretch;padding:7px;min-height:120px}.sort-boxes h3{font-size:14px;line-height:1.4}.sort-boxes .drop{min-height:65px}.sort-boxes .item.placed{font-size:14px;min-height:30px}
+ .sentence-drop{margin:12px 0}.article-bank{gap:10px}.article-bank .dchunk{font-size:22px;padding:8px 15px}
+ .treasures{gap:7px}.treasure{width:31%;padding:6px;min-height:95px}.treasure img{width:58px;height:54px}.treasure span{font-size:12px}.treasure-card .flipwrap{height:185px!important;margin:12px auto}.treasure-card .face{border-width:7px}.treasure-card .face b{font-size:19px}.treasure-card .face p{font-size:20px}
+}
+/* roles added for ep02 (nouns & articles) */
+:root{--role-n:#287b7a;--role-n-hi:#54aaa2;--role-a:#427a9a;--role-a-hi:#70afc3;--role-the:#427a9a;--role-the-hi:#70afc3;--role-zero:#62777b;--role-zero-hi:#97abaa;--role-owner:#7c5ca6;--role-owner-hi:#aa8dcc;--role-count:#9a742d;--role-count-hi:#c4a35d}

@@ -1,0 +1,18 @@
+{
+ "_说明": "每句的语法提示。b=徽章(N/A/THE/ZERO/OWNER/COUNT)，zh=一句中文讲解，hl=句中要标出的词（连续词组，忽略大小写和标点）。没有本集考点的句子不写；一句最多 2 条。",
+ "l01": [{"b":"A","hl":"a Viking ship","zh":"<b>a</b> Viking ship：第一次提到、没指定哪一艘 → 用 a"}],
+ "l02": [{"b":"OWNER","hl":"captain's","zh":"<b>captain's</b>：一位船长的 → 加 <b>'s</b>"}],
+ "l03": [{"b":"A","hl":"an axe","zh":"<b>an</b> axe：axe 开头是元音<b>音</b> → an；shield 开头是辅音 → a"},{"b":"THE","hl":"the captain's helmet","zh":"<b>the</b> captain's helmet：船长只有一顶，大家知道是哪顶 → the"}],
+ "l04": [{"b":"THE","hl":"The axe","zh":"<b>The</b> axe：刚才清单上那把，已经知道是哪一把 → the"}],
+ "l05": [{"b":"A","hl":"a helmet","zh":"<b>a</b> helmet：随便一顶头盔，还没指定 → a"}],
+ "l06": [{"b":"OWNER","hl":"captain's","zh":"<b>the captain's</b> helmet：the 跟着 captain，表示“那位船长的”"}],
+ "l07": [{"b":"OWNER","hl":"captain's","zh":"<b>captain's</b> helmet：谁的头盔？船长的 → 's"}],
+ "l08": [{"b":"OWNER","hl":"sailors'","zh":"<b>sailors'</b>：多位船员的，s 结尾的复数只加 <b>'</b>"},{"b":"A","hl":"a box","zh":"<b>a</b> box：一个箱子，没指定哪一个 → a"}],
+ "l09": [{"b":"COUNT","hl":"two shields","zh":"<b>two shields</b>：可数名词，多个加 <b>-s</b>"},{"b":"COUNT","hl":"three knives","zh":"<b>three knives</b>：knife → knives（f 变 v 加 es）"}],
+ "l10": [{"b":"ZERO","hl":"bread and water","zh":"<b>bread</b> / <b>water</b>：不可数，泛指这种东西 → 不加冠词"},{"b":"ZERO","hl":"lunch","zh":"for <b>lunch</b>：通常的三餐前不加冠词"}],
+ "l11": [{"b":"COUNT","hl":"two pieces of bread","zh":"<b>two pieces of bread</b>：面包不可数，数“块”，pieces 变复数"},{"b":"COUNT","hl":"a bottle of water","zh":"<b>a bottle of water</b>：水按“瓶”来数"}],
+ "l12": [{"b":"ZERO","hl":"chess","zh":"play <b>chess</b>：下棋这类活动不加冠词；after <b>lunch</b> 也不加"}],
+ "l13": [{"b":"A","hl":"an old chessboard","zh":"<b>an</b> old chessboard：紧接着的 old 是元音音 → an"}],
+ "l14": [{"b":"A","hl":"A Chinese boy","zh":"<b>A</b> Chinese boy：一个中国男孩，第一次提到 → a"},{"b":"ZERO","hl":"chess","zh":"taught me <b>chess</b>：棋类不加冠词"}],
+ "l15": [{"b":"THE","hl":"The second star","zh":"<b>The second</b> star：序数词前用 the"},{"b":"THE","hl":"the chessboard","zh":"<b>the</b> chessboard：刚才那块棋盘，知道是哪块 → the"}]
+}

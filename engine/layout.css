@@ -11,7 +11,7 @@
 #backdrop{position:fixed;inset:-60px;z-index:0;background:#1b1020 center/cover no-repeat;filter:blur(30px) brightness(.5) saturate(1.1);transition:background-image .4s}
 #stage{z-index:1;background:transparent!important}
 .layer img{object-fit:contain!important}
-#stage .layer{inset:0}
+#stage .layer{inset:auto;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%}  /* engine: JS sizes the layer to the picture box so overlays sit in image % */
 /* --- portrait (default) --- */
 #stage{position:fixed!important;left:0!important;right:0!important;top:var(--hud)!important;bottom:auto!important;height:56.25vw!important;inset:auto 0 auto 0}
 #sub{position:fixed!important;left:var(--gap)!important;right:var(--gap)!important;width:auto!important;transform:none!important;
@@ -54,3 +54,5 @@ body.ending #stage{filter:brightness(.5)}
 }
 @media (min-width:900px) and (min-height:600px){#stage{bottom:300px!important}#sub{height:270px}}
 body.ending #sub{top:auto!important;height:auto!important;max-height:30vh}body.ending #ghint,body.ending #lnav{display:none!important}
+#line span.gk-N{--gkc:var(--role-n)}#line span.gk-A{--gkc:var(--role-a)}#line span.gk-THE{--gkc:var(--role-the)}#line span.gk-ZERO{--gkc:var(--role-zero)}#line span.gk-OWNER{--gkc:var(--role-owner)}#line span.gk-COUNT{--gkc:var(--role-count)}
+#line span.gk-S{--gkc:var(--role-s)}#line span.gk-V{--gkc:var(--role-v)}#line span.gk-O{--gkc:var(--role-o)}#line span.gk-C{--gkc:var(--role-c)}
