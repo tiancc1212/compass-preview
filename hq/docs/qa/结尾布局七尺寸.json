@@ -1,0 +1,2933 @@
+{
+  "records": [
+    {
+      "ep": "ep01",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            635.890625,
+            175,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            635.890625,
+            329,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            290.1875,
+            453.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            290.1875,
+            594.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 158,
+        "scrollHeight": 158,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            297.6875,
+            527.015625,
+            347.6875
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            297.6875,
+            668.015625,
+            347.6875
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 158,
+        "scrollHeight": 158,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            523.609375,
+            702,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            523.609375,
+            843,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            539.609375,
+            830,
+            589.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            539.609375,
+            971,
+            589.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep01",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            589.609375,
+            910,
+            639.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            589.609375,
+            1051,
+            639.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第1集完成！\n\n⭐ 已收集 16 / 17 颗星 · 地图解锁：金字塔\n\nBiscuit 找到了旧袜子，你们发现了“C. C. was here – 1975”这条线索。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            657,
+            175,
+            707
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            657,
+            329,
+            707
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 219,
+        "scrollHeight": 256,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            743.828125,
+            190,
+            793.828125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            743.828125,
+            359,
+            793.828125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 256,
+        "scrollHeight": 256,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            302,
+            453.625,
+            352
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            302,
+            594.625,
+            352
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 182,
+        "scrollHeight": 234,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            317,
+            527.015625,
+            367
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            317,
+            668.015625,
+            367
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 211,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            548.890625,
+            702,
+            598.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            548.890625,
+            843,
+            598.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            564.890625,
+            830,
+            614.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            564.890625,
+            971,
+            614.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep02",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            614.890625,
+            910,
+            664.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            614.890625,
+            1051,
+            664.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 2 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图点亮：维京船\n\n🛡️ 维京宝物卡 #2 已收进冒险日志。\n\n下次冒险时，再试着说说“哪个东西、谁的、有几个”。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            648.265625,
+            175,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            648.265625,
+            329,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            290.1875,
+            453.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            290.1875,
+            594.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 158,
+        "scrollHeight": 158,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            523.609375,
+            702,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            523.609375,
+            843,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            539.609375,
+            830,
+            589.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            539.609375,
+            971,
+            589.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep03",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            589.609375,
+            910,
+            639.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            589.609375,
+            1051,
+            639.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 3 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：云上图书馆的失物招领\n\n现在每个人都拿对东西了，这颗星星属于我们！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            648.265625,
+            175,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            648.265625,
+            329,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            278.640625,
+            453.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            278.640625,
+            594.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            509.59375,
+            702,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            509.59375,
+            843,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep04",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 4 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：龙的谜语洞\n\nBiscuit 归还了小蛋，于是龙送给冒险队一颗星。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            635.890625,
+            175,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            635.890625,
+            329,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            278.640625,
+            453.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            278.640625,
+            594.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            509.59375,
+            702,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            509.59375,
+            843,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep07",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 7 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：巧克力星球\n\n我们的新星星闪得多亮啊！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            635.890625,
+            175,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            635.890625,
+            329,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            290.1875,
+            453.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            290.1875,
+            594.625,
+            340.1875
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 158,
+        "scrollHeight": 158,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            523.609375,
+            702,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            523.609375,
+            843,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep08",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 8 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：恐龙丛林实况转播\n\n看看这张二十世纪七十年代的车票！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            648.265625,
+            175,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            648.265625,
+            329,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            716.90625,
+            190,
+            766.90625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            716.90625,
+            359,
+            766.90625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            301.734375,
+            453.625,
+            351.734375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            301.734375,
+            594.625,
+            351.734375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 181,
+        "scrollHeight": 181,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            523.609375,
+            702,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            523.609375,
+            843,
+            573.609375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 197,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep11",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 11 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：草原动物运动会\n\nBiscuit 是我们最棒的寻袜能手，这颗星就是他的奖品！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            635.890625,
+            175,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            635.890625,
+            329,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            278.640625,
+            453.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            278.640625,
+            594.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            509.59375,
+            702,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            509.59375,
+            843,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep12",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 12 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：海底城市\n\n上面写着“献给我的家人”，对吧？\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            648.265625,
+            175,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            648.265625,
+            329,
+            698.265625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            716.90625,
+            190,
+            766.90625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            716.90625,
+            359,
+            766.90625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 202,
+        "scrollHeight": 202,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            278.640625,
+            453.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            278.640625,
+            594.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            509.59375,
+            702,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            509.59375,
+            843,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep15",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 15 集完成！\n\n⭐ 已收集 16 / 17 颗星 · 🗺️ 地图解锁：伦敦博物馆\n\n第十五颗星被放在零件旁，准备跟大家一起回家。\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            657,
+            175,
+            707
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            657,
+            329,
+            707
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 219,
+        "scrollHeight": 256,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            731.453125,
+            190,
+            781.453125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            731.453125,
+            359,
+            781.453125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 231,
+        "scrollHeight": 231,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            302,
+            453.625,
+            352
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            302,
+            594.625,
+            352
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 182,
+        "scrollHeight": 211,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            317,
+            527.015625,
+            367
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            317,
+            668.015625,
+            367
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 197,
+        "scrollHeight": 211,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            548.890625,
+            702,
+            598.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            548.890625,
+            843,
+            598.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            564.890625,
+            830,
+            614.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            564.890625,
+            971,
+            614.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep16",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            614.890625,
+            910,
+            664.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            614.890625,
+            1051,
+            664.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 248,
+        "scrollHeight": 248,
+        "overflow": "auto",
+        "font": "22px",
+        "text": "🎉 第 16 集完成！\n\n⭐ 已收集 16 / 17 颗星　·　🗺️ 地图解锁：怪兽招聘会\n\n🐶 Biscuit 拿到了人生第一份工作：袜子看守员\n\n📒 把你的收藏卡 #16 贴进冒险日志吧！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 360,
+      "height": 740,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            635.890625,
+            175,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            185,
+            635.890625,
+            329,
+            685.890625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            31,
+            704.53125,
+            190,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            200,
+            704.53125,
+            359,
+            754.53125
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 177,
+        "scrollHeight": 177,
+        "overflow": "auto",
+        "font": "15px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 667,
+      "height": 375,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            304.625,
+            278.640625,
+            453.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            463.625,
+            278.640625,
+            594.625,
+            328.640625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 844,
+      "height": 390,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            378.015625,
+            286.140625,
+            527.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            537.015625,
+            286.140625,
+            668.015625,
+            336.140625
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 135,
+        "scrollHeight": 135,
+        "overflow": "auto",
+        "font": "14px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 1024,
+      "height": 768,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            555,
+            509.59375,
+            702,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            712,
+            509.59375,
+            843,
+            559.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 1280,
+      "height": 800,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            683,
+            525.59375,
+            830,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            840,
+            525.59375,
+            971,
+            575.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    },
+    {
+      "ep": "ep17",
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "text": "冒险队总部",
+          "rect": [
+            763,
+            575.59375,
+            910,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        },
+        {
+          "text": "再玩一次",
+          "rect": [
+            920,
+            575.59375,
+            1051,
+            625.59375
+          ],
+          "inside": true,
+          "hit": true
+        }
+      ],
+      "details": {
+        "height": 169,
+        "scrollHeight": 169,
+        "overflow": "auto",
+        "font": "17px",
+        "text": "🎉 第 17 集完成！\n\n⭐ 已收集 17 / 17 颗星 · 🗺️ 地图解锁：罗盘之家\n\n我们出发啦，一起！\n\n下载知识点（Word）"
+      },
+      "stars": 17,
+      "layoutOverflow": false
+    }
+  ],
+  "errors": [
+    "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+  ]
+}

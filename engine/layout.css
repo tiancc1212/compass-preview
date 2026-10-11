@@ -105,3 +105,15 @@ body.rm *,body.rm *::before,body.rm *::after{animation:none!important;transition
  #lnav .btn .ui-icon{width:18px;height:18px}
  #lnav .btn::after{flex-basis:100%;font-size:11px;line-height:1.15}
 }
+/* Completion text scrolls independently; the two exit actions never leave the viewport. */
+#panel.endpanel{overflow:hidden!important}
+#panel.endpanel>.ending-layout{height:100%;min-height:0;grid-template-rows:minmax(0,1fr)}
+#panel.endpanel .ending-card{display:flex;flex-direction:column;min-height:0;max-height:100%!important;overflow:hidden!important}
+.ending-card>.chapter-overline{flex:none}
+#ending-copy{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.ending-details{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:2px}
+.ending-actions{flex:none;padding-top:6px;background:var(--paper-light)}
+@media(max-width:640px) and (orientation:portrait){
+ #panel.endpanel>.ending-layout{grid-template-rows:auto minmax(0,1fr)}
+ .ending-art .compass-art{width:min(100%,32dvh)}
+}

@@ -386,7 +386,7 @@ async function ending(){
  readStars().forEach(no=>GOT.add(no));GOT.add(EPNO);const saved=saveStar(EPNO);
  starsLit=1;updateStars();lightCompassSlot($('#ending-compass'),EPNO,{animate:!RM});$('#starprog').innerHTML=renderStarProgress(GOT);
  await say(E.say.id,E.say.zh);$('#sub').style.display='none';
- $('#ending-copy').innerHTML=`${tpl(E.html)}${!saved?'<p role="status">本次星星已点亮，浏览器暂时无法保存进度。请保持此页打开。</p>':''}<div class="ending-actions"><a class="btn big" href="${hqHref}">${control('home','冒险队总部')}</a><button class="btn secondary" id="again">${control('replay','再玩一次')}</button></div>`;polishButtons($('#ending-copy'));
+ $('#ending-copy').innerHTML=`<div class="ending-details" tabindex="0" role="region" aria-label="本集完成记录">${tpl(E.html)}${!saved?'<p role="status">本次星星已点亮，浏览器暂时无法保存进度。请保持此页打开。</p>':''}</div><div class="ending-actions"><a class="btn big" href="${hqHref}">${control('home','冒险队总部')}</a><button class="btn secondary" id="again">${control('replay','再玩一次')}</button></div>`;polishButtons($('#ending-copy'));
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;
 }
 // Every entry path (normal start, activity jump, restored bfcache page) shares the finale gate.
