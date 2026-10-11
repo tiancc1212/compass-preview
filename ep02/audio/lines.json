@@ -1,0 +1,1398 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "The compass takes us to a Viking ship.",
+  "dur": 2.56,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "compass",
+    0.22,
+    0.48
+   ],
+   [
+    "takes",
+    0.48,
+    0.86
+   ],
+   [
+    "us",
+    0.86,
+    1.08
+   ],
+   [
+    "to",
+    1.08,
+    1.34
+   ],
+   [
+    "a",
+    1.34,
+    1.52
+   ],
+   [
+    "Viking",
+    1.52,
+    1.82
+   ],
+   [
+    "ship.",
+    1.82,
+    2.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "narrator",
+  "text": "Lily reads the captain's list.",
+  "dur": 1.855,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.34
+   ],
+   [
+    "reads",
+    0.34,
+    0.6
+   ],
+   [
+    "the",
+    0.6,
+    0.82
+   ],
+   [
+    "captain's",
+    0.82,
+    1.26
+   ],
+   [
+    "list.",
+    1.26,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "lily",
+  "text": "Bring an axe, a shield and the captain's helmet!",
+  "dur": 2.325,
+  "words": [
+   [
+    "Bring",
+    0.0,
+    0.24
+   ],
+   [
+    "an",
+    0.24,
+    0.42
+   ],
+   [
+    "axe,",
+    0.42,
+    0.62
+   ],
+   [
+    "a",
+    0.82,
+    0.88
+   ],
+   [
+    "shield",
+    0.88,
+    1.12
+   ],
+   [
+    "and",
+    1.12,
+    1.36
+   ],
+   [
+    "the",
+    1.36,
+    1.48
+   ],
+   [
+    "captain's",
+    1.48,
+    1.88
+   ],
+   [
+    "helmet!",
+    1.88,
+    2.06
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "sam",
+  "text": "The axe is too heavy!",
+  "dur": 1.489,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.24
+   ],
+   [
+    "axe",
+    0.24,
+    0.5
+   ],
+   [
+    "is",
+    0.5,
+    0.7
+   ],
+   [
+    "too",
+    0.7,
+    0.9
+   ],
+   [
+    "heavy!",
+    0.9,
+    1.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "narrator",
+  "text": "Mia finds a helmet.",
+  "dur": 1.463,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "finds",
+    0.32,
+    0.66
+   ],
+   [
+    "a",
+    0.66,
+    0.82
+   ],
+   [
+    "helmet.",
+    0.82,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "mia",
+  "text": "This is not the captain's helmet!",
+  "dur": 2.769,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.64
+   ],
+   [
+    "not",
+    0.64,
+    0.98
+   ],
+   [
+    "the",
+    0.98,
+    1.26
+   ],
+   [
+    "captain's",
+    1.26,
+    1.96
+   ],
+   [
+    "helmet!",
+    1.96,
+    2.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "leo",
+  "text": "Biscuit has the captain's helmet!",
+  "dur": 2.116,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.48
+   ],
+   [
+    "has",
+    0.48,
+    0.68
+   ],
+   [
+    "the",
+    0.68,
+    0.92
+   ],
+   [
+    "captain's",
+    0.92,
+    1.48
+   ],
+   [
+    "helmet!",
+    1.48,
+    1.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "lily",
+  "text": "The sailors' boots are in a box.",
+  "dur": 1.672,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "sailors'",
+    0.22,
+    0.42
+   ],
+   [
+    "boots",
+    0.6,
+    0.74
+   ],
+   [
+    "are",
+    0.74,
+    0.92
+   ],
+   [
+    "in",
+    0.92,
+    1.0
+   ],
+   [
+    "a",
+    1.0,
+    1.08
+   ],
+   [
+    "box.",
+    1.08,
+    1.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "lily",
+  "text": "There are two shields and three knives on the table.",
+  "dur": 2.247,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.22
+   ],
+   [
+    "are",
+    0.22,
+    0.3
+   ],
+   [
+    "two",
+    0.3,
+    0.48
+   ],
+   [
+    "shields",
+    0.48,
+    0.8
+   ],
+   [
+    "and",
+    0.8,
+    1.04
+   ],
+   [
+    "three",
+    1.04,
+    1.22
+   ],
+   [
+    "knives",
+    1.22,
+    1.46
+   ],
+   [
+    "on",
+    1.46,
+    1.62
+   ],
+   [
+    "the",
+    1.62,
+    1.72
+   ],
+   [
+    "table.",
+    1.72,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "leo",
+  "text": "We need bread and water for lunch.",
+  "dur": 2.403,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.3
+   ],
+   [
+    "need",
+    0.3,
+    0.54
+   ],
+   [
+    "bread",
+    0.54,
+    0.86
+   ],
+   [
+    "and",
+    0.86,
+    1.08
+   ],
+   [
+    "water",
+    1.08,
+    1.36
+   ],
+   [
+    "for",
+    1.36,
+    1.7
+   ],
+   [
+    "lunch.",
+    1.7,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "lily",
+  "text": "Here are two pieces of bread and a bottle of water.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.24
+   ],
+   [
+    "are",
+    0.24,
+    0.34
+   ],
+   [
+    "two",
+    0.34,
+    0.5
+   ],
+   [
+    "pieces",
+    0.5,
+    0.72
+   ],
+   [
+    "of",
+    0.72,
+    0.92
+   ],
+   [
+    "bread",
+    0.92,
+    1.12
+   ],
+   [
+    "and",
+    1.12,
+    1.3
+   ],
+   [
+    "a",
+    1.3,
+    1.4
+   ],
+   [
+    "bottle",
+    1.4,
+    1.54
+   ],
+   [
+    "of",
+    1.54,
+    1.72
+   ],
+   [
+    "water.",
+    1.72,
+    1.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "narrator",
+  "text": "The Vikings play chess after lunch.",
+  "dur": 2.09,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "Vikings",
+    0.2,
+    0.5
+   ],
+   [
+    "play",
+    0.5,
+    0.84
+   ],
+   [
+    "chess",
+    0.84,
+    1.14
+   ],
+   [
+    "after",
+    1.14,
+    1.44
+   ],
+   [
+    "lunch.",
+    1.44,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "narrator",
+  "text": "Lily finds the words \"C. C. was here\" on an old chessboard.",
+  "dur": 4.023,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.24
+   ],
+   [
+    "finds",
+    0.24,
+    0.66
+   ],
+   [
+    "the",
+    0.66,
+    0.88
+   ],
+   [
+    "words",
+    0.88,
+    1.26
+   ],
+   [
+    "\"C.",
+    1.56,
+    1.8
+   ],
+   [
+    "C.",
+    1.92,
+    2.06
+   ],
+   [
+    "was",
+    2.24,
+    2.29
+   ],
+   [
+    "here\"",
+    2.26,
+    2.62
+   ],
+   [
+    "on",
+    2.62,
+    2.86
+   ],
+   [
+    "an",
+    2.86,
+    3.0
+   ],
+   [
+    "old",
+    3.0,
+    3.24
+   ],
+   [
+    "chessboard.",
+    3.24,
+    3.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "narrator",
+  "text": "\"A Chinese boy taught me chess,\" the captain says.",
+  "dur": 3.082,
+  "words": [
+   [
+    "\"A",
+    0.0,
+    0.22
+   ],
+   [
+    "Chinese",
+    0.22,
+    0.52
+   ],
+   [
+    "boy",
+    0.52,
+    0.88
+   ],
+   [
+    "taught",
+    0.88,
+    1.14
+   ],
+   [
+    "me",
+    1.14,
+    1.34
+   ],
+   [
+    "chess,\"",
+    1.34,
+    1.96
+   ],
+   [
+    "the",
+    1.96,
+    2.16
+   ],
+   [
+    "captain",
+    2.16,
+    2.38
+   ],
+   [
+    "says.",
+    2.38,
+    2.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l15": {
+  "who": "narrator",
+  "text": "The second star glows beside the chessboard.",
+  "dur": 2.56,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "second",
+    0.2,
+    0.5
+   ],
+   [
+    "star",
+    0.5,
+    0.86
+   ],
+   [
+    "glows",
+    0.86,
+    1.34
+   ],
+   [
+    "beside",
+    1.34,
+    1.7
+   ],
+   [
+    "the",
+    1.7,
+    1.88
+   ],
+   [
+    "chessboard.",
+    1.88,
+    2.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_axe": {
+  "who": "narrator",
+  "text": "Bring an axe.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Bring",
+    0.0,
+    0.28
+   ],
+   [
+    "an",
+    0.28,
+    0.4
+   ],
+   [
+    "axe.",
+    0.4,
+    0.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_shield": {
+  "who": "narrator",
+  "text": "Bring a shield.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Bring",
+    0.0,
+    0.28
+   ],
+   [
+    "a",
+    0.28,
+    0.42
+   ],
+   [
+    "shield.",
+    0.42,
+    0.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_useful": {
+  "who": "narrator",
+  "text": "This is a useful tool.",
+  "dur": 1.541,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.5
+   ],
+   [
+    "a",
+    0.5,
+    0.64
+   ],
+   [
+    "useful",
+    0.64,
+    0.92
+   ],
+   [
+    "tool.",
+    0.92,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_any": {
+  "who": "narrator",
+  "text": "Mia needs a helmet.",
+  "dur": 1.411,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "needs",
+    0.32,
+    0.58
+   ],
+   [
+    "a",
+    0.58,
+    0.72
+   ],
+   [
+    "helmet.",
+    0.72,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_again": {
+  "who": "narrator",
+  "text": "The helmet is small.",
+  "dur": 1.202,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "helmet",
+    0.2,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.64
+   ],
+   [
+    "small.",
+    0.64,
+    0.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_known": {
+  "who": "narrator",
+  "text": "Bring me the helmet in Biscuit's mouth.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Bring",
+    0.0,
+    0.26
+   ],
+   [
+    "me",
+    0.26,
+    0.4
+   ],
+   [
+    "the",
+    0.4,
+    0.52
+   ],
+   [
+    "helmet",
+    0.52,
+    0.8
+   ],
+   [
+    "in",
+    0.8,
+    1.14
+   ],
+   [
+    "Biscuit's",
+    1.14,
+    1.58
+   ],
+   [
+    "mouth.",
+    1.58,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_captain": {
+  "who": "narrator",
+  "text": "The captain's helmet is missing.",
+  "dur": 1.829,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "captain's",
+    0.2,
+    0.72
+   ],
+   [
+    "helmet",
+    0.72,
+    0.94
+   ],
+   [
+    "is",
+    0.94,
+    1.14
+   ],
+   [
+    "missing.",
+    1.14,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_sailors": {
+  "who": "narrator",
+  "text": "The sailors' boots are in a box.",
+  "dur": 2.038,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "sailors'",
+    0.22,
+    0.52
+   ],
+   [
+    "boots",
+    0.78,
+    0.94
+   ],
+   [
+    "are",
+    0.94,
+    1.14
+   ],
+   [
+    "in",
+    1.14,
+    1.24
+   ],
+   [
+    "a",
+    1.24,
+    1.32
+   ],
+   [
+    "box.",
+    1.32,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_children": {
+  "who": "narrator",
+  "text": "The children's bags are on the deck.",
+  "dur": 2.09,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "children's",
+    0.2,
+    0.72
+   ],
+   [
+    "bags",
+    0.72,
+    1.02
+   ],
+   [
+    "are",
+    1.02,
+    1.28
+   ],
+   [
+    "on",
+    1.28,
+    1.4
+   ],
+   [
+    "the",
+    1.4,
+    1.54
+   ],
+   [
+    "deck.",
+    1.54,
+    1.78
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_sort": {
+  "who": "narrator",
+  "text": "We need bread and water.",
+  "dur": 1.724,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.26
+   ],
+   [
+    "need",
+    0.26,
+    0.44
+   ],
+   [
+    "bread",
+    0.44,
+    0.76
+   ],
+   [
+    "and",
+    0.76,
+    1.02
+   ],
+   [
+    "water.",
+    1.02,
+    1.32
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_knives": {
+  "who": "narrator",
+  "text": "There are three knives on the table.",
+  "dur": 1.829,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.22
+   ],
+   [
+    "are",
+    0.22,
+    0.36
+   ],
+   [
+    "three",
+    0.36,
+    0.64
+   ],
+   [
+    "knives",
+    0.64,
+    0.98
+   ],
+   [
+    "on",
+    0.98,
+    1.18
+   ],
+   [
+    "the",
+    1.18,
+    1.28
+   ],
+   [
+    "table.",
+    1.28,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_pieces": {
+  "who": "narrator",
+  "text": "We need two pieces of bread.",
+  "dur": 1.672,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.22
+   ],
+   [
+    "need",
+    0.22,
+    0.38
+   ],
+   [
+    "two",
+    0.38,
+    0.68
+   ],
+   [
+    "pieces",
+    0.68,
+    0.96
+   ],
+   [
+    "of",
+    0.96,
+    1.16
+   ],
+   [
+    "bread.",
+    1.16,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_bread": {
+  "who": "narrator",
+  "text": "We eat bread.",
+  "dur": 1.045,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.34
+   ],
+   [
+    "eat",
+    0.34,
+    0.48
+   ],
+   [
+    "bread.",
+    0.48,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_lunch": {
+  "who": "narrator",
+  "text": "We eat bread for lunch.",
+  "dur": 1.411,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.26
+   ],
+   [
+    "eat",
+    0.26,
+    0.38
+   ],
+   [
+    "bread",
+    0.38,
+    0.56
+   ],
+   [
+    "for",
+    0.56,
+    0.76
+   ],
+   [
+    "lunch.",
+    0.76,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_chess": {
+  "who": "narrator",
+  "text": "The Vikings play chess.",
+  "dur": 1.646,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "Vikings",
+    0.2,
+    0.54
+   ],
+   [
+    "play",
+    0.54,
+    0.9
+   ],
+   [
+    "chess.",
+    0.9,
+    1.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_specific": {
+  "who": "narrator",
+  "text": "Please pass the bread on Lily's plate.",
+  "dur": 2.22,
+  "words": [
+   [
+    "Please",
+    0.0,
+    0.3
+   ],
+   [
+    "pass",
+    0.3,
+    0.6
+   ],
+   [
+    "the",
+    0.6,
+    0.78
+   ],
+   [
+    "bread",
+    0.78,
+    1.0
+   ],
+   [
+    "on",
+    1.0,
+    1.22
+   ],
+   [
+    "Lily's",
+    1.22,
+    1.58
+   ],
+   [
+    "plate.",
+    1.58,
+    1.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_owner": {
+  "who": "narrator",
+  "text": "This is Leo's shield.",
+  "dur": 1.515,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.42
+   ],
+   [
+    "Leo's",
+    0.42,
+    0.9
+   ],
+   [
+    "shield.",
+    0.9,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_football": {
+  "who": "narrator",
+  "text": "Leo plays football.",
+  "dur": 1.411,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.4
+   ],
+   [
+    "plays",
+    0.4,
+    0.7
+   ],
+   [
+    "football.",
+    0.7,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_shield": {
+  "who": "narrator",
+  "text": "This is Leo's shield.",
+  "dur": 1.384,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.4
+   ],
+   [
+    "Leo's",
+    0.4,
+    0.86
+   ],
+   [
+    "shield.",
+    0.86,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_helmet": {
+  "who": "narrator",
+  "text": "This is Mia's helmet.",
+  "dur": 1.437,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.38
+   ],
+   [
+    "Mia's",
+    0.38,
+    0.78
+   ],
+   [
+    "helmet.",
+    0.78,
+    1.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_sock": {
+  "who": "narrator",
+  "text": "This is Biscuit's sock.",
+  "dur": 1.776,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.72
+   ],
+   [
+    "Biscuit's",
+    0.72,
+    1.38
+   ],
+   [
+    "sock.",
+    1.38,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The second star is back in the compass!",
+  "dur": 2.351,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "second",
+    0.22,
+    0.54
+   ],
+   [
+    "star",
+    0.54,
+    0.88
+   ],
+   [
+    "is",
+    0.88,
+    1.18
+   ],
+   [
+    "back",
+    1.18,
+    1.42
+   ],
+   [
+    "in",
+    1.42,
+    1.56
+   ],
+   [
+    "the",
+    1.56,
+    1.66
+   ],
+   [
+    "compass!",
+    1.66,
+    1.92
+   ]
+  ],
+  "align": "whisper"
+ }
+}
