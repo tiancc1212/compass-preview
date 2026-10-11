@@ -231,10 +231,10 @@ const STEP={
   mount(el,api){let tries=0,done=false;el.querySelectorAll('.popt').forEach(b=>b.onclick=()=>{if(done)return;if(b.textContent===good){done=true;b.classList.add('right');el.querySelectorAll('button').forEach(x=>x.disabled=true);api.ok(why||good,au);}else{tries++;api.bad(hint+(tries>=2?`<br>选这句：<b>${esc(good)}</b>，请自己点选。`:''),b);}});
    AUTO=()=>[...el.querySelectorAll('.popt')].find(b=>b.textContent===good).click();}};},
  // typed: type the missing word / ending. {ctx?,pre,post,ans,accept?,ph?,au,why,wrong?:[{re,zh,not?}],hint?(fallback)}
- typed({ctx,pre,post,ans,accept=[],au,why,ph,wrong,hint}){return {html:`${ctx?`<div class="ctx">${ctx}</div>`:''}<form class="tform" autocomplete="off"><div class="bsent">${pre}<input class="tin" type="text" inputmode="text" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="${ph||''}" aria-label="填空" size="${Math.max(4,ans.length+1)}">${post}</div><button class="btn" type="submit">检查</button></form>`,
+ typed({ctx,pre,post,ans,accept=[],au,why,ph,wrong,hint}){return {html:`${ctx?`<div class="ctx">${ctx}</div>`:''}<form class="tform" autocomplete="off"><div class="bsent">${pre}<input class="tin" type="text" inputmode="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="${ph||''}" aria-label="填空" size="${Math.max(4,ans.length+1)}">${post}</div><button class="btn" type="submit">检查</button></form>`,
   mount(el,api){const f=el.querySelector('form'),inp=f.querySelector('input');let tries=0;setTimeout(()=>inp.focus({preventScroll:true}),50);
-   f.onsubmit=e=>{e.preventDefault();const v=normTxt(inp.value).replace(/^-/,'').replace(/\s/g,'');if(!v){api.tip('先在空格里打字哦。');return;}
-    if([ans,...accept].map(x=>normTxt(x).replace(/\s/g,'')).includes(v)){inp.value=ans;inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok(why,au);}
+   f.onsubmit=e=>{e.preventDefault();const v=normTxt(inp.value).replace(/^-/,'');if(!v){api.tip('先在空格里打字哦。');return;}
+    if([ans,...accept].map(x=>normTxt(x).replace(/^-/,'')).includes(v)){inp.value=ans;inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok(why,au);}
     else{tries++;const m=ruleMsg(wrong,v)??hint??'';api.bad(m+(tries>=2?`<br>答案是 <b>${esc(ans)}</b>，把它打进去吧。`:''),inp);inp.select();}};
    AUTO=()=>{inp.value=ans;f.requestSubmit();};}};},
  // fix: tap the wrong word, then choose the fix. {ctx,s,wi,fix:[[label,1|0]],au,good,why,miss?} miss = hint after tapping a correct word (step > activity.miss > generic default)
@@ -254,7 +254,7 @@ const STEP={
    el.addEventListener('click',e=>{const b=e.target.closest('.wt');if(!b||b.disabled)return;(b.parentNode===bank?line:bank).appendChild(b);check();});
    AUTO=()=>{words.forEach(w=>line.appendChild(bank.querySelector(`[data-w="${w}"]`)));check();};}};},
  // rewrite: type a whole sentence. {q,src,ph,answers:[normalised],show,au,why,normalize?:[[re,to]],wrong:[{re,zh,not?}],hint,auto}
- rewrite({q,src,ph,answers,show,au,why,normalize=[],wrong,hint}){return {html:`<p class="qdesc">${q}</p><div class="src">${src}</div><form class="tform" autocomplete="off"><input class="tin wide" type="text" autocapitalize="sentences" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="${ph||''}" aria-label="改写"><button class="btn" type="submit">检查</button></form>`,
+ rewrite({q,src,ph,answers,show,au,why,normalize=[],wrong,hint}){return {html:`<p class="qdesc">${q}</p><div class="src">${src}</div><form class="tform" autocomplete="off"><input class="tin wide" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="${ph||''}" aria-label="改写"><button class="btn" type="submit">检查</button></form>`,
   mount(el,api){const f=el.querySelector('form'),inp=f.querySelector('input');let tries=0;
    f.onsubmit=e=>{e.preventDefault();let v=normTxt(inp.value);normalize.forEach(([a,b])=>v=v.replace(new RegExp(a),b));if(!v)return api.tip('在框里打出整句话。');
     if(answers.includes(v)){inp.value=show;inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok(why,au);}
@@ -379,7 +379,7 @@ async function ending(){const E=EP.ending;
  const pb=document.createElement('div');pb.id='starprog';pb.innerHTML=`<b>⭐ ${n} / 17</b><span>罗盘上的星星</span><div class="sbar"><i style="width:${n/17*100}%"></i></div>`;document.body.appendChild(pb);
  await say(E.say.id,E.say.zh);$('#sub').style.display='none';
  showPanel(`<div class="card">${tpl(E.html)}<button class="btn big" id="again">🔁 再玩一次</button></div>`);
- panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
+ panel.style.background='rgba(20,10,30,.15)';panel.classList.add('endpanel');
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
 // ?jump=<activity id> opens one activity directly (review / testing); the image and 重看上一节 come from the flow
 const jid=Q.get('jump');

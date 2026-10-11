@@ -217,7 +217,7 @@ verbs:{type:'seq',parts:[
 {kind:'typed',ctx:'一只<b>被弄丢</b>的袜子',pre:'Biscuit found a ',post:' <span class="base">(lose)</span> sock.',ans:'lost',ph:'l…',au:'ex_q7_1', why:'…',
  wrong:[{re:'^losing$',zh:'袜子不会自己“正在丢”，它是<b>被</b>弄丢的，用 done。'},{re:'^losed$',zh:'lose 是不规则动词，过去分词不是 losed。'}],hint:'想一想：是<b>主动 / 正在</b>（doing）还是<b>被… / 已经</b>（done）？'}
 ```
-`pre`/`post` 是空格前后的文字，原形提示写成 `<span class="base">(lose)</span>`；`ans` 标准答案；`accept` 其他可接受写法；`ph` 输入框灰字提示；判分忽略大小写、空格、开头的“-”、英文标点，撇号统一（`captain's` 可以）。`wrong` 是“常见错误 → 针对性提示”列表：`re` 正则（对小写去空格后的输入），`not:true` 表示“不匹配时”；都不匹配就用 `hint`。
+`pre`/`post` 是空格前后的文字，原形提示写成 `<span class="base">(lose)</span>`；`ans` 标准答案；`accept` 其他可接受写法；`ph` 输入框灰字提示；判分规则（引擎 v4 起）：去首尾空格、多个空格合成一个、忽略大小写、弯撇号 ’ 视同 '、去掉句末标点，**但保留词与词之间的空格**——连写（如 `lookforward`、`itis`）判错；`it's` 与 `it is` 这类等价写法必须明确写进 `accept`（rewrite 用 `normalize`）。所有输入框关闭自动大写/自动更正/拼写检查。新集可用 `node tools/audit_accept.mjs epNN` 自查。开头的“-”会去掉。`wrong` 是“常见错误 → 针对性提示”列表：`re` 正则（对上述规范化后的输入，词间保留单空格），`not:true` 表示“不匹配时”；都不匹配就用 `hint`。
 
 **⑤ `fix` 改错**（先点错词，再选改法）
 ```js
