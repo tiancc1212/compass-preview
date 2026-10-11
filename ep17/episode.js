@@ -1,17 +1,18 @@
 export default {
   "no": 17,
-  "hud": "🧭 罗盘冒险队 · 第17集 罗盘之家",
+  "meta": {"title":"罗盘醒来","place":"罗盘之家","grammar":["倒装句","定语从句","全景回顾"],"icon":"compass-home"},
+  "hud": "罗盘冒险队 · 第17集 罗盘之家",
   "start": {
     "h1": "罗盘醒来",
     "subt": "倒装与定语从句",
-    "go": "🧭 出发：Here we go, together!"
+    "go": "出发：Here we go, together!"
   },
   "audioVersion": "20261011-willo-audio-final1",
   "rewardWait": false,
   "download": {
     "href": "downloads/ep17_inversion_relative_clauses.docx",
     "name": "罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "scene1": [
@@ -912,8 +913,8 @@ export default {
           "img": "01_home_v2"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 17 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 17 颗星送回罗盘"
     }
   },
   "ending": {

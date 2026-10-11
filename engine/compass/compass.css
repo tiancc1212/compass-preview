@@ -1,0 +1,16 @@
+.compass-art{position:relative;width:100%;aspect-ratio:1;isolation:isolate}
+.compass-base{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 20px #071e2533)}
+.compass-slot-layer{position:absolute;inset:0;pointer-events:none}
+.compass-slot{position:absolute;aspect-ratio:1;transform:translate(-50%,-50%);display:block}
+.compass-slot>img{display:block;width:100%;height:100%;object-fit:contain}
+.compass-slot.is-lit>img{filter:drop-shadow(0 0 3px #fcd571aa)}
+.compass-slot::before{content:'';position:absolute;inset:-130%;background:url('./glow_v5.webp') center/contain no-repeat;mix-blend-mode:screen;opacity:0;pointer-events:none;z-index:-1}
+.compass-slot.just-lit::before{animation:compass-glow .6s ease-out both}
+@keyframes compass-glow{0%,100%{opacity:0;transform:scale(.7)}45%{opacity:.9;transform:scale(1)}}
+.compass-progress{width:min(100%,380px);margin:0 auto;text-align:center;color:#68553c}
+.compass-mini-stars{display:flex;align-items:center;justify-content:center;gap:3px}
+.compass-mini-star{width:calc((100% - 48px)/17);height:auto;aspect-ratio:1;max-width:20px}
+.compass-progress-copy{display:block;margin-top:8px;font-size:13px;letter-spacing:.06em}
+.compass-progress-copy strong{font-weight:700;color:#855b26}
+@media(prefers-reduced-motion:reduce){.compass-art *,.compass-art *::before{animation:none!important;transition:none!important}}
+body.rm .compass-art *,body.rm .compass-art *::before{animation:none!important;transition:none!important}

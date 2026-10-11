@@ -1,17 +1,18 @@
 export default {
  "no": 12,
- "hud": "🧭 罗盘冒险队 · 第12集 海底城市",
+  "meta": {"title":"海底城市的规则","place":"海底城市","grammar":["介词与动词短语","使役动词","it 句式与反意疑问句"],"icon":"underwater-city"},
+ "hud": "罗盘冒险队 · 第12集 海底城市",
  "start": {
   "h1": "海底城市的规则",
   "subt": "介词搭配、it 与反意疑问句",
-  "go": "🧭 出发：Let's look for the compass."
+  "go": "出发：Let's look for the compass."
  },
  "audioVersion": "20261011-willo-audio-final1",
  "rewardWait": false,
  "download": {
   "href": "downloads/ep12_prepositions_it_tags.docx",
   "name": "罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
-  "label": "📥 下载知识点（Word）"
+  "label": "下载知识点（Word）"
  },
  "img": {
   "scene1": [
@@ -845,8 +846,8 @@ export default {
      "img": "05_scene"
     }
    ],
-   "button": "🪄 收进日志",
-   "done": "⭐ 把第 12 颗星送回罗盘"
+   "button": "收进日志",
+   "done": "把第 12 颗星送回罗盘"
   }
  },
  "ending": {

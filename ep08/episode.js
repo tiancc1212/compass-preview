@@ -1,16 +1,17 @@
 export default {
   "no": 8,
-  "hud": "🧭 罗盘冒险队 · 第8集 恐龙丛林实况转播",
+  "meta": {"title":"恐龙丛林实况转播","place":"恐龙丛林","grammar":["现在进行时","动词形式","祈使句"],"icon":"dinosaur-jungle"},
+  "hud": "罗盘冒险队 · 第8集 恐龙丛林实况转播",
   "start": {
     "h1": "恐龙丛林实况转播",
     "subt": "Leo、Mia、Sam、Lily 和 Biscuit 正站在史前丛林里。",
-    "go": "🧭 出发"
+    "go": "出发"
   },
   "audioVersion": "20261011-willo-audio-final1",
   "download": {
     "href": "downloads/ep08_present_continuous.docx",
     "name": "罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "01_broadcast": [
@@ -857,8 +858,8 @@ export default {
           "img": "04_ticket"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 8 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 8 颗星送回罗盘"
     }
   },
   "ending": {

@@ -1,12 +1,13 @@
 // 第1集重制 · 纯数据；引擎保持不变。
 export default {
   "no": 1,
-  "hud": "🧭 罗盘冒险队 · 第1集 金字塔的回声墙",
+  "meta": {"title":"金字塔的回声墙","place":"古埃及金字塔","grammar":["句子成分","完整句骨架","be 与系动词"],"icon":"pyramid"},
+  "hud": "罗盘冒险队 · 第1集 金字塔的回声墙",
   "stars": "⭐ 第 1 颗星",
   "start": {
     "h1": "金字塔的回声墙",
     "subt": "说出完整句子，打开石门，找到第一颗星！",
-    "go": "🧭 出发：探索金字塔"
+    "go": "出发：探索金字塔"
   },
   "theme": {
     "bg": "#1d1711",
@@ -18,7 +19,7 @@ export default {
   "download": {
     "href": "downloads/ep01_sentence_structure.docx",
     "name": "罗盘冒险队_第1集_句子成分_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "attic": [
@@ -794,8 +795,8 @@ export default {
         }
       ],
       "sayZh": "我是{zh}。",
-      "button": "🪄 刻下我的咒语",
-      "done": "⭐ 把星星送回罗盘"
+      "button": "刻下我的咒语",
+      "done": "把星星送回罗盘"
     }
   },
   "ending": {

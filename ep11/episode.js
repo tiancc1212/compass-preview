@@ -1,16 +1,17 @@
 export default {
   "no": 11,
-  "hud": "🧭 罗盘冒险队 · 第11集 草原动物运动会",
+  "meta": {"title":"草原动物运动会","place":"非洲草原","grammar":["形容词与副词比较","最高级","构词法"],"icon":"savanna"},
+  "hud": "罗盘冒险队 · 第11集 草原动物运动会",
   "start": {
     "h1": "草原动物运动会",
     "subt": "非洲草原比家里暖和得多。",
-    "go": "🧭 出发"
+    "go": "出发"
   },
   "audioVersion": "20261011-willo-audio-final1",
   "download": {
     "href": "downloads/ep11_comparisons_adverbs.docx",
     "name": "罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "01_scene": [
@@ -813,8 +814,8 @@ export default {
           "img": "04_scene"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 11 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 11 颗星送回罗盘"
     }
   },
   "ending": {

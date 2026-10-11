@@ -1,17 +1,18 @@
 export default {
   "no": 15,
-  "hud": "🧭 罗盘冒险队 · 第15集 伦敦博物馆",
+  "meta": {"title":"伦敦博物馆失窃案","place":"1890 年的伦敦博物馆","grammar":["过去完成时","被动语态"],"icon":"london-museum"},
+  "hud": "罗盘冒险队 · 第15集 伦敦博物馆",
   "start": {
     "h1": "伦敦博物馆失窃案",
     "subt": "过去完成时与被动语态",
-    "go": "🧭 出发：Had anyone seen the crown before the museum closed?"
+    "go": "出发：Had anyone seen the crown before the museum closed?"
   },
   "audioVersion": "20261011-willo-audio-final1",
   "rewardWait": false,
   "download": {
     "href": "downloads/ep15_past_perfect_passive.docx",
     "name": "罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "scene1": [
@@ -796,8 +797,8 @@ export default {
           "img": "05_part_v2"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 15 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 15 颗星送回罗盘"
     }
   },
   "ending": {

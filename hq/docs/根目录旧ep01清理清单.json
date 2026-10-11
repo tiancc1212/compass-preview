@@ -1,0 +1,242 @@
+{
+  "reason": "任务书A.3及第7节Cici已批准清理根目录旧ep01；新版ep01位于ep01/，兼容首页转HQ，design/badges.html的两个引用已切至engine。",
+  "status": "removed-and-verified",
+  "scope": "仅根目录旧素材；不触及epNN/，不触及design/visual-v5/，不触及hq/。",
+  "baseCommit": "c17eb132c08c329cded8cc08c2280702d74cdbe1",
+  "count": 45,
+  "bytes": 4126590,
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 21901,
+      "sha256": "7b0998f2580dbab2305e747774a4420666063ec01fa10d10acff5fcdbc7bdb1e"
+    },
+    {
+      "path": "audio/c02.mp3",
+      "bytes": 35756,
+      "sha256": "f5cd6d32412a5a62189019312065699a6d73bfa3df186ffe1e0d61a4cbc71597"
+    },
+    {
+      "path": "audio/card_brave.mp3",
+      "bytes": 9236,
+      "sha256": "47b681f2ebe5b9924b89b18fc66c17fde05618ad3919ac99f42bf2ed156e35c3"
+    },
+    {
+      "path": "audio/card_curious.mp3",
+      "bytes": 11540,
+      "sha256": "a92e10752f08c23c5f2146d5e22a36e73ed30322b204530309cc2c334a582cbc"
+    },
+    {
+      "path": "audio/card_funny.mp3",
+      "bytes": 9500,
+      "sha256": "0e3885b740d0f175899be008fd725783c6681630bf19ac8abadb42eea118e2bb"
+    },
+    {
+      "path": "audio/card_happy.mp3",
+      "bytes": 9524,
+      "sha256": "1d09ff6e7c6569ceac6c98d2ca5dc9446b687c5e2d6dae4c1ff3e39a977bef58"
+    },
+    {
+      "path": "audio/card_kind.mp3",
+      "bytes": 10316,
+      "sha256": "aee0f0f84ac38f5a0c8a74fcbf7ffab4f5a0c5b430e11e06d0a88e116ceac5a2"
+    },
+    {
+      "path": "audio/card_smart.mp3",
+      "bytes": 9572,
+      "sha256": "38c505952f4eb8f9f245b1203601ed527eaed860fc02b6af54affbe3b1bb81e2"
+    },
+    {
+      "path": "audio/card_strong.mp3",
+      "bytes": 10388,
+      "sha256": "b244e14ead595faf37b5e2ae2c080103c131593f70838e14121b7923d81314da"
+    },
+    {
+      "path": "audio/g01.mp3",
+      "bytes": 14084,
+      "sha256": "70c3179a6b7d4f66d8334ed0934427ec921d50679831497ff1ab959e7e361cca"
+    },
+    {
+      "path": "audio/g02.mp3",
+      "bytes": 11444,
+      "sha256": "14b31a353a3813864bfe53e260014c63433620fed0a5ffd0dd82be0fab9cdb03"
+    },
+    {
+      "path": "audio/g03.mp3",
+      "bytes": 14372,
+      "sha256": "079479ded1a6437b8c7887778c78e4b0298e979d43954064f0eb4cf4934c5a3b"
+    },
+    {
+      "path": "audio/g04.mp3",
+      "bytes": 12212,
+      "sha256": "225db7556295432ec801132c114cd47323af02063851393d07b4dd6a6b972e23"
+    },
+    {
+      "path": "audio/g05.mp3",
+      "bytes": 11084,
+      "sha256": "98a4dace47d23745b8427157181aa15679b46e09a7132d599ef639509e958f06"
+    },
+    {
+      "path": "audio/h01.mp3",
+      "bytes": 9956,
+      "sha256": "65bdc8cfa655ea17350ab27bf85d9732496036a46de2a150fc69452d450f8764"
+    },
+    {
+      "path": "audio/l01.mp3",
+      "bytes": 12908,
+      "sha256": "22703e931e020bbafccab1cafd23be4d671c67feb1abae50345ef6aad25d36a3"
+    },
+    {
+      "path": "audio/l02.mp3",
+      "bytes": 11876,
+      "sha256": "559c2f2ca8f26c954ed246df7cf57f7c9b2caddd909b2b65d3c26441bc3dbde6"
+    },
+    {
+      "path": "audio/l03.mp3",
+      "bytes": 10388,
+      "sha256": "ebc40b5c2dbc33e4485deaaa72481f8aecbbced6034dfc8a5474da4522fda96c"
+    },
+    {
+      "path": "audio/l04.mp3",
+      "bytes": 16580,
+      "sha256": "06b86426f7a0a1dc4bc7f0898878f8c56d4b29bf583ee22b9934d303c1c5286f"
+    },
+    {
+      "path": "audio/l05.mp3",
+      "bytes": 14300,
+      "sha256": "55cc76b8303682a349e8e249af377bcd163285287d2a8baa6dcc3684b5cd4297"
+    },
+    {
+      "path": "audio/l06.mp3",
+      "bytes": 9740,
+      "sha256": "ea136884097ee47dce2e9204df061b7b133216fcb12d0abb02a0a01bea254751"
+    },
+    {
+      "path": "audio/l07.mp3",
+      "bytes": 15260,
+      "sha256": "6807c4ddcfa529d49242f7206d03277cc8f26af408f2e72886095513db03315f"
+    },
+    {
+      "path": "audio/l08.mp3",
+      "bytes": 12524,
+      "sha256": "a4279849f1e384cd63e5ee610763c244e1e6494acc43c736ab4d922606418fd9"
+    },
+    {
+      "path": "audio/l09.mp3",
+      "bytes": 11420,
+      "sha256": "a7afd1b551fe52dcb69e323d90af7189ef1b0d14c58220c407929f12f2fdc2f1"
+    },
+    {
+      "path": "audio/l10.mp3",
+      "bytes": 13868,
+      "sha256": "6d6afa67d96b3fbcbc8996e94b127e39dc6f6862be118225c330515bf3088e80"
+    },
+    {
+      "path": "audio/l11.mp3",
+      "bytes": 13844,
+      "sha256": "19fc30d5c9db2cbac80eba741061e9469c0ab3676af6f923641c8b3d80b8989d"
+    },
+    {
+      "path": "audio/l12.mp3",
+      "bytes": 7892,
+      "sha256": "ff4174df1ba249d218b75b6e2947d3d414b32624aa77283543b80d818dd02104"
+    },
+    {
+      "path": "audio/l13.mp3",
+      "bytes": 12236,
+      "sha256": "f3e697d9eee65091efc2ab11bf31e2cb9c4a7b92853b3a6eaf049853f6b484c6"
+    },
+    {
+      "path": "audio/lines.json",
+      "bytes": 8913,
+      "sha256": "b9e7e4f4613dc16ef76ee3ca93423c3f9862b2454ac95a8530b8970598d56660"
+    },
+    {
+      "path": "audio/star.mp3",
+      "bytes": 11276,
+      "sha256": "6ee1addb6535b9b77678b6d0a0c7b0b9794d8c2ad83142edbc9133b66475966d"
+    },
+    {
+      "path": "badges.js",
+      "bytes": 3572,
+      "sha256": "41934850246145db087482cee22d1e28912977b3d1867691f72e0aa5dc42b081"
+    },
+    {
+      "path": "base.css",
+      "bytes": 10687,
+      "sha256": "62509e431c493d759c43012508f85727221dac673102fbc86e5b391663c77ac5"
+    },
+    {
+      "path": "fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+      "bytes": 585872,
+      "sha256": "38a33a230624671eebedce95bd4237f7b3b2bb1fa25688ff959bed4070a1ea95"
+    },
+    {
+      "path": "illus/01_attic.jpg",
+      "bytes": 334748,
+      "sha256": "9f65d04cb543e8f98f9f0cfff4f97d6eea762c4d724d3030d092df8df8919374"
+    },
+    {
+      "path": "illus/02_arrival.jpg",
+      "bytes": 294748,
+      "sha256": "c15b857723949a4657ff7c95c863561399e0fbb510486791ccf2d20b8e2e40d8"
+    },
+    {
+      "path": "illus/03_mia_torches.jpg",
+      "bytes": 377483,
+      "sha256": "4e886cc043f692164d354034890164257310ac95d5a9172524c9cdcf624d1e20"
+    },
+    {
+      "path": "illus/04_biscuit_sock.jpg",
+      "bytes": 323449,
+      "sha256": "c76ef51297031f1b7db8d9c9fe72668a948847f4a1538e2ba3abd5374e6b85d3"
+    },
+    {
+      "path": "illus/05_door_open.jpg",
+      "bytes": 300594,
+      "sha256": "110bebf70e59f6086d64bcbaba271eab80576b18ef9a8e24b0b6225c92f0b5f9"
+    },
+    {
+      "path": "illus/PROMPTS.md",
+      "bytes": 1845,
+      "sha256": "1d62de8219f8cb019c0edb7fadf3210f9cecabb00879c21e118ec8e99f70dcbe"
+    },
+    {
+      "path": "lib/addons/environments/RoomEnvironment.js",
+      "bytes": 3606,
+      "sha256": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014"
+    },
+    {
+      "path": "lib/addons/loaders/GLTFLoader.js",
+      "bytes": 110273,
+      "sha256": "45139faddd5aaf48ed2d62203d976e5cbd703db1a592de40527f9f6cf58abd44"
+    },
+    {
+      "path": "lib/addons/utils/BufferGeometryUtils.js",
+      "bytes": 31768,
+      "sha256": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6"
+    },
+    {
+      "path": "lib/addons/utils/SkeletonUtils.js",
+      "bytes": 8802,
+      "sha256": "ee412be1aa05f3051c2bda8ea89612c1ba70c5c87de62b56040282120d5eb991"
+    },
+    {
+      "path": "lib/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "path": "models/compass_q.glb",
+      "bytes": 40552,
+      "sha256": "02b285836b276a907019df65f51674c3975364316b58fe859863921838867c7d"
+    }
+  ],
+  "verification": {
+    "allListedFilesAbsent": true,
+    "episode01Intact": true,
+    "newDesignIntact": true,
+    "hqMediaIntact": true,
+    "homepageRetained": true
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "checkedAt": "2026-10-11T08:05:05.292Z",
+  "records": [
+    {
+      "variant": "classic",
+      "stars": 0,
+      "width": 390,
+      "height": 844,
+      "filename": "classic-0-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "classic",
+      "stars": 5,
+      "width": 390,
+      "height": 844,
+      "filename": "classic-5-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "starmap",
+      "stars": 0,
+      "width": 390,
+      "height": 844,
+      "filename": "starmap-0-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "starmap",
+      "stars": 5,
+      "width": 390,
+      "height": 844,
+      "filename": "starmap-5-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "heirloom",
+      "stars": 0,
+      "width": 390,
+      "height": 844,
+      "filename": "heirloom-0-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "heirloom",
+      "stars": 5,
+      "width": 390,
+      "height": 844,
+      "filename": "heirloom-5-stars-390x844.png",
+      "errors": [],
+      "scrollWidth": 390,
+      "viewport": 390,
+      "scrollHeight": 844,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 43,
+        "top": 616.953125,
+        "right": 347,
+        "bottom": 668.953125,
+        "width": 304,
+        "height": 52
+      },
+      "hit": true,
+      "title": "金字塔的回声墙",
+      "storage": []
+    },
+    {
+      "variant": "classic",
+      "stars": 0,
+      "width": 1440,
+      "height": 900,
+      "filename": "classic-0-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    },
+    {
+      "variant": "classic",
+      "stars": 5,
+      "width": 1440,
+      "height": 900,
+      "filename": "classic-5-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    },
+    {
+      "variant": "starmap",
+      "stars": 0,
+      "width": 1440,
+      "height": 900,
+      "filename": "starmap-0-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    },
+    {
+      "variant": "starmap",
+      "stars": 5,
+      "width": 1440,
+      "height": 900,
+      "filename": "starmap-5-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    },
+    {
+      "variant": "heirloom",
+      "stars": 0,
+      "width": 1440,
+      "height": 900,
+      "filename": "heirloom-0-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 0,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    },
+    {
+      "variant": "heirloom",
+      "stars": 5,
+      "width": 1440,
+      "height": 900,
+      "filename": "heirloom-5-stars-1440x900.png",
+      "errors": [],
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "scrollHeight": 900,
+      "slots": 17,
+      "lit": 5,
+      "brokenImages": [],
+      "button": {
+        "left": 747,
+        "top": 539.515625,
+        "right": 977,
+        "bottom": 597.515625,
+        "width": 230,
+        "height": 58
+      },
+      "hit": true,
+      "title": "金字塔的\n回声墙",
+      "storage": []
+    }
+  ],
+  "gallery": {
+    "compasses": 3,
+    "slots": [
+      17,
+      17,
+      17
+    ],
+    "lit": [
+      0,
+      0,
+      0
+    ],
+    "pressed": "0 颗",
+    "icons": 12,
+    "fontReady": true,
+    "fontFamily": "\"Source Serif 4\", Georgia, serif"
+  },
+  "states": [
+    {
+      "stars": 0,
+      "lit": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "stars": 1,
+      "lit": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "stars": 2,
+      "lit": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "stars": 3,
+      "lit": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "stars": 4,
+      "lit": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "stars": 5,
+      "lit": [
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "demo": {
+    "message": "这是开始页视觉审稿；正式集成后从这里出发。",
+    "url": "http://127.0.0.1:8756/design/visual-v5/?view=start&variant=classic&stars=5",
+    "storage": []
+  }
+}

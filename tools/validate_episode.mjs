@@ -1,23 +1,34 @@
 #!/usr/bin/env node
 // 检查一集的内容是否齐全、互相对得上（不改任何文件）。
-// 用法（在仓库根目录）：node tools/validate_episode.mjs ep16 [ep02 …]
+// 用法（在仓库根目录）：node tools/validate_episode.mjs [--quick] ep16 [ep02 …]
+// --quick 只跳过逐个 ffprobe；仍检查音频存在、时间轴、内容与引用。
 // 退出码：有 ✘ 错误 = 1；只有 ⚠ 提醒 = 0
 import fs from 'fs';import path from 'path';import {execFileSync} from 'child_process';import {pathToFileURL} from 'url';
 const ROOT=path.resolve(path.dirname(new URL(import.meta.url).pathname),'..');
 const {ROLES}=await import(pathToFileURL(path.join(ROOT,'engine/badges.js')).href);
+const args=process.argv.slice(2),quick=args.includes('--quick'),eps=args.filter(a=>a!=='--quick');
+if(!eps.length){console.error('用法：node tools/validate_episode.mjs [--quick] epNN [epNN …]');process.exit(1);}
+const engineVersion=Number(fs.readFileSync(path.join(ROOT,'engine/VERSION'),'utf8').trim());
+const hasEmoji=s=>/\p{Extended_Pictographic}/u.test(String(s||'').replaceAll('➜',''));
 const KINDS={match:['pairs','targets'],pick:['verb','pics','rule'],choice:['ctx','good','others','hint'],typed:['pre','post','ans','why'],fix:['ctx','s','wi','fix','good','why'],order:['q','words','shuffled','why','hint'],rewrite:['q','src','answers','show','why'],tf:['s','ok'],sort:['boxes','items','why'],blank:['ctx','pre','post','ans','hint','why']};
-let hasFfprobe=true;try{execFileSync('ffprobe',['-version'],{stdio:'ignore'});}catch(e){hasFfprobe=false;}
+let hasFfprobe=!quick;if(hasFfprobe)try{execFileSync('ffprobe',['-version'],{stdio:'ignore'});}catch(e){hasFfprobe=false;}
 let bad=0;
-for(const ep of process.argv.slice(2)){
+for(const ep of eps){
  const D=path.join(ROOT,ep);const E=[],W=[];const err=m=>E.push(m),warn=m=>W.push(m);const ex=f=>fs.existsSync(path.join(D,f));
  console.log(`\n=== ${ep} ===`);
  // stub
  const html=ex('index.html')?fs.readFileSync(path.join(D,'index.html'),'utf8'):'';
  if(!html)err('缺少 index.html');else{if(!/data-v="\d+"/.test(html))err('index.html 的 <html> 缺少 data-v="数字"（内容版本号）');if(!html.includes('../engine/engine.js'))err('index.html 没有加载 ../engine/engine.js（请用标准外壳）');}
+ if(engineVersion>=5&&/three(?:\.module|\/addons)|type=["']importmap["']/.test(html))err('v5 外壳不得再加载 three.js importmap');
  for(const old of ['app.js','base.css','layout.css','badges.js','lib','models'])if(ex(old))warn(`集目录里还有旧引擎文件 ${old}，迁移后应删除（引擎统一在 engine/）`);
  let EP;try{EP=(await import(pathToFileURL(path.join(D,'episode.js')).href+'?t='+Date.now())).default;}catch(e){err('episode.js 无法加载：'+e.message);console.log(E.map(x=>'  ✘ '+x).join('\n'));bad++;continue;}
- for(const k of ['no','hud','start','img','sections','flow','activities','ending'])if(EP[k]==null)err(`episode.js 缺少字段 ${k}`);
+ for(const k of ['no','meta','hud','start','img','sections','flow','activities','ending'])if(EP[k]==null)err(`episode.js 缺少字段 ${k}`);
  if(!(EP.no>=1&&EP.no<=17))err('no 必须是 1–17 的集数');
+ for(const k of ['title','place','icon'])if(typeof EP.meta?.[k]!=='string'||!EP.meta[k].trim())err(`meta.${k} 必须是非空字符串`);
+ if(!Array.isArray(EP.meta?.grammar)||!EP.meta.grammar.length||EP.meta.grammar.some(x=>typeof x!=='string'||!x.trim()))err('meta.grammar 必须是非空语法标签数组（B 阶段不填未经核对的网站知识点 ID）');
+ if(hasEmoji(EP.hud))warn('hud 含 emoji：请只保留标题文字，罗盘图标由引擎统一提供');
+ const buttonText=(o,p='episode')=>{if(!o||typeof o!=='object')return;for(const [k,v]of Object.entries(o)){if(['go','button','done'].includes(k)&&typeof v==='string'&&hasEmoji(v))warn(`${p}.${k} 含 emoji：按钮只允许 ➜ 箭头，其余图标由引擎提供`);if(v&&typeof v==='object')buttonText(v,`${p}.${k}`);}};
+ buttonText(EP);if(hasEmoji(EP.download?.label))warn('download.label 含 emoji：下载图标由引擎统一提供');
  if(EP.css&&!ex('episode.css'))err('css:true 但没有 episode.css');
  // lines
  let L={};try{L=JSON.parse(fs.readFileSync(path.join(D,'audio/lines.json'),'utf8'));}catch(e){err('audio/lines.json 读不了：'+e.message);}
@@ -80,5 +91,5 @@ for(const ep of process.argv.slice(2)){
   if(list.length>2)warn(`hints.json ${id}: ${list.length} 条提示，电脑上可能挤，建议 ≤2`);
   const ws=L[id].words.map(w=>nw(w[0]));list.forEach(h=>{role(h.b,`hints.json ${id}`);if(!h.zh)err(`hints.json ${id}: 缺少 zh`);const ph=String(h.hl||'').split(/\s+/).map(nw);let ok=false;for(let i=0;i+ph.length<=ws.length;i++)if(ph.every((p,k)=>ws[i+k]===p)){ok=true;break;}if(!ok)err(`hints.json ${id}: 句子里找不到 "${h.hl}"（要和台词原词一致）`);});}
  console.log(W.map(x=>'  ⚠ '+x).join('\n')||'');console.log(E.map(x=>'  ✘ '+x).join('\n')||'  ✔ 没有错误');
- console.log(`  ${E.length} 个错误，${W.length} 个提醒${hasFfprobe?'':'（未安装 ffprobe，跳过音频时长核对）'}`);if(E.length)bad++;}
+ console.log(`  ${E.length} 个错误，${W.length} 个提醒${hasFfprobe?'':quick?'（--quick：跳过 ffprobe 实测时长）':'（未安装 ffprobe，跳过音频时长核对）'}`);if(E.length)bad++;}
 process.exit(bad?1:0);

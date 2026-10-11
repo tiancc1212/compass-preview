@@ -1,0 +1,2538 @@
+{
+  "pro_l01": {
+    "text": "Rain taps on the attic window.",
+    "who": "narrator",
+    "audioFile": "pro_l01.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "雨点轻敲阁楼的窗户。",
+    "source": "prologue",
+    "sequence": 1,
+    "dur": 2.22,
+    "words": [
+      [
+        "Rain",
+        0.0,
+        0.34
+      ],
+      [
+        "taps",
+        0.34,
+        0.78
+      ],
+      [
+        "on",
+        0.78,
+        1.1
+      ],
+      [
+        "the",
+        1.1,
+        1.22
+      ],
+      [
+        "attic",
+        1.22,
+        1.54
+      ],
+      [
+        "window.",
+        1.54,
+        1.94
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.02,
+    "truePeakDBTP": -2.44,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 0.26415,
+      "sourceEnd": 2.450816,
+      "sha256": "da1957319e16fdf8116fe04ce40f429b05b6c69e5cc55c4cda128673a0b2f970",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Rain taps on the attic window.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l02": {
+    "text": "Grandpa, your old compass is under the chess box!",
+    "who": "leo",
+    "audioFile": "pro_l02.mp3",
+    "status": "ready-generated",
+    "voice": "Energetic Male(English)",
+    "zh": "爷爷，你的旧罗盘在象棋盒下面！",
+    "source": "prologue",
+    "sequence": 2,
+    "dur": 3.187,
+    "words": [
+      [
+        "Grandpa,",
+        0.0,
+        0.62
+      ],
+      [
+        "your",
+        0.88,
+        1.0
+      ],
+      [
+        "old",
+        1.0,
+        1.28
+      ],
+      [
+        "compass",
+        1.28,
+        1.6
+      ],
+      [
+        "is",
+        1.6,
+        1.84
+      ],
+      [
+        "under",
+        1.84,
+        2.06
+      ],
+      [
+        "the",
+        2.06,
+        2.26
+      ],
+      [
+        "chess",
+        2.26,
+        2.5
+      ],
+      [
+        "box!",
+        2.5,
+        2.82
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -6.69,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_leo_all",
+      "rawFile": "hq_leo_all.mp3",
+      "rawSha256": "27ba212cb0bfd6e85a54761002a53501ce0e5f1f3f4bc61efe11d6250f716ce0",
+      "sourceStart": 0.003355999999999998,
+      "sourceEnd": 3.161519,
+      "sha256": "e57ad5d4de08e81df62a5a4fa07fc0fee9cfb8701a01d63af9de82536bcfc435",
+      "voice": "Energetic Male(English)",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Grandpa, your old compass is under the chess box.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l03": {
+    "text": "That is my compass, Leo.",
+    "who": "grandpa",
+    "audioFile": "pro_l03.mp3",
+    "status": "ready-generated",
+    "voice": "Deep Tone（English）",
+    "zh": "Leo，那是我的罗盘。",
+    "source": "prologue",
+    "sequence": 3,
+    "dur": 1.776,
+    "words": [
+      [
+        "That",
+        0.0,
+        0.34
+      ],
+      [
+        "is",
+        0.34,
+        0.66
+      ],
+      [
+        "my",
+        0.66,
+        0.86
+      ],
+      [
+        "compass,",
+        0.86,
+        1.2
+      ],
+      [
+        "Leo.",
+        1.4,
+        1.48
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.02,
+    "truePeakDBTP": -2.26,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_grandpa_all",
+      "rawFile": "hq_grandpa_all.mp3",
+      "rawSha256": "7129145b2bff84083c26478e37177a26c55cec41856c2c209c00ae98af7634a2",
+      "sourceStart": 0.271451,
+      "sourceEnd": 2.014807,
+      "sha256": "3cd52145efdcfa179d430167296d821dabda5bbf962507a4165d846c7a8e5cfa",
+      "voice": "Deep Tone（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain-and-gentle-4x-oversampled-limiter",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "That is my compass, Leo.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l04": {
+    "text": "Why does the needle not move?",
+    "who": "mia",
+    "audioFile": "pro_l04.mp3",
+    "status": "ready-generated",
+    "voice": "Adorable Girl(English)",
+    "zh": "指针为什么不动呢？",
+    "source": "prologue",
+    "sequence": 4,
+    "dur": 2.456,
+    "words": [
+      [
+        "Why",
+        0.0,
+        0.42
+      ],
+      [
+        "does",
+        0.42,
+        0.74
+      ],
+      [
+        "the",
+        0.74,
+        1.02
+      ],
+      [
+        "needle",
+        1.02,
+        1.34
+      ],
+      [
+        "not",
+        1.34,
+        1.7
+      ],
+      [
+        "move?",
+        1.7,
+        2.1
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.98,
+    "truePeakDBTP": -6.48,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_mia_all",
+      "rawFile": "hq_mia_all.mp3",
+      "rawSha256": "da758b71ac146eb8588237f8b68dd6eda22b2fad28c9585648712cb069e23a28",
+      "sourceStart": 0.005350999999999995,
+      "sourceEnd": 2.432608,
+      "sha256": "bb7ddc8a3196630ec99f434603da5b1b4662b0d3541dd4561a227d335f59ee65",
+      "voice": "Adorable Girl(English)",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Why does the needle not move?",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l05": {
+    "text": "Seventeen empty star slots form a ring.",
+    "who": "lily",
+    "audioFile": "pro_l05.mp3",
+    "status": "ready-generated",
+    "voice": "Gentle Girl（English）",
+    "zh": "十七个空星槽围成一圈。",
+    "source": "prologue",
+    "sequence": 5,
+    "dur": 2.429,
+    "words": [
+      [
+        "Seventeen",
+        0.0,
+        0.7
+      ],
+      [
+        "empty",
+        0.7,
+        1.02
+      ],
+      [
+        "star",
+        1.02,
+        1.28
+      ],
+      [
+        "slots",
+        1.28,
+        1.58
+      ],
+      [
+        "form",
+        1.58,
+        1.82
+      ],
+      [
+        "a",
+        1.82,
+        1.96
+      ],
+      [
+        "ring.",
+        1.96,
+        2.12
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -4.88,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_lily_all",
+      "rawFile": "hq_lily_all.mp3",
+      "rawSha256": "8ad4218788b868a9330b89f56e22ee5959677e97e3b7acc0db76143987612f9b",
+      "sourceStart": 0.062109,
+      "sourceEnd": 2.452404,
+      "sha256": "641ef3b192610d215b0fa9f56dcf0f9bc758cd5ea4a14ee9274fbabf8223ee4f",
+      "voice": "Gentle Girl（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "17 empty star slots form a ring.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l06": {
+    "text": "Each slot waits for a star.",
+    "who": "lily",
+    "audioFile": "pro_l06.mp3",
+    "status": "ready-generated",
+    "voice": "Gentle Girl（English）",
+    "zh": "每个星槽都在等一颗星。",
+    "source": "prologue",
+    "sequence": 6,
+    "dur": 1.593,
+    "words": [
+      [
+        "Each",
+        0.0,
+        0.26
+      ],
+      [
+        "slot",
+        0.26,
+        0.5
+      ],
+      [
+        "waits",
+        0.5,
+        0.72
+      ],
+      [
+        "for",
+        0.72,
+        0.94
+      ],
+      [
+        "a",
+        0.94,
+        1.06
+      ],
+      [
+        "star.",
+        1.06,
+        1.26
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -6.33,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_lily_all",
+      "rawFile": "hq_lily_all.mp3",
+      "rawSha256": "8ad4218788b868a9330b89f56e22ee5959677e97e3b7acc0db76143987612f9b",
+      "sourceStart": 2.931565,
+      "sourceEnd": 4.479864,
+      "sha256": "6423b5f7ec2100a3f27fc11f280b1dd552291ae4e47cd7df3042ce65eaa6118d",
+      "voice": "Gentle Girl（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Each slot waits for a star.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l07": {
+    "text": "The compass feels warm in my hand!",
+    "who": "sam",
+    "audioFile": "pro_l07.mp3",
+    "status": "ready-generated",
+    "voice": "Gentle Guy（English）",
+    "zh": "罗盘在我手里暖暖的！",
+    "source": "prologue",
+    "sequence": 7,
+    "dur": 2.22,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.22
+      ],
+      [
+        "compass",
+        0.22,
+        0.58
+      ],
+      [
+        "feels",
+        0.58,
+        0.92
+      ],
+      [
+        "warm",
+        0.92,
+        1.3
+      ],
+      [
+        "in",
+        1.3,
+        1.46
+      ],
+      [
+        "my",
+        1.46,
+        1.64
+      ],
+      [
+        "hand!",
+        1.64,
+        1.96
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.02,
+    "truePeakDBTP": -6.37,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_sam_all",
+      "rawFile": "hq_sam_all.mp3",
+      "rawSha256": "ead91f76cf715851b78174e0b3febbee64909b00783648a2d584c49f5b252b08",
+      "sourceStart": 0.21009100000000003,
+      "sourceEnd": 2.381451,
+      "sha256": "1a6ce4f48204ab531b81e75290ec68a48de6d54900a4c40fd657f22a482eb49a",
+      "voice": "Gentle Guy（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "The compass feels warm in my hand.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l08": {
+    "text": "Biscuit runs past with a sock.",
+    "who": "narrator",
+    "audioFile": "pro_l08.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "Biscuit 叼着一只袜子跑过去。",
+    "source": "prologue",
+    "sequence": 8,
+    "dur": 1.855,
+    "words": [
+      [
+        "Biscuit",
+        0.0,
+        0.46
+      ],
+      [
+        "runs",
+        0.46,
+        0.7
+      ],
+      [
+        "past",
+        0.7,
+        1.12
+      ],
+      [
+        "with",
+        1.12,
+        1.34
+      ],
+      [
+        "a",
+        1.34,
+        1.46
+      ],
+      [
+        "sock.",
+        1.46,
+        1.68
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.02,
+    "truePeakDBTP": -4.72,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 2.8011109999999997,
+      "sourceEnd": 4.610476,
+      "sha256": "72e080de1ecec9e5481692bf850905090eb92903325530e9a05cf941b6dee101",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Biscuit runs past with a sock.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l09": {
+    "text": "Look after it, Leo.",
+    "who": "grandpa",
+    "audioFile": "pro_l09.mp3",
+    "status": "ready-generated",
+    "voice": "Deep Tone（English）",
+    "zh": "Leo，照看好它。",
+    "source": "prologue",
+    "sequence": 9,
+    "dur": 1.384,
+    "words": [
+      [
+        "Look",
+        0.0,
+        0.34
+      ],
+      [
+        "after",
+        0.34,
+        0.68
+      ],
+      [
+        "it,",
+        0.68,
+        0.92
+      ],
+      [
+        "Leo.",
+        1.02,
+        1.08
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.04,
+    "truePeakDBTP": -2.26,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_grandpa_all",
+      "rawFile": "hq_grandpa_all.mp3",
+      "rawSha256": "7129145b2bff84083c26478e37177a26c55cec41856c2c209c00ae98af7634a2",
+      "sourceStart": 2.3744899999999998,
+      "sourceEnd": 3.72127,
+      "sha256": "26e8d32edd227d6d813a7684e2156e80573d991c5392ff0db968a8340a5ac772",
+      "voice": "Deep Tone（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain-and-gentle-4x-oversampled-limiter",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Look after it, Leo.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "pro_l10": {
+    "text": "I am ready for our first adventure!",
+    "who": "leo",
+    "audioFile": "pro_l10.mp3",
+    "status": "ready-generated",
+    "voice": "Energetic Male(English)",
+    "zh": "我准备好开始第一次冒险啦！",
+    "source": "prologue",
+    "sequence": 10,
+    "dur": 2.403,
+    "words": [
+      [
+        "I",
+        0.0,
+        0.26
+      ],
+      [
+        "am",
+        0.26,
+        0.4
+      ],
+      [
+        "ready",
+        0.4,
+        0.62
+      ],
+      [
+        "for",
+        0.62,
+        0.92
+      ],
+      [
+        "our",
+        0.92,
+        1.12
+      ],
+      [
+        "first",
+        1.12,
+        1.44
+      ],
+      [
+        "adventure!",
+        1.44,
+        1.94
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.01,
+    "truePeakDBTP": -7.3,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_leo_all",
+      "rawFile": "hq_leo_all.mp3",
+      "rawSha256": "27ba212cb0bfd6e85a54761002a53501ce0e5f1f3f4bc61efe11d6250f716ce0",
+      "sourceStart": 3.161519,
+      "sourceEnd": 5.520408,
+      "sha256": "4d20ee0f9c338f4d4d6d1e367f90c417ce7c1be232e38decd65863ac92937cfe",
+      "voice": "Energetic Male(English)",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "I am ready for our first adventure!",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_leo": {
+    "text": "I love adventures, and so does Grandpa.",
+    "who": "leo",
+    "audioFile": "char_leo.mp3",
+    "status": "ready-reused",
+    "voice": "Energetic Male(English)",
+    "zh": "我喜欢冒险，爷爷也是。",
+    "source": "character",
+    "characterId": "leo",
+    "dur": 2.638,
+    "words": [
+      [
+        "I",
+        0.0,
+        0.26
+      ],
+      [
+        "love",
+        0.26,
+        0.48
+      ],
+      [
+        "adventures,",
+        0.48,
+        0.98
+      ],
+      [
+        "and",
+        1.4,
+        1.48
+      ],
+      [
+        "so",
+        1.48,
+        1.68
+      ],
+      [
+        "does",
+        1.68,
+        1.88
+      ],
+      [
+        "Grandpa.",
+        1.88,
+        2.4
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -6.97,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep17",
+      "sourceLine": "l02",
+      "sourceFile": "ep17/audio/l02.mp3",
+      "sha256": "685381be8e06832809035a76dc8df15014964092ab809c14a6e3fecf20f787b7",
+      "match": "exact-text-and-speaker",
+      "voice": "Energetic Male(English)",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_mia": {
+    "text": "Can I ask one more question?",
+    "who": "mia",
+    "audioFile": "char_mia.mp3",
+    "status": "ready-generated",
+    "voice": "Adorable Girl(English)",
+    "zh": "我能再问一个问题吗？",
+    "source": "character",
+    "characterId": "mia",
+    "dur": 2.612,
+    "words": [
+      [
+        "Can",
+        0.0,
+        0.34
+      ],
+      [
+        "I",
+        0.34,
+        0.62
+      ],
+      [
+        "ask",
+        0.62,
+        1.04
+      ],
+      [
+        "one",
+        1.04,
+        1.4
+      ],
+      [
+        "more",
+        1.4,
+        1.76
+      ],
+      [
+        "question?",
+        1.76,
+        2.12
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -4.27,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_mia_all",
+      "rawFile": "hq_mia_all.mp3",
+      "rawSha256": "da758b71ac146eb8588237f8b68dd6eda22b2fad28c9585648712cb069e23a28",
+      "sourceStart": 2.432608,
+      "sourceEnd": 5.017551,
+      "sha256": "136a0b248c8135dc8b93bff133a22c6f7b55e735f4f68b9e6e5ce4876e933722",
+      "voice": "Adorable Girl(English)",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Can I ask one more question?",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_sam": {
+    "text": "I am the fastest runner in our crew!",
+    "who": "sam",
+    "audioFile": "char_sam.mp3",
+    "status": "ready-reused",
+    "voice": "Gentle Guy（English）",
+    "zh": "我是队里跑得最快的人！",
+    "source": "character",
+    "characterId": "sam",
+    "dur": 2.273,
+    "words": [
+      [
+        "I",
+        0.0,
+        0.26
+      ],
+      [
+        "am",
+        0.26,
+        0.38
+      ],
+      [
+        "the",
+        0.38,
+        0.52
+      ],
+      [
+        "fastest",
+        0.52,
+        0.84
+      ],
+      [
+        "runner",
+        0.84,
+        1.32
+      ],
+      [
+        "in",
+        1.32,
+        1.54
+      ],
+      [
+        "our",
+        1.54,
+        1.7
+      ],
+      [
+        "crew!",
+        1.7,
+        2.0
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -2.27,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep11",
+      "sourceLine": "l02",
+      "sourceFile": "ep11/audio/l02.mp3",
+      "sha256": "5b68ef55d30627384c568ff5bb0b76cc26acf76a2055c1bb7d4597ff0d981c60",
+      "match": "exact-text-and-speaker",
+      "voice": "Gentle Guy（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_lily": {
+    "text": "Wait. Let me read the rules first.",
+    "who": "lily",
+    "audioFile": "char_lily.mp3",
+    "status": "ready-reused",
+    "voice": "Gentle Girl（English）",
+    "zh": "等等，让我先看看规则。",
+    "source": "character",
+    "characterId": "lily",
+    "dur": 1.933,
+    "words": [
+      [
+        "Wait.",
+        0.0,
+        0.2
+      ],
+      [
+        "Let",
+        0.5,
+        0.68
+      ],
+      [
+        "me",
+        0.68,
+        0.8
+      ],
+      [
+        "read",
+        0.8,
+        0.96
+      ],
+      [
+        "the",
+        0.96,
+        1.1
+      ],
+      [
+        "rules",
+        1.1,
+        1.24
+      ],
+      [
+        "first.",
+        1.24,
+        1.54
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -3.97,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep16",
+      "sourceLine": "l07",
+      "sourceFile": "ep16/audio/l07.mp3",
+      "sha256": "77621c1f21d53eae94cecccc408b64a9e191671e96c5c0bafe9a8c0871e4200a",
+      "match": "exact-text-and-speaker",
+      "voice": "Gentle Girl（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_biscuit": {
+    "text": "Biscuit finds an old striped sock.",
+    "who": "narrator",
+    "audioFile": "char_biscuit.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "Biscuit 找到一只旧条纹袜子。",
+    "source": "character",
+    "characterId": "biscuit",
+    "dur": 2.325,
+    "words": [
+      [
+        "Biscuit",
+        0.0,
+        0.48
+      ],
+      [
+        "finds",
+        0.48,
+        0.78
+      ],
+      [
+        "an",
+        0.78,
+        0.98
+      ],
+      [
+        "old",
+        0.98,
+        1.3
+      ],
+      [
+        "striped",
+        1.3,
+        1.68
+      ],
+      [
+        "sock.",
+        1.68,
+        2.06
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.01,
+    "truePeakDBTP": -5.67,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep01",
+      "sourceLine": "l10",
+      "sourceFile": "ep01/audio/l10.mp3",
+      "sha256": "37c4962d7f6d77e6b5bac4046ed421db0791beea8289f8160e4d4fe4b31ca8ee",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_grandpa": {
+    "text": "When I was your age, I loved chess.",
+    "who": "grandpa",
+    "audioFile": "char_grandpa.mp3",
+    "status": "ready-generated",
+    "voice": "Deep Tone（English）",
+    "zh": "我像你这么大时，很喜欢下棋。",
+    "source": "character",
+    "characterId": "grandpa",
+    "dur": 2.456,
+    "words": [
+      [
+        "When",
+        0.0,
+        0.24
+      ],
+      [
+        "I",
+        0.24,
+        0.4
+      ],
+      [
+        "was",
+        0.4,
+        0.56
+      ],
+      [
+        "your",
+        0.56,
+        0.74
+      ],
+      [
+        "age,",
+        0.74,
+        1.04
+      ],
+      [
+        "I",
+        1.38,
+        1.46
+      ],
+      [
+        "loved",
+        1.46,
+        1.76
+      ],
+      [
+        "chess.",
+        1.76,
+        2.1
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -2.53,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_grandpa_all",
+      "rawFile": "hq_grandpa_all.mp3",
+      "rawSha256": "7129145b2bff84083c26478e37177a26c55cec41856c2c209c00ae98af7634a2",
+      "sourceStart": 4.1954649999999996,
+      "sourceEnd": 6.601066,
+      "sha256": "dd932c22b27a3f18c5deb0a131b4b87910677dfa9777dbd92540e446c0238177",
+      "voice": "Deep Tone（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "When I was your age, I loved chess.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_viking_captain": {
+    "text": "Bring an axe, a shield and the captain's helmet!",
+    "who": "narrator",
+    "audioFile": "char_viking_captain.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "拿一把斧头、一面盾牌，还有船长的那顶头盔！",
+    "source": "character",
+    "characterId": "viking_captain",
+    "dur": 2.612,
+    "words": [
+      [
+        "Bring",
+        0.0,
+        0.26
+      ],
+      [
+        "an",
+        0.26,
+        0.48
+      ],
+      [
+        "axe,",
+        0.48,
+        0.62
+      ],
+      [
+        "a",
+        0.76,
+        0.86
+      ],
+      [
+        "shield",
+        0.86,
+        1.08
+      ],
+      [
+        "and",
+        1.08,
+        1.34
+      ],
+      [
+        "the",
+        1.34,
+        1.48
+      ],
+      [
+        "captain's",
+        1.48,
+        1.92
+      ],
+      [
+        "helmet!",
+        1.92,
+        2.16
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -5.44,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 5.221995,
+      "sourceEnd": 7.805306,
+      "sha256": "9075b480e744924aa1227df16dd0bf8371053e5bd45528cf7e5bd8921ef56073",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Bring an axe, a shield, and the captain's helmet.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_owl": {
+    "text": "Whose bag is this?",
+    "who": "narrator",
+    "audioFile": "char_owl.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "这是谁的包？",
+    "source": "character",
+    "characterId": "owl",
+    "dur": 1.384,
+    "words": [
+      [
+        "Whose",
+        0.0,
+        0.32
+      ],
+      [
+        "bag",
+        0.32,
+        0.56
+      ],
+      [
+        "is",
+        0.56,
+        0.76
+      ],
+      [
+        "this?",
+        0.76,
+        1.02
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.98,
+    "truePeakDBTP": -3.78,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep03",
+      "sourceLine": "ex_q8_5",
+      "sourceFile": "ep03/audio/ex_q8_5.mp3",
+      "sha256": "daf351ccbd7fa2a22651cfb01149c2839c64e212885bdb95d3b5ddb7bd073140",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_dragon": {
+    "text": "He guards books, so he stays in and reads on Mondays.",
+    "who": "narrator",
+    "audioFile": "char_dragon.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "他守护书籍，所以星期一他待在洞里看书。",
+    "source": "character",
+    "characterId": "dragon",
+    "dur": 3.631,
+    "words": [
+      [
+        "He",
+        0.0,
+        0.2
+      ],
+      [
+        "guards",
+        0.2,
+        0.46
+      ],
+      [
+        "books,",
+        0.46,
+        0.94
+      ],
+      [
+        "so",
+        1.22,
+        1.5
+      ],
+      [
+        "he",
+        1.5,
+        1.66
+      ],
+      [
+        "stays",
+        1.66,
+        1.9
+      ],
+      [
+        "in",
+        1.9,
+        2.22
+      ],
+      [
+        "and",
+        2.22,
+        2.46
+      ],
+      [
+        "reads",
+        2.46,
+        2.72
+      ],
+      [
+        "on",
+        2.72,
+        2.94
+      ],
+      [
+        "Mondays.",
+        2.94,
+        3.2
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.79,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep04",
+      "sourceLine": "l11",
+      "sourceFile": "ep04/audio/l11.mp3",
+      "sha256": "32043e75929ad8eb3c0d34a9d5cf8c8da0563177037b4ae18c59f0c1a2aebc2e",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_bob": {
+    "text": "Bob cooks breakfast every morning.",
+    "who": "narrator",
+    "audioFile": "char_bob.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "Bob 每天早晨做早餐。",
+    "source": "character",
+    "characterId": "bob",
+    "dur": 2.168,
+    "words": [
+      [
+        "Bob",
+        0.0,
+        0.36
+      ],
+      [
+        "cooks",
+        0.36,
+        0.66
+      ],
+      [
+        "breakfast",
+        0.66,
+        1.02
+      ],
+      [
+        "every",
+        1.02,
+        1.54
+      ],
+      [
+        "morning.",
+        1.54,
+        1.86
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -2.33,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 8.080748000000002,
+      "sourceEnd": 10.202720999999999,
+      "sha256": "8aef59be911a56853bc07f007eb35279f12670b78207762bf52d0ab66e8ebc80",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Bob cooks breakfast every morning.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_tina": {
+    "text": "Tina always washes the cups after breakfast.",
+    "who": "narrator",
+    "audioFile": "char_tina.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "Tina 早餐后总会洗杯子。",
+    "source": "character",
+    "characterId": "tina",
+    "dur": 2.847,
+    "words": [
+      [
+        "Tina",
+        0.0,
+        0.38
+      ],
+      [
+        "always",
+        0.38,
+        0.88
+      ],
+      [
+        "washes",
+        0.88,
+        1.32
+      ],
+      [
+        "the",
+        1.32,
+        1.46
+      ],
+      [
+        "cups",
+        1.46,
+        1.68
+      ],
+      [
+        "after",
+        1.68,
+        2.1
+      ],
+      [
+        "breakfast.",
+        2.1,
+        2.46
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.25,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 10.458594000000002,
+      "sourceEnd": 13.261337999999999,
+      "sha256": "2e9a42ce2c9c03653102d089416828ecc5ea15ea17501799dfb5e4a7905df926",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Tina always washes the cups after breakfast.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_zed": {
+    "text": "Zed does not clean the streets, but he paints pictures for the town.",
+    "who": "narrator",
+    "audioFile": "char_zed.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "Zed 不打扫街道，但他给小镇画画。",
+    "source": "character",
+    "characterId": "zed",
+    "dur": 5.068,
+    "words": [
+      [
+        "Zed",
+        0.0,
+        0.38
+      ],
+      [
+        "does",
+        0.38,
+        0.84
+      ],
+      [
+        "not",
+        0.84,
+        1.2
+      ],
+      [
+        "clean",
+        1.2,
+        1.56
+      ],
+      [
+        "the",
+        1.56,
+        1.74
+      ],
+      [
+        "streets,",
+        1.74,
+        2.04
+      ],
+      [
+        "but",
+        2.74,
+        3.16
+      ],
+      [
+        "he",
+        3.16,
+        3.44
+      ],
+      [
+        "paints",
+        3.44,
+        3.68
+      ],
+      [
+        "pictures",
+        3.68,
+        4.12
+      ],
+      [
+        "for",
+        4.12,
+        4.4
+      ],
+      [
+        "the",
+        4.4,
+        4.52
+      ],
+      [
+        "town.",
+        4.52,
+        4.78
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.02,
+    "truePeakDBTP": -2.24,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_01",
+      "rawFile": "hq_narrator_01.mp3",
+      "rawSha256": "e820de74356b782235fa701fcf92d26b7751f30c0c7896b37c5a209f7a3f7b5b",
+      "sourceStart": 13.692358276643992,
+      "sourceEnd": 18.713673469387754,
+      "sha256": "8dd8d9cfd1886a6efdc48de5267b8a5bdd5767b02a036c0bc0ff9437c0c7d6e1",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain-and-gentle-4x-oversampled-limiter",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Zed does not clean the streets, but he paints pictures for the town.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_olympia_officer": {
+    "text": "The race starts at three o'clock on the fifth day.",
+    "who": "narrator",
+    "audioFile": "char_olympia_officer.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "比赛在第五天下午三点开始。",
+    "source": "character",
+    "characterId": "olympia_officer",
+    "dur": 2.795,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.2
+      ],
+      [
+        "race",
+        0.2,
+        0.44
+      ],
+      [
+        "starts",
+        0.44,
+        0.86
+      ],
+      [
+        "at",
+        0.86,
+        1.12
+      ],
+      [
+        "three",
+        1.12,
+        1.34
+      ],
+      [
+        "o'clock",
+        1.34,
+        1.72
+      ],
+      [
+        "on",
+        1.72,
+        1.94
+      ],
+      [
+        "the",
+        1.94,
+        2.06
+      ],
+      [
+        "fifth",
+        2.06,
+        2.22
+      ],
+      [
+        "day.",
+        2.22,
+        2.58
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.0,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_02",
+      "rawFile": "hq_narrator_02.mp3",
+      "rawSha256": "e7b70a4484ef01c35c8b032bc9fecc8db81c2f6c691d1e050daf3adc46a8ae30",
+      "sourceStart": 0.28932,
+      "sourceEnd": 3.04746,
+      "sha256": "31ff631b57322092ce2a7aa3fcb0d160833b2d928eb3cc5d8ac71bd3afd650bb",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "The race starts at three o'clock on the fifth day.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_dad": {
+    "text": "Dad tastes a tiny rock, and it tastes delicious.",
+    "who": "narrator",
+    "audioFile": "char_dad.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "爸爸尝了一小块石头，味道真好。",
+    "source": "character",
+    "characterId": "dad",
+    "dur": 3.396,
+    "words": [
+      [
+        "Dad",
+        0.0,
+        0.34
+      ],
+      [
+        "tastes",
+        0.34,
+        0.7
+      ],
+      [
+        "a",
+        0.7,
+        0.94
+      ],
+      [
+        "tiny",
+        0.94,
+        1.22
+      ],
+      [
+        "rock,",
+        1.22,
+        1.58
+      ],
+      [
+        "and",
+        1.9,
+        2.06
+      ],
+      [
+        "it",
+        2.06,
+        2.18
+      ],
+      [
+        "tastes",
+        2.18,
+        2.46
+      ],
+      [
+        "delicious.",
+        2.46,
+        2.88
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.01,
+    "truePeakDBTP": -1.17,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep07",
+      "sourceLine": "l03",
+      "sourceFile": "ep07/audio/l03.mp3",
+      "sha256": "4dfd5b3da742f0594e32ef3a41e473833f7b6cd1d17c465b18a5db3530b14ac8",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_dinosaur_family": {
+    "text": "The dinosaur is drinking water.",
+    "who": "narrator",
+    "audioFile": "char_dinosaur_family.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "恐龙正在喝水。",
+    "source": "character",
+    "characterId": "dinosaur_family",
+    "dur": 1.985,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.2
+      ],
+      [
+        "dinosaur",
+        0.2,
+        0.62
+      ],
+      [
+        "is",
+        0.62,
+        0.94
+      ],
+      [
+        "drinking",
+        0.94,
+        1.2
+      ],
+      [
+        "water.",
+        1.2,
+        1.58
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -5.2,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep08",
+      "sourceLine": "ex_q3_3",
+      "sourceFile": "ep08/audio/ex_q3_3.mp3",
+      "sha256": "6e451a0131d17d2cd5dcf2d77901a04a0c6681769c08e8206874a39e7ae1bd27",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_mars_commander": {
+    "text": "The commander says Leo should practise in the simulator first.",
+    "who": "narrator",
+    "audioFile": "char_mars_commander.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "指挥官说 Leo 应该先在模拟器里练习。",
+    "source": "character",
+    "characterId": "mars_commander",
+    "dur": 3.344,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.22
+      ],
+      [
+        "commander",
+        0.22,
+        0.48
+      ],
+      [
+        "says",
+        0.48,
+        0.82
+      ],
+      [
+        "Leo",
+        0.82,
+        1.08
+      ],
+      [
+        "should",
+        1.08,
+        1.36
+      ],
+      [
+        "practise",
+        1.36,
+        1.72
+      ],
+      [
+        "in",
+        1.72,
+        2.02
+      ],
+      [
+        "the",
+        2.02,
+        2.14
+      ],
+      [
+        "simulator",
+        2.14,
+        2.5
+      ],
+      [
+        "first.",
+        2.5,
+        2.96
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.26,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_02",
+      "rawFile": "hq_narrator_02.mp3",
+      "rawSha256": "e7b70a4484ef01c35c8b032bc9fecc8db81c2f6c691d1e050daf3adc46a8ae30",
+      "sourceStart": 3.3130159999999997,
+      "sourceEnd": 6.604717,
+      "sha256": "f627f1d601fb1fd0bf7b8485cff64db04bb48e19f37ba515b51ad38ca4da760e",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "The commander says Leo should practice in the simulator first.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_cheetah": {
+    "text": "The cheetah runs more quickly than Sam.",
+    "who": "narrator",
+    "audioFile": "char_cheetah.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "猎豹跑得比 Sam 更快。",
+    "source": "character",
+    "characterId": "cheetah",
+    "dur": 2.482,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.2
+      ],
+      [
+        "cheetah",
+        0.2,
+        0.6
+      ],
+      [
+        "runs",
+        0.6,
+        0.9
+      ],
+      [
+        "more",
+        0.9,
+        1.26
+      ],
+      [
+        "quickly",
+        1.26,
+        1.54
+      ],
+      [
+        "than",
+        1.54,
+        1.88
+      ],
+      [
+        "Sam.",
+        1.88,
+        2.2
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -5.9,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep11",
+      "sourceLine": "l05",
+      "sourceFile": "ep11/audio/l05.mp3",
+      "sha256": "2ee7ec217a29b50fba95689f199da33760844a6235cf0da21e8051c2dd521fef",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_elephant": {
+    "text": "The elephant is the strongest of the three animals.",
+    "who": "narrator",
+    "audioFile": "char_elephant.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "大象是这三只动物里最强壮的。",
+    "source": "character",
+    "characterId": "elephant",
+    "dur": 2.952,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.2
+      ],
+      [
+        "elephant",
+        0.2,
+        0.56
+      ],
+      [
+        "is",
+        0.56,
+        0.92
+      ],
+      [
+        "the",
+        0.92,
+        1.1
+      ],
+      [
+        "strongest",
+        1.1,
+        1.44
+      ],
+      [
+        "of",
+        1.44,
+        1.88
+      ],
+      [
+        "the",
+        1.88,
+        2.02
+      ],
+      [
+        "three",
+        2.02,
+        2.22
+      ],
+      [
+        "animals.",
+        2.22,
+        2.52
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -1.3,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_02",
+      "rawFile": "hq_narrator_02.mp3",
+      "rawSha256": "e7b70a4484ef01c35c8b032bc9fecc8db81c2f6c691d1e050daf3adc46a8ae30",
+      "sourceStart": 6.986553,
+      "sourceEnd": 9.905011,
+      "sha256": "67c94a33b752e8b2bf47b0bc635306aac8b1bcc675fb53a7bd1caf87306a3f4c",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "The elephant is the strongest of the three animals.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_mermaid_mayor": {
+    "text": "The mermaid mayor lets everyone enter the city.",
+    "who": "narrator",
+    "audioFile": "char_mermaid_mayor.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "人鱼市长让大家进入城市。",
+    "source": "character",
+    "characterId": "mermaid_mayor",
+    "dur": 2.821,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.2
+      ],
+      [
+        "mermaid",
+        0.2,
+        0.64
+      ],
+      [
+        "mayor",
+        0.64,
+        0.98
+      ],
+      [
+        "lets",
+        0.98,
+        1.26
+      ],
+      [
+        "everyone",
+        1.26,
+        1.78
+      ],
+      [
+        "enter",
+        1.78,
+        2.08
+      ],
+      [
+        "the",
+        2.08,
+        2.28
+      ],
+      [
+        "city.",
+        2.28,
+        2.5
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -4.86,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep12",
+      "sourceLine": "l05",
+      "sourceFile": "ep12/audio/l05.mp3",
+      "sha256": "b84cd15f367ecf84cb04d3060294c30630dd4614740c39b9346d0a019790a432",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_redbeard": {
+    "text": "Redbeard said that he would guide them to the island.",
+    "who": "narrator",
+    "audioFile": "char_redbeard.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "红胡子船长说过，他会带他们去那座岛。",
+    "source": "character",
+    "characterId": "redbeard",
+    "dur": 3.109,
+    "words": [
+      [
+        "Redbeard",
+        0.0,
+        0.5
+      ],
+      [
+        "said",
+        0.5,
+        0.86
+      ],
+      [
+        "that",
+        0.86,
+        1.26
+      ],
+      [
+        "he",
+        1.26,
+        1.46
+      ],
+      [
+        "would",
+        1.46,
+        1.6
+      ],
+      [
+        "guide",
+        1.6,
+        1.84
+      ],
+      [
+        "them",
+        1.84,
+        2.08
+      ],
+      [
+        "to",
+        2.08,
+        2.32
+      ],
+      [
+        "the",
+        2.32,
+        2.44
+      ],
+      [
+        "island.",
+        2.44,
+        2.74
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.98,
+    "truePeakDBTP": -3.58,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_02",
+      "rawFile": "hq_narrator_02.mp3",
+      "rawSha256": "e7b70a4484ef01c35c8b032bc9fecc8db81c2f6c691d1e050daf3adc46a8ae30",
+      "sourceStart": 10.456349000000001,
+      "sourceEnd": 13.529183999999999,
+      "sha256": "d19c73d34434f23343cabf63446d134063cfd6f5e4c725aa269fd45735e39023",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "Redbeard said that he would guide them to the island.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_moon_robot": {
+    "text": "The old robot has lived here for fifty years.",
+    "who": "narrator",
+    "audioFile": "char_moon_robot.mp3",
+    "status": "ready-generated",
+    "voice": "英伦学姐（English）",
+    "zh": "老机器人已经在这里生活了五十年。",
+    "source": "character",
+    "characterId": "moon_robot",
+    "dur": 2.821,
+    "words": [
+      [
+        "The",
+        0.0,
+        0.22
+      ],
+      [
+        "old",
+        0.22,
+        0.48
+      ],
+      [
+        "robot",
+        0.48,
+        0.88
+      ],
+      [
+        "has",
+        0.88,
+        1.16
+      ],
+      [
+        "lived",
+        1.16,
+        1.4
+      ],
+      [
+        "here",
+        1.4,
+        1.68
+      ],
+      [
+        "for",
+        1.68,
+        1.84
+      ],
+      [
+        "fifty",
+        1.84,
+        2.12
+      ],
+      [
+        "years.",
+        2.12,
+        2.48
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.28,
+    "provenance": {
+      "kind": "jianying-native-ui-tts",
+      "batch": "hq_narrator_02",
+      "rawFile": "hq_narrator_02.mp3",
+      "rawSha256": "e7b70a4484ef01c35c8b032bc9fecc8db81c2f6c691d1e050daf3adc46a8ae30",
+      "sourceStart": 13.926553,
+      "sourceEnd": 16.704195000000002,
+      "sha256": "892d5c1f35c3b4c6c3c1344e1f652b675a2e23055b542f77d02c1103474e8a97",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true,
+      "processing": "fixed-gain",
+      "timeStretchUsed": false,
+      "contentVerification": "unprompted-small.en-ASR",
+      "asrText": "The old robot has lived here for 50 years.",
+      "comparisonNormalization": "case/punctuation/spacing; practise=practice; 17=seventeen; 50=fifty",
+      "alignment": "official-tools/align.py-small.en-whisper"
+    }
+  },
+  "char_museum_guard": {
+    "text": "By the time the guard opened the door, the crown had disappeared.",
+    "who": "narrator",
+    "audioFile": "char_museum_guard.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "等守卫打开门时，皇冠已经不见了。",
+    "source": "character",
+    "characterId": "museum_guard",
+    "dur": 3.527,
+    "words": [
+      [
+        "By",
+        0.0,
+        0.2
+      ],
+      [
+        "the",
+        0.2,
+        0.34
+      ],
+      [
+        "time",
+        0.34,
+        0.62
+      ],
+      [
+        "the",
+        0.62,
+        0.78
+      ],
+      [
+        "guard",
+        0.78,
+        1.04
+      ],
+      [
+        "opened",
+        1.04,
+        1.38
+      ],
+      [
+        "the",
+        1.38,
+        1.56
+      ],
+      [
+        "door,",
+        1.56,
+        1.8
+      ],
+      [
+        "the",
+        2.1,
+        2.16
+      ],
+      [
+        "crown",
+        2.16,
+        2.42
+      ],
+      [
+        "had",
+        2.42,
+        2.72
+      ],
+      [
+        "disappeared.",
+        2.72,
+        3.16
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -2.74,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep15",
+      "sourceLine": "l02",
+      "sourceFile": "ep15/audio/l02.mp3",
+      "sha256": "b296cda956e8d5203b377818cf43ef2ae564442e1a6c817fac084057de6ab9e7",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_clockwork_mouse": {
+    "text": "A clockwork mouse was caught beside the crown and its cosy sock nest.",
+    "who": "narrator",
+    "audioFile": "char_clockwork_mouse.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "一只发条老鼠在皇冠和它舒适的袜子窝旁被抓住了。",
+    "source": "character",
+    "characterId": "clockwork_mouse",
+    "dur": 4.206,
+    "words": [
+      [
+        "A",
+        0.0,
+        0.24
+      ],
+      [
+        "clockwork",
+        0.24,
+        0.68
+      ],
+      [
+        "mouse",
+        0.68,
+        1.0
+      ],
+      [
+        "was",
+        1.0,
+        1.24
+      ],
+      [
+        "caught",
+        1.24,
+        1.54
+      ],
+      [
+        "beside",
+        1.54,
+        1.92
+      ],
+      [
+        "the",
+        1.92,
+        2.1
+      ],
+      [
+        "crown",
+        2.1,
+        2.36
+      ],
+      [
+        "and",
+        2.36,
+        2.7
+      ],
+      [
+        "its",
+        2.7,
+        2.88
+      ],
+      [
+        "cosy",
+        2.88,
+        3.3
+      ],
+      [
+        "sock",
+        3.3,
+        3.5
+      ],
+      [
+        "nest.",
+        3.5,
+        3.84
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -18.99,
+    "truePeakDBTP": -2.61,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep15",
+      "sourceLine": "l11",
+      "sourceFile": "ep15/audio/l11.mp3",
+      "sha256": "3b912f98ffc088b924093e938e1b7a11d557bc833e67f0815d7c4764c7fab34f",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_grumble": {
+    "text": "Welcome! I need a helper to guard my socks.",
+    "who": "monster",
+    "audioFile": "char_grumble.mp3",
+    "status": "ready-reused",
+    "voice": "英文男神",
+    "zh": "欢迎！我需要一个帮手来看守我的袜子。",
+    "source": "character",
+    "characterId": "grumble",
+    "dur": 3.135,
+    "words": [
+      [
+        "Welcome!",
+        0.0,
+        0.42
+      ],
+      [
+        "I",
+        0.88,
+        0.96
+      ],
+      [
+        "need",
+        0.96,
+        1.12
+      ],
+      [
+        "a",
+        1.12,
+        1.24
+      ],
+      [
+        "helper",
+        1.24,
+        1.48
+      ],
+      [
+        "to",
+        1.48,
+        1.78
+      ],
+      [
+        "guard",
+        1.78,
+        1.94
+      ],
+      [
+        "my",
+        1.94,
+        2.2
+      ],
+      [
+        "socks.",
+        2.2,
+        2.54
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.28,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep16",
+      "sourceLine": "l03",
+      "sourceFile": "ep16/audio/l03.mp3",
+      "sha256": "3b6c0248165af664cc90d6dad18de83fc34cbae33c81cb9cf13d685ba2317fe7",
+      "match": "exact-text-and-speaker",
+      "voice": "英文男神",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_mum": {
+    "text": "Here are Mum and Dad, ready to join the adventure.",
+    "who": "narrator",
+    "audioFile": "char_mum.mp3",
+    "status": "ready-reused",
+    "voice": "英伦学姐（English）",
+    "zh": "妈妈和爸爸也来了，准备加入冒险。",
+    "source": "character",
+    "characterId": "mum",
+    "dur": 2.9,
+    "words": [
+      [
+        "Here",
+        0.0,
+        0.26
+      ],
+      [
+        "are",
+        0.26,
+        0.42
+      ],
+      [
+        "Mum",
+        0.42,
+        0.58
+      ],
+      [
+        "and",
+        0.58,
+        0.74
+      ],
+      [
+        "Dad,",
+        0.74,
+        1.02
+      ],
+      [
+        "ready",
+        1.4,
+        1.54
+      ],
+      [
+        "to",
+        1.54,
+        1.82
+      ],
+      [
+        "join",
+        1.82,
+        2.06
+      ],
+      [
+        "the",
+        2.06,
+        2.22
+      ],
+      [
+        "adventure.",
+        2.22,
+        2.54
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -4.59,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep17",
+      "sourceLine": "l14",
+      "sourceFile": "ep17/audio/l14.mp3",
+      "sha256": "692e08266c99836c00c99c5ac1eef19a62c14e867b22867f45668862ece2b37c",
+      "match": "exact-text-and-speaker",
+      "voice": "英伦学姐（English）",
+      "voiceProvenanceVerified": true
+    }
+  },
+  "char_grandpa_finale": {
+    "text": "Here we go, together!",
+    "who": "grandpa",
+    "audioFile": "char_grandpa_finale.mp3",
+    "status": "ready-reused",
+    "voice": "Deep Tone（English）",
+    "zh": "我们出发啦，一起！",
+    "source": "character-finale",
+    "characterId": "grandpa",
+    "unlock": {
+      "requiresCompletedEp": 17,
+      "requiresAllStars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "dur": 2.273,
+    "words": [
+      [
+        "Here",
+        0.0,
+        0.8
+      ],
+      [
+        "we",
+        0.8,
+        0.92
+      ],
+      [
+        "go,",
+        0.92,
+        1.28
+      ],
+      [
+        "together!",
+        1.66,
+        1.94
+      ]
+    ],
+    "align": "whisper",
+    "targetLUFS": -19,
+    "measuredLUFS": -19.0,
+    "truePeakDBTP": -2.47,
+    "provenance": {
+      "kind": "reused-episode-audio",
+      "sourceEpisode": "ep17",
+      "sourceLine": "l15",
+      "sourceFile": "ep17/audio/l15.mp3",
+      "sha256": "7ffe0ae469b9e1a0cb70dce48068f20ef7884507a26d457e67d8090010ccd6d0",
+      "match": "exact-text-and-speaker",
+      "voice": "Deep Tone（English）",
+      "voiceProvenanceVerified": true
+    }
+  }
+}

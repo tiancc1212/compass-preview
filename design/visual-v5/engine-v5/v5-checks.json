@@ -1,0 +1,579 @@
+{
+  "records": [
+    {
+      "width": 390,
+      "height": 844,
+      "start": {
+        "state": {
+          "reading": false,
+          "card": null,
+          "starsLit": 0,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "button": {
+          "top": 617.28125,
+          "bottom": 670.28125,
+          "hit": true,
+          "inViewport": true
+        },
+        "loaded": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "overflow": false
+      },
+      "ending": {
+        "state": {
+          "reading": false,
+          "line": "star",
+          "section": "S4",
+          "card": "brave",
+          "starsLit": 1,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "progress": 17,
+        "button": {
+          "top": 706.484375,
+          "bottom": 756.484375,
+          "hit": true,
+          "inViewport": true
+        },
+        "threeRequests": []
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "start": {
+        "state": {
+          "reading": false,
+          "card": null,
+          "starsLit": 0,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "button": {
+          "top": 243.046875,
+          "bottom": 289.046875,
+          "hit": true,
+          "inViewport": true
+        },
+        "loaded": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "overflow": false
+      },
+      "ending": {
+        "state": {
+          "reading": false,
+          "line": "star",
+          "section": "S4",
+          "card": "brave",
+          "starsLit": 1,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "progress": 17,
+        "button": {
+          "top": 291.1875,
+          "bottom": 341.1875,
+          "hit": true,
+          "inViewport": true
+        },
+        "threeRequests": []
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "start": {
+        "state": {
+          "reading": false,
+          "card": null,
+          "starsLit": 0,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "button": {
+          "top": 498.015625,
+          "bottom": 556.015625,
+          "hit": true,
+          "inViewport": true
+        },
+        "loaded": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "overflow": false
+      },
+      "ending": {
+        "state": {
+          "reading": false,
+          "line": "star",
+          "section": "S4",
+          "card": "brave",
+          "starsLit": 1,
+          "completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "muted": true,
+          "rate": 1,
+          "locked": false
+        },
+        "slots": 17,
+        "lit": 5,
+        "progress": 17,
+        "button": {
+          "top": 581.609375,
+          "bottom": 631.609375,
+          "hit": true,
+          "inViewport": true
+        },
+        "threeRequests": []
+      }
+    }
+  ],
+  "gates": [
+    {
+      "stars": [],
+      "suffix": "",
+      "locked": true,
+      "raw": "[]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [],
+      "suffix": "&jump=card",
+      "locked": true,
+      "raw": "[]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [],
+      "suffix": "&resume=card",
+      "locked": true,
+      "raw": "[]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        17
+      ],
+      "suffix": "",
+      "locked": true,
+      "raw": "[17]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        17
+      ],
+      "suffix": "&jump=card",
+      "locked": true,
+      "raw": "[17]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        17
+      ],
+      "suffix": "&resume=card",
+      "locked": true,
+      "raw": "[17]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "suffix": "",
+      "locked": true,
+      "raw": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "suffix": "&jump=card",
+      "locked": true,
+      "raw": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "suffix": "&resume=card",
+      "locked": true,
+      "raw": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        true,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "",
+      "locked": true,
+      "raw": "[true,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        true,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "&jump=card",
+      "locked": true,
+      "raw": "[true,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        true,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "&resume=card",
+      "locked": true,
+      "raw": "[true,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": true
+    },
+    {
+      "stars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "",
+      "locked": false,
+      "raw": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": false
+    },
+    {
+      "stars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "&jump=card",
+      "locked": false,
+      "activity": "card",
+      "raw": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": false
+    },
+    {
+      "stars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "suffix": "&resume=card",
+      "locked": false,
+      "raw": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]",
+      "buttonDisabled": false
+    }
+  ],
+  "reduced": {
+    "animations": 0,
+    "flyDisplay": "none",
+    "raw": "[1,1,\"2\",17,\"historic\"]",
+    "state": {
+      "reading": false,
+      "line": "star",
+      "section": "S4",
+      "card": "brave",
+      "starsLit": 1,
+      "completed": [
+        1,
+        2,
+        17
+      ],
+      "muted": true,
+      "rate": 1,
+      "locked": false
+    }
+  },
+  "fast4g": {
+    "readyMs": 3124,
+    "visualReadyMs": 3146,
+    "network": {
+      "latencyMs": 170,
+      "downloadMbps": 1.6,
+      "uploadKbps": 750
+    },
+    "resource": [
+      {
+        "url": "http://127.0.0.1:8756/engine/VERSION",
+        "bytes": 2,
+        "transfer": 302,
+        "duration": 176.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/engine.js?v=5",
+        "bytes": 52719,
+        "transfer": 53019,
+        "duration": 430.59999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/badges.js?v=5",
+        "bytes": 8572,
+        "transfer": 8872,
+        "duration": 218.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/icons.js?v=5",
+        "bytes": 1791,
+        "transfer": 2091,
+        "duration": 191.90000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass.js?v=5",
+        "bytes": 4326,
+        "transfer": 4626,
+        "duration": 204.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass_slots_v5.json?v=5",
+        "bytes": 1697,
+        "transfer": 1997,
+        "duration": 186.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.js?v=5",
+        "bytes": 26788,
+        "transfer": 27088,
+        "duration": 306.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/base.css?v=5",
+        "bytes": 32263,
+        "transfer": 32563,
+        "duration": 397.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/layout.css?v=5",
+        "bytes": 9226,
+        "transfer": 9526,
+        "duration": 289.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass.css?v=5",
+        "bytes": 1491,
+        "transfer": 1791,
+        "duration": 216.90000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.css?v=5",
+        "bytes": 558,
+        "transfer": 858,
+        "duration": 175.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=5",
+        "bytes": 15435,
+        "transfer": 15735,
+        "duration": 409.20000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_lit_v5.webp?v=5",
+        "bytes": 8084,
+        "transfer": 8384,
+        "duration": 346.90000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "bytes": 7584,
+        "transfer": 7884,
+        "duration": 337.59999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "bytes": 50218,
+        "transfer": 50518,
+        "duration": 582.2999999970198
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=5",
+        "bytes": 4852,
+        "transfer": 5152,
+        "duration": 200.6000000089407
+      }
+    ]
+  },
+  "errors": []
+}

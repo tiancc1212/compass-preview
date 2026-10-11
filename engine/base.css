@@ -1,7 +1,6 @@
 
-@font-face{font-family:"Noto Sans Egyptian Hieroglyphs";src:url(fonts/NotoSansEgyptianHieroglyphs-Regular.ttf)}
-*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:#1b1020;font-family:"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",system-ui,sans-serif,"Noto Sans Egyptian Hieroglyphs";color:#3a2410}
-#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+@font-face{font-family:"Compass Reading";src:url(fonts/CompassReading-Regular-v5.woff2) format("woff2");font-display:swap;font-weight:400;font-style:normal}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:#1b1020;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;color:#3a2410}
 #hud{position:fixed;top:14px;left:16px;right:16px;display:flex;align-items:center;gap:10px;z-index:5;pointer-events:none}
 #title{background:rgba(255,246,225,.92);padding:8px 16px;border-radius:999px;font-weight:800;box-shadow:0 4px 0 #c9944a;font-size:16px}
 #stars{background:rgba(255,246,225,.92);padding:8px 14px;border-radius:999px;font-weight:800;box-shadow:0 4px 0 #c9944a}
@@ -29,7 +28,7 @@
 .shake{animation:shake .35s}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
 .pop{animation:pop .4s}@keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.25)}100%{transform:scale(1)}}
 .stone{background:linear-gradient(#cfa86a,#b98b4c);border-radius:22px;padding:30px 24px 22px;box-shadow:inset 0 0 0 6px #a5763a,inset 0 0 40px rgba(80,40,0,.35);color:#3d2208}
-.stone .chunk{background:rgba(255,240,205,.55);border-color:#8a5a22;font-family:Georgia,serif;letter-spacing:1px}
+.stone .chunk{background:rgba(255,240,205,.55);border-color:#8a5a22;font-family:"Compass Reading",Georgia,serif;letter-spacing:1px}
 .glyphs{display:flex;gap:18px;justify-content:center;margin-top:10px}
 .glyph{width:74px;height:74px;border-radius:50%;background:radial-gradient(#ffe9a8,#e5b44a);display:flex;align-items:center;justify-content:center;font-size:36px;cursor:grab;box-shadow:0 5px 0 #a87420;touch-action:none;user-select:none}
 .glyph small{position:absolute;margin-top:92px;font-size:13px;font-weight:800;color:#fff}
@@ -59,7 +58,7 @@
 .bankwrap.stone{background:linear-gradient(#cfa86a,#b98b4c)}
 .bank{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;min-height:60px}
 .dchunk{font:inherit;font-size:26px;font-weight:800;min-height:56px;min-width:56px;padding:8px 20px;border-radius:16px;border:3px solid #d8b98a;background:#fff;color:#3a2410;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;box-shadow:0 4px 0 #d8b98a;position:relative;z-index:1}
-.bankwrap.stone .dchunk{font-family:Georgia,serif;background:#f6e3bb;border-color:#8a5a22;box-shadow:0 4px 0 #8a5a22}
+.bankwrap.stone .dchunk{font-family:"Compass Reading",Georgia,serif;background:#f6e3bb;border-color:#8a5a22;box-shadow:0 4px 0 #8a5a22}
 .dchunk.dragging{cursor:grabbing;z-index:50;box-shadow:0 12px 24px rgba(0,0,0,.25)}
 .dchunk.sel{outline:4px solid #f5a623;outline-offset:2px}
 .dchunk.placed{cursor:default;box-shadow:none;width:100%}
@@ -118,7 +117,7 @@
 .slots.blanks{display:flex;flex-direction:column;gap:10px}
 .brow{background:rgba(255,255,255,.7);border-radius:16px;padding:8px 12px}
 .brow .ctx{font-size:15px;color:#7a5a38;margin-bottom:4px}
-.bsent{font-family:Georgia,serif;font-size:24px;display:flex;flex-wrap:wrap;align-items:center;gap:6px;white-space:pre-wrap}
+.bsent{font-family:"Compass Reading",Georgia,serif;font-size:24px;display:flex;flex-wrap:wrap;align-items:center;gap:6px;white-space:pre-wrap}
 .bslot{display:inline-flex;flex-direction:row;align-items:center;min-height:56px;min-width:150px;padding:4px 6px;border-radius:14px}
 .bslot .bb{display:none}
 .bslot .dchunk.placed{width:auto}
@@ -143,7 +142,7 @@ body.playing #pause,#pause.on{display:inline-flex;align-items:center}
 .qbody.solved{animation:pop .35s}
 .tform{display:flex;flex-direction:column;align-items:center;gap:10px;margin:8px 0}
 .tform .bsent{justify-content:center}
-.tin{font:inherit;font-family:Georgia,serif;font-size:24px;padding:4px 10px;border:3px dashed var(--role-td);border-radius:12px;background:#fff;color:#3a2410;text-align:center;min-width:90px;max-width:100%}
+.tin{font:inherit;font-family:"Compass Reading",Georgia,serif;font-size:24px;padding:4px 10px;border:3px dashed var(--role-td);border-radius:12px;background:#fff;color:#3a2410;text-align:center;min-width:90px;max-width:100%}
 .tin:focus{outline:none;border-style:solid;box-shadow:0 0 0 4px rgba(245,166,35,.35)}
 .tin.right{border:3px solid var(--role-ing);background:var(--role-ing-bg)}
 .tin.wide{width:min(520px,100%);text-align:left;font-size:22px}
@@ -154,37 +153,37 @@ body.playing #pause,#pause.on{display:inline-flex;align-items:center}
 .mlines line{stroke-width:4;stroke-linecap:round}.mlines line.td{stroke:var(--role-td)}.mlines line.ing{stroke:var(--role-ing)}.mlines line.do{stroke:var(--role-td);stroke-dasharray:8 6}.mlines line.drag{stroke:#f5a623;stroke-dasharray:6 6}
 .mleft,.mright{display:flex;flex-direction:column;gap:10px}.mright{gap:26px}
 .mitem,.mtarget{font:inherit;font-weight:800;font-size:19px;border:3px solid #d8b98a;background:#fff;border-radius:16px;padding:8px 12px;cursor:pointer;touch-action:none;user-select:none;text-align:left;color:#3a2410;min-height:48px}
-.mitem small{display:block;font-weight:500;font-size:13px;color:#5a3412;font-family:Georgia,serif}
+.mitem small{display:block;font-weight:500;font-size:13px;color:#5a3412;font-family:"Compass Reading",Georgia,serif}
 .mitem.sel{border-color:#f5a623;box-shadow:0 0 0 4px rgba(245,166,35,.3)}
 .mitem.done.TD,.mitem.done.DO{background:var(--role-td-bg);border-color:var(--role-td)}.mitem.done.ING{background:var(--role-ing-bg);border-color:var(--role-ing)}
-.mtarget{display:flex;align-items:center;gap:8px;font-family:Georgia,serif;font-size:22px}
+.mtarget{display:flex;align-items:center;gap:8px;font-family:"Compass Reading",Georgia,serif;font-size:22px}
 .mtarget.TD,.mtarget.DO{border-color:var(--role-td)}.mtarget.ING{border-color:var(--role-ing)}
 .match.armed .mtarget{box-shadow:0 0 0 4px rgba(245,166,35,.35)}
 /* picture choice */
-.qv{margin:2px 0 8px;font-family:Georgia,serif;font-size:26px;color:#7b4fd0}
+.qv{margin:2px 0 8px;font-family:"Compass Reading",Georgia,serif;font-size:26px;color:#7b4fd0}
 .pics{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .pic{background:#fff;border-radius:16px;padding:8px;border:3px solid #ead6b0}
 .pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;display:block;background:#eee}
 .pic.done{border-color:var(--role-ing)}
 .popts{display:flex;flex-direction:column;gap:6px;margin-top:8px}
-.popt{font:inherit;font-family:Georgia,serif;font-size:17px;padding:8px 10px;border-radius:12px;border:2px solid #d8b98a;background:#fffaf0;cursor:pointer;color:#3a2410;min-height:44px}
+.popt{font:inherit;font-family:"Compass Reading",Georgia,serif;font-size:17px;padding:8px 10px;border-radius:12px;border:2px solid #d8b98a;background:#fffaf0;cursor:pointer;color:#3a2410;min-height:44px}
 .popt.right{background:var(--role-ing-bg);border-color:var(--role-ing);font-weight:700}.popt.wrong{background:#ffe2d8;border-color:#e2574a}
 .pic.done .popt:not(.right){opacity:.35}
 /* error correction */
-.esent{font-family:Georgia,serif;font-size:26px;margin:14px 0;line-height:2}
+.esent{font-family:"Compass Reading",Georgia,serif;font-size:26px;margin:14px 0;line-height:2}
 .ew{font:inherit;background:#fff;border:2px solid #ead6b0;border-radius:10px;padding:2px 8px;margin:2px;cursor:pointer;color:#3a2410;min-height:44px}
 .ew.pickd{background:#ffe2d8;border-color:#e2574a;text-decoration:line-through}
 .efix{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 .fixed{color:#2d7a1e;font-weight:700}
 /* word order */
 .qdesc{font-size:17px;color:#6a4a2a}
-.wline{min-height:62px;border-bottom:3px dashed #c9944a;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:6px;margin:8px 0 14px;font-family:Georgia,serif}
+.wline{min-height:62px;border-bottom:3px dashed #c9944a;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:6px;margin:8px 0 14px;font-family:"Compass Reading",Georgia,serif}
 .wbank{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;min-height:52px}
-.wt{font:inherit;font-family:Georgia,serif;font-size:22px;padding:6px 14px;border-radius:12px;border:3px solid #d8b98a;background:#fff;cursor:pointer;color:#3a2410;min-height:46px}
+.wt{font:inherit;font-family:"Compass Reading",Georgia,serif;font-size:22px;padding:6px 14px;border-radius:12px;border:3px solid #d8b98a;background:#fff;cursor:pointer;color:#3a2410;min-height:46px}
 .wline .wt{border-color:var(--role-ing);background:var(--role-ing-bg)}.wline .dot{font-size:26px;font-weight:700}
-.src{font-family:Georgia,serif;font-size:24px;background:#fff8ea;border-radius:12px;padding:8px;margin:6px auto 10px;display:inline-block}
+.src{font-family:"Compass Reading",Georgia,serif;font-size:24px;background:#fff8ea;border-radius:12px;padding:8px;margin:6px auto 10px;display:inline-block}
 /* true/false */
-.tfs{font-family:Georgia,serif;font-size:28px;margin:18px 0;line-height:1.5}.tfs s{color:#b5462a}
+.tfs{font-family:"Compass Reading",Georgia,serif;font-size:28px;margin:18px 0;line-height:1.5}.tfs s{color:#b5462a}
 .tfb{display:flex;gap:16px;justify-content:center}.tf{font-size:22px;min-width:120px;padding:12px 20px}.tf.right{background:#d8f2cf}
 @media (max-width:640px){
  .qcard{padding:16px 14px;max-height:none}.qcard h2{font-size:21px}.qcard .desc,.qdesc{font-size:15px}
@@ -216,14 +215,7 @@ body.inpanel #hud{z-index:9}
  #backex{bottom:auto!important;top:104px}}
 /* ending: star back to compass */
 body.ending #stage{filter:brightness(.5) saturate(.8);transition:filter .6s}
-body.ending #c{width:min(70vh,86vw)!important;height:min(70vh,86vw)!important}
-.slotburst{position:fixed;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:4px solid #ffd66b;box-shadow:0 0 24px #ffbb22;z-index:12;pointer-events:none;animation:sburst 1.2s ease-out forwards}
-@keyframes sburst{from{transform:scale(.5);opacity:1}to{transform:scale(6);opacity:0}}
-#starprog{position:fixed;left:50%;top:84px;transform:translateX(-50%);z-index:6;background:rgba(255,246,225,.95);border-radius:18px;padding:8px 18px;box-shadow:0 4px 0 #c9944a;text-align:center;min-width:200px}
-#starprog b{font-size:22px;color:#7a4a00}#starprog span{display:block;font-size:12px;color:#8a6a48}
-#starprog .sbar{height:8px;background:#ead6b0;border-radius:4px;margin-top:4px;overflow:hidden}#starprog .sbar i{display:block;height:100%;background:linear-gradient(90deg,#f5a623,#ffd66b)}
 .kdl{margin:8px 0 4px}a.btn{display:inline-block;text-decoration:none}
-@media (max-width:640px){#starprog{top:96px}}
 
 /* ===== engine: page shell (was inline in ep16/index.html); theme colours come from episode.js theme ===== */
 body{background:var(--bg,#1b1020)}
@@ -234,9 +226,8 @@ body{background:var(--bg,#1b1020)}
 .layer.loaded img{display:block}.layer.loaded .ph{display:none}
 .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff6e1;font-size:20px;background:radial-gradient(#6a4a8a,var(--stagebg,#2a1830))}
 .ph small{opacity:.6;font-size:13px}
-.carve{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(22px,3.6vw,46px);color:#5a3208;background:rgba(255,226,160,.82);padding:10px 26px;border-radius:14px;border:3px solid #c8902f;box-shadow:0 0 30px rgba(255,200,90,.8)}
+.carve{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);font-family:"Compass Reading",Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(22px,3.6vw,46px);color:#5a3208;background:rgba(255,226,160,.82);padding:10px 26px;border-radius:14px;border:3px solid #c8902f;box-shadow:0 0 30px rgba(255,200,90,.8)}
 #home{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2}
-#c{position:fixed;left:50%;top:44%;transform:translate(-50%,-50%);width:min(60vh,70vw);height:min(60vh,70vw);z-index:2;pointer-events:none}
 body.rm .layer{transition:none}body.rm *{animation:none!important;transition:none!important}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
 /* ===== engine: extra question types (ported from ep02, scoped so ep16 is unchanged) ===== */
@@ -247,9 +238,9 @@ body.rm .layer{transition:none}body.rm *{animation:none!important;transition:non
 .chq .popts{max-width:670px;margin:10px auto}.chq .popt{font-size:20px;text-align:left;padding:11px 16px}
 .item-bank{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:12px 0}.item{font-size:17px;padding:6px;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}.item img{width:72px;height:62px;object-fit:contain;border-radius:8px}.item small{font-size:12px;font-weight:500}
 .sort-boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sort-boxes .slot{min-height:150px}.sort-boxes h3{font-size:17px;margin:2px}.sort-boxes .drop{flex-wrap:wrap;justify-content:flex-start;gap:4px;align-content:flex-start}.sort-boxes .item.placed{width:auto;padding:5px 7px;display:block;font-size:16px;min-height:36px}.sort-boxes .placed img,.sort-boxes .placed small{display:none}
-.sentence-drop{justify-content:center;margin:20px 0}.article-bank{gap:12px;margin:18px 0}.sentence-drop .bslot .drop{font-family:system-ui,sans-serif;font-size:16px;font-weight:500}.sentence-drop .bslot.filled .drop{font-family:Georgia,serif;font-size:23px}
+.sentence-drop{justify-content:center;margin:20px 0}.article-bank{gap:12px;margin:18px 0}.sentence-drop .bslot .drop{font-family:system-ui,sans-serif;font-size:16px;font-weight:500}.sentence-drop .bslot.filled .drop{font-family:"Compass Reading",Georgia,serif;font-size:23px}
 .kgrid details{font-size:14px;line-height:1.5;border-top:1px solid #ead5ac;margin-top:8px;padding-top:6px}.kgrid summary{cursor:pointer;font-weight:700}
-.treasures{display:flex;justify-content:center;gap:14px;margin:16px 0}.treasure{font:inherit;border:3px solid #d8b98a;background:#fffaf0;border-radius:15px;padding:8px;cursor:pointer;color:#5a3412;width:150px;min-height:110px}.treasure img{display:block;object-fit:contain;width:90px;height:74px;margin:auto}.treasure span{display:block;font-size:15px;margin-top:5px}.treasure.selected{border-color:#b7771f;box-shadow:0 0 0 3px #f4c962}.treasure-card .face b{font-size:24px}.treasure-card .face p{font:24px Georgia,serif;padding:8px 18px;color:#3a2410}.treasure-card .flipwrap{height:220px}.treasure-card .btn:disabled{opacity:.5}
+.treasures{display:flex;justify-content:center;gap:14px;margin:16px 0}.treasure{font:inherit;border:3px solid #d8b98a;background:#fffaf0;border-radius:15px;padding:8px;cursor:pointer;color:#5a3412;width:150px;min-height:110px}.treasure img{display:block;object-fit:contain;width:90px;height:74px;margin:auto}.treasure span{display:block;font-size:15px;margin-top:5px}.treasure.selected{border-color:#b7771f;box-shadow:0 0 0 3px #f4c962}.treasure-card .face b{font-size:24px}.treasure-card .face p{font:24px "Compass Reading",Georgia,serif;padding:8px 18px;color:#3a2410}.treasure-card .flipwrap{height:220px}.treasure-card .btn:disabled{opacity:.5}
 .nextwrap .btn:disabled{opacity:.5;cursor:default}
 .star-skip{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:32;font-size:14px;color:#fff6e1;background:#163540b8;padding:9px 16px;border-radius:999px;pointer-events:none}
 @media(max-width:640px){
@@ -266,3 +257,59 @@ body.rm .layer{transition:none}body.rm *{animation:none!important;transition:non
 .dchunk.ADJ,.chunk.ADJ{background:var(--role-adj-bg);border-color:var(--role-adj)}.dchunk.ADV,.chunk.ADV{background:var(--role-adv-bg);border-color:var(--role-adv)}
 .dchunk.REL,.chunk.REL{background:var(--role-rel-bg);border-color:var(--role-rel)}.dchunk.INV,.chunk.INV{background:var(--role-inv-bg);border-color:var(--role-inv)}
 .slot.ADJ{border-color:var(--role-adj)}.slot.ADV{border-color:var(--role-adv)}.slot.REL{border-color:var(--role-rel)}.slot.INV{border-color:var(--role-inv)}
+
+/* ===== v5 · the approved starmap / expedition notebook ===== */
+:root{--ink:#173441;--paper:#f3ead6;--paper-light:#fbf6e9;--brass-ui:#b58b46;--english:"Compass Reading",Georgia,serif}
+.ui-icon{display:inline-block;flex:none;vertical-align:middle;width:24px;height:24px;color:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border:1px solid #c9ad78;background:var(--paper-light);color:#644d2a;box-shadow:0 2px 5px #37281114,0 5px 12px #3728110d;font-weight:600}
+a.btn{display:inline-flex;text-decoration:none}
+.btn:hover{background:#fff9e9;border-color:#93703e}.btn:active{transform:translateY(1px);box-shadow:0 1px 3px #37281119}
+.btn.big{border-color:#ae803e;background:linear-gradient(145deg,#ecd4a0,#d7ae64);color:#3f301c;box-shadow:0 2px 5px #51371222,0 8px 20px #51371218;font-size:20px;font-weight:700}
+.btn.secondary{background:transparent;box-shadow:none;border-color:#a98b5555;color:#6f5835}
+.btn:disabled{opacity:.55;cursor:default;transform:none}
+button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #247d9b;outline-offset:4px}
+.card{border:1px solid #c1a36a;background:var(--paper-light);box-shadow:0 5px 18px #081b2421,0 20px 46px #081b2426;border-radius:24px;color:#3d3528}
+.card h2{color:var(--ink)}.card p{color:#695943}
+#hud{top:calc(var(--site-nav-height,0px) + 12px);gap:8px}
+#title,#stars{display:flex;align-items:center;gap:7px;border:1px solid #c9ad7899;border-radius:16px;background:#f9f2e2f5;color:#6a542e;box-shadow:0 2px 8px #071d2426;font-weight:600}
+#title{min-width:0}#title span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#stars{white-space:nowrap}
+#stars .ui-icon{color:#a7782b}#hud .btn{font-size:14px;padding:8px 12px}
+#review,#backex{position:static!important}
+#home{background:radial-gradient(ellipse at 15% 10%,#254753,#132d3a 65%);z-index:2}
+#loading{background:#132d3a;color:#eee0bc}
+#start{inset:var(--hud) 0 0;display:flex;align-items:center;justify-content:center;overflow-y:auto;pointer-events:auto;padding:24px 32px 32px;z-index:6}
+.start-card{display:grid;grid-template-columns:1.08fr 1fr;gap:28px;align-items:center;width:min(1070px,100%);padding:28px 40px 38px;border:1px solid #b89a665e;border-radius:28px;background:radial-gradient(ellipse at 30% 5%,#fffdf477,transparent 65%),#f3ead6;box-shadow:0 6px 20px #07172133,0 25px 70px #06182255;margin:auto}
+.start-art{min-width:0}.start-art .compass-art{max-width:480px;margin:auto}.start-copy{text-align:left;min-width:0}
+.chapter-overline{font-size:12px;letter-spacing:.16em;color:#927144!important;margin:0 0 16px!important}
+#start h1{color:#173441;text-shadow:none;font-size:clamp(30px,4vw,48px);line-height:1.2;letter-spacing:-.045em;margin:0 0 18px;font-weight:700}
+#start .subt{font-size:17px;line-height:1.85;color:#77644a;text-shadow:none;margin:0 0 26px}
+.start-actions{display:flex;align-items:flex-start;flex-direction:column;gap:12px}.start-actions .btn.big{min-width:175px;padding:14px 24px}
+.start-lock{font-size:14px;line-height:1.7;color:#785730;margin:18px 0 0}
+body.at-home #hud>.btn,body.at-home #hud>#rate,body.at-home #hud>#auto,body.at-home #hud>#review,body.at-home #hud>#backex,body.at-home #hud>#replay,body.at-home #hud>#mute{display:none!important}
+#flystar{width:64px;height:64px;object-fit:contain;pointer-events:none;filter:drop-shadow(0 0 10px #f2c96c99)}
+#starprog{position:static;transform:none;padding:8px 0;background:transparent;border:0;box-shadow:none;min-width:0;width:100%}
+.ending-layout{width:min(1080px,100%);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center;margin:auto}
+.ending-art{min-width:0;padding:12px}.ending-art .compass-art{max-width:470px;margin:auto}.ending-art .compass-progress{color:#d1c2a4}.ending-art .compass-progress strong{color:#f5d78f}
+.ending-card{width:100%;padding:28px;text-align:left}.ending-card h2{font-size:26px}.ending-card p{line-height:1.65}
+.ending-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.ending-actions .btn{font-size:16px;padding:12px 17px}
+.star-skip{pointer-events:auto;min-height:44px;bottom:18px;color:#fff4d8;background:#173d4c;border-color:#ba985f}
+#panel.endpanel{background:transparent!important}body.ending #hud #review,body.ending #hud #replay,body.ending #hud #rate{display:none!important}
+body.ending #sub{z-index:12;max-height:30vh}
+#line,.bsent,.tin,.sent,.dchunk,.mitem,.mtarget,.popt,.chunk,.carve,.face p,.face [style*="font-family"]{font-family:var(--english);font-weight:400;font-synthesis:none}
+#ghint .gi b,.base,.mitem small{font-family:var(--english);font-weight:400;font-synthesis:none}
+.face{border-width:3px;border-color:#b38b47;background:linear-gradient(130deg,#f8efd8,#ecdbb7);box-shadow:0 4px 12px #3a2a1026,0 12px 28px #3a2a101a}.face .border{border:1px solid #b594555f;inset:8px}
+@media(max-width:640px){
+ #hud{top:calc(var(--site-nav-height,0px) + 8px);left:8px;right:8px;gap:6px}#hud .sp{display:none}
+ #title{flex:1;font-size:12px;padding:7px 9px}#stars{font-size:12px;padding:7px 9px}#title .ui-icon,#stars .ui-icon{width:19px;height:19px}
+ #hud .btn{padding:7px 9px;font-size:12px;min-height:40px}.hud-hq .button-label{display:none}
+ #start{padding:12px 14px 20px}.start-card{display:flex;flex-direction:column;gap:14px;padding:14px 20px 24px;border-radius:23px}
+ .start-art{width:100%;max-width:290px}.start-art .compass-progress{max-width:250px}.start-copy{text-align:center;width:100%}
+ #start h1{font-size:31px;margin-bottom:12px}#start .subt{font-size:15px;margin-bottom:20px;line-height:1.7}.chapter-overline{margin-bottom:10px!important;font-size:11px}
+ .start-actions{align-items:stretch;gap:10px}.start-actions .btn.big{padding:13px 18px;font-size:18px}.start-actions .secondary{border:0;min-height:40px;font-size:14px}
+ .ending-layout{grid-template-columns:1fr;gap:10px}.ending-art{width:min(290px,100%);margin:auto;padding:0}.ending-card{padding:22px 20px;border-radius:22px}.ending-card h2{font-size:22px}.ending-card p{font-size:15px}
+ .ending-actions{margin-top:16px}.ending-actions .btn{flex:1;font-size:15px;white-space:nowrap}.ending-art .compass-progress-copy{margin-top:3px}.start-lock{font-size:13px}
+}
+
+/* Collection-card stars reuse the approved sprite; feedback timings stay unchanged. */
+.spark.spark-sprite{width:22px;height:22px;object-fit:contain}
+.card-title-star{display:inline-block;width:1em;height:1em;object-fit:contain;vertical-align:-.1em}

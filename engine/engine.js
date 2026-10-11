@@ -3,29 +3,32 @@
 // An episode folder only holds content: index.html (stub), episode.js,
 // audio/, illus/, downloads/, optional episode.css. See tools/handoff_单集制作流程.md
 // =====================================================================
-import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 const V=new URL(import.meta.url).searchParams.get('v')||'0';
 const EU=p=>new URL(p+'?v='+V,import.meta.url).href;                       // engine asset url
 const EPV=document.documentElement.dataset.v||'0';                         // episode content version (index.html <html data-v>)
 const {badge}=await import(EU('./badges.js'));
+const {icon}=await import(EU('./icons.js'));
+const {renderCompass,renderStarProgress,readStars,saveStar,isFinaleUnlocked,lightCompassSlot,COMPASS_ASSETS}=await import(EU('./compass.js'));
+const cleanLabel=s=>String(s||'').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,'').trim();
+const control=(name,label)=>`${icon(name)}<span class="button-label">${cleanLabel(label)}</span>`;
+const returnSection=new URLSearchParams(location.search).get('hq');
+const hqHref='../hq/#'+(['map','characters','journal','badges','downloads'].includes(returnSection)?returnSection:'map');
 const EP=(await import(new URL('episode.js?v='+EPV,location.href).href)).default;
 // ---- css + page shell ----
 const css=h=>new Promise(r=>{const l=document.createElement('link');l.rel='stylesheet';l.href=h;l.onload=l.onerror=r;document.head.appendChild(l);});
-await Promise.all([css(EU('./base.css')),css(EU('./layout.css'))]);if(EP.css)await css('episode.css?v='+EPV);
+await Promise.all([css(EU('./base.css')),css(EU('./layout.css')),css(EU('./compass/compass.css'))]);if(EP.css)await css('episode.css?v='+EPV);
 const rs=document.documentElement.style;if(EP.theme){if(EP.theme.bg)rs.setProperty('--bg',EP.theme.bg);if(EP.theme.stage)rs.setProperty('--stagebg',EP.theme.stage);}
-document.body.insertAdjacentHTML('afterbegin',`<div id="backdrop"></div><div id="stage"></div>
-<div id="home"></div><canvas id="c"></canvas>
-<div id="loading">罗盘正在苏醒…</div>
-<div id="hud"><div id="title">${EP.hud}</div><div class="sp"></div><div id="stars">${EP.stars||`⭐ 第 ${EP.no} 颗星`}</div>
-<button class="btn" id="rate" title="语速">🐢 1x</button><button class="btn" id="auto" aria-pressed="false">▶ 自动播放</button><button class="btn" id="review">📖 重看上一节</button><button class="btn" id="backex">↩ 回到练习</button><button class="btn" id="replay">🔁 重播本句</button><button class="btn" id="mute">🔊 声音开</button></div>
-<div id="start" style="display:none"><h1>${EP.start.h1}</h1><div class="subt">${EP.start.subt}</div><button class="btn big" id="go">${EP.start.go}</button></div>
-<div id="sub"><div id="who"></div><span id="lpos"></span><div id="line"></div><div id="zh"></div><div id="ghint" aria-live="polite"></div><div id="lnav"><button class="btn" id="lprev" aria-label="上一句">◀ 上一句</button><span class="lhint">手机左右滑动 · 电脑 ← → 键</span><button class="btn" id="lnext" aria-label="下一句">下一句 ▶</button></div></div>
-<div id="panel"></div><div id="flash"></div><div id="flystar">⭐</div>`);
+document.body.classList.add('at-home');
+document.body.insertAdjacentHTML('afterbegin',`<div id="backdrop"></div><div id="stage"></div><div id="home"></div>
+<div id="loading" role="status">罗盘正在苏醒…</div>
+<div id="hud"><a class="btn hud-hq" href="${hqHref}" aria-label="返回冒险队总部" title="返回冒险队总部">${control('home','总部')}</a><div id="title">${icon('compass')}<span>${cleanLabel(EP.hud)}</span></div><div class="sp"></div><div id="stars" aria-live="polite"></div>
+<button class="btn" id="rate" aria-label="语速 1 倍"></button><button class="btn" id="auto" aria-label="自动播放" aria-pressed="false"></button><button class="btn" id="review" aria-label="重看上一节">${control('book','重看上一节')}</button><button class="btn" id="backex" aria-label="回到练习">${control('left','回到练习')}</button><button class="btn" id="replay" aria-label="重播本句">${control('replay','重播本句')}</button><button class="btn" id="mute" aria-label="声音开"></button></div>
+<div id="start" style="display:none"><div class="start-card"><div class="start-art"></div><div class="start-copy"><p class="chapter-overline">第 ${EP.no} 站 · 罗盘冒险队</p><h1>${EP.start.h1}</h1><div class="subt">${EP.start.subt}</div><div class="start-actions"><button class="btn big" id="go">${control('right',cleanLabel(EP.start.go)||'出发')}</button><a class="btn secondary" href="${hqHref}">${control('left','冒险队总部')}</a></div><p class="start-lock" id="entry-lock" hidden role="status"></p></div></div></div>
+<div id="sub"><div id="who"></div><span id="lpos"></span><div id="line"></div><div id="zh"></div><div id="ghint" aria-live="polite"></div><div id="lnav"><button class="btn" id="lprev" aria-label="上一句">${control('left','上一句')}</button><span class="lhint">手机左右滑动 · 电脑 ← → 键</span><button class="btn" id="lnext" aria-label="下一句">${control('right','下一句')}</button></div></div>
+<div id="panel"></div><div id="flash"></div><img id="flystar" src="${COMPASS_ASSETS.starLit}" alt="" width="256" height="256" aria-hidden="true">`);
 // template tokens usable in any episode.js html string: {{b:TD:34}} badge · {download} Word link · {n} stars collected
 let NSTARS=0;
-const tpl=s=>String(s??'').replace(/\{\{b:([A-Z]+)(?::(\d+))?\}\}/g,(_,r,z)=>badge(r,{size:+(z||34)})).replace(/\{download\}/g,EP.download?`<a class="btn" href="${EP.download.href}" download="${EP.download.name}">${EP.download.label||'📥 下载知识点（Word）'}</a>`:'').replace(/\{n\}/g,()=>NSTARS);
+const tpl=s=>String(s??'').replace(/\{\{b:([A-Z]+)(?::(\d+))?\}\}/g,(_,r,z)=>badge(r,{size:+(z||34)})).replace(/\{download\}/g,EP.download?`<a class="btn" href="${EP.download.href}" download="${EP.download.name}">${control('download',EP.download.label||'下载知识点（Word）')}</a>`:'').replace(/\{n\}/g,()=>NSTARS);
 const Q=new URLSearchParams(location.search);const $=s=>document.querySelector(s);const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const RM=matchMedia("(prefers-reduced-motion: reduce)").matches||Q.get("rm")==="1";if(RM)document.body.classList.add("rm");
 // ---------- audio / subtitles ----------
@@ -44,7 +47,7 @@ function sfx(type){if(muted)return;try{const a=ac(),t=a.currentTime;const g=a.cr
 // ---------- voice player + story reader (manual paging / auto read / mute-safe) — shared by all episodes ----------
 const RATES=[0.75,1,1.25];let RATE=+(localStorage.getItem('cc_rate')||1);if(!RATES.includes(RATE))RATE=1;
 function voice(src){const a=new Audio(src+(EP.audioVersion?'?v='+EP.audioVersion:''));a.playbackRate=RATE;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;return a;}
-function setRate(r){RATE=r;localStorage.setItem('cc_rate',r);if(curAudio)curAudio.playbackRate=r;const b=$('#rate');if(b)b.textContent='🐢 '+r+'x';}
+function setRate(r){RATE=r;localStorage.setItem('cc_rate',r);if(curAudio)curAudio.playbackRate=r;const b=$('#rate');if(b){b.innerHTML=control('speed',r+'x');b.setAttribute('aria-label','语速 '+r+' 倍');b.title='语速 '+r+' 倍';}}
 const HL=[];window.__hl=HL;   // debug log: [lineId, wordIndex, audioTime]
 // playLine: show subtitle, play audio once, highlight strictly from audio clock. timed=true -> when muted / no audio, run a virtual clock at RATE.
 // returns stop(); calls onEnd() when the line finishes (never when stopped).
@@ -83,7 +86,7 @@ function say(id,zh='',{subtitles=true}={}){return new Promise(res=>{const contro
 let RD=null;           // active reader state
 let lastSection=null;  // most recent story section (for 重看上一节)
 let autoMode=false;   // default: manual paging
-function setAuto(on){autoMode=on;const b=$('#auto');if(b){b.textContent=on?'⏸ 停止自动':'▶ 自动播放';b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);}
+function setAuto(on){autoMode=on;const b=$('#auto');if(b){b.innerHTML=control(on?'pause':'play',on?'停止自动':'自动播放');b.setAttribute('aria-label',on?'停止自动':'自动播放');b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);}
  if(RD&&on&&!document.body.classList.contains('playing'))RD.go(RD.i,true);}
 function readSection(items,{start=0,review=false}={}){return new Promise(res=>{
  if(!review){hidePanel();lastSection=items;document.body.classList.add('hasreview');}document.body.classList.add('reading');document.body.classList.toggle('reviewing',review);
@@ -104,7 +107,8 @@ addEventListener('keydown',e=>{if(!RD||e.target.closest('input,textarea'))return
  addEventListener('touchend',e=>{if(sx===null||!RD)return;const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;sx=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5&&Date.now()-st<800)userNav(()=>dx<0?RD.next():RD.prev());},{passive:true});}
 $('#auto').onclick=()=>setAuto(!autoMode);setAuto(autoMode);
 $('#rate').onclick=()=>setRate(RATES[(RATES.indexOf(RATE)+1)%RATES.length]);setRate(RATE);
-$('#mute').onclick=()=>{muted=!muted;$('#mute').textContent=muted?'🔇 已静音':'🔊 声音开';if(curAudio)curAudio.pause();if(RD)RD.go(RD.i);};
+function updateMuteButton(){const b=$('#mute'),label=muted?'已静音':'声音开';b.innerHTML=control(muted?'mute':'sound',label);b.setAttribute('aria-label',label);b.setAttribute('aria-pressed',String(muted));b.title=label;}
+$('#mute').onclick=()=>{muted=!muted;updateMuteButton();if(curAudio)curAudio.pause();if(RD)RD.go(RD.i);};
 $('#replay').onclick=()=>{if(RD)RD.go(RD.i);else if(curLine&&!muted){const a=voice('audio/'+curLine.id+'.mp3');curAudio=a;a.play().catch(()=>{});}};
 // ---- 重看上一节: leave the current activity untouched, re-read the last story section, then come back ----
 async function reviewSection(){if(!lastSection||RD)return;const pn=$('#panel');const keep=document.createDocumentFragment();while(pn.firstChild)keep.appendChild(pn.firstChild);
@@ -116,10 +120,12 @@ window.__review=reviewSection;window.__rate=()=>RATE;
 
 
 // ---------- particles ----------
-function sparkle(el,n=14,chars=['✨','⭐','💛','✦']){if(RM)return;const r=el.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement('div');s.className='spark';s.textContent=chars[i%chars.length];
+function sparkle(el,n=14,chars=['✨','⭐','💛','✦'],{sprite}={}){if(RM||!el)return;const r=el.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement(sprite?'img':'div');s.className=sprite?'spark spark-sprite':'spark';if(sprite){s.src=sprite;s.alt='';s.setAttribute('aria-hidden','true');}else s.textContent=chars[i%chars.length];
  s.style.left=(r.left+r.width/2)+'px';s.style.top=(r.top+r.height/2)+'px';const a=Math.random()*Math.PI*2,d=60+Math.random()*90;s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950);}}
 // ---------- panel helpers ----------
-const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;panel.style.display='flex';$('#sub').style.display='none';document.body.classList.add('inpanel');};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';document.body.classList.remove('inpanel');};
+function polishButtons(root){root.querySelectorAll('button').forEach(b=>{if(b.querySelector('.ui-icon'))return;const walker=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);while(walker.nextNode())walker.currentNode.textContent=walker.currentNode.textContent.replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,'');});}
+
+const panel=$('#panel');const showPanel=h=>{panel.innerHTML=h;polishButtons(panel);panel.style.display='flex';$('#sub').style.display='none';document.body.classList.add('inpanel');};const hidePanel=()=>{panel.style.display='none';panel.innerHTML='';document.body.classList.remove('inpanel');};
 const normTxt=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:"“”]/g,' ').replace(/\s+/g,' ').trim();
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -283,27 +289,28 @@ async function mapCard(a){await new Promise(res=>{showPanel(`<div class="card km
 
 // ================= activity type: card (collectible card at the end) =================
 let cardWord=null;
+const cardTitle=s=>String(s||'').replace(/⭐\uFE0F?/gu,`<img class="card-title-star" src="${COMPASS_ASSETS.starLit}" alt="" width="256" height="256" aria-hidden="true">`);
 // variant 'phrase': {title, desc, front, template:[before,after], back:[{t,b}|{slot:true,b}], foot, options:[{k,w,zh}], sayZh:'我喜欢{zh}。', button, done}
 // variant 'treasure': {title, badge, desc, front, backBadge, backNote, options:[{k,s,zh,img}], button, done}
 async function spellCard(a){
  const O=a.options;
  if(a.variant==='treasure')return new Promise(res=>{let cur=null;
-  showPanel(`<div class="card treasure-card" data-activity="${a.id}"><h2 class="hb">${badge(a.badge,{size:36})} ${a.title}</h2><p>${a.desc}</p><div class="treasures">${shuffle(O).map(o=>`<button class="treasure" data-value="${o.k}"><img src="illus/${o.img}.jpg" alt="${o.zh}"><span>${o.zh}</span></button>`).join('')}</div><div class="flipwrap"><div class="flip" id="flip"><div class="face"><div class="border"></div><b>${a.front}</b><p id="card-sentence">先选一件宝物</p></div><div class="face back"><div class="border"></div>${badge(a.backBadge||a.badge,{size:56})}<p id="saved-sentence"></p><small>${a.backNote||''}</small></div></div></div><button class="btn big" id="carve" disabled>${a.button}</button></div>`);
+  showPanel(`<div class="card treasure-card" data-activity="${a.id}"><h2 class="hb">${badge(a.badge,{size:36})} ${cardTitle(a.title)}</h2><p>${a.desc}</p><div class="treasures">${shuffle(O).map(o=>`<button class="treasure" data-value="${o.k}"><img src="illus/${o.img}.jpg" alt="${o.zh}"><span>${o.zh}</span></button>`).join('')}</div><div class="flipwrap"><div class="flip" id="flip"><div class="face"><div class="border"></div><b>${a.front}</b><p id="card-sentence">先选一件宝物</p></div><div class="face back"><div class="border"></div>${badge(a.backBadge||a.badge,{size:56})}<p id="saved-sentence"></p><small>${a.backNote||''}</small></div></div></div><button class="btn big" id="carve" disabled>${a.button}</button></div>`);
   panel.querySelectorAll('.treasure').forEach(b=>b.onclick=()=>{cur=O.find(c=>c.k===b.dataset.value);cardWord=cur.k;panel.querySelectorAll('.treasure').forEach(x=>x.classList.toggle('selected',x===b));panel.querySelector('#card-sentence').textContent=cur.s;panel.querySelector('#saved-sentence').textContent=cur.s;panel.querySelector('#carve').disabled=false;});
   const done=()=>res();
-  let carving=false;const carve=async()=>{if(!cur||carving)return;carving=true;AUTO=null;const btn=panel.querySelector('#carve');btn.disabled=true;panel.querySelectorAll('.treasure').forEach(x=>x.disabled=true);panel.querySelector('#flip').classList.add('on');sfx('flip');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24),500);await say('card_'+cur.k,cur.zh);btn.textContent=a.done;btn.disabled=false;btn.onclick=done;window.__auto=done;window.__continue=done;};
+  let carving=false;const carve=async()=>{if(!cur||carving)return;carving=true;AUTO=null;const btn=panel.querySelector('#carve');btn.disabled=true;panel.querySelectorAll('.treasure').forEach(x=>x.disabled=true);panel.querySelector('#flip').classList.add('on');sfx('flip');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24,undefined,{sprite:COMPASS_ASSETS.starLit}),500);await say('card_'+cur.k,cur.zh);btn.textContent=a.done;btn.disabled=false;btn.onclick=done;window.__auto=done;window.__continue=done;};
   panel.querySelector('#carve').onclick=carve;window.__auto=AUTO=()=>{panel.querySelector('.treasure').click();carve();};});
  return new Promise(res=>{let cur=O[0];cardWord=cur.k;
   const back=a.back.map(c=>`<div class="chunk ${c.b}"${c.slot?' id="w2"':''}>${c.slot?cur.w:c.t}<span class="tag">${badge(c.b,{size:30})}</span></div>`).join('');
-  showPanel(`<div class="card" data-activity="${a.id}"><h2>${a.title}</h2><p>${a.desc}</p>
+  showPanel(`<div class="card" data-activity="${a.id}"><h2>${cardTitle(a.title)}</h2><p>${a.desc}</p>
    <div class="adj">${O.map(o=>`<button class="btn" data-k="${o.k}">${o.w}<br><small>${o.zh}</small></button>`).join('')}</div>
    <div class="flipwrap"><div class="flip" id="flip">
-    <div class="face"><div class="border"></div><div style="font-size:28px;font-weight:900">${a.front}</div><div style="margin-top:8px;font-size:24px;font-family:Georgia,serif">${a.template[0]}<u id="w">${cur.w}</u>${a.template[1]}</div></div>
+    <div class="face"><div class="border"></div><div style="font-size:28px;font-weight:900">${a.front}</div><div style="margin-top:8px;font-size:24px;font-family:'Compass Reading',Georgia,serif">${a.template[0]}<u id="w">${cur.w}</u>${a.template[1]}</div></div>
     <div class="face back"><div class="border"></div><div class="sent" style="margin:0;font-size:26px">${back}</div><div style="font-size:15px;margin-top:4px">${a.foot}</div></div>
    </div></div><button class="btn big" id="carve">${a.button}</button></div>`);
   panel.querySelectorAll('.adj button').forEach(b=>b.onclick=()=>{cur=O.find(o=>o.k===b.dataset.k);cardWord=cur.k;panel.querySelector('#w').textContent=cur.w;const w2=panel.querySelector('#w2');if(w2)w2.firstChild.textContent=cur.w;const au=voice('audio/card_'+cur.k+'.mp3');if(!muted)au.play();});
   const done=()=>res();
-  let carving=false;const carve=async()=>{if(carving)return;carving=true;const btn=panel.querySelector('#carve');btn.disabled=true;sfx('flip');panel.querySelector('#flip').classList.add('on');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24),500);
+  let carving=false;const carve=async()=>{if(carving)return;carving=true;const btn=panel.querySelector('#carve');btn.disabled=true;sfx('flip');panel.querySelector('#flip').classList.add('on');setTimeout(()=>sparkle(panel.querySelector('.flipwrap'),24,undefined,{sprite:COMPASS_ASSETS.starLit}),500);
    await say('card_'+cur.k,(a.sayZh||'{zh}').replace('{zh}',cur.zh));btn.textContent=a.done;btn.disabled=false;btn.onclick=done;window.__auto=done;window.__continue=done;};
   panel.querySelector('#carve').onclick=carve;window.__auto=carve;});
 }
@@ -325,65 +332,70 @@ function showImg(key,overlay=''){if(curImg===key&&overlay===curOverlay)return;cu
  lay.innerHTML=`<img alt="${label}"><div class="ph"><div>🖼️ 插图待生成</div><b>${label}</b><small>${src}</small></div>${overlay}`;
  const im=lay.querySelector('img');im.onload=()=>{fitLayer(lay);lay.classList.add('loaded');};im.onerror=()=>{lay.classList.add('missing');console.error('缺少本集插图：'+src);};im.src=src;
  st.appendChild(lay);requestAnimationFrame(()=>lay.classList.add('in'));const olds=[...st.children].slice(0,-1);setTimeout(()=>olds.forEach(o=>o.remove()),RM?0:450);}
-// ---------- 3D compass (home only) ----------
-const canvas=$('#c');const R=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,preserveDrawingBuffer:true});R.setPixelRatio(Math.min(devicePixelRatio,2));R.toneMapping=THREE.ACESFilmicToneMapping;
-const scene=new THREE.Scene();scene.environment=new THREE.PMREMGenerator(R).fromScene(new RoomEnvironment(),0.04).texture;
-const cam=new THREE.PerspectiveCamera(35,1,0.1,50);cam.position.set(0,0,4.2);
-scene.add(new THREE.HemisphereLight('#fff1d6','#5a3a20',1.2));const kl=new THREE.DirectionalLight('#ffe2b0',2.2);kl.position.set(2,3,4);scene.add(kl);
-const rig=new THREE.Group();scene.add(rig);
-const cm=(await new GLTFLoader().loadAsync(EU('./models/compass_q.glb'))).scene;
-cm.traverse(n=>{if(n.isMesh){const ms=Array.isArray(n.material)?n.material:[n.material];ms.forEach(m=>{if(/Yellow/.test(m.name)){m.metalness=1;m.roughness=.28;m.color.set(m.name==='Yellow'?'#f0b84a':'#a8762c');}});}});
-{const b=new THREE.Box3().setFromObject(cm),s=b.getSize(new THREE.Vector3());cm.scale.setScalar(1.3/s.y);const c=new THREE.Box3().setFromObject(cm).getCenter(new THREE.Vector3());cm.position.sub(c);}rig.add(cm);
-const sockets=[];for(let i=0;i<17;i++){const a=Math.PI/2-i/17*Math.PI*2;const s=new THREE.Mesh(new THREE.SphereGeometry(0.065,16,10),new THREE.MeshStandardMaterial({color:'#5a4020',metalness:.6,roughness:.4}));s.position.set(Math.cos(a)*1.0,Math.sin(a)*1.0,0);rig.add(s);sockets.push(s);}
-const ring=new THREE.Mesh(new THREE.TorusGeometry(1.0,0.018,8,96),new THREE.MeshStandardMaterial({color:'#c8902f',metalness:.9,roughness:.3}));rig.add(ring);
-function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();}addEventListener('resize',resize);resize();
-const EPNO=EP.no,MYSTAR=EPNO-1;
-// shared progress across episodes on the same origin: localStorage cc_stars = [episode numbers]
-const readStars=()=>{try{const v=JSON.parse(localStorage.getItem('cc_stars')||'[]');return Array.isArray(v)?v.map(Number).filter(n=>Number.isInteger(n)&&n>=1&&n<=17):[];}catch(e){return [];}};
+// ---------- 2D compass + shared local progress ----------
+const EPNO=Number(EP.no),MYSTAR=EPNO-1;
 const GOT=new Set(readStars());
-const LIT=new Set([...GOT].filter(n=>n!==EPNO).map(n=>n-1));   // this episode's star lights up during the ending flight
-let starsLit=0,spin=0;const clock=new THREE.Clock();
-function loop(){const t=clock.getElapsedTime();if(!RM){rig.rotation.y=Math.sin(t*0.5)*0.3+spin;rig.position.y=Math.sin(t*1.2)*0.04;}
- sockets.forEach((s,i)=>{if(LIT.has(i)){s.material.color.set('#ffd66b');s.material.emissive.set('#ffbb22');s.material.emissiveIntensity=RM?1.5:1.4+Math.sin(t*4)*.4;}});
- if($('#home').style.display!=='none')R.render(scene,cam);requestAnimationFrame(loop);}
-// ---------- flow ----------
+let starsLit=0,entryLocked=false;
+window.__skipStar=null;
+function updateStars(){NSTARS=GOT.size;$('#stars').innerHTML=control('star',`${NSTARS} / 17`);}
+function paintStart(){const host=$('#start .start-art');host.innerHTML=renderCompass({stars:GOT,id:'start-compass'})+renderStarProgress(GOT);updateStars();}
 function fitLayout(){const h=$('#hud');if(h)document.documentElement.style.setProperty('--hud',(h.getBoundingClientRect().bottom+8)+'px');}addEventListener('resize',fitLayout);if(window.ResizeObserver)new ResizeObserver(fitLayout).observe($('#hud'));fitLayout();
+const homeOn=on=>{$('#home').style.display=on?'flex':'none';document.body.classList.toggle('at-home',on&&!document.body.classList.contains('ending'));};
+function entryAllowed(){return EPNO!==17||isFinaleUnlocked(readStars());}
+function guardEntry(){
+ if(entryAllowed()){entryLocked=false;return true;}
+ entryLocked=true;if(stopCur)stopCur();if(curAudio)curAudio.pause();RD=null;AUTO=null;window.__auto=()=>{};window.__continue=()=>{};
+ hidePanel();$('#sub').style.display='none';document.body.classList.remove('reading','ending','hasreview');homeOn(true);$('#start').style.display='flex';
+ const missing=Array.from({length:16},(_,i)=>i+1).filter(no=>!readStars().includes(no));
+ $('#entry-lock').hidden=false;$('#entry-lock').textContent=`最后一站还差 ${missing.length} 颗星。点亮前 16 站的星星，就能开启第 17 集。`;
+ $('#go').disabled=true;$('#go').innerHTML=control('lock','集齐前 16 颗星后开启');paintStart();return false;
+}
+const SEC=EP.sections,ACT=EP.activities;Object.entries(ACT).forEach(([k,a])=>{a.id=a.id||k;});
+window.__state=()=>({reading:!!RD,line:curLine?.id,section:Object.keys(SEC).find(k=>SEC[k]===lastSection),activity:panel.querySelector('[data-activity]')?.dataset.activity,step:panel.querySelector('[data-step]')?.dataset.step,card:cardWord,starsLit,completed:[...GOT].sort((a,b)=>a-b),muted,rate:RATE,locked:entryLocked});
+paintStart();updateMuteButton();
 try{LINES=await (await fetch('audio/lines.json?v='+EPV)).json();}catch(e){$('#loading').textContent='本集配音资料尚未就绪，请稍后再来。';throw e;}
 try{HINTS=await (await fetch('audio/hints.json?v='+EPV)).json();}catch(e){HINTS={};}
-$('#loading').style.display='none';showImg(EP.firstImg||Object.keys(IMG)[0]);requestAnimationFrame(loop);window.__ready=true;
-$('#mute').textContent=muted?'🔇 已静音':'🔊 声音开';
-const homeOn=on=>{$('#home').style.display=on?'flex':'none';$('#c').style.display=on?'block':'none';};
-const SEC=EP.sections,ACT=EP.activities;Object.entries(ACT).forEach(([k,a])=>{a.id=a.id||k;});
-window.__state=()=>({reading:!!RD,line:curLine?.id,section:Object.keys(SEC).find(k=>SEC[k]===lastSection),activity:panel.querySelector('[data-activity]')?.dataset.activity,step:panel.querySelector('[data-step]')?.dataset.step,card:cardWord,starsLit,completed:[...GOT].sort((a,b)=>a-b),muted,rate:RATE});
+$('#loading').style.display='none';window.__ready=true;
 async function story(){
- homeOn(false);$('#start').style.display='none';
- for(const k of EP.flow){if(SEC[k])await readSection(SEC[k]);else await runAct(ACT[k]);}
- await ending();}
-async function ending(){const E=EP.ending;
+ if(!guardEntry())return;homeOn(false);$('#start').style.display='none';showImg(EP.firstImg||Object.keys(IMG)[0]);
+ for(const k of EP.flow){if(!guardEntry())return;if(SEC[k])await readSection(SEC[k]);else await runAct(ACT[k]);}
+ if(guardEntry())await ending();}
+async function ending(){
+ if(!guardEntry())return;const E=EP.ending;
  const fr=panel.querySelector('.flipwrap')?.getBoundingClientRect()||{left:innerWidth/2,top:innerHeight/2,width:0,height:0};hidePanel();$('#sub').style.display='none';
- document.body.classList.remove('hasreview');document.body.classList.add('ending');
- showImg(E.img);homeOn(true);$('#start').style.display='none';await sleep(150);
- const p=sockets[MYSTAR].getWorldPosition(new THREE.Vector3()).project(cam);const cr=canvas.getBoundingClientRect();const tx=cr.left+(p.x*.5+.5)*cr.width,ty=cr.top+(-p.y*.5+.5)*cr.height;
- $('#stars').textContent=`⭐ ${LIT.size} / 17`;
+ document.body.classList.remove('hasreview','at-home');document.body.classList.add('ending');
+ showImg(E.img);homeOn(true);$('#start').style.display='none';
+ const before=new Set([...GOT].filter(no=>no!==EPNO));
+ showPanel(`<div class="ending-layout"><div class="ending-art">${renderCompass({stars:before,id:'ending-compass'})}<div id="starprog">${renderStarProgress(before)}</div></div><div class="card ending-card"><p class="chapter-overline">第 ${EPNO} 站 · 冒险完成</p><div id="ending-copy"><h2>把星星带回罗盘</h2><p role="status">你的收藏卡，留下了这段冒险。</p></div></div></div>`);
+ panel.classList.add('endpanel');
+ if(!RM)await new Promise(resolve=>requestAnimationFrame(resolve));
+ const slot=$(`#ending-compass [data-slot="${MYSTAR+1}"]`).getBoundingClientRect(),tx=slot.left+slot.width/2,ty=slot.top+slot.height/2;
  sfx('star');
- if(!RM&&!Q.get('fast')){const st=$('#flystar');st.style.display='block';const sx=fr.left+fr.width/2,sy=fr.top+fr.height/2;const t0=performance.now();let skip=false;
-  const hint=document.createElement('div');hint.className='star-skip';hint.textContent='点击屏幕跳过';document.body.appendChild(hint);
-  const sk=()=>{skip=true;};addEventListener('pointerdown',sk,{once:true});window.__skipStar=sk;
-  await new Promise(r=>{const f=()=>{const k=skip?1:Math.min(1,(performance.now()-t0)/1800),e=1-Math.pow(1-k,3);st.style.left=(sx+(tx-sx)*e-32)+'px';st.style.top=(sy+(ty-sy)*e-40-Math.sin(k*Math.PI)*160)+'px';st.style.transform=`scale(${1.4-k*.9}) rotate(${k*540}deg)`;k<1?requestAnimationFrame(f):r();};f();});
-  removeEventListener('pointerdown',sk);window.__skipStar=null;hint.remove();st.style.display='none';}
- readStars().forEach(n=>GOT.add(n));   // other episodes may have saved stars since this page opened
- LIT.add(MYSTAR);GOT.add(EPNO);try{localStorage.setItem('cc_stars',JSON.stringify([...GOT].sort((a,b)=>a-b)));}catch(e){}
- starsLit=1;const n=GOT.size;NSTARS=n;$('#stars').textContent=`⭐ ${n} / 17`;
- const rg=document.createElement('div');rg.className='slotburst';rg.style.left=tx+'px';rg.style.top=ty+'px';document.body.appendChild(rg);setTimeout(()=>rg.remove(),1400);
- if(!RM){const sp=document.createElement('div');sp.style.cssText=`position:fixed;left:${tx-20}px;top:${ty-20}px;width:40px;height:40px`;document.body.appendChild(sp);sparkle(sp,16);setTimeout(()=>sp.remove(),1000);}
- const pb=document.createElement('div');pb.id='starprog';pb.innerHTML=`<b>⭐ ${n} / 17</b><span>罗盘上的星星</span><div class="sbar"><i style="width:${n/17*100}%"></i></div>`;document.body.appendChild(pb);
+ if(!RM&&!Q.get('fast')){
+  const st=$('#flystar'),sx=fr.left+fr.width/2,sy=fr.top+fr.height/2;st.style.display='block';
+  const hint=document.createElement('button');hint.type='button';hint.className='star-skip btn';hint.textContent='跳过星星归位';hint.setAttribute('aria-label','跳过星星归位动画');document.body.appendChild(hint);
+  let finish;await new Promise(resolve=>{
+   const t0=performance.now();let raf=0,done=false;
+   const sk=()=>{if(done)return;done=true;cancelAnimationFrame(raf);removeEventListener('pointerdown',sk);removeEventListener('keydown',keySkip);window.__skipStar=null;hint.remove();st.style.display='none';resolve();};
+   const keySkip=e=>{if(['Escape','Enter',' '].includes(e.key)){e.preventDefault();sk();}};
+   finish=sk;window.__skipStar=sk;hint.onclick=sk;addEventListener('pointerdown',sk,{once:true});addEventListener('keydown',keySkip);hint.focus({preventScroll:true});
+   const frame=()=>{if(done)return;const k=Math.min(1,(performance.now()-t0)/1200),e=1-Math.pow(1-k,3);st.style.left=(sx+(tx-sx)*e-32)+'px';st.style.top=(sy+(ty-sy)*e-32-Math.sin(k*Math.PI)*Math.min(150,innerHeight*.2))+'px';st.style.transform=`scale(${1.05-k*.65})`;if(k<1)raf=requestAnimationFrame(frame);else sk();};frame();
+  });
+ }
+ if(!guardEntry())return;
+ readStars().forEach(no=>GOT.add(no));GOT.add(EPNO);const saved=saveStar(EPNO);
+ starsLit=1;updateStars();lightCompassSlot($('#ending-compass'),EPNO,{animate:!RM});$('#starprog').innerHTML=renderStarProgress(GOT);
  await say(E.say.id,E.say.zh);$('#sub').style.display='none';
- showPanel(`<div class="card">${tpl(E.html)}<button class="btn big" id="again">🔁 再玩一次</button></div>`);
- panel.style.background='rgba(20,10,30,.15)';panel.classList.add('endpanel');
- panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
-// ?jump=<activity id> opens one activity directly (review / testing); the image and 重看上一节 come from the flow
+ $('#ending-copy').innerHTML=`<div class="ending-details" tabindex="0" role="region" aria-label="本集完成记录">${tpl(E.html)}${!saved?'<p role="status">本次星星已点亮，浏览器暂时无法保存进度。请保持此页打开。</p>':''}</div><div class="ending-actions"><a class="btn big" href="${hqHref}">${control('home','冒险队总部')}</a><button class="btn secondary" id="again">${control('replay','再玩一次')}</button></div>`;polishButtons($('#ending-copy'));
+ panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;
+}
+// Every entry path (normal start, activity jump, restored bfcache page) shares the finale gate.
 const jid=Q.get('jump');
-if(jid&&ACT[jid]){homeOn(false);$('#start').style.display='none';ac();const idx=EP.flow.indexOf(jid);const secKey=EP.flow.slice(0,idx).reverse().find(k=>SEC[k]);lastSection=SEC[secKey];document.body.classList.add('hasreview');
- showImg(ACT[jid].img||lastSection.at(-1).img);runAct(ACT[jid]).then(()=>{if(ACT[jid].type==='card')ending();else window.__activityDone=true;});}
-else $('#start').style.display='flex';
-$('#go').onclick=()=>{ac();story();};window.__go=()=>$('#go').click();
+if(guardEntry()){
+ if(jid&&ACT[jid]){homeOn(false);$('#start').style.display='none';ac();const idx=EP.flow.indexOf(jid);const secKey=EP.flow.slice(0,Math.max(0,idx)).reverse().find(k=>SEC[k]);lastSection=SEC[secKey];if(lastSection)document.body.classList.add('hasreview');
+  showImg(ACT[jid].img||lastSection?.at(-1)?.img||EP.firstImg||Object.keys(IMG)[0]);runAct(ACT[jid]).then(()=>{if(!guardEntry())return;if(ACT[jid].type==='card')ending();else window.__activityDone=true;});}
+ else $('#start').style.display='flex';
+}
+$('#go').onclick=()=>{if(guardEntry()){ac();story();}};window.__go=()=>$('#go').click();
+addEventListener('pageshow',event=>{if(event.persisted){const wasLocked=entryLocked;if(!guardEntry())return;if(wasLocked)location.reload();}});
+addEventListener('storage',event=>{if(event.key==='cc_stars'){if(EPNO===17&&!entryAllowed())guardEntry();else if(entryLocked)location.reload();}});

@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "scope": "M2文本与配置的结构检查，不代表HQ功能或音画完成",
+  "prologueLines": 8,
+  "characters": 25,
+  "mapItems": 17,
+  "journalEntries": 17,
+  "badges": 19,
+  "uiStrings": 133,
+  "sourceEntries": 120,
+  "productionReady": false,
+  "historicalSnapshot": true,
+  "currentStageNote": "此记录保留M2的8句及当时检查数量。当前为v5-preview-20261011：10句序章、30张审定图、36条音频及HQ已集成，准备预览部署；最新验证以M3_M4_实施与验收.md为准，C尚未开始。"
+}

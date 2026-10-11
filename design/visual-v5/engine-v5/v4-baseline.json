@@ -1,0 +1,434 @@
+{
+  "records": [
+    {
+      "width": 390,
+      "height": 844,
+      "readyMs": 3127,
+      "resource": [
+        {
+          "url": "http://127.0.0.1:8756/engine/VERSION",
+          "bytes": 2,
+          "transfer": 302,
+          "duration": 5.5
+        },
+        {
+          "url": "http://127.0.0.1:8756/favicon.ico",
+          "bytes": 335,
+          "transfer": 635,
+          "duration": 6.399999991059303
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/engine.js?v=4",
+          "bytes": 51292,
+          "transfer": 51592,
+          "duration": 6.600000008940697
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/three.module.js",
+          "bytes": 1314681,
+          "transfer": 1314981,
+          "duration": 6.799999997019768
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/environments/RoomEnvironment.js",
+          "bytes": 3606,
+          "transfer": 3906,
+          "duration": 4.600000008940697
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/loaders/GLTFLoader.js",
+          "bytes": 110273,
+          "transfer": 110573,
+          "duration": 4.799999997019768
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/utils/BufferGeometryUtils.js",
+          "bytes": 31768,
+          "transfer": 32068,
+          "duration": 5.700000002980232
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/badges.js?v=4",
+          "bytes": 8572,
+          "transfer": 8872,
+          "duration": 1.6000000089406967
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.js?v=4",
+          "bytes": 26788,
+          "transfer": 27088,
+          "duration": 1
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/base.css?v=4",
+          "bytes": 26896,
+          "transfer": 27196,
+          "duration": 1.1000000089406967
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/layout.css?v=4",
+          "bytes": 6720,
+          "transfer": 7020,
+          "duration": 1.3999999910593033
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.css?v=4",
+          "bytes": 558,
+          "transfer": 858,
+          "duration": 0.800000011920929
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/models/compass_q.glb?v=4",
+          "bytes": 40552,
+          "transfer": 40852,
+          "duration": 1.6000000089406967
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 585872,
+          "transfer": 586172,
+          "duration": 843.0999999940395
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=4",
+          "bytes": 15435,
+          "transfer": 15735,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 585872,
+          "transfer": 586172,
+          "duration": 4.5
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=4",
+          "bytes": 4852,
+          "transfer": 5152,
+          "duration": 1.7999999970197678
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/illus/01_attic_v2.jpg",
+          "bytes": 293287,
+          "transfer": 293587,
+          "duration": 2.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "readyMs": 932,
+      "resource": [
+        {
+          "url": "http://127.0.0.1:8756/engine/VERSION",
+          "bytes": 2,
+          "transfer": 302,
+          "duration": 4.799999997019768
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/engine.js?v=4",
+          "bytes": 51292,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/three.module.js",
+          "bytes": 1314681,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/loaders/GLTFLoader.js",
+          "bytes": 110273,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/environments/RoomEnvironment.js",
+          "bytes": 3606,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/utils/BufferGeometryUtils.js",
+          "bytes": 31768,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/badges.js?v=4",
+          "bytes": 8572,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.js?v=4",
+          "bytes": 26788,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/base.css?v=4",
+          "bytes": 26896,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/layout.css?v=4",
+          "bytes": 6720,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.css?v=4",
+          "bytes": 558,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/models/compass_q.glb?v=4",
+          "bytes": 40552,
+          "transfer": 0,
+          "duration": 1.5999999940395355
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 585872,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 585872,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=4",
+          "bytes": 15435,
+          "transfer": 0,
+          "duration": 2.3999999910593033
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=4",
+          "bytes": 4852,
+          "transfer": 0,
+          "duration": 0.7999999970197678
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/illus/01_attic_v2.jpg",
+          "bytes": 293287,
+          "transfer": 0,
+          "duration": 0
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "readyMs": 1014,
+      "resource": [
+        {
+          "url": "http://127.0.0.1:8756/engine/VERSION",
+          "bytes": 2,
+          "transfer": 302,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/engine.js?v=4",
+          "bytes": 51292,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/three.module.js",
+          "bytes": 1314681,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/loaders/GLTFLoader.js",
+          "bytes": 110273,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/environments/RoomEnvironment.js",
+          "bytes": 3606,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/lib/addons/utils/BufferGeometryUtils.js",
+          "bytes": 31768,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/badges.js?v=4",
+          "bytes": 8572,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.js?v=4",
+          "bytes": 0,
+          "transfer": 300,
+          "duration": 3.5
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/base.css?v=4",
+          "bytes": 26896,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/layout.css?v=4",
+          "bytes": 6720,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/episode.css?v=4",
+          "bytes": 0,
+          "transfer": 300,
+          "duration": 1.7000000029802322
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/models/compass_q.glb?v=4",
+          "bytes": 40552,
+          "transfer": 0,
+          "duration": 1
+        },
+        {
+          "url": "http://127.0.0.1:8756/engine/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 585872,
+          "transfer": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+          "bytes": 0,
+          "transfer": 300,
+          "duration": 2.3999999910593033
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=4",
+          "bytes": 15435,
+          "transfer": 0,
+          "duration": 2.7999999970197678
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=4",
+          "bytes": 4852,
+          "transfer": 0,
+          "duration": 1.4000000059604645
+        },
+        {
+          "url": "http://127.0.0.1:8756/ep01/illus/01_attic_v2.jpg",
+          "bytes": 293287,
+          "transfer": 0,
+          "duration": 0
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "fast4g": {
+    "readyMs": 10073,
+    "network": {
+      "latencyMs": 170,
+      "downloadMbps": 1.6,
+      "uploadKbps": 750
+    },
+    "resource": [
+      {
+        "url": "http://127.0.0.1:8756/engine/VERSION",
+        "bytes": 2,
+        "transfer": 302,
+        "duration": 188.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/engine.js?v=4",
+        "bytes": 51292,
+        "transfer": 51592,
+        "duration": 421.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/lib/addons/loaders/GLTFLoader.js",
+        "bytes": 110273,
+        "transfer": 110573,
+        "duration": 1258.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/lib/three.module.js",
+        "bytes": 1314681,
+        "transfer": 1314981,
+        "duration": 7158.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/lib/addons/environments/RoomEnvironment.js",
+        "bytes": 3606,
+        "transfer": 3906,
+        "duration": 234.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/lib/addons/utils/BufferGeometryUtils.js",
+        "bytes": 31768,
+        "transfer": 32068,
+        "duration": 484.20000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/badges.js?v=4",
+        "bytes": 8572,
+        "transfer": 8872,
+        "duration": 242.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.js?v=4",
+        "bytes": 26788,
+        "transfer": 27088,
+        "duration": 299.19999998807907
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/base.css?v=4",
+        "bytes": 26896,
+        "transfer": 27196,
+        "duration": 347.59999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/layout.css?v=4",
+        "bytes": 6720,
+        "transfer": 7020,
+        "duration": 247.79999999701977
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.css?v=4",
+        "bytes": 558,
+        "transfer": 858,
+        "duration": 177.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/models/compass_q.glb?v=4",
+        "bytes": 40552,
+        "transfer": 40852,
+        "duration": 568
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=4",
+        "bytes": 15435,
+        "transfer": 15735,
+        "duration": 327.59999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=4",
+        "bytes": 4852,
+        "transfer": 5152,
+        "duration": 229.19999998807907
+      }
+    ]
+  }
+}

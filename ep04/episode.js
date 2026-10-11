@@ -1,10 +1,11 @@
 export default {
   "no": 4,
-  "hud": "🧭 罗盘冒险队 · 第4集 龙的谜语洞",
+  "meta": {"title":"龙的谜语洞","place":"谜语洞","grammar":["疑问句","否定句","并列句"],"icon":"dragon-cave"},
+  "hud": "罗盘冒险队 · 第4集 龙的谜语洞",
   "start": {
     "h1": "龙的谜语洞",
     "subt": "问出龙的本领和守护的秘密。",
-    "go": "🧭 出发：Are you awake?"
+    "go": "出发：Are you awake?"
   },
   "theme": {
     "bg": "#182e28",
@@ -15,7 +16,7 @@ export default {
   "download": {
     "href": "downloads/ep04_questions_conjunctions.docx",
     "name": "罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "cave_gate": [
@@ -1228,8 +1229,8 @@ export default {
           "img": "03_book_guard"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 4 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 4 颗星送回罗盘"
     }
   },
   "ending": {

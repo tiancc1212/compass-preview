@@ -1,0 +1,829 @@
+{
+  "base": "http://127.0.0.1:8756/",
+  "startedAt": "2026-10-11T11:15:32.877Z",
+  "viewport": [
+    1024,
+    768
+  ],
+  "cases": [
+    {
+      "kind": "natural",
+      "errors": [],
+      "forbiddenRequests": [],
+      "failedResponses": [],
+      "failedRequests": [],
+      "audioRequests": [
+        "http://127.0.0.1:8756/ep16/audio/card_football.mp3?v=20261011-level1",
+        "http://127.0.0.1:8756/ep16/audio/star.mp3?v=20261011-level1"
+      ],
+      "before": [
+        1,
+        1,
+        "2",
+        17,
+        "historic"
+      ],
+      "cardAudioElapsedMs": 1913,
+      "probe": {
+        "flightStart": 2992.7000000029802,
+        "flightEnd": 4201.600000008941,
+        "glowStart": 4202.20000000298,
+        "glowEnd": 4803.600000008941,
+        "flightPositions": [
+          [
+            "479.15px",
+            "443.117px"
+          ],
+          [
+            "470.627px",
+            "434.231px"
+          ],
+          [
+            "453.969px",
+            "416.71px"
+          ],
+          [
+            "440.272px",
+            "402.151px"
+          ],
+          [
+            "425.74px",
+            "386.557px"
+          ],
+          [
+            "410.721px",
+            "370.281px"
+          ],
+          [
+            "398.017px",
+            "356.391px"
+          ],
+          [
+            "383.952px",
+            "340.886px"
+          ],
+          [
+            "372.754px",
+            "328.449px"
+          ],
+          [
+            "359.874px",
+            "314.047px"
+          ],
+          [
+            "347.764px",
+            "300.416px"
+          ],
+          [
+            "335.832px",
+            "286.911px"
+          ],
+          [
+            "324.958px",
+            "274.541px"
+          ],
+          [
+            "312.948px",
+            "260.825px"
+          ],
+          [
+            "302.615px",
+            "248.984px"
+          ],
+          [
+            "292.564px",
+            "237.444px"
+          ],
+          [
+            "283.029px",
+            "226.484px"
+          ],
+          [
+            "274.096px",
+            "216.217px"
+          ],
+          [
+            "264.276px",
+            "204.944px"
+          ],
+          [
+            "255.043px",
+            "194.374px"
+          ],
+          [
+            "247.364px",
+            "185.616px"
+          ],
+          [
+            "239.031px",
+            "176.164px"
+          ],
+          [
+            "231.531px",
+            "167.717px"
+          ],
+          [
+            "223.909px",
+            "159.21px"
+          ],
+          [
+            "215.868px",
+            "150.342px"
+          ],
+          [
+            "209.41px",
+            "143.318px"
+          ],
+          [
+            "202.769px",
+            "136.208px"
+          ],
+          [
+            "196.22px",
+            "129.333px"
+          ],
+          [
+            "190.391px",
+            "123.351px"
+          ],
+          [
+            "184.533px",
+            "117.493px"
+          ],
+          [
+            "178.548px",
+            "111.7px"
+          ],
+          [
+            "173.138px",
+            "106.662px"
+          ],
+          [
+            "168.582px",
+            "102.593px"
+          ],
+          [
+            "163.291px",
+            "98.1033px"
+          ],
+          [
+            "159.116px",
+            "94.7697px"
+          ],
+          [
+            "154.549px",
+            "91.3739px"
+          ],
+          [
+            "150.569px",
+            "88.665px"
+          ],
+          [
+            "146.748px",
+            "86.3247px"
+          ],
+          [
+            "143.112px",
+            "84.3749px"
+          ],
+          [
+            "139.597px",
+            "82.7942px"
+          ],
+          [
+            "136.269px",
+            "81.6245px"
+          ],
+          [
+            "133.125px",
+            "80.8675px"
+          ],
+          [
+            "130.246px",
+            "80.5283px"
+          ],
+          [
+            "127.535px",
+            "80.5792px"
+          ],
+          [
+            "124.944px",
+            "81.0315px"
+          ],
+          [
+            "122.643px",
+            "81.8321px"
+          ],
+          [
+            "120.526px",
+            "82.9693px"
+          ],
+          [
+            "118.371px",
+            "84.6076px"
+          ],
+          [
+            "116.594px",
+            "86.4046px"
+          ],
+          [
+            "114.831px",
+            "88.6809px"
+          ],
+          [
+            "113.27px",
+            "91.2038px"
+          ],
+          [
+            "111.832px",
+            "94.0559px"
+          ],
+          [
+            "110.469px",
+            "97.3524px"
+          ],
+          [
+            "109.244px",
+            "100.945px"
+          ],
+          [
+            "108.277px",
+            "104.321px"
+          ],
+          [
+            "107.289px",
+            "108.417px"
+          ],
+          [
+            "106.385px",
+            "112.915px"
+          ],
+          [
+            "105.667px",
+            "117.179px"
+          ],
+          [
+            "104.966px",
+            "122.149px"
+          ],
+          [
+            "104.334px",
+            "127.606px"
+          ],
+          [
+            "103.855px",
+            "132.633px"
+          ],
+          [
+            "103.432px",
+            "138.003px"
+          ],
+          [
+            "103.074px",
+            "143.616px"
+          ],
+          [
+            "102.777px",
+            "149.43px"
+          ],
+          [
+            "102.534px",
+            "155.501px"
+          ],
+          [
+            "102.358px",
+            "161.199px"
+          ],
+          [
+            "102.208px",
+            "167.711px"
+          ],
+          [
+            "102.112px",
+            "173.502px"
+          ],
+          [
+            "102.039px",
+            "179.789px"
+          ],
+          [
+            "101.99px",
+            "186.688px"
+          ],
+          [
+            "101.967px",
+            "192.595px"
+          ],
+          [
+            "101.956px",
+            "199.28px"
+          ],
+          [
+            "101.953px",
+            "206.302px"
+          ]
+        ],
+        "glowDurations": [
+          "0.6s"
+        ],
+        "rm": false
+      },
+      "after": [
+        1,
+        1,
+        "2",
+        17,
+        "historic",
+        16
+      ],
+      "state": {
+        "reading": false,
+        "line": "star",
+        "section": "S4",
+        "card": "football",
+        "starsLit": 1,
+        "completed": [
+          1,
+          2,
+          16,
+          17
+        ],
+        "muted": false,
+        "rate": 1,
+        "locked": false
+      },
+      "flightMs": 1208.9000000059605,
+      "glowMs": 601.4000000059605,
+      "pass": true
+    },
+    {
+      "kind": "mouse-skip",
+      "errors": [],
+      "forbiddenRequests": [],
+      "failedResponses": [],
+      "failedRequests": [],
+      "audioRequests": [
+        "http://127.0.0.1:8756/ep16/audio/card_football.mp3?v=20261011-level1",
+        "http://127.0.0.1:8756/ep16/audio/star.mp3?v=20261011-level1"
+      ],
+      "before": [
+        1,
+        1,
+        "2",
+        17,
+        "historic"
+      ],
+      "cardAudioElapsedMs": 1919,
+      "skipRequestedAt": 3022.0999999940395,
+      "probe": {
+        "flightStart": 2991.5999999940395,
+        "flightEnd": 3026.5999999940395,
+        "glowStart": 3027.2999999970198,
+        "glowEnd": 3628.5999999940395,
+        "flightPositions": [
+          [
+            "479.244px",
+            "443.215px"
+          ],
+          [
+            "466.645px",
+            "430.061px"
+          ],
+          [
+            "451.99px",
+            "414.615px"
+          ]
+        ],
+        "glowDurations": [
+          "0.6s"
+        ],
+        "rm": false
+      },
+      "after": [
+        1,
+        1,
+        "2",
+        17,
+        "historic",
+        16
+      ],
+      "state": {
+        "reading": false,
+        "line": "star",
+        "section": "S4",
+        "card": "football",
+        "starsLit": 1,
+        "completed": [
+          1,
+          2,
+          16,
+          17
+        ],
+        "muted": false,
+        "rate": 1,
+        "locked": false
+      },
+      "flightMs": 35,
+      "glowMs": 601.2999999970198,
+      "pass": true
+    },
+    {
+      "kind": "escape-skip",
+      "errors": [],
+      "forbiddenRequests": [],
+      "failedResponses": [],
+      "failedRequests": [],
+      "audioRequests": [
+        "http://127.0.0.1:8756/ep16/audio/card_football.mp3?v=20261011-level1",
+        "http://127.0.0.1:8756/ep16/audio/star.mp3?v=20261011-level1"
+      ],
+      "before": [
+        1,
+        1,
+        "2",
+        17,
+        "historic"
+      ],
+      "cardAudioElapsedMs": 1915,
+      "skipRequestedAt": 3014,
+      "probe": {
+        "flightStart": 2981.7999999970198,
+        "flightEnd": 3015.4000000059605,
+        "glowStart": 3016.0999999940395,
+        "glowEnd": 3617.2000000029802,
+        "flightPositions": [
+          [
+            "479.15px",
+            "443.117px"
+          ],
+          [
+            "465.539px",
+            "428.901px"
+          ],
+          [
+            "450.556px",
+            "413.094px"
+          ]
+        ],
+        "glowDurations": [
+          "0.6s"
+        ],
+        "rm": false
+      },
+      "after": [
+        1,
+        1,
+        "2",
+        17,
+        "historic",
+        16
+      ],
+      "state": {
+        "reading": false,
+        "line": "star",
+        "section": "S4",
+        "card": "football",
+        "starsLit": 1,
+        "completed": [
+          1,
+          2,
+          16,
+          17
+        ],
+        "muted": false,
+        "rate": 1,
+        "locked": false
+      },
+      "flightMs": 33.6000000089407,
+      "glowMs": 601.1000000089407,
+      "pass": true
+    },
+    {
+      "kind": "reduced-motion",
+      "errors": [],
+      "forbiddenRequests": [],
+      "failedResponses": [],
+      "failedRequests": [],
+      "audioRequests": [
+        "http://127.0.0.1:8756/ep16/audio/card_football.mp3?v=20261011-level1",
+        "http://127.0.0.1:8756/ep16/audio/star.mp3?v=20261011-level1"
+      ],
+      "before": [
+        1,
+        1,
+        "2",
+        17,
+        "historic"
+      ],
+      "cardAudioElapsedMs": 1905,
+      "probe": {
+        "flightStart": null,
+        "flightEnd": null,
+        "glowStart": null,
+        "glowEnd": null,
+        "flightPositions": [],
+        "glowDurations": [],
+        "rm": true
+      },
+      "after": [
+        1,
+        1,
+        "2",
+        17,
+        "historic",
+        16
+      ],
+      "state": {
+        "reading": false,
+        "line": "star",
+        "section": "S4",
+        "card": "football",
+        "starsLit": 1,
+        "completed": [
+          1,
+          2,
+          16,
+          17
+        ],
+        "muted": false,
+        "rate": 1,
+        "locked": false
+      },
+      "flightMs": 0,
+      "glowMs": 0,
+      "pass": true
+    }
+  ],
+  "fast4g": {
+    "errors": [],
+    "failedResponses": [],
+    "failedRequests": [],
+    "forbiddenRequests": [],
+    "network": {
+      "latencyMs": 170,
+      "downloadMbps": 1.6,
+      "uploadKbps": 750
+    },
+    "viewport": [
+      1440,
+      900
+    ],
+    "readyMs": 3192,
+    "imageDecode": [
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "pass": true
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_lit_v5.webp?v=5",
+        "pass": true
+      }
+    ],
+    "visualReadyMs": 3221,
+    "resource": [
+      {
+        "url": "http://127.0.0.1:8756/engine/VERSION",
+        "bytes": 2,
+        "transfer": 302,
+        "duration": 185.1000000089407
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/favicon.svg",
+        "bytes": 303,
+        "transfer": 603,
+        "duration": 184.69999998807907
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/engine.js?v=5",
+        "bytes": 53225,
+        "transfer": 53525,
+        "duration": 433.69999998807907
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/badges.js?v=5",
+        "bytes": 8572,
+        "transfer": 8872,
+        "duration": 225.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/icons.js?v=5",
+        "bytes": 1791,
+        "transfer": 2091,
+        "duration": 191.79999999701977
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass.js?v=5",
+        "bytes": 4326,
+        "transfer": 4626,
+        "duration": 211.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass_slots_v5.json?v=5",
+        "bytes": 1697,
+        "transfer": 1997,
+        "duration": 193.20000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.js?v=5",
+        "bytes": 26788,
+        "transfer": 27088,
+        "duration": 304.3999999910593
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/base.css?v=5",
+        "bytes": 32515,
+        "transfer": 32815,
+        "duration": 403.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/layout.css?v=5",
+        "bytes": 10532,
+        "transfer": 10832,
+        "duration": 305.20000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass.css?v=5",
+        "bytes": 1491,
+        "transfer": 1791,
+        "duration": 204.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/episode.css?v=5",
+        "bytes": 558,
+        "transfer": 858,
+        "duration": 184.8999999910593
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/lines.json?v=5",
+        "bytes": 15435,
+        "transfer": 15735,
+        "duration": 416.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_lit_v5.webp?v=5",
+        "bytes": 8084,
+        "transfer": 8384,
+        "duration": 346.70000000298023
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/compass_base_v5_512.webp?v=5",
+        "bytes": 50218,
+        "transfer": 50518,
+        "duration": 589.2000000029802
+      },
+      {
+        "url": "http://127.0.0.1:8756/engine/compass/star_unlit_v5.webp?v=5",
+        "bytes": 7584,
+        "transfer": 7884,
+        "duration": 351.5
+      },
+      {
+        "url": "http://127.0.0.1:8756/ep01/audio/hints.json?v=5",
+        "bytes": 4852,
+        "transfer": 5152,
+        "duration": 197.90000000596046
+      }
+    ],
+    "encodedBodyBytes": 227973,
+    "transferBytes": 233073,
+    "pass": true
+  },
+  "finishedAt": "2026-10-11T11:15:57.913Z",
+  "pass": true
+}

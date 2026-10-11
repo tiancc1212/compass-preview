@@ -1,3 +1,5 @@
+/* 仅第 1 集的象形文字使用此字体，其它集不加载。 */
+@font-face{font-family:"Noto Sans Egyptian Hieroglyphs";src:url("fonts/NotoSansEgyptianHieroglyphs-Regular.ttf") format("truetype");font-display:swap}
 .carve.instruction,.carve.clue{transform:translate(-50%,-50%);text-align:center;color:#493821;text-shadow:0 1px 1px #fff7d0;line-height:1.1;white-space:nowrap;padding:4px 6px;}
 .carve.instruction{left:50%;top:20%;width:32%;font-size:clamp(7px,1.4vw,19px);}
 .carve.clue{left:49.6%;top:19.5%;width:38%;font-size:clamp(7px,1.8vw,24px);}

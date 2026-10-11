@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-for-preview",
+  "userDecision": "Cici已审阅通过素材，并明确确认本次30张审定图与其他素材一起处理，允许随compass-preview仓库和公开预览页发布。",
+  "permissionScope": "仅本次已审定30张衍生图；原始孩子照片、角色参考图、未入选版本和源制作目录不在发布范围。",
+  "quality": 82,
+  "format": "WebP",
+  "originalsPreserved": true,
+  "count": 30,
+  "sourceBytes": 57414134,
+  "outputBytes": 5354090,
+  "files": [
+    {
+      "id": "prologue_01",
+      "category": "prologue",
+      "file": "hq/illus/prologue_01.webp",
+      "sourceFile": "illus/prologue/prologue_01_attic_v2.png",
+      "sourceSha256": "9a62cfd32f7dc8619844990fb658f161a997ff377b7ce75193c1908de1840b18",
+      "sourceBytes": 2230471,
+      "sha256": "297c3e9dceedc0607481c23bc278b50198f458ca1e4ec856add7036188c3ea7d",
+      "bytes": 183676,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "prologue_02",
+      "category": "prologue",
+      "file": "hq/illus/prologue_02.webp",
+      "sourceFile": "illus/prologue/prologue_02_compass_v2.png",
+      "sourceSha256": "ddf1097598bf1fe49d26d1320aee29cf01b3105dfc71fa24dafee302c86a62db",
+      "sourceBytes": 2256151,
+      "sha256": "435c2e190595b7a63274cf9d21d40908fb1c180f3557b18d54d0bfa50990d903",
+      "bytes": 166802,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "prologue_03",
+      "category": "prologue",
+      "file": "hq/illus/prologue_03.webp",
+      "sourceFile": "illus/prologue/prologue_03_slots_v4.png",
+      "sourceSha256": "4e6c7660167ba878c25636a5443e502606847454669d9cdc7f5d410e6f95146a",
+      "sourceBytes": 2258093,
+      "sha256": "c207a7490151b8cfdff7902ecc81c6f1989398acc6507a0578fbcaaf042a4870",
+      "bytes": 169654,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "prologue_04",
+      "category": "prologue",
+      "file": "hq/illus/prologue_04.webp",
+      "sourceFile": "illus/prologue/prologue_04_biscuit_v1.png",
+      "sourceSha256": "d2090a67b99ebcd906a040c938c21b6717c6130406ff2c6bd5df7749febe8136",
+      "sourceBytes": 2250908,
+      "sha256": "6ff3f85d07737596be0dd9e4dd68e00cbceea91d6e9b27a087a8beceece26685",
+      "bytes": 186444,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "prologue_05",
+      "category": "prologue",
+      "file": "hq/illus/prologue_05.webp",
+      "sourceFile": "illus/prologue/prologue_05_ready_v1.png",
+      "sourceSha256": "bc509fbe35c34e87d762a276a1302cd504ad366d6116effcc3fda9a15a52c289",
+      "sourceBytes": 2329945,
+      "sha256": "fa0f2d9e8aed5b6c9891439f2f37fae3e286163b9d7669e2c69ec2fe46f11f34",
+      "bytes": 197718,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "leo",
+      "category": "character",
+      "file": "hq/illus/char_leo.webp",
+      "sourceFile": "illus/characters/char_leo.png",
+      "sourceSha256": "5f77660be30c5bd7d98068b05c9adde1d6ad1312b8acaa36f7ad5a8501e43e61",
+      "sourceBytes": 1560226,
+      "sha256": "81f65e12707b9656db6d575ae31018aa44dcf684836470a807f76a963ed2e636",
+      "bytes": 92086,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "mia",
+      "category": "character",
+      "file": "hq/illus/char_mia.webp",
+      "sourceFile": "illus/characters/char_mia.png",
+      "sourceSha256": "4b3865c6464340338dcd7fb366501f4876b727bbd31b272f9a9e17f7ba61e444",
+      "sourceBytes": 1780322,
+      "sha256": "b6555302bbdefe2180081eb02a665343c7b746535d8b5e7647d81e6ac78aceb0",
+      "bytes": 121628,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "sam",
+      "category": "character",
+      "file": "hq/illus/char_sam.webp",
+      "sourceFile": "illus/characters/char_sam.png",
+      "sourceSha256": "1f7619d967c191cfc1234fb3d1af7a914bfb134d758e3ad5e64da55efad4137e",
+      "sourceBytes": 1789625,
+      "sha256": "4c049f85a602f7a5fae97bee2807cb42cbce547e2053c182a023f8cd530eec42",
+      "bytes": 128144,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "lily",
+      "category": "character",
+      "file": "hq/illus/char_lily.webp",
+      "sourceFile": "illus/characters/char_lily.png",
+      "sourceSha256": "9e3e6475fa3cbf1792d6a3e2d8d1424bc8a66e5ff2e4410750def454e51fa137",
+      "sourceBytes": 1608596,
+      "sha256": "97ceca648dd95396471a07053578e5a41123e15b8875ee8a4a95606916a5a31a",
+      "bytes": 100278,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "biscuit",
+      "category": "character",
+      "file": "hq/illus/char_biscuit.webp",
+      "sourceFile": "illus/characters/char_biscuit.png",
+      "sourceSha256": "735f3695289e8b25a4598ca4a391c4df42ab706dbfcb289d100b336dbfa97bb4",
+      "sourceBytes": 1566279,
+      "sha256": "1de6f3869c2420ade771df4c6e10bb0f1c44b5d81a92acbff8b465584fc1486e",
+      "bytes": 223220,
+      "dimensions": [
+        1374,
+        1145
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "grandpa",
+      "category": "character",
+      "file": "hq/illus/char_grandpa.webp",
+      "sourceFile": "illus/characters/char_grandpa.png",
+      "sourceSha256": "61680f596ba98c5da87b7c95a9b7fcfa9d7b780adee756876813878253e10587",
+      "sourceBytes": 1757481,
+      "sha256": "4207896dbb606ee5a036268bc70a586723e5506eda627fc8bea60631eaba7ab7",
+      "bytes": 107194,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "viking_captain",
+      "category": "character",
+      "file": "hq/illus/char_viking_captain.webp",
+      "sourceFile": "illus/characters/char_viking_captain.png",
+      "sourceSha256": "deec22d86803ba70bc9a3507389cb954aa282ec8f588a399e242e4ad49d83107",
+      "sourceBytes": 2371894,
+      "sha256": "c18c01101296196e19e1e152eec46806fcd27817fe40e1116a1db758aa581de0",
+      "bytes": 195926,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "owl",
+      "category": "character",
+      "file": "hq/illus/char_owl.webp",
+      "sourceFile": "illus/characters/char_owl.png",
+      "sourceSha256": "8a111ceb208d3199b04e213306ddcbc4cc5faa7e21bad98103c80068b2399348",
+      "sourceBytes": 1719396,
+      "sha256": "9b2c916cc4bdcc0ae1aaf8d6637fb58319603fd05ed88f7e6b0ba75cf241ce25",
+      "bytes": 238312,
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "dragon",
+      "category": "character",
+      "file": "hq/illus/char_dragon.webp",
+      "sourceFile": "illus/characters/char_dragon.png",
+      "sourceSha256": "278d747256983afc90e3575fd5192cd4afaccafa135a15bd2250e858a85a599a",
+      "sourceBytes": 1866213,
+      "sha256": "a3dd8083c6fb4c1d2a87986251cbab6739d9f2fe2ede0993512cfc7691eef0a8",
+      "bytes": 298352,
+      "dimensions": [
+        1296,
+        1214
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "bob",
+      "category": "character",
+      "file": "hq/illus/char_bob.webp",
+      "sourceFile": "illus/characters/char_bob.png",
+      "sourceSha256": "9f8e4c6e7de9ecad25d931e5ec69b4d2cb8e1ab8ab1e9a9a040d7a8264676ec2",
+      "sourceBytes": 1543312,
+      "sha256": "e0e2a5edba1f317a663597bcb5386c977365997c49f99b8058d64997d909c37b",
+      "bytes": 202036,
+      "dimensions": [
+        1243,
+        1266
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "tina",
+      "category": "character",
+      "file": "hq/illus/char_tina.webp",
+      "sourceFile": "illus/characters/char_tina.png",
+      "sourceSha256": "c5ab4b5e1140ef25eb5492261b2ef7d733abee0ea67641df2f736a80920852e2",
+      "sourceBytes": 1616182,
+      "sha256": "097ceaebf3dfa365c2597314bdd435be361ef4eec81381adf5b85023991caa29",
+      "bytes": 126332,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "zed",
+      "category": "character",
+      "file": "hq/illus/char_zed.webp",
+      "sourceFile": "illus/characters/char_zed.png",
+      "sourceSha256": "eafb05af8498cb7f3c509354a6e956412df821fefcc416d8df0a5f003d85395a",
+      "sourceBytes": 2285202,
+      "sha256": "2263bd672cf7d25b5daa223897f37a2b2418d95d6d0f8bea9b029ccdbf09c818",
+      "bytes": 250352,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "olympia_officer",
+      "category": "character",
+      "file": "hq/illus/char_olympia_officer.webp",
+      "sourceFile": "illus/characters/char_olympia_officer.png",
+      "sourceSha256": "31987d795e5ebbe87f593cafa0c311c011bb1f5cbcd1908b7c0076c6239fc194",
+      "sourceBytes": 1796294,
+      "sha256": "77d0d01224d68c419c508d351df67546c8619f09a2145a9c30574b0e6f515a2f",
+      "bytes": 110730,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "dad",
+      "category": "character",
+      "file": "hq/illus/char_dad.webp",
+      "sourceFile": "illus/characters/char_dad.png",
+      "sourceSha256": "1ec06db980c0ca9e61883add99acdf6eab9956ec8cce24bdc0725c1b7dae0bd7",
+      "sourceBytes": 1701510,
+      "sha256": "4b4748612300a2928f6abd20dbd901579f05aa39aba40ba54fa34637ae9a9d3f",
+      "bytes": 105894,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "dinosaur_family",
+      "category": "character",
+      "file": "hq/illus/char_dinosaur_family.webp",
+      "sourceFile": "illus/characters/char_dinosaur_family.png",
+      "sourceSha256": "5d37c1a06014817aefc165bc2ef2aa68684685a278ebf69c28206ed5f55451d7",
+      "sourceBytes": 2292249,
+      "sha256": "9dcfa2445e2444b433257b355ac1b657809f241fcf95f352a7d07f8ecc190368",
+      "bytes": 239042,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "mars_commander",
+      "category": "character",
+      "file": "hq/illus/char_mars_commander.webp",
+      "sourceFile": "illus/characters/char_mars_commander.png",
+      "sourceSha256": "88fc9a1df0c280154a53b454c0a3a88c1207031dd027438635da36cdc729a663",
+      "sourceBytes": 1840287,
+      "sha256": "ffcdd3b2c2df35e7a45d13f75f44f75959d6ce366d55b51bbb0670315adb86a2",
+      "bytes": 127848,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "cheetah",
+      "category": "character",
+      "file": "hq/illus/char_cheetah.webp",
+      "sourceFile": "illus/characters/char_cheetah.png",
+      "sourceSha256": "4db7cfd0983e0dd35dc280a18858d0881f38323eecd1e88d0218994f9ba5319c",
+      "sourceBytes": 1349870,
+      "sha256": "80a5d2842798668d5d0158f7e302feee2b8882b2bb8eee5058c46ebce4d71b6a",
+      "bytes": 212898,
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "elephant",
+      "category": "character",
+      "file": "hq/illus/char_elephant.webp",
+      "sourceFile": "illus/characters/char_elephant.png",
+      "sourceSha256": "80ef1c49be30366c41f990779243d92c9263c9d4be7d3d114b8d58dc59386900",
+      "sourceBytes": 1837032,
+      "sha256": "fe38a5441b7148d03f37ed0f5a0e66114a84959ea320445f378c7cd1914ec294",
+      "bytes": 239564,
+      "dimensions": [
+        1218,
+        1291
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "mermaid_mayor",
+      "category": "character",
+      "file": "hq/illus/char_mermaid_mayor.webp",
+      "sourceFile": "illus/characters/char_mermaid_mayor.png",
+      "sourceSha256": "b47921be0b5177937fb5de5012a0c82cda2af7cc321d8538ae00e346104b27e3",
+      "sourceBytes": 2229295,
+      "sha256": "8e9c7f3605fe987e49f5252ae0083821aa172caafdf5781f533ae17fc0cff229",
+      "bytes": 256628,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "redbeard",
+      "category": "character",
+      "file": "hq/illus/char_redbeard.webp",
+      "sourceFile": "illus/characters/char_redbeard.png",
+      "sourceSha256": "00263c6303238a79feb110f3c274ff1cab428b2d59619a4bbd1ba57b28a4a299",
+      "sourceBytes": 2246172,
+      "sha256": "48ba96f2cda299aed02b82b94dc9da8ca4ad360c40ac09464f44d04b979a9d7c",
+      "bytes": 184848,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "moon_robot",
+      "category": "character",
+      "file": "hq/illus/char_moon_robot.webp",
+      "sourceFile": "illus/characters/char_moon_robot.png",
+      "sourceSha256": "c03e4d87b174d48202c03fd880441a9320b80417dde9f11cfbe76da04b634a57",
+      "sourceBytes": 2281489,
+      "sha256": "312a83e4e1fe850dc4d5c73f8abe134ecb4d3177c3a435abfdc9fd860b9d7891",
+      "bytes": 205938,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": false
+    },
+    {
+      "id": "museum_guard",
+      "category": "character",
+      "file": "hq/illus/char_museum_guard.webp",
+      "sourceFile": "illus/characters/char_museum_guard.png",
+      "sourceSha256": "eba3439735f1277f0c2b8eb160ab7334e8495f268a5e3ad4a7ffafefe84976f9",
+      "sourceBytes": 1699389,
+      "sha256": "56cdd45af4b3e8a508e00185335ee5603741405124dc7da3403d5906a8651ebf",
+      "bytes": 98616,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "clockwork_mouse",
+      "category": "character",
+      "file": "hq/illus/char_clockwork_mouse.webp",
+      "sourceFile": "illus/characters/char_clockwork_mouse.png",
+      "sourceSha256": "879e24572f34ab9fc891cf744f180e73ead8c589f9b8a8532a008bb0609bbc83",
+      "sourceBytes": 1281020,
+      "sha256": "18f668e8827e64fed1dcc15bc4facdc86d6f4c61f244ca82a8ababb3f50948da",
+      "bytes": 216158,
+      "dimensions": [
+        1309,
+        1201
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "grumble",
+      "category": "character",
+      "file": "hq/illus/char_grumble.webp",
+      "sourceFile": "illus/characters/char_grumble.png",
+      "sourceSha256": "06a5daa098b77337aef3d6220087956343ca91c668acdb39c4355a21a1786c6f",
+      "sourceBytes": 2526672,
+      "sha256": "83bd4f629863841b2b61a24a6d204be9b276f18dc3a3d4e24e8ea2b21a4d10b2",
+      "bytes": 283742,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    },
+    {
+      "id": "mum",
+      "category": "character",
+      "file": "hq/illus/char_mum.webp",
+      "sourceFile": "illus/characters/char_mum.png",
+      "sourceSha256": "276875667a04d6e0c6c94f0a2ca21961f9e4320fed4301c99cbc28a965f9568a",
+      "sourceBytes": 1542559,
+      "sha256": "d6dba00a3bda5f85658b9ad48965242b0da0cd50b41099ea209214be5bb30a9c",
+      "bytes": 84030,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "derivedFromCharacterReference": true
+    }
+  ]
+}

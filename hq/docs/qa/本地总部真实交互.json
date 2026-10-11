@@ -1,0 +1,2063 @@
+{
+  "base": "http://127.0.0.1:8756/",
+  "startedAt": "2026-10-11T10:10:36.953Z",
+  "status": "passed",
+  "viewports": [
+    [
+      360,
+      740
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      667,
+      375
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "storageIsolation": "new browser context per viewport; only isolated fixtures are written",
+  "scope": {
+    "allViewportFixtures": [
+      "zero",
+      "one",
+      "sixteen",
+      "seventeen"
+    ],
+    "allViewportManualProloguePages": 5,
+    "allViewportManualPrologueLines": 10,
+    "allViewportBadgeDetails": 19,
+    "allViewportBadgeFirstSourceClicks": 19,
+    "fullPrologueAudioViewport": "390x844",
+    "eventTests": "synthetic storage and pageshow(persisted=true) handler checks; not a native multi-tab or bfcache certification",
+    "fullPrologueAudioViewports": [
+      "390x844",
+      "667x375",
+      "1024x768"
+    ],
+    "nativeSpeedSelection": "All controls mouse hit-tested. Native keyboard used on mobile/landscape; desktop uses explicit standard form select API following mouse click; no application hidden actions."
+  },
+  "runs": [
+    {
+      "viewport": [
+        360,
+        740
+      ],
+      "assertions": 616,
+      "clicks": 174,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 987
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7331
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 242
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 451
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 185
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 270
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 260
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 440
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 184
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 172
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 166
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 576
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 458
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 176
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 178
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 177
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 158
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6394
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 931
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 9949
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5500
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 223
+        }
+      ],
+      "startedAt": "2026-10-11T10:10:37.367Z",
+      "finishedAt": "2026-10-11T10:11:13.034Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-before-tool-recheck.json",
+      "durationSeconds": 35.667,
+      "speedSelectionMethod": "native keyboard after real control click"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "assertions": 626,
+      "clicks": 178,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 1002
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7333
+        },
+        {
+          "name": "full-prologue-real-audio",
+          "ok": true,
+          "durationMs": 22898
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 325
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 518
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 223
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 267
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 312
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 534
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 232
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 173
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 171
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 632
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 546
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 246
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 171
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 174
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 236
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6483
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 1015
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 10155
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5577
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 224
+        }
+      ],
+      "startedAt": "2026-10-11T10:11:13.059Z",
+      "finishedAt": "2026-10-11T10:12:12.771Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-before-tool-recheck.json",
+      "durationSeconds": 59.712,
+      "speedSelectionMethod": "native keyboard after real control click"
+    },
+    {
+      "viewport": [
+        667,
+        375
+      ],
+      "assertions": 626,
+      "clicks": 178,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 995
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7499
+        },
+        {
+          "name": "full-prologue-real-audio",
+          "ok": true,
+          "durationMs": 23414
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 255
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 459
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 188
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 275
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 175
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 267
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 458
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 190
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 178
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 182
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 605
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 459
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 185
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 184
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 164
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6490
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 936
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 11420
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5629
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 203
+        }
+      ],
+      "startedAt": "2026-10-11T10:16:16.522Z",
+      "prologueAudio": {
+        "elapsedSeconds": 22.62,
+        "approvedSpeechSeconds": 21.525,
+        "visitedLines": [
+          "0:0",
+          "0:1",
+          "1:0",
+          "1:1",
+          "2:0",
+          "2:1",
+          "2:2",
+          "3:0",
+          "4:0",
+          "4:1"
+        ],
+        "highlightedWords": 54,
+        "done": true
+      },
+      "downloads": [
+        {
+          "ep": 1,
+          "url": "http://127.0.0.1:8756/ep01/downloads/ep01_sentence_structure.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第1集_句子成分_知识点.docx",
+          "downloadedBytes": 39394,
+          "status": 200,
+          "ok": true,
+          "bytes": 39394,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 2,
+          "url": "http://127.0.0.1:8756/ep02/downloads/ep02_nouns_articles.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第2集_名词与冠词知识地图.docx",
+          "downloadedBytes": 39454,
+          "status": 200,
+          "ok": true,
+          "bytes": 39454,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 3,
+          "url": "http://127.0.0.1:8756/ep03/downloads/ep03_pronouns.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第3集_代词_知识点.docx",
+          "downloadedBytes": 40176,
+          "status": 200,
+          "ok": true,
+          "bytes": 40176,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 4,
+          "url": "http://127.0.0.1:8756/ep04/downloads/ep04_questions_conjunctions.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
+          "downloadedBytes": 39511,
+          "status": 200,
+          "ok": true,
+          "bytes": 39511,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 7,
+          "url": "http://127.0.0.1:8756/ep07/downloads/ep07_adjectives_exclamations.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
+          "downloadedBytes": 39494,
+          "status": 200,
+          "ok": true,
+          "bytes": 39494,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 8,
+          "url": "http://127.0.0.1:8756/ep08/downloads/ep08_present_continuous.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
+          "downloadedBytes": 39891,
+          "status": 200,
+          "ok": true,
+          "bytes": 39891,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 11,
+          "url": "http://127.0.0.1:8756/ep11/downloads/ep11_comparisons_adverbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
+          "downloadedBytes": 40023,
+          "status": 200,
+          "ok": true,
+          "bytes": 40023,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 12,
+          "url": "http://127.0.0.1:8756/ep12/downloads/ep12_prepositions_it_tags.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
+          "downloadedBytes": 39476,
+          "status": 200,
+          "ok": true,
+          "bytes": 39476,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 15,
+          "url": "http://127.0.0.1:8756/ep15/downloads/ep15_past_perfect_passive.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
+          "downloadedBytes": 40195,
+          "status": 200,
+          "ok": true,
+          "bytes": 40195,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 16,
+          "url": "http://127.0.0.1:8756/ep16/downloads/ep16_nonfinite_verbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第16集_非谓语动词_知识点.docx",
+          "downloadedBytes": 40362,
+          "status": 200,
+          "ok": true,
+          "bytes": 40362,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 17,
+          "url": "http://127.0.0.1:8756/ep17/downloads/ep17_inversion_relative_clauses.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/667x375/罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
+          "downloadedBytes": 40710,
+          "status": 200,
+          "ok": true,
+          "bytes": 40710,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "finishedAt": "2026-10-11T10:17:17.591Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck.json",
+      "durationSeconds": 61.069,
+      "speedSelectionMethod": "native keyboard after real control click"
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "assertions": 616,
+      "clicks": 174,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 1000
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7509
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 248
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 457
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 182
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 262
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 169
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 301
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 453
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 183
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 587
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 457
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 175
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 172
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 176
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 164
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6467
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 955
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 10215
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5567
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 240
+        }
+      ],
+      "startedAt": "2026-10-11T10:17:17.648Z",
+      "downloads": [
+        {
+          "ep": 1,
+          "url": "http://127.0.0.1:8756/ep01/downloads/ep01_sentence_structure.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第1集_句子成分_知识点.docx",
+          "downloadedBytes": 39394,
+          "status": 200,
+          "ok": true,
+          "bytes": 39394,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 2,
+          "url": "http://127.0.0.1:8756/ep02/downloads/ep02_nouns_articles.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第2集_名词与冠词知识地图.docx",
+          "downloadedBytes": 39454,
+          "status": 200,
+          "ok": true,
+          "bytes": 39454,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 3,
+          "url": "http://127.0.0.1:8756/ep03/downloads/ep03_pronouns.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第3集_代词_知识点.docx",
+          "downloadedBytes": 40176,
+          "status": 200,
+          "ok": true,
+          "bytes": 40176,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 4,
+          "url": "http://127.0.0.1:8756/ep04/downloads/ep04_questions_conjunctions.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
+          "downloadedBytes": 39511,
+          "status": 200,
+          "ok": true,
+          "bytes": 39511,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 7,
+          "url": "http://127.0.0.1:8756/ep07/downloads/ep07_adjectives_exclamations.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
+          "downloadedBytes": 39494,
+          "status": 200,
+          "ok": true,
+          "bytes": 39494,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 8,
+          "url": "http://127.0.0.1:8756/ep08/downloads/ep08_present_continuous.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
+          "downloadedBytes": 39891,
+          "status": 200,
+          "ok": true,
+          "bytes": 39891,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 11,
+          "url": "http://127.0.0.1:8756/ep11/downloads/ep11_comparisons_adverbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
+          "downloadedBytes": 40023,
+          "status": 200,
+          "ok": true,
+          "bytes": 40023,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 12,
+          "url": "http://127.0.0.1:8756/ep12/downloads/ep12_prepositions_it_tags.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
+          "downloadedBytes": 39476,
+          "status": 200,
+          "ok": true,
+          "bytes": 39476,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 15,
+          "url": "http://127.0.0.1:8756/ep15/downloads/ep15_past_perfect_passive.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
+          "downloadedBytes": 40195,
+          "status": 200,
+          "ok": true,
+          "bytes": 40195,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 16,
+          "url": "http://127.0.0.1:8756/ep16/downloads/ep16_nonfinite_verbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第16集_非谓语动词_知识点.docx",
+          "downloadedBytes": 40362,
+          "status": 200,
+          "ok": true,
+          "bytes": 40362,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 17,
+          "url": "http://127.0.0.1:8756/ep17/downloads/ep17_inversion_relative_clauses.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck-downloads-2026-10-11T10-16-16-043Z/844x390/罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
+          "downloadedBytes": 40710,
+          "status": 200,
+          "ok": true,
+          "bytes": 40710,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "finishedAt": "2026-10-11T10:17:54.062Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck.json",
+      "durationSeconds": 36.414,
+      "speedSelectionMethod": "native keyboard after real control click"
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "assertions": 626,
+      "clicks": 178,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 1039
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7501
+        },
+        {
+          "name": "full-prologue-real-audio",
+          "ok": true,
+          "durationMs": 23425
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 256
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 457
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 190
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 277
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 186
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 267
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 460
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 181
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 180
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 592
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 483
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 178
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 178
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 164
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6453
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 953
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 10364
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5566
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 231
+        }
+      ],
+      "startedAt": "2026-10-11T10:22:21.704Z",
+      "formSelections": [
+        {
+          "selector": "#prologue-rate",
+          "value": 0.8,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1.2,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        }
+      ],
+      "prologueAudio": {
+        "elapsedSeconds": 22.622,
+        "approvedSpeechSeconds": 21.525,
+        "visitedLines": [
+          "0:0",
+          "0:1",
+          "1:0",
+          "1:1",
+          "2:0",
+          "2:1",
+          "2:2",
+          "3:0",
+          "4:0",
+          "4:1"
+        ],
+        "highlightedWords": 54,
+        "done": true
+      },
+      "downloads": [
+        {
+          "ep": 1,
+          "url": "http://127.0.0.1:8756/ep01/downloads/ep01_sentence_structure.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第1集_句子成分_知识点.docx",
+          "downloadedBytes": 39394,
+          "status": 200,
+          "ok": true,
+          "bytes": 39394,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 2,
+          "url": "http://127.0.0.1:8756/ep02/downloads/ep02_nouns_articles.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第2集_名词与冠词知识地图.docx",
+          "downloadedBytes": 39454,
+          "status": 200,
+          "ok": true,
+          "bytes": 39454,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 3,
+          "url": "http://127.0.0.1:8756/ep03/downloads/ep03_pronouns.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第3集_代词_知识点.docx",
+          "downloadedBytes": 40176,
+          "status": 200,
+          "ok": true,
+          "bytes": 40176,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 4,
+          "url": "http://127.0.0.1:8756/ep04/downloads/ep04_questions_conjunctions.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
+          "downloadedBytes": 39511,
+          "status": 200,
+          "ok": true,
+          "bytes": 39511,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 7,
+          "url": "http://127.0.0.1:8756/ep07/downloads/ep07_adjectives_exclamations.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
+          "downloadedBytes": 39494,
+          "status": 200,
+          "ok": true,
+          "bytes": 39494,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 8,
+          "url": "http://127.0.0.1:8756/ep08/downloads/ep08_present_continuous.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
+          "downloadedBytes": 39891,
+          "status": 200,
+          "ok": true,
+          "bytes": 39891,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 11,
+          "url": "http://127.0.0.1:8756/ep11/downloads/ep11_comparisons_adverbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
+          "downloadedBytes": 40023,
+          "status": 200,
+          "ok": true,
+          "bytes": 40023,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 12,
+          "url": "http://127.0.0.1:8756/ep12/downloads/ep12_prepositions_it_tags.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
+          "downloadedBytes": 39476,
+          "status": 200,
+          "ok": true,
+          "bytes": 39476,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 15,
+          "url": "http://127.0.0.1:8756/ep15/downloads/ep15_past_perfect_passive.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
+          "downloadedBytes": 40195,
+          "status": 200,
+          "ok": true,
+          "bytes": 40195,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 16,
+          "url": "http://127.0.0.1:8756/ep16/downloads/ep16_nonfinite_verbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第16集_非谓语动词_知识点.docx",
+          "downloadedBytes": 40362,
+          "status": 200,
+          "ok": true,
+          "bytes": 40362,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 17,
+          "url": "http://127.0.0.1:8756/ep17/downloads/ep17_inversion_relative_clauses.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1024x768/罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
+          "downloadedBytes": 40710,
+          "status": 200,
+          "ok": true,
+          "bytes": 40710,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "finishedAt": "2026-10-11T10:23:21.719Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck.json",
+      "durationSeconds": 60.015,
+      "speedSelectionMethod": "standard form select API after real control click"
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "assertions": 616,
+      "clicks": 174,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 995
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7511
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 248
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 461
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 186
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 273
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 179
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 263
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 457
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 193
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 184
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 182
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 604
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 445
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 178
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 175
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 185
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 175
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6444
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 949
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 10219
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5553
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 228
+        }
+      ],
+      "startedAt": "2026-10-11T10:23:21.749Z",
+      "formSelections": [
+        {
+          "selector": "#prologue-rate",
+          "value": 0.8,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1.2,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        }
+      ],
+      "downloads": [
+        {
+          "ep": 1,
+          "url": "http://127.0.0.1:8756/ep01/downloads/ep01_sentence_structure.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第1集_句子成分_知识点.docx",
+          "downloadedBytes": 39394,
+          "status": 200,
+          "ok": true,
+          "bytes": 39394,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 2,
+          "url": "http://127.0.0.1:8756/ep02/downloads/ep02_nouns_articles.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第2集_名词与冠词知识地图.docx",
+          "downloadedBytes": 39454,
+          "status": 200,
+          "ok": true,
+          "bytes": 39454,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 3,
+          "url": "http://127.0.0.1:8756/ep03/downloads/ep03_pronouns.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第3集_代词_知识点.docx",
+          "downloadedBytes": 40176,
+          "status": 200,
+          "ok": true,
+          "bytes": 40176,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 4,
+          "url": "http://127.0.0.1:8756/ep04/downloads/ep04_questions_conjunctions.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
+          "downloadedBytes": 39511,
+          "status": 200,
+          "ok": true,
+          "bytes": 39511,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 7,
+          "url": "http://127.0.0.1:8756/ep07/downloads/ep07_adjectives_exclamations.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
+          "downloadedBytes": 39494,
+          "status": 200,
+          "ok": true,
+          "bytes": 39494,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 8,
+          "url": "http://127.0.0.1:8756/ep08/downloads/ep08_present_continuous.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
+          "downloadedBytes": 39891,
+          "status": 200,
+          "ok": true,
+          "bytes": 39891,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 11,
+          "url": "http://127.0.0.1:8756/ep11/downloads/ep11_comparisons_adverbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
+          "downloadedBytes": 40023,
+          "status": 200,
+          "ok": true,
+          "bytes": 40023,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 12,
+          "url": "http://127.0.0.1:8756/ep12/downloads/ep12_prepositions_it_tags.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
+          "downloadedBytes": 39476,
+          "status": 200,
+          "ok": true,
+          "bytes": 39476,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 15,
+          "url": "http://127.0.0.1:8756/ep15/downloads/ep15_past_perfect_passive.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
+          "downloadedBytes": 40195,
+          "status": 200,
+          "ok": true,
+          "bytes": 40195,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 16,
+          "url": "http://127.0.0.1:8756/ep16/downloads/ep16_nonfinite_verbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第16集_非谓语动词_知识点.docx",
+          "downloadedBytes": 40362,
+          "status": 200,
+          "ok": true,
+          "bytes": 40362,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 17,
+          "url": "http://127.0.0.1:8756/ep17/downloads/ep17_inversion_relative_clauses.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1280x800/罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
+          "downloadedBytes": 40710,
+          "status": 200,
+          "ok": true,
+          "bytes": 40710,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "finishedAt": "2026-10-11T10:23:58.127Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck.json",
+      "durationSeconds": 36.378,
+      "speedSelectionMethod": "standard form select API after real control click"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "assertions": 616,
+      "clicks": 174,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "first-visit-skip-persists",
+          "ok": true,
+          "durationMs": 1092
+        },
+        {
+          "name": "manual-prologue-5-scenes-10-lines-controls",
+          "ok": true,
+          "durationMs": 7508
+        },
+        {
+          "name": "zero-map",
+          "ok": true,
+          "durationMs": 366
+        },
+        {
+          "name": "zero-characters",
+          "ok": true,
+          "durationMs": 529
+        },
+        {
+          "name": "zero-journal",
+          "ok": true,
+          "durationMs": 208
+        },
+        {
+          "name": "zero-badges",
+          "ok": true,
+          "durationMs": 265
+        },
+        {
+          "name": "zero-downloads",
+          "ok": true,
+          "durationMs": 174
+        },
+        {
+          "name": "one-map",
+          "ok": true,
+          "durationMs": 360
+        },
+        {
+          "name": "one-characters",
+          "ok": true,
+          "durationMs": 518
+        },
+        {
+          "name": "one-journal",
+          "ok": true,
+          "durationMs": 241
+        },
+        {
+          "name": "one-badges",
+          "ok": true,
+          "durationMs": 172
+        },
+        {
+          "name": "one-downloads",
+          "ok": true,
+          "durationMs": 174
+        },
+        {
+          "name": "sixteen-map",
+          "ok": true,
+          "durationMs": 668
+        },
+        {
+          "name": "sixteen-characters",
+          "ok": true,
+          "durationMs": 534
+        },
+        {
+          "name": "sixteen-journal",
+          "ok": true,
+          "durationMs": 271
+        },
+        {
+          "name": "sixteen-badges",
+          "ok": true,
+          "durationMs": 170
+        },
+        {
+          "name": "sixteen-downloads",
+          "ok": true,
+          "durationMs": 175
+        },
+        {
+          "name": "seventeen-map",
+          "ok": true,
+          "durationMs": 263
+        },
+        {
+          "name": "seventeen-characters",
+          "ok": true,
+          "durationMs": 6423
+        },
+        {
+          "name": "seventeen-journal",
+          "ok": true,
+          "durationMs": 1064
+        },
+        {
+          "name": "seventeen-badges",
+          "ok": true,
+          "durationMs": 10146
+        },
+        {
+          "name": "seventeen-downloads",
+          "ok": true,
+          "durationMs": 5601
+        },
+        {
+          "name": "ep17-direct-and-jump-gates",
+          "ok": true,
+          "durationMs": 213
+        }
+      ],
+      "startedAt": "2026-10-11T10:23:58.157Z",
+      "formSelections": [
+        {
+          "selector": "#prologue-rate",
+          "value": 0.8,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1.2,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        },
+        {
+          "selector": "#prologue-rate",
+          "value": 1,
+          "method": "real mouse hit-test and click, then Puppeteer standard form select API"
+        }
+      ],
+      "downloads": [
+        {
+          "ep": 1,
+          "url": "http://127.0.0.1:8756/ep01/downloads/ep01_sentence_structure.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第1集_句子成分_知识点.docx",
+          "downloadedBytes": 39394,
+          "status": 200,
+          "ok": true,
+          "bytes": 39394,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 2,
+          "url": "http://127.0.0.1:8756/ep02/downloads/ep02_nouns_articles.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第2集_名词与冠词知识地图.docx",
+          "downloadedBytes": 39454,
+          "status": 200,
+          "ok": true,
+          "bytes": 39454,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 3,
+          "url": "http://127.0.0.1:8756/ep03/downloads/ep03_pronouns.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第3集_代词_知识点.docx",
+          "downloadedBytes": 40176,
+          "status": 200,
+          "ok": true,
+          "bytes": 40176,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 4,
+          "url": "http://127.0.0.1:8756/ep04/downloads/ep04_questions_conjunctions.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第4集_疑问句与并列句_知识点.docx",
+          "downloadedBytes": 39511,
+          "status": 200,
+          "ok": true,
+          "bytes": 39511,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 7,
+          "url": "http://127.0.0.1:8756/ep07/downloads/ep07_adjectives_exclamations.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
+          "downloadedBytes": 39494,
+          "status": 200,
+          "ok": true,
+          "bytes": 39494,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 8,
+          "url": "http://127.0.0.1:8756/ep08/downloads/ep08_present_continuous.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第8集_动词形式与现在进行时_知识点.docx",
+          "downloadedBytes": 39891,
+          "status": 200,
+          "ok": true,
+          "bytes": 39891,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 11,
+          "url": "http://127.0.0.1:8756/ep11/downloads/ep11_comparisons_adverbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第11集_比较级最高级与副词_知识点.docx",
+          "downloadedBytes": 40023,
+          "status": 200,
+          "ok": true,
+          "bytes": 40023,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 12,
+          "url": "http://127.0.0.1:8756/ep12/downloads/ep12_prepositions_it_tags.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第12集_介词搭配、it 与反意疑问句_知识点.docx",
+          "downloadedBytes": 39476,
+          "status": 200,
+          "ok": true,
+          "bytes": 39476,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 15,
+          "url": "http://127.0.0.1:8756/ep15/downloads/ep15_past_perfect_passive.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第15集_过去完成时与被动语态_知识点.docx",
+          "downloadedBytes": 40195,
+          "status": 200,
+          "ok": true,
+          "bytes": 40195,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 16,
+          "url": "http://127.0.0.1:8756/ep16/downloads/ep16_nonfinite_verbs.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第16集_非谓语动词_知识点.docx",
+          "downloadedBytes": 40362,
+          "status": 200,
+          "ok": true,
+          "bytes": 40362,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "ep": 17,
+          "url": "http://127.0.0.1:8756/ep17/downloads/ep17_inversion_relative_clauses.docx",
+          "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-downloads-2026-10-11T10-22-21-270Z/1440x900/罗盘冒险队_第17集_倒装与定语从句_知识点.docx",
+          "downloadedBytes": 40710,
+          "status": 200,
+          "ok": true,
+          "bytes": 40710,
+          "zip": true,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "finishedAt": "2026-10-11T10:24:35.383Z",
+      "ok": true,
+      "sourceResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck.json",
+      "durationSeconds": 37.226,
+      "speedSelectionMethod": "standard form select API after real control click"
+    }
+  ],
+  "supplemental": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "assertions": 13,
+      "clicks": 3,
+      "failures": [],
+      "jsErrors": [],
+      "httpErrors": [],
+      "requestFailures": [],
+      "cases": [
+        {
+          "name": "reduced-motion-and-event-handlers",
+          "ok": true,
+          "durationMs": 614
+        }
+      ],
+      "startedAt": "2026-10-11T10:24:35.407Z",
+      "finishedAt": "2026-10-11T10:24:36.213Z",
+      "ok": true
+    }
+  ],
+  "screenshots": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "prologue-first",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-prologue-first.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "prologue-last",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-prologue-last.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "map-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-map-zero.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "characters-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-characters-zero.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "journal-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-journal-zero.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "map-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-map-one.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "characters-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-characters-one.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "journal-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-journal-one.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "map-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-map-sixteen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "characters-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-characters-sixteen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "journal-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-journal-sixteen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "map-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-map-seventeen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "mia-playing",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-mia-playing.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "characters-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-characters-seventeen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "full-story",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-full-story.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "journal-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-journal-seventeen.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "badge-S",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-badge-S.png"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "downloads-all",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-screenshots/390x844-downloads-all.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "prologue-first",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-prologue-first.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "prologue-last",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-prologue-last.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "map-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-map-zero.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "characters-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-characters-zero.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "journal-zero",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-journal-zero.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "map-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-map-one.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "characters-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-characters-one.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "journal-one",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-journal-one.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "map-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-map-sixteen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "characters-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-characters-sixteen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "journal-sixteen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-journal-sixteen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "map-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-map-seventeen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "mia-playing",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-mia-playing.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "characters-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-characters-seventeen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "full-story",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-full-story.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "journal-seventeen",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-journal-seventeen.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "badge-S",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-badge-S.png"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "name": "downloads-all",
+      "path": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck-screenshots/1440x900-downloads-all.png"
+    }
+  ],
+  "finishedAt": "2026-10-11T10:24:36.285Z",
+  "summary": {
+    "runs": 7,
+    "supplementalRuns": 1,
+    "failedRuns": 0,
+    "assertions": 4355,
+    "realClicks": 1233,
+    "caseCount": 165,
+    "jsErrors": 0,
+    "httpErrors": 0,
+    "requestFailures": 0,
+    "selectedRunSeconds": 326.481
+  },
+  "provenance": {
+    "kind": "merged verified viewport runs",
+    "sources": [
+      "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-before-tool-recheck.json",
+      "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-tool-recheck.json",
+      "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-desktop-recheck.json"
+    ],
+    "initialExploratoryResult": "/Users/tianchangchun/Study/compass/compass-m1-m2/tools/tests/results/hq-local-initial.json",
+    "reason": "Retain passing complete cases; rerun entire affected viewports after test-only ordinary-list scroll alignment and macOS native select automation corrections. No assertion removed or weakened. Favicon fixed by root before retained cases; final 1440 screenshot covers title-width adjustment.",
+    "currentTestSha256": "f77e50fd24c72f8b89fced012b6303bd4fef4926b209d432e631892be68feb85"
+  }
+}

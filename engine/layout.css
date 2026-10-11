@@ -77,3 +77,43 @@ body.ending #sub{top:auto!important;height:auto!important;max-height:30vh}body.e
  #panel .btn.big{font-size:16px;padding:9px 18px}
  .treasures img{max-height:22vh}
 }
+
+/* v5: keep the existing exercise layout, with softer paper edges and reachable actions. */
+#sub{border:1px solid #b69a68!important;box-shadow:0 4px 14px #081b2426,0 14px 34px #081b2433!important}
+#panel .nextwrap:not(:empty){background:linear-gradient(#fbf6e900,#fbf6e9 35%);padding:12px 8px 4px}
+#panel .card>#ok,#panel .card>#carve,#panel .card>#again{box-shadow:0 2px 5px #51371222,0 8px 20px #51371218;background-clip:padding-box}
+#panel.endpanel>.ending-layout{margin:auto;flex-shrink:0}
+#panel.endpanel .ending-card{max-height:none!important;overflow:visible!important}
+@media (orientation:landscape) and (max-height:520px){
+ #hud{top:calc(var(--site-nav-height,0px) + 6px)!important;flex-wrap:nowrap!important}
+ #hud .btn{padding:7px!important;width:40px;min-width:40px;min-height:40px!important;border-radius:12px}
+ #hud .btn .button-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ #hud #title{max-width:32vw;min-width:80px}.hud-hq{display:inline-flex!important}#hud .ui-icon{width:21px;height:21px}
+ #start{padding:8px 18px 16px}.start-card{display:grid;grid-template-columns:minmax(180px,.9fr) 1.15fr;gap:22px;padding:14px 30px;max-width:850px}
+ .start-art{max-width:220px;margin:auto}.start-art .compass-art{max-width:min(48vh,220px)}.start-art .compass-progress{max-width:210px}.compass-progress-copy{font-size:11px;margin-top:3px}
+ .start-copy{text-align:left}#start h1{font-size:30px;margin-bottom:10px}#start .subt{font-size:14px;line-height:1.65;margin-bottom:12px}.chapter-overline{font-size:10px;margin-bottom:8px!important}
+ .start-actions{flex-direction:row;align-items:center;flex-wrap:wrap;gap:8px}.start-actions .btn.big{font-size:16px;min-width:100px;padding:10px 16px}.start-actions .secondary{font-size:13px;padding:8px 10px}
+ .ending-layout{grid-template-columns:minmax(200px,.85fr) 1.2fr;gap:16px}.ending-art{width:100%;max-width:270px;padding:0}.ending-art .compass-art{width:min(54vh,250px);margin:auto}.ending-card{padding:16px 20px}.ending-actions{margin-top:12px}
+}
+@media (max-width:380px) and (orientation:portrait){.start-art{max-width:245px}#start h1{font-size:28px}.start-card{padding:12px 18px 20px;gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+body.rm *,body.rm *::before,body.rm *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+/* Narrow landscape: navigation labels and the last-line destination stay inside the subtitle card. */
+@media (orientation:landscape) and (max-height:520px){
+ #lnav{gap:6px;min-width:0}
+ #lnav .btn{flex:1 1 0;min-width:0;max-width:100%;flex-wrap:wrap;column-gap:4px;row-gap:0;padding:6px!important;font-size:12px!important;line-height:1.2}
+ #lnav .btn .ui-icon{width:18px;height:18px}
+ #lnav .btn::after{flex-basis:100%;font-size:11px;line-height:1.15}
+}
+/* Completion text scrolls independently; the two exit actions never leave the viewport. */
+#panel.endpanel{overflow:hidden!important}
+#panel.endpanel>.ending-layout{height:100%;min-height:0;grid-template-rows:minmax(0,1fr)}
+#panel.endpanel .ending-card{display:flex;flex-direction:column;min-height:0;max-height:100%!important;overflow:hidden!important}
+.ending-card>.chapter-overline{flex:none}
+#ending-copy{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.ending-details{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:2px}
+.ending-actions{flex:none;padding-top:6px;background:var(--paper-light)}
+@media(max-width:640px) and (orientation:portrait){
+ #panel.endpanel>.ending-layout{grid-template-rows:auto minmax(0,1fr)}
+ .ending-art .compass-art{width:min(100%,32dvh)}
+}
