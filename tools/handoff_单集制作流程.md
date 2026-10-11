@@ -7,14 +7,14 @@
 ## 0. 当前硬规则（先读）
 
 - **新的一集只写内容，不写代码。** 播放器、题型、布局、结尾动画都在共享引擎 `engine/` 里；一集的目录只放 `index.html`（标准外壳）、`episode.js`（内容配置）、`audio/`、`illus/`、`downloads/`、`docs/`，需要时加 `episode.css`（只能写本集插图上叠字的位置）。
-- **不要改 `engine/`。** 需要新题型或引擎有 bug，先告诉 Change，由 Willo 改引擎（改一次，所有集一起受益）。引擎一改会影响 ep02 和 ep16，所以必须两集都回归测试。
+- **不要改 `engine/`。** 需要新题型或引擎有 bug，先告诉 Cici，由 Willo 改引擎（改一次，所有集一起受益）。引擎一改会影响 ep02 和 ep16，所以必须两集都回归测试。
 - 不要修改第 1 集（仓库根目录 `index.html app.js …`，它还是旧的独立代码，没有迁移）。不要动别的集的目录。
-- 不动 Change 的个人网站 stemlearn.cloud，只发布到预览仓库 `compass-preview`。
+- 不动 Cici 的个人网站 stemlearn.cloud，只发布到预览仓库 `compass-preview`。
 - 只用免费工具。
-- 给 Change 的说明一律用**简体中文、通俗说法**。
+- 给 Cici 的说明一律用**简体中文、通俗说法**。
 ## 1. 项目背景
 
-- 给 Change 的孩子（初中，主角 Leo 以他为原型）做一套互动英语语法课。整体剧情和 17 节课的安排在
+- 给 Cici 的孩子（初中，主角 Leo 以他为原型）做一套互动英语语法课。整体剧情和 17 节课的安排在
   `/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/grammar_fasttrack_final.md`；背景、家长决定、否决过的方向在同目录 `handoff.md`（**不要覆盖它**）。
 - 故事：冒险队（Leo、Mia、Sam、Lily、小狗 Biscuit）拿着爷爷的罗盘穿越各地，每集找回罗盘上的一颗星（共 17 颗）。爷爷线索 “C. C. was here” 贯穿全剧。
 - 每集形式：插图 + 英式配音逐句讲故事（字词高亮）→ 穿插练习题 → 知识地图 → 收藏卡 → 星星回到罗盘。
@@ -62,11 +62,11 @@
   ```
 - **缓存刷新（两个数字）：**
   - 改了本集内容（episode.js、lines.json、hints.json、episode.css）→ 把 `epNN/index.html` 里 `<html data-v="N">` 加 1。
-  - 引擎的版本只在 `engine/VERSION` 一个地方（你不需要改）。外壳每次都会实时读这个文件，所以 Change 不用换链接。
+  - 引擎的版本只在 `engine/VERSION` 一个地方（你不需要改）。外壳每次都会实时读这个文件，所以 Cici 不用换链接。
   - 音频文件的缓存参数在 `episode.js` 的 `audioVersion`（例如 `'20261011-level1'`）；换了 mp3 就改成新的字符串。
   - 插图换了同名文件时，最好直接换个文件名。
 
-### 3.2 Change 的 Mac 本地
+### 3.2 Cici 的 Mac 本地
 
 - 台词文件夹：`/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/台词/`
   - `台词.md`：所有集的配音台词表（第 1 集、第 16 集），新的一集追加进来。
@@ -105,7 +105,7 @@ cd tests && npm install          # 安装 puppeteer-core
 ### 第 2 步：故事脚本 + 题目计划
 - 规模（段数、句数、活动数、题数、收尾小测 6–8 题）按规格书 §7.1，题型按 §8 选。尽量让本集语法自然出现在故事里，练习句也用故事里的人物和情节。
 - 写 `epNN/docs/QUESTIONS_PLAN.md`，格式参考 ep16：每个活动写清题型、每道题、正确答案、干扰项、答错时的中文解释、对应音频文件名。
-- 先把故事和题目计划用中文简要给 Change 过目，同意后再往下做。
+- 先把故事和题目计划用中文简要给 Cici 过目，同意后再往下做。
 
 ### 第 3 步：写台词表（追加到 台词.md）
 在 `台词/台词.md` 末尾加 `## 第 N 集 <标题>`，表头和列必须一致（`make_lines.py` 靠它解析）：
@@ -132,8 +132,8 @@ cd tests && npm install          # 安装 puppeteer-core
   ```
   故事插图也压成 jpg，每张不超过 300KB 左右。
 
-### 第 5 步：配音（Change / CoCo 来做）
-- 告诉 Change：台词已经写进 台词.md 的第 N 集，请 CoCo 用剪映导出，放到 `台词/第N集_<标题>/audio/`，文件名和表里完全一致，句首句尾留白不超过 0.3 秒。
+### 第 5 步：配音（Cici / CoCo 来做）
+- 告诉 Cici：台词已经写进 台词.md 的第 N 集，请 CoCo 用剪映导出，放到 `台词/第N集_<标题>/audio/`，文件名和表里完全一致，句首句尾留白不超过 0.3 秒。
 - 拿到以后检查：数量一致，没有多余的文件，删掉 macOS 生成的 `._*` 文件。
 - 拿到后按规格书 §10.3 统一响度到 -19 LUFS（固定增益，真峰值 < -1 dBTP，方法见 `tools/AUDIO_LEVELS_20261011.md`），再放进仓库。
 
@@ -159,7 +159,7 @@ venv/bin/python align.py ../epNN            # 第一次会下载约 140MB 模型
 venv/bin/python align.py ../epNN --model small.en   # 想更准就用这个，会慢一些
 ```
 - 输出里每句都应该是 `whisper match=100%`。出现 `proportional` 或匹配率低，说明录音和台词不一致，要回去核对，必要时请 CoCo 重录。
-- 抽查录音和台词是否一致：用 faster-whisper 不带提示词转写一遍，和台词逐词比较。识别把 favourite 写成 favorite、把 one 写成 1 都算正常；但关键语法词（比如 -ed 词尾）听不清的要报告给 Change。
+- 抽查录音和台词是否一致：用 faster-whisper 不带提示词转写一遍，和台词逐词比较。识别把 favourite 写成 favorite、把 one 写成 1 都算正常；但关键语法词（比如 -ed 词尾）听不清的要报告给 Cici。
 
 ### 第 8 步：测试清单
 本地起服务：`cd ~/Study/compass/compass-preview && python3 -m http.server 8716`，浏览器打开 `http://localhost:8716/epNN/`。
@@ -181,7 +181,7 @@ curl -sI https://tiancc1212.github.io/compass-preview/epNN/audio/l01.mp3 | head 
 ```
 然后用线上地址再跑一次自动测试。以后每次更新内容：`data-v` 加 1，再 commit 和 push。
 
-### 第 10 步：向 Change 汇报（中文、口语化）
+### 第 10 步：向 Cici 汇报（中文、口语化）
 按规格书 §13 第 9 条的模板写；不讲技术细节，不写 commit 号。
 
 ## 4.5 布局和语法提示
@@ -192,12 +192,12 @@ curl -sI https://tiancc1212.github.io/compass-preview/epNN/audio/l01.mp3 | head 
 - 台词改了一个字，就要重新录那一句，再跑 align.py。检查器会发现 mp3 时长和 lines.json 不一致。
 - 新增角色要同时改：`episode.js` 的 `speakers`、`make_lines.py` 的 W、台词表的角色列、音色表。
 - 剪映导出的打包文件里可能夹带 `._xxx.mp3`（macOS 元数据），要删掉。
-- 改了内容忘了把 `data-v` 加 1，Change 手机上可能看到旧版（最多 10 分钟）。
+- 改了内容忘了把 `data-v` 加 1，Cici 手机上可能看到旧版（最多 10 分钟）。
 - `episode.js` 是 JavaScript：字符串里有英文撇号（`Don't`）时用双引号或反引号包起来；多行 html 用反引号。
-- 想要引擎没有的题型或效果：不要在集目录里写代码，告诉 Change，由 Willo 加进引擎。
+- 想要引擎没有的题型或效果：不要在集目录里写代码，告诉 Cici，由 Willo 加进引擎。
 ## 6. 交付前自查清单
 
-见规格书 §13“完成标准”，全部满足才能交给 Change；汇报模板也在那里。
+见规格书 §13“完成标准”，全部满足才能交给 Cici；汇报模板也在那里。
 
 ## 7. 备注：第 1 集（根目录）以后怎么迁移
-现在没有动它。以后 Change 同意迁移时：把根目录的 SEC / IMG / 题目数据按第 6 步的格式写成 `ep01/episode.js`，补 `audio/hints.json`，音频和插图移进 `ep01/`；第 1 集的题型（主谓宾拖拽、句子成分）可以用 `drag` 的 box / blank 模式表达；最后把根目录 `index.html` 改成跳转到 `ep01/` 的小页面（或直接做成 17 集目录页）。迁移后旧的 `cc_stars` 记录照样有效。
+现在没有动它。以后 Cici 同意迁移时：把根目录的 SEC / IMG / 题目数据按第 6 步的格式写成 `ep01/episode.js`，补 `audio/hints.json`，音频和插图移进 `ep01/`；第 1 集的题型（主谓宾拖拽、句子成分）可以用 `drag` 的 box / blank 模式表达；最后把根目录 `index.html` 改成跳转到 `ep01/` 的小页面（或直接做成 17 集目录页）。迁移后旧的 `cc_stars` 记录照样有效。
