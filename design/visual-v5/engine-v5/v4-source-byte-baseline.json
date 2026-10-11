@@ -1,0 +1,42 @@
+{
+  "engine/layout.css": {
+    "bytes": 6720,
+    "gzip": 2643
+  },
+  "engine/engine.js": {
+    "bytes": 51292,
+    "gzip": 18068
+  },
+  "engine/base.css": {
+    "bytes": 26896,
+    "gzip": 7313
+  },
+  "engine/badges.js": {
+    "bytes": 8572,
+    "gzip": 2983
+  },
+  "engine/models/compass_q.glb": {
+    "bytes": 40552,
+    "gzip": 11432
+  },
+  "engine/lib/three.module.js": {
+    "bytes": 1314681,
+    "gzip": 264984
+  },
+  "engine/lib/addons/environments/RoomEnvironment.js": {
+    "bytes": 3606,
+    "gzip": 1148
+  },
+  "engine/lib/addons/utils/SkeletonUtils.js": {
+    "bytes": 8802,
+    "gzip": 2342
+  },
+  "engine/lib/addons/utils/BufferGeometryUtils.js": {
+    "bytes": 31768,
+    "gzip": 6889
+  },
+  "engine/lib/addons/loaders/GLTFLoader.js": {
+    "bytes": 110273,
+    "gzip": 23560
+  }
+}

@@ -1,16 +1,17 @@
 export default {
   "no": 7,
-  "hud": "🧭 罗盘冒险队 · 第7集 巧克力星球",
+  "meta": {"title":"巧克力星球","place":"巧克力星球","grammar":["形容词","What 与 How 感叹句"],"icon":"chocolate-planet"},
+  "hud": "罗盘冒险队 · 第7集 巧克力星球",
   "start": {
     "h1": "巧克力星球",
     "subt": "罗盘把 Leo、Mia、Sam、Lily 和 Biscuit 带到一颗甜蜜的星球。",
-    "go": "🧭 出发"
+    "go": "出发"
   },
   "audioVersion": "20261011-willo-audio-final1",
   "download": {
     "href": "downloads/ep07_adjectives_exclamations.docx",
     "name": "罗盘冒险队_第7集_形容词与感叹句_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "01_landing": [
@@ -751,8 +752,8 @@ export default {
           "img": "04_sign"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 7 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 7 颗星送回罗盘"
     }
   },
   "ending": {

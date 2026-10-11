@@ -2,14 +2,15 @@
 // Field reference: tools/handoff_单集制作流程.md · check with: node tools/validate_episode.mjs ep02
 export default {
  no:2,
- hud:'🧭 罗盘冒险队 · 第2集 维京船上的寻物单',
+  "meta": {"title":"维京船上的寻物单","place":"维京船","grammar":["名词","冠词","数量与所有格"],"icon":"viking-ship"},
+ hud:'罗盘冒险队 · 第2集 维京船上的寻物单',
  stars:'⭐ 第 2 颗星',
- start:{h1:'维京船上的寻物单',subt:'哪个东西、谁的、有几个？跟着清单找回船长的头盔。',go:'🧭 出发：寻找维京宝物'},
+ start:{h1:'维京船上的寻物单',subt:'哪个东西、谁的、有几个？跟着清单找回船长的头盔。',go:'出发：寻找维京宝物'},
  theme:{bg:'#132c36',stage:'#153441'},
  css:true,               // episode.css: position of the "C. C. was here" overlay on the chessboard
  audioVersion:'20261011-level1',
  rewardWait:true,        // after a correct answer the next button unlocks when the reward voice ends
- download:{href:'downloads/ep02_nouns_articles.docx',name:'罗盘冒险队_第2集_名词与冠词知识地图.docx',label:'📥 下载知识点（Word）'},
+ download:{href:'downloads/ep02_nouns_articles.docx',name:'罗盘冒险队_第2集_名词与冠词知识地图.docx',label:'下载知识点（Word）'},
  img:{"arrival":["illus/01_arrival.jpg","全队登上维京船"],"list":["illus/02_captains_list.jpg","Lily 读船长的清单"],"axe":["illus/03_heavy_axe.jpg","Sam 搬不动斧头"],"wrong":["illus/04_wrong_helmet.jpg","Mia 找到普通头盔"],"biscuit":["illus/05_biscuit_reveal.jpg","Biscuit 叼着船长头盔的皮带"],"boots":["illus/06_sailors_boots.jpg","Lily 打开船员们的靴箱"],"lunch":["illus/07_lunch_supplies.jpg","两面盾牌、三把小刀、两块面包和一瓶水"],"chess":["illus/08_old_chessboard.jpg","Lily 发现旧棋盘上的线索"],"star":["illus/09_star_discovery.jpg","棋盘旁发现第 2 颗星"]},
  firstImg:'arrival',
  sections:{"S1":[{"id":"l01","zh":"罗盘把我们带到了一艘维京船上。","img":"arrival"},{"id":"l02","zh":"Lily 读起船长的清单。","img":"list"},{"id":"l03","zh":"拿一把斧头、一面盾牌，还有船长的那顶头盔！","img":"list"},{"id":"l04","zh":"这把斧头太重了！","img":"axe"}],"S2":[{"id":"l05","zh":"Mia 找到了一顶头盔。","img":"wrong"},{"id":"l06","zh":"这不是船长的头盔！","img":"wrong"},{"id":"l07","zh":"船长的头盔在 Biscuit 那儿！","img":"biscuit"},{"id":"l08","zh":"船员们的靴子在一个箱子里。","img":"boots"}],"S3":[{"id":"l09","zh":"桌上有两面盾牌和三把小刀。","img":"lunch"},{"id":"l10","zh":"我们午餐需要面包和水。","img":"lunch"},{"id":"l11","zh":"这里有两块面包和一瓶水。","img":"lunch"}],"S4":[{"id":"l12","zh":"维京人午饭后下起了棋。","img":"chess"},{"id":"l13","zh":"Lily 在旧棋盘上发现了“C. C. 到此一游”。","img":"chess","overlay":"<div class=\"carve\">C. C. was here</div>"},{"id":"l14","zh":"船长说：“以前有个中国男孩教过我下棋。”","img":"chess"},{"id":"l15","zh":"第 2 颗星在棋盘旁亮了起来。","img":"star"}]},
@@ -55,7 +56,7 @@ export default {
  </div><p class="kdl">{download}</p>`},
   card:{type:'card',variant:'treasure',title:'维京宝物卡 #2',badge:'OWNER',desc:'选一件宝物，再收进日志。',front:'维京宝物卡 #2',backNote:'哪个东西 · 谁的 · 有几个',
    options:[{k:'shield',s:"This is Leo's shield.",zh:'Leo 的盾牌',img:'item_shield'},{k:'helmet',s:"This is Mia's helmet.",zh:'Mia 的普通头盔',img:'item_helmet'},{k:'sock',s:"This is Biscuit's sock.",zh:'Biscuit 的袜子',img:'item_sock'}],
-   button:'🪄 收进日志',done:'⭐ 把第 2 颗星送回罗盘'}
+   button:'收进日志',done:'把第 2 颗星送回罗盘'}
  },
  ending:{img:'star',say:{id:'star',zh:'第 2 颗星回到了罗盘！'},
   html:`<h2>🎉 第 2 集完成！</h2><p style="font-size:22px">⭐ 已收集 {n} / 17 颗星　·　🗺️ 地图点亮：<b>维京船</b></p><p>🛡️ 维京宝物卡 #2 已收进冒险日志。</p><p>下次冒险时，再试着说说“哪个东西、谁的、有几个”。</p><p>{download}</p>`}

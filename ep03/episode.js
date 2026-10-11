@@ -1,10 +1,11 @@
 export default {
   "no": 3,
-  "hud": "🧭 罗盘冒险队 · 第3集 云上图书馆的失物招领",
+  "meta": {"title":"云上图书馆的失物招领","place":"云上图书馆","grammar":["人称与物主代词","反身代词","不定代词"],"icon":"cloud-library"},
+  "hud": "罗盘冒险队 · 第3集 云上图书馆的失物招领",
   "start": {
     "h1": "云上图书馆的失物招领",
     "subt": "把包、书和袜子送回真正的主人手里。",
-    "go": "🧭 出发：Whose bag is this?"
+    "go": "出发：Whose bag is this?"
   },
   "theme": {
     "bg": "#172934",
@@ -15,7 +16,7 @@ export default {
   "download": {
     "href": "downloads/ep03_pronouns.docx",
     "name": "罗盘冒险队_第3集_代词_知识点.docx",
-    "label": "📥 下载知识点（Word）"
+    "label": "下载知识点（Word）"
   },
   "img": {
     "cloud_library": [
@@ -1101,8 +1102,8 @@ export default {
           "img": "05_library_star_v2"
         }
       ],
-      "button": "🪄 收进日志",
-      "done": "⭐ 把第 3 颗星送回罗盘"
+      "button": "收进日志",
+      "done": "把第 3 颗星送回罗盘"
     }
   },
   "ending": {

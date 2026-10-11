@@ -1,0 +1,1488 @@
+{
+  "version": 2,
+  "currentStage": {
+    "date": "2026-10-11",
+    "contentVersion": "v5-preview-20261011",
+    "status": "preview-ready-awaiting-deployment",
+    "previewReady": true,
+    "productionReady": false,
+    "supersedes": "下文contentVersion、reviewStatus及differences中的媒体未完成、待录或未实现均为M2来源快照，不代表当前集成状态。",
+    "decisions": [
+      "Cici已审阅通过30张图片和36条音频",
+      "共享引擎v5与HQ已完成本地集成；预览待部署与回归验收",
+      "本次审定衍生图片允许随公开compass-preview发布；不发布原始照片或角色参考图",
+      "序章保留现有配音，不凑一分钟",
+      "C并入stemlearn须待Cici验收预览"
+    ],
+    "implementationRecord": "M3_M4_实施与验收.md"
+  },
+  "baseline": "c17eb132c08c329cded8cc08c2280702d74cdbe1",
+  "method": "已发布内容以episode.js和audio/lines.json为准；未发布6集以已审story/hints及审稿记录为草稿依据。逐项来源键见hq.js。",
+  "sources": {
+    "cici_preview_20261011": {
+      "status": "explicit-user-decision",
+      "anchor": "素材通过（Cici 已审阅）；罗盘方案 B；先发布 compass-preview，C 待验收；图片放心和其他素材一起处理",
+      "decision": "本次清单内30张审定衍生图获准进入公开compass-preview GitHub仓库和公开预览页；覆盖此前对此批成图的私有存放限制。原始孩子照片、角色参考图、未入选版本及源制作目录不在范围。",
+      "scope": "A/B v5 preview only; C deferred",
+      "record": "HQ_发布图片清单.json"
+    },
+    "brief": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/任务书_视觉优化_冒险队总部_并入stemlearn.md",
+      "line": 129,
+      "anchor": "## B. 冒险队总部",
+      "status": "task",
+      "sha256": "fe730050e068f74d2031aec64be4125a65f7f71f58d5100fd425a8fe358e65db"
+    },
+    "decision7": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/任务书_视觉优化_冒险队总部_并入stemlearn.md",
+      "line": 328,
+      "anchor": "## 第 7 节",
+      "status": "task",
+      "sha256": "fe730050e068f74d2031aec64be4125a65f7f71f58d5100fd425a8fe358e65db"
+    },
+    "cast": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/grammar_fasttrack_final.md",
+      "line": 45,
+      "anchor": "| **Leo Chen**",
+      "status": "canon",
+      "sha256": "2241f090f6d25584f9bd1dc1102ed86413a588cba3ab14b2062408fc01ce795d"
+    },
+    "compass_rules": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/grammar_fasttrack_final.md",
+      "line": 30,
+      "anchor": "**罗盘的规则",
+      "status": "canon",
+      "sha256": "2241f090f6d25584f9bd1dc1102ed86413a588cba3ab14b2062408fc01ce795d"
+    },
+    "spec_badges": {
+      "path": "tools/SPEC_单集规格书.md",
+      "line": 332,
+      "anchor": "**徽章目录**",
+      "status": "spec",
+      "sha256": "53587096f444f83bb6262e210594a9d247b165afebe3ed8a9811bc720924288c"
+    },
+    "roles": {
+      "path": "engine/badges.js",
+      "line": 3,
+      "anchor": "export const ROLES",
+      "status": "published",
+      "sha256": "76164f1766e646c6c0520cb047d7fa5df6c8a1ee6b1c909bd1fad0f190a41bae"
+    },
+    "spec_cast": {
+      "path": "tools/SPEC_单集规格书.md",
+      "line": 397,
+      "anchor": "### 7.3",
+      "status": "spec",
+      "sha256": "53587096f444f83bb6262e210594a9d247b165afebe3ed8a9811bc720924288c"
+    },
+    "spec_voice": {
+      "path": "tools/SPEC_单集规格书.md",
+      "line": 488,
+      "anchor": "### 10.1",
+      "status": "spec",
+      "sha256": "53587096f444f83bb6262e210594a9d247b165afebe3ed8a9811bc720924288c"
+    },
+    "voice_grandpa": {
+      "path": "/Users/tianchangchun/Study/compass/compass-preview-willo/ep17/docs/AUDIO_QA.md",
+      "line": 20,
+      "anchor": "| grandpa | Deep Tone",
+      "status": "published",
+      "sha256": "904fd9aec67aec457c32c7bceb4d0ec762e7649f6d57beeebf15a379d7180d75"
+    },
+    "review_batch2": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/Willo审稿修订记录.md",
+      "line": 70,
+      "anchor": "# 第二批审稿",
+      "status": "approved-draft",
+      "sha256": "50d72d5107b11fe7bd74fa33397446d9f651b12b998ec9bd83cb43615e2f0626"
+    },
+    "cici_latest": {
+      "path": null,
+      "line": null,
+      "status": "historical-user-decision-superseded-in-part",
+      "excerpt": "2026-10-11本轮：序章按阁楼准备出发方案调整；移除离线可用要求及仅本地生图限制；只制作M1/M2，全部先交Cici。",
+      "supersededBy": "willo_approved_16"
+    },
+    "ep01.config": {
+      "path": "ep01/episode.js",
+      "line": 2,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "d49ee8f4a4312b49c89759a59b2e2b7fd916f50a3b2ed6dfb422356ecb51bf0e"
+    },
+    "ep02.config": {
+      "path": "ep02/episode.js",
+      "line": 3,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "0b483b4a3e102344e2a5bec94445e1e3cb647346721d64db825ce1db398ccc8b"
+    },
+    "ep03.config": {
+      "path": "ep03/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "7fe664bde959b2e14c75a7f4a6a0199149e19342fc548df3f61443445bc52794"
+    },
+    "ep04.config": {
+      "path": "ep04/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "ea7ffdf74b699ab0f4e2570fd2846e02839306ff195a8638a10ea89252578777"
+    },
+    "ep05.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep05/story.md",
+      "line": 8,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "659516246ce285b8c7583686861962a8bfa3effc6261acbbb6c40f7f7807e1be"
+    },
+    "ep06.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep06/story.md",
+      "line": 8,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "680f0d284a08c69ff0c0e68144230d9dd1f2bf7b1452611de500790692f2496e"
+    },
+    "ep07.config": {
+      "path": "ep07/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "782d63f7fb429d75308b18877bbd4b1bcb1d7a0f468cba4748135ce4939bd2cf"
+    },
+    "ep08.config": {
+      "path": "ep08/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "3413c25d7fa12e6d92bbc9d2e42572bd985d5e9761ef229007a9ba8fdc27d353"
+    },
+    "ep09.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep09/story.md",
+      "line": 7,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "5b6c04c39a39ac519ca03c03b506e49a9b178a1b09f6a39a77da73a9d11bc930"
+    },
+    "ep10.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/story.md",
+      "line": 7,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "a0e0ccb86c77f983afbfcef2ca5478eae98a8656e1cad27144107ceedc8cebdb"
+    },
+    "ep11.config": {
+      "path": "ep11/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "57146652d1a570fe8a7db29e9dc9eea8a872971966c45defcd0755dd9947e698"
+    },
+    "ep12.config": {
+      "path": "ep12/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "69771b954707ed44be736a053669b61e2cafd50af9c282292ed659bdfa235a0e"
+    },
+    "ep13.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep13/story.md",
+      "line": 7,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "d2bb6148450d0a376421d854bd3026486bddb137f1d350e82d43632e0adc36ec"
+    },
+    "ep14.config": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep14/story.md",
+      "line": 7,
+      "anchor": "# 第",
+      "status": "approved-draft",
+      "sha256": "980f2511ee458d5a9804b1e68578a5f107999c06fc0ef2a5540ef9c0bd5de5a7"
+    },
+    "ep15.config": {
+      "path": "ep15/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "4d9ebc51c90a00c3b9a63e0e3b76c2f78065c4738aeff1599772d7bd4cde47a9"
+    },
+    "ep16.config": {
+      "path": "ep16/episode.js",
+      "line": 3,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "6b8ad8736ee224b4b99a2a722eb5a3d9ac4f52fcc64bedb55d69517dd5bdd7db"
+    },
+    "ep17.config": {
+      "path": "ep17/episode.js",
+      "line": 1,
+      "anchor": "export default",
+      "status": "published",
+      "sha256": "8724fb3de7f7c37a1a9414660c305ea7d85559fa06d4f185edaffc1c303436b6"
+    },
+    "ep01.l14": {
+      "path": "ep01/audio/lines.json",
+      "line": 526,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "453f6985812b14c6fa166c5b6c74798a9be80358b6896dddce78fe843b2885c5",
+      "excerpt": "Behind the door, an old mark glows beside a star."
+    },
+    "ep01.overlay": {
+      "path": "ep01/episode.js",
+      "line": 123,
+      "anchor": "C. C. was here – 1975",
+      "status": "published",
+      "sha256": "d49ee8f4a4312b49c89759a59b2e2b7fd916f50a3b2ed6dfb422356ecb51bf0e"
+    },
+    "ep02.l14": {
+      "path": "ep02/audio/lines.json",
+      "line": 581,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "f9524e119e6fdbfdcb723777af1280fa566035b16c16a5adaa192f3452f50452",
+      "excerpt": "\"A Chinese boy taught me chess,\" the captain says."
+    },
+    "ep03.l13": {
+      "path": "ep03/audio/lines.json",
+      "line": 693,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "42c3559d1af82914d06a9ead8ce7ebdaac812af9ba2484d44d5e3218c2416232",
+      "excerpt": "Each child checks a label, and Mia finds an old library card in one of the books."
+    },
+    "ep03.overlay": {
+      "path": "ep03/episode.js",
+      "line": 115,
+      "anchor": "Borrowed by C. Chen",
+      "status": "published",
+      "sha256": "7fe664bde959b2e14c75a7f4a6a0199149e19342fc548df3f61443445bc52794"
+    },
+    "ep04.l14": {
+      "path": "ep04/audio/lines.json",
+      "line": 596,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "1e60215dbe6698bdfaf6ccecd8a729782bb28324024a7847f65c96df1fbf8cfb",
+      "excerpt": "The dragon recognises Grandpa's compass, and Biscuit has the tiny egg."
+    },
+    "ep05.l13": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep05/story.md",
+      "line": 51,
+      "anchor": "audio/l13.mp3",
+      "status": "approved-draft",
+      "sha256": "659516246ce285b8c7583686861962a8bfa3effc6261acbbb6c40f7f7807e1be"
+    },
+    "ep06.l11": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep06/story.md",
+      "line": 42,
+      "anchor": "audio/l11.mp3",
+      "status": "approved-draft",
+      "sha256": "680f0d284a08c69ff0c0e68144230d9dd1f2bf7b1452611de500790692f2496e"
+    },
+    "ep06.l12": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep06/story.md",
+      "line": 50,
+      "anchor": "audio/l12.mp3",
+      "status": "approved-draft",
+      "sha256": "680f0d284a08c69ff0c0e68144230d9dd1f2bf7b1452611de500790692f2496e"
+    },
+    "ep07.l12": {
+      "path": "ep07/audio/lines.json",
+      "line": 465,
+      "anchor": "\"l12\"",
+      "status": "published",
+      "sha256": "2d73b552d158cb8a78aefcbfa73e75d002ff2f6ba237646ad90cadaaabbc3ccc",
+      "excerpt": "The old sign says this is Chen's favourite spot."
+    },
+    "ep08.l14": {
+      "path": "ep08/audio/lines.json",
+      "line": 596,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6",
+      "excerpt": "A golden star is glowing beside an old ticket under the fossil."
+    },
+    "ep08.l15": {
+      "path": "ep08/audio/lines.json",
+      "line": 664,
+      "anchor": "\"l15\"",
+      "status": "published",
+      "sha256": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6",
+      "excerpt": "Look at this ticket from the nineteen seventies!"
+    },
+    "ep09.l15": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep09/story.md",
+      "line": 52,
+      "anchor": "audio/l15.mp3",
+      "status": "approved-draft",
+      "sha256": "5b6c04c39a39ac519ca03c03b506e49a9b178a1b09f6a39a77da73a9d11bc930"
+    },
+    "ep09.l02": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep09/story.md",
+      "line": 18,
+      "anchor": "audio/l02.mp3",
+      "status": "approved-draft",
+      "sha256": "5b6c04c39a39ac519ca03c03b506e49a9b178a1b09f6a39a77da73a9d11bc930"
+    },
+    "ep10.l14": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/story.md",
+      "line": 51,
+      "anchor": "audio/l14.mp3",
+      "status": "approved-draft",
+      "sha256": "a0e0ccb86c77f983afbfcef2ca5478eae98a8656e1cad27144107ceedc8cebdb"
+    },
+    "ep11.l13": {
+      "path": "ep11/audio/lines.json",
+      "line": 623,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8",
+      "excerpt": "The elephant remembers a Chinese boy, the quickest chess player of all."
+    },
+    "ep12.l14": {
+      "path": "ep12/audio/lines.json",
+      "line": 621,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "8b640d3aa5ca7aac23d7247de7cc577b197b1170d70f468e8888f14be763c569",
+      "excerpt": "It says 'For my family', doesn't it?"
+    },
+    "ep13.l14": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep13/story.md",
+      "line": 45,
+      "anchor": "audio/l14.mp3",
+      "status": "approved-draft",
+      "sha256": "d2bb6148450d0a376421d854bd3026486bddb137f1d350e82d43632e0adc36ec"
+    },
+    "ep13.tree": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep13/story.md",
+      "line": 11,
+      "anchor": "树上只确认",
+      "status": "approved-draft",
+      "sha256": "d2bb6148450d0a376421d854bd3026486bddb137f1d350e82d43632e0adc36ec"
+    },
+    "ep14.l13": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep14/story.md",
+      "line": 46,
+      "anchor": "audio/l13.mp3",
+      "status": "approved-draft",
+      "sha256": "980f2511ee458d5a9804b1e68578a5f107999c06fc0ef2a5540ef9c0bd5de5a7"
+    },
+    "ep14.l10": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep14/story.md",
+      "line": 38,
+      "anchor": "audio/l10.mp3",
+      "status": "approved-draft",
+      "sha256": "980f2511ee458d5a9804b1e68578a5f107999c06fc0ef2a5540ef9c0bd5de5a7"
+    },
+    "ep15.l13": {
+      "path": "ep15/audio/lines.json",
+      "line": 688,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "85ee4ae8c454b0a2f23f50602254ccf5b3df43d8bcaf55bf8ee9d7d049f30ea3",
+      "excerpt": "A tiny compass part was discovered inside the crown by Mia."
+    },
+    "ep16.l11": {
+      "path": "ep16/audio/lines.json",
+      "line": 527,
+      "anchor": "\"l11\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "Biscuit stops to sniff the air. Then he finds a lost sock under the table."
+    },
+    "ep16.l13": {
+      "path": "ep16/audio/lines.json",
+      "line": 648,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "Ha! You made me laugh. The job is yours!"
+    },
+    "ep16.l14": {
+      "path": "ep16/audio/lines.json",
+      "line": 701,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "Leo will never forget seeing Biscuit get his first job."
+    },
+    "ep17.l10": {
+      "path": "ep17/audio/lines.json",
+      "line": 439,
+      "anchor": "\"l10\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Inside the chess box is the last star."
+    },
+    "ep17.l13": {
+      "path": "ep17/audio/lines.json",
+      "line": 588,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "This is the family that will travel together."
+    },
+    "ep17.l14": {
+      "path": "ep17/audio/lines.json",
+      "line": 636,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Here are Mum and Dad, ready to join the adventure."
+    },
+    "ep17.l02": {
+      "path": "ep17/audio/lines.json",
+      "line": 70,
+      "anchor": "\"l02\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "I love adventures, and so does Grandpa."
+    },
+    "ep04.l03": {
+      "path": "ep04/audio/lines.json",
+      "line": 123,
+      "anchor": "\"l03\"",
+      "status": "published",
+      "sha256": "1e60215dbe6698bdfaf6ccecd8a729782bb28324024a7847f65c96df1fbf8cfb",
+      "excerpt": "Are you awake?"
+    },
+    "ep11.l02": {
+      "path": "ep11/audio/lines.json",
+      "line": 50,
+      "anchor": "\"l02\"",
+      "status": "published",
+      "sha256": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8",
+      "excerpt": "I am the fastest runner in our crew!"
+    },
+    "ep16.l07": {
+      "path": "ep16/audio/lines.json",
+      "line": 335,
+      "anchor": "\"l07\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "Wait. Let me read the rules first."
+    },
+    "ep01.l10": {
+      "path": "ep01/audio/lines.json",
+      "line": 364,
+      "anchor": "\"l10\"",
+      "status": "published",
+      "sha256": "453f6985812b14c6fa166c5b6c74798a9be80358b6896dddce78fe843b2885c5",
+      "excerpt": "Biscuit finds an old striped sock."
+    },
+    "ep17.l15": {
+      "path": "ep17/audio/lines.json",
+      "line": 694,
+      "anchor": "\"l15\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Here we go, together!"
+    },
+    "ep02.l03": {
+      "path": "ep02/audio/lines.json",
+      "line": 83,
+      "anchor": "\"l03\"",
+      "status": "published",
+      "sha256": "f9524e119e6fdbfdcb723777af1280fa566035b16c16a5adaa192f3452f50452",
+      "excerpt": "Bring an axe, a shield and the captain's helmet!"
+    },
+    "ep02.l12": {
+      "path": "ep02/audio/lines.json",
+      "line": 475,
+      "anchor": "\"l12\"",
+      "status": "published",
+      "sha256": "f9524e119e6fdbfdcb723777af1280fa566035b16c16a5adaa192f3452f50452",
+      "excerpt": "The Vikings play chess after lunch."
+    },
+    "ep03.l02": {
+      "path": "ep03/audio/lines.json",
+      "line": 75,
+      "anchor": "\"l02\"",
+      "status": "published",
+      "sha256": "42c3559d1af82914d06a9ead8ce7ebdaac812af9ba2484d44d5e3218c2416232",
+      "excerpt": "Whose bag is this?"
+    },
+    "ep04.l11": {
+      "path": "ep04/audio/lines.json",
+      "line": 462,
+      "anchor": "\"l11\"",
+      "status": "published",
+      "sha256": "1e60215dbe6698bdfaf6ccecd8a729782bb28324024a7847f65c96df1fbf8cfb",
+      "excerpt": "He guards books, so he stays in and reads on Mondays."
+    },
+    "ep05.l03": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep05/story.md",
+      "line": 20,
+      "anchor": "audio/l03.mp3",
+      "status": "approved-draft",
+      "sha256": "659516246ce285b8c7583686861962a8bfa3effc6261acbbb6c40f7f7807e1be"
+    },
+    "ep05.l04": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep05/story.md",
+      "line": 21,
+      "anchor": "audio/l04.mp3",
+      "status": "approved-draft",
+      "sha256": "659516246ce285b8c7583686861962a8bfa3effc6261acbbb6c40f7f7807e1be"
+    },
+    "ep05.l09": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep05/story.md",
+      "line": 40,
+      "anchor": "audio/l09.mp3",
+      "status": "approved-draft",
+      "sha256": "659516246ce285b8c7583686861962a8bfa3effc6261acbbb6c40f7f7807e1be"
+    },
+    "ep06.l02": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep06/story.md",
+      "line": 19,
+      "anchor": "audio/l02.mp3",
+      "status": "approved-draft",
+      "sha256": "680f0d284a08c69ff0c0e68144230d9dd1f2bf7b1452611de500790692f2496e"
+    },
+    "ep06.l09": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep06/story.md",
+      "line": 40,
+      "anchor": "audio/l09.mp3",
+      "status": "approved-draft",
+      "sha256": "680f0d284a08c69ff0c0e68144230d9dd1f2bf7b1452611de500790692f2496e"
+    },
+    "ep07.l03": {
+      "path": "ep07/audio/lines.json",
+      "line": 113,
+      "anchor": "\"l03\"",
+      "status": "published",
+      "sha256": "2d73b552d158cb8a78aefcbfa73e75d002ff2f6ba237646ad90cadaaabbc3ccc",
+      "excerpt": "Dad tastes a tiny rock, and it tastes delicious."
+    },
+    "ep08.l03": {
+      "path": "ep08/audio/lines.json",
+      "line": 118,
+      "anchor": "\"l03\"",
+      "status": "published",
+      "sha256": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6",
+      "excerpt": "Look at the dinosaur by the river!"
+    },
+    "ep08.l04": {
+      "path": "ep08/audio/lines.json",
+      "line": 161,
+      "anchor": "\"l04\"",
+      "status": "published",
+      "sha256": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6",
+      "excerpt": "It is drinking water, and Mia is drawing it."
+    },
+    "ep08.l09": {
+      "path": "ep08/audio/lines.json",
+      "line": 371,
+      "anchor": "\"l09\"",
+      "status": "published",
+      "sha256": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6",
+      "excerpt": "They are following Biscuit through the ferns."
+    },
+    "ep10.l04": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/story.md",
+      "line": 20,
+      "anchor": "audio/l04.mp3",
+      "status": "approved-draft",
+      "sha256": "a0e0ccb86c77f983afbfcef2ca5478eae98a8656e1cad27144107ceedc8cebdb"
+    },
+    "ep10.l07": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/story.md",
+      "line": 30,
+      "anchor": "audio/l07.mp3",
+      "status": "approved-draft",
+      "sha256": "a0e0ccb86c77f983afbfcef2ca5478eae98a8656e1cad27144107ceedc8cebdb"
+    },
+    "ep11.l05": {
+      "path": "ep11/audio/lines.json",
+      "line": 189,
+      "anchor": "\"l05\"",
+      "status": "published",
+      "sha256": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8",
+      "excerpt": "The cheetah runs more quickly than Sam."
+    },
+    "ep11.l06": {
+      "path": "ep11/audio/lines.json",
+      "line": 232,
+      "anchor": "\"l06\"",
+      "status": "published",
+      "sha256": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8",
+      "excerpt": "The elephant is the strongest of the three animals."
+    },
+    "ep11.zebra": {
+      "path": "ep11/docs/PROMPTS.md",
+      "line": 24,
+      "anchor": "beside an elephant and zebra",
+      "status": "published-production-plan",
+      "sha256": "0f0f28d78f63210f4b317ffc67498b99992da937d9bedce94a50c82ebc87b7aa"
+    },
+    "ep11.giraffe": {
+      "path": "ep11/episode.js",
+      "line": 309,
+      "anchor": "The giraffe is taller than Sam.",
+      "status": "published",
+      "sha256": "57146652d1a570fe8a7db29e9dc9eea8a872971966c45defcd0755dd9947e698"
+    },
+    "ep12.l05": {
+      "path": "ep12/audio/lines.json",
+      "line": 184,
+      "anchor": "\"l05\"",
+      "status": "published",
+      "sha256": "8b640d3aa5ca7aac23d7247de7cc577b197b1170d70f468e8888f14be763c569",
+      "excerpt": "The mermaid mayor lets everyone enter the city."
+    },
+    "ep13.l10": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep13/story.md",
+      "line": 36,
+      "anchor": "audio/l10.mp3",
+      "status": "approved-draft",
+      "sha256": "d2bb6148450d0a376421d854bd3026486bddb137f1d350e82d43632e0adc36ec"
+    },
+    "ep14.l02": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep14/story.md",
+      "line": 20,
+      "anchor": "audio/l02.mp3",
+      "status": "approved-draft",
+      "sha256": "980f2511ee458d5a9804b1e68578a5f107999c06fc0ef2a5540ef9c0bd5de5a7"
+    },
+    "ep15.l02": {
+      "path": "ep15/audio/lines.json",
+      "line": 95,
+      "anchor": "\"l02\"",
+      "status": "published",
+      "sha256": "85ee4ae8c454b0a2f23f50602254ccf5b3df43d8bcaf55bf8ee9d7d049f30ea3",
+      "excerpt": "By the time the guard opened the door, the crown had disappeared."
+    },
+    "ep15.l11": {
+      "path": "ep15/audio/lines.json",
+      "line": 567,
+      "anchor": "\"l11\"",
+      "status": "published",
+      "sha256": "85ee4ae8c454b0a2f23f50602254ccf5b3df43d8bcaf55bf8ee9d7d049f30ea3",
+      "excerpt": "A clockwork mouse was caught beside the crown and its cosy sock nest."
+    },
+    "ep16.l03": {
+      "path": "ep16/audio/lines.json",
+      "line": 133,
+      "anchor": "\"l03\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "Welcome! I need a helper to guard my socks."
+    },
+    "ep01.l01": {
+      "path": "ep01/audio/lines.json",
+      "line": 2,
+      "anchor": "\"l01\"",
+      "status": "published",
+      "sha256": "453f6985812b14c6fa166c5b6c74798a9be80358b6896dddce78fe843b2885c5",
+      "excerpt": "Leo holds Grandpa's compass in the attic."
+    },
+    "ep01.l02": {
+      "path": "ep01/audio/lines.json",
+      "line": 45,
+      "anchor": "\"l02\"",
+      "status": "published",
+      "sha256": "453f6985812b14c6fa166c5b6c74798a9be80358b6896dddce78fe843b2885c5",
+      "excerpt": "Egypt is our first stop!"
+    },
+    "ep01.l04": {
+      "path": "ep01/audio/lines.json",
+      "line": 116,
+      "anchor": "\"l04\"",
+      "status": "published",
+      "sha256": "453f6985812b14c6fa166c5b6c74798a9be80358b6896dddce78fe843b2885c5",
+      "excerpt": "Suddenly, they are inside a dark pyramid."
+    },
+    "ep02.l13": {
+      "path": "ep02/audio/lines.json",
+      "line": 513,
+      "anchor": "\"l13\"",
+      "status": "published",
+      "sha256": "f9524e119e6fdbfdcb723777af1280fa566035b16c16a5adaa192f3452f50452",
+      "excerpt": "Lily finds the words \"C. C. was here\" on an old chessboard."
+    },
+    "ep12.l12": {
+      "path": "ep12/audio/lines.json",
+      "line": 505,
+      "anchor": "\"l12\"",
+      "status": "published",
+      "sha256": "8b640d3aa5ca7aac23d7247de7cc577b197b1170d70f468e8888f14be763c569",
+      "excerpt": "Biscuit swims across the square with the compass in his mouth."
+    },
+    "ep15.l08": {
+      "path": "ep15/audio/lines.json",
+      "line": 418,
+      "anchor": "\"l08\"",
+      "status": "published",
+      "sha256": "85ee4ae8c454b0a2f23f50602254ccf5b3df43d8bcaf55bf8ee9d7d049f30ea3",
+      "excerpt": "Biscuit was given the sock to sniff."
+    },
+    "ep15.l14": {
+      "path": "ep15/audio/lines.json",
+      "line": 751,
+      "anchor": "\"l14\"",
+      "status": "published",
+      "sha256": "85ee4ae8c454b0a2f23f50602254ccf5b3df43d8bcaf55bf8ee9d7d049f30ea3",
+      "excerpt": "The fifteenth star was placed beside the part, ready for the journey home."
+    },
+    "ep11.l12": {
+      "path": "ep11/audio/lines.json",
+      "line": 565,
+      "anchor": "\"l12\"",
+      "status": "published",
+      "sha256": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8",
+      "excerpt": "Biscuit searches most carefully and finds the missing prize sock."
+    },
+    "ep17.l05": {
+      "path": "ep17/audio/lines.json",
+      "line": 209,
+      "anchor": "\"l05\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Here is the boy who found the compass."
+    },
+    "ep17.l07": {
+      "path": "ep17/audio/lines.json",
+      "line": 305,
+      "anchor": "\"l07\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "The letter which Grandpa left is in the chess box."
+    },
+    "ep17.photo": {
+      "path": "ep17/docs/PROMPTS.md",
+      "line": 29,
+      "anchor": "Grandpa points to a small sepia photograph",
+      "status": "published",
+      "sha256": "626ce1ef94cf95c425a749bc85a09894e66b96b0cb0cbad9383de134a0418312"
+    },
+    "ep17.l11": {
+      "path": "ep17/audio/lines.json",
+      "line": 487,
+      "anchor": "\"l11\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Here is the part that Mia found in London."
+    },
+    "ep17.l12": {
+      "path": "ep17/audio/lines.json",
+      "line": 540,
+      "anchor": "\"l12\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "Never have I seen the compass so bright!"
+    },
+    "ep17.star": {
+      "path": "ep17/audio/lines.json",
+      "line": 2381,
+      "anchor": "\"star\"",
+      "status": "published",
+      "sha256": "3b8d0c430eaaa33a44b27281ea729f3717cffb5f64c44edcd512f244f3096be3",
+      "excerpt": "All seventeen stars are home!"
+    },
+    "badge.S.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 4,
+      "anchor": "\"b\": \"S\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.V.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 28,
+      "anchor": "\"b\": \"V\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.L.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 16,
+      "anchor": "\"b\": \"L\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.O.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 9,
+      "anchor": "\"b\": \"O\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.C.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 21,
+      "anchor": "\"b\": \"C\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.N.first": {
+      "path": "ep02/episode.js",
+      "line": 49,
+      "anchor": "{{b:N",
+      "status": "published",
+      "sha256": "0b483b4a3e102344e2a5bec94445e1e3cb647346721d64db825ce1db398ccc8b"
+    },
+    "badge.A.first": {
+      "path": "ep02/audio/hints.json",
+      "line": 3,
+      "anchor": "\"b\":\"A\"",
+      "status": "published",
+      "sha256": "e57367cd2ebd269168f86783aa64dce6ce5b7f8aa493e4a8f1d04fa7643f7194"
+    },
+    "badge.THE.first": {
+      "path": "ep02/audio/hints.json",
+      "line": 5,
+      "anchor": "\"b\":\"THE\"",
+      "status": "published",
+      "sha256": "e57367cd2ebd269168f86783aa64dce6ce5b7f8aa493e4a8f1d04fa7643f7194"
+    },
+    "badge.ZERO.first": {
+      "path": "ep02/audio/hints.json",
+      "line": 12,
+      "anchor": "\"b\":\"ZERO\"",
+      "status": "published",
+      "sha256": "e57367cd2ebd269168f86783aa64dce6ce5b7f8aa493e4a8f1d04fa7643f7194"
+    },
+    "badge.OWNER.first": {
+      "path": "ep02/audio/hints.json",
+      "line": 4,
+      "anchor": "\"b\":\"OWNER\"",
+      "status": "published",
+      "sha256": "e57367cd2ebd269168f86783aa64dce6ce5b7f8aa493e4a8f1d04fa7643f7194"
+    },
+    "badge.COUNT.first": {
+      "path": "ep02/audio/hints.json",
+      "line": 11,
+      "anchor": "\"b\":\"COUNT\"",
+      "status": "published",
+      "sha256": "e57367cd2ebd269168f86783aa64dce6ce5b7f8aa493e4a8f1d04fa7643f7194"
+    },
+    "badge.TD.first": {
+      "path": "ep12/audio/hints.json",
+      "line": 53,
+      "anchor": "\"b\": \"TD\"",
+      "status": "published",
+      "sha256": "cd848ed23c06f6d549f2a14d92cd2225adcaa39d854b7311bf13ed579b264019"
+    },
+    "badge.DO.first": {
+      "path": "ep04/audio/hints.json",
+      "line": 56,
+      "anchor": "\"b\": \"DO\"",
+      "status": "published",
+      "sha256": "0e34823766aedb36e0c32c78a85a31b83d1adb71d89eb71527fb4087b63f6fbb"
+    },
+    "badge.ING.first": {
+      "path": "ep16/audio/hints.json",
+      "line": 3,
+      "anchor": "\"b\":\"ING\"",
+      "status": "published",
+      "sha256": "a9d2b09eee7ff7ca1342ffb3c05cdcfe42b0a22146dd9889e1fb8fd874605d3d"
+    },
+    "badge.ED.first": {
+      "path": "ep15/episode.js",
+      "line": 769,
+      "anchor": "{{b:ED",
+      "status": "published",
+      "sha256": "4d9ebc51c90a00c3b9a63e0e3b76c2f78065c4738aeff1599772d7bd4cde47a9"
+    },
+    "badge.ADJ.first": {
+      "path": "ep07/audio/hints.json",
+      "line": 5,
+      "anchor": "\"b\": \"ADJ\"",
+      "status": "published",
+      "sha256": "018c9910951aa2a9886e30ff517c987d2711f67200fcb0bff3a2b329d398a309"
+    },
+    "badge.ADV.first": {
+      "path": "ep01/audio/hints.json",
+      "line": 33,
+      "anchor": "\"b\": \"ADV\"",
+      "status": "published",
+      "sha256": "74fde22d966e134fdb4f046a871a331f0f7f6a3bf364d2c83cc166794e72ee05"
+    },
+    "badge.REL.first": {
+      "path": "ep17/audio/hints.json",
+      "line": 32,
+      "anchor": "\"b\": \"REL\"",
+      "status": "published",
+      "sha256": "dde51617f7e6706565449261651629ec79e51a33881d7dcad92c4ebf9d8022ac"
+    },
+    "badge.INV.first": {
+      "path": "ep17/audio/hints.json",
+      "line": 4,
+      "anchor": "\"b\": \"INV\"",
+      "status": "published",
+      "sha256": "dde51617f7e6706565449261651629ec79e51a33881d7dcad92c4ebf9d8022ac"
+    },
+    "canon.ep06.officer": {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/grammar_fasttrack_final.md",
+      "line": 257,
+      "anchor": "\"The race starts at three o'clock on the fifth day,\" says the officer.",
+      "status": "canon-approved-selection",
+      "sha256": "2241f090f6d25584f9bd1dc1102ed86413a588cba3ab14b2062408fc01ce795d",
+      "excerpt": "The race starts at three o'clock on the fifth day.",
+      "difference": "总纲原说话人officer；已审ep06相同句改由Lily说。本轮授权HQ采用总纲本人台词。"
+    },
+    "ep16.l04": {
+      "path": "ep16/audio/lines.json",
+      "line": 186,
+      "anchor": "\"l04\"",
+      "status": "published",
+      "sha256": "84546a038ce30e1de285d19ef8c411a0703d641d3059c792d896d709088e61e3",
+      "excerpt": "We came here to find a job for Biscuit!"
+    },
+    "willo_approved_16": {
+      "path": "hq/docs/HQ_Willo审定修改验收_20261011.md",
+      "line": 10,
+      "anchor": "本轮由 Cici 转达 Willo",
+      "status": "user-transmitted-formal-review",
+      "sha256": "911315a2e005f4f5ca64221f50723a8300e936bae50c25792fd2c08785a8a81e",
+      "excerpt": "16条正式审定要求逐项落实；当前仅文字与配置/清单完成，媒体未完成。"
+    }
+  },
+  "excludedCharacterCandidates": [
+    {
+      "id": "viking_sailors",
+      "name": "维京船员们",
+      "sources": [
+        "ep02.l12"
+      ]
+    },
+    {
+      "id": "olympia_runners",
+      "name": "赛跑选手们",
+      "sources": [
+        "ep06.l09"
+      ]
+    },
+    {
+      "id": "young_grandpa",
+      "name": "小时候的爷爷",
+      "sources": [
+        "ep09.l02"
+      ]
+    },
+    {
+      "id": "mars_robot",
+      "name": "搬运机器人",
+      "sources": [
+        "ep10.l07"
+      ]
+    },
+    {
+      "id": "photo_girl",
+      "name": "照片里的女孩",
+      "sources": [
+        "ep10.l14"
+      ]
+    },
+    {
+      "id": "zebra",
+      "name": "斑马",
+      "sources": [
+        "ep11.zebra"
+      ]
+    },
+    {
+      "id": "giraffe",
+      "name": "长颈鹿",
+      "sources": [
+        "ep11.giraffe"
+      ]
+    }
+  ],
+  "characterInventory": [
+    {
+      "id": "leo",
+      "ep": 17,
+      "name": "Leo",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "ep17.l02",
+        "willo_approved_16"
+      ]
+    },
+    {
+      "id": "mia",
+      "ep": 4,
+      "name": "Mia",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "ep04.l03",
+        "willo_approved_16"
+      ]
+    },
+    {
+      "id": "sam",
+      "ep": 11,
+      "name": "Sam",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "ep11.l02"
+      ]
+    },
+    {
+      "id": "lily",
+      "ep": 16,
+      "name": "Lily",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "ep16.l07"
+      ]
+    },
+    {
+      "id": "biscuit",
+      "ep": 1,
+      "name": "Biscuit",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "ep01.l10"
+      ]
+    },
+    {
+      "id": "grandpa",
+      "ep": 17,
+      "name": "爷爷",
+      "category": "main",
+      "status": "published",
+      "sources": [
+        "cast",
+        "spec_cast",
+        "voice_grandpa",
+        "ep17.l15",
+        "willo_approved_16"
+      ]
+    },
+    {
+      "id": "viking_captain",
+      "ep": 2,
+      "name": "维京船长",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep02.l03"
+      ]
+    },
+    {
+      "id": "owl",
+      "ep": 3,
+      "name": "猫头鹰馆长",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep03.l02"
+      ]
+    },
+    {
+      "id": "dragon",
+      "ep": 4,
+      "name": "绿龙",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep04.l11"
+      ]
+    },
+    {
+      "id": "bob",
+      "ep": 5,
+      "name": "Bob",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep05.l03"
+      ]
+    },
+    {
+      "id": "tina",
+      "ep": 5,
+      "name": "Tina",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep05.l04"
+      ]
+    },
+    {
+      "id": "zed",
+      "ep": 5,
+      "name": "Zed",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep05.l09"
+      ]
+    },
+    {
+      "id": "olympia_officer",
+      "ep": 6,
+      "name": "报名官",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "canon.ep06.officer",
+        "willo_approved_16"
+      ]
+    },
+    {
+      "id": "dad",
+      "ep": 7,
+      "name": "爸爸",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "cast",
+        "ep07.l03"
+      ]
+    },
+    {
+      "id": "dinosaur_family",
+      "ep": 8,
+      "name": "丛林恐龙们",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep08.l03",
+        "ep08.l04",
+        "ep08.l09"
+      ]
+    },
+    {
+      "id": "mars_commander",
+      "ep": 10,
+      "name": "火星指挥官",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep10.l04"
+      ]
+    },
+    {
+      "id": "cheetah",
+      "ep": 11,
+      "name": "猎豹",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep11.l05"
+      ]
+    },
+    {
+      "id": "elephant",
+      "ep": 11,
+      "name": "大象",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep11.l06"
+      ]
+    },
+    {
+      "id": "mermaid_mayor",
+      "ep": 12,
+      "name": "人鱼市长",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep12.l05"
+      ]
+    },
+    {
+      "id": "redbeard",
+      "ep": 13,
+      "name": "红胡子船长",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep13.l10"
+      ]
+    },
+    {
+      "id": "moon_robot",
+      "ep": 14,
+      "name": "月球老机器人",
+      "category": "supporting",
+      "status": "approved-draft",
+      "sources": [
+        "ep14.l02"
+      ]
+    },
+    {
+      "id": "museum_guard",
+      "ep": 15,
+      "name": "博物馆守卫",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep15.l02"
+      ]
+    },
+    {
+      "id": "clockwork_mouse",
+      "ep": 15,
+      "name": "发条老鼠",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep15.l11"
+      ]
+    },
+    {
+      "id": "grumble",
+      "ep": 16,
+      "name": "Grumble",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "ep16.l03"
+      ]
+    },
+    {
+      "id": "mum",
+      "ep": 17,
+      "name": "妈妈",
+      "category": "supporting",
+      "status": "published",
+      "sources": [
+        "cast",
+        "ep17.l14"
+      ]
+    }
+  ],
+  "badgeFirstAppearance": {
+    "S": {
+      "ep": 1,
+      "path": "audio/hints.json.l01[0].b",
+      "notation": "badge-field"
+    },
+    "O": {
+      "ep": 1,
+      "path": "audio/hints.json.l01[1].b",
+      "notation": "badge-field"
+    },
+    "L": {
+      "ep": 1,
+      "path": "audio/hints.json.l02[0].b",
+      "notation": "badge-field"
+    },
+    "C": {
+      "ep": 1,
+      "path": "audio/hints.json.l02[1].b",
+      "notation": "badge-field"
+    },
+    "V": {
+      "ep": 1,
+      "path": "audio/hints.json.l03[0].b",
+      "notation": "badge-field"
+    },
+    "ADV": {
+      "ep": 1,
+      "path": "audio/hints.json.l03[1].b",
+      "notation": "badge-field"
+    },
+    "A": {
+      "ep": 2,
+      "path": "audio/hints.json.l01[0].b",
+      "notation": "badge-field"
+    },
+    "OWNER": {
+      "ep": 2,
+      "path": "audio/hints.json.l02[0].b",
+      "notation": "badge-field"
+    },
+    "THE": {
+      "ep": 2,
+      "path": "audio/hints.json.l03[1].b",
+      "notation": "badge-field"
+    },
+    "COUNT": {
+      "ep": 2,
+      "path": "audio/hints.json.l09[0].b",
+      "notation": "badge-field"
+    },
+    "ZERO": {
+      "ep": 2,
+      "path": "audio/hints.json.l10[0].b",
+      "notation": "badge-field"
+    },
+    "N": {
+      "ep": 2,
+      "path": "episode.js:activities.map.html",
+      "notation": "inline-badge"
+    },
+    "DO": {
+      "ep": 4,
+      "path": "audio/hints.json.l07[0].b",
+      "notation": "badge-field"
+    },
+    "ADJ": {
+      "ep": 7,
+      "path": "audio/hints.json.l01[0].b",
+      "notation": "badge-field"
+    },
+    "TD": {
+      "ep": 12,
+      "path": "audio/hints.json.l08[0].b",
+      "notation": "badge-field"
+    },
+    "ED": {
+      "ep": 15,
+      "path": "episode.js:activities.map.html",
+      "notation": "inline-badge"
+    },
+    "ING": {
+      "ep": 16,
+      "path": "audio/hints.json.l02[0].b",
+      "notation": "badge-field"
+    },
+    "INV": {
+      "ep": 17,
+      "path": "audio/hints.json.l01[0].b",
+      "notation": "badge-field"
+    },
+    "REL": {
+      "ep": 17,
+      "path": "audio/hints.json.l05[0].b",
+      "notation": "badge-field"
+    }
+  },
+  "badgePendingEarlierAppearance": {
+    "V": {
+      "ep": 5,
+      "path": "hints.json.l01[0].b",
+      "notation": "badge-field"
+    },
+    "ADV": {
+      "ep": 5,
+      "path": "hints.json.l04[1].b",
+      "notation": "badge-field"
+    },
+    "S": {
+      "ep": 5,
+      "path": "hints.json.l05[0].b",
+      "notation": "badge-field"
+    },
+    "COUNT": {
+      "ep": 6,
+      "path": "hints.json.l03[0].b",
+      "notation": "badge-field"
+    },
+    "C": {
+      "ep": 6,
+      "path": "hints.json.l04[0].b",
+      "notation": "badge-field"
+    },
+    "O": {
+      "ep": 6,
+      "path": "hints.json.l06[0].b",
+      "notation": "badge-field"
+    },
+    "DO": {
+      "ep": 10,
+      "path": "hints.json.l02[0].b",
+      "notation": "badge-field"
+    },
+    "TD": {
+      "ep": 10,
+      "path": "hints.json.l05[0].b",
+      "notation": "badge-field"
+    },
+    "ED": {
+      "ep": 14,
+      "path": "hints.json.l03[0].b",
+      "notation": "badge-field"
+    }
+  },
+  "differences": [
+    {
+      "id": "ep16-clue",
+      "finding": "已发布第16集没有老怪兽说最后一星在家中的桥段。",
+      "resolution": "保留实际找袜子得工作内容，标记冒险小纪念；不向已发布单集补写主线。"
+    },
+    {
+      "id": "sam-lily-age",
+      "finding": "总纲无Sam、Lily数字年龄。",
+      "resolution": "使用朋友与同班同学身份，不编造年龄。"
+    },
+    {
+      "id": "photo-identity",
+      "finding": "ep10使用might be Ms. Green。",
+      "resolution": "只写照片中的女孩，保留可能，未确认身份。"
+    },
+    {
+      "id": "prologue-ep01",
+      "finding": "第1集已从阁楼演穿越金字塔。",
+      "resolution": "按Cici最新确认，序章停在准备出发。"
+    },
+    {
+      "id": "badge-first",
+      "finding": "旧SPEC样板集不等于第一次出现。",
+      "resolution": "扫描当前hint/题目，记录实际首现；待发布更早集单独记录。"
+    },
+    {
+      "id": "officer-speaking-source",
+      "finding": "ep06已审稿无报名官独立配音；同一句在总纲明确由officer说。",
+      "resolution": "HQ采用获准的总纲台词，旁白朗读，未改ep06。"
+    },
+    {
+      "id": "finale-gate",
+      "finding": "旧M2稿不强制收齐前16星即可进入终章。",
+      "resolution": "本轮审定覆盖旧规则；配置和深链接规格同时要求前16星，未实现引擎。"
+    },
+    {
+      "id": "prologue-count",
+      "finding": "任务书旧上限5–8句。",
+      "resolution": "本轮新增2句，正式待录文本10句，按播放顺序命名pro_l01至pro_l10。"
+    }
+  ],
+  "contentVersion": "m2-text-approved-20261011-2",
+  "reviewStatus": "Willo文本已审，16条修改已落实；媒体未完成",
+  "ep10NameNormalization": [
+    {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/COVERAGE.md",
+      "replacements": 1,
+      "beforeSha256": "92d0f16e615819cab6ab9021f8d1fe4f3897ffef91a48f5f1eeee6fcedaaf607",
+      "afterSha256": "6b94d2c76c0bb5f231311d5291fc24d6cba89bdfccf24e570b45def2fc67516e"
+    },
+    {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/QUESTIONS_PLAN.md",
+      "replacements": 2,
+      "beforeSha256": "0640e3827440433f7cebcf2cfcdb57361c6d38c9f73b0cf7c89a643fd3359177",
+      "afterSha256": "fd06b75ec9e4df4fcf41edb517580902e832c2ce169b97c88541f53944232dac"
+    },
+    {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/knowledge.md",
+      "replacements": 1,
+      "beforeSha256": "1d435fbf39fc36f10919179cf0a1bb586b597dc4d89fca2474265073f1007ad3",
+      "afterSha256": "1cd7581cbe078874df12e9f0f8f562f8cbb1ec6476f42abd36bf31ff5c4f3847"
+    },
+    {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/story.md",
+      "replacements": 2,
+      "beforeSha256": "5e8c11d0bc5fd7002463c20d49d8031a078217de0448286e15a12718c891a870",
+      "afterSha256": "a0e0ccb86c77f983afbfcef2ca5478eae98a8656e1cad27144107ceedc8cebdb"
+    },
+    {
+      "path": "/Users/tianchangchun/Study/03_英语/02-语法/语法初始化/各集内容/ep10/台词追加.md",
+      "replacements": 2,
+      "beforeSha256": "6b147127cb52f90d79135c6060a7d94f2ecbb4d010255cd340ade921cf67785e",
+      "afterSha256": "5073dca08bbdc91405fb73d444fab46a412d3bdb19874ec899730ea3fd5cc16c"
+    }
+  ]
+}

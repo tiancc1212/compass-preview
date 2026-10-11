@@ -1,6 +1,6 @@
 # 罗盘冒险队 · 单集规格书（SPEC）
 
-> 版本 1.0，2026-10-11。适用于第 3–15 集、第 17 集，以及以后重做的任何一集。
+> 版本 1.1（引擎 v5 / HQ 修订稿），2026-10-11。适用于所有已发布集与后续新集。
 > **规格书写的是“一集必须是什么样”**：结构、字段、内容标准、画面和声音标准、验收标准。
 > **怎么一步步做出来**（装环境、生图、配音、对齐、部署的命令）看同目录的 `tools/handoff_单集制作流程.md`。两份文件说法不一致时，以本规格书为准，并告诉 Cici。
 > 样板集：`ep16/`（第 16 集 怪兽招聘会，非谓语动词）和 `ep02/`（第 2 集 维京船上的寻物单，名词与冠词）。本文所有例子都摘自这两集的真实文件，文件名和字段名可以直接在仓库里搜到。
@@ -9,9 +9,11 @@
 
 ## 1. 范围与分工
 
+> 本轮 A+B 例外：Cici 已批准 Codex 修改共享引擎、HQ、11 集元数据和壳层、校验器及本规格；教学内容、题库、对白不变。本轮不实施 C（stemlearn、账号、服务端进度）。下表仍是日常单集制作的默认分工，本轮明确授权优先。
+
 | 角色 | 负责 | 不能做 |
 |---|---|---|
-| **Codex**（主要制作者） | 只在 `epNN/` 目录里写内容：`index.html`（标准外壳）、`episode.js`、`episode.css`（可选）、`audio/`、`illus/`、`downloads/`、`docs/`；另外可以新增 `tools/make_docx_epNN.py` | 不能改 `engine/` 里的任何文件；不能改根目录第 1 集、`ep02/`、`ep16/` 或其他已完成的集；不能改 `tools/validate_episode.mjs` |
+| **Codex**（主要制作者） | 只在 `epNN/` 目录里写内容：`index.html`（标准外壳）、`episode.js`、`episode.css`（可选）、`audio/`、`illus/`、`downloads/`、`docs/`；另外可以新增 `tools/make_docx_epNN.py` | 不能改 `engine/` 里的任何文件；不能擅自改 `ep01/`、`ep02/`、`ep16/` 或其他已完成的集；不能改 `tools/validate_episode.mjs` |
 | **Willo** | 维护共享引擎 `engine/`、检查器 `tools/validate_episode.mjs`、本规格书 | — |
 | **Cici**（家长，最终决定人） | 批准故事和题目计划、插图、配音、引擎改动；做最后的听感和观感验收 | — |
 | **CoCo** | 用剪映生成配音 | — |
@@ -28,7 +30,7 @@
 epNN/                         NN 两位数：ep03、ep10、ep17
   index.html                  标准外壳，从 ep16/index.html 复制，只改 <title> 和 data-v
   episode.js                  本集全部内容（§4）
-  episode.css                 可选。只能写本集插图上叠字（.carve）的位置，例：ep02/episode.css
+  episode.css                 可选。只写本集叠字位置；ep01 可声明本集象形文字字体
   audio/
     l01.mp3 … lNN.mp3         故事台词，一句一个
     ex_q<活动号>_<描述>.mp3    练习答对后的奖励音，例：ex_q4_1.mp3、ex_q3_stop1.mp3、ex_q1_axe.mp3
@@ -56,7 +58,6 @@ epNN/                         NN 两位数：ep03、ep10、ep17
 ```html
 <!doctype html><html lang="zh-CN" data-v="13"><head>…
 <title>罗盘冒险队 · 第16集 怪兽招聘会（非谓语动词）</title>
-<script type="importmap">{"imports":{"three":"../engine/lib/three.module.js","three/addons/":"../engine/lib/addons/"}}</script>
 <script type="module">const v=(await fetch('../engine/VERSION',{cache:'no-store'}) … await import('../engine/engine.js?v='+v);</script>
 </head><body></body></html>
 ```
@@ -64,9 +65,9 @@ epNN/                         NN 两位数：ep03、ep10、ep17
 **三个版本号：**
 | 版本号 | 在哪 | 什么时候改 |
 |---|---|---|
-| 内容版本 | `epNN/index.html` 的 `<html data-v="N">`，新集从 1 开始（ep16 现在是 13，ep02 是 4） | 改了 episode.js、lines.json、hints.json、episode.css 后 +1 |
+| 内容版本 | `epNN/index.html` 的 `<html data-v="N">`，新集从 1 开始 | 改了 episode.js、lines.json、hints.json、episode.css 后 +1 |
 | 音频版本 | `episode.js` 的 `audioVersion`，例：`'20261011-level1'` | 替换了任何 mp3 后改成新字符串（建议 `日期-说明`） |
-| 引擎版本 | `engine/VERSION` | 只有 Willo 改 |
+| 引擎版本 | `engine/VERSION` | 获得引擎修改授权时更新；v5 为纯 2D 罗盘 |
 
 插图换了内容就换文件名（例如 `01_gate_v2.jpg`），不要覆盖同名文件。
 
@@ -74,7 +75,7 @@ epNN/                         NN 两位数：ep03、ep10、ep17
 
 ## 3. 一集的流程（孩子看到的样子）
 
-开始页（3D 罗盘 + 标题 + “出发”按钮）→ 故事第 1 段 → 练习 → 故事第 2 段 → 练习 → … → 知识地图（可下载 Word）→ 收藏卡 → 星星飞回罗盘 → 完成卡片（可下载 Word、再玩一次）。
+开始页（星图秘境 2D 罗盘章 + 标题 + “出发”按钮 + 返回总部）→ 故事第 1 段 → 练习 → 故事第 2 段 → 练习 → … → 知识地图（可下载 Word）→ 收藏卡 → 星星飞回罗盘 → 完成卡片（可下载 Word、再玩一次）。
 
 顺序完全由 `episode.js` 的 `flow` 决定，例：
 ```js
@@ -96,15 +97,16 @@ flow:['S1','q1','q2','S2','q3','S3','q4','S4','q5','q6','map','card'],
 | 字段 | 类型 | 必填 | 说明 / 取值 | 例子 |
 |---|---|---|---|---|
 | `no` | 整数 1–17 | ✔ | 集号 = 罗盘上的第几颗星。引擎里 `MYSTAR = no - 1`（星星飞进第 no 个槽），`localStorage.cc_stars` 记录集号 | ep16：`no:16` |
-| `hud` | 字符串 | ✔ | 左上角标题，格式固定 `🧭 罗盘冒险队 · 第N集 <地点>` | `'🧭 罗盘冒险队 · 第16集 怪兽招聘会'` |
+| `meta` | `{title, place, grammar, icon}` | ✔ | HQ 地图元数据；`grammar` 为审定中文标签数组，`icon` 为地点图标 ID 字符串，与 `hq/hq.js` 对应站一致。本轮不填网站知识点 ID | `meta:{title:'怪兽招聘会',place:'怪兽王国招聘会',grammar:['不定式','动名词与分词','非谓语搭配与辨义'],icon:'monster-fair'}` |
+| `hud` | 字符串 | ✔ | 左上角标题，格式固定 `罗盘冒险队 · 第N集 <地点>`；不含 emoji，图标由引擎提供 | `'罗盘冒险队 · 第16集 怪兽招聘会'` |
 | `stars` | 字符串 | 可选 | 右上角星星文字，默认 `⭐ 第 N 颗星` | `'⭐ 第 2 颗星'` |
-| `start` | `{h1, subt, go}` | ✔ | 开始页标题、一句话简介（中文，≤40 字）、出发按钮（`🧭 出发：` + 一句英文或中文） | ep16：`go:'🧭 出发：We want to find a job!'` |
+| `start` | `{h1, subt, go}` | ✔ | 开始页标题、一句话简介（中文，≤40 字）、出发按钮（`出发：` + 一句英文或中文） | ep16：`go:'出发：We want to find a job!'` |
 | `theme` | `{bg, stage}` | 可选 | 页面底色和插图区底色（基本被模糊背景盖住）。默认 `#1b1020` / `#2a1830` | ep02：`{bg:'#132c36',stage:'#153441'}` |
 | `audioVersion` | 字符串 | 建议 | 加在每个 mp3 后的 `?v=` | `'20261011-level1'` |
 | `rewardWait` | 布尔 | 可选，默认 false | true：答对后“下一题”要等奖励音播完才能点，最后一题自动继续（ep02 用 true，ep16 用 false）。新集默认 false；题目短、奖励音是完整句子时可以用 true | ep02：`rewardWait:true` |
 | `css` | 布尔 | 可选 | true 时加载 `episode.css` | ep02：`css:true` |
 | `speakers` | 对象 | 可选 | 新角色：`{key:['中文名','#颜色']}`，key 要和 lines.json 的 `who` 一致。已有角色见 §8.3 | — |
-| `download` | `{href, name, label}` | ✔ | 知识点 Word。`href` 是相对路径，`name` 是下载后的中文文件名，`label` 固定 `'📥 下载知识点（Word）'` | ep16：`{href:'downloads/ep16_nonfinite_verbs.docx',name:'罗盘冒险队_第16集_非谓语动词_知识点.docx',label:'📥 下载知识点（Word）'}` |
+| `download` | `{href, name, label}` | ✔ | 知识点 Word。`href` 是相对路径，`name` 是下载后的中文文件名，`label` 固定 `'下载知识点（Word）'` | ep16：`{href:'downloads/ep16_nonfinite_verbs.docx',name:'罗盘冒险队_第16集_非谓语动词_知识点.docx',label:'下载知识点（Word）'}` |
 | `img` | 对象 | ✔ | 故事插图表 `key:[路径, 中文说明]`。说明用作无障碍 alt，也用于图片缺失时的占位 | ep16：`gate:['illus/01_fair_gate.jpg','招聘会大门 · 紫色怪兽举着牌子']` |
 | `firstImg` | 字符串 | 建议 | 开始页背后显示的插图 key | `'gate'` |
 | `sections` | 对象 | ✔ | 故事分段（§4.2） | — |
@@ -483,6 +485,19 @@ Pixar-like 3D animated film still, 16:9 (1920x1080), warm cinematic lighting, so
 
 ---
 
+### 9.7 引擎 v5：罗盘、图标与字体
+
+- Cici 选定「星图秘境」。开始页与结尾使用 `engine/compass/` 的分层 2D 资源；星槽坐标以版本化 JSON 为准，17 槽顺序与集号一致。外壳不得再带 three.js importmap，页面不请求 three.js 或 GLB。
+- 开始页为羊皮纸卡片、罗盘章和出发按钮；完成页桌面左右排、手机上下排。卡片用黄铜细描边和柔和双层阴影；底部操作区用羊皮纸渐变。故事插图仍完整显示，不改变题型流程。
+- HUD 和系统按钮使用 `engine/icons.js` 的统一线性黄铜 SVG（24px 网格、2px 描边）；手机横屏可只显示图标，但每个按钮必须有 `aria-label`。单集 `hud`、`start.go`、`download.label`、收藏卡 `button/done` 不写 emoji；只允许保留 `➜` 作文字箭头。原教学 HTML 和对白不在本次清理范围。
+- 中文使用系统无衬线：苹方 / Hiragino Sans GB / 微软雅黑 / system-ui；英文正文使用本地圆润衬线子集 Compass Reading（源自 Source Serif 4，400 字重，`engine/fonts/CompassReading-Regular-v5.woff2`，22,980B；许可和来源见同目录 `LICENSE.md`、`README.md`），不为每集重复装字体。象形文字只由 `ep01/episode.css` 从 `ep01/fonts/` 引入，其它集不加载。
+- 星星飞行最多 1.8 秒，可点击跳过；槽位点亮后柔和光晕只出现一次。`prefers-reduced-motion` 下取消飞行、呼吸及其它反馈运动，保留完成结果与交互。
+- 保持 `window.__state().starsLit`、`localStorage.cc_stars`、`#stars` 和 `window.__skipStar` 的既有接口。进度显示使用 17 个小星槽，不用 emoji 星作为飞行素材。
+- HQ 只给真实已发布集建立入口。未发布 6 集保留审定地图说明，显示“即将开放”且不可点，不生成空目录或练习。第 17 集在前 16 星齐全后才可进入；直接地址、知识地图、恢复入口同样检查，旧第 17 星不能绕过门槛。
+- 30 张已审定 HQ 插图按 Cici 最新授权，与其它素材一并发布压缩版 WebP；`hq/media-assets.js` 保留历史 key 作来源映射。原始参考图、外部制作原图不因这次授权自动进入仓库。
+
+---
+
 ## 10. 声音标准
 
 ### 10.1 音色表（每个角色全剧固定）
@@ -513,17 +528,17 @@ mp3，44.1kHz，立体声，192kbps；一句一个文件；句首句尾静音 �
 | 行为 | 验收标准 |
 |---|---|
 | 手动翻句（默认） | 手机左右滑动、电脑 ← → 键、屏幕“◀ 上一句 / 下一句 ▶”；翻到一句就读一遍；最后一句的按钮显示“去闯关” |
-| 自动播放 | 右上角“▶ 自动播放”连续读；一滑动或按键就回到手动 |
+| 自动播放 | 右上角“自动播放”连续读；一滑动或按键就回到手动 |
 | 静音 | 手动照样能翻；自动模式按每句时长前进不会卡住；中途开关正常 |
 | 语速 | 0.75 / 1 / 1.25x，切换后高亮仍同步 |
 | 高亮 | 声音出来前不亮，逐词前进不回跳；语法提示的词有彩色下划线 |
-| 重看上一节 | 练习中点“📖 重看上一节”，看完点“↩ 回到练习”，作答进度还在 |
+| 重看上一节 | 练习中点“重看上一节”，看完点“↩ 回到练习”，作答进度还在 |
 | 故事画面没有弹窗 | 每段故事开始时练习卡片和提示都已关闭 |
 | 音频只在答对后 | 答题前没有任何练习音频 |
 | 拖拽不误翻 | 在拖拽、连线题上横向拖动不会翻故事 |
 | 手机键盘 | 不自动大写、不自动纠错，按“完成”或回车即提交 |
 | 星星回罗盘 | 星星飞进第 `no` 个槽，点亮，显示 N / 17；之前完成的集也亮 |
-| Word 下载 | 知识地图和完成卡片上的“📥 下载知识点（Word）”在 iPhone 和安卓都能下载并打开 |
+| Word 下载 | 知识地图和完成卡片上的“下载知识点（Word）”在 iPhone 和安卓都能下载并打开 |
 
 ---
 
@@ -540,13 +555,13 @@ mp3，44.1kHz，立体声，192kbps；一句一个文件；句首句尾静音 �
 
 一集只有全部满足下面各项才能交给 Cici：
 
-1. **检查器**：`node tools/validate_episode.mjs epNN` 0 个错误；每条 ⚠ 提醒都看过并处理或说明。
+1. **检查器**：`node tools/validate_episode.mjs epNN` 0 个错误；每条 ⚠ 提醒都看过并处理或说明。仅改元数据、壳层或视觉时可用 `--quick` 跳过逐个音频实测；替换音频后必须完整检查。HQ 同时运行 `node tools/validate_hq.mjs`，核验 17 站、真实发布集、meta、ROLES 徽章来源、36 条音频与 30 张发布图。
 2. **自动通关**：`?mute=1&fast=1` 下用 `window.__next()`（翻句）和 `window.__auto()`（自动作答）从头走到结尾，`window.__done` 为 true，控制台 0 报错（favicon 404 除外），无 404。
-3. **测试尺寸**：竖屏 390×844（触摸）、小屏 360×740、横屏 844×390、电脑 1280×800。每种尺寸都看故事页和至少 2 个练习。
+3. **测试尺寸**：共享引擎改动须对所有已发布集串行跑 360×740、390×844、667×375、844×390、1024×768、1280×800、1440×900 七个视口；本地及实际发布后线上各一次。每个组合独立浏览器上下文，只有第 17 集的隔离通关测试预置前 16 星；另验证空进度及只有历史第 17 星均被拦截，不能把种星测试当真实进度。
 4. **截图**（存 `epNN/shots/`，不提交）：每种尺寸至少 故事第 1 句、有叠字的那句、每种题型各一张、知识地图、收藏卡、完成页。
 5. **第 11 节交互验收**逐项通过；至少真开声音听 3 句故事和 3 个奖励音。
 6. **内容自查**：覆盖表和勘误写好；英文逐句复查（§7.7）；插图和 `ep16/illus/` 并排看风格一致、Leo 不是孩子的脸、图里没字；hints 内容正确。
-7. **Git 范围**：`git status` 只有 `epNN/`（和可选的 `tools/make_docx_epNN.py`、`tools/make_lines.py` 的 W）；没有 `engine/`、根目录、其他集。
+7. **Git 范围**：`git status` 只有 `epNN/`（和可选的 `tools/make_docx_epNN.py`、`tools/make_lines.py` 的 W）；没有超出授权范围的 `engine/`、根目录、其他集改动；本轮 A+B 按批准范围核对。
 8. **线上验证**：push 后 `curl` 确认 `epNN/index.html` 的 `data-v` 是新值、`audio/l01.mp3` 返回 200，再用线上地址跑一次第 2 条。
 9. **汇报**（发给 Cici，简体中文，口语化，不讲技术细节和 commit 号）：
    ```

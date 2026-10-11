@@ -1,0 +1,86 @@
+[
+  {
+    "path": "assets/compass_classic_v1.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2289522,
+    "sha256": "dcd868b48c896a2edb5aa5becb58d31da2c0c3866cffe36682dc8db2a803bc50"
+  },
+  {
+    "path": "assets/originals/compass_classic_generated_v0.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2405671,
+    "sha256": "fc809a992e12b5082a75adbdfc65c2d6fa2a3bb834be75bb9493d7307a2b47c7"
+  },
+  {
+    "path": "assets/compass_starmap_v1.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2195287,
+    "sha256": "eec99e3c1ca6b080f9ee7c31ef7317b693130b50c47876d6ef87766d49175fc5"
+  },
+  {
+    "path": "assets/originals/compass_starmap_generated_v0.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2334122,
+    "sha256": "b7c1633f0810b55f385f049da89d27f53e9c28a294b2085d011b6d6c265fe623"
+  },
+  {
+    "path": "assets/compass_heirloom_v1.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2097133,
+    "sha256": "e51583334c4dda63e40a39c85f9f30b36f4f0356ac3963585d082ad4bd9ab3da"
+  },
+  {
+    "path": "assets/originals/compass_heirloom_generated_v0.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 2228641,
+    "sha256": "4e5528230cbb5d6cc5b85f3e90570b82f627173be0c960d9a30c21ebf403a7dd"
+  },
+  {
+    "path": "assets/star_lit_v1.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 843595,
+    "sha256": "db20d3de170ec39792431e187325d579e11e87c34f1ee748b6f2a534dbb0bc10"
+  }
+]

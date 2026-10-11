@@ -1,14 +1,16 @@
 # 罗盘冒险队 · 单集制作交接文档（给 Codex）
 
-> 写于 2026-10-11，同日改为**共享引擎**版本。
+> 写于 2026-10-11，同日更新为**共享引擎 v5 / HQ 修订稿**。
 > **分工：`tools/SPEC_单集规格书.md` 规定一集必须是什么样（字段、内容、画面、声音、验收标准）；本文只讲怎么一步步做出来（环境、命令、顺序）。** 两者冲突时以规格书为准。
 > 你（Codex）**看不到** Willo 的工作机（/workspace），下面列出的所有文件都已经放进 GitHub 仓库或 Mac 本地，路径以本文为准。
 
 ## 0. 当前硬规则（先读）
 
+> 本轮 A+B：Cici 已批准修改引擎、HQ、11 集元数据/壳层、校验器和文档；不改教学、题库、对白，不实施 C/stemlearn。以下“不要改引擎/别的集”是日常单集制作边界，不撤销本轮批准。
+
 - **新的一集只写内容，不写代码。** 播放器、题型、布局、结尾动画都在共享引擎 `engine/` 里；一集的目录只放 `index.html`（标准外壳）、`episode.js`（内容配置）、`audio/`、`illus/`、`downloads/`、`docs/`，需要时加 `episode.css`（只能写本集插图上叠字的位置）。
 - **不要改 `engine/`。** 需要新题型或引擎有 bug，先告诉 Cici，由 Willo 改引擎（改一次，所有集一起受益）。引擎一改会影响 ep02 和 ep16，所以必须两集都回归测试。
-- 不要修改第 1 集（仓库根目录 `index.html app.js …`，它还是旧的独立代码，没有迁移）。不要动别的集的目录。
+- 第 1 集已迁入 `ep01/`，与其它集共用引擎。根目录只保留入口；旧文件清理按已确认清单进行，禁止整删含本轮 `visual-v5/` 的 `design/`。日常制作不要擅自改别的集。
 - 不动 Cici 的个人网站 stemlearn.cloud，只发布到预览仓库 `compass-preview`。
 - 只用免费工具。
 - 给 Cici 的说明一律用**简体中文、通俗说法**。
@@ -28,7 +30,7 @@
 ### 3.1 GitHub Pages 仓库
 
 - 仓库：`https://github.com/tiancc1212/compass-preview`，分支 `main`，根目录直接发布（有 `.nojekyll`），没有构建步骤。
-- 线上地址：第 1 集 `https://tiancc1212.github.io/compass-preview/`；第 2 集 `…/compass-preview/ep02/`；第 16 集 `https://tiancc1212.github.io/compass-preview/ep16/`。
+- 预览入口目标：`https://tiancc1212.github.io/compass-preview/hq/`；第 N 集为 `…/compass-preview/epNN/`。是否已上线以发布后读回为准。
 - 部署方式就是 `git push`，Pages 一般 30 秒到 2 分钟后更新。
 - Mac 上 `gh` 已登录 tiancc1212（https），`git push` 可直接用。仓库还没克隆到 Mac，第一次需要：
   ```bash
@@ -39,22 +41,28 @@
 - 目录结构（2026-10-11 共享引擎之后）：
   ```
   .nojekyll
-  index.html app.js base.css badges.js audio/ illus/ lib/ models/ fonts/   ← 第1集（旧的独立代码，别动）
+  index.html              ← 兼容入口
+  hq/                     ← 总部外壳、审定内容、音频、压缩插图、文档
   engine/                 ← 共享引擎（所有新集共用，别改）
     VERSION               引擎版本号，只有一个数字。改了引擎就 +1，所有集自动拿到新版
     engine.js             播放器 + 题型 + 布局逻辑 + 罗盘 + 结尾
     base.css layout.css   样式（统一布局 A 在 layout.css）
     badges.js             黄铜徽章 SVG：S V L O C TD DO ING ED N A THE ZERO OWNER COUNT ADJ ADV REL INV
-    lib/ models/ fonts/   three.js、3D 罗盘、字体
-  ep16/  ep02/            ← 已迁移到引擎的两集，新集照着它们写
+    compass/ icons.js     2D 星图罗盘资源、统一线性 SVG 图标
+    fonts/                英文衬线子集
+    hq.js                 总部渲染；单集仍由 engine.js 渲染
+  ep01/ ep02/ ep03/ ep04/ ep07/ ep08/ ep11/ ep12/ ep15/ ep16/ ep17/
+                          ← 11 个真实已发布集；其它 6 集不建空壳
     index.html            标准外壳（10 行，不要自己加东西），<html data-v="N"> 是本集内容版本号
     episode.js            本集全部内容：标题、插图表、故事分段、练习、知识地图、收藏卡、结尾
-    episode.css           （可选）只放本集插图上叠字的位置，ep02 用来把 “C. C. was here” 放在棋盘铜牌上
+    episode.css           （可选）本集叠字位置；ep01 另有局部象形文字字体声明
+    fonts/                仅 ep01：象形文字字体，不全局加载
     audio/*.mp3  audio/lines.json  audio/hints.json
     illus/*.jpg  downloads/*.docx  docs/（设计文档，不影响网页）
   tools/
     SPEC_单集规格书.md     单集规格书：一集必须是什么样（先读）
-    validate_episode.mjs  内容检查器（见第 8 步），每次提交前必须跑
+    validate_episode.mjs  单集内容/meta/图标检查器（见第 8 步）
+    validate_hq.mjs       17 站、发布状态、媒体与徽章来源检查器
     align.py              逐词时间对齐（faster-whisper）
     make_lines.py         从 台词.md 生成 lines.json
     make_docx_ep16.py     Word 知识点生成脚本范例
@@ -148,6 +156,10 @@ python3 tools/make_lines.py "/Users/tianchangchun/Study/03_英语/02-语法/语�
 ```
 
 **`episode.js` 怎么写：** 全部字段、10 种题型和完整例子见规格书 §4（hints.json §5，lines.json §6）。照着 `ep16/episode.js` 或 `ep02/episode.js` 改最快。
+- 填写 `meta:{title,place,grammar:[…],icon}`，逐项对应审定的 `hq/hq.js` 地图站点；B 阶段语法字段是中文标签，不猜网站知识点 ID。集真正完成并通过验收后再开放 HQ 入口。
+- 外壳只读引擎版本并加载 `engine.js`，不添加 three.js importmap。新增/更改元数据和按钮文字后仍须增加 `data-v`。
+- HUD/按钮写纯文字，除 `➜` 外不塞 emoji；SVG 图标由 `engine/icons.js` 提供。中文走系统字体，英文走引擎本地 Compass Reading 子集（Source Serif 4 派生，22,980B，400 字重）；只有 ep01 引入象形文字字体。
+- HQ 已审定 30 图按 Cici 最新明确授权，压缩为 `hq/illus/*.webp` 后与其它素材一并处理；不把外部源 PNG 或原始参考图顺手复制进仓库。
 - 改错题（`fix`）点到没错的词时的引导语用 `miss` 字段写（活动上或单题上），见规格书 §4.4 ⑤。
 - 测试入口：`?jump=<活动名>` 直接进某个活动；`?mute=1` 静音、`?fast=1` 答完自动下一题、`?rm=1` 关动画。
 - **Word 知识点：** 照着 `tools/make_docx_ep16.py` 复制成 `tools/make_docx_epNN.py`，运行 `pip install python-docx && python3 tools/make_docx_epNN.py epNN/downloads/epNN_<ascii名>.docx`。内容结构见规格书 §12。
@@ -164,7 +176,13 @@ venv/bin/python align.py ../epNN --model small.en   # 想更准就用这个，�
 ### 第 8 步：测试清单
 本地起服务：`cd ~/Study/compass/compass-preview && python3 -m http.server 8716`，浏览器打开 `http://localhost:8716/epNN/`。
 **先跑内容检查器**（必须 0 个错误）：`node tools/validate_episode.mjs epNN`。它会检查：flow 和活动对得上、每句台词有 mp3 和逐词时间、mp3 实际时长和 lines.json 一致（不一致就要重跑 align.py）、所有奖励音频和插图存在、题型字段齐全、hints.json 里的词在句子里找得到、徽章名正确、下载文件存在。
-自动测试：参考 `tools/tests/` 里的脚本（全部活动可以用 `window.__auto()` 自动作答、`window.__next()` 翻句、`window.__state()` 看当前状态），截图存 `epNN/shots/`（不要提交）。
+只改元数据/视觉时可运行 `node tools/validate_episode.mjs --quick ep01 ep02 ep03 ep04 ep07 ep08 ep11 ep12 ep15 ep16 ep17`，只省略逐个 ffprobe 实测；音频改动后必须用完整模式。HQ 同时运行 `node tools/validate_hq.mjs`。
+
+真实点击回归：`node tools/tests/realclick.mjs http://localhost:8716 ep01 ep16` 先检查代表集，再去掉集号跑全部已发布集。脚本一页串行、七种视口，每个组合都关闭并重建独立上下文；Mac 默认使用 Google Chrome，可由 `CHROME` 覆盖。只用 `window.__auto()` 作答，导航/翻句/主按钮仍真实点击并核对是否在视口内、是否被遮挡。
+- 默认缩短无必要等待并等待界面状态变化；若排查时序问题，使用 `RC_DELAY=1` 恢复原保守等待时长。
+- 第 17 集通关测试仅在隔离上下文、导航前预置 1–16 星；另验空进度、仅历史第 17 星、缺任意前置星均不能进入。不要清理用户真实浏览器存储，也不要提供用户侧跳过门槛按钮。
+- HQ 另验入口往返、序章手动/自动/跳过、人物播放、日志/徽章/下载解锁与 7 视口按钮可达；单集 realclick 通过不替代这些验证。
+- 本地通过后，仅在本轮获准发布时发布，随后同样对线上跑真实点击和媒体读回。未发布时如实报告“本地完成”。截图按本轮验收目录存放。
 
 
 验收项（交互行为、尺寸、截图）见规格书 §11 和 §13，逐项通过。

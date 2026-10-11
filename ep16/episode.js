@@ -2,12 +2,13 @@
 // Field reference: tools/handoff_单集制作流程.md · check with: node tools/validate_episode.mjs ep16
 export default {
  no:16,
- hud:'🧭 罗盘冒险队 · 第16集 怪兽招聘会',
+  "meta": {"title":"怪兽招聘会","place":"怪兽王国招聘会","grammar":["不定式","动名词与分词","非谓语搭配与辨义"],"icon":"monster-fair"},
+ hud:'罗盘冒险队 · 第16集 怪兽招聘会',
  stars:'⭐ 第 16 颗星',
- start:{h1:'怪兽招聘会',subt:'Biscuit 想找一份工作——学会 to do、doing、done，帮它通过面试！',go:'🧭 出发：We want to find a job!'},
+ start:{h1:'怪兽招聘会',subt:'Biscuit 想找一份工作——学会 to do、doing、done，帮它通过面试！',go:'出发：We want to find a job!'},
  theme:{bg:'#1b1020',stage:'#2a1830'},
  audioVersion:'20261011-level1',
- download:{href:'downloads/ep16_nonfinite_verbs.docx',name:'罗盘冒险队_第16集_非谓语动词_知识点.docx',label:'📥 下载知识点（Word）'},
+ download:{href:'downloads/ep16_nonfinite_verbs.docx',name:'罗盘冒险队_第16集_非谓语动词_知识点.docx',label:'下载知识点（Word）'},
  img:{gate:['illus/01_fair_gate.jpg','招聘会大门 · 紫色怪兽举着牌子'],crew:['illus/02_crew_excited.jpg','冒险队来到招聘会 · Sam 很激动'],rules:['illus/03_rules_board.jpg','Lily 读规则板'],sniff:['illus/04_biscuit_sniff.jpg','Biscuit 停下来闻，找到丢失的袜子'],job:['illus/05_got_the_job.jpg','怪兽大笑 · Biscuit 被录取']},
  firstImg:'gate',
  sections:{S1:[{id:"l01",zh:"罗盘把冒险队带到了热闹的怪兽招聘会。",img:"gate"},{id:"l02",zh:"一只高高的紫色怪兽站在门口，举着一块大牌子。",img:"gate"},{id:"l03",zh:"“欢迎！我需要一个帮手来看守我的袜子。”",img:"gate"},{id:"l04",zh:"“我们来这里是为了给 Biscuit 找份工作！”",img:"crew"},{id:"l05",zh:"“可是 Biscuit 太小了，什么也看守不了。”",img:"crew"},{id:"l06",zh:"“这个招聘会太让人激动了，我好激动！”",img:"crew"}],S2:[{id:"l07",zh:"“等等，让我先看看规则。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"},{id:"l08",zh:"“规则一：禁止吠叫。规则二：记得微笑。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"}],S3:[{id:"l09",zh:"Biscuit 不叫了，摇起了尾巴。",img:"sniff"},{id:"l10",zh:"“给我看看你怎么干这份活，小狗。”",img:"sniff"},{id:"l11",zh:"Biscuit 停下来闻了闻空气，然后在桌子下面找到了一只丢失的袜子。",img:"sniff"}],S4:[{id:"l12",zh:"“找袜子是它最爱的爱好！”",img:"job"},{id:"l13",zh:"“哈！你把我逗笑了。这份工作归你了！”",img:"job"},{id:"l14",zh:"Leo 永远忘不了看到 Biscuit 得到第一份工作的那一刻。",img:"job"}]},
@@ -119,7 +120,7 @@ export default {
   card:{type:'card',variant:'phrase',title:'⭐ 收藏卡 #16：我的招聘自我介绍',desc:'在怪兽招聘会上介绍自己！选一个你最喜欢做的事——<b>enjoy</b> 后面要用 <b>doing</b>：',
    front:'👾 怪兽招聘会 · 收藏卡 #16',template:['I enjoy ','.'],back:[{t:'I',b:'S'},{t:'enjoy',b:'V'},{slot:true,b:'ING'}],foot:'enjoy + doing · 怪兽说：You got the job!',
    options:[{k:'football',w:'playing football',zh:'踢足球'},{k:'drawing',w:'drawing',zh:'画画'},{k:'reading',w:'reading',zh:'看书'},{k:'swimming',w:'swimming',zh:'游泳'},{k:'games',w:'playing games',zh:'玩游戏'}],
-   sayZh:'我喜欢{zh}。',button:'🪄 盖上录取章',done:'⭐ 把星星送回罗盘'}
+   sayZh:'我喜欢{zh}。',button:'盖上录取章',done:'把星星送回罗盘'}
  },
  ending:{img:'job',say:{id:'star',zh:'第 16 颗星回到了罗盘！'},
   html:`<h2>🎉 第 16 集完成！</h2><p style="font-size:22px">⭐ 已收集 {n} / 17 颗星　·　🗺️ 地图解锁：<b>怪兽招聘会</b></p><p>🐶 Biscuit 拿到了人生第一份工作：<b>袜子看守员</b></p><p>📒 把你的收藏卡 #16 贴进冒险日志吧！</p><p>{download}</p>`}

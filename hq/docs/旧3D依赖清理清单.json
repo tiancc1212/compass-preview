@@ -1,0 +1,41 @@
+{
+  "scope": "完全去掉three.js及3D模型；象形字体仅移至ep01，逐字节一致。",
+  "files": [
+    {
+      "path": "engine/lib/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "path": "engine/lib/addons/environments/RoomEnvironment.js",
+      "bytes": 3606,
+      "sha256": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014"
+    },
+    {
+      "path": "engine/lib/addons/utils/SkeletonUtils.js",
+      "bytes": 8802,
+      "sha256": "ee412be1aa05f3051c2bda8ea89612c1ba70c5c87de62b56040282120d5eb991"
+    },
+    {
+      "path": "engine/lib/addons/utils/BufferGeometryUtils.js",
+      "bytes": 31768,
+      "sha256": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6"
+    },
+    {
+      "path": "engine/lib/addons/loaders/GLTFLoader.js",
+      "bytes": 110273,
+      "sha256": "45139faddd5aaf48ed2d62203d976e5cbd703db1a592de40527f9f6cf58abd44"
+    },
+    {
+      "path": "engine/models/compass_q.glb",
+      "bytes": 40552,
+      "sha256": "02b285836b276a907019df65f51674c3975364316b58fe859863921838867c7d"
+    },
+    {
+      "path": "engine/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+      "bytes": 585872,
+      "sha256": "38a33a230624671eebedce95bd4237f7b3b2bb1fa25688ff959bed4070a1ea95"
+    }
+  ],
+  "removed": true
+}

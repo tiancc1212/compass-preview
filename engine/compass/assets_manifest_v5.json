@@ -1,0 +1,131 @@
+{
+  "version": 5,
+  "selectedVariant": "B / starmap",
+  "nativeSource": "design/visual-v5/assets/compass_starmap_v1.png",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "sourceNote": "原生1254已保留；没有2048原生，不作伪放大。发布WebP quality82。暗槽依review.js已审polygon与gradient规格化；光晕为CSS呼吸用径向alpha。",
+  "files": [
+    {
+      "path": "engine/engine.js",
+      "bytes": 53132,
+      "gzip": 18308,
+      "sha256": "1d6ccd9d8e0f7f4551bf4a9746d54440004def5990b52cb4b4ea1335da73221c"
+    },
+    {
+      "path": "engine/icons.js",
+      "bytes": 1791,
+      "gzip": 910,
+      "sha256": "8dccbc188109a5bd7a505aeefaa0dd135e90e4c189a0f68bd805e28b34389344"
+    },
+    {
+      "path": "engine/compass.js",
+      "bytes": 4326,
+      "gzip": 1868,
+      "sha256": "3c4da7a10dd4377983423e1402171b7730ec94e4dd74ceb0636325a4836dcbde"
+    },
+    {
+      "path": "engine/badges.js",
+      "bytes": 8572,
+      "gzip": 2983,
+      "sha256": "76164f1766e646c6c0520cb047d7fa5df6c8a1ee6b1c909bd1fad0f190a41bae"
+    },
+    {
+      "path": "engine/base.css",
+      "bytes": 32515,
+      "gzip": 8825,
+      "sha256": "9602b09251802177fbe5c589d56c50f8b68de2f5fd1639008470268911d5b072"
+    },
+    {
+      "path": "engine/layout.css",
+      "bytes": 9681,
+      "gzip": 3461,
+      "sha256": "f931a3761a3d46df59363d0a46496fedeb6aec7559f4017bb5c81dfe877e057a"
+    },
+    {
+      "path": "engine/compass/compass.css",
+      "bytes": 1491,
+      "gzip": 660,
+      "sha256": "100630dc4214b65a2fad9ef5d9dc56aaa69512cf70204a64fceac350ac28ae8a"
+    },
+    {
+      "path": "engine/compass/compass_slots_v5.json",
+      "bytes": 1697,
+      "gzip": 409,
+      "sha256": "fab472a3d1a9ce5f2335365e3a6f65983bc69075f78e8ab3732f7a064b63a3bb"
+    },
+    {
+      "path": "engine/compass/glow_v5.webp",
+      "bytes": 14026,
+      "gzip": 13663,
+      "sha256": "a4a5c09bb104c546ceb82706326769621e9c0925031b167d125dde1a8a520114",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        179
+      ]
+    },
+    {
+      "path": "engine/compass/compass_base_v5_1024.webp",
+      "bytes": 143192,
+      "gzip": 142961,
+      "sha256": "21b7cc106d3231f9642a76a29b7ebaf0a27a0cc78a99954057b635bdf4dd6b47",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "engine/compass/star_unlit_v5.webp",
+      "bytes": 7584,
+      "gzip": 7607,
+      "sha256": "9563603a6ff81a9008b2c2afc738bf979b0dbb1c875c266f685e03443f84d764",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "engine/compass/compass_base_v5_512.webp",
+      "bytes": 50218,
+      "gzip": 50256,
+      "sha256": "4c44ba53dfe2d0abd6efa048124f1c3045ff0e57a737caf92c87d9cd59246acb",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "engine/compass/star_lit_v5.webp",
+      "bytes": 8084,
+      "gzip": 8107,
+      "sha256": "c291ebac1de07c990cf8c5e4330ef5c2b1a1bde70862118e64b96ab675ffce81",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "engine/fonts/CompassReading-Regular-v5.woff2",
+      "bytes": 22980,
+      "gzip": 23008,
+      "sha256": "8cae7d1d26a9269af7cdc37af75ba45097ec889ccea85b43a9f4b243d559d0e8"
+    }
+  ]
+}
