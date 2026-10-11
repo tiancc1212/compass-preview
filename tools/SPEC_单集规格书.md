@@ -327,7 +327,7 @@ ending:{img:'job',say:{id:'star',zh:'第 16 颗星回到了罗盘！'},
 ```
 - 键是台词 id，值是数组；`b` 徽章、`hl` 句中要加下划线的连续词（忽略大小写和标点，必须和台词原词一致）、`zh` 中文讲解。
 - 文件开头可以有 `"_说明"` 键（引擎忽略）。
-- **写法规则：** 只给含本集考点的句子写，没有就不写；一句最多 2 条；`zh` 18–30 个汉字，格式“**形式** + 冒号 + 为什么”；和知识地图、练习的说法一致。收藏卡句子 `card_*` 可以写，`star` 不写。ep16 写了 14 句中的 13 句，ep02 写了全部 15 句。
+- **写法规则：** 只给含本集考点的句子写，没有就不写；一句最多 2 条；`zh` 18–30 个汉字（上限 30 字），格式“**形式** + 冒号 + 为什么”；和知识地图、练习的说法一致。收藏卡句子 `card_*` 可以写，`star` 不写。ep16 写了 14 句中的 13 句，ep02 写了全部 15 句。
 
 **徽章目录**（`engine/badges.js` 的 `ROLES`，新集需要新徽章时向 Change 申请，由 Willo 加）：
 | 徽章 | 名称 | 含义 | 什么时候用（样板） |
@@ -352,7 +352,8 @@ ending:{img:'job',say:{id:'star',zh:'第 16 颗星回到了罗盘！'},
 | `REL` | 定语从句 | 挂在名词后的说明牌 | who/which/that 引导的从句：ep17 `who found the compass`、`which Grandpa left` |
 | `INV` | 倒装 | 帮手或动词跑到主语前 | So do I / Neither can I / Here comes… / Never have I…：ep17；也可用来对比代词主语不倒装（Here it is） |
 
-圆形边框 = 句子里的“角色”或修饰/结构（`ADJ ADV REL INV` 也是圆形），八角形边框（`TD DO ING ED`）= 动词的“形式”。**连词（and/but/so/or）没有专门徽章**：不要硬标成 `V`，可改标旁边的谓语并在 `zh` 里点出连词。**不要用 emoji 当语法图标**；emoji 只用在活动标题和按钮上。
+圆形边框 = 句子里的“角色”或修饰/结构（`ADJ ADV REL INV` 也是圆形），八角形边框（`TD DO ING ED`）= 动词的“形式”。**徽章用法细则（第二批审稿定）：** ① 时间/地点介词短语作状语（`at three o'clock`、`between Leo and Mia`、`from the gate to the finish line`）→ `ADV`，`zh` 写明“介词短语作状语”；② 频率副词（always/usually/often/sometimes/never）→ `ADV`；③ 数词、序数词、年份（`the twentieth runner`、`nineteen seventy-five`）→ `COUNT`；④ 进行时、完成进行时等动词组（`was playing`、`We're meeting`、`has been waiting`）整体标 `V`，`ING` 只用于非谓语的动名词/分词（同 ep16）；⑤ `zh` 不超过 30 个字。
+**连词（and/but/so/or）没有专门徽章**：不要硬标成 `V`，可改标旁边的谓语并在 `zh` 里点出连词。**不要用 emoji 当语法图标**；emoji 只用在活动标题和按钮上。
 
 ---
 
