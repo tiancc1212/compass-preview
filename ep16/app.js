@@ -300,6 +300,7 @@ async function mapCard(){await new Promise(res=>{showPanel(`<div class="card kma
   <li>have sth. <b>done</b>：让别人把某事做好</li></ul></div>
  </div>
  <p class="kdiff">⚠ 意思会变：stop / remember / forget / try + to do 或 doing</p>
+ <p class="kdl"><a class="btn" id="kdoc" href="downloads/ep16_nonfinite_verbs.docx" download="罗盘冒险队_第16集_非谓语动词_知识点.docx">📥 下载知识点（Word）</a></p>
  <button class="btn big" id="ok">做我的咒语卡 ➜</button></div>`);panel.querySelector('#ok').onclick=res;window.__auto=res;});hidePanel();}
 
 // 收藏卡
@@ -339,9 +340,13 @@ cm.traverse(n=>{if(n.isMesh){const ms=Array.isArray(n.material)?n.material:[n.ma
 const sockets=[];for(let i=0;i<17;i++){const a=Math.PI/2-i/17*Math.PI*2;const s=new THREE.Mesh(new THREE.SphereGeometry(0.065,16,10),new THREE.MeshStandardMaterial({color:'#5a4020',metalness:.6,roughness:.4}));s.position.set(Math.cos(a)*1.0,Math.sin(a)*1.0,0);rig.add(s);sockets.push(s);}
 const ring=new THREE.Mesh(new THREE.TorusGeometry(1.0,0.018,8,96),new THREE.MeshStandardMaterial({color:'#c8902f',metalness:.9,roughness:.3}));rig.add(ring);
 function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();}addEventListener('resize',resize);resize();
-const MYSTAR=15;let starsLit=0,spin=0;const clock=new THREE.Clock();
+const MYSTAR=15;const EPNO=MYSTAR+1;
+// shared progress across episodes on the same origin: localStorage cc_stars = [episode numbers]
+const GOT=(()=>{try{return new Set(JSON.parse(localStorage.getItem('cc_stars')||'[]').filter(n=>n>=1&&n<=17));}catch(e){return new Set();}})();
+const LIT=new Set([...GOT].filter(n=>n!==EPNO).map(n=>n-1));
+let starsLit=0,spin=0;const clock=new THREE.Clock();
 function loop(){const t=clock.getElapsedTime();if(!RM){rig.rotation.y=Math.sin(t*0.5)*0.3+spin;rig.position.y=Math.sin(t*1.2)*0.04;}
- sockets.forEach((s,i)=>{if(starsLit&&i===MYSTAR){s.material.color.set('#ffd66b');s.material.emissive.set('#ffbb22');s.material.emissiveIntensity=RM?1.5:1.4+Math.sin(t*4)*.4;}});
+ sockets.forEach((s,i)=>{if(LIT.has(i)){s.material.color.set('#ffd66b');s.material.emissive.set('#ffbb22');s.material.emissiveIntensity=RM?1.5:1.4+Math.sin(t*4)*.4;}});
  if($('#home').style.display!=='none')R.render(scene,cam);requestAnimationFrame(loop);}// ---------- flow ----------
 LINES=await (await fetch('audio/lines.json')).json();
 $('#loading').style.display='none';showImg('gate');requestAnimationFrame(loop);window.__ready=true;
@@ -356,14 +361,22 @@ async function story(){
 }
 async function ending(){
  const fr=panel.querySelector('.flipwrap')?.getBoundingClientRect()||{left:innerWidth/2,top:innerHeight/2,width:0,height:0};hidePanel();$('#sub').style.display='none';
- showImg('job');homeOn(true);$('#start').style.display='none';await sleep(100);
+ document.body.classList.remove('hasreview');document.body.classList.add('ending');
+ showImg('job');homeOn(true);$('#start').style.display='none';await sleep(150);
  const p=sockets[MYSTAR].getWorldPosition(new THREE.Vector3()).project(cam);const cr=canvas.getBoundingClientRect();const tx=cr.left+(p.x*.5+.5)*cr.width,ty=cr.top+(-p.y*.5+.5)*cr.height;
+ const prev=new Set(LIT);$('#stars').textContent=`⭐ ${prev.size} / 17`;
  sfx('star');
- if(!RM){const st=$('#flystar');st.style.display='block';const sx=fr.left+fr.width/2,sy=fr.top+fr.height/2;const t0=performance.now();
-  await new Promise(r=>{const f=()=>{const k=Math.min(1,(performance.now()-t0)/1800),e=1-Math.pow(1-k,3);st.style.left=(sx+(tx-sx)*e-32)+'px';st.style.top=(sy+(ty-sy)*e-40-Math.sin(k*Math.PI)*160)+'px';st.style.transform=`scale(${1.4-k*.9}) rotate(${k*540}deg)`;k<1?requestAnimationFrame(f):r();};f();});st.style.display='none';}
- starsLit=1;$('#stars').textContent='⭐ 第 16 颗星';
+ if(!RM&&!Q.get('fast')){const st=$('#flystar');st.style.display='block';const sx=fr.left+fr.width/2,sy=fr.top+fr.height/2;const t0=performance.now();let skip=false;
+  const sk=()=>{skip=true;};addEventListener('pointerdown',sk,{once:true});
+  await new Promise(r=>{const f=()=>{const k=skip?1:Math.min(1,(performance.now()-t0)/1800),e=1-Math.pow(1-k,3);st.style.left=(sx+(tx-sx)*e-32)+'px';st.style.top=(sy+(ty-sy)*e-40-Math.sin(k*Math.PI)*160)+'px';st.style.transform=`scale(${1.4-k*.9}) rotate(${k*540}deg)`;k<1?requestAnimationFrame(f):r();};f();});
+  removeEventListener('pointerdown',sk);st.style.display='none';}
+ LIT.add(MYSTAR);GOT.add(EPNO);try{localStorage.setItem('cc_stars',JSON.stringify([...GOT].sort((a,b)=>a-b)));}catch(e){}
+ starsLit=1;const n=GOT.size;$('#stars').textContent=`⭐ ${n} / 17`;
+ const ring=document.createElement('div');ring.className='slotburst';ring.style.left=tx+'px';ring.style.top=ty+'px';document.body.appendChild(ring);setTimeout(()=>ring.remove(),1400);
+ if(!RM){const sp=document.createElement('div');sp.style.cssText=`position:fixed;left:${tx-20}px;top:${ty-20}px;width:40px;height:40px`;document.body.appendChild(sp);sparkle(sp,16);setTimeout(()=>sp.remove(),1000);}
+ const prog=document.createElement('div');prog.id='starprog';prog.innerHTML=`<b>⭐ ${n} / 17</b><span>罗盘上的星星</span><div class="sbar"><i style="width:${n/17*100}%"></i></div>`;document.body.appendChild(prog);
  await say('star','第 16 颗星回到了罗盘！');$('#sub').style.display='none';
- showPanel(`<div class="card"><h2>🎉 第 16 集完成！</h2><p style="font-size:22px">⭐ 第 16 颗星　·　🗺️ 地图解锁：<b>怪兽招聘会</b></p><p>🐶 Biscuit 拿到了人生第一份工作：<b>袜子看守员</b></p><p>📒 把你的收藏卡 #16 贴进冒险日志吧！</p><button class="btn big" id="again">🔁 再玩一次</button></div>`);
+ showPanel(`<div class="card"><h2>🎉 第 16 集完成！</h2><p style="font-size:22px">⭐ 已收集 ${n} / 17 颗星　·　🗺️ 地图解锁：<b>怪兽招聘会</b></p><p>🐶 Biscuit 拿到了人生第一份工作：<b>袜子看守员</b></p><p>📒 把你的收藏卡 #16 贴进冒险日志吧！</p><p><a class="btn" href="downloads/ep16_nonfinite_verbs.docx" download="罗盘冒险队_第16集_非谓语动词_知识点.docx">📥 下载知识点（Word）</a></p><button class="btn big" id="again">🔁 再玩一次</button></div>`);
  panel.style.background='rgba(20,10,30,.15)';panel.style.alignItems='flex-end';panel.style.paddingBottom='4vh';
  panel.querySelector('#again').onclick=()=>location.reload();window.__done=true;}
 const JUMP={forms:[gameForms,'crew'],feel:[gameFeel,'crew'],verbs:[gameVerbs,'rules'],meaning:[gameMeaning,'sniff'],to:[gameTo,'job'],subject:[gameSubject,'job'],attr:[gameAttr,'job'],tf:[gameTF,'job'],map:[mapCard,'job'],card:[spellCard,'job']};
