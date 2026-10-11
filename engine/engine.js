@@ -16,7 +16,7 @@ const hqHref='../hq/#'+(['map','characters','journal','badges','downloads'].incl
 const EP=(await import(new URL('episode.js?v='+EPV,location.href).href)).default;
 // ---- css + page shell ----
 const css=h=>new Promise(r=>{const l=document.createElement('link');l.rel='stylesheet';l.href=h;l.onload=l.onerror=r;document.head.appendChild(l);});
-await Promise.all([css(EU('./base.css')),css(EU('./layout.css')),css(EU('./compass/compass.css'))]);if(EP.css)await css('episode.css?v='+EPV);
+await Promise.all([css(EU('./badges.css')),css(EU('./base.css')),css(EU('./layout.css')),css(EU('./compass/compass.css'))]);if(EP.css)await css('episode.css?v='+EPV);
 const rs=document.documentElement.style;if(EP.theme){if(EP.theme.bg)rs.setProperty('--bg',EP.theme.bg);if(EP.theme.stage)rs.setProperty('--stagebg',EP.theme.stage);}
 document.body.classList.add('at-home');
 document.body.insertAdjacentHTML('afterbegin',`<div id="backdrop"></div><div id="stage"></div><div id="home"></div>
