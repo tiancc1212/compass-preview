@@ -165,7 +165,7 @@ q1:{type:'steps',badge:"A",title:"清单小帽子",desc:"船长要一个普通�
  tip:"a/an 常表示一个没指定的可数东西。看读音，不是看首字母。",
  steps:[ {kind:"typed", …}, {kind:"typed", …}, {kind:"typed", …} ]},
 ```
-`title` ✔、`desc` ✔（可以是空字符串，如 ep16 `subject`）、`tip` ✔（最后一题答对后显示的总结）、`steps` ✔、`badge` 可选（标题前的徽章；有 badge 时标题不加 emoji，ep02 的写法；没有 badge 时标题以 emoji 开头，ep16 的写法。**同一集里统一一种写法**）。
+`title` ✔、`miss` 可选（只对 `fix` 题有用，见 ⑤）、`desc` ✔（可以是空字符串，如 ep16 `subject`）、`tip` ✔（最后一题答对后显示的总结）、`steps` ✔、`badge` 可选（标题前的徽章；有 badge 时标题不加 emoji，ep02 的写法；没有 badge 时标题以 emoji 开头，ep16 的写法。**同一集里统一一种写法**）。
 
 #### (3) `seq` 把几个活动连成一个
 ```js
@@ -224,7 +224,12 @@ verbs:{type:'seq',parts:[
 // ep16/episode.js activities.to.steps[0]
 {kind:'fix',ctx:'Lily 想先看规则',s:'Let me to read the rules.',wi:2,fix:[['删掉 to',1],['改成 too',0]],au:'ex_q5_1',good:'Let me read the rules.',why:'<b>let sb. do</b>：let 后面不带 to。'}
 ```
-`wi` 是错词序号（按空格切分，从 0 数）；`fix` 2 个改法，`1` 是正确的；`good` 改好的句子（也是 `au` 的内容）。注意：点错其他词时引擎提示的是“再看看动词前后的 to”——这句目前写死在引擎里，**新集用 `fix` 前先告诉 Change，需要 Willo 把它改成可配置**。
+`wi` 是错词序号（按空格切分，从 0 数）；`fix` 2 个改法，`1` 是正确的；`good` 改好的句子（也是 `au` 的内容）。
+`miss`（可选）：孩子点到**没错的词**时，提示“xx 没有错，”后面接的那句引导语。可以写在单题上，也可以写在整个活动上（单题优先）；都不写时用通用的“再读读这句，找出用错的那个词。”。引导语要针对本活动的考点，但不能直接说出错词。例：ep16 整个活动写在活动上：
+```js
+// ep16/episode.js activities.to
+to:{type:'steps',title:'🔧 找错改错：要不要 to？',miss:'再看看<b>动词前后的 to</b>。', … steps:[{kind:'fix', …}, …]}
+```
 
 **⑥ `order` 连词成句**
 ```js

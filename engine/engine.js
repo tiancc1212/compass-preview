@@ -172,7 +172,7 @@ const prog=(n,i)=>`<div class="prog">${Array.from({length:n},(_,j)=>`<i class="$
 function reward(id){if(!id)return;curLine={id};if(curAudio){curAudio.pause();}if(muted)return;const a=voice('audio/'+id+'.mp3');curAudio=a;a.play().catch(()=>{});}
 // {type:'steps', id, title, badge?, desc, tip, steps:[{kind,...}]}
 // EP.rewardWait=true: the "next" button unlocks only after the reward voice ends, last step auto-continues.
-function stepCard({id,title,badge:bd,desc,steps,tip}){steps=steps.map(s=>typeof s.mount==='function'?s:STEP[s.kind](s));return new Promise(res=>{let i=0;
+function stepCard({id,title,badge:bd,desc,steps,tip,miss}){steps=steps.map(s=>typeof s.mount==='function'?s:STEP[s.kind](miss&&s.miss==null?{...s,miss}:s));return new Promise(res=>{let i=0;
  showPanel(`<div class="card qcard" data-activity="${id||''}"><h2${bd?' class="hb"':''}>${bd?badge(bd,{size:36})+' ':''}${title}</h2><p class="desc">${desc||''}</p><div class="qbody"></div><p class="tip" aria-live="polite"></p><div class="prog"></div><div class="nextwrap"></div></div>`);
  const card=panel.querySelector('.qcard'),body=card.querySelector('.qbody'),tipEl=card.querySelector('.tip'),pg=card.querySelector('.prog'),nw=card.querySelector('.nextwrap');
  const stopReward=()=>{if(stopCur)stopCur();if(curAudio)curAudio.pause();};
@@ -237,13 +237,13 @@ const STEP={
     if([ans,...accept].map(x=>normTxt(x).replace(/\s/g,'')).includes(v)){inp.value=ans;inp.disabled=true;inp.classList.add('right');f.querySelector('button').remove();api.ok(why,au);}
     else{tries++;const m=ruleMsg(wrong,v)??hint??'';api.bad(m+(tries>=2?`<br>答案是 <b>${esc(ans)}</b>，把它打进去吧。`:''),inp);inp.select();}};
    AUTO=()=>{inp.value=ans;f.requestSubmit();};}};},
- // fix: tap the wrong word, then choose the fix. {ctx,s,wi,fix:[[label,1|0]],au,good,why}
- fix({ctx,s,wi,fix,au,good,why}){return {html:`<div class="ctx">${ctx}</div><div class="esent">${s.split(' ').map((w,i)=>`<button class="ew" data-i="${i}">${esc(w)}</button>`).join(' ')}</div><div class="efix"></div>`,
+ // fix: tap the wrong word, then choose the fix. {ctx,s,wi,fix:[[label,1|0]],au,good,why,miss?} miss = hint after tapping a correct word (step > activity.miss > generic default)
+ fix({ctx,s,wi,fix,au,good,why,miss='再读读这句，找出用错的那个词。'}){return {html:`<div class="ctx">${ctx}</div><div class="esent">${s.split(' ').map((w,i)=>`<button class="ew" data-i="${i}">${esc(w)}</button>`).join(' ')}</div><div class="efix"></div>`,
   mount(el,api){const fx=el.querySelector('.efix');let found=false;
    el.querySelectorAll('.ew').forEach(b=>b.onclick=()=>{if(found)return;if(+b.dataset.i===wi){found=true;b.classList.add('pickd');sfx('flip');api.tip('找到了！现在怎么改？');
      fx.innerHTML=fix.map(([t,ok])=>`<button class="btn efb" data-ok="${ok}">${t}</button>`).join('');
      fx.querySelectorAll('.efb').forEach(f=>f.onclick=()=>{if(f.dataset.ok==='1'){el.querySelector('.esent').innerHTML=`<span class="fixed">${esc(good)}</span>`;fx.innerHTML='';api.ok(why,au);}else api.bad(why,f);});}
-    else api.bad('“'+esc(b.textContent)+'”没有错，再看看<b>动词前后的 to</b>。',b);});
+    else api.bad('“'+esc(b.textContent)+'”没有错，'+miss,b);});
    AUTO=()=>{el.querySelector(`.ew[data-i="${wi}"]`).click();fx.querySelector('[data-ok="1"]').click();};}};},
  // order: tap word tiles into order. {q,words,shuffled,au,why,firstHint,hint}
  order({q,words,shuffled,au,why,firstHint,hint}){return {html:`<p class="qdesc">${q}</p><div class="wline"></div><div class="wbank">${shuffled.map(w=>`<button class="wt" data-w="${w}">${w}</button>`).join('')}</div>`,

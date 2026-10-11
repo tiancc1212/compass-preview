@@ -148,6 +148,7 @@ python3 tools/make_lines.py "/Users/tianchangchun/Study/03_英语/02-语法/语�
 ```
 
 **`episode.js` 怎么写：** 全部字段、10 种题型和完整例子见规格书 §4（hints.json §5，lines.json §6）。照着 `ep16/episode.js` 或 `ep02/episode.js` 改最快。
+- 改错题（`fix`）点到没错的词时的引导语用 `miss` 字段写（活动上或单题上），见规格书 §4.4 ⑤。
 - 测试入口：`?jump=<活动名>` 直接进某个活动；`?mute=1` 静音、`?fast=1` 答完自动下一题、`?rm=1` 关动画。
 - **Word 知识点：** 照着 `tools/make_docx_ep16.py` 复制成 `tools/make_docx_epNN.py`，运行 `pip install python-docx && python3 tools/make_docx_epNN.py epNN/downloads/epNN_<ascii名>.docx`。内容结构见规格书 §12。
 

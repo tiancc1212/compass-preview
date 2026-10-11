@@ -61,7 +61,7 @@ export default {
      {img:'pick_try1',good:'I tried to run faster.',bad:'I tried running faster.',au:'ex_q3_try1',why:'Sam 在<b>拼尽全力</b>跑 → try to do（努力去做）。'},
      {img:'pick_try2',good:'I tried pulling the door.',bad:'I tried to pull the door.',au:'ex_q3_try2',why:'门推不开，<b>换个办法试试</b>拉 → try doing。'}]}]},
   // 找错改错：要不要 to？
-  to:{type:'steps',title:'🔧 找错改错：要不要 to？',desc:'每句话里有<b>一个地方</b>错了。先点出错的那个词，再选怎么改。',tip:'<b>let / make</b> sb. do、<b>had better</b> do 不带 to；<b>ask</b> sb. to do、<b>what to do</b> 要带 to。',
+  to:{type:'steps',title:'🔧 找错改错：要不要 to？',miss:'再看看<b>动词前后的 to</b>。',desc:'每句话里有<b>一个地方</b>错了。先点出错的那个词，再选怎么改。',tip:'<b>let / make</b> sb. do、<b>had better</b> do 不带 to；<b>ask</b> sb. to do、<b>what to do</b> 要带 to。',
    steps:[
     {kind:'fix',ctx:'Lily 想先看规则',s:'Let me to read the rules.',wi:2,fix:[['删掉 to',1],['改成 too',0]],au:'ex_q5_1',good:'Let me read the rules.',why:'<b>let sb. do</b>：let 后面不带 to。'},
     {kind:'fix',ctx:'怪兽把大家都逗笑了',s:'The monster made everyone to laugh.',wi:4,fix:[['删掉 to',1],['改成 laughing',0]],au:'ex_q5_2',good:'The monster made everyone laugh.',why:'<b>make sb. do</b>：make 后面不带 to。'},

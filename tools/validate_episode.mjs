@@ -53,7 +53,7 @@ for(const ep of process.argv.slice(2)){
   if(s.kind==='pick')s.pics?.forEach((p,i)=>{needAu(p.au,`${w}.pics[${i}]`);if(!ex(`illus/${p.img}.jpg`))err(`${w}.pics[${i}]: 缺少 illus/${p.img}.jpg`);});
   if(s.kind==='choice'&&s.img&&!ex(`illus/${s.img}.jpg`))err(`${w}: 缺少 illus/${s.img}.jpg`);
   if(s.kind==='sort')s.items?.forEach((it,i)=>{if(!s.boxes?.some(b=>b.k===it.box))err(`${w}.items[${i}]: box="${it.box}" 不存在`);if(it.img&&!ex(`illus/${it.img}.jpg`))err(`${w}.items[${i}]: 缺少 illus/${it.img}.jpg`);});
-  if(s.kind==='fix'){const n=s.s?.split(' ').length;if(!(s.wi>=0&&s.wi<n))err(`${w}: wi=${s.wi} 超出句子词数 ${n}`);if(!s.fix?.some(f=>f[1]===1))err(`${w}: fix 里没有正确选项 [文字,1]`);}
+  if(s.kind==='fix'){if(s.miss!=null&&typeof s.miss!=='string')err(`${w}: miss 必须是字符串`);const n=s.s?.split(' ').length;if(!(s.wi>=0&&s.wi<n))err(`${w}: wi=${s.wi} 超出句子词数 ${n}`);if(!s.fix?.some(f=>f[1]===1))err(`${w}: fix 里没有正确选项 [文字,1]`);}
   if(s.kind==='order'){if([...s.words].sort().join()!==[...s.shuffled].sort().join())err(`${w}: shuffled 和 words 的词不一致`);if(s.words.join()===s.shuffled.join())warn(`${w}: shuffled 没打乱`);}
   if(s.kind==='blank'&&!(s.opts||['a','an','the','不填']).includes(s.ans))err(`${w}: 答案 "${s.ans}" 不在选项里`);
   if(s.kind==='tf'&&!s.ok&&!s.fix)err(`${w}: 错句必须给出 fix（改正后的句子）`);
@@ -63,7 +63,7 @@ for(const ep of process.argv.slice(2)){
   if(a.type==='seq')return a.parts.forEach((p,i)=>act(p,`${w}.parts[${i}]`));
   if(a.img)needImg(a.img,w);
   if(a.type==='drag'){for(const f of ['title','desc','slots','chunks','tip'])if(a[f]==null)err(`${w} (drag): 缺少 ${f}`);a.slots?.forEach(s=>role(s.b,w));a.chunks?.forEach((c,i)=>{if(c.k&&!a.slots?.some(s=>s.k===c.k))err(`${w}.chunks[${i}] "${c.t}": k="${c.k}" 没有对应 slot`);});needAu(a.audio,w);}
-  else if(a.type==='steps'){if(!a.title)err(`${w}: 缺少 title`);role(a.badge,w);(a.steps||[]).forEach((s,i)=>step(s,`${w}.steps[${i}]`));if(!a.steps?.length)err(`${w}: steps 为空`);}
+  else if(a.type==='steps'){if(a.miss!=null&&typeof a.miss!=='string')err(`${w}: miss 必须是字符串`);if(a.miss&&!(a.steps||[]).some(s=>s.kind==='fix'))warn(`${w}: 写了 miss 但没有 fix 题`);if(!a.title)err(`${w}: 缺少 title`);role(a.badge,w);(a.steps||[]).forEach((s,i)=>step(s,`${w}.steps[${i}]`));if(!a.steps?.length)err(`${w}: steps 为空`);}
   else if(a.type==='map'){if(!a.html)err(`${w}: 缺少 html`);tokens(a.html,w);for(const m of a.html.matchAll(/href="([^"]+)"/g))if(!/^https?:/.test(m[1])&&!ex(m[1]))err(`${w}: 链接 ${m[1]} 文件不存在`);}
   else if(a.type==='card'){(a.options||[]).forEach(o=>{needAu('card_'+o.k,`${w}.options[${o.k}]`,true);if(a.variant==='treasure'&&!ex(`illus/${o.img}.jpg`))err(`${w}: 缺少 illus/${o.img}.jpg`);});if(a.variant!=='treasure'){if(!a.template||!a.back)err(`${w}: phrase 卡需要 template 和 back`);a.back?.forEach(c=>role(c.b,w));}else role(a.badge,w);}
   else err(`${w}: 未知 type "${a.type}"（drag / steps / seq / map / card）`);};
