@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {badge} from './badges.js?v=1';
+import {badge} from './badges.js?v=2';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 const Q=new URLSearchParams(location.search);const $=s=>document.querySelector(s);const sleep=ms=>new Promise(r=>setTimeout(r,ms));

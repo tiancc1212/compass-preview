@@ -38,4 +38,11 @@ try{
  await scenario([1],[1,16],[1,2,16],'another tab\'s star 16 survives ep02 completion');
  await scenario([1,5],[2,2,16,16,17,0,18,-1,'bad',true,null],[1,2,5,16,17],'merge prior memory and latest valid stars; remove duplicates and invalid ids');
  console.log('PASS both real same-origin tabs, real public card flow, and restored totals');
-}finally{await browser.close();}
+}finally{
+ // Closing two live rendering tabs can leave a CDP pipe open on macOS. Bound
+ // cleanup to this script's own headless child; failed assertions still throw.
+ await Promise.race([browser.close(),new Promise(resolve=>setTimeout(resolve,3000))]);
+ browser.disconnect();
+ const child=browser.process();if(child&&child.exitCode===null)child.kill('SIGTERM');
+}
+process.exit(0);

@@ -9,3 +9,5 @@
 本集含19张插图、37段剪映配音、6个活动18步；角色沿用原设定，完成后第2颗星保存在当前浏览器中。
 
 本地完整验证：从仓库根目录启动8716服务，再运行 `node ep02/tools/verify_episode.mjs http://localhost:8716/ep02/ /tmp/ep02_acceptance`。需安装仓库原测试依赖；输出留指定本地目录，不提交截图。
+
+公开预览：[第2集](https://tiancc1212.github.io/compass-preview/ep02/?v=2)。本地与线上完整真实媒体验收均已通过。
