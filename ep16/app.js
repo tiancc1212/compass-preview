@@ -30,7 +30,7 @@ function playLine(id,zh,{timed=true,onEnd}={}){
  curLine={id,zh};const sub=$('#sub');sub.style.display='block';
  $('#who').textContent=WHO[L.who][0];$('#who').style.background=WHO[L.who][1];
  $('#line').innerHTML=L.words.map(w=>`<span>${w[0]}</span>`).join(' ');$('#zh').textContent=zh||'';
- const spans=[...$('#line').children];let stopped=false,raf=0,au=null,last=-2,vt=null,prev=0;
+ const spans=[...$('#line').children];renderHint(id,L,spans);let stopped=false,raf=0,au=null,last=-2,vt=null,prev=0;
  const paint=t=>{let k=-1;for(let i=0;i<L.words.length;i++)if(t>=L.words[i][1])k=i;   // last word whose start has passed; -1 before speech
   if(k!==last){last=k;spans.forEach((s,i)=>{s.classList.toggle('on',i===k);s.classList.toggle('done',i<k);});HL.push([id,k,+t.toFixed(3)]);if(HL.length>400)HL.shift();}};
  const finish=()=>{if(stopped)return;stopped=true;cancelAnimationFrame(raf);spans.forEach(s=>{s.classList.remove('on');s.classList.add('done');});document.body.classList.remove('playing');onEnd&&onEnd();};
@@ -45,6 +45,12 @@ function playLine(id,zh,{timed=true,onEnd}={}){
  else startVirtual();
  const stop=()=>{if(stopped)return;stopped=true;cancelAnimationFrame(raf);if(au){au.pause();}document.body.classList.remove('playing');if(stopCur===stop)stopCur=null;};
  stopCur=stop;return stop;}
+// ---- per-line grammar hints (audio/hints.json): [{b:'TD',hl:'too small to guard',zh:'…'}] ----
+let HINTS={};
+const nw=w=>w.toLowerCase().replace(/[^a-z']/g,'');
+function renderHint(id,L,spans){const box=$('#ghint');if(!box)return;const H=HINTS[id]||[];box.classList.toggle('on',H.length>0);
+ box.innerHTML=H.map(h=>`<div class="gi">${badge(h.b,{size:28,variant:'flat'})}<span>${h.zh}</span></div>`).join('');
+ const ws=L.words.map(w=>nw(w[0]));H.forEach(h=>{const ph=h.hl.split(/\s+/).map(nw);for(let i=0;i+ph.length<=ws.length;i++){if(ph.every((p,k)=>ws[i+k]===p)){for(let k=0;k<ph.length;k++)spans[i+k].classList.add('gk','gk-'+h.b);break;}}});}
 // one-off line (ending / cards): always advances, even when muted
 function say(id,zh=''){return new Promise(res=>{playLine(id,zh,{timed:true,onEnd:()=>setTimeout(res,300)});});}
 // ---- story sections ----
@@ -323,7 +329,7 @@ async function spellCard(){
 
 const IMG={gate:['illus/01_fair_gate.jpg','招聘会大门 · 紫色怪兽举着牌子'],crew:['illus/02_crew_excited.jpg','冒险队来到招聘会 · Sam 很激动'],rules:['illus/03_rules_board.jpg','Lily 读规则板'],sniff:['illus/04_biscuit_sniff.jpg','Biscuit 停下来闻，找到丢失的袜子'],job:['illus/05_got_the_job.jpg','怪兽大笑 · Biscuit 被录取']};
 let curImg=null,curOverlay='';
-function showImg(key,overlay=''){if(curImg===key&&overlay===curOverlay)return;curImg=key;curOverlay=overlay;const st=$('#stage');const [src,label]=IMG[key];
+function showImg(key,overlay=''){if(curImg===key&&overlay===curOverlay)return;curImg=key;curOverlay=overlay;const st=$('#stage');const [src,label]=IMG[key];const bd=$('#backdrop');if(bd)bd.style.backgroundImage=`url("${src}")`;
  const lay=document.createElement('div');lay.className='layer';
  lay.innerHTML=`<img alt="${label}"><div class="ph"><div>🖼️ 插图待生成</div><b>${label}</b><small>${src}</small></div>${overlay}`;
  const im=lay.querySelector('img');im.onload=()=>lay.classList.add('loaded');im.onerror=()=>lay.classList.add('missing');im.src=src;
@@ -348,7 +354,8 @@ let starsLit=0,spin=0;const clock=new THREE.Clock();
 function loop(){const t=clock.getElapsedTime();if(!RM){rig.rotation.y=Math.sin(t*0.5)*0.3+spin;rig.position.y=Math.sin(t*1.2)*0.04;}
  sockets.forEach((s,i)=>{if(LIT.has(i)){s.material.color.set('#ffd66b');s.material.emissive.set('#ffbb22');s.material.emissiveIntensity=RM?1.5:1.4+Math.sin(t*4)*.4;}});
  if($('#home').style.display!=='none')R.render(scene,cam);requestAnimationFrame(loop);}// ---------- flow ----------
-LINES=await (await fetch('audio/lines.json')).json();
+function fitLayout(){const h=$('#hud');if(h)document.documentElement.style.setProperty('--hud',(h.getBoundingClientRect().bottom+8)+'px');}addEventListener('resize',fitLayout);if(window.ResizeObserver)new ResizeObserver(fitLayout).observe($('#hud'));fitLayout();
+LINES=await (await fetch('audio/lines.json')).json();try{HINTS=await (await fetch('audio/hints.json?v=11')).json();}catch(e){HINTS={};}
 $('#loading').style.display='none';showImg('gate');requestAnimationFrame(loop);window.__ready=true;
 const homeOn=on=>{$('#home').style.display=on?'flex':'none';$('#c').style.display=on?'block':'none';};
 const SEC={S1:[{id:"l01",zh:"罗盘把冒险队带到了热闹的怪兽招聘会。",img:"gate"},{id:"l02",zh:"一只高高的紫色怪兽站在门口，举着一块大牌子。",img:"gate"},{id:"l03",zh:"“欢迎！我需要一个帮手来看守我的袜子。”",img:"gate"},{id:"l04",zh:"“我们来这里是为了给 Biscuit 找份工作！”",img:"crew"},{id:"l05",zh:"“可是 Biscuit 太小了，什么也看守不了。”",img:"crew"},{id:"l06",zh:"“这个招聘会太让人激动了，我好激动！”",img:"crew"}],S2:[{id:"l07",zh:"“等等，让我先看看规则。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"},{id:"l08",zh:"“规则一：禁止吠叫。规则二：记得微笑。”",img:"rules",overlay:"<div class=\"carve\">No barking! · Remember to smile.</div>"}],S3:[{id:"l09",zh:"Biscuit 不叫了，摇起了尾巴。",img:"sniff"},{id:"l10",zh:"“给我看看你怎么干这份活，小狗。”",img:"sniff"},{id:"l11",zh:"Biscuit 停下来闻了闻空气，然后在桌子下面找到了一只丢失的袜子。",img:"sniff"}],S4:[{id:"l12",zh:"“找袜子是它最爱的爱好！”",img:"job"},{id:"l13",zh:"“哈！你把我逗笑了。这份工作归你了！”",img:"job"},{id:"l14",zh:"Leo 永远忘不了看到 Biscuit 得到第一份工作的那一刻。",img:"job"}]};

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Compass Crew · 统一布局标准 (layout A, 2026-10-11)  — reusable for every episode
+   - 插图永远完整显示 (contain)，空白处用同一张图放大+模糊+变暗做背景 (#backdrop)
+   - 竖屏手机：图在上，羊皮纸字幕卡在下方填满剩余空间
+   - 横屏手机：图在左占满高度，字幕卡在右
+   - 电脑：图居中，字幕卡在图下方（不压图）
+   需要：index.html 里有 <div id="backdrop"></div>、#stage、#sub(含 #ghint)；
+         app.js 里 showImg() 同步设置 #backdrop 背景，fitLayout() 写入 --hud。
+   ========================================================================== */
+:root{--hud:64px;--gap:10px}
+#backdrop{position:fixed;inset:-60px;z-index:0;background:#1b1020 center/cover no-repeat;filter:blur(30px) brightness(.5) saturate(1.1);transition:background-image .4s}
+#stage{z-index:1;background:transparent!important}
+.layer img{object-fit:contain!important}
+#stage .layer{inset:0}
+/* --- portrait (default) --- */
+#stage{position:fixed!important;left:0!important;right:0!important;top:var(--hud)!important;bottom:auto!important;height:56.25vw!important;inset:auto 0 auto 0}
+#sub{position:fixed!important;left:var(--gap)!important;right:var(--gap)!important;width:auto!important;transform:none!important;
+ top:calc(var(--hud) + 56.25vw + var(--gap))!important;bottom:calc(var(--gap) + env(safe-area-inset-bottom))!important;
+ display:none;flex-direction:column;overflow:auto;padding:14px 16px!important;border-radius:22px!important;
+ background:radial-gradient(circle at 18% 8%,rgba(255,255,255,.55),transparent 40%),repeating-linear-gradient(0deg,rgba(160,110,40,.05) 0 2px,transparent 2px 6px),#fbf0d6!important;
+ border:3px solid var(--brass,#c99a3c);box-shadow:inset 0 0 0 3px #fbf0d6,inset 0 0 0 5px rgba(201,154,60,.45),0 6px 0 var(--brass-dark,#8a6420)!important}
+#sub[style*="block"]{display:flex!important}
+#sub #line{font-size:26px;margin-top:4px}
+#lnav{margin-top:auto!important;padding-top:10px}
+/* grammar hint */
+#ghint{display:none;flex-direction:column;gap:6px;margin:10px 0 4px;padding:8px 10px;border-radius:14px;background:rgba(255,255,255,.55);border:1px dashed rgba(201,154,60,.7)}
+#ghint.on{display:flex}
+#ghint .gi{display:flex;align-items:center;gap:8px;font-size:15px;line-height:1.35;color:#5a3412;text-align:left}
+#ghint .gi b{font-family:Georgia,serif;color:#3a2410}
+#line span.gk{border-bottom:3px solid var(--gkc,#c99a3c);border-radius:4px 4px 0 0}
+#line span.gk-TD,#line span.gk-DO{--gkc:var(--role-td)}#line span.gk-ING{--gkc:var(--role-ing)}#line span.gk-ED{--gkc:var(--role-ed)}
+/* --- landscape phone --- */
+@media (orientation:landscape) and (max-height:520px){
+ #stage{top:var(--hud)!important;bottom:0!important;height:auto!important;right:auto!important;width:60vw!important}
+ #sub{top:var(--hud)!important;left:calc(60vw + var(--gap))!important;bottom:var(--gap)!important}
+ #sub #line{font-size:20px}#ghint .gi{font-size:13px}#ghint{margin:6px 0 2px;padding:6px 8px}
+}
+/* --- desktop / tablet --- */
+@media (min-width:900px) and (min-height:600px){
+ #stage{top:var(--hud)!important;bottom:250px!important;height:auto!important}
+ #sub{top:auto!important;bottom:18px!important;height:220px;left:50%!important;right:auto!important;width:min(960px,92vw)!important;transform:translateX(-50%)!important}
+ #sub #line{font-size:28px}
+}
+@media (max-width:380px){#sub #line{font-size:22px}#ghint .gi{font-size:14px}}
+/* exercises / ending keep full-screen overlays on top of everything */
+#panel{z-index:8}
+body.ending #stage{filter:brightness(.5)}
+#sub #who{align-self:flex-start}
+#sub #lpos{position:absolute;right:18px;top:16px;float:none}
+@media (orientation:landscape) and (max-height:520px){
+ #hud{gap:6px!important;top:8px!important}#hud .btn,#hud #title,#hud #stars{font-size:12px!important;padding:5px 10px!important;min-height:32px!important;white-space:nowrap}
+ #hud #title{max-width:34vw;overflow:hidden;text-overflow:ellipsis}
+ #lnav .btn{white-space:nowrap;font-size:13px!important;padding:6px 10px!important}.lhint{display:none}
+}
+@media (min-width:900px) and (min-height:600px){#stage{bottom:300px!important}#sub{height:270px}}
+body.ending #sub{top:auto!important;height:auto!important;max-height:30vh}body.ending #ghint,body.ending #lnav{display:none!important}

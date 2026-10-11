@@ -1,0 +1,21 @@
+{
+ "_说明": "每句的语法提示。b=徽章(TD/DO/ING/ED/S/V/O/C)，zh=一句中文讲解，hl=句中要标出的词（连续词组，忽略大小写和标点）。没有本集考点的句子不写。",
+ "l02": [{"b":"ING","hl":"holding","zh":"<b>holding</b> 现在分词作伴随：站在门口，<b>一边</b>举着牌子"}],
+ "l03": [{"b":"TD","hl":"to guard","zh":"<b>to guard</b> 不定式作定语，放在名词后：看守袜子的帮手"}],
+ "l04": [{"b":"TD","hl":"to find","zh":"<b>to find</b> 不定式表目的：来这里<b>为了</b>找工作"}],
+ "l05": [{"b":"TD","hl":"too small to guard","zh":"<b>too … to do</b> = 太……而不能"}],
+ "l06": [{"b":"ING","hl":"exciting","zh":"<b>exciting</b>：事物“令人激动的”"},{"b":"ED","hl":"excited","zh":"<b>excited</b>：人“感到激动的”"}],
+ "l07": [{"b":"DO","hl":"Let me read","zh":"<b>let sb. do</b>：let 后面的动词不带 to"}],
+ "l08": [{"b":"ING","hl":"No barking","zh":"<b>No + doing</b>：禁止做某事"},{"b":"TD","hl":"Remember to smile","zh":"<b>remember to do</b>：记得<b>要去</b>做（还没做）"}],
+ "l09": [{"b":"ING","hl":"stops barking","zh":"<b>stop doing</b>：停止<b>正在做</b>的事（不叫了）"}],
+ "l10": [{"b":"TD","hl":"how to do","zh":"<b>疑问词 + to do</b>：how to do = 怎么做"}],
+ "l11": [{"b":"TD","hl":"stops to sniff","zh":"<b>stop to do</b>：停下来<b>去做</b>另一件事"},{"b":"ED","hl":"lost","zh":"<b>lost</b> 过去分词作定语：<b>被弄丢</b>的袜子"}],
+ "l12": [{"b":"ING","hl":"Finding socks","zh":"<b>动名词作主语</b>：找袜子这件事，谓语用单数 is"}],
+ "l13": [{"b":"DO","hl":"made me laugh","zh":"<b>make sb. do</b>：make 后面的动词不带 to"}],
+ "l14": [{"b":"ING","hl":"forget seeing","zh":"<b>forget doing</b>：忘记<b>做过</b>的事（never forget = 永远忘不了）"},{"b":"DO","hl":"get","zh":"<b>see sb. do</b>：看到某人做了某事的全过程"}],
+ "card_football": [{"b":"ING","hl":"playing football","zh":"<b>enjoy doing</b>：enjoy 后面接 doing"}],
+ "card_drawing": [{"b":"ING","hl":"drawing","zh":"<b>enjoy doing</b>：enjoy 后面接 doing"}],
+ "card_reading": [{"b":"ING","hl":"reading","zh":"<b>enjoy doing</b>：enjoy 后面接 doing"}],
+ "card_swimming": [{"b":"ING","hl":"swimming","zh":"<b>enjoy doing</b>：enjoy 后面接 doing"}],
+ "card_games": [{"b":"ING","hl":"playing games","zh":"<b>enjoy doing</b>：enjoy 后面接 doing"}]
+}
