@@ -19,7 +19,7 @@ function sfx(type){if(muted)return;try{const a=ac(),t=a.currentTime;const g=a.cr
 }catch(e){}}
 // ---------- voice player + story reader (manual paging / auto read / mute-safe) — shared by all episodes ----------
 const RATES=[0.75,1,1.25];let RATE=+(localStorage.getItem('cc_rate')||1);if(!RATES.includes(RATE))RATE=1;
-function voice(src){const a=new Audio(src);a.playbackRate=RATE;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;return a;}
+function voice(src){const a=new Audio(src+'?v=20261011-level1');a.playbackRate=RATE;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;return a;}
 function setRate(r){RATE=r;localStorage.setItem('cc_rate',r);if(curAudio)curAudio.playbackRate=r;const b=$('#rate');if(b)b.textContent='🐢 '+r+'x';}
 const HL=[];window.__hl=HL;   // debug log: [lineId, wordIndex, audioTime]
 // playLine: show subtitle, play audio once, highlight strictly from audio clock. timed=true -> when muted / no audio, run a virtual clock at RATE.
