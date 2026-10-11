@@ -1,0 +1,62 @@
+{
+  "episode": "ep12",
+  "authority": "用户2026-10-11转达Willo决定，明确覆盖旧审定提示",
+  "changed_lines": 3,
+  "changes": [
+    {
+      "id": "l01",
+      "before": [
+        {
+          "b": "O",
+          "hl": "into the sea",
+          "zh": "into 表示从外面进入里面。"
+        }
+      ],
+      "after": [
+        {
+          "b": "ADV",
+          "hl": "into the sea",
+          "zh": "介词短语作状语：into 表示进入里面"
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "before": [
+        {
+          "b": "O",
+          "hl": "through an arch",
+          "zh": "through 表示从内部穿过。"
+        }
+      ],
+      "after": [
+        {
+          "b": "ADV",
+          "hl": "through an arch",
+          "zh": "介词短语作状语：through 表示从内部穿过"
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "before": [
+        {
+          "b": "O",
+          "hl": "across the square",
+          "zh": "across 表示从一边到另一边。"
+        }
+      ],
+      "after": [
+        {
+          "b": "ADV",
+          "hl": "across the square",
+          "zh": "介词短语作状语：across 表示从一边到另一边"
+        }
+      ]
+    }
+  ],
+  "engine_changed": false,
+  "original_source_files_changed": false,
+  "before_sha256": "48b5a2a10501c2ca0653a0427c69a6f25232a40e88656b7a708cc9993ed326f1",
+  "after_sha256": "cd848ed23c06f6d549f2a14d92cd2225adcaa39d854b7311bf13ed579b264019"
+}

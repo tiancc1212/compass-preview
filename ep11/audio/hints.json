@@ -1,0 +1,100 @@
+{
+  "l01": [
+    {
+      "b": "C",
+      "hl": "much warmer than",
+      "zh": "much 加比较级：暖和得多。"
+    }
+  ],
+  "l02": [
+    {
+      "b": "ADJ",
+      "hl": "fastest",
+      "zh": "最高级修饰名词：这位跑者是一组中最快的。"
+    }
+  ],
+  "l03": [
+    {
+      "b": "C",
+      "hl": "as fast as",
+      "zh": "as…as 中间用原级。"
+    }
+  ],
+  "l04": [
+    {
+      "b": "ADV",
+      "hl": "quietly",
+      "zh": "quietly 说明站着时的样子。"
+    }
+  ],
+  "l05": [
+    {
+      "b": "ADV",
+      "hl": "more quickly than",
+      "zh": "多音节副词常用 more 比较。"
+    }
+  ],
+  "l06": [
+    {
+      "b": "C",
+      "hl": "the strongest of the three animals",
+      "zh": "of 引出参加比较的这一组。"
+    }
+  ],
+  "l07": [
+    {
+      "b": "C",
+      "hl": "slower and slower",
+      "zh": "比较级重叠：越来越……。"
+    }
+  ],
+  "l08": [
+    {
+      "b": "C",
+      "hl": "The more you rush, the more tired you feel",
+      "zh": "the…，the…：越……越……。"
+    }
+  ],
+  "l09": [
+    {
+      "b": "ADV",
+      "hl": "carefully",
+      "zh": "方式副词可放在动词宾语后。"
+    }
+  ],
+  "l10": [
+    {
+      "b": "C",
+      "hl": "useful",
+      "zh": "use 加 ful：有用的。"
+    }
+  ],
+  "l11": [
+    {
+      "b": "C",
+      "hl": "not as fast as",
+      "zh": "not as…as：没有……那么。"
+    }
+  ],
+  "l12": [
+    {
+      "b": "ADV",
+      "hl": "most carefully",
+      "zh": "副词最高级前的 the 可省略。"
+    }
+  ],
+  "l13": [
+    {
+      "b": "ADJ",
+      "hl": "quickest",
+      "zh": "quickest：修饰棋手，指所有棋手中最快的。"
+    }
+  ],
+  "l14": [
+    {
+      "b": "ADJ",
+      "hl": "best",
+      "zh": "最高级修饰名词：前面有 our，不再加 the。"
+    }
+  ]
+}

@@ -1,0 +1,2079 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "The compass falls into the sea.",
+  "dur": 1.985,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "compass",
+    0.22,
+    0.52
+   ],
+   [
+    "falls",
+    0.52,
+    0.92
+   ],
+   [
+    "into",
+    0.92,
+    1.3
+   ],
+   [
+    "the",
+    1.3,
+    1.46
+   ],
+   [
+    "sea.",
+    1.46,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "narrator",
+  "text": "Leo, Mia, Sam, Lily and Biscuit swim through an arch into a glowing city.",
+  "dur": 6.008,
+  "words": [
+   [
+    "Leo,",
+    0.0,
+    0.48
+   ],
+   [
+    "Mia,",
+    0.94,
+    0.99
+   ],
+   [
+    "Sam,",
+    1.22,
+    1.62
+   ],
+   [
+    "Lily",
+    2.16,
+    2.21
+   ],
+   [
+    "and",
+    2.2,
+    2.66
+   ],
+   [
+    "Biscuit",
+    2.66,
+    3.16
+   ],
+   [
+    "swim",
+    3.16,
+    3.5
+   ],
+   [
+    "through",
+    3.5,
+    3.84
+   ],
+   [
+    "an",
+    3.84,
+    4.0
+   ],
+   [
+    "arch",
+    4.0,
+    4.38
+   ],
+   [
+    "into",
+    4.38,
+    4.78
+   ],
+   [
+    "a",
+    4.78,
+    4.94
+   ],
+   [
+    "glowing",
+    4.94,
+    5.26
+   ],
+   [
+    "city.",
+    5.26,
+    5.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "mia",
+  "text": "It is dark down here!",
+  "dur": 2.09,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.56
+   ],
+   [
+    "dark",
+    0.56,
+    0.96
+   ],
+   [
+    "down",
+    0.96,
+    1.36
+   ],
+   [
+    "here!",
+    1.36,
+    1.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "lily",
+  "text": "Let's look for the compass.",
+  "dur": 1.437,
+  "words": [
+   [
+    "Let's",
+    0.0,
+    0.32
+   ],
+   [
+    "look",
+    0.32,
+    0.4
+   ],
+   [
+    "for",
+    0.4,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.7
+   ],
+   [
+    "compass.",
+    0.7,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "narrator",
+  "text": "The mermaid mayor lets everyone enter the city.",
+  "dur": 2.821,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "mermaid",
+    0.2,
+    0.64
+   ],
+   [
+    "mayor",
+    0.64,
+    0.98
+   ],
+   [
+    "lets",
+    0.98,
+    1.26
+   ],
+   [
+    "everyone",
+    1.26,
+    1.78
+   ],
+   [
+    "enter",
+    1.78,
+    2.08
+   ],
+   [
+    "the",
+    2.08,
+    2.28
+   ],
+   [
+    "city.",
+    2.28,
+    2.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "narrator",
+  "text": "She makes the children put on bubble helmets.",
+  "dur": 2.717,
+  "words": [
+   [
+    "She",
+    0.0,
+    0.26
+   ],
+   [
+    "makes",
+    0.26,
+    0.5
+   ],
+   [
+    "the",
+    0.5,
+    0.76
+   ],
+   [
+    "children",
+    0.76,
+    1.04
+   ],
+   [
+    "put",
+    1.04,
+    1.34
+   ],
+   [
+    "on",
+    1.34,
+    1.56
+   ],
+   [
+    "bubble",
+    1.56,
+    1.82
+   ],
+   [
+    "helmets.",
+    1.82,
+    2.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "lily",
+  "text": "I will have Sam hold the lamp.",
+  "dur": 1.593,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.22
+   ],
+   [
+    "will",
+    0.22,
+    0.32
+   ],
+   [
+    "have",
+    0.32,
+    0.5
+   ],
+   [
+    "Sam",
+    0.5,
+    0.78
+   ],
+   [
+    "hold",
+    0.78,
+    1.02
+   ],
+   [
+    "the",
+    1.02,
+    1.18
+   ],
+   [
+    "lamp.",
+    1.18,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "sam",
+  "text": "It is important for us to stay together.",
+  "dur": 2.534,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.44
+   ],
+   [
+    "important",
+    0.44,
+    0.84
+   ],
+   [
+    "for",
+    0.84,
+    1.2
+   ],
+   [
+    "us",
+    1.2,
+    1.34
+   ],
+   [
+    "to",
+    1.34,
+    1.6
+   ],
+   [
+    "stay",
+    1.6,
+    1.82
+   ],
+   [
+    "together.",
+    1.82,
+    2.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "mia",
+  "text": "You lost it, didn't you, Leo?",
+  "dur": 2.9,
+  "words": [
+   [
+    "You",
+    0.0,
+    0.28
+   ],
+   [
+    "lost",
+    0.28,
+    0.68
+   ],
+   [
+    "it,",
+    0.68,
+    1.08
+   ],
+   [
+    "didn't",
+    1.56,
+    1.94
+   ],
+   [
+    "you,",
+    1.94,
+    2.1
+   ],
+   [
+    "Leo?",
+    2.32,
+    2.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "leo",
+  "text": "Yes, I did, but I will not give up.",
+  "dur": 2.038,
+  "words": [
+   [
+    "Yes,",
+    0.0,
+    0.34
+   ],
+   [
+    "I",
+    0.54,
+    0.59
+   ],
+   [
+    "did,",
+    0.58,
+    0.82
+   ],
+   [
+    "but",
+    1.06,
+    1.16
+   ],
+   [
+    "I",
+    1.16,
+    1.3
+   ],
+   [
+    "will",
+    1.3,
+    1.44
+   ],
+   [
+    "not",
+    1.44,
+    1.66
+   ],
+   [
+    "give",
+    1.66,
+    1.84
+   ],
+   [
+    "up.",
+    1.84,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "sam",
+  "text": "Biscuit never gives up either, does he?",
+  "dur": 2.011,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "never",
+    0.44,
+    0.62
+   ],
+   [
+    "gives",
+    0.62,
+    0.88
+   ],
+   [
+    "up",
+    0.88,
+    1.12
+   ],
+   [
+    "either,",
+    1.12,
+    1.34
+   ],
+   [
+    "does",
+    1.34,
+    1.62
+   ],
+   [
+    "he?",
+    1.62,
+    1.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "narrator",
+  "text": "Biscuit swims across the square with the compass in his mouth.",
+  "dur": 3.344,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "swims",
+    0.46,
+    1.12
+   ],
+   [
+    "across",
+    1.12,
+    1.22
+   ],
+   [
+    "the",
+    1.22,
+    1.48
+   ],
+   [
+    "square",
+    1.48,
+    1.78
+   ],
+   [
+    "with",
+    1.78,
+    2.06
+   ],
+   [
+    "the",
+    2.06,
+    2.2
+   ],
+   [
+    "compass",
+    2.2,
+    2.44
+   ],
+   [
+    "in",
+    2.44,
+    2.72
+   ],
+   [
+    "his",
+    2.72,
+    2.84
+   ],
+   [
+    "mouth.",
+    2.84,
+    3.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "lily",
+  "text": "It is kind of you to help us, Biscuit.",
+  "dur": 1.724,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.16
+   ],
+   [
+    "is",
+    0.16,
+    0.3
+   ],
+   [
+    "kind",
+    0.3,
+    0.48
+   ],
+   [
+    "of",
+    0.48,
+    0.64
+   ],
+   [
+    "you",
+    0.64,
+    0.72
+   ],
+   [
+    "to",
+    0.72,
+    0.84
+   ],
+   [
+    "help",
+    0.84,
+    0.98
+   ],
+   [
+    "us,",
+    0.98,
+    1.18
+   ],
+   [
+    "Biscuit.",
+    1.28,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "leo",
+  "text": "It says 'For my family', doesn't it?",
+  "dur": 2.351,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.26
+   ],
+   [
+    "says",
+    0.26,
+    0.54
+   ],
+   [
+    "'For",
+    0.54,
+    0.84
+   ],
+   [
+    "my",
+    0.84,
+    1.0
+   ],
+   [
+    "family',",
+    1.0,
+    1.8
+   ],
+   [
+    "doesn't",
+    1.8,
+    2.04
+   ],
+   [
+    "it?",
+    2.04,
+    2.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_01": {
+  "who": "narrator",
+  "text": "Biscuit swims across the square.",
+  "dur": 2.116,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.58
+   ],
+   [
+    "swims",
+    0.58,
+    1.26
+   ],
+   [
+    "across",
+    1.26,
+    1.34
+   ],
+   [
+    "the",
+    1.34,
+    1.6
+   ],
+   [
+    "square.",
+    1.6,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_02": {
+  "who": "narrator",
+  "text": "Lily walks through the tunnel.",
+  "dur": 1.62,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.32
+   ],
+   [
+    "walks",
+    0.32,
+    0.66
+   ],
+   [
+    "through",
+    0.66,
+    0.98
+   ],
+   [
+    "the",
+    0.98,
+    1.12
+   ],
+   [
+    "tunnel.",
+    1.12,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_03": {
+  "who": "narrator",
+  "text": "Sam jumps into the pool.",
+  "dur": 1.829,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.42
+   ],
+   [
+    "jumps",
+    0.42,
+    0.82
+   ],
+   [
+    "into",
+    0.82,
+    1.18
+   ],
+   [
+    "the",
+    1.18,
+    1.32
+   ],
+   [
+    "pool.",
+    1.32,
+    1.56
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_04": {
+  "who": "narrator",
+  "text": "Mia swims towards the gate.",
+  "dur": 1.881,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.34
+   ],
+   [
+    "swims",
+    0.34,
+    0.94
+   ],
+   [
+    "towards",
+    0.94,
+    1.12
+   ],
+   [
+    "the",
+    1.12,
+    1.34
+   ],
+   [
+    "gate.",
+    1.34,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_01": {
+  "who": "narrator",
+  "text": "We travel by boat.",
+  "dur": 1.306,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.2
+   ],
+   [
+    "travel",
+    0.2,
+    0.4
+   ],
+   [
+    "by",
+    0.4,
+    0.64
+   ],
+   [
+    "boat.",
+    0.64,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_02": {
+  "who": "narrator",
+  "text": "Lily opens the box with a key.",
+  "dur": 1.829,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.26
+   ],
+   [
+    "opens",
+    0.26,
+    0.72
+   ],
+   [
+    "the",
+    0.72,
+    0.9
+   ],
+   [
+    "box",
+    0.9,
+    1.08
+   ],
+   [
+    "with",
+    1.08,
+    1.32
+   ],
+   [
+    "a",
+    1.32,
+    1.42
+   ],
+   [
+    "key.",
+    1.42,
+    1.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_03": {
+  "who": "narrator",
+  "text": "Mia writes the message in English.",
+  "dur": 2.142,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.3
+   ],
+   [
+    "writes",
+    0.3,
+    0.64
+   ],
+   [
+    "the",
+    0.64,
+    0.86
+   ],
+   [
+    "message",
+    0.86,
+    1.16
+   ],
+   [
+    "in",
+    1.16,
+    1.46
+   ],
+   [
+    "English.",
+    1.46,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_04": {
+  "who": "narrator",
+  "text": "We thank Biscuit for helping us.",
+  "dur": 1.881,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.22
+   ],
+   [
+    "thank",
+    0.22,
+    0.44
+   ],
+   [
+    "Biscuit",
+    0.44,
+    0.84
+   ],
+   [
+    "for",
+    0.84,
+    1.02
+   ],
+   [
+    "helping",
+    1.02,
+    1.28
+   ],
+   [
+    "us.",
+    1.28,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_01": {
+  "who": "narrator",
+  "text": "Sam is walking across the bridge.",
+  "dur": 2.168,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.66
+   ],
+   [
+    "walking",
+    0.66,
+    0.94
+   ],
+   [
+    "across",
+    0.94,
+    1.34
+   ],
+   [
+    "the",
+    1.34,
+    1.58
+   ],
+   [
+    "bridge.",
+    1.58,
+    1.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_02": {
+  "who": "narrator",
+  "text": "Lily is walking through the tunnel.",
+  "dur": 2.038,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.34
+   ],
+   [
+    "is",
+    0.34,
+    0.74
+   ],
+   [
+    "walking",
+    0.74,
+    1.02
+   ],
+   [
+    "through",
+    1.02,
+    1.34
+   ],
+   [
+    "the",
+    1.34,
+    1.52
+   ],
+   [
+    "tunnel.",
+    1.52,
+    1.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_03": {
+  "who": "narrator",
+  "text": "Leo is stepping into the dome.",
+  "dur": 1.959,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.6
+   ],
+   [
+    "stepping",
+    0.6,
+    0.86
+   ],
+   [
+    "into",
+    0.86,
+    1.28
+   ],
+   [
+    "the",
+    1.28,
+    1.44
+   ],
+   [
+    "dome.",
+    1.44,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_04": {
+  "who": "narrator",
+  "text": "Biscuit is jumping over the low wall.",
+  "dur": 2.09,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.64
+   ],
+   [
+    "jumping",
+    0.64,
+    0.92
+   ],
+   [
+    "over",
+    0.92,
+    1.28
+   ],
+   [
+    "the",
+    1.28,
+    1.44
+   ],
+   [
+    "low",
+    1.44,
+    1.66
+   ],
+   [
+    "wall.",
+    1.66,
+    1.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_01": {
+  "who": "narrator",
+  "text": "Let me carry the lamp.",
+  "dur": 1.384,
+  "words": [
+   [
+    "Let",
+    0.0,
+    0.24
+   ],
+   [
+    "me",
+    0.24,
+    0.36
+   ],
+   [
+    "carry",
+    0.36,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.74
+   ],
+   [
+    "lamp.",
+    0.74,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_02": {
+  "who": "narrator",
+  "text": "The mayor makes us wear helmets.",
+  "dur": 1.959,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "mayor",
+    0.2,
+    0.46
+   ],
+   [
+    "makes",
+    0.46,
+    0.72
+   ],
+   [
+    "us",
+    0.72,
+    0.92
+   ],
+   [
+    "wear",
+    0.92,
+    1.12
+   ],
+   [
+    "helmets.",
+    1.12,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_03": {
+  "who": "narrator",
+  "text": "Lily has Sam open the box.",
+  "dur": 2.09,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.32
+   ],
+   [
+    "has",
+    0.32,
+    0.62
+   ],
+   [
+    "Sam",
+    0.62,
+    0.94
+   ],
+   [
+    "open",
+    0.94,
+    1.24
+   ],
+   [
+    "the",
+    1.24,
+    1.4
+   ],
+   [
+    "box.",
+    1.4,
+    1.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_04": {
+  "who": "narrator",
+  "text": "The funny fish makes Sam happy.",
+  "dur": 1.985,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "funny",
+    0.22,
+    0.4
+   ],
+   [
+    "fish",
+    0.4,
+    0.72
+   ],
+   [
+    "makes",
+    0.72,
+    1.06
+   ],
+   [
+    "Sam",
+    1.06,
+    1.38
+   ],
+   [
+    "happy.",
+    1.38,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_01": {
+  "who": "narrator",
+  "text": "It is in my bag.",
+  "dur": 1.202,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.34
+   ],
+   [
+    "in",
+    0.34,
+    0.48
+   ],
+   [
+    "my",
+    0.48,
+    0.62
+   ],
+   [
+    "bag.",
+    0.62,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_02": {
+  "who": "narrator",
+  "text": "It is five o'clock.",
+  "dur": 1.254,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.36
+   ],
+   [
+    "five",
+    0.36,
+    0.58
+   ],
+   [
+    "o'clock.",
+    0.58,
+    1.154
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_03": {
+  "who": "narrator",
+  "text": "It is cold outside.",
+  "dur": 1.384,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.34
+   ],
+   [
+    "cold",
+    0.34,
+    0.6
+   ],
+   [
+    "outside.",
+    0.6,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_04": {
+  "who": "narrator",
+  "text": "It is easy to find the gate.",
+  "dur": 1.698,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.34
+   ],
+   [
+    "easy",
+    0.34,
+    0.6
+   ],
+   [
+    "to",
+    0.6,
+    0.82
+   ],
+   [
+    "find",
+    0.82,
+    0.98
+   ],
+   [
+    "the",
+    0.98,
+    1.1
+   ],
+   [
+    "gate.",
+    1.1,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_01": {
+  "who": "narrator",
+  "text": "The door is open, isn't it?",
+  "dur": 1.959,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "door",
+    0.2,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.56
+   ],
+   [
+    "open,",
+    0.56,
+    0.88
+   ],
+   [
+    "isn't",
+    1.28,
+    1.48
+   ],
+   [
+    "it?",
+    1.48,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_02": {
+  "who": "narrator",
+  "text": "Leo lost the compass, didn't he?",
+  "dur": 1.881,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.36
+   ],
+   [
+    "lost",
+    0.36,
+    0.62
+   ],
+   [
+    "the",
+    0.62,
+    0.8
+   ],
+   [
+    "compass,",
+    0.8,
+    1.12
+   ],
+   [
+    "didn't",
+    1.12,
+    1.52
+   ],
+   [
+    "he?",
+    1.52,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_03": {
+  "who": "narrator",
+  "text": "Nobody is outside, are they?",
+  "dur": 1.802,
+  "words": [
+   [
+    "Nobody",
+    0.0,
+    0.36
+   ],
+   [
+    "is",
+    0.36,
+    0.66
+   ],
+   [
+    "outside,",
+    0.66,
+    1.06
+   ],
+   [
+    "are",
+    1.22,
+    1.36
+   ],
+   [
+    "they?",
+    1.36,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_04": {
+  "who": "narrator",
+  "text": "Let's go home, shall we?",
+  "dur": 1.332,
+  "words": [
+   [
+    "Let's",
+    0.0,
+    0.32
+   ],
+   [
+    "go",
+    0.32,
+    0.42
+   ],
+   [
+    "home,",
+    0.42,
+    0.68
+   ],
+   [
+    "shall",
+    0.74,
+    0.92
+   ],
+   [
+    "we?",
+    0.92,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_01": {
+  "who": "narrator",
+  "text": "It is difficult to find the compass.",
+  "dur": 1.907,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.18
+   ],
+   [
+    "is",
+    0.18,
+    0.32
+   ],
+   [
+    "difficult",
+    0.32,
+    0.64
+   ],
+   [
+    "to",
+    0.64,
+    0.88
+   ],
+   [
+    "find",
+    0.88,
+    1.02
+   ],
+   [
+    "the",
+    1.02,
+    1.16
+   ],
+   [
+    "compass.",
+    1.16,
+    1.44
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_02": {
+  "who": "narrator",
+  "text": "Put it on.",
+  "dur": 0.888,
+  "words": [
+   [
+    "Put",
+    0.0,
+    0.22
+   ],
+   [
+    "it",
+    0.22,
+    0.36
+   ],
+   [
+    "on.",
+    0.36,
+    0.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_03": {
+  "who": "narrator",
+  "text": "It was kind of you to help us.",
+  "dur": 1.881,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.2
+   ],
+   [
+    "was",
+    0.2,
+    0.34
+   ],
+   [
+    "kind",
+    0.34,
+    0.64
+   ],
+   [
+    "of",
+    0.64,
+    0.82
+   ],
+   [
+    "you",
+    0.82,
+    0.96
+   ],
+   [
+    "to",
+    0.96,
+    1.1
+   ],
+   [
+    "help",
+    1.1,
+    1.3
+   ],
+   [
+    "us.",
+    1.3,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_01": {
+  "who": "narrator",
+  "text": "We travelled by bus.",
+  "dur": 1.384,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.2
+   ],
+   [
+    "travelled",
+    0.2,
+    0.46
+   ],
+   [
+    "by",
+    0.46,
+    0.72
+   ],
+   [
+    "bus.",
+    0.72,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_02": {
+  "who": "narrator",
+  "text": "Lily walks through the tunnel.",
+  "dur": 1.567,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.3
+   ],
+   [
+    "walks",
+    0.3,
+    0.58
+   ],
+   [
+    "through",
+    0.58,
+    0.9
+   ],
+   [
+    "the",
+    0.9,
+    1.04
+   ],
+   [
+    "tunnel.",
+    1.04,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_03": {
+  "who": "narrator",
+  "text": "Please put it on.",
+  "dur": 1.123,
+  "words": [
+   [
+    "Please",
+    0.0,
+    0.3
+   ],
+   [
+    "put",
+    0.3,
+    0.5
+   ],
+   [
+    "it",
+    0.5,
+    0.64
+   ],
+   [
+    "on.",
+    0.64,
+    0.82
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_04": {
+  "who": "narrator",
+  "text": "The mayor lets us stay.",
+  "dur": 1.384,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "mayor",
+    0.18,
+    0.4
+   ],
+   [
+    "lets",
+    0.4,
+    0.62
+   ],
+   [
+    "us",
+    0.62,
+    0.84
+   ],
+   [
+    "stay.",
+    0.84,
+    1.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_05": {
+  "who": "narrator",
+  "text": "It is important for us to stay together.",
+  "dur": 2.116,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.34
+   ],
+   [
+    "important",
+    0.34,
+    0.7
+   ],
+   [
+    "for",
+    0.7,
+    1.06
+   ],
+   [
+    "us",
+    1.06,
+    1.22
+   ],
+   [
+    "to",
+    1.22,
+    1.38
+   ],
+   [
+    "stay",
+    1.38,
+    1.56
+   ],
+   [
+    "together.",
+    1.56,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_06": {
+  "who": "narrator",
+  "text": "Sam never gives up, does he?",
+  "dur": 1.672,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.38
+   ],
+   [
+    "never",
+    0.38,
+    0.62
+   ],
+   [
+    "gives",
+    0.62,
+    0.84
+   ],
+   [
+    "up,",
+    0.84,
+    1.1
+   ],
+   [
+    "does",
+    1.18,
+    1.28
+   ],
+   [
+    "he?",
+    1.28,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_07": {
+  "who": "narrator",
+  "text": "It is dark, isn't it?",
+  "dur": 1.672,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.34
+   ],
+   [
+    "dark,",
+    0.34,
+    0.78
+   ],
+   [
+    "isn't",
+    0.96,
+    1.22
+   ],
+   [
+    "it?",
+    1.22,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_08": {
+  "who": "narrator",
+  "text": "Yes, he can.",
+  "dur": 1.384,
+  "words": [
+   [
+    "Yes,",
+    0.0,
+    0.32
+   ],
+   [
+    "he",
+    0.74,
+    0.84
+   ],
+   [
+    "can.",
+    0.84,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_look": {
+  "who": "lily",
+  "text": "We can look for it together.",
+  "dur": 1.358,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.2
+   ],
+   [
+    "can",
+    0.2,
+    0.32
+   ],
+   [
+    "look",
+    0.32,
+    0.46
+   ],
+   [
+    "for",
+    0.46,
+    0.64
+   ],
+   [
+    "it",
+    0.64,
+    0.78
+   ],
+   [
+    "together.",
+    0.78,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_help": {
+  "who": "mia",
+  "text": "It is kind of you to help.",
+  "dur": 2.116,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.52
+   ],
+   [
+    "kind",
+    0.52,
+    0.86
+   ],
+   [
+    "of",
+    0.86,
+    1.1
+   ],
+   [
+    "you",
+    1.1,
+    1.3
+   ],
+   [
+    "to",
+    1.3,
+    1.44
+   ],
+   [
+    "help.",
+    1.44,
+    1.78
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_let": {
+  "who": "leo",
+  "text": "Let me carry the lamp.",
+  "dur": 1.829,
+  "words": [
+   [
+    "Let",
+    0.0,
+    0.32
+   ],
+   [
+    "me",
+    0.32,
+    0.52
+   ],
+   [
+    "carry",
+    0.52,
+    0.86
+   ],
+   [
+    "the",
+    0.86,
+    1.1
+   ],
+   [
+    "lamp.",
+    1.1,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_home": {
+  "who": "sam",
+  "text": "Let's go home, shall we?",
+  "dur": 1.489,
+  "words": [
+   [
+    "Let's",
+    0.0,
+    0.38
+   ],
+   [
+    "go",
+    0.38,
+    0.52
+   ],
+   [
+    "home,",
+    0.52,
+    0.8
+   ],
+   [
+    "shall",
+    0.84,
+    1.08
+   ],
+   [
+    "we?",
+    1.08,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The twelfth star is home!",
+  "dur": 1.75,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "twelfth",
+    0.2,
+    0.58
+   ],
+   [
+    "star",
+    0.58,
+    0.94
+   ],
+   [
+    "is",
+    0.94,
+    1.16
+   ],
+   [
+    "home!",
+    1.16,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ }
+}

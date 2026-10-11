@@ -1,0 +1,100 @@
+{
+  "l01": [
+    {
+      "b": "ADV",
+      "hl": "into the sea",
+      "zh": "介词短语作状语：into 表示进入里面"
+    }
+  ],
+  "l02": [
+    {
+      "b": "ADV",
+      "hl": "through an arch",
+      "zh": "介词短语作状语：through 表示从内部穿过"
+    }
+  ],
+  "l03": [
+    {
+      "b": "S",
+      "hl": "It is dark",
+      "zh": "it 可作描述环境的主语。"
+    }
+  ],
+  "l04": [
+    {
+      "b": "V",
+      "hl": "look for",
+      "zh": "look for 是寻找，还没说找到。"
+    }
+  ],
+  "l05": [
+    {
+      "b": "DO",
+      "hl": "lets everyone enter",
+      "zh": "let 后接人，再接动词原形。"
+    }
+  ],
+  "l06": [
+    {
+      "b": "DO",
+      "hl": "makes the children put on",
+      "zh": "make sb. do：让某人做。"
+    }
+  ],
+  "l07": [
+    {
+      "b": "DO",
+      "hl": "have Sam hold",
+      "zh": "have sb. do：安排某人做。"
+    }
+  ],
+  "l08": [
+    {
+      "b": "TD",
+      "hl": "It is important for us to stay together",
+      "zh": "for us 说这件事对谁重要。"
+    }
+  ],
+  "l09": [
+    {
+      "b": "V",
+      "hl": "didn't you",
+      "zh": "过去的 lost，附加问句用 did。"
+    }
+  ],
+  "l10": [
+    {
+      "b": "V",
+      "hl": "give up",
+      "zh": "give up：放弃。"
+    }
+  ],
+  "l11": [
+    {
+      "b": "V",
+      "hl": "does he",
+      "zh": "never 含否定，后面用肯定问句。"
+    }
+  ],
+  "l12": [
+    {
+      "b": "ADV",
+      "hl": "across the square",
+      "zh": "介词短语作状语：across 表示从一边到另一边"
+    }
+  ],
+  "l13": [
+    {
+      "b": "TD",
+      "hl": "It is kind of you to help us",
+      "zh": "kind 评价人的行为，用 of。"
+    }
+  ],
+  "l14": [
+    {
+      "b": "V",
+      "hl": "doesn't it",
+      "zh": "says 是一般现在时，配 does。"
+    }
+  ]
+}

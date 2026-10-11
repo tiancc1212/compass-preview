@@ -1,0 +1,1907 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "The compass brings Leo, Mia, Sam, Lily and Biscuit to a sweet planet.",
+  "dur": 5.46,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "compass",
+    0.22,
+    0.5
+   ],
+   [
+    "brings",
+    0.5,
+    0.94
+   ],
+   [
+    "Leo,",
+    0.94,
+    1.4
+   ],
+   [
+    "Mia,",
+    1.74,
+    1.84
+   ],
+   [
+    "Sam,",
+    2.2,
+    2.56
+   ],
+   [
+    "Lily",
+    3.18,
+    3.23
+   ],
+   [
+    "and",
+    3.18,
+    3.58
+   ],
+   [
+    "Biscuit",
+    3.58,
+    4.02
+   ],
+   [
+    "to",
+    4.02,
+    4.28
+   ],
+   [
+    "a",
+    4.28,
+    4.42
+   ],
+   [
+    "sweet",
+    4.42,
+    4.7
+   ],
+   [
+    "planet.",
+    4.7,
+    5.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "mia",
+  "text": "What a wonderful planet this is!",
+  "dur": 2.926,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.36
+   ],
+   [
+    "a",
+    0.36,
+    0.6
+   ],
+   [
+    "wonderful",
+    0.6,
+    1.26
+   ],
+   [
+    "planet",
+    1.26,
+    1.82
+   ],
+   [
+    "this",
+    1.82,
+    2.2
+   ],
+   [
+    "is!",
+    2.2,
+    2.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "narrator",
+  "text": "Dad tastes a tiny rock, and it tastes delicious.",
+  "dur": 3.396,
+  "words": [
+   [
+    "Dad",
+    0.0,
+    0.34
+   ],
+   [
+    "tastes",
+    0.34,
+    0.7
+   ],
+   [
+    "a",
+    0.7,
+    0.94
+   ],
+   [
+    "tiny",
+    0.94,
+    1.22
+   ],
+   [
+    "rock,",
+    1.22,
+    1.58
+   ],
+   [
+    "and",
+    1.9,
+    2.06
+   ],
+   [
+    "it",
+    2.06,
+    2.18
+   ],
+   [
+    "tastes",
+    2.18,
+    2.46
+   ],
+   [
+    "delicious.",
+    2.46,
+    2.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "sam",
+  "text": "How soft these hills are!",
+  "dur": 2.011,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.32
+   ],
+   [
+    "soft",
+    0.32,
+    0.74
+   ],
+   [
+    "these",
+    0.74,
+    1.06
+   ],
+   [
+    "hills",
+    1.06,
+    1.4
+   ],
+   [
+    "are!",
+    1.4,
+    1.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "lily",
+  "text": "The tall pink trees look strange.",
+  "dur": 1.672,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "tall",
+    0.18,
+    0.38
+   ],
+   [
+    "pink",
+    0.38,
+    0.56
+   ],
+   [
+    "trees",
+    0.56,
+    0.78
+   ],
+   [
+    "look",
+    0.78,
+    0.96
+   ],
+   [
+    "strange.",
+    0.96,
+    1.32
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "mia",
+  "text": "What beautiful flowers they have!",
+  "dur": 2.873,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.34
+   ],
+   [
+    "beautiful",
+    0.34,
+    1.0
+   ],
+   [
+    "flowers",
+    1.0,
+    1.84
+   ],
+   [
+    "they",
+    1.84,
+    2.2
+   ],
+   [
+    "have!",
+    2.2,
+    2.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "leo",
+  "text": "There is something shiny under that tree.",
+  "dur": 2.769,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.34
+   ],
+   [
+    "is",
+    0.34,
+    0.54
+   ],
+   [
+    "something",
+    0.54,
+    0.82
+   ],
+   [
+    "shiny",
+    0.82,
+    1.32
+   ],
+   [
+    "under",
+    1.32,
+    1.7
+   ],
+   [
+    "that",
+    1.7,
+    2.0
+   ],
+   [
+    "tree.",
+    2.0,
+    2.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "narrator",
+  "text": "Biscuit pulls out a small red sock.",
+  "dur": 2.273,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.5
+   ],
+   [
+    "pulls",
+    0.5,
+    0.72
+   ],
+   [
+    "out",
+    0.72,
+    0.92
+   ],
+   [
+    "a",
+    0.92,
+    1.1
+   ],
+   [
+    "small",
+    1.1,
+    1.4
+   ],
+   [
+    "red",
+    1.4,
+    1.66
+   ],
+   [
+    "sock.",
+    1.66,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "sam",
+  "text": "What an unusual sock it is!",
+  "dur": 1.881,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.26
+   ],
+   [
+    "an",
+    0.26,
+    0.4
+   ],
+   [
+    "unusual",
+    0.4,
+    0.78
+   ],
+   [
+    "sock",
+    0.78,
+    1.22
+   ],
+   [
+    "it",
+    1.22,
+    1.42
+   ],
+   [
+    "is!",
+    1.42,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "lily",
+  "text": "The sock feels warm and dry.",
+  "dur": 1.463,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "sock",
+    0.2,
+    0.38
+   ],
+   [
+    "feels",
+    0.38,
+    0.62
+   ],
+   [
+    "warm",
+    0.62,
+    0.82
+   ],
+   [
+    "and",
+    0.82,
+    0.98
+   ],
+   [
+    "dry.",
+    0.98,
+    1.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "narrator",
+  "text": "The discovery makes Leo happy.",
+  "dur": 1.933,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "discovery",
+    0.2,
+    0.64
+   ],
+   [
+    "makes",
+    0.64,
+    1.0
+   ],
+   [
+    "Leo",
+    1.0,
+    1.3
+   ],
+   [
+    "happy.",
+    1.3,
+    1.62
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "leo",
+  "text": "The old sign says this is Chen's favourite spot.",
+  "dur": 3.187,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.24
+   ],
+   [
+    "old",
+    0.24,
+    0.44
+   ],
+   [
+    "sign",
+    0.44,
+    0.8
+   ],
+   [
+    "says",
+    0.8,
+    1.12
+   ],
+   [
+    "this",
+    1.12,
+    1.4
+   ],
+   [
+    "is",
+    1.4,
+    1.62
+   ],
+   [
+    "Chen's",
+    1.62,
+    2.08
+   ],
+   [
+    "favourite",
+    2.08,
+    2.34
+   ],
+   [
+    "spot.",
+    2.34,
+    2.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "mia",
+  "text": "What lovely weather we have here!",
+  "dur": 2.926,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.34
+   ],
+   [
+    "lovely",
+    0.34,
+    1.0
+   ],
+   [
+    "weather",
+    1.0,
+    1.48
+   ],
+   [
+    "we",
+    1.48,
+    1.88
+   ],
+   [
+    "have",
+    1.88,
+    2.2
+   ],
+   [
+    "here!",
+    2.2,
+    2.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "sam",
+  "text": "How brightly our new star shines!",
+  "dur": 2.56,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.28
+   ],
+   [
+    "brightly",
+    0.28,
+    0.66
+   ],
+   [
+    "our",
+    0.66,
+    0.98
+   ],
+   [
+    "new",
+    0.98,
+    1.24
+   ],
+   [
+    "star",
+    1.24,
+    1.64
+   ],
+   [
+    "shines!",
+    1.64,
+    2.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_1": {
+  "who": "narrator",
+  "text": "Biscuit finds a red sock.",
+  "dur": 1.672,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "finds",
+    0.46,
+    0.78
+   ],
+   [
+    "a",
+    0.78,
+    1.04
+   ],
+   [
+    "red",
+    1.04,
+    1.24
+   ],
+   [
+    "sock.",
+    1.24,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_2": {
+  "who": "narrator",
+  "text": "The hills are soft.",
+  "dur": 1.332,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "hills",
+    0.2,
+    0.46
+   ],
+   [
+    "are",
+    0.46,
+    0.68
+   ],
+   [
+    "soft.",
+    0.68,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_3": {
+  "who": "narrator",
+  "text": "The star makes Mia happy.",
+  "dur": 1.802,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "star",
+    0.2,
+    0.52
+   ],
+   [
+    "makes",
+    0.52,
+    0.82
+   ],
+   [
+    "Mia",
+    0.82,
+    1.16
+   ],
+   [
+    "happy.",
+    1.16,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_4": {
+  "who": "narrator",
+  "text": "The rock tastes sweet.",
+  "dur": 1.463,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "rock",
+    0.2,
+    0.46
+   ],
+   [
+    "tastes",
+    0.46,
+    0.76
+   ],
+   [
+    "sweet.",
+    0.76,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_1": {
+  "who": "narrator",
+  "text": "There is something shiny under the tree.",
+  "dur": 2.142,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.34
+   ],
+   [
+    "something",
+    0.34,
+    0.64
+   ],
+   [
+    "shiny",
+    0.64,
+    1.08
+   ],
+   [
+    "under",
+    1.08,
+    1.46
+   ],
+   [
+    "the",
+    1.46,
+    1.64
+   ],
+   [
+    "tree.",
+    1.64,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_2": {
+  "who": "narrator",
+  "text": "The little bridge is two metres long.",
+  "dur": 2.273,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "little",
+    0.18,
+    0.42
+   ],
+   [
+    "bridge",
+    0.42,
+    0.72
+   ],
+   [
+    "is",
+    0.72,
+    1.02
+   ],
+   [
+    "two",
+    1.02,
+    1.36
+   ],
+   [
+    "metres",
+    1.36,
+    1.66
+   ],
+   [
+    "long.",
+    1.66,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_3": {
+  "who": "narrator",
+  "text": "Mia finds a basket full of flowers.",
+  "dur": 2.377,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.34
+   ],
+   [
+    "finds",
+    0.34,
+    0.7
+   ],
+   [
+    "a",
+    0.7,
+    0.86
+   ],
+   [
+    "basket",
+    0.86,
+    1.18
+   ],
+   [
+    "full",
+    1.18,
+    1.5
+   ],
+   [
+    "of",
+    1.5,
+    1.64
+   ],
+   [
+    "flowers.",
+    1.64,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_4": {
+  "who": "narrator",
+  "text": "Biscuit is still asleep.",
+  "dur": 1.515,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.56
+   ],
+   [
+    "still",
+    0.56,
+    0.8
+   ],
+   [
+    "asleep.",
+    0.8,
+    1.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_1": {
+  "who": "narrator",
+  "text": "What a huge cake!",
+  "dur": 1.384,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.22
+   ],
+   [
+    "a",
+    0.22,
+    0.38
+   ],
+   [
+    "huge",
+    0.38,
+    0.78
+   ],
+   [
+    "cake!",
+    0.78,
+    1.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_2": {
+  "who": "narrator",
+  "text": "What beautiful flowers!",
+  "dur": 1.698,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.24
+   ],
+   [
+    "beautiful",
+    0.24,
+    0.74
+   ],
+   [
+    "flowers!",
+    0.74,
+    1.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_3": {
+  "who": "narrator",
+  "text": "Biscuit is asleep.",
+  "dur": 1.463,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.72
+   ],
+   [
+    "asleep.",
+    0.72,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_4": {
+  "who": "narrator",
+  "text": "Mia has a small red box.",
+  "dur": 2.116,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.3
+   ],
+   [
+    "has",
+    0.3,
+    0.62
+   ],
+   [
+    "a",
+    0.62,
+    0.78
+   ],
+   [
+    "small",
+    0.78,
+    1.12
+   ],
+   [
+    "red",
+    1.12,
+    1.38
+   ],
+   [
+    "box.",
+    1.38,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "How sweet the river smells!",
+  "dur": 1.907,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.28
+   ],
+   [
+    "sweet",
+    0.28,
+    0.64
+   ],
+   [
+    "the",
+    0.64,
+    0.86
+   ],
+   [
+    "river",
+    0.86,
+    1.04
+   ],
+   [
+    "smells!",
+    1.04,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "What fresh air this is!",
+  "dur": 1.646,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.28
+   ],
+   [
+    "fresh",
+    0.28,
+    0.58
+   ],
+   [
+    "air",
+    0.58,
+    0.9
+   ],
+   [
+    "this",
+    0.9,
+    1.08
+   ],
+   [
+    "is!",
+    1.08,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "How fast Biscuit runs!",
+  "dur": 1.75,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.26
+   ],
+   [
+    "fast",
+    0.26,
+    0.68
+   ],
+   [
+    "Biscuit",
+    0.68,
+    1.04
+   ],
+   [
+    "runs!",
+    1.04,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "What an unusual tree this is!",
+  "dur": 1.959,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.22
+   ],
+   [
+    "an",
+    0.22,
+    0.36
+   ],
+   [
+    "unusual",
+    0.36,
+    0.78
+   ],
+   [
+    "tree",
+    0.78,
+    1.18
+   ],
+   [
+    "this",
+    1.18,
+    1.38
+   ],
+   [
+    "is!",
+    1.38,
+    1.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "narrator",
+  "text": "The rock tastes sweet.",
+  "dur": 1.515,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "rock",
+    0.2,
+    0.46
+   ],
+   [
+    "tastes",
+    0.46,
+    0.76
+   ],
+   [
+    "sweet.",
+    0.76,
+    1.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "I can see something shiny.",
+  "dur": 1.724,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.24
+   ],
+   [
+    "can",
+    0.24,
+    0.38
+   ],
+   [
+    "see",
+    0.38,
+    0.64
+   ],
+   [
+    "something",
+    0.64,
+    0.98
+   ],
+   [
+    "shiny.",
+    0.98,
+    1.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
+  "who": "narrator",
+  "text": "What lovely weather!",
+  "dur": 1.28,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.26
+   ],
+   [
+    "lovely",
+    0.26,
+    0.66
+   ],
+   [
+    "weather!",
+    0.66,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_4": {
+  "who": "narrator",
+  "text": "The game makes Sam happy.",
+  "dur": 1.463,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "game",
+    0.2,
+    0.46
+   ],
+   [
+    "makes",
+    0.46,
+    0.74
+   ],
+   [
+    "Sam",
+    0.74,
+    1.12
+   ],
+   [
+    "happy.",
+    1.12,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_1": {
+  "who": "narrator",
+  "text": "Biscuit finds a small red sock.",
+  "dur": 3.004,
+  "words": [
+   [
+    "Biscuit",
+    0.8,
+    1.4
+   ],
+   [
+    "finds",
+    1.4,
+    1.68
+   ],
+   [
+    "a",
+    1.68,
+    1.86
+   ],
+   [
+    "small",
+    1.86,
+    2.24
+   ],
+   [
+    "red",
+    2.24,
+    2.54
+   ],
+   [
+    "sock.",
+    2.54,
+    2.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_2": {
+  "who": "narrator",
+  "text": "How beautiful these flowers are!",
+  "dur": 1.933,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.28
+   ],
+   [
+    "beautiful",
+    0.28,
+    0.68
+   ],
+   [
+    "these",
+    0.68,
+    1.04
+   ],
+   [
+    "flowers",
+    1.04,
+    1.38
+   ],
+   [
+    "are!",
+    1.38,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_3": {
+  "who": "narrator",
+  "text": "What a beautiful tree it is!",
+  "dur": 1.829,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.2
+   ],
+   [
+    "a",
+    0.2,
+    0.4
+   ],
+   [
+    "beautiful",
+    0.4,
+    0.72
+   ],
+   [
+    "tree",
+    0.72,
+    1.08
+   ],
+   [
+    "it",
+    1.08,
+    1.26
+   ],
+   [
+    "is!",
+    1.26,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_4": {
+  "who": "narrator",
+  "text": "How soft the hill is!",
+  "dur": 1.724,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.26
+   ],
+   [
+    "soft",
+    0.26,
+    0.64
+   ],
+   [
+    "the",
+    0.64,
+    0.86
+   ],
+   [
+    "hill",
+    0.86,
+    1.08
+   ],
+   [
+    "is!",
+    1.08,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_1": {
+  "who": "narrator",
+  "text": "Tired and hungry, Sam sits down.",
+  "dur": 2.664,
+  "words": [
+   [
+    "Tired",
+    0.0,
+    0.5
+   ],
+   [
+    "and",
+    0.5,
+    0.72
+   ],
+   [
+    "hungry,",
+    0.72,
+    1.12
+   ],
+   [
+    "Sam",
+    1.66,
+    1.72
+   ],
+   [
+    "sits",
+    1.72,
+    2.0
+   ],
+   [
+    "down.",
+    2.0,
+    2.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "This map is of great use.",
+  "dur": 1.907,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.28
+   ],
+   [
+    "map",
+    0.28,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.74
+   ],
+   [
+    "of",
+    0.74,
+    0.88
+   ],
+   [
+    "great",
+    0.88,
+    1.16
+   ],
+   [
+    "use.",
+    1.16,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "How time flies!",
+  "dur": 1.567,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.26
+   ],
+   [
+    "time",
+    0.26,
+    0.64
+   ],
+   [
+    "flies!",
+    0.64,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "These flowers are lovely!",
+  "dur": 1.724,
+  "words": [
+   [
+    "These",
+    0.0,
+    0.32
+   ],
+   [
+    "flowers",
+    0.32,
+    0.72
+   ],
+   [
+    "are",
+    0.72,
+    0.98
+   ],
+   [
+    "lovely!",
+    0.98,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "narrator",
+  "text": "The clouds look soft.",
+  "dur": 1.698,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "clouds",
+    0.22,
+    0.58
+   ],
+   [
+    "look",
+    0.58,
+    0.88
+   ],
+   [
+    "soft.",
+    0.88,
+    1.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "narrator",
+  "text": "Biscuit finds a red sock.",
+  "dur": 1.62,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "finds",
+    0.46,
+    0.76
+   ],
+   [
+    "a",
+    0.76,
+    0.94
+   ],
+   [
+    "red",
+    0.94,
+    1.12
+   ],
+   [
+    "sock.",
+    1.12,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "narrator",
+  "text": "There is nothing strange here.",
+  "dur": 1.724,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.34
+   ],
+   [
+    "nothing",
+    0.34,
+    0.68
+   ],
+   [
+    "strange",
+    0.68,
+    1.1
+   ],
+   [
+    "here.",
+    1.1,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "The news makes Lily happy.",
+  "dur": 1.541,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "news",
+    0.22,
+    0.5
+   ],
+   [
+    "makes",
+    0.5,
+    0.88
+   ],
+   [
+    "Lily",
+    0.88,
+    1.18
+   ],
+   [
+    "happy.",
+    1.18,
+    1.48
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "narrator",
+  "text": "What an amazing planet!",
+  "dur": 3.004,
+  "words": [
+   [
+    "What",
+    1.04,
+    1.42
+   ],
+   [
+    "an",
+    1.42,
+    1.6
+   ],
+   [
+    "amazing",
+    1.6,
+    2.1
+   ],
+   [
+    "planet!",
+    2.1,
+    2.56
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "narrator",
+  "text": "What beautiful flowers!",
+  "dur": 1.776,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.28
+   ],
+   [
+    "beautiful",
+    0.28,
+    0.8
+   ],
+   [
+    "flowers!",
+    0.8,
+    1.32
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "narrator",
+  "text": "What delicious chocolate!",
+  "dur": 1.75,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.26
+   ],
+   [
+    "delicious",
+    0.26,
+    0.8
+   ],
+   [
+    "chocolate!",
+    0.8,
+    1.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "How bright the star is!",
+  "dur": 1.724,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.24
+   ],
+   [
+    "bright",
+    0.24,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.76
+   ],
+   [
+    "star",
+    0.76,
+    1.1
+   ],
+   [
+    "is!",
+    1.1,
+    1.48
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_planet": {
+  "who": "leo",
+  "text": "What a wonderful planet this is!",
+  "dur": 1.933,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.22
+   ],
+   [
+    "a",
+    0.22,
+    0.34
+   ],
+   [
+    "wonderful",
+    0.34,
+    0.7
+   ],
+   [
+    "planet",
+    0.7,
+    1.1
+   ],
+   [
+    "this",
+    1.1,
+    1.38
+   ],
+   [
+    "is!",
+    1.38,
+    1.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_flowers": {
+  "who": "leo",
+  "text": "What beautiful flowers they have!",
+  "dur": 2.429,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.38
+   ],
+   [
+    "beautiful",
+    0.38,
+    0.84
+   ],
+   [
+    "flowers",
+    0.84,
+    1.48
+   ],
+   [
+    "they",
+    1.48,
+    1.8
+   ],
+   [
+    "have!",
+    1.8,
+    2.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_soft": {
+  "who": "leo",
+  "text": "How soft these hills are!",
+  "dur": 1.881,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.3
+   ],
+   [
+    "soft",
+    0.3,
+    0.7
+   ],
+   [
+    "these",
+    0.7,
+    1.0
+   ],
+   [
+    "hills",
+    1.0,
+    1.3
+   ],
+   [
+    "are!",
+    1.3,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_happy": {
+  "who": "leo",
+  "text": "The discovery makes Leo happy.",
+  "dur": 2.325,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "discovery",
+    0.2,
+    0.66
+   ],
+   [
+    "makes",
+    0.66,
+    1.18
+   ],
+   [
+    "Leo",
+    1.18,
+    1.52
+   ],
+   [
+    "happy.",
+    1.52,
+    1.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The seventh star is home!",
+  "dur": 1.75,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "seventh",
+    0.22,
+    0.54
+   ],
+   [
+    "star",
+    0.54,
+    0.96
+   ],
+   [
+    "is",
+    0.96,
+    1.14
+   ],
+   [
+    "home!",
+    1.14,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ }
+}

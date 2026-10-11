@@ -1,0 +1,128 @@
+{
+  "_说明": "徽章按最新单集规格书第5节使用；hl为原句连续片段，一句最多两条。2026-10-11经Willo新授权修订，逐条记录见docs/HINTS_REVISION_20261011.json。",
+  "l01": [
+    {
+      "b": "V",
+      "hl": "are standing",
+      "zh": "are 加 doing，说明他们此刻正在做。"
+    }
+  ],
+  "l02": [
+    {
+      "b": "V",
+      "hl": "am reporting",
+      "zh": "I 要搭配 am，再加 doing。"
+    }
+  ],
+  "l03": [
+    {
+      "b": "V",
+      "hl": "Look at",
+      "zh": "祈使句用动词原形开头。"
+    }
+  ],
+  "l04": [
+    {
+      "b": "V",
+      "hl": "is drinking",
+      "zh": "is 加 doing，表示正在喝。"
+    },
+    {
+      "b": "V",
+      "hl": "is drawing",
+      "zh": "Mia 是单数，前面用 is。"
+    }
+  ],
+  "l05": [
+    {
+      "b": "V",
+      "hl": "is not sitting",
+      "zh": "进行时否定：is 后加 not。"
+    }
+  ],
+  "l06": [
+    {
+      "b": "V",
+      "hl": "Is he carrying",
+      "zh": "把 Is 提到主语前来提问。"
+    }
+  ],
+  "l07": [
+    {
+      "b": "V",
+      "hl": "is running",
+      "zh": "run 变 running，要双写 n。"
+    }
+  ],
+  "l08": [
+    {
+      "b": "V",
+      "hl": "are the baby dinosaurs doing",
+      "zh": "What 后接 are 加主语和 doing。"
+    }
+  ],
+  "l09": [
+    {
+      "b": "V",
+      "hl": "are following",
+      "zh": "They 搭配 are，再加 doing。"
+    }
+  ],
+  "l10": [
+    {
+      "b": "V",
+      "hl": "Stop",
+      "zh": "Stop 用原形，直接发出指令。"
+    },
+    {
+      "b": "V",
+      "hl": "put the egg down",
+      "zh": "and 后的第二个指令也用原形。"
+    }
+  ],
+  "l11": [
+    {
+      "b": "V",
+      "hl": "Don't run",
+      "zh": "否定指令用 Don't 加原形。"
+    },
+    {
+      "b": "V",
+      "hl": "be quiet",
+      "zh": "Be 加形容词也能发出指令。"
+    }
+  ],
+  "l12": [
+    {
+      "b": "ADV",
+      "hl": "usually",
+      "zh": "usually：频率副词，说明平时通常做什么。"
+    },
+    {
+      "b": "V",
+      "hl": "am hiding",
+      "zh": "现在进行时说此刻的动作。"
+    }
+  ],
+  "l13": [
+    {
+      "b": "DO",
+      "hl": "lift",
+      "zh": "Let's 加动词原形，邀请一起做。"
+    }
+  ],
+  "l14": [
+    {
+      "b": "V",
+      "hl": "is glowing",
+      "zh": "is 加 doing，描述眼前的发光。"
+    }
+  ],
+  "l15": [
+    {
+      "b": "V",
+      "hl": "Look at",
+      "zh": "Look at 用原形，邀请大家看。"
+    }
+  ]
+}

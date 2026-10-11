@@ -1,0 +1,204 @@
+{
+  "episode": "ep15",
+  "authority": "用户2026-10-11转达Willo决定，明确覆盖旧审定提示",
+  "changed_lines": 11,
+  "changes": [
+    {
+      "id": "l04",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "was found",
+          "zh": "was found：袜子被发现了"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "was found",
+          "zh": "was found：袜子被发现了"
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "has been broken",
+          "zh": "has been done：已被打破，现在仍可见"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "has been broken",
+          "zh": "has been done：已被打破，现在仍可见"
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "is usually kept",
+          "zh": "is kept：通常被存放在这里"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "is usually kept",
+          "zh": "is kept：通常被存放在这里"
+        },
+        {
+          "b": "ADV",
+          "hl": "usually",
+          "zh": "usually：频率副词，表示通常"
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "be found",
+          "zh": "情态动词后接 be done 表被动"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "Can it be found",
+          "zh": "情态动词后接 be done 表被动"
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "was given",
+          "zh": "was given：有人把袜子给了它"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "was given",
+          "zh": "was given：有人把袜子给了它"
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "is being pulled",
+          "zh": "is being done：正在被拖动"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "is being pulled",
+          "zh": "is being done：正在被拖动"
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "had been hidden",
+          "zh": "had been done：过去之前已被藏好"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "had been hidden",
+          "zh": "had been done：过去之前已被藏好"
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "was caught",
+          "zh": "was caught：老鼠被抓住了"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "was caught",
+          "zh": "was caught：老鼠被抓住了"
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "will be returned",
+          "zh": "will be done：将被放回"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "will be returned",
+          "zh": "will be done：将被放回"
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "was discovered",
+          "zh": "was discovered：零件被发现了"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "was discovered",
+          "zh": "was discovered：零件被发现了"
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "before": [
+        {
+          "b": "ED",
+          "hl": "was placed",
+          "zh": "was placed：星星被放在了旁边"
+        }
+      ],
+      "after": [
+        {
+          "b": "V",
+          "hl": "was placed",
+          "zh": "was placed：星星被放在了旁边"
+        }
+      ]
+    }
+  ],
+  "engine_changed": false,
+  "original_source_files_changed": false,
+  "before_sha256": "3d3b942633bdd1e48283fbbce921ff0852744dc32b22b57071fdba365cee2a25",
+  "after_sha256": "8f50dfa2da713d4eb964c3e3d22c12eaf06f3530d39390079b16f5d6571cf16d",
+  "continuous_highlight": "现引擎只接受连续高亮，疑问句Can it be found包含中间主语；is usually kept整组标V，usually另有更具体ADV下划线。"
+}

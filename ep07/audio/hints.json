@@ -1,0 +1,111 @@
+{
+  "_说明": "徽章按最新单集规格书第5节使用；hl为原句连续片段，一句最多两条。2026-10-11经Willo新授权修订，逐条记录见docs/HINTS_REVISION_20261011.json。",
+  "l01": [
+    {
+      "b": "ADJ",
+      "hl": "sweet",
+      "zh": "形容词放名词前，说明它的样子。"
+    }
+  ],
+  "l02": [
+    {
+      "b": "ADJ",
+      "hl": "wonderful",
+      "zh": "What a 加形容词和单数名词。"
+    }
+  ],
+  "l03": [
+    {
+      "b": "C",
+      "hl": "tastes delicious",
+      "zh": "taste 表示尝起来，后接形容词。"
+    }
+  ],
+  "l04": [
+    {
+      "b": "C",
+      "hl": "How soft these hills are",
+      "zh": "How 加形容词，再接主语和谓语。"
+    }
+  ],
+  "l05": [
+    {
+      "b": "ADJ",
+      "hl": "tall pink trees",
+      "zh": "高矮一般在颜色前。"
+    },
+    {
+      "b": "C",
+      "hl": "look strange",
+      "zh": "look 表示看起来，后接形容词。"
+    }
+  ],
+  "l06": [
+    {
+      "b": "ADJ",
+      "hl": "beautiful",
+      "zh": "复数名词前不用 a 或 an。"
+    }
+  ],
+  "l07": [
+    {
+      "b": "ADJ",
+      "hl": "something shiny",
+      "zh": "修饰 something 的形容词要后置。"
+    }
+  ],
+  "l08": [
+    {
+      "b": "ADJ",
+      "hl": "small red sock",
+      "zh": "形容词放名词前，大小一般在颜色前。"
+    }
+  ],
+  "l09": [
+    {
+      "b": "ADJ",
+      "hl": "unusual",
+      "zh": "unusual 以元音音素开头，用 an。"
+    }
+  ],
+  "l10": [
+    {
+      "b": "C",
+      "hl": "feels warm and dry",
+      "zh": "feel 后的形容词说明袜子的状态。"
+    }
+  ],
+  "l11": [
+    {
+      "b": "C",
+      "hl": "makes Leo happy",
+      "zh": "形容词补充说明宾语 Leo 的状态。"
+    }
+  ],
+  "l12": [
+    {
+      "b": "ADJ",
+      "hl": "old sign",
+      "zh": "old 放在名词 sign 前。"
+    },
+    {
+      "b": "ADJ",
+      "hl": "favourite spot",
+      "zh": "favourite 修饰名词 spot。"
+    }
+  ],
+  "l13": [
+    {
+      "b": "ADJ",
+      "hl": "lovely",
+      "zh": "weather 不可数，不加 a 或 an。"
+    }
+  ],
+  "l14": [
+    {
+      "b": "ADV",
+      "hl": "How brightly our new star shines",
+      "zh": "How 也能感叹动作做得怎样。"
+    }
+  ]
+}

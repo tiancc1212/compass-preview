@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-11",
+  "episode": "ep11",
+  "authority": "用户转述Willo新决定：语法提示以最新SPEC为准，覆盖旧审定提示限制。",
+  "scope": "仅本集hints、内容缓存版本、修订说明与备份；故事与题目答案不改。",
+  "before_sha256": "0ebc75d9b6d5eb1f86231742f7bb3b3c836da4f3953da0081b1ec81fef4fc8e8",
+  "after_sha256": "057fc3393a1d3a14c52bc5739e9bc10dc9b8547a20bd114411a8a96c833e5ede",
+  "data_v": {
+    "before": 4,
+    "after": 5
+  },
+  "modified_hint_count": 3,
+  "metadata_changes": [],
+  "changes": [
+    {
+      "line_id": "l02",
+      "hint_number": 1,
+      "text": "I am the fastest runner in our crew!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "the fastest runner",
+        "zh": "最高级说一组里面最突出的。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "fastest",
+        "zh": "最高级修饰名词：这位跑者是一组中最快的。"
+      },
+      "reason": "只标名词前作定语的最高级形容词，不将完整表语或同位语短语改称形容词。"
+    },
+    {
+      "line_id": "l13",
+      "hint_number": 1,
+      "text": "The elephant remembers a Chinese boy, the quickest chess player of all.",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "the quickest chess player",
+        "zh": "最高级：在所有棋手中最快"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "quickest",
+        "zh": "quickest：修饰棋手，指所有棋手中最快的。"
+      },
+      "reason": "只标名词前作定语的最高级形容词，不将完整表语或同位语短语改称形容词。"
+    },
+    {
+      "line_id": "l14",
+      "hint_number": 1,
+      "text": "Biscuit is our best sock finder, and this star is his prize!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "our best sock finder",
+        "zh": "最高级前有 our，就不再加 the。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "best",
+        "zh": "最高级修饰名词：前面有 our，不再加 the。"
+      },
+      "reason": "只标名词前作定语的最高级形容词，不将完整表语或同位语短语改称形容词。"
+    }
+  ],
+  "retained_boundaries": [],
+  "validation": {
+    "official_validator": "node tools/validate_episode.mjs ep11",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "all_hints_checked": 14,
+    "max_zh_characters_including_latin_spaces_and_punctuation": 24,
+    "max_hints_per_line": 1,
+    "highlight_all_found_in_original_lines": true,
+    "episode_js_and_lines_sha256_unchanged": {
+      "episode.js": "7dde366842aa7f1862aea6af26f66e20e4dfde52db90f562f1dd3422952b2a44",
+      "audio/lines.json": "ede5625e5b96c0a40759ebc37e96ac0b95a748305a98981928f39ab17cb259e8"
+    }
+  }
+}

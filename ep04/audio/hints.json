@@ -1,0 +1,137 @@
+{
+  "l01": [
+    {
+      "b": "V",
+      "hl": "are",
+      "zh": "we 后用 are"
+    },
+    {
+      "b": "V",
+      "hl": "is",
+      "zh": "单数 Biscuit 后用 is"
+    }
+  ],
+  "l02": [
+    {
+      "b": "V",
+      "hl": "is not",
+      "zh": "be 后加 not 表否定"
+    }
+  ],
+  "l03": [
+    {
+      "b": "V",
+      "hl": "Are you",
+      "zh": "be 提到主语前组成问句"
+    }
+  ],
+  "l04": [
+    {
+      "b": "V",
+      "hl": "is",
+      "zh": "be 说明状态"
+    },
+    {
+      "b": "V",
+      "hl": "opens",
+      "zh": "he 作主语，opens 加 s；and 连起两件事"
+    }
+  ],
+  "l05": [
+    {
+      "b": "V",
+      "hl": "Do",
+      "zh": "实义动词问句用 do 帮忙"
+    }
+  ],
+  "l06": [
+    {
+      "b": "V",
+      "hl": "do not know",
+      "zh": "do not 后面的动词用原形"
+    }
+  ],
+  "l07": [
+    {
+      "b": "DO",
+      "hl": "fly",
+      "zh": "can 提到前面，fly 不变形"
+    }
+  ],
+  "l08": [
+    {
+      "b": "DO",
+      "hl": "fly",
+      "zh": "can 后用动词原形"
+    },
+    {
+      "b": "V",
+      "hl": "does not fly",
+      "zh": "does not 后不用 flies"
+    }
+  ],
+  "l09": [
+    {
+      "b": "V",
+      "hl": "does",
+      "zh": "疑问词后用 does + 主语 + 原形"
+    }
+  ],
+  "l10": [
+    {
+      "b": "V",
+      "hl": "Does",
+      "zh": "does 后的 guard 用原形"
+    },
+    {
+      "b": "O",
+      "hl": "gold or books",
+      "zh": "or 连接两个可选答案"
+    }
+  ],
+  "l11": [
+    {
+      "b": "V",
+      "hl": "guards",
+      "zh": "he 后用 guards；so 引出结果"
+    }
+  ],
+  "l12": [
+    {
+      "b": "S",
+      "hl": "What",
+      "zh": "what 作主语，直接接 is"
+    }
+  ],
+  "l13": [
+    {
+      "b": "S",
+      "hl": "Who",
+      "zh": "who 作主语，不加 do"
+    },
+    {
+      "b": "V",
+      "hl": "has",
+      "zh": "未知的 who 主语常按单数"
+    }
+  ],
+  "l14": [
+    {
+      "b": "V",
+      "hl": "recognises",
+      "zh": "三单加 s；英式拼写 recognise"
+    },
+    {
+      "b": "V",
+      "hl": "has",
+      "zh": "Biscuit 作主语，have 变 has"
+    }
+  ],
+  "l15": [
+    {
+      "b": "V",
+      "hl": "returns",
+      "zh": "三单 returns；so 引出前因后果"
+    }
+  ]
+}

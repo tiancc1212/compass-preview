@@ -1,0 +1,34 @@
+{
+  "episode": "ep03",
+  "authority": "用户2026-10-11转达Willo决定，明确覆盖旧审定提示",
+  "changed_lines": 1,
+  "changes": [
+    {
+      "id": "l04",
+      "before": [
+        {
+          "b": "C",
+          "hl": "my bag",
+          "zh": "my 后面要带名词"
+        },
+        {
+          "b": "S",
+          "hl": "myself",
+          "zh": "myself 强调主语 I 亲自做"
+        }
+      ],
+      "after": [
+        {
+          "b": "C",
+          "hl": "my bag",
+          "zh": "my 后面要带名词<br>强调：我自己"
+        }
+      ]
+    }
+  ],
+  "engine_changed": false,
+  "original_source_files_changed": false,
+  "before_sha256": "34ca284e3d8e76cb1c84fecf8fedf5fc95936597eac2f1513f82270c8fa2c090",
+  "after_sha256": "7f1d03acb3bc1cc75e15ce57416b594dd20dd0e9ab4e1e6bf6454157cf1641e3",
+  "plain_explanation": "移除myself整条S徽章提示；把“强调：我自己”作为无新增徽章的第二行中文说明并入原my bag提示。myself不再获得任何语法徽章或彩色下划线。现引擎缺省b会回退成S，因此未采用空b。"
+}

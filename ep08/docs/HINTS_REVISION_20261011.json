@@ -1,0 +1,369 @@
+{
+  "date": "2026-10-11",
+  "episode": "ep08",
+  "authority": "用户转述Willo新决定：语法提示以最新SPEC为准，覆盖旧审定提示限制。",
+  "scope": "仅本集hints、内容缓存版本、修订说明与备份；故事与题目答案不改。",
+  "before_sha256": "91cb74470d51627efc1bf4f51bf2778d3d649c237f90117630e80f292e348b26",
+  "after_sha256": "5c38025cd411b2213b142677240ab87112a2f35ec1a2118376c78727d3afc867",
+  "data_v": {
+    "before": 2,
+    "after": 3
+  },
+  "modified_hint_count": 19,
+  "metadata_changes": [
+    {
+      "key": "_说明",
+      "before": "黄铜罗盘徽章；仅用 TD/DO/ING/ED/S/V/O/C。hl 是英文原句严格连续子串。每句最多两条。练习音频仅答对或完成后播，故事音频跟随手动翻句；本批只有文字。",
+      "after": "徽章按最新单集规格书第5节使用；hl为原句连续片段，一句最多两条。2026-10-11经Willo新授权修订，逐条记录见docs/HINTS_REVISION_20261011.json。"
+    }
+  ],
+  "changes": [
+    {
+      "line_id": "l01",
+      "hint_number": 1,
+      "text": "Leo, Mia, Sam, Lily and Biscuit are standing in a prehistoric jungle.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "are standing",
+        "zh": "are 加 doing，说明他们此刻正在做。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "are standing",
+        "zh": "are 加 doing，说明他们此刻正在做。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l02",
+      "hint_number": 1,
+      "text": "I am reporting from behind a giant fern.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "am reporting",
+        "zh": "I 要搭配 am，再加 doing。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "am reporting",
+        "zh": "I 要搭配 am，再加 doing。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l04",
+      "hint_number": 1,
+      "text": "It is drinking water, and Mia is drawing it.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "is drinking",
+        "zh": "is 加 doing，表示正在喝。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "is drinking",
+        "zh": "is 加 doing，表示正在喝。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l04",
+      "hint_number": 2,
+      "text": "It is drinking water, and Mia is drawing it.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "is drawing",
+        "zh": "Mia 是单数，前面用 is。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "is drawing",
+        "zh": "Mia 是单数，前面用 is。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l05",
+      "hint_number": 1,
+      "text": "Biscuit is not sitting beside me.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "is not sitting",
+        "zh": "进行时否定：is 后加 not。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "is not sitting",
+        "zh": "进行时否定：is 后加 not。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l06",
+      "hint_number": 1,
+      "text": "Is he carrying an egg?",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "Is he carrying",
+        "zh": "把 Is 提到主语前来提问。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Is he carrying",
+        "zh": "把 Is 提到主语前来提问。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l07",
+      "hint_number": 1,
+      "text": "He is running towards us with an egg!",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "is running",
+        "zh": "run 变 running，要双写 n。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "is running",
+        "zh": "run 变 running，要双写 n。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l08",
+      "hint_number": 1,
+      "text": "What are the baby dinosaurs doing?",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "What are the baby dinosaurs doing",
+        "zh": "What 后接 are 加主语和 doing。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "are the baby dinosaurs doing",
+        "zh": "What 后接 are 加主语和 doing。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l09",
+      "hint_number": 1,
+      "text": "They are following Biscuit through the ferns.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "are following",
+        "zh": "They 搭配 are，再加 doing。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "are following",
+        "zh": "They 搭配 are，再加 doing。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l12",
+      "hint_number": 2,
+      "text": "I usually play football, but today I am hiding from dinosaurs.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "am hiding",
+        "zh": "现在进行时说此刻的动作。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "am hiding",
+        "zh": "现在进行时说此刻的动作。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l14",
+      "hint_number": 1,
+      "text": "A golden star is glowing beside an old ticket under the fossil.",
+      "category": "用户指定：11条进行时",
+      "before": {
+        "b": "ING",
+        "hl": "is glowing",
+        "zh": "is 加 doing，描述眼前的发光。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "is glowing",
+        "zh": "is 加 doing，描述眼前的发光。"
+      },
+      "reason": "进行时的助动词和现在分词整体作谓语；疑问句因主语插入，使用包含两端动词的最小连续范围。"
+    },
+    {
+      "line_id": "l12",
+      "hint_number": 1,
+      "text": "I usually play football, but today I am hiding from dinosaurs.",
+      "category": "用户指定",
+      "before": {
+        "b": "V",
+        "hl": "usually play",
+        "zh": "一般现在时说平时的习惯。"
+      },
+      "after": {
+        "b": "ADV",
+        "hl": "usually",
+        "zh": "usually：频率副词，说明平时通常做什么。"
+      },
+      "reason": "频率副词单独使用ADV；不把usually play整体标成副词。"
+    },
+    {
+      "line_id": "l03",
+      "hint_number": 1,
+      "text": "Look at the dinosaur by the river!",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Look at",
+        "zh": "祈使句用动词原形开头。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Look at",
+        "zh": "祈使句用动词原形开头。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l10",
+      "hint_number": 1,
+      "text": "Stop, Biscuit, and put the egg down gently.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Stop",
+        "zh": "Stop 用原形，直接发出指令。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Stop",
+        "zh": "Stop 用原形，直接发出指令。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l10",
+      "hint_number": 2,
+      "text": "Stop, Biscuit, and put the egg down gently.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "put the egg down",
+        "zh": "and 后的第二个指令也用原形。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "put the egg down",
+        "zh": "and 后的第二个指令也用原形。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l11",
+      "hint_number": 1,
+      "text": "Don't run, and be quiet.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Don't run",
+        "zh": "否定指令用 Don't 加原形。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Don't run",
+        "zh": "否定指令用 Don't 加原形。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l11",
+      "hint_number": 2,
+      "text": "Don't run, and be quiet.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "be quiet",
+        "zh": "Be 加形容词也能发出指令。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "be quiet",
+        "zh": "Be 加形容词也能发出指令。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l15",
+      "hint_number": 1,
+      "text": "Look at this ticket from the nineteen seventies!",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Look at",
+        "zh": "Look at 用原形，邀请大家看。"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Look at",
+        "zh": "Look at 用原形，邀请大家看。"
+      },
+      "reason": "按新版规格统一、补充修正：祈使句中的指令谓语用V，不能因形式是原形就称为省略to的不定式。"
+    },
+    {
+      "line_id": "l13",
+      "hint_number": 1,
+      "text": "Let's lift this loose fossil together.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Let's lift",
+        "zh": "Let's 加动词原形，邀请一起做。"
+      },
+      "after": {
+        "b": "DO",
+        "hl": "lift",
+        "zh": "Let's 加动词原形，邀请一起做。"
+      },
+      "reason": "按新版规格统一、补充修正：DO只标let后的裸不定式lift。"
+    }
+  ],
+  "retained_boundaries": [
+    {
+      "line_ids": [
+        "l06",
+        "l08"
+      ],
+      "status": "现有连续高亮字段限制",
+      "note": "疑问句助动词与分词被主语隔开；最小连续片段覆盖两端动词，也会包含中间主语，并不表示主语属于谓语。"
+    }
+  ],
+  "validation": {
+    "official_validator": "node tools/validate_episode.mjs ep08",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "all_hints_checked": 19,
+    "max_zh_characters_including_latin_spaces_and_punctuation": 23,
+    "max_hints_per_line": 2,
+    "highlight_all_found_in_original_lines": true,
+    "episode_js_and_lines_sha256_unchanged": {
+      "episode.js": "727012b1c7da4425fa40ec9f273a64ec33c70fcfa43811c61752ec97a5374ca4",
+      "audio/lines.json": "020777b893a2f4a0cf7b30d0e70d648dbdb25df5a84ea3d29304076c369db5a6"
+    }
+  }
+}

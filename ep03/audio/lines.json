@@ -1,0 +1,2240 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "They reach a library above the clouds, and an owl waves to them.",
+  "dur": 4.049,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.24
+   ],
+   [
+    "reach",
+    0.24,
+    0.52
+   ],
+   [
+    "a",
+    0.52,
+    0.76
+   ],
+   [
+    "library",
+    0.76,
+    1.12
+   ],
+   [
+    "above",
+    1.12,
+    1.54
+   ],
+   [
+    "the",
+    1.54,
+    1.72
+   ],
+   [
+    "clouds,",
+    1.72,
+    2.08
+   ],
+   [
+    "and",
+    2.4,
+    2.68
+   ],
+   [
+    "an",
+    2.68,
+    2.86
+   ],
+   [
+    "owl",
+    2.86,
+    3.14
+   ],
+   [
+    "waves",
+    3.14,
+    3.44
+   ],
+   [
+    "to",
+    3.44,
+    3.66
+   ],
+   [
+    "them.",
+    3.66,
+    3.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "mia",
+  "text": "Whose bag is this?",
+  "dur": 1.881,
+  "words": [
+   [
+    "Whose",
+    0.0,
+    0.54
+   ],
+   [
+    "bag",
+    0.54,
+    0.9
+   ],
+   [
+    "is",
+    0.9,
+    1.22
+   ],
+   [
+    "this?",
+    1.22,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "sam",
+  "text": "It is not mine, but those gloves are mine.",
+  "dur": 2.769,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.32
+   ],
+   [
+    "not",
+    0.32,
+    0.54
+   ],
+   [
+    "mine,",
+    0.54,
+    0.86
+   ],
+   [
+    "but",
+    1.16,
+    1.34
+   ],
+   [
+    "those",
+    1.34,
+    1.6
+   ],
+   [
+    "gloves",
+    1.6,
+    1.88
+   ],
+   [
+    "are",
+    1.88,
+    2.2
+   ],
+   [
+    "mine.",
+    2.2,
+    2.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "leo",
+  "text": "This is my bag, and I packed it myself.",
+  "dur": 2.743,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.46
+   ],
+   [
+    "my",
+    0.46,
+    0.66
+   ],
+   [
+    "bag,",
+    0.66,
+    1.04
+   ],
+   [
+    "and",
+    1.3,
+    1.38
+   ],
+   [
+    "I",
+    1.38,
+    1.54
+   ],
+   [
+    "packed",
+    1.54,
+    1.78
+   ],
+   [
+    "it",
+    1.78,
+    1.94
+   ],
+   [
+    "myself.",
+    1.94,
+    2.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "narrator",
+  "text": "The owl gives Mia a red book and asks her about its owner.",
+  "dur": 4.362,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "owl",
+    0.22,
+    0.62
+   ],
+   [
+    "gives",
+    0.62,
+    0.94
+   ],
+   [
+    "Mia",
+    0.94,
+    1.28
+   ],
+   [
+    "a",
+    1.28,
+    1.54
+   ],
+   [
+    "red",
+    1.54,
+    1.76
+   ],
+   [
+    "book",
+    1.76,
+    2.14
+   ],
+   [
+    "and",
+    2.14,
+    2.48
+   ],
+   [
+    "asks",
+    2.48,
+    2.84
+   ],
+   [
+    "her",
+    2.84,
+    3.14
+   ],
+   [
+    "about",
+    3.14,
+    3.48
+   ],
+   [
+    "its",
+    3.48,
+    3.74
+   ],
+   [
+    "owner.",
+    3.74,
+    4.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "mia",
+  "text": "Which book is yours, Lily, the red one or the blue one?",
+  "dur": 5.433,
+  "words": [
+   [
+    "Which",
+    0.0,
+    0.34
+   ],
+   [
+    "book",
+    0.34,
+    0.68
+   ],
+   [
+    "is",
+    0.68,
+    1.02
+   ],
+   [
+    "yours,",
+    1.02,
+    1.42
+   ],
+   [
+    "Lily,",
+    2.26,
+    2.44
+   ],
+   [
+    "the",
+    3.12,
+    3.3
+   ],
+   [
+    "red",
+    3.3,
+    3.58
+   ],
+   [
+    "one",
+    3.58,
+    3.94
+   ],
+   [
+    "or",
+    3.94,
+    4.28
+   ],
+   [
+    "the",
+    4.28,
+    4.5
+   ],
+   [
+    "blue",
+    4.5,
+    4.78
+   ],
+   [
+    "one?",
+    4.78,
+    5.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "lily",
+  "text": "The blue one is mine, and the red one is his.",
+  "dur": 2.664,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "blue",
+    0.18,
+    0.36
+   ],
+   [
+    "one",
+    0.36,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.66
+   ],
+   [
+    "mine,",
+    0.66,
+    0.92
+   ],
+   [
+    "and",
+    1.36,
+    1.48
+   ],
+   [
+    "the",
+    1.48,
+    1.56
+   ],
+   [
+    "red",
+    1.56,
+    1.72
+   ],
+   [
+    "one",
+    1.72,
+    1.92
+   ],
+   [
+    "is",
+    1.92,
+    2.14
+   ],
+   [
+    "his.",
+    2.14,
+    2.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "mia",
+  "text": "Who is behind that shelf?",
+  "dur": 2.325,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.36
+   ],
+   [
+    "is",
+    0.36,
+    0.64
+   ],
+   [
+    "behind",
+    0.64,
+    1.18
+   ],
+   [
+    "that",
+    1.18,
+    1.5
+   ],
+   [
+    "shelf?",
+    1.5,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "narrator",
+  "text": "Nobody answers, but Biscuit brings something soft to Leo.",
+  "dur": 3.187,
+  "words": [
+   [
+    "Nobody",
+    0.0,
+    0.36
+   ],
+   [
+    "answers,",
+    0.36,
+    0.74
+   ],
+   [
+    "but",
+    0.98,
+    1.14
+   ],
+   [
+    "Biscuit",
+    1.14,
+    1.56
+   ],
+   [
+    "brings",
+    1.56,
+    1.78
+   ],
+   [
+    "something",
+    1.78,
+    2.12
+   ],
+   [
+    "soft",
+    2.12,
+    2.48
+   ],
+   [
+    "to",
+    2.48,
+    2.7
+   ],
+   [
+    "Leo.",
+    2.7,
+    2.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "leo",
+  "text": "It is a sock, and he has another one in his basket.",
+  "dur": 3.265,
+  "words": [
+   [
+    "It",
+    0.22,
+    0.56
+   ],
+   [
+    "is",
+    0.56,
+    0.74
+   ],
+   [
+    "a",
+    0.74,
+    0.9
+   ],
+   [
+    "sock,",
+    0.9,
+    1.14
+   ],
+   [
+    "and",
+    1.46,
+    1.52
+   ],
+   [
+    "he",
+    1.52,
+    1.64
+   ],
+   [
+    "has",
+    1.64,
+    1.8
+   ],
+   [
+    "another",
+    1.8,
+    2.1
+   ],
+   [
+    "one",
+    2.1,
+    2.34
+   ],
+   [
+    "in",
+    2.34,
+    2.46
+   ],
+   [
+    "his",
+    2.46,
+    2.64
+   ],
+   [
+    "basket.",
+    2.64,
+    2.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "lily",
+  "text": "Both socks belong to the owl, but neither glove is his.",
+  "dur": 2.978,
+  "words": [
+   [
+    "Both",
+    0.0,
+    0.26
+   ],
+   [
+    "socks",
+    0.26,
+    0.56
+   ],
+   [
+    "belong",
+    0.56,
+    0.86
+   ],
+   [
+    "to",
+    0.86,
+    1.06
+   ],
+   [
+    "the",
+    1.06,
+    1.16
+   ],
+   [
+    "owl,",
+    1.16,
+    1.4
+   ],
+   [
+    "but",
+    1.64,
+    1.76
+   ],
+   [
+    "neither",
+    1.76,
+    1.94
+   ],
+   [
+    "glove",
+    1.94,
+    2.24
+   ],
+   [
+    "is",
+    2.24,
+    2.46
+   ],
+   [
+    "his.",
+    2.46,
+    2.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "sam",
+  "text": "We have some labels, but we do not have any ink.",
+  "dur": 2.743,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.22
+   ],
+   [
+    "have",
+    0.22,
+    0.4
+   ],
+   [
+    "some",
+    0.4,
+    0.6
+   ],
+   [
+    "labels,",
+    0.6,
+    0.94
+   ],
+   [
+    "but",
+    1.16,
+    1.24
+   ],
+   [
+    "we",
+    1.24,
+    1.38
+   ],
+   [
+    "do",
+    1.38,
+    1.48
+   ],
+   [
+    "not",
+    1.48,
+    1.68
+   ],
+   [
+    "have",
+    1.68,
+    1.92
+   ],
+   [
+    "any",
+    1.92,
+    2.2
+   ],
+   [
+    "ink.",
+    2.2,
+    2.48
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "narrator",
+  "text": "Each child checks a label, and Mia finds an old library card in one of the books.",
+  "dur": 4.728,
+  "words": [
+   [
+    "Each",
+    0.0,
+    0.32
+   ],
+   [
+    "child",
+    0.32,
+    0.68
+   ],
+   [
+    "checks",
+    0.68,
+    0.96
+   ],
+   [
+    "a",
+    0.96,
+    1.16
+   ],
+   [
+    "label,",
+    1.16,
+    1.44
+   ],
+   [
+    "and",
+    1.9,
+    1.96
+   ],
+   [
+    "Mia",
+    1.96,
+    2.14
+   ],
+   [
+    "finds",
+    2.14,
+    2.48
+   ],
+   [
+    "an",
+    2.48,
+    2.66
+   ],
+   [
+    "old",
+    2.66,
+    2.94
+   ],
+   [
+    "library",
+    2.94,
+    3.26
+   ],
+   [
+    "card",
+    3.26,
+    3.64
+   ],
+   [
+    "in",
+    3.64,
+    3.84
+   ],
+   [
+    "one",
+    3.84,
+    3.96
+   ],
+   [
+    "of",
+    3.96,
+    4.08
+   ],
+   [
+    "the",
+    4.08,
+    4.13
+   ],
+   [
+    "books.",
+    4.12,
+    4.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "lily",
+  "text": "Everyone has the right things now, and this star is ours!",
+  "dur": 3.213,
+  "words": [
+   [
+    "Everyone",
+    0.0,
+    0.44
+   ],
+   [
+    "has",
+    0.44,
+    0.66
+   ],
+   [
+    "the",
+    0.66,
+    0.8
+   ],
+   [
+    "right",
+    0.8,
+    0.94
+   ],
+   [
+    "things",
+    0.94,
+    1.22
+   ],
+   [
+    "now,",
+    1.22,
+    1.5
+   ],
+   [
+    "and",
+    1.86,
+    1.98
+   ],
+   [
+    "this",
+    1.98,
+    2.16
+   ],
+   [
+    "star",
+    2.16,
+    2.42
+   ],
+   [
+    "is",
+    2.42,
+    2.62
+   ],
+   [
+    "ours!",
+    2.62,
+    2.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_1": {
+  "who": "narrator",
+  "text": "They help her.",
+  "dur": 0.862,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.22
+   ],
+   [
+    "help",
+    0.22,
+    0.44
+   ],
+   [
+    "her.",
+    0.44,
+    0.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_2": {
+  "who": "narrator",
+  "text": "Lily helps him.",
+  "dur": 1.149,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.32
+   ],
+   [
+    "helps",
+    0.32,
+    0.62
+   ],
+   [
+    "him.",
+    0.62,
+    0.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_3": {
+  "who": "narrator",
+  "text": "They look at the owl.",
+  "dur": 1.149,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.2
+   ],
+   [
+    "look",
+    0.2,
+    0.34
+   ],
+   [
+    "at",
+    0.34,
+    0.5
+   ],
+   [
+    "the",
+    0.5,
+    0.6
+   ],
+   [
+    "owl.",
+    0.6,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_4": {
+  "who": "narrator",
+  "text": "We can check the labels ourselves.",
+  "dur": 1.829,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.22
+   ],
+   [
+    "can",
+    0.22,
+    0.36
+   ],
+   [
+    "check",
+    0.36,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.72
+   ],
+   [
+    "labels",
+    0.72,
+    0.96
+   ],
+   [
+    "ourselves.",
+    0.96,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_1": {
+  "who": "narrator",
+  "text": "The drawings are ours.",
+  "dur": 1.437,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "drawings",
+    0.2,
+    0.56
+   ],
+   [
+    "are",
+    0.56,
+    0.8
+   ],
+   [
+    "ours.",
+    0.8,
+    1.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_2": {
+  "who": "narrator",
+  "text": "This bag is mine.",
+  "dur": 1.254,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "bag",
+    0.26,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.66
+   ],
+   [
+    "mine.",
+    0.66,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_3": {
+  "who": "narrator",
+  "text": "This is her book.",
+  "dur": 1.123,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.52
+   ],
+   [
+    "her",
+    0.52,
+    0.74
+   ],
+   [
+    "book.",
+    0.74,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_4": {
+  "who": "narrator",
+  "text": "The owl opens its wings.",
+  "dur": 1.698,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "owl",
+    0.22,
+    0.48
+   ],
+   [
+    "opens",
+    0.48,
+    0.86
+   ],
+   [
+    "its",
+    0.86,
+    1.02
+   ],
+   [
+    "wings.",
+    1.02,
+    1.32
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_1": {
+  "who": "narrator",
+  "text": "This is a book.",
+  "dur": 1.045,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.54
+   ],
+   [
+    "a",
+    0.54,
+    0.7
+   ],
+   [
+    "book.",
+    0.7,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_2": {
+  "who": "narrator",
+  "text": "That is a bag.",
+  "dur": 1.358,
+  "words": [
+   [
+    "That",
+    0.0,
+    0.34
+   ],
+   [
+    "is",
+    0.34,
+    0.7
+   ],
+   [
+    "a",
+    0.7,
+    0.84
+   ],
+   [
+    "bag.",
+    0.84,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_3": {
+  "who": "narrator",
+  "text": "These are gloves.",
+  "dur": 1.463,
+  "words": [
+   [
+    "These",
+    0.0,
+    0.42
+   ],
+   [
+    "are",
+    0.42,
+    0.66
+   ],
+   [
+    "gloves.",
+    0.66,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_4": {
+  "who": "narrator",
+  "text": "Those are socks.",
+  "dur": 1.437,
+  "words": [
+   [
+    "Those",
+    0.0,
+    0.38
+   ],
+   [
+    "are",
+    0.38,
+    0.64
+   ],
+   [
+    "socks.",
+    0.64,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "Whose book is this?",
+  "dur": 1.358,
+  "words": [
+   [
+    "Whose",
+    0.0,
+    0.4
+   ],
+   [
+    "book",
+    0.4,
+    0.6
+   ],
+   [
+    "is",
+    0.6,
+    0.78
+   ],
+   [
+    "this?",
+    0.78,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "To whom does the owl give the book?",
+  "dur": 1.855,
+  "words": [
+   [
+    "To",
+    0.0,
+    0.24
+   ],
+   [
+    "whom",
+    0.24,
+    0.52
+   ],
+   [
+    "does",
+    0.52,
+    0.72
+   ],
+   [
+    "the",
+    0.72,
+    0.86
+   ],
+   [
+    "owl",
+    0.86,
+    1.12
+   ],
+   [
+    "give",
+    1.12,
+    1.4
+   ],
+   [
+    "the",
+    1.4,
+    1.56
+   ],
+   [
+    "book?",
+    1.56,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "What is your name?",
+  "dur": 1.384,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.54
+   ],
+   [
+    "your",
+    0.54,
+    0.76
+   ],
+   [
+    "name?",
+    0.76,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "Who is behind the shelf?",
+  "dur": 1.698,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.32
+   ],
+   [
+    "is",
+    0.32,
+    0.56
+   ],
+   [
+    "behind",
+    0.56,
+    0.9
+   ],
+   [
+    "the",
+    0.9,
+    1.1
+   ],
+   [
+    "shelf?",
+    1.1,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "narrator",
+  "text": "We do not have any ink.",
+  "dur": 1.776,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.26
+   ],
+   [
+    "do",
+    0.26,
+    0.42
+   ],
+   [
+    "not",
+    0.42,
+    0.62
+   ],
+   [
+    "have",
+    0.62,
+    0.9
+   ],
+   [
+    "any",
+    0.9,
+    1.2
+   ],
+   [
+    "ink.",
+    1.2,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "Would you like some labels?",
+  "dur": 1.62,
+  "words": [
+   [
+    "Would",
+    0.0,
+    0.24
+   ],
+   [
+    "you",
+    0.24,
+    0.38
+   ],
+   [
+    "like",
+    0.38,
+    0.56
+   ],
+   [
+    "some",
+    0.56,
+    0.78
+   ],
+   [
+    "labels?",
+    0.78,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
+  "who": "narrator",
+  "text": "Biscuit finds something soft.",
+  "dur": 1.881,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "finds",
+    0.46,
+    0.74
+   ],
+   [
+    "something",
+    0.74,
+    1.1
+   ],
+   [
+    "soft.",
+    1.1,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_4": {
+  "who": "narrator",
+  "text": "None of the three bags is here.",
+  "dur": 2.064,
+  "words": [
+   [
+    "None",
+    0.0,
+    0.32
+   ],
+   [
+    "of",
+    0.32,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.64
+   ],
+   [
+    "three",
+    0.64,
+    0.86
+   ],
+   [
+    "bags",
+    0.86,
+    1.22
+   ],
+   [
+    "is",
+    1.22,
+    1.52
+   ],
+   [
+    "here.",
+    1.52,
+    1.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_5": {
+  "who": "narrator",
+  "text": "There is a little ink, so we can write one label.",
+  "dur": 3.291,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.52
+   ],
+   [
+    "a",
+    0.52,
+    0.74
+   ],
+   [
+    "little",
+    0.74,
+    0.98
+   ],
+   [
+    "ink,",
+    0.98,
+    1.34
+   ],
+   [
+    "so",
+    1.6,
+    1.84
+   ],
+   [
+    "we",
+    1.84,
+    1.96
+   ],
+   [
+    "can",
+    1.96,
+    2.08
+   ],
+   [
+    "write",
+    2.08,
+    2.32
+   ],
+   [
+    "one",
+    2.32,
+    2.64
+   ],
+   [
+    "label.",
+    2.64,
+    2.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_1": {
+  "who": "narrator",
+  "text": "Both gloves are blue.",
+  "dur": 1.489,
+  "words": [
+   [
+    "Both",
+    0.0,
+    0.34
+   ],
+   [
+    "gloves",
+    0.34,
+    0.72
+   ],
+   [
+    "are",
+    0.72,
+    0.94
+   ],
+   [
+    "blue.",
+    0.94,
+    1.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_2": {
+  "who": "narrator",
+  "text": "One bag is red, and the other is blue.",
+  "dur": 2.534,
+  "words": [
+   [
+    "One",
+    0.0,
+    0.3
+   ],
+   [
+    "bag",
+    0.3,
+    0.54
+   ],
+   [
+    "is",
+    0.54,
+    0.7
+   ],
+   [
+    "red,",
+    0.7,
+    0.98
+   ],
+   [
+    "and",
+    1.32,
+    1.44
+   ],
+   [
+    "the",
+    1.44,
+    1.54
+   ],
+   [
+    "other",
+    1.54,
+    1.8
+   ],
+   [
+    "is",
+    1.8,
+    2.08
+   ],
+   [
+    "blue.",
+    2.08,
+    2.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_3": {
+  "who": "narrator",
+  "text": "May I have another book?",
+  "dur": 1.176,
+  "words": [
+   [
+    "May",
+    0.0,
+    0.26
+   ],
+   [
+    "I",
+    0.26,
+    0.4
+   ],
+   [
+    "have",
+    0.4,
+    0.54
+   ],
+   [
+    "another",
+    0.54,
+    0.74
+   ],
+   [
+    "book?",
+    0.74,
+    1.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_4": {
+  "who": "narrator",
+  "text": "Two books are red, and the others are blue.",
+  "dur": 3.318,
+  "words": [
+   [
+    "Two",
+    0.5,
+    0.94
+   ],
+   [
+    "books",
+    0.94,
+    1.22
+   ],
+   [
+    "are",
+    1.22,
+    1.4
+   ],
+   [
+    "red,",
+    1.4,
+    1.7
+   ],
+   [
+    "and",
+    2.14,
+    2.24
+   ],
+   [
+    "the",
+    2.24,
+    2.34
+   ],
+   [
+    "others",
+    2.34,
+    2.62
+   ],
+   [
+    "are",
+    2.62,
+    2.8
+   ],
+   [
+    "blue.",
+    2.8,
+    3.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_1": {
+  "who": "narrator",
+  "text": "Lily checks the label herself.",
+  "dur": 1.933,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.28
+   ],
+   [
+    "checks",
+    0.28,
+    0.62
+   ],
+   [
+    "the",
+    0.62,
+    0.88
+   ],
+   [
+    "label",
+    0.88,
+    1.16
+   ],
+   [
+    "herself.",
+    1.16,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "The map is ours.",
+  "dur": 1.463,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "map",
+    0.18,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.68
+   ],
+   [
+    "ours.",
+    0.68,
+    1.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "Every one of the four children has a label.",
+  "dur": 2.638,
+  "words": [
+   [
+    "Every",
+    0.0,
+    0.38
+   ],
+   [
+    "one",
+    0.38,
+    0.7
+   ],
+   [
+    "of",
+    0.7,
+    0.96
+   ],
+   [
+    "the",
+    0.96,
+    1.06
+   ],
+   [
+    "four",
+    1.06,
+    1.32
+   ],
+   [
+    "children",
+    1.32,
+    1.66
+   ],
+   [
+    "has",
+    1.66,
+    2.0
+   ],
+   [
+    "a",
+    2.0,
+    2.16
+   ],
+   [
+    "label.",
+    2.16,
+    2.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "They each have a bag.",
+  "dur": 1.254,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.24
+   ],
+   [
+    "each",
+    0.24,
+    0.52
+   ],
+   [
+    "have",
+    0.52,
+    0.8
+   ],
+   [
+    "a",
+    0.8,
+    0.9
+   ],
+   [
+    "bag.",
+    0.9,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "narrator",
+  "text": "They help Lily.",
+  "dur": 0.993,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.22
+   ],
+   [
+    "help",
+    0.22,
+    0.46
+   ],
+   [
+    "Lily.",
+    0.46,
+    0.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "narrator",
+  "text": "This book is hers.",
+  "dur": 1.306,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.28
+   ],
+   [
+    "book",
+    0.28,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.66
+   ],
+   [
+    "hers.",
+    0.66,
+    0.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "narrator",
+  "text": "Sam checks the bag himself.",
+  "dur": 1.698,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.4
+   ],
+   [
+    "checks",
+    0.4,
+    0.7
+   ],
+   [
+    "the",
+    0.7,
+    0.9
+   ],
+   [
+    "bag",
+    0.9,
+    1.08
+   ],
+   [
+    "himself.",
+    1.08,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "Those are my gloves.",
+  "dur": 1.358,
+  "words": [
+   [
+    "Those",
+    0.0,
+    0.3
+   ],
+   [
+    "are",
+    0.3,
+    0.44
+   ],
+   [
+    "my",
+    0.44,
+    0.62
+   ],
+   [
+    "gloves.",
+    0.62,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "narrator",
+  "text": "Whose bag is this?",
+  "dur": 1.384,
+  "words": [
+   [
+    "Whose",
+    0.0,
+    0.32
+   ],
+   [
+    "bag",
+    0.32,
+    0.56
+   ],
+   [
+    "is",
+    0.56,
+    0.76
+   ],
+   [
+    "this?",
+    0.76,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "narrator",
+  "text": "There is something important in the bag.",
+  "dur": 1.829,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.2
+   ],
+   [
+    "is",
+    0.2,
+    0.34
+   ],
+   [
+    "something",
+    0.34,
+    0.6
+   ],
+   [
+    "important",
+    0.6,
+    1.04
+   ],
+   [
+    "in",
+    1.04,
+    1.34
+   ],
+   [
+    "the",
+    1.34,
+    1.42
+   ],
+   [
+    "bag.",
+    1.42,
+    1.62
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "narrator",
+  "text": "Neither glove is mine.",
+  "dur": 1.384,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.34
+   ],
+   [
+    "glove",
+    0.34,
+    0.66
+   ],
+   [
+    "is",
+    0.66,
+    0.82
+   ],
+   [
+    "mine.",
+    0.82,
+    1.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "Every child has a label.",
+  "dur": 1.567,
+  "words": [
+   [
+    "Every",
+    0.0,
+    0.36
+   ],
+   [
+    "child",
+    0.36,
+    0.66
+   ],
+   [
+    "has",
+    0.66,
+    0.96
+   ],
+   [
+    "a",
+    0.96,
+    1.08
+   ],
+   [
+    "label.",
+    1.08,
+    1.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_bag": {
+  "who": "leo",
+  "text": "This bag is mine.",
+  "dur": 1.28,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.3
+   ],
+   [
+    "bag",
+    0.3,
+    0.54
+   ],
+   [
+    "is",
+    0.54,
+    0.72
+   ],
+   [
+    "mine.",
+    0.72,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_book": {
+  "who": "leo",
+  "text": "That book is hers.",
+  "dur": 1.097,
+  "words": [
+   [
+    "That",
+    0.0,
+    0.22
+   ],
+   [
+    "book",
+    0.22,
+    0.4
+   ],
+   [
+    "is",
+    0.4,
+    0.58
+   ],
+   [
+    "hers.",
+    0.58,
+    0.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_labels": {
+  "who": "leo",
+  "text": "We can check the labels ourselves.",
+  "dur": 1.802,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.18
+   ],
+   [
+    "can",
+    0.18,
+    0.32
+   ],
+   [
+    "check",
+    0.32,
+    0.54
+   ],
+   [
+    "the",
+    0.54,
+    0.72
+   ],
+   [
+    "labels",
+    0.72,
+    1.0
+   ],
+   [
+    "ourselves.",
+    1.0,
+    1.44
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_together": {
+  "who": "leo",
+  "text": "We help each other.",
+  "dur": 1.019,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.2
+   ],
+   [
+    "help",
+    0.2,
+    0.4
+   ],
+   [
+    "each",
+    0.4,
+    0.6
+   ],
+   [
+    "other.",
+    0.6,
+    0.78
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The third star is home!",
+  "dur": 1.881,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.24
+   ],
+   [
+    "third",
+    0.24,
+    0.52
+   ],
+   [
+    "star",
+    0.52,
+    0.94
+   ],
+   [
+    "is",
+    0.94,
+    1.2
+   ],
+   [
+    "home!",
+    1.2,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ }
+}

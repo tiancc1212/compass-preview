@@ -1,0 +1,160 @@
+{
+  "l01": [
+    {
+      "b": "S",
+      "hl": "They",
+      "zh": "They 作主语：他们"
+    },
+    {
+      "b": "O",
+      "hl": "them",
+      "zh": "介词 to 后用宾格 them"
+    }
+  ],
+  "l02": [
+    {
+      "b": "C",
+      "hl": "Whose bag",
+      "zh": "whose + 名词：谁的东西"
+    },
+    {
+      "b": "S",
+      "hl": "this",
+      "zh": "this 作主语，指近处一件"
+    }
+  ],
+  "l03": [
+    {
+      "b": "C",
+      "hl": "mine",
+      "zh": "mine 单独表示“我的东西”"
+    },
+    {
+      "b": "S",
+      "hl": "those",
+      "zh": "those 指远处的多个物品"
+    }
+  ],
+  "l04": [
+    {
+      "b": "C",
+      "hl": "my bag",
+      "zh": "my 后面要带名词<br>强调：我自己"
+    }
+  ],
+  "l05": [
+    {
+      "b": "O",
+      "hl": "her",
+      "zh": "动作落在她身上，用 her"
+    },
+    {
+      "b": "O",
+      "hl": "its owner",
+      "zh": "its + 名词：它的主人"
+    }
+  ],
+  "l06": [
+    {
+      "b": "S",
+      "hl": "Which book",
+      "zh": "which 在红蓝两本里问哪本"
+    },
+    {
+      "b": "C",
+      "hl": "yours",
+      "zh": "yours 单独表示“你的东西”"
+    }
+  ],
+  "l07": [
+    {
+      "b": "C",
+      "hl": "mine",
+      "zh": "mine 单独表示“我的东西”"
+    },
+    {
+      "b": "C",
+      "hl": "his",
+      "zh": "his 后面不带名词也能用"
+    }
+  ],
+  "l08": [
+    {
+      "b": "S",
+      "hl": "Who",
+      "zh": "who 作主语，问“谁”"
+    }
+  ],
+  "l09": [
+    {
+      "b": "S",
+      "hl": "Nobody",
+      "zh": "nobody：没有人"
+    },
+    {
+      "b": "O",
+      "hl": "something soft",
+      "zh": "修饰 something 的形容词放后面"
+    }
+  ],
+  "l10": [
+    {
+      "b": "S",
+      "hl": "It",
+      "zh": "it 指刚才的同一件东西"
+    },
+    {
+      "b": "O",
+      "hl": "another one",
+      "zh": "another one：另外一个"
+    }
+  ],
+  "l11": [
+    {
+      "b": "S",
+      "hl": "Both socks",
+      "zh": "both + 复数：两者都"
+    },
+    {
+      "b": "S",
+      "hl": "neither glove",
+      "zh": "neither + 单数：两者都不"
+    }
+  ],
+  "l12": [
+    {
+      "b": "O",
+      "hl": "some labels",
+      "zh": "some：肯定句里的“一些”"
+    },
+    {
+      "b": "O",
+      "hl": "any ink",
+      "zh": "not any：一点也没有"
+    }
+  ],
+  "l13": [
+    {
+      "b": "S",
+      "hl": "Each child",
+      "zh": "each + 单数名词：每一个"
+    },
+    {
+      "b": "O",
+      "hl": "one of the books",
+      "zh": "one of + 复数：其中一本"
+    }
+  ],
+  "l14": [
+    {
+      "b": "S",
+      "hl": "Everyone has",
+      "zh": "everyone 作主语按单数"
+    },
+    {
+      "b": "C",
+      "hl": "ours",
+      "zh": "ours 表示“我们的”"
+    }
+  ]
+}

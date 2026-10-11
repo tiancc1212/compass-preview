@@ -1,0 +1,2244 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "The African savanna is much warmer than home.",
+  "dur": 2.9,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "African",
+    0.2,
+    0.68
+   ],
+   [
+    "savanna",
+    0.68,
+    1.1
+   ],
+   [
+    "is",
+    1.1,
+    1.4
+   ],
+   [
+    "much",
+    1.4,
+    1.68
+   ],
+   [
+    "warmer",
+    1.68,
+    2.06
+   ],
+   [
+    "than",
+    2.06,
+    2.28
+   ],
+   [
+    "home.",
+    2.28,
+    2.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "sam",
+  "text": "I am the fastest runner in our crew!",
+  "dur": 2.273,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.26
+   ],
+   [
+    "am",
+    0.26,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.52
+   ],
+   [
+    "fastest",
+    0.52,
+    0.84
+   ],
+   [
+    "runner",
+    0.84,
+    1.32
+   ],
+   [
+    "in",
+    1.32,
+    1.54
+   ],
+   [
+    "our",
+    1.54,
+    1.7
+   ],
+   [
+    "crew!",
+    1.7,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "mia",
+  "text": "Are you as fast as that cheetah?",
+  "dur": 2.612,
+  "words": [
+   [
+    "Are",
+    0.0,
+    0.26
+   ],
+   [
+    "you",
+    0.26,
+    0.54
+   ],
+   [
+    "as",
+    0.54,
+    0.8
+   ],
+   [
+    "fast",
+    0.8,
+    1.18
+   ],
+   [
+    "as",
+    1.18,
+    1.6
+   ],
+   [
+    "that",
+    1.6,
+    1.84
+   ],
+   [
+    "cheetah?",
+    1.84,
+    2.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "narrator",
+  "text": "Leo, Mia and Lily stand quietly beside Biscuit.",
+  "dur": 3.579,
+  "words": [
+   [
+    "Leo,",
+    0.0,
+    0.44
+   ],
+   [
+    "Mia",
+    0.74,
+    0.84
+   ],
+   [
+    "and",
+    0.84,
+    1.22
+   ],
+   [
+    "Lily",
+    1.22,
+    1.48
+   ],
+   [
+    "stand",
+    1.48,
+    1.92
+   ],
+   [
+    "quietly",
+    1.92,
+    2.38
+   ],
+   [
+    "beside",
+    2.38,
+    2.86
+   ],
+   [
+    "Biscuit.",
+    2.86,
+    3.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "narrator",
+  "text": "The cheetah runs more quickly than Sam.",
+  "dur": 2.482,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "cheetah",
+    0.2,
+    0.6
+   ],
+   [
+    "runs",
+    0.6,
+    0.9
+   ],
+   [
+    "more",
+    0.9,
+    1.26
+   ],
+   [
+    "quickly",
+    1.26,
+    1.54
+   ],
+   [
+    "than",
+    1.54,
+    1.88
+   ],
+   [
+    "Sam.",
+    1.88,
+    2.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "lily",
+  "text": "The elephant is the strongest of the three animals.",
+  "dur": 2.56,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "elephant",
+    0.2,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.74
+   ],
+   [
+    "the",
+    0.74,
+    0.88
+   ],
+   [
+    "strongest",
+    0.88,
+    1.18
+   ],
+   [
+    "of",
+    1.18,
+    1.5
+   ],
+   [
+    "the",
+    1.5,
+    1.62
+   ],
+   [
+    "three",
+    1.62,
+    1.8
+   ],
+   [
+    "animals.",
+    1.8,
+    2.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "sam",
+  "text": "I am getting slower and slower!",
+  "dur": 2.011,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.26
+   ],
+   [
+    "am",
+    0.26,
+    0.36
+   ],
+   [
+    "getting",
+    0.36,
+    0.62
+   ],
+   [
+    "slower",
+    0.62,
+    1.02
+   ],
+   [
+    "and",
+    1.02,
+    1.34
+   ],
+   [
+    "slower!",
+    1.34,
+    1.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "leo",
+  "text": "The more you rush, the more tired you feel.",
+  "dur": 2.508,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "more",
+    0.2,
+    0.42
+   ],
+   [
+    "you",
+    0.42,
+    0.62
+   ],
+   [
+    "rush,",
+    0.62,
+    0.94
+   ],
+   [
+    "the",
+    1.2,
+    1.3
+   ],
+   [
+    "more",
+    1.3,
+    1.52
+   ],
+   [
+    "tired",
+    1.52,
+    1.8
+   ],
+   [
+    "you",
+    1.8,
+    2.0
+   ],
+   [
+    "feel.",
+    2.0,
+    2.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "narrator",
+  "text": "Mia draws the finish line carefully in her sketchbook.",
+  "dur": 2.847,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.34
+   ],
+   [
+    "draws",
+    0.34,
+    0.68
+   ],
+   [
+    "the",
+    0.68,
+    0.88
+   ],
+   [
+    "finish",
+    0.88,
+    1.08
+   ],
+   [
+    "line",
+    1.08,
+    1.4
+   ],
+   [
+    "carefully",
+    1.4,
+    1.76
+   ],
+   [
+    "in",
+    1.76,
+    2.1
+   ],
+   [
+    "her",
+    2.1,
+    2.22
+   ],
+   [
+    "sketchbook.",
+    2.22,
+    2.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "lily",
+  "text": "This little flag is useful, but that broken one is useless.",
+  "dur": 3.396,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.22
+   ],
+   [
+    "little",
+    0.22,
+    0.44
+   ],
+   [
+    "flag",
+    0.44,
+    0.74
+   ],
+   [
+    "is",
+    0.74,
+    0.92
+   ],
+   [
+    "useful,",
+    0.92,
+    1.3
+   ],
+   [
+    "but",
+    1.58,
+    1.84
+   ],
+   [
+    "that",
+    1.84,
+    2.0
+   ],
+   [
+    "broken",
+    2.0,
+    2.22
+   ],
+   [
+    "one",
+    2.22,
+    2.44
+   ],
+   [
+    "is",
+    2.44,
+    2.62
+   ],
+   [
+    "useless.",
+    2.62,
+    2.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "sam",
+  "text": "I am not as fast as the cheetah, but I am not unhappy.",
+  "dur": 3.5,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.24
+   ],
+   [
+    "am",
+    0.24,
+    0.34
+   ],
+   [
+    "not",
+    0.34,
+    0.54
+   ],
+   [
+    "as",
+    0.54,
+    0.7
+   ],
+   [
+    "fast",
+    0.7,
+    0.96
+   ],
+   [
+    "as",
+    0.96,
+    1.2
+   ],
+   [
+    "the",
+    1.2,
+    1.36
+   ],
+   [
+    "cheetah,",
+    1.36,
+    1.82
+   ],
+   [
+    "but",
+    2.22,
+    2.3
+   ],
+   [
+    "I",
+    2.3,
+    2.44
+   ],
+   [
+    "am",
+    2.44,
+    2.52
+   ],
+   [
+    "not",
+    2.52,
+    2.72
+   ],
+   [
+    "unhappy.",
+    2.72,
+    3.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "narrator",
+  "text": "Biscuit searches most carefully and finds the missing prize sock.",
+  "dur": 3.579,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "searches",
+    0.46,
+    0.84
+   ],
+   [
+    "most",
+    0.84,
+    1.16
+   ],
+   [
+    "carefully",
+    1.16,
+    1.64
+   ],
+   [
+    "and",
+    1.64,
+    1.92
+   ],
+   [
+    "finds",
+    1.92,
+    2.26
+   ],
+   [
+    "the",
+    2.26,
+    2.48
+   ],
+   [
+    "missing",
+    2.48,
+    2.78
+   ],
+   [
+    "prize",
+    2.78,
+    3.12
+   ],
+   [
+    "sock.",
+    3.12,
+    3.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "narrator",
+  "text": "The elephant remembers a Chinese boy, the quickest chess player of all.",
+  "dur": 3.971,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "elephant",
+    0.2,
+    0.52
+   ],
+   [
+    "remembers",
+    0.52,
+    0.96
+   ],
+   [
+    "a",
+    0.96,
+    1.16
+   ],
+   [
+    "Chinese",
+    1.16,
+    1.44
+   ],
+   [
+    "boy,",
+    1.44,
+    1.82
+   ],
+   [
+    "the",
+    2.24,
+    2.3
+   ],
+   [
+    "quickest",
+    2.3,
+    2.62
+   ],
+   [
+    "chess",
+    2.62,
+    2.94
+   ],
+   [
+    "player",
+    2.94,
+    3.2
+   ],
+   [
+    "of",
+    3.2,
+    3.48
+   ],
+   [
+    "all.",
+    3.48,
+    3.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "lily",
+  "text": "Biscuit is our best sock finder, and this star is his prize!",
+  "dur": 3.657,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.58
+   ],
+   [
+    "our",
+    0.58,
+    0.72
+   ],
+   [
+    "best",
+    0.72,
+    0.92
+   ],
+   [
+    "sock",
+    0.92,
+    1.18
+   ],
+   [
+    "finder,",
+    1.18,
+    1.82
+   ],
+   [
+    "and",
+    1.9,
+    2.14
+   ],
+   [
+    "this",
+    2.14,
+    2.3
+   ],
+   [
+    "star",
+    2.3,
+    2.58
+   ],
+   [
+    "is",
+    2.58,
+    2.8
+   ],
+   [
+    "his",
+    2.8,
+    2.96
+   ],
+   [
+    "prize!",
+    2.96,
+    3.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_01": {
+  "who": "narrator",
+  "text": "The giraffe is taller than Sam.",
+  "dur": 2.038,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "giraffe",
+    0.2,
+    0.62
+   ],
+   [
+    "is",
+    0.62,
+    0.88
+   ],
+   [
+    "taller",
+    0.88,
+    1.18
+   ],
+   [
+    "than",
+    1.18,
+    1.46
+   ],
+   [
+    "Sam.",
+    1.46,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_02": {
+  "who": "narrator",
+  "text": "Mia draws more carefully than Sam.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "draws",
+    0.32,
+    0.68
+   ],
+   [
+    "more",
+    0.68,
+    0.94
+   ],
+   [
+    "carefully",
+    0.94,
+    1.36
+   ],
+   [
+    "than",
+    1.36,
+    1.62
+   ],
+   [
+    "Sam.",
+    1.62,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_03": {
+  "who": "narrator",
+  "text": "Lily draws better than Leo.",
+  "dur": 1.855,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.36
+   ],
+   [
+    "draws",
+    0.36,
+    0.72
+   ],
+   [
+    "better",
+    0.72,
+    1.06
+   ],
+   [
+    "than",
+    1.06,
+    1.32
+   ],
+   [
+    "Leo.",
+    1.32,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_04": {
+  "who": "narrator",
+  "text": "Sam is as fast as Leo.",
+  "dur": 2.09,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.78
+   ],
+   [
+    "as",
+    0.78,
+    0.94
+   ],
+   [
+    "fast",
+    0.94,
+    1.3
+   ],
+   [
+    "as",
+    1.3,
+    1.56
+   ],
+   [
+    "Leo.",
+    1.56,
+    1.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_01": {
+  "who": "narrator",
+  "text": "The elephant is bigger than Biscuit.",
+  "dur": 2.116,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "elephant",
+    0.2,
+    0.56
+   ],
+   [
+    "is",
+    0.56,
+    0.86
+   ],
+   [
+    "bigger",
+    0.86,
+    1.14
+   ],
+   [
+    "than",
+    1.14,
+    1.38
+   ],
+   [
+    "Biscuit.",
+    1.38,
+    1.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_02": {
+  "who": "narrator",
+  "text": "Sam is the happiest runner today.",
+  "dur": 2.351,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.68
+   ],
+   [
+    "the",
+    0.68,
+    0.82
+   ],
+   [
+    "happiest",
+    0.82,
+    1.26
+   ],
+   [
+    "runner",
+    1.26,
+    1.62
+   ],
+   [
+    "today.",
+    1.62,
+    2.06
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_03": {
+  "who": "narrator",
+  "text": "Mia has the least water of the four children.",
+  "dur": 2.873,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "has",
+    0.32,
+    0.62
+   ],
+   [
+    "the",
+    0.62,
+    0.8
+   ],
+   [
+    "least",
+    0.8,
+    1.02
+   ],
+   [
+    "water",
+    1.02,
+    1.5
+   ],
+   [
+    "of",
+    1.5,
+    1.8
+   ],
+   [
+    "the",
+    1.8,
+    1.94
+   ],
+   [
+    "four",
+    1.94,
+    2.2
+   ],
+   [
+    "children.",
+    2.2,
+    2.56
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_04": {
+  "who": "narrator",
+  "text": "This is the most beautiful flag in the race.",
+  "dur": 2.508,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.52
+   ],
+   [
+    "most",
+    0.52,
+    0.7
+   ],
+   [
+    "beautiful",
+    0.7,
+    1.1
+   ],
+   [
+    "flag",
+    1.1,
+    1.5
+   ],
+   [
+    "in",
+    1.5,
+    1.78
+   ],
+   [
+    "the",
+    1.78,
+    1.86
+   ],
+   [
+    "race.",
+    1.86,
+    2.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_01": {
+  "who": "narrator",
+  "text": "The giraffe is taller than Sam.",
+  "dur": 1.985,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "giraffe",
+    0.18,
+    0.6
+   ],
+   [
+    "is",
+    0.6,
+    0.82
+   ],
+   [
+    "taller",
+    0.82,
+    1.14
+   ],
+   [
+    "than",
+    1.14,
+    1.4
+   ],
+   [
+    "Sam.",
+    1.4,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_02": {
+  "who": "narrator",
+  "text": "Biscuit is smaller than the elephant.",
+  "dur": 2.09,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.54
+   ],
+   [
+    "is",
+    0.54,
+    0.72
+   ],
+   [
+    "smaller",
+    0.72,
+    1.0
+   ],
+   [
+    "than",
+    1.0,
+    1.26
+   ],
+   [
+    "the",
+    1.26,
+    1.36
+   ],
+   [
+    "elephant.",
+    1.36,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_03": {
+  "who": "narrator",
+  "text": "Mia has more flags than Leo.",
+  "dur": 1.907,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "has",
+    0.32,
+    0.58
+   ],
+   [
+    "more",
+    0.58,
+    0.82
+   ],
+   [
+    "flags",
+    0.82,
+    1.18
+   ],
+   [
+    "than",
+    1.18,
+    1.42
+   ],
+   [
+    "Leo.",
+    1.42,
+    1.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_04": {
+  "who": "narrator",
+  "text": "The green flag is as long as the orange flag.",
+  "dur": 2.429,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "green",
+    0.22,
+    0.46
+   ],
+   [
+    "flag",
+    0.46,
+    0.76
+   ],
+   [
+    "is",
+    0.76,
+    1.04
+   ],
+   [
+    "as",
+    1.04,
+    1.18
+   ],
+   [
+    "long",
+    1.18,
+    1.36
+   ],
+   [
+    "as",
+    1.36,
+    1.5
+   ],
+   [
+    "the",
+    1.5,
+    1.62
+   ],
+   [
+    "orange",
+    1.62,
+    1.92
+   ],
+   [
+    "flag.",
+    1.92,
+    2.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_01": {
+  "who": "narrator",
+  "text": "Sam is not as fast as the cheetah.",
+  "dur": 2.116,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.52
+   ],
+   [
+    "not",
+    0.52,
+    0.76
+   ],
+   [
+    "as",
+    0.76,
+    0.96
+   ],
+   [
+    "fast",
+    0.96,
+    1.22
+   ],
+   [
+    "as",
+    1.22,
+    1.46
+   ],
+   [
+    "the",
+    1.46,
+    1.58
+   ],
+   [
+    "cheetah.",
+    1.58,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_02": {
+  "who": "narrator",
+  "text": "The cheetah is faster than any other runner.",
+  "dur": 2.377,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "cheetah",
+    0.2,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.66
+   ],
+   [
+    "faster",
+    0.66,
+    0.94
+   ],
+   [
+    "than",
+    0.94,
+    1.3
+   ],
+   [
+    "any",
+    1.3,
+    1.58
+   ],
+   [
+    "other",
+    1.58,
+    1.86
+   ],
+   [
+    "runner.",
+    1.86,
+    2.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_03": {
+  "who": "narrator",
+  "text": "Sam runs faster and faster.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.38
+   ],
+   [
+    "runs",
+    0.38,
+    0.68
+   ],
+   [
+    "faster",
+    0.68,
+    1.12
+   ],
+   [
+    "and",
+    1.12,
+    1.42
+   ],
+   [
+    "faster.",
+    1.42,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_04": {
+  "who": "narrator",
+  "text": "Leo is the taller of the two boys.",
+  "dur": 2.351,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.4
+   ],
+   [
+    "is",
+    0.4,
+    0.66
+   ],
+   [
+    "the",
+    0.66,
+    0.8
+   ],
+   [
+    "taller",
+    0.8,
+    1.1
+   ],
+   [
+    "of",
+    1.1,
+    1.44
+   ],
+   [
+    "the",
+    1.44,
+    1.54
+   ],
+   [
+    "two",
+    1.54,
+    1.72
+   ],
+   [
+    "boys.",
+    1.72,
+    2.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_01": {
+  "who": "narrator",
+  "text": "Mia draws carefully.",
+  "dur": 1.463,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.36
+   ],
+   [
+    "draws",
+    0.36,
+    0.74
+   ],
+   [
+    "carefully.",
+    0.74,
+    1.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_02": {
+  "who": "narrator",
+  "text": "Leo runs faster than Sam.",
+  "dur": 1.907,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.34
+   ],
+   [
+    "runs",
+    0.34,
+    0.7
+   ],
+   [
+    "faster",
+    0.7,
+    0.98
+   ],
+   [
+    "than",
+    0.98,
+    1.32
+   ],
+   [
+    "Sam.",
+    1.32,
+    1.6
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_03": {
+  "who": "narrator",
+  "text": "Lily is careful enough.",
+  "dur": 1.411,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.32
+   ],
+   [
+    "is",
+    0.32,
+    0.56
+   ],
+   [
+    "careful",
+    0.56,
+    0.88
+   ],
+   [
+    "enough.",
+    0.88,
+    1.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_04": {
+  "who": "narrator",
+  "text": "Sam runs hard every day.",
+  "dur": 1.933,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.4
+   ],
+   [
+    "runs",
+    0.4,
+    0.68
+   ],
+   [
+    "hard",
+    0.68,
+    1.08
+   ],
+   [
+    "every",
+    1.08,
+    1.48
+   ],
+   [
+    "day.",
+    1.48,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_01": {
+  "who": "narrator",
+  "text": "Biscuit is a helpful dog.",
+  "dur": 1.541,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.58
+   ],
+   [
+    "a",
+    0.58,
+    0.74
+   ],
+   [
+    "helpful",
+    0.74,
+    0.98
+   ],
+   [
+    "dog.",
+    0.98,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_02": {
+  "who": "narrator",
+  "text": "Sam is unhappy.",
+  "dur": 1.306,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.4
+   ],
+   [
+    "is",
+    0.4,
+    0.6
+   ],
+   [
+    "unhappy.",
+    0.6,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_03": {
+  "who": "narrator",
+  "text": "Mia smiles happily.",
+  "dur": 1.202,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.4
+   ],
+   [
+    "smiles",
+    0.4,
+    0.82
+   ],
+   [
+    "happily.",
+    0.82,
+    1.14
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_04": {
+  "who": "narrator",
+  "text": "The runner finds a sock.",
+  "dur": 2.351,
+  "words": [
+   [
+    "The",
+    0.68,
+    1.14
+   ],
+   [
+    "runner",
+    1.14,
+    1.4
+   ],
+   [
+    "finds",
+    1.4,
+    1.8
+   ],
+   [
+    "a",
+    1.8,
+    1.98
+   ],
+   [
+    "sock.",
+    1.98,
+    2.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_01": {
+  "who": "narrator",
+  "text": "Biscuit is our best helper.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.8
+   ],
+   [
+    "our",
+    0.8,
+    1.04
+   ],
+   [
+    "best",
+    1.04,
+    1.34
+   ],
+   [
+    "helper.",
+    1.34,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_02": {
+  "who": "narrator",
+  "text": "Lily is one of the most careful children.",
+  "dur": 2.377,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.54
+   ],
+   [
+    "one",
+    0.54,
+    0.74
+   ],
+   [
+    "of",
+    0.74,
+    0.86
+   ],
+   [
+    "the",
+    0.86,
+    0.96
+   ],
+   [
+    "most",
+    0.96,
+    1.2
+   ],
+   [
+    "careful",
+    1.2,
+    1.64
+   ],
+   [
+    "children.",
+    1.64,
+    2.06
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_03": {
+  "who": "narrator",
+  "text": "The more you practise, the better you become.",
+  "dur": 2.534,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "more",
+    0.18,
+    0.38
+   ],
+   [
+    "you",
+    0.38,
+    0.54
+   ],
+   [
+    "practise,",
+    0.54,
+    0.9
+   ],
+   [
+    "the",
+    1.5,
+    1.6
+   ],
+   [
+    "better",
+    1.6,
+    1.82
+   ],
+   [
+    "you",
+    1.82,
+    2.0
+   ],
+   [
+    "become.",
+    2.0,
+    2.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_01": {
+  "who": "narrator",
+  "text": "The elephant is bigger than Biscuit.",
+  "dur": 2.247,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "elephant",
+    0.22,
+    0.62
+   ],
+   [
+    "is",
+    0.62,
+    0.98
+   ],
+   [
+    "bigger",
+    0.98,
+    1.26
+   ],
+   [
+    "than",
+    1.26,
+    1.5
+   ],
+   [
+    "Biscuit.",
+    1.5,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_02": {
+  "who": "narrator",
+  "text": "Sam is as fast as Leo.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.74
+   ],
+   [
+    "as",
+    0.74,
+    0.9
+   ],
+   [
+    "fast",
+    0.9,
+    1.22
+   ],
+   [
+    "as",
+    1.22,
+    1.5
+   ],
+   [
+    "Leo.",
+    1.5,
+    1.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_03": {
+  "who": "narrator",
+  "text": "Mia draws carefully.",
+  "dur": 1.541,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.38
+   ],
+   [
+    "draws",
+    0.38,
+    0.76
+   ],
+   [
+    "carefully.",
+    0.76,
+    1.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_04": {
+  "who": "narrator",
+  "text": "Biscuit is our best helper.",
+  "dur": 1.75,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.68
+   ],
+   [
+    "our",
+    0.68,
+    0.84
+   ],
+   [
+    "best",
+    0.84,
+    1.14
+   ],
+   [
+    "helper.",
+    1.14,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_05": {
+  "who": "narrator",
+  "text": "Lily is one of the best players.",
+  "dur": 2.273,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.32
+   ],
+   [
+    "is",
+    0.32,
+    0.7
+   ],
+   [
+    "one",
+    0.7,
+    0.9
+   ],
+   [
+    "of",
+    0.9,
+    1.02
+   ],
+   [
+    "the",
+    1.02,
+    1.14
+   ],
+   [
+    "best",
+    1.14,
+    1.46
+   ],
+   [
+    "players.",
+    1.46,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_06": {
+  "who": "narrator",
+  "text": "Mia runs more slowly than Sam.",
+  "dur": 2.168,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "runs",
+    0.32,
+    0.68
+   ],
+   [
+    "more",
+    0.68,
+    0.96
+   ],
+   [
+    "slowly",
+    0.96,
+    1.3
+   ],
+   [
+    "than",
+    1.3,
+    1.58
+   ],
+   [
+    "Sam.",
+    1.58,
+    1.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_07": {
+  "who": "narrator",
+  "text": "The more you practise, the better you become.",
+  "dur": 2.429,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "more",
+    0.18,
+    0.34
+   ],
+   [
+    "you",
+    0.34,
+    0.5
+   ],
+   [
+    "practise,",
+    0.5,
+    0.86
+   ],
+   [
+    "the",
+    1.36,
+    1.46
+   ],
+   [
+    "better",
+    1.46,
+    1.66
+   ],
+   [
+    "you",
+    1.66,
+    1.86
+   ],
+   [
+    "become.",
+    1.86,
+    2.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_08": {
+  "who": "narrator",
+  "text": "Sam smiles happily.",
+  "dur": 1.593,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.44
+   ],
+   [
+    "smiles",
+    0.44,
+    0.82
+   ],
+   [
+    "happily.",
+    0.82,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_fast": {
+  "who": "sam",
+  "text": "I can run faster with practice.",
+  "dur": 2.011,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.24
+   ],
+   [
+    "can",
+    0.24,
+    0.4
+   ],
+   [
+    "run",
+    0.4,
+    0.58
+   ],
+   [
+    "faster",
+    0.58,
+    0.96
+   ],
+   [
+    "with",
+    0.96,
+    1.24
+   ],
+   [
+    "practice.",
+    1.24,
+    1.62
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_careful": {
+  "who": "mia",
+  "text": "I draw carefully.",
+  "dur": 1.802,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.26
+   ],
+   [
+    "draw",
+    0.26,
+    0.64
+   ],
+   [
+    "carefully.",
+    0.64,
+    1.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_helpful": {
+  "who": "lily",
+  "text": "I can be a helpful friend.",
+  "dur": 1.489,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.22
+   ],
+   [
+    "can",
+    0.22,
+    0.32
+   ],
+   [
+    "be",
+    0.32,
+    0.48
+   ],
+   [
+    "a",
+    0.48,
+    0.58
+   ],
+   [
+    "helpful",
+    0.58,
+    0.82
+   ],
+   [
+    "friend.",
+    0.82,
+    1.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_best": {
+  "who": "leo",
+  "text": "Biscuit is our best helper.",
+  "dur": 1.724,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.64
+   ],
+   [
+    "our",
+    0.64,
+    0.82
+   ],
+   [
+    "best",
+    0.82,
+    1.04
+   ],
+   [
+    "helper.",
+    1.04,
+    1.44
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The eleventh star is home!",
+  "dur": 1.802,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "eleventh",
+    0.22,
+    0.66
+   ],
+   [
+    "star",
+    0.66,
+    1.02
+   ],
+   [
+    "is",
+    1.02,
+    1.24
+   ],
+   [
+    "home!",
+    1.24,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ }
+}

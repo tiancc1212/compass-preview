@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-11",
+  "episode": "ep04",
+  "authority": "用户转述Willo新决定：语法提示以最新SPEC为准，覆盖旧审定提示限制。",
+  "scope": "仅本集hints、内容缓存版本、修订说明与备份；故事与题目答案不改。",
+  "before_sha256": "8a1a388ef2be53e8e1f4f55ae22d6928dcc6cb0209ce9b8961b32aa3ffce7b0b",
+  "after_sha256": "0e34823766aedb36e0c32c78a85a31b83d1adb71d89eb71527fb4087b63f6fbb",
+  "data_v": {
+    "before": 3,
+    "after": 4
+  },
+  "modified_hint_count": 7,
+  "metadata_changes": [],
+  "changes": [
+    {
+      "line_id": "l05",
+      "hint_number": 1,
+      "text": "Do you like riddles?",
+      "category": "用户指定",
+      "before": {
+        "b": "DO",
+        "hl": "Do you like",
+        "zh": "实义动词问句用 do 帮忙"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Do",
+        "zh": "实义动词问句用 do 帮忙"
+      },
+      "reason": "助动词帮助构成疑问或否定，不能用裸不定式徽章；疑问句仅标助动词，陈述句保留连续谓语。"
+    },
+    {
+      "line_id": "l06",
+      "hint_number": 1,
+      "text": "I do not know any dragon riddles.",
+      "category": "用户指定",
+      "before": {
+        "b": "DO",
+        "hl": "do not know",
+        "zh": "do not 后面的动词用原形"
+      },
+      "after": {
+        "b": "V",
+        "hl": "do not know",
+        "zh": "do not 后面的动词用原形"
+      },
+      "reason": "助动词帮助构成疑问或否定，不能用裸不定式徽章；疑问句仅标助动词，陈述句保留连续谓语。"
+    },
+    {
+      "line_id": "l08",
+      "hint_number": 2,
+      "text": "The dragon can fly, but he does not fly on Mondays.",
+      "category": "用户指定",
+      "before": {
+        "b": "DO",
+        "hl": "does not fly",
+        "zh": "does not 后不用 flies"
+      },
+      "after": {
+        "b": "V",
+        "hl": "does not fly",
+        "zh": "does not 后不用 flies"
+      },
+      "reason": "助动词帮助构成疑问或否定，不能用裸不定式徽章；疑问句仅标助动词，陈述句保留连续谓语。"
+    },
+    {
+      "line_id": "l09",
+      "hint_number": 1,
+      "text": "Why does he stay in the cave on Mondays?",
+      "category": "用户指定",
+      "before": {
+        "b": "DO",
+        "hl": "Why does he stay",
+        "zh": "疑问词后用 does + 主语 + 原形"
+      },
+      "after": {
+        "b": "V",
+        "hl": "does",
+        "zh": "疑问词后用 does + 主语 + 原形"
+      },
+      "reason": "助动词帮助构成疑问或否定，不能用裸不定式徽章；疑问句仅标助动词，陈述句保留连续谓语。"
+    },
+    {
+      "line_id": "l10",
+      "hint_number": 1,
+      "text": "Does he guard gold or books?",
+      "category": "用户指定",
+      "before": {
+        "b": "DO",
+        "hl": "Does he guard",
+        "zh": "does 后的 guard 用原形"
+      },
+      "after": {
+        "b": "V",
+        "hl": "Does",
+        "zh": "does 后的 guard 用原形"
+      },
+      "reason": "助动词帮助构成疑问或否定，不能用裸不定式徽章；疑问句仅标助动词，陈述句保留连续谓语。"
+    },
+    {
+      "line_id": "l07",
+      "hint_number": 1,
+      "text": "Can you fly over this hill?",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "Can you fly",
+        "zh": "can 提到前面，fly 不变形"
+      },
+      "after": {
+        "b": "DO",
+        "hl": "fly",
+        "zh": "can 提到前面，fly 不变形"
+      },
+      "reason": "按新版规格统一、补充修正：DO只标can后的裸不定式fly，不把情态动词和主语一起标成不定式。"
+    },
+    {
+      "line_id": "l08",
+      "hint_number": 1,
+      "text": "The dragon can fly, but he does not fly on Mondays.",
+      "category": "补充修正",
+      "before": {
+        "b": "DO",
+        "hl": "can fly",
+        "zh": "can 后用动词原形"
+      },
+      "after": {
+        "b": "DO",
+        "hl": "fly",
+        "zh": "can 后用动词原形"
+      },
+      "reason": "按新版规格统一、补充修正：DO只标can后的裸不定式fly，不把情态动词和主语一起标成不定式。"
+    }
+  ],
+  "retained_boundaries": [],
+  "validation": {
+    "official_validator": "node tools/validate_episode.mjs ep04",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "all_hints_checked": 21,
+    "max_zh_characters_including_latin_spaces_and_punctuation": 26,
+    "max_hints_per_line": 2,
+    "highlight_all_found_in_original_lines": true,
+    "episode_js_and_lines_sha256_unchanged": {
+      "episode.js": "ea7ffdf74b699ab0f4e2570fd2846e02839306ff195a8638a10ea89252578777",
+      "audio/lines.json": "1e60215dbe6698bdfaf6ccecd8a729782bb28324024a7847f65c96df1fbf8cfb"
+    }
+  }
+}

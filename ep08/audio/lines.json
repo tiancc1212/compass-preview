@@ -1,0 +1,2154 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "Leo, Mia, Sam, Lily and Biscuit are standing in a prehistoric jungle.",
+  "dur": 5.486,
+  "words": [
+   [
+    "Leo,",
+    0.0,
+    0.52
+   ],
+   [
+    "Mia,",
+    0.98,
+    1.04
+   ],
+   [
+    "Sam,",
+    1.34,
+    1.7
+   ],
+   [
+    "Lily",
+    2.2,
+    2.25
+   ],
+   [
+    "and",
+    2.24,
+    2.68
+   ],
+   [
+    "Biscuit",
+    2.68,
+    3.2
+   ],
+   [
+    "are",
+    3.2,
+    3.46
+   ],
+   [
+    "standing",
+    3.46,
+    3.84
+   ],
+   [
+    "in",
+    3.84,
+    4.12
+   ],
+   [
+    "a",
+    4.12,
+    4.22
+   ],
+   [
+    "prehistoric",
+    4.22,
+    4.68
+   ],
+   [
+    "jungle.",
+    4.68,
+    5.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "sam",
+  "text": "I am reporting from behind a giant fern.",
+  "dur": 2.978,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.26
+   ],
+   [
+    "am",
+    0.26,
+    0.38
+   ],
+   [
+    "reporting",
+    0.38,
+    0.84
+   ],
+   [
+    "from",
+    0.84,
+    1.22
+   ],
+   [
+    "behind",
+    1.22,
+    1.64
+   ],
+   [
+    "a",
+    1.64,
+    1.82
+   ],
+   [
+    "giant",
+    1.82,
+    2.18
+   ],
+   [
+    "fern.",
+    2.18,
+    2.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "lily",
+  "text": "Look at the dinosaur by the river!",
+  "dur": 1.646,
+  "words": [
+   [
+    "Look",
+    0.0,
+    0.24
+   ],
+   [
+    "at",
+    0.24,
+    0.36
+   ],
+   [
+    "the",
+    0.36,
+    0.46
+   ],
+   [
+    "dinosaur",
+    0.46,
+    0.8
+   ],
+   [
+    "by",
+    0.8,
+    1.0
+   ],
+   [
+    "the",
+    1.0,
+    1.14
+   ],
+   [
+    "river!",
+    1.14,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "sam",
+  "text": "It is drinking water, and Mia is drawing it.",
+  "dur": 3.396,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.4
+   ],
+   [
+    "drinking",
+    0.4,
+    0.72
+   ],
+   [
+    "water,",
+    0.72,
+    1.26
+   ],
+   [
+    "and",
+    1.9,
+    2.0
+   ],
+   [
+    "Mia",
+    2.0,
+    2.24
+   ],
+   [
+    "is",
+    2.24,
+    2.54
+   ],
+   [
+    "drawing",
+    2.54,
+    2.94
+   ],
+   [
+    "it.",
+    2.94,
+    3.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "leo",
+  "text": "Biscuit is not sitting beside me.",
+  "dur": 1.907,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.56
+   ],
+   [
+    "not",
+    0.56,
+    0.74
+   ],
+   [
+    "sitting",
+    0.74,
+    1.06
+   ],
+   [
+    "beside",
+    1.06,
+    1.44
+   ],
+   [
+    "me.",
+    1.44,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "mia",
+  "text": "Is he carrying an egg?",
+  "dur": 2.064,
+  "words": [
+   [
+    "Is",
+    0.0,
+    0.3
+   ],
+   [
+    "he",
+    0.3,
+    0.58
+   ],
+   [
+    "carrying",
+    0.58,
+    1.2
+   ],
+   [
+    "an",
+    1.2,
+    1.52
+   ],
+   [
+    "egg?",
+    1.52,
+    1.82
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "sam",
+  "text": "He is running towards us with an egg!",
+  "dur": 2.299,
+  "words": [
+   [
+    "He",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.34
+   ],
+   [
+    "running",
+    0.34,
+    0.64
+   ],
+   [
+    "towards",
+    0.64,
+    1.0
+   ],
+   [
+    "us",
+    1.0,
+    1.26
+   ],
+   [
+    "with",
+    1.26,
+    1.46
+   ],
+   [
+    "an",
+    1.46,
+    1.66
+   ],
+   [
+    "egg!",
+    1.66,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "lily",
+  "text": "What are the baby dinosaurs doing?",
+  "dur": 1.724,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.2
+   ],
+   [
+    "are",
+    0.2,
+    0.3
+   ],
+   [
+    "the",
+    0.3,
+    0.42
+   ],
+   [
+    "baby",
+    0.42,
+    0.62
+   ],
+   [
+    "dinosaurs",
+    0.62,
+    1.04
+   ],
+   [
+    "doing?",
+    1.04,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "narrator",
+  "text": "They are following Biscuit through the ferns.",
+  "dur": 2.247,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.22
+   ],
+   [
+    "are",
+    0.22,
+    0.36
+   ],
+   [
+    "following",
+    0.36,
+    0.68
+   ],
+   [
+    "Biscuit",
+    0.68,
+    1.2
+   ],
+   [
+    "through",
+    1.2,
+    1.38
+   ],
+   [
+    "the",
+    1.38,
+    1.52
+   ],
+   [
+    "ferns.",
+    1.52,
+    2.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "leo",
+  "text": "Stop, Biscuit, and put the egg down gently.",
+  "dur": 2.508,
+  "words": [
+   [
+    "Stop,",
+    0.0,
+    0.38
+   ],
+   [
+    "Biscuit,",
+    0.52,
+    0.86
+   ],
+   [
+    "and",
+    1.1,
+    1.16
+   ],
+   [
+    "put",
+    1.16,
+    1.3
+   ],
+   [
+    "the",
+    1.3,
+    1.44
+   ],
+   [
+    "egg",
+    1.44,
+    1.66
+   ],
+   [
+    "down",
+    1.66,
+    1.92
+   ],
+   [
+    "gently.",
+    1.92,
+    2.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "lily",
+  "text": "Don't run, and be quiet.",
+  "dur": 1.384,
+  "words": [
+   [
+    "Don't",
+    0.0,
+    0.36
+   ],
+   [
+    "run,",
+    0.36,
+    0.5
+   ],
+   [
+    "and",
+    0.72,
+    0.78
+   ],
+   [
+    "be",
+    0.78,
+    0.88
+   ],
+   [
+    "quiet.",
+    0.88,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "sam",
+  "text": "I usually play football, but today I am hiding from dinosaurs.",
+  "dur": 4.336,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.24
+   ],
+   [
+    "usually",
+    0.24,
+    0.52
+   ],
+   [
+    "play",
+    0.52,
+    0.9
+   ],
+   [
+    "football,",
+    0.9,
+    1.38
+   ],
+   [
+    "but",
+    1.86,
+    2.06
+   ],
+   [
+    "today",
+    2.06,
+    2.36
+   ],
+   [
+    "I",
+    2.36,
+    2.58
+   ],
+   [
+    "am",
+    2.58,
+    2.68
+   ],
+   [
+    "hiding",
+    2.68,
+    2.94
+   ],
+   [
+    "from",
+    2.94,
+    3.28
+   ],
+   [
+    "dinosaurs.",
+    3.28,
+    3.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "mia",
+  "text": "Let's lift this loose fossil together.",
+  "dur": 2.743,
+  "words": [
+   [
+    "Let's",
+    0.0,
+    0.46
+   ],
+   [
+    "lift",
+    0.46,
+    0.74
+   ],
+   [
+    "this",
+    0.74,
+    1.06
+   ],
+   [
+    "loose",
+    1.06,
+    1.36
+   ],
+   [
+    "fossil",
+    1.36,
+    1.92
+   ],
+   [
+    "together.",
+    1.92,
+    2.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "narrator",
+  "text": "A golden star is glowing beside an old ticket under the fossil.",
+  "dur": 4.127,
+  "words": [
+   [
+    "A",
+    0.0,
+    0.24
+   ],
+   [
+    "golden",
+    0.24,
+    0.54
+   ],
+   [
+    "star",
+    0.54,
+    1.06
+   ],
+   [
+    "is",
+    1.06,
+    1.26
+   ],
+   [
+    "glowing",
+    1.26,
+    1.62
+   ],
+   [
+    "beside",
+    1.62,
+    2.12
+   ],
+   [
+    "an",
+    2.12,
+    2.34
+   ],
+   [
+    "old",
+    2.34,
+    2.62
+   ],
+   [
+    "ticket",
+    2.62,
+    3.0
+   ],
+   [
+    "under",
+    3.0,
+    3.38
+   ],
+   [
+    "the",
+    3.38,
+    3.54
+   ],
+   [
+    "fossil.",
+    3.54,
+    3.78
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l15": {
+  "who": "lily",
+  "text": "Look at this ticket from the nineteen seventies!",
+  "dur": 2.168,
+  "words": [
+   [
+    "Look",
+    0.0,
+    0.22
+   ],
+   [
+    "at",
+    0.22,
+    0.36
+   ],
+   [
+    "this",
+    0.36,
+    0.5
+   ],
+   [
+    "ticket",
+    0.5,
+    0.74
+   ],
+   [
+    "from",
+    0.74,
+    0.96
+   ],
+   [
+    "the",
+    0.96,
+    1.08
+   ],
+   [
+    "nineteen",
+    1.08,
+    1.32
+   ],
+   [
+    "seventies!",
+    1.32,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_1": {
+  "who": "narrator",
+  "text": "The dinosaurs eat leaves.",
+  "dur": 1.881,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.24
+   ],
+   [
+    "dinosaurs",
+    0.24,
+    0.72
+   ],
+   [
+    "eat",
+    0.72,
+    1.08
+   ],
+   [
+    "leaves.",
+    1.08,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_2": {
+  "who": "narrator",
+  "text": "The dinosaur eats leaves.",
+  "dur": 1.802,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "dinosaur",
+    0.18,
+    0.68
+   ],
+   [
+    "eats",
+    0.68,
+    1.02
+   ],
+   [
+    "leaves.",
+    1.02,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_3": {
+  "who": "narrator",
+  "text": "The dinosaur is eating leaves.",
+  "dur": 2.011,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dinosaur",
+    0.2,
+    0.66
+   ],
+   [
+    "is",
+    0.66,
+    0.96
+   ],
+   [
+    "eating",
+    0.96,
+    1.32
+   ],
+   [
+    "leaves.",
+    1.32,
+    1.62
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_4": {
+  "who": "narrator",
+  "text": "The dinosaur ate some leaves.",
+  "dur": 1.829,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dinosaur",
+    0.2,
+    0.62
+   ],
+   [
+    "ate",
+    0.62,
+    0.94
+   ],
+   [
+    "some",
+    0.94,
+    1.18
+   ],
+   [
+    "leaves.",
+    1.18,
+    1.44
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_5": {
+  "who": "narrator",
+  "text": "The dinosaur has eaten the leaves.",
+  "dur": 2.064,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dinosaur",
+    0.2,
+    0.56
+   ],
+   [
+    "has",
+    0.56,
+    0.8
+   ],
+   [
+    "eaten",
+    0.8,
+    1.16
+   ],
+   [
+    "the",
+    1.16,
+    1.44
+   ],
+   [
+    "leaves.",
+    1.44,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_1": {
+  "who": "narrator",
+  "text": "Mia is studying a map.",
+  "dur": 1.62,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.56
+   ],
+   [
+    "studying",
+    0.56,
+    0.9
+   ],
+   [
+    "a",
+    0.9,
+    1.06
+   ],
+   [
+    "map.",
+    1.06,
+    1.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_2": {
+  "who": "narrator",
+  "text": "Lily is making a nest.",
+  "dur": 1.724,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.34
+   ],
+   [
+    "is",
+    0.34,
+    0.66
+   ],
+   [
+    "making",
+    0.66,
+    0.92
+   ],
+   [
+    "a",
+    0.92,
+    1.12
+   ],
+   [
+    "nest.",
+    1.12,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_3": {
+  "who": "narrator",
+  "text": "Biscuit is running.",
+  "dur": 1.176,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.54
+   ],
+   [
+    "running.",
+    0.54,
+    0.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_4": {
+  "who": "narrator",
+  "text": "The egg is lying on soft leaves.",
+  "dur": 2.586,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "egg",
+    0.2,
+    0.54
+   ],
+   [
+    "is",
+    0.54,
+    0.76
+   ],
+   [
+    "lying",
+    0.76,
+    1.08
+   ],
+   [
+    "on",
+    1.08,
+    1.38
+   ],
+   [
+    "soft",
+    1.38,
+    1.72
+   ],
+   [
+    "leaves.",
+    1.72,
+    2.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_5": {
+  "who": "narrator",
+  "text": "The crew are picnicking in a safe clearing.",
+  "dur": 2.612,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "crew",
+    0.22,
+    0.5
+   ],
+   [
+    "are",
+    0.5,
+    0.74
+   ],
+   [
+    "picnicking",
+    0.74,
+    1.2
+   ],
+   [
+    "in",
+    1.2,
+    1.52
+   ],
+   [
+    "a",
+    1.52,
+    1.64
+   ],
+   [
+    "safe",
+    1.64,
+    1.88
+   ],
+   [
+    "clearing.",
+    1.88,
+    2.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_6": {
+  "who": "narrator",
+  "text": "Leo is fixing the broken bag.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.4
+   ],
+   [
+    "is",
+    0.4,
+    0.7
+   ],
+   [
+    "fixing",
+    0.7,
+    0.92
+   ],
+   [
+    "the",
+    0.92,
+    1.18
+   ],
+   [
+    "broken",
+    1.18,
+    1.44
+   ],
+   [
+    "bag.",
+    1.44,
+    1.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_1": {
+  "who": "narrator",
+  "text": "Mia is drawing a dinosaur.",
+  "dur": 1.855,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.7
+   ],
+   [
+    "drawing",
+    0.7,
+    0.98
+   ],
+   [
+    "a",
+    0.98,
+    1.18
+   ],
+   [
+    "dinosaur.",
+    1.18,
+    1.6
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_2": {
+  "who": "narrator",
+  "text": "Biscuit is running with an egg.",
+  "dur": 1.646,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.56
+   ],
+   [
+    "running",
+    0.56,
+    0.8
+   ],
+   [
+    "with",
+    0.8,
+    1.04
+   ],
+   [
+    "an",
+    1.04,
+    1.16
+   ],
+   [
+    "egg.",
+    1.16,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_3": {
+  "who": "narrator",
+  "text": "The dinosaur is drinking water.",
+  "dur": 1.985,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dinosaur",
+    0.2,
+    0.62
+   ],
+   [
+    "is",
+    0.62,
+    0.94
+   ],
+   [
+    "drinking",
+    0.94,
+    1.2
+   ],
+   [
+    "water.",
+    1.2,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_4": {
+  "who": "narrator",
+  "text": "Sam is hiding behind a fern.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.7
+   ],
+   [
+    "hiding",
+    0.7,
+    1.08
+   ],
+   [
+    "behind",
+    1.08,
+    1.5
+   ],
+   [
+    "a",
+    1.5,
+    1.68
+   ],
+   [
+    "fern.",
+    1.68,
+    2.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "Biscuit is not running.",
+  "dur": 1.463,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.5
+   ],
+   [
+    "is",
+    0.5,
+    0.66
+   ],
+   [
+    "not",
+    0.66,
+    0.86
+   ],
+   [
+    "running.",
+    0.86,
+    1.16
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "Are they following us?",
+  "dur": 1.123,
+  "words": [
+   [
+    "Are",
+    0.0,
+    0.05
+   ],
+   [
+    "they",
+    0.0,
+    0.14
+   ],
+   [
+    "following",
+    0.14,
+    0.44
+   ],
+   [
+    "us?",
+    0.44,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "What is Mia doing?",
+  "dur": 1.28,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.22
+   ],
+   [
+    "is",
+    0.22,
+    0.38
+   ],
+   [
+    "Mia",
+    0.38,
+    0.6
+   ],
+   [
+    "doing?",
+    0.6,
+    0.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "Yes, she is.",
+  "dur": 1.097,
+  "words": [
+   [
+    "Yes,",
+    0.0,
+    0.28
+   ],
+   [
+    "she",
+    0.4,
+    0.54
+   ],
+   [
+    "is.",
+    0.54,
+    0.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "narrator",
+  "text": "Leo is running now.",
+  "dur": 1.515,
+  "words": [
+   [
+    "Leo",
+    0.0,
+    0.42
+   ],
+   [
+    "is",
+    0.42,
+    0.72
+   ],
+   [
+    "running",
+    0.72,
+    1.0
+   ],
+   [
+    "now.",
+    1.0,
+    1.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "I am hiding.",
+  "dur": 1.149,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.3
+   ],
+   [
+    "am",
+    0.3,
+    0.42
+   ],
+   [
+    "hiding.",
+    0.42,
+    0.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
+  "who": "narrator",
+  "text": "They are running.",
+  "dur": 0.967,
+  "words": [
+   [
+    "They",
+    0.0,
+    0.22
+   ],
+   [
+    "are",
+    0.22,
+    0.38
+   ],
+   [
+    "running.",
+    0.38,
+    0.6
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_4": {
+  "who": "narrator",
+  "text": "Don't touch the egg.",
+  "dur": 1.202,
+  "words": [
+   [
+    "Don't",
+    0.0,
+    0.36
+   ],
+   [
+    "touch",
+    0.36,
+    0.5
+   ],
+   [
+    "the",
+    0.5,
+    0.7
+   ],
+   [
+    "egg.",
+    0.7,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_1": {
+  "who": "narrator",
+  "text": "Be quiet!",
+  "dur": 1.149,
+  "words": [
+   [
+    "Be",
+    0.0,
+    0.24
+   ],
+   [
+    "quiet!",
+    0.24,
+    0.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_2": {
+  "who": "narrator",
+  "text": "Don't touch the eggs!",
+  "dur": 1.541,
+  "words": [
+   [
+    "Don't",
+    0.0,
+    0.38
+   ],
+   [
+    "touch",
+    0.38,
+    0.54
+   ],
+   [
+    "the",
+    0.54,
+    0.74
+   ],
+   [
+    "eggs!",
+    0.74,
+    1.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_3": {
+  "who": "narrator",
+  "text": "Let's go together!",
+  "dur": 1.149,
+  "words": [
+   [
+    "Let's",
+    0.0,
+    0.34
+   ],
+   [
+    "go",
+    0.34,
+    0.46
+   ],
+   [
+    "together!",
+    0.46,
+    0.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_4": {
+  "who": "narrator",
+  "text": "No photos!",
+  "dur": 1.332,
+  "words": [
+   [
+    "No",
+    0.0,
+    0.36
+   ],
+   [
+    "photos!",
+    0.36,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_1": {
+  "who": "narrator",
+  "text": "Sam usually plays football after school.",
+  "dur": 2.299,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.38
+   ],
+   [
+    "usually",
+    0.38,
+    0.64
+   ],
+   [
+    "plays",
+    0.64,
+    1.02
+   ],
+   [
+    "football",
+    1.02,
+    1.38
+   ],
+   [
+    "after",
+    1.38,
+    1.72
+   ],
+   [
+    "school.",
+    1.72,
+    2.06
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "Sam cannot talk now; he is hiding from a dinosaur.",
+  "dur": 3.265,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.38
+   ],
+   [
+    "cannot",
+    0.38,
+    0.64
+   ],
+   [
+    "talk",
+    0.64,
+    0.96
+   ],
+   [
+    "now;",
+    0.96,
+    1.26
+   ],
+   [
+    "he",
+    1.68,
+    1.82
+   ],
+   [
+    "is",
+    1.82,
+    1.9
+   ],
+   [
+    "hiding",
+    1.9,
+    2.24
+   ],
+   [
+    "from",
+    2.24,
+    2.52
+   ],
+   [
+    "a",
+    2.52,
+    2.64
+   ],
+   [
+    "dinosaur.",
+    2.64,
+    2.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "Mia is learning about dinosaurs this week, but she is resting at this moment.",
+  "dur": 4.232,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.3
+   ],
+   [
+    "is",
+    0.3,
+    0.56
+   ],
+   [
+    "learning",
+    0.56,
+    0.82
+   ],
+   [
+    "about",
+    0.82,
+    1.08
+   ],
+   [
+    "dinosaurs",
+    1.08,
+    1.48
+   ],
+   [
+    "this",
+    1.48,
+    1.74
+   ],
+   [
+    "week,",
+    1.74,
+    1.98
+   ],
+   [
+    "but",
+    2.18,
+    2.54
+   ],
+   [
+    "she",
+    2.54,
+    2.78
+   ],
+   [
+    "is",
+    2.78,
+    2.88
+   ],
+   [
+    "resting",
+    2.88,
+    3.24
+   ],
+   [
+    "at",
+    3.24,
+    3.44
+   ],
+   [
+    "this",
+    3.44,
+    3.6
+   ],
+   [
+    "moment.",
+    3.6,
+    3.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "Lily knows the way now.",
+  "dur": 1.489,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.34
+   ],
+   [
+    "knows",
+    0.34,
+    0.66
+   ],
+   [
+    "the",
+    0.66,
+    0.86
+   ],
+   [
+    "way",
+    0.86,
+    1.02
+   ],
+   [
+    "now.",
+    1.02,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "narrator",
+  "text": "The dinosaur is eating leaves.",
+  "dur": 1.985,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "dinosaur",
+    0.18,
+    0.58
+   ],
+   [
+    "is",
+    0.58,
+    0.86
+   ],
+   [
+    "eating",
+    0.86,
+    1.18
+   ],
+   [
+    "leaves.",
+    1.18,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "narrator",
+  "text": "Mia is drawing now.",
+  "dur": 1.541,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.34
+   ],
+   [
+    "is",
+    0.34,
+    0.66
+   ],
+   [
+    "drawing",
+    0.66,
+    1.02
+   ],
+   [
+    "now.",
+    1.02,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "narrator",
+  "text": "Biscuit is running towards Leo.",
+  "dur": 1.881,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.5
+   ],
+   [
+    "is",
+    0.5,
+    0.64
+   ],
+   [
+    "running",
+    0.64,
+    0.9
+   ],
+   [
+    "towards",
+    0.9,
+    1.26
+   ],
+   [
+    "Leo.",
+    1.26,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "Are the dinosaurs sleeping?",
+  "dur": 1.489,
+  "words": [
+   [
+    "Are",
+    0.0,
+    0.22
+   ],
+   [
+    "the",
+    0.22,
+    0.38
+   ],
+   [
+    "dinosaurs",
+    0.38,
+    0.76
+   ],
+   [
+    "sleeping?",
+    0.76,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "narrator",
+  "text": "Lily isn't looking at the map.",
+  "dur": 1.489,
+  "words": [
+   [
+    "Lily",
+    0.0,
+    0.34
+   ],
+   [
+    "isn't",
+    0.34,
+    0.76
+   ],
+   [
+    "looking",
+    0.76,
+    0.92
+   ],
+   [
+    "at",
+    0.92,
+    1.12
+   ],
+   [
+    "the",
+    1.12,
+    1.2
+   ],
+   [
+    "map.",
+    1.2,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "narrator",
+  "text": "Sam usually plays football, but he is hiding now.",
+  "dur": 3.135,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.42
+   ],
+   [
+    "usually",
+    0.42,
+    0.7
+   ],
+   [
+    "plays",
+    0.7,
+    1.12
+   ],
+   [
+    "football,",
+    1.12,
+    1.44
+   ],
+   [
+    "but",
+    1.72,
+    1.96
+   ],
+   [
+    "he",
+    1.96,
+    2.24
+   ],
+   [
+    "is",
+    2.24,
+    2.34
+   ],
+   [
+    "hiding",
+    2.34,
+    2.64
+   ],
+   [
+    "now.",
+    2.64,
+    2.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "narrator",
+  "text": "I know the answer now.",
+  "dur": 1.123,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.22
+   ],
+   [
+    "know",
+    0.22,
+    0.36
+   ],
+   [
+    "the",
+    0.36,
+    0.52
+   ],
+   [
+    "answer",
+    0.52,
+    0.66
+   ],
+   [
+    "now.",
+    0.66,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "Don't run, and be quiet.",
+  "dur": 1.463,
+  "words": [
+   [
+    "Don't",
+    0.0,
+    0.36
+   ],
+   [
+    "run,",
+    0.36,
+    0.52
+   ],
+   [
+    "and",
+    0.8,
+    0.88
+   ],
+   [
+    "be",
+    0.88,
+    1.0
+   ],
+   [
+    "quiet.",
+    1.0,
+    1.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_eat": {
+  "who": "leo",
+  "text": "The dinosaur is eating.",
+  "dur": 1.254,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dinosaur",
+    0.2,
+    0.64
+   ],
+   [
+    "is",
+    0.64,
+    0.84
+   ],
+   [
+    "eating.",
+    0.84,
+    1.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_run": {
+  "who": "leo",
+  "text": "Biscuit is running.",
+  "dur": 1.019,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.5
+   ],
+   [
+    "running.",
+    0.5,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_draw": {
+  "who": "leo",
+  "text": "Mia is drawing.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.32
+   ],
+   [
+    "is",
+    0.32,
+    0.46
+   ],
+   [
+    "drawing.",
+    0.46,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_quiet": {
+  "who": "leo",
+  "text": "Be quiet and don't run.",
+  "dur": 1.855,
+  "words": [
+   [
+    "Be",
+    0.0,
+    0.36
+   ],
+   [
+    "quiet",
+    0.36,
+    0.74
+   ],
+   [
+    "and",
+    0.74,
+    1.1
+   ],
+   [
+    "don't",
+    1.1,
+    1.38
+   ],
+   [
+    "run.",
+    1.38,
+    1.56
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The eighth star is home!",
+  "dur": 2.247,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.76
+   ],
+   [
+    "eighth",
+    0.76,
+    1.04
+   ],
+   [
+    "star",
+    1.04,
+    1.5
+   ],
+   [
+    "is",
+    1.5,
+    1.72
+   ],
+   [
+    "home!",
+    1.72,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ }
+}

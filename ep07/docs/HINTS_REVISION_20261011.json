@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-11",
+  "episode": "ep07",
+  "authority": "用户转述Willo新决定：语法提示以最新SPEC为准，覆盖旧审定提示限制。",
+  "scope": "仅本集hints、内容缓存版本、修订说明与备份；故事与题目答案不改。",
+  "before_sha256": "96ca5f119d5d1ffdb6cd69f9e996c0b2995cd0235d0613119d108eb9efdfdb4b",
+  "after_sha256": "018c9910951aa2a9886e30ff517c987d2711f67200fcb0bff3a2b329d398a309",
+  "data_v": {
+    "before": 5,
+    "after": 6
+  },
+  "modified_hint_count": 4,
+  "metadata_changes": [
+    {
+      "key": "_说明",
+      "before": "黄铜罗盘徽章；仅用 TD/DO/ING/ED/S/V/O/C。hl 是英文原句严格连续子串。每句最多两条。练习音频仅答对或完成后播，故事音频跟随手动翻句；本批只有文字。",
+      "after": "徽章按最新单集规格书第5节使用；hl为原句连续片段，一句最多两条。2026-10-11经Willo新授权修订，逐条记录见docs/HINTS_REVISION_20261011.json。"
+    }
+  ],
+  "changes": [
+    {
+      "line_id": "l02",
+      "hint_number": 1,
+      "text": "What a wonderful planet this is!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "What a wonderful planet",
+        "zh": "What a 加形容词和单数名词。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "wonderful",
+        "zh": "What a 加形容词和单数名词。"
+      },
+      "reason": "只选取名词前作定语的形容词，使用ADJ；不将整个名词短语改称形容词。"
+    },
+    {
+      "line_id": "l06",
+      "hint_number": 1,
+      "text": "What beautiful flowers they have!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "What beautiful flowers",
+        "zh": "复数名词前不用 a 或 an。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "beautiful",
+        "zh": "复数名词前不用 a 或 an。"
+      },
+      "reason": "只选取名词前作定语的形容词，使用ADJ；不将整个名词短语改称形容词。"
+    },
+    {
+      "line_id": "l09",
+      "hint_number": 1,
+      "text": "What an unusual sock it is!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "What an unusual sock",
+        "zh": "unusual 以元音音素开头，用 an。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "unusual",
+        "zh": "unusual 以元音音素开头，用 an。"
+      },
+      "reason": "只选取名词前作定语的形容词，使用ADJ；不将整个名词短语改称形容词。"
+    },
+    {
+      "line_id": "l13",
+      "hint_number": 1,
+      "text": "What lovely weather we have here!",
+      "category": "用户指定",
+      "before": {
+        "b": "C",
+        "hl": "What lovely weather",
+        "zh": "weather 不可数，不加 a 或 an。"
+      },
+      "after": {
+        "b": "ADJ",
+        "hl": "lovely",
+        "zh": "weather 不可数，不加 a 或 an。"
+      },
+      "reason": "只选取名词前作定语的形容词，使用ADJ；不将整个名词短语改称形容词。"
+    }
+  ],
+  "retained_boundaries": [
+    {
+      "line_id": "l11",
+      "hint": {
+        "b": "C",
+        "hl": "makes Leo happy",
+        "zh": "形容词补充说明宾语 Leo 的状态。"
+      },
+      "status": "未覆盖语义边界",
+      "note": "makes Leo happy是宾补结构，本轮只指定定语ADJ和表语C；保留原提示，不据此声明宾补已修正。"
+    }
+  ],
+  "validation": {
+    "official_validator": "node tools/validate_episode.mjs ep07",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "all_hints_checked": 16,
+    "max_zh_characters_including_latin_spaces_and_punctuation": 22,
+    "max_hints_per_line": 2,
+    "highlight_all_found_in_original_lines": true,
+    "episode_js_and_lines_sha256_unchanged": {
+      "episode.js": "782d63f7fb429d75308b18877bbd4b1bcb1d7a0f468cba4748135ce4939bd2cf",
+      "audio/lines.json": "2d73b552d158cb8a78aefcbfa73e75d002ff2f6ba237646ad90cadaaabbc3ccc"
+    }
+  }
+}

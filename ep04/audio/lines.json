@@ -1,0 +1,2106 @@
+{
+ "l01": {
+  "who": "leo",
+  "text": "We are at the cave, and Biscuit is with us.",
+  "dur": 2.429,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.26
+   ],
+   [
+    "are",
+    0.26,
+    0.38
+   ],
+   [
+    "at",
+    0.38,
+    0.54
+   ],
+   [
+    "the",
+    0.54,
+    0.64
+   ],
+   [
+    "cave,",
+    0.64,
+    0.94
+   ],
+   [
+    "and",
+    1.2,
+    1.34
+   ],
+   [
+    "Biscuit",
+    1.34,
+    1.66
+   ],
+   [
+    "is",
+    1.66,
+    1.8
+   ],
+   [
+    "with",
+    1.8,
+    1.96
+   ],
+   [
+    "us.",
+    1.96,
+    2.22
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "narrator",
+  "text": "The green dragon is not asleep, but his eyes are closed.",
+  "dur": 4.389,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "green",
+    0.22,
+    0.5
+   ],
+   [
+    "dragon",
+    0.5,
+    0.92
+   ],
+   [
+    "is",
+    0.92,
+    1.32
+   ],
+   [
+    "not",
+    1.32,
+    1.64
+   ],
+   [
+    "asleep,",
+    1.64,
+    2.14
+   ],
+   [
+    "but",
+    2.48,
+    2.72
+   ],
+   [
+    "his",
+    2.72,
+    2.96
+   ],
+   [
+    "eyes",
+    2.96,
+    3.3
+   ],
+   [
+    "are",
+    3.3,
+    3.64
+   ],
+   [
+    "closed.",
+    3.64,
+    4.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "mia",
+  "text": "Are you awake?",
+  "dur": 1.254,
+  "words": [
+   [
+    "Are",
+    0.0,
+    0.26
+   ],
+   [
+    "you",
+    0.26,
+    0.52
+   ],
+   [
+    "awake?",
+    0.52,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "narrator",
+  "text": "The dragon is awake, and he opens one eye.",
+  "dur": 2.9,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "dragon",
+    0.22,
+    0.54
+   ],
+   [
+    "is",
+    0.54,
+    0.86
+   ],
+   [
+    "awake,",
+    0.86,
+    1.18
+   ],
+   [
+    "and",
+    1.64,
+    1.72
+   ],
+   [
+    "he",
+    1.72,
+    1.86
+   ],
+   [
+    "opens",
+    1.86,
+    2.16
+   ],
+   [
+    "one",
+    2.16,
+    2.42
+   ],
+   [
+    "eye.",
+    2.42,
+    2.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "mia",
+  "text": "Do you like riddles?",
+  "dur": 1.75,
+  "words": [
+   [
+    "Do",
+    0.0,
+    0.28
+   ],
+   [
+    "you",
+    0.28,
+    0.54
+   ],
+   [
+    "like",
+    0.54,
+    0.86
+   ],
+   [
+    "riddles?",
+    0.86,
+    1.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "sam",
+  "text": "I do not know any dragon riddles.",
+  "dur": 2.299,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.28
+   ],
+   [
+    "do",
+    0.28,
+    0.46
+   ],
+   [
+    "not",
+    0.46,
+    0.68
+   ],
+   [
+    "know",
+    0.68,
+    0.9
+   ],
+   [
+    "any",
+    0.9,
+    1.12
+   ],
+   [
+    "dragon",
+    1.12,
+    1.5
+   ],
+   [
+    "riddles.",
+    1.5,
+    1.9
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "leo",
+  "text": "Can you fly over this hill?",
+  "dur": 1.489,
+  "words": [
+   [
+    "Can",
+    0.0,
+    0.24
+   ],
+   [
+    "you",
+    0.24,
+    0.38
+   ],
+   [
+    "fly",
+    0.38,
+    0.62
+   ],
+   [
+    "over",
+    0.62,
+    0.84
+   ],
+   [
+    "this",
+    0.84,
+    1.06
+   ],
+   [
+    "hill?",
+    1.06,
+    1.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "narrator",
+  "text": "The dragon can fly, but he does not fly on Mondays.",
+  "dur": 3.5,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "dragon",
+    0.22,
+    0.48
+   ],
+   [
+    "can",
+    0.48,
+    0.76
+   ],
+   [
+    "fly,",
+    0.76,
+    1.08
+   ],
+   [
+    "but",
+    1.32,
+    1.58
+   ],
+   [
+    "he",
+    1.58,
+    1.84
+   ],
+   [
+    "does",
+    1.84,
+    2.0
+   ],
+   [
+    "not",
+    2.0,
+    2.26
+   ],
+   [
+    "fly",
+    2.26,
+    2.54
+   ],
+   [
+    "on",
+    2.54,
+    2.72
+   ],
+   [
+    "Mondays.",
+    2.72,
+    3.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "lily",
+  "text": "Why does he stay in the cave on Mondays?",
+  "dur": 1.855,
+  "words": [
+   [
+    "Why",
+    0.0,
+    0.24
+   ],
+   [
+    "does",
+    0.24,
+    0.36
+   ],
+   [
+    "he",
+    0.36,
+    0.48
+   ],
+   [
+    "stay",
+    0.48,
+    0.64
+   ],
+   [
+    "in",
+    0.64,
+    0.76
+   ],
+   [
+    "the",
+    0.76,
+    0.86
+   ],
+   [
+    "cave",
+    0.86,
+    1.0
+   ],
+   [
+    "on",
+    1.0,
+    1.18
+   ],
+   [
+    "Mondays?",
+    1.18,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "mia",
+  "text": "Does he guard gold or books?",
+  "dur": 2.456,
+  "words": [
+   [
+    "Does",
+    0.0,
+    0.3
+   ],
+   [
+    "he",
+    0.3,
+    0.6
+   ],
+   [
+    "guard",
+    0.6,
+    0.92
+   ],
+   [
+    "gold",
+    0.92,
+    1.38
+   ],
+   [
+    "or",
+    1.38,
+    1.68
+   ],
+   [
+    "books?",
+    1.68,
+    2.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "narrator",
+  "text": "He guards books, so he stays in and reads on Mondays.",
+  "dur": 3.631,
+  "words": [
+   [
+    "He",
+    0.0,
+    0.2
+   ],
+   [
+    "guards",
+    0.2,
+    0.46
+   ],
+   [
+    "books,",
+    0.46,
+    0.94
+   ],
+   [
+    "so",
+    1.22,
+    1.5
+   ],
+   [
+    "he",
+    1.5,
+    1.66
+   ],
+   [
+    "stays",
+    1.66,
+    1.9
+   ],
+   [
+    "in",
+    1.9,
+    2.22
+   ],
+   [
+    "and",
+    2.22,
+    2.46
+   ],
+   [
+    "reads",
+    2.46,
+    2.72
+   ],
+   [
+    "on",
+    2.72,
+    2.94
+   ],
+   [
+    "Mondays.",
+    2.94,
+    3.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "sam",
+  "text": "What is inside that basket?",
+  "dur": 1.855,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.32
+   ],
+   [
+    "is",
+    0.32,
+    0.5
+   ],
+   [
+    "inside",
+    0.5,
+    0.9
+   ],
+   [
+    "that",
+    0.9,
+    1.12
+   ],
+   [
+    "basket?",
+    1.12,
+    1.48
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "lily",
+  "text": "Who has the tiny egg now?",
+  "dur": 1.463,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.24
+   ],
+   [
+    "has",
+    0.24,
+    0.42
+   ],
+   [
+    "the",
+    0.42,
+    0.56
+   ],
+   [
+    "tiny",
+    0.56,
+    0.76
+   ],
+   [
+    "egg",
+    0.76,
+    1.0
+   ],
+   [
+    "now?",
+    1.0,
+    1.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "narrator",
+  "text": "The dragon recognises Grandpa's compass, and Biscuit has the tiny egg.",
+  "dur": 4.258,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dragon",
+    0.2,
+    0.5
+   ],
+   [
+    "recognises",
+    0.5,
+    1.2
+   ],
+   [
+    "Grandpa's",
+    1.2,
+    1.74
+   ],
+   [
+    "compass,",
+    1.74,
+    2.02
+   ],
+   [
+    "and",
+    2.54,
+    2.68
+   ],
+   [
+    "Biscuit",
+    2.68,
+    3.06
+   ],
+   [
+    "has",
+    3.06,
+    3.34
+   ],
+   [
+    "the",
+    3.34,
+    3.52
+   ],
+   [
+    "tiny",
+    3.52,
+    3.78
+   ],
+   [
+    "egg.",
+    3.78,
+    4.08
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l15": {
+  "who": "narrator",
+  "text": "Biscuit returns the egg, so the dragon gives the crew a star.",
+  "dur": 3.579,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.52
+   ],
+   [
+    "returns",
+    0.52,
+    0.86
+   ],
+   [
+    "the",
+    0.86,
+    1.04
+   ],
+   [
+    "egg,",
+    1.04,
+    1.34
+   ],
+   [
+    "so",
+    1.6,
+    1.78
+   ],
+   [
+    "the",
+    1.78,
+    1.92
+   ],
+   [
+    "dragon",
+    1.92,
+    2.18
+   ],
+   [
+    "gives",
+    2.18,
+    2.5
+   ],
+   [
+    "the",
+    2.5,
+    2.68
+   ],
+   [
+    "crew",
+    2.68,
+    2.88
+   ],
+   [
+    "a",
+    2.88,
+    3.12
+   ],
+   [
+    "star.",
+    3.12,
+    3.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_1": {
+  "who": "narrator",
+  "text": "You are ready.",
+  "dur": 1.019,
+  "words": [
+   [
+    "You",
+    0.0,
+    0.3
+   ],
+   [
+    "are",
+    0.3,
+    0.52
+   ],
+   [
+    "ready.",
+    0.52,
+    0.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_2": {
+  "who": "narrator",
+  "text": "Did he like books yesterday?",
+  "dur": 1.541,
+  "words": [
+   [
+    "Did",
+    0.0,
+    0.22
+   ],
+   [
+    "he",
+    0.22,
+    0.36
+   ],
+   [
+    "like",
+    0.36,
+    0.56
+   ],
+   [
+    "books",
+    0.56,
+    0.86
+   ],
+   [
+    "yesterday?",
+    0.86,
+    1.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_3": {
+  "who": "narrator",
+  "text": "Can the dragon fly?",
+  "dur": 1.254,
+  "words": [
+   [
+    "Can",
+    0.0,
+    0.24
+   ],
+   [
+    "the",
+    0.24,
+    0.38
+   ],
+   [
+    "dragon",
+    0.38,
+    0.62
+   ],
+   [
+    "fly?",
+    0.62,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_4": {
+  "who": "narrator",
+  "text": "The dragon cannot swim.",
+  "dur": 1.567,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dragon",
+    0.2,
+    0.48
+   ],
+   [
+    "cannot",
+    0.48,
+    0.9
+   ],
+   [
+    "swim.",
+    0.9,
+    1.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_1": {
+  "who": "narrator",
+  "text": "Is the dragon awake?",
+  "dur": 1.123,
+  "words": [
+   [
+    "Is",
+    0.0,
+    0.22
+   ],
+   [
+    "the",
+    0.22,
+    0.36
+   ],
+   [
+    "dragon",
+    0.36,
+    0.62
+   ],
+   [
+    "awake?",
+    0.62,
+    0.92
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_2": {
+  "who": "narrator",
+  "text": "Do the children like riddles?",
+  "dur": 1.646,
+  "words": [
+   [
+    "Do",
+    0.0,
+    0.22
+   ],
+   [
+    "the",
+    0.22,
+    0.38
+   ],
+   [
+    "children",
+    0.38,
+    0.6
+   ],
+   [
+    "like",
+    0.6,
+    0.92
+   ],
+   [
+    "riddles?",
+    0.92,
+    1.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_3": {
+  "who": "narrator",
+  "text": "Does the dragon like books?",
+  "dur": 1.672,
+  "words": [
+   [
+    "Does",
+    0.0,
+    0.24
+   ],
+   [
+    "the",
+    0.24,
+    0.38
+   ],
+   [
+    "dragon",
+    0.38,
+    0.6
+   ],
+   [
+    "like",
+    0.6,
+    0.9
+   ],
+   [
+    "books?",
+    0.9,
+    1.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_4": {
+  "who": "narrator",
+  "text": "Can Biscuit jump?",
+  "dur": 1.254,
+  "words": [
+   [
+    "Can",
+    0.0,
+    0.24
+   ],
+   [
+    "Biscuit",
+    0.24,
+    0.66
+   ],
+   [
+    "jump?",
+    0.66,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_5": {
+  "who": "narrator",
+  "text": "Yes, he does.",
+  "dur": 1.254,
+  "words": [
+   [
+    "Yes,",
+    0.0,
+    0.3
+   ],
+   [
+    "he",
+    0.56,
+    0.68
+   ],
+   [
+    "does.",
+    0.68,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_1": {
+  "who": "narrator",
+  "text": "The dragon is awake.",
+  "dur": 1.176,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "dragon",
+    0.2,
+    0.5
+   ],
+   [
+    "is",
+    0.5,
+    0.74
+   ],
+   [
+    "awake.",
+    0.74,
+    0.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_2": {
+  "who": "narrator",
+  "text": "Biscuit is not on the table.",
+  "dur": 1.646,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "is",
+    0.44,
+    0.58
+   ],
+   [
+    "not",
+    0.58,
+    0.8
+   ],
+   [
+    "on",
+    0.8,
+    1.04
+   ],
+   [
+    "the",
+    1.04,
+    1.14
+   ],
+   [
+    "table.",
+    1.14,
+    1.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_3": {
+  "who": "narrator",
+  "text": "The children are ready.",
+  "dur": 1.332,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "children",
+    0.2,
+    0.52
+   ],
+   [
+    "are",
+    0.52,
+    0.82
+   ],
+   [
+    "ready.",
+    0.82,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_4": {
+  "who": "narrator",
+  "text": "The egg is not in the basket.",
+  "dur": 1.829,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "egg",
+    0.2,
+    0.4
+   ],
+   [
+    "is",
+    0.4,
+    0.6
+   ],
+   [
+    "not",
+    0.6,
+    0.84
+   ],
+   [
+    "in",
+    0.84,
+    1.06
+   ],
+   [
+    "the",
+    1.06,
+    1.16
+   ],
+   [
+    "basket.",
+    1.16,
+    1.44
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "The dragon is not angry.",
+  "dur": 1.724,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "dragon",
+    0.18,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.76
+   ],
+   [
+    "not",
+    0.76,
+    1.02
+   ],
+   [
+    "angry.",
+    1.02,
+    1.46
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "Sam doesn’t like gold.",
+  "dur": 1.75,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.46
+   ],
+   [
+    "doesn’t",
+    0.46,
+    0.92
+   ],
+   [
+    "like",
+    0.92,
+    1.1
+   ],
+   [
+    "gold.",
+    1.1,
+    1.42
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "We are not late.",
+  "dur": 1.489,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.28
+   ],
+   [
+    "are",
+    0.28,
+    0.46
+   ],
+   [
+    "not",
+    0.46,
+    0.72
+   ],
+   [
+    "late.",
+    0.72,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "Biscuit can’t fly.",
+  "dur": 1.384,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.48
+   ],
+   [
+    "can’t",
+    0.48,
+    0.86
+   ],
+   [
+    "fly.",
+    0.86,
+    1.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "narrator",
+  "text": "Where does the dragon live?",
+  "dur": 1.463,
+  "words": [
+   [
+    "Where",
+    0.0,
+    0.32
+   ],
+   [
+    "does",
+    0.32,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.66
+   ],
+   [
+    "dragon",
+    0.66,
+    0.9
+   ],
+   [
+    "live?",
+    0.9,
+    1.26
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "How often does the dragon read?",
+  "dur": 2.064,
+  "words": [
+   [
+    "How",
+    0.0,
+    0.32
+   ],
+   [
+    "often",
+    0.32,
+    0.66
+   ],
+   [
+    "does",
+    0.66,
+    0.9
+   ],
+   [
+    "the",
+    0.9,
+    1.04
+   ],
+   [
+    "dragon",
+    1.04,
+    1.32
+   ],
+   [
+    "read?",
+    1.32,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
+  "who": "narrator",
+  "text": "Where does the dragon live?",
+  "dur": 1.724,
+  "words": [
+   [
+    "Where",
+    0.0,
+    0.42
+   ],
+   [
+    "does",
+    0.42,
+    0.68
+   ],
+   [
+    "the",
+    0.68,
+    0.82
+   ],
+   [
+    "dragon",
+    0.82,
+    1.1
+   ],
+   [
+    "live?",
+    1.1,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_4": {
+  "who": "narrator",
+  "text": "Who likes riddles?",
+  "dur": 1.593,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.32
+   ],
+   [
+    "likes",
+    0.32,
+    0.64
+   ],
+   [
+    "riddles?",
+    0.64,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_5": {
+  "who": "narrator",
+  "text": "It is the fifth of May.",
+  "dur": 1.881,
+  "words": [
+   [
+    "It",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.64
+   ],
+   [
+    "the",
+    0.64,
+    0.8
+   ],
+   [
+    "fifth",
+    0.8,
+    1.06
+   ],
+   [
+    "of",
+    1.06,
+    1.36
+   ],
+   [
+    "May.",
+    1.36,
+    1.64
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_1": {
+  "who": "narrator",
+  "text": "Mia asks a question, and Lily listens.",
+  "dur": 3.187,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.36
+   ],
+   [
+    "asks",
+    0.36,
+    0.82
+   ],
+   [
+    "a",
+    0.82,
+    1.08
+   ],
+   [
+    "question,",
+    1.08,
+    1.46
+   ],
+   [
+    "and",
+    2.0,
+    2.05
+   ],
+   [
+    "Lily",
+    2.04,
+    2.24
+   ],
+   [
+    "listens.",
+    2.24,
+    2.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_2": {
+  "who": "narrator",
+  "text": "The dragon is huge, but he is friendly.",
+  "dur": 2.743,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "dragon",
+    0.18,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.78
+   ],
+   [
+    "huge,",
+    0.78,
+    1.1
+   ],
+   [
+    "but",
+    1.56,
+    1.78
+   ],
+   [
+    "he",
+    1.78,
+    2.04
+   ],
+   [
+    "is",
+    2.04,
+    2.14
+   ],
+   [
+    "friendly.",
+    2.14,
+    2.38
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_3": {
+  "who": "narrator",
+  "text": "The cave is dark, so Leo uses a torch.",
+  "dur": 3.056,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "cave",
+    0.2,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.68
+   ],
+   [
+    "dark,",
+    0.68,
+    1.04
+   ],
+   [
+    "so",
+    1.46,
+    1.54
+   ],
+   [
+    "Leo",
+    1.54,
+    1.78
+   ],
+   [
+    "uses",
+    1.78,
+    2.2
+   ],
+   [
+    "a",
+    2.2,
+    2.38
+   ],
+   [
+    "torch.",
+    2.38,
+    2.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_4": {
+  "who": "narrator",
+  "text": "Ask clearly, or the dragon cannot help.",
+  "dur": 3.056,
+  "words": [
+   [
+    "Ask",
+    0.0,
+    0.42
+   ],
+   [
+    "clearly,",
+    0.42,
+    0.98
+   ],
+   [
+    "or",
+    1.42,
+    1.48
+   ],
+   [
+    "the",
+    1.48,
+    1.62
+   ],
+   [
+    "dragon",
+    1.62,
+    1.92
+   ],
+   [
+    "cannot",
+    1.92,
+    2.3
+   ],
+   [
+    "help.",
+    2.3,
+    2.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_1": {
+  "who": "narrator",
+  "text": "Does he guard gold or books?",
+  "dur": 2.168,
+  "words": [
+   [
+    "Does",
+    0.0,
+    0.26
+   ],
+   [
+    "he",
+    0.26,
+    0.42
+   ],
+   [
+    "guard",
+    0.42,
+    0.68
+   ],
+   [
+    "gold",
+    0.68,
+    1.06
+   ],
+   [
+    "or",
+    1.06,
+    1.44
+   ],
+   [
+    "books?",
+    1.44,
+    1.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "He guards books.",
+  "dur": 1.384,
+  "words": [
+   [
+    "He",
+    0.0,
+    0.22
+   ],
+   [
+    "guards",
+    0.22,
+    0.52
+   ],
+   [
+    "books.",
+    0.52,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "Mia likes riddles, and Sam likes football.",
+  "dur": 3.109,
+  "words": [
+   [
+    "Mia",
+    0.0,
+    0.36
+   ],
+   [
+    "likes",
+    0.36,
+    0.7
+   ],
+   [
+    "riddles,",
+    0.7,
+    1.16
+   ],
+   [
+    "and",
+    1.54,
+    1.68
+   ],
+   [
+    "Sam",
+    1.68,
+    2.04
+   ],
+   [
+    "likes",
+    2.04,
+    2.46
+   ],
+   [
+    "football.",
+    2.46,
+    2.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "Yes, he is.",
+  "dur": 1.567,
+  "words": [
+   [
+    "Yes,",
+    0.0,
+    0.38
+   ],
+   [
+    "he",
+    0.8,
+    0.92
+   ],
+   [
+    "is.",
+    0.92,
+    1.18
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "narrator",
+  "text": "I am ready.",
+  "dur": 0.888,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.28
+   ],
+   [
+    "am",
+    0.28,
+    0.4
+   ],
+   [
+    "ready.",
+    0.4,
+    0.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "narrator",
+  "text": "Does the dragon like books?",
+  "dur": 1.567,
+  "words": [
+   [
+    "Does",
+    0.0,
+    0.24
+   ],
+   [
+    "the",
+    0.24,
+    0.36
+   ],
+   [
+    "dragon",
+    0.36,
+    0.58
+   ],
+   [
+    "like",
+    0.58,
+    0.84
+   ],
+   [
+    "books?",
+    0.84,
+    1.1
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "narrator",
+  "text": "Biscuit is not asleep.",
+  "dur": 1.646,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.48
+   ],
+   [
+    "is",
+    0.48,
+    0.64
+   ],
+   [
+    "not",
+    0.64,
+    0.88
+   ],
+   [
+    "asleep.",
+    0.88,
+    1.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "Can Sam run?",
+  "dur": 1.254,
+  "words": [
+   [
+    "Can",
+    0.0,
+    0.28
+   ],
+   [
+    "Sam",
+    0.28,
+    0.58
+   ],
+   [
+    "run?",
+    0.58,
+    0.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "narrator",
+  "text": "Where does the dragon live?",
+  "dur": 1.489,
+  "words": [
+   [
+    "Where",
+    0.0,
+    0.34
+   ],
+   [
+    "does",
+    0.34,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.64
+   ],
+   [
+    "dragon",
+    0.64,
+    0.88
+   ],
+   [
+    "live?",
+    0.88,
+    1.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "narrator",
+  "text": "Who has the egg?",
+  "dur": 1.358,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.3
+   ],
+   [
+    "has",
+    0.3,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.76
+   ],
+   [
+    "egg?",
+    0.76,
+    1.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "narrator",
+  "text": "The cave is dark, so Lily uses a torch.",
+  "dur": 2.978,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "cave",
+    0.22,
+    0.46
+   ],
+   [
+    "is",
+    0.46,
+    0.66
+   ],
+   [
+    "dark,",
+    0.66,
+    1.02
+   ],
+   [
+    "so",
+    1.46,
+    1.6
+   ],
+   [
+    "Lily",
+    1.6,
+    1.76
+   ],
+   [
+    "uses",
+    1.76,
+    2.12
+   ],
+   [
+    "a",
+    2.12,
+    2.32
+   ],
+   [
+    "torch.",
+    2.32,
+    2.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "He guards books.",
+  "dur": 1.411,
+  "words": [
+   [
+    "He",
+    0.0,
+    0.22
+   ],
+   [
+    "guards",
+    0.22,
+    0.54
+   ],
+   [
+    "books.",
+    0.54,
+    0.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_who": {
+  "who": "leo",
+  "text": "Who has the book?",
+  "dur": 1.28,
+  "words": [
+   [
+    "Who",
+    0.0,
+    0.26
+   ],
+   [
+    "has",
+    0.26,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.72
+   ],
+   [
+    "book?",
+    0.72,
+    0.96
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_where": {
+  "who": "leo",
+  "text": "Where does the dragon live?",
+  "dur": 1.985,
+  "words": [
+   [
+    "Where",
+    0.0,
+    0.38
+   ],
+   [
+    "does",
+    0.38,
+    0.58
+   ],
+   [
+    "the",
+    0.58,
+    0.76
+   ],
+   [
+    "dragon",
+    0.76,
+    1.14
+   ],
+   [
+    "live?",
+    1.14,
+    1.62
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_can": {
+  "who": "leo",
+  "text": "Can Biscuit jump?",
+  "dur": 1.437,
+  "words": [
+   [
+    "Can",
+    0.0,
+    0.26
+   ],
+   [
+    "Biscuit",
+    0.26,
+    0.76
+   ],
+   [
+    "jump?",
+    0.76,
+    1.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_choice": {
+  "who": "leo",
+  "text": "Does he guard gold or books?",
+  "dur": 2.116,
+  "words": [
+   [
+    "Does",
+    0.0,
+    0.24
+   ],
+   [
+    "he",
+    0.24,
+    0.44
+   ],
+   [
+    "guard",
+    0.44,
+    0.74
+   ],
+   [
+    "gold",
+    0.74,
+    1.08
+   ],
+   [
+    "or",
+    1.08,
+    1.38
+   ],
+   [
+    "books?",
+    1.38,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "The fourth star is home!",
+  "dur": 1.855,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "fourth",
+    0.2,
+    0.5
+   ],
+   [
+    "star",
+    0.5,
+    0.98
+   ],
+   [
+    "is",
+    0.98,
+    1.22
+   ],
+   [
+    "home!",
+    1.22,
+    1.54
+   ]
+  ],
+  "align": "whisper"
+ }
+}

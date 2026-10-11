@@ -1,0 +1,107 @@
+{
+  "l01": [
+    {
+      "b": "INV",
+      "hl": "Here are Leo, Mia, Sam and Lily",
+      "zh": "here开头，名词主语放在be后"
+    }
+  ],
+  "l02": [
+    {
+      "b": "INV",
+      "hl": "so does Grandpa",
+      "zh": "爷爷也是：so加does再加主语"
+    }
+  ],
+  "l03": [
+    {
+      "b": "INV",
+      "hl": "neither can Lily",
+      "zh": "前句否定：neither加can再加主语"
+    }
+  ],
+  "l04": [
+    {
+      "b": "INV",
+      "hl": "Here comes Biscuit",
+      "zh": "here开头：动词放在名词主语前"
+    }
+  ],
+  "l05": [
+    {
+      "b": "REL",
+      "hl": "who found the compass",
+      "zh": "who给boy补充说明：找到罗盘的男孩"
+    }
+  ],
+  "l06": [
+    {
+      "b": "REL",
+      "hl": "that brought us home",
+      "zh": "that给compass补充说明"
+    }
+  ],
+  "l07": [
+    {
+      "b": "REL",
+      "hl": "which Grandpa left",
+      "zh": "which在从句中代替被留下的信"
+    }
+  ],
+  "l08": [
+    {
+      "b": "INV",
+      "hl": "Here it is",
+      "zh": "主语是it：保留主语在动词前"
+    }
+  ],
+  "l09": [
+    {
+      "b": "INV",
+      "hl": "so has Leo",
+      "zh": "前句用have，Leo对应has"
+    }
+  ],
+  "l10": [
+    {
+      "b": "INV",
+      "hl": "is the last star",
+      "zh": "地点放句首：名词主语可放动词后"
+    }
+  ],
+  "l11": [
+    {
+      "b": "REL",
+      "hl": "that Mia found in London",
+      "zh": "that代替被找到的零件"
+    }
+  ],
+  "l12": [
+    {
+      "b": "INV",
+      "hl": "Never have I seen",
+      "zh": "Never放句首强调，have提到主语前"
+    }
+  ],
+  "l13": [
+    {
+      "b": "REL",
+      "hl": "that will travel together",
+      "zh": "that给family补充说明"
+    }
+  ],
+  "l14": [
+    {
+      "b": "INV",
+      "hl": "Here are Mum and Dad",
+      "zh": "两个人作主语，be用are"
+    }
+  ],
+  "l15": [
+    {
+      "b": "INV",
+      "hl": "Here we go",
+      "zh": "主语是we：不把go提到we前"
+    }
+  ]
+}

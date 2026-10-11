@@ -1,0 +1,2414 @@
+{
+ "l01": {
+  "who": "narrator",
+  "text": "Here are Leo, Mia, Sam and Lily, back in Grandpa's living room.",
+  "dur": 5.016,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.28
+   ],
+   [
+    "are",
+    0.28,
+    0.6
+   ],
+   [
+    "Leo,",
+    0.6,
+    0.94
+   ],
+   [
+    "Mia,",
+    1.26,
+    1.5
+   ],
+   [
+    "Sam",
+    2.0,
+    2.34
+   ],
+   [
+    "and",
+    2.34,
+    2.78
+   ],
+   [
+    "Lily,",
+    2.78,
+    3.04
+   ],
+   [
+    "back",
+    3.46,
+    3.68
+   ],
+   [
+    "in",
+    3.68,
+    3.9
+   ],
+   [
+    "Grandpa's",
+    3.9,
+    4.38
+   ],
+   [
+    "living",
+    4.38,
+    4.5
+   ],
+   [
+    "room.",
+    4.5,
+    4.78
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l02": {
+  "who": "leo",
+  "text": "I love adventures, and so does Grandpa.",
+  "dur": 2.638,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.26
+   ],
+   [
+    "love",
+    0.26,
+    0.48
+   ],
+   [
+    "adventures,",
+    0.48,
+    0.98
+   ],
+   [
+    "and",
+    1.4,
+    1.48
+   ],
+   [
+    "so",
+    1.48,
+    1.68
+   ],
+   [
+    "does",
+    1.68,
+    1.88
+   ],
+   [
+    "Grandpa.",
+    1.88,
+    2.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l03": {
+  "who": "mia",
+  "text": "I can't wait, and neither can Lily.",
+  "dur": 3.657,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.32
+   ],
+   [
+    "can't",
+    0.32,
+    0.82
+   ],
+   [
+    "wait,",
+    0.82,
+    1.22
+   ],
+   [
+    "and",
+    1.68,
+    1.98
+   ],
+   [
+    "neither",
+    1.98,
+    2.32
+   ],
+   [
+    "can",
+    2.32,
+    2.88
+   ],
+   [
+    "Lily.",
+    2.88,
+    3.2
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l04": {
+  "who": "narrator",
+  "text": "Here comes Biscuit with a sock in his mouth.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.24
+   ],
+   [
+    "comes",
+    0.24,
+    0.52
+   ],
+   [
+    "Biscuit",
+    0.52,
+    0.98
+   ],
+   [
+    "with",
+    0.98,
+    1.12
+   ],
+   [
+    "a",
+    1.12,
+    1.28
+   ],
+   [
+    "sock",
+    1.28,
+    1.46
+   ],
+   [
+    "in",
+    1.46,
+    1.62
+   ],
+   [
+    "his",
+    1.62,
+    1.74
+   ],
+   [
+    "mouth.",
+    1.74,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l05": {
+  "who": "grandpa",
+  "text": "Here is the boy who found the compass.",
+  "dur": 1.959,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.4
+   ],
+   [
+    "the",
+    0.4,
+    0.54
+   ],
+   [
+    "boy",
+    0.54,
+    0.74
+   ],
+   [
+    "who",
+    0.74,
+    0.94
+   ],
+   [
+    "found",
+    0.94,
+    1.14
+   ],
+   [
+    "the",
+    1.14,
+    1.32
+   ],
+   [
+    "compass.",
+    1.32,
+    1.58
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l06": {
+  "who": "mia",
+  "text": "This is the compass that brought us home.",
+  "dur": 3.265,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.38
+   ],
+   [
+    "is",
+    0.38,
+    0.7
+   ],
+   [
+    "the",
+    0.7,
+    0.94
+   ],
+   [
+    "compass",
+    0.94,
+    1.4
+   ],
+   [
+    "that",
+    1.4,
+    1.8
+   ],
+   [
+    "brought",
+    1.8,
+    2.16
+   ],
+   [
+    "us",
+    2.16,
+    2.52
+   ],
+   [
+    "home.",
+    2.52,
+    2.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l07": {
+  "who": "lily",
+  "text": "The letter which Grandpa left is in the chess box.",
+  "dur": 2.377,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "letter",
+    0.2,
+    0.36
+   ],
+   [
+    "which",
+    0.36,
+    0.58
+   ],
+   [
+    "Grandpa",
+    0.58,
+    0.94
+   ],
+   [
+    "left",
+    0.94,
+    1.12
+   ],
+   [
+    "is",
+    1.12,
+    1.34
+   ],
+   [
+    "in",
+    1.34,
+    1.42
+   ],
+   [
+    "the",
+    1.42,
+    1.52
+   ],
+   [
+    "chess",
+    1.52,
+    1.72
+   ],
+   [
+    "box.",
+    1.72,
+    1.98
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l08": {
+  "who": "grandpa",
+  "text": "Here it is!",
+  "dur": 0.836,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.24
+   ],
+   [
+    "it",
+    0.24,
+    0.36
+   ],
+   [
+    "is!",
+    0.36,
+    0.6
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l09": {
+  "who": "sam",
+  "text": "I have packed my bag, and so has Leo.",
+  "dur": 3.213,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.3
+   ],
+   [
+    "have",
+    0.3,
+    0.48
+   ],
+   [
+    "packed",
+    0.48,
+    0.82
+   ],
+   [
+    "my",
+    0.82,
+    1.1
+   ],
+   [
+    "bag,",
+    1.1,
+    1.54
+   ],
+   [
+    "and",
+    2.02,
+    2.12
+   ],
+   [
+    "so",
+    2.12,
+    2.32
+   ],
+   [
+    "has",
+    2.32,
+    2.6
+   ],
+   [
+    "Leo.",
+    2.6,
+    2.82
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l10": {
+  "who": "narrator",
+  "text": "Inside the chess box is the last star.",
+  "dur": 2.56,
+  "words": [
+   [
+    "Inside",
+    0.0,
+    0.52
+   ],
+   [
+    "the",
+    0.52,
+    0.72
+   ],
+   [
+    "chess",
+    0.72,
+    0.96
+   ],
+   [
+    "box",
+    0.96,
+    1.28
+   ],
+   [
+    "is",
+    1.28,
+    1.6
+   ],
+   [
+    "the",
+    1.6,
+    1.76
+   ],
+   [
+    "last",
+    1.76,
+    1.98
+   ],
+   [
+    "star.",
+    1.98,
+    2.36
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l11": {
+  "who": "lily",
+  "text": "Here is the part that Mia found in London.",
+  "dur": 1.985,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.36
+   ],
+   [
+    "the",
+    0.36,
+    0.48
+   ],
+   [
+    "part",
+    0.48,
+    0.62
+   ],
+   [
+    "that",
+    0.62,
+    0.78
+   ],
+   [
+    "Mia",
+    0.78,
+    0.96
+   ],
+   [
+    "found",
+    0.96,
+    1.24
+   ],
+   [
+    "in",
+    1.24,
+    1.4
+   ],
+   [
+    "London.",
+    1.4,
+    1.6
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l12": {
+  "who": "grandpa",
+  "text": "Never have I seen the compass so bright!",
+  "dur": 2.011,
+  "words": [
+   [
+    "Never",
+    0.0,
+    0.32
+   ],
+   [
+    "have",
+    0.32,
+    0.52
+   ],
+   [
+    "I",
+    0.52,
+    0.68
+   ],
+   [
+    "seen",
+    0.68,
+    0.86
+   ],
+   [
+    "the",
+    0.86,
+    1.06
+   ],
+   [
+    "compass",
+    1.06,
+    1.32
+   ],
+   [
+    "so",
+    1.32,
+    1.62
+   ],
+   [
+    "bright!",
+    1.62,
+    1.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l13": {
+  "who": "leo",
+  "text": "This is the family that will travel together.",
+  "dur": 2.168,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.56
+   ],
+   [
+    "family",
+    0.56,
+    0.8
+   ],
+   [
+    "that",
+    0.8,
+    1.04
+   ],
+   [
+    "will",
+    1.04,
+    1.2
+   ],
+   [
+    "travel",
+    1.2,
+    1.48
+   ],
+   [
+    "together.",
+    1.48,
+    1.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l14": {
+  "who": "narrator",
+  "text": "Here are Mum and Dad, ready to join the adventure.",
+  "dur": 2.9,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.26
+   ],
+   [
+    "are",
+    0.26,
+    0.42
+   ],
+   [
+    "Mum",
+    0.42,
+    0.58
+   ],
+   [
+    "and",
+    0.58,
+    0.74
+   ],
+   [
+    "Dad,",
+    0.74,
+    1.02
+   ],
+   [
+    "ready",
+    1.4,
+    1.54
+   ],
+   [
+    "to",
+    1.54,
+    1.82
+   ],
+   [
+    "join",
+    1.82,
+    2.06
+   ],
+   [
+    "the",
+    2.06,
+    2.22
+   ],
+   [
+    "adventure.",
+    2.22,
+    2.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "l15": {
+  "who": "grandpa",
+  "text": "Here we go, together!",
+  "dur": 2.273,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.8
+   ],
+   [
+    "we",
+    0.8,
+    0.92
+   ],
+   [
+    "go,",
+    0.92,
+    1.28
+   ],
+   [
+    "together!",
+    1.66,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_1": {
+  "who": "narrator",
+  "text": "So do I.",
+  "dur": 1.019,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.32
+   ],
+   [
+    "do",
+    0.32,
+    0.46
+   ],
+   [
+    "I.",
+    0.46,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_2": {
+  "who": "narrator",
+  "text": "So am I.",
+  "dur": 0.94,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.34
+   ],
+   [
+    "am",
+    0.34,
+    0.5
+   ],
+   [
+    "I.",
+    0.5,
+    0.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_3": {
+  "who": "narrator",
+  "text": "So did I.",
+  "dur": 0.993,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.3
+   ],
+   [
+    "did",
+    0.3,
+    0.46
+   ],
+   [
+    "I.",
+    0.46,
+    0.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q1_4": {
+  "who": "narrator",
+  "text": "So has Leo.",
+  "dur": 1.097,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.32
+   ],
+   [
+    "has",
+    0.32,
+    0.52
+   ],
+   [
+    "Leo.",
+    0.52,
+    0.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_1": {
+  "who": "narrator",
+  "text": "Neither can I.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.3
+   ],
+   [
+    "can",
+    0.3,
+    0.54
+   ],
+   [
+    "I.",
+    0.54,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_2": {
+  "who": "narrator",
+  "text": "Neither do I.",
+  "dur": 1.123,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.36
+   ],
+   [
+    "do",
+    0.36,
+    0.6
+   ],
+   [
+    "I.",
+    0.6,
+    0.88
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_3": {
+  "who": "narrator",
+  "text": "Neither am I.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.36
+   ],
+   [
+    "am",
+    0.36,
+    0.58
+   ],
+   [
+    "I.",
+    0.58,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q2_4": {
+  "who": "narrator",
+  "text": "Neither did I.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.34
+   ],
+   [
+    "did",
+    0.34,
+    0.58
+   ],
+   [
+    "I.",
+    0.58,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_1": {
+  "who": "narrator",
+  "text": "Here he comes.",
+  "dur": 1.045,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.26
+   ],
+   [
+    "he",
+    0.26,
+    0.36
+   ],
+   [
+    "comes.",
+    0.36,
+    0.72
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_2": {
+  "who": "narrator",
+  "text": "Here are Mum and Dad.",
+  "dur": 1.306,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.28
+   ],
+   [
+    "are",
+    0.28,
+    0.44
+   ],
+   [
+    "Mum",
+    0.44,
+    0.58
+   ],
+   [
+    "and",
+    0.58,
+    0.72
+   ],
+   [
+    "Dad.",
+    0.72,
+    1.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_3": {
+  "who": "narrator",
+  "text": "There goes the bell.",
+  "dur": 1.071,
+  "words": [
+   [
+    "There",
+    0.0,
+    0.22
+   ],
+   [
+    "goes",
+    0.22,
+    0.42
+   ],
+   [
+    "the",
+    0.42,
+    0.58
+   ],
+   [
+    "bell.",
+    0.58,
+    0.8
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q3_4": {
+  "who": "narrator",
+  "text": "Never have I seen it so bright.",
+  "dur": 2.011,
+  "words": [
+   [
+    "Never",
+    0.0,
+    0.36
+   ],
+   [
+    "have",
+    0.36,
+    0.58
+   ],
+   [
+    "I",
+    0.58,
+    0.72
+   ],
+   [
+    "seen",
+    0.72,
+    0.96
+   ],
+   [
+    "it",
+    0.96,
+    1.14
+   ],
+   [
+    "so",
+    1.14,
+    1.4
+   ],
+   [
+    "bright.",
+    1.4,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_1": {
+  "who": "narrator",
+  "text": "This is the girl who is drawing.",
+  "dur": 1.881,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.46
+   ],
+   [
+    "the",
+    0.46,
+    0.6
+   ],
+   [
+    "girl",
+    0.6,
+    0.84
+   ],
+   [
+    "who",
+    0.84,
+    1.04
+   ],
+   [
+    "is",
+    1.04,
+    1.2
+   ],
+   [
+    "drawing.",
+    1.2,
+    1.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_2": {
+  "who": "narrator",
+  "text": "This is the boy who is running.",
+  "dur": 1.698,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.5
+   ],
+   [
+    "boy",
+    0.5,
+    0.72
+   ],
+   [
+    "who",
+    0.72,
+    0.98
+   ],
+   [
+    "is",
+    0.98,
+    1.08
+   ],
+   [
+    "running.",
+    1.08,
+    1.3
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_3": {
+  "who": "narrator",
+  "text": "This is the box that holds the star.",
+  "dur": 1.985,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.5
+   ],
+   [
+    "box",
+    0.5,
+    0.68
+   ],
+   [
+    "that",
+    0.68,
+    0.98
+   ],
+   [
+    "holds",
+    0.98,
+    1.24
+   ],
+   [
+    "the",
+    1.24,
+    1.46
+   ],
+   [
+    "star.",
+    1.46,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q4_4": {
+  "who": "narrator",
+  "text": "This is the dog that is carrying a sock.",
+  "dur": 2.011,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.4
+   ],
+   [
+    "the",
+    0.4,
+    0.54
+   ],
+   [
+    "dog",
+    0.54,
+    0.76
+   ],
+   [
+    "that",
+    0.76,
+    0.96
+   ],
+   [
+    "is",
+    0.96,
+    1.1
+   ],
+   [
+    "carrying",
+    1.1,
+    1.46
+   ],
+   [
+    "a",
+    1.46,
+    1.64
+   ],
+   [
+    "sock.",
+    1.64,
+    1.82
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_1": {
+  "who": "narrator",
+  "text": "The boy who found the compass is Grandpa.",
+  "dur": 2.299,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "boy",
+    0.22,
+    0.42
+   ],
+   [
+    "who",
+    0.42,
+    0.64
+   ],
+   [
+    "found",
+    0.64,
+    0.88
+   ],
+   [
+    "the",
+    0.88,
+    1.04
+   ],
+   [
+    "compass",
+    1.04,
+    1.36
+   ],
+   [
+    "is",
+    1.36,
+    1.7
+   ],
+   [
+    "Grandpa.",
+    1.7,
+    2.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_2": {
+  "who": "narrator",
+  "text": "Grandpa is the boy who found the compass.",
+  "dur": 2.429,
+  "words": [
+   [
+    "Grandpa",
+    0.0,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.74
+   ],
+   [
+    "the",
+    0.74,
+    0.9
+   ],
+   [
+    "boy",
+    0.9,
+    1.08
+   ],
+   [
+    "who",
+    1.08,
+    1.32
+   ],
+   [
+    "found",
+    1.32,
+    1.54
+   ],
+   [
+    "the",
+    1.54,
+    1.72
+   ],
+   [
+    "compass.",
+    1.72,
+    2.04
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_3": {
+  "who": "narrator",
+  "text": "This is the compass that brought us home.",
+  "dur": 1.985,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.28
+   ],
+   [
+    "is",
+    0.28,
+    0.4
+   ],
+   [
+    "the",
+    0.4,
+    0.54
+   ],
+   [
+    "compass",
+    0.54,
+    0.84
+   ],
+   [
+    "that",
+    0.84,
+    1.1
+   ],
+   [
+    "brought",
+    1.1,
+    1.26
+   ],
+   [
+    "us",
+    1.26,
+    1.48
+   ],
+   [
+    "home.",
+    1.48,
+    1.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q5_4": {
+  "who": "narrator",
+  "text": "The letter which Grandpa left is here.",
+  "dur": 2.194,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "letter",
+    0.2,
+    0.5
+   ],
+   [
+    "which",
+    0.5,
+    0.78
+   ],
+   [
+    "Grandpa",
+    0.78,
+    1.14
+   ],
+   [
+    "left",
+    1.14,
+    1.36
+   ],
+   [
+    "is",
+    1.36,
+    1.66
+   ],
+   [
+    "here.",
+    1.66,
+    2.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_1": {
+  "who": "narrator",
+  "text": "So do I.",
+  "dur": 0.914,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.32
+   ],
+   [
+    "do",
+    0.32,
+    0.46
+   ],
+   [
+    "I.",
+    0.46,
+    0.7
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_2": {
+  "who": "narrator",
+  "text": "Here comes Biscuit.",
+  "dur": 1.306,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.26
+   ],
+   [
+    "comes",
+    0.26,
+    0.5
+   ],
+   [
+    "Biscuit.",
+    0.5,
+    1.06
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_3": {
+  "who": "narrator",
+  "text": "Grandpa is the boy who found the compass.",
+  "dur": 2.429,
+  "words": [
+   [
+    "Grandpa",
+    0.0,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.72
+   ],
+   [
+    "the",
+    0.72,
+    0.86
+   ],
+   [
+    "boy",
+    0.86,
+    1.04
+   ],
+   [
+    "who",
+    1.04,
+    1.26
+   ],
+   [
+    "found",
+    1.26,
+    1.52
+   ],
+   [
+    "the",
+    1.52,
+    1.7
+   ],
+   [
+    "compass.",
+    1.7,
+    2.02
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q6_4": {
+  "who": "narrator",
+  "text": "The letter which Grandpa left is here.",
+  "dur": 2.038,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.2
+   ],
+   [
+    "letter",
+    0.2,
+    0.46
+   ],
+   [
+    "which",
+    0.46,
+    0.72
+   ],
+   [
+    "Grandpa",
+    0.72,
+    1.12
+   ],
+   [
+    "left",
+    1.12,
+    1.32
+   ],
+   [
+    "is",
+    1.32,
+    1.52
+   ],
+   [
+    "here.",
+    1.52,
+    1.86
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_1": {
+  "who": "narrator",
+  "text": "Biscuit finds things, and Leo carries an umbrella.",
+  "dur": 3.265,
+  "words": [
+   [
+    "Biscuit",
+    0.0,
+    0.44
+   ],
+   [
+    "finds",
+    0.44,
+    0.7
+   ],
+   [
+    "things,",
+    0.7,
+    1.18
+   ],
+   [
+    "and",
+    1.76,
+    1.86
+   ],
+   [
+    "Leo",
+    1.86,
+    2.16
+   ],
+   [
+    "carries",
+    2.16,
+    2.52
+   ],
+   [
+    "an",
+    2.52,
+    2.7
+   ],
+   [
+    "umbrella.",
+    2.7,
+    2.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_2": {
+  "who": "narrator",
+  "text": "Whose bag is this? It is mine.",
+  "dur": 2.456,
+  "words": [
+   [
+    "Whose",
+    0.0,
+    0.3
+   ],
+   [
+    "bag",
+    0.3,
+    0.52
+   ],
+   [
+    "is",
+    0.52,
+    0.7
+   ],
+   [
+    "this?",
+    0.7,
+    1.0
+   ],
+   [
+    "It",
+    1.6,
+    1.7
+   ],
+   [
+    "is",
+    1.7,
+    1.84
+   ],
+   [
+    "mine.",
+    1.84,
+    2.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_3": {
+  "who": "narrator",
+  "text": "The robot works every day; the race starts at three.",
+  "dur": 3.814,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "robot",
+    0.22,
+    0.48
+   ],
+   [
+    "works",
+    0.48,
+    0.92
+   ],
+   [
+    "every",
+    0.92,
+    1.28
+   ],
+   [
+    "day;",
+    1.28,
+    1.58
+   ],
+   [
+    "the",
+    2.32,
+    2.44
+   ],
+   [
+    "race",
+    2.44,
+    2.68
+   ],
+   [
+    "starts",
+    2.68,
+    3.04
+   ],
+   [
+    "at",
+    3.04,
+    3.28
+   ],
+   [
+    "three.",
+    3.28,
+    3.54
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_4": {
+  "who": "narrator",
+  "text": "What a lovely planet! Mia is drawing it now.",
+  "dur": 3.474,
+  "words": [
+   [
+    "What",
+    0.0,
+    0.24
+   ],
+   [
+    "a",
+    0.24,
+    0.42
+   ],
+   [
+    "lovely",
+    0.42,
+    0.72
+   ],
+   [
+    "planet!",
+    0.72,
+    1.22
+   ],
+   [
+    "Mia",
+    2.14,
+    2.24
+   ],
+   [
+    "is",
+    2.24,
+    2.52
+   ],
+   [
+    "drawing",
+    2.52,
+    2.76
+   ],
+   [
+    "it",
+    2.76,
+    2.96
+   ],
+   [
+    "now.",
+    2.96,
+    3.24
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_5": {
+  "who": "narrator",
+  "text": "We visited the village yesterday, and we will leave tomorrow.",
+  "dur": 3.5,
+  "words": [
+   [
+    "We",
+    0.0,
+    0.22
+   ],
+   [
+    "visited",
+    0.22,
+    0.54
+   ],
+   [
+    "the",
+    0.54,
+    0.76
+   ],
+   [
+    "village",
+    0.76,
+    1.04
+   ],
+   [
+    "yesterday,",
+    1.04,
+    1.48
+   ],
+   [
+    "and",
+    2.16,
+    2.34
+   ],
+   [
+    "we",
+    2.34,
+    2.46
+   ],
+   [
+    "will",
+    2.46,
+    2.58
+   ],
+   [
+    "leave",
+    2.58,
+    2.8
+   ],
+   [
+    "tomorrow.",
+    2.8,
+    3.12
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_6": {
+  "who": "narrator",
+  "text": "Sam runs faster than Leo, doesn't he?",
+  "dur": 2.482,
+  "words": [
+   [
+    "Sam",
+    0.0,
+    0.42
+   ],
+   [
+    "runs",
+    0.42,
+    0.72
+   ],
+   [
+    "faster",
+    0.72,
+    1.06
+   ],
+   [
+    "than",
+    1.06,
+    1.36
+   ],
+   [
+    "Leo,",
+    1.36,
+    1.62
+   ],
+   [
+    "doesn't",
+    1.9,
+    2.1
+   ],
+   [
+    "he?",
+    2.1,
+    2.28
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_7": {
+  "who": "narrator",
+  "text": "I know where the key is. I have already found it.",
+  "dur": 3.213,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.22
+   ],
+   [
+    "know",
+    0.22,
+    0.38
+   ],
+   [
+    "where",
+    0.38,
+    0.54
+   ],
+   [
+    "the",
+    0.54,
+    0.64
+   ],
+   [
+    "key",
+    0.64,
+    0.82
+   ],
+   [
+    "is.",
+    0.82,
+    1.18
+   ],
+   [
+    "I",
+    1.62,
+    1.88
+   ],
+   [
+    "have",
+    1.88,
+    1.98
+   ],
+   [
+    "already",
+    1.98,
+    2.38
+   ],
+   [
+    "found",
+    2.38,
+    2.7
+   ],
+   [
+    "it.",
+    2.7,
+    3.0
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q7_8": {
+  "who": "narrator",
+  "text": "The crown was found, and Biscuit enjoys sniffing socks.",
+  "dur": 3.944,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.22
+   ],
+   [
+    "crown",
+    0.22,
+    0.46
+   ],
+   [
+    "was",
+    0.46,
+    0.64
+   ],
+   [
+    "found,",
+    0.64,
+    1.02
+   ],
+   [
+    "and",
+    1.48,
+    1.66
+   ],
+   [
+    "Biscuit",
+    1.66,
+    2.24
+   ],
+   [
+    "enjoys",
+    2.24,
+    2.7
+   ],
+   [
+    "sniffing",
+    2.7,
+    3.26
+   ],
+   [
+    "socks.",
+    3.26,
+    3.5
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_1": {
+  "who": "narrator",
+  "text": "So do I.",
+  "dur": 0.758,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.26
+   ],
+   [
+    "do",
+    0.26,
+    0.38
+   ],
+   [
+    "I.",
+    0.38,
+    0.56
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_2": {
+  "who": "narrator",
+  "text": "Neither can I.",
+  "dur": 1.019,
+  "words": [
+   [
+    "Neither",
+    0.0,
+    0.32
+   ],
+   [
+    "can",
+    0.32,
+    0.58
+   ],
+   [
+    "I.",
+    0.58,
+    0.84
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_3": {
+  "who": "narrator",
+  "text": "So did I.",
+  "dur": 0.888,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.32
+   ],
+   [
+    "did",
+    0.32,
+    0.44
+   ],
+   [
+    "I.",
+    0.44,
+    0.66
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_4": {
+  "who": "narrator",
+  "text": "So has Leo.",
+  "dur": 1.071,
+  "words": [
+   [
+    "So",
+    0.0,
+    0.3
+   ],
+   [
+    "has",
+    0.3,
+    0.52
+   ],
+   [
+    "Leo.",
+    0.52,
+    0.74
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_5": {
+  "who": "narrator",
+  "text": "Here comes Biscuit. Here he comes.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.24
+   ],
+   [
+    "comes",
+    0.24,
+    0.44
+   ],
+   [
+    "Biscuit.",
+    0.44,
+    0.96
+   ],
+   [
+    "Here",
+    1.4,
+    1.52
+   ],
+   [
+    "he",
+    1.52,
+    1.64
+   ],
+   [
+    "comes.",
+    1.64,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_6": {
+  "who": "narrator",
+  "text": "Never have I seen the compass so bright.",
+  "dur": 2.247,
+  "words": [
+   [
+    "Never",
+    0.0,
+    0.34
+   ],
+   [
+    "have",
+    0.34,
+    0.54
+   ],
+   [
+    "I",
+    0.54,
+    0.66
+   ],
+   [
+    "seen",
+    0.66,
+    0.88
+   ],
+   [
+    "the",
+    0.88,
+    1.06
+   ],
+   [
+    "compass",
+    1.06,
+    1.3
+   ],
+   [
+    "so",
+    1.3,
+    1.62
+   ],
+   [
+    "bright.",
+    1.62,
+    1.94
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_7": {
+  "who": "narrator",
+  "text": "This is the compass which brought us home.",
+  "dur": 1.933,
+  "words": [
+   [
+    "This",
+    0.0,
+    0.26
+   ],
+   [
+    "is",
+    0.26,
+    0.38
+   ],
+   [
+    "the",
+    0.38,
+    0.52
+   ],
+   [
+    "compass",
+    0.52,
+    0.82
+   ],
+   [
+    "which",
+    0.82,
+    1.06
+   ],
+   [
+    "brought",
+    1.06,
+    1.26
+   ],
+   [
+    "us",
+    1.26,
+    1.46
+   ],
+   [
+    "home.",
+    1.46,
+    1.68
+   ]
+  ],
+  "align": "whisper"
+ },
+ "ex_q8_8": {
+  "who": "narrator",
+  "text": "The letter which Grandpa left is here.",
+  "dur": 2.011,
+  "words": [
+   [
+    "The",
+    0.0,
+    0.18
+   ],
+   [
+    "letter",
+    0.18,
+    0.4
+   ],
+   [
+    "which",
+    0.4,
+    0.64
+   ],
+   [
+    "Grandpa",
+    0.64,
+    0.98
+   ],
+   [
+    "left",
+    0.98,
+    1.2
+   ],
+   [
+    "is",
+    1.2,
+    1.46
+   ],
+   [
+    "here.",
+    1.46,
+    1.76
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_together": {
+  "who": "leo",
+  "text": "I love travelling with my family.",
+  "dur": 1.881,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.24
+   ],
+   [
+    "love",
+    0.24,
+    0.46
+   ],
+   [
+    "travelling",
+    0.46,
+    0.84
+   ],
+   [
+    "with",
+    0.84,
+    1.08
+   ],
+   [
+    "my",
+    1.08,
+    1.26
+   ],
+   [
+    "family.",
+    1.26,
+    1.52
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_again": {
+  "who": "mia",
+  "text": "I want to visit the library that floats above the clouds.",
+  "dur": 4.754,
+  "words": [
+   [
+    "I",
+    0.0,
+    0.3
+   ],
+   [
+    "want",
+    0.3,
+    0.64
+   ],
+   [
+    "to",
+    0.64,
+    0.9
+   ],
+   [
+    "visit",
+    0.9,
+    1.28
+   ],
+   [
+    "the",
+    1.28,
+    1.66
+   ],
+   [
+    "library",
+    1.66,
+    2.2
+   ],
+   [
+    "that",
+    2.2,
+    2.74
+   ],
+   [
+    "floats",
+    2.74,
+    3.14
+   ],
+   [
+    "above",
+    3.14,
+    3.68
+   ],
+   [
+    "the",
+    3.68,
+    3.98
+   ],
+   [
+    "clouds.",
+    3.98,
+    4.34
+   ]
+  ],
+  "align": "whisper"
+ },
+ "card_home": {
+  "who": "lily",
+  "text": "Here is the place that we call home.",
+  "dur": 1.724,
+  "words": [
+   [
+    "Here",
+    0.0,
+    0.24
+   ],
+   [
+    "is",
+    0.24,
+    0.34
+   ],
+   [
+    "the",
+    0.34,
+    0.48
+   ],
+   [
+    "place",
+    0.48,
+    0.64
+   ],
+   [
+    "that",
+    0.64,
+    0.82
+   ],
+   [
+    "we",
+    0.82,
+    0.94
+   ],
+   [
+    "call",
+    0.94,
+    1.16
+   ],
+   [
+    "home.",
+    1.16,
+    1.4
+   ]
+  ],
+  "align": "whisper"
+ },
+ "star": {
+  "who": "narrator",
+  "text": "All seventeen stars are home!",
+  "dur": 2.064,
+  "words": [
+   [
+    "All",
+    0.0,
+    0.3
+   ],
+   [
+    "seventeen",
+    0.3,
+    0.8
+   ],
+   [
+    "stars",
+    0.8,
+    1.2
+   ],
+   [
+    "are",
+    1.2,
+    1.5
+   ],
+   [
+    "home!",
+    1.5,
+    1.74
+   ]
+  ],
+  "align": "whisper"
+ }
+}

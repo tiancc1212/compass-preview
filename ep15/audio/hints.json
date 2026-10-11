@@ -1,0 +1,105 @@
+{
+  "l01": [
+    {
+      "b": "V",
+      "hl": "had already closed",
+      "zh": "had done：在过去抵达之前已关门"
+    }
+  ],
+  "l02": [
+    {
+      "b": "V",
+      "hl": "had disappeared",
+      "zh": "过去完成时：失踪早于开门"
+    }
+  ],
+  "l03": [
+    {
+      "b": "V",
+      "hl": "Had anyone seen",
+      "zh": "过去完成时提问：had 放主语前"
+    }
+  ],
+  "l04": [
+    {
+      "b": "V",
+      "hl": "was found",
+      "zh": "was found：袜子被发现了"
+    }
+  ],
+  "l05": [
+    {
+      "b": "V",
+      "hl": "has been broken",
+      "zh": "has been done：已被打破，现在仍可见"
+    }
+  ],
+  "l06": [
+    {
+      "b": "V",
+      "hl": "is usually kept",
+      "zh": "is kept：通常被存放在这里"
+    },
+    {
+      "b": "ADV",
+      "hl": "usually",
+      "zh": "usually：频率副词，表示通常"
+    }
+  ],
+  "l07": [
+    {
+      "b": "V",
+      "hl": "Can it be found",
+      "zh": "情态动词后接 be done 表被动"
+    }
+  ],
+  "l08": [
+    {
+      "b": "V",
+      "hl": "was given",
+      "zh": "was given：有人把袜子给了它"
+    }
+  ],
+  "l09": [
+    {
+      "b": "V",
+      "hl": "is being pulled",
+      "zh": "is being done：正在被拖动"
+    }
+  ],
+  "l10": [
+    {
+      "b": "V",
+      "hl": "had been hidden",
+      "zh": "had been done：过去之前已被藏好"
+    }
+  ],
+  "l11": [
+    {
+      "b": "V",
+      "hl": "was caught",
+      "zh": "was caught：老鼠被抓住了"
+    }
+  ],
+  "l12": [
+    {
+      "b": "V",
+      "hl": "will be returned",
+      "zh": "will be done：将被放回"
+    }
+  ],
+  "l13": [
+    {
+      "b": "V",
+      "hl": "was discovered",
+      "zh": "was discovered：零件被发现了"
+    }
+  ],
+  "l14": [
+    {
+      "b": "V",
+      "hl": "was placed",
+      "zh": "was placed：星星被放在了旁边"
+    }
+  ]
+}
